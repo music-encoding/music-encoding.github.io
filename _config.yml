@@ -16,13 +16,6 @@ menu:
     - id: about
       label: 'About'
       url: '/about'
-      submenu:
-          - id: faq
-            label: 'What is MEI?'
-            url: ''
-          - id: meibylaws
-            label: 'MEI By-laws'
-            url: '/mei-by-laws.html'
     - id: community
       label: 'Community'
       url: '/community'
@@ -45,6 +38,9 @@ menu:
           - id: meiboard
             label: 'MEI Board'
             url: '/mei-board.html'
+          - id: meibylaws
+            label: 'MEI By-laws'
+            url: '/mei-by-laws.html'
     - id: conference
       label: 'Conference'
       url: '/mec'
@@ -65,6 +61,9 @@ menu:
           - id: introduction
             label: 'Introduction'
             url: '/introduction.html'
+          - id: repositories
+            label: 'Repositories'
+            url: '/repositories.html'
           - id: tools
             label: 'Tools'
             url: '/tools.html'
