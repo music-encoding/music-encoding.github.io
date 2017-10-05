@@ -29,25 +29,6 @@ menu:
           - id: mec
             label: 'Music Encoding Conference'
             url: '/conference'
-            submenu: 
-                - id: 
-                  label: ''
-                  url: '/'
-                - id: 
-                  label: ''
-                  url: '/'
-                - id: 
-                  label: ''
-                  url: '/'
-                - id: 
-                  label: ''
-                  url: '/'
-                - id: 
-                  label: ''
-                  url: '/'
-                - id: 
-                  label: ''
-                  url: '/'
           - id: organization
             label: 'MEI Organization'
             url: '/mei-organization'
@@ -150,3 +131,24 @@ menu:
           - id: mec17
             label: 'MEC 2017, Tours'
             url: '/tours17'
+       
+sidemenu:  
+    - id: conference
+      label: 'Support'
+      url: '/support'   
+      content: 
+          - id: venue
+            label: 'Venue'
+            url: 'venue.html'
+          - id: call
+            label: 'Call for papers'
+            url: 'call.html'
+          - id: program
+            label: 'Program'
+            url: 'program.html'
+          - id: registration
+            label: 'Registration'
+            url: 'registration.html'
+          - id: accommodations
+            label: 'Accommodations'
+            url: 'accommodations'

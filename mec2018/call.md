@@ -1,5 +1,6 @@
 ---
-layout: default
+layout: submenu
+sidemenu: conference
 title: "Call for proposals"
 ---
 ## Call for proposals
