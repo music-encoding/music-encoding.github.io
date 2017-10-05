@@ -7,3 +7,143 @@ twitter_username: music-encoding
 
 # Build settings
 markdown: kramdown
+
+
+menu:
+    - id: home
+      label: 'Home'
+      url: '/'
+    - id: community
+      label: 'Community'
+      url: '/community'
+      submenu:
+          - id: projects
+            label: 'Projects / Users'
+            url: '/projects-users'
+          - id: news
+            label: 'News / Events'
+            url: '/news-events'
+          - id: mec
+            label: 'Music Encoding Conference'
+            url: '/conference'
+            submenu: 
+                - id: 
+                  label: ''
+                  url: '/'
+                - id: 
+                  label: ''
+                  url: '/'
+                - id: 
+                  label: ''
+                  url: '/'
+                - id: 
+                  label: ''
+                  url: '/'
+                - id: 
+                  label: ''
+                  url: '/'
+                - id: 
+                  label: ''
+                  url: '/'
+          - id: organization
+            label: 'MEI Organization'
+            url: '/mei-organization'
+            submenu: 
+                - id: 
+                  label: ''
+                  url: '/'
+                - id: 
+                  label: ''
+                  url: '/'
+                - id: 
+                  label: ''
+                  url: '/'
+                - id: 
+                  label: ''
+                  url: '/'
+                - id: 
+                  label: ''
+                  url: '/'
+          - id: mailinglist
+            label: 'Mailing List'
+            url: '/mailing-list'
+          - id: bibliography
+            label: 'Bibliography'
+            url: '/bibliography'
+    - id: downloads
+      label: 'Downloads'
+      url: '/downloads'
+      submenu:
+          - id: latestRelease
+            label: 'Latest Release'
+            url: '/latest-release'
+          - id: guidelinesPDF
+            label: 'Guidelines PDF'
+            url: '/guidelines-pdf'
+          - id: sampleEncodings
+            label: 'Sample Encodings'
+            url: '/sample-encodings'
+          - id: customizations
+            label: 'Customizations'
+            url: '/customizations'
+          - id: encodingTools
+            label: 'Encoding Tools'
+            url: '/encoding-tools'
+    - id: tools
+      label: 'Tools'
+      url: '/tools'
+      submenu:
+          - id: customizationService
+            label: 'Customization Service'
+            url: '/customization-service'
+          - id: sibmei
+            label: 'Sibelius to MEI Plugin'
+            url: '/sibmei'
+          - id: verovio
+            label: 'Verovio'
+            url: '/verovio'
+          - id: music21
+            label: 'Music21 Converter'
+            url: '/meitom21converter'
+          - id: vexflow
+            label: 'MEI2VexFlow'
+            url: '/mei-to-vexflow'
+          - id: libmei
+            label: 'LibMEI'
+            url: '/libmei'
+          - id: meise
+            label: 'MEISE'
+            url: '/meise'
+          - id: mermeid
+            label: 'MerMEId'
+            url: '/mermeid'
+    - id: support
+      label: 'Support'
+      url: '/support'
+      submenu:
+          - id: gentleIntroduction
+            label: 'An Introduction to MEI'
+            url: '/a-gentle-introduction-to-mei'
+          - id: guidelines
+            label: 'Guidelines'
+            url: '/guidelines'
+          - id: faq
+            label: 'FAQ'
+            url: '/faq'
+          - id: tutorials
+            label: 'Tutorials'
+            url: '/tutorials'
+            submenu:
+                - id: mei1st
+                  label: 'MEI 1st'
+                  url: '/mei-1st'
+    - id: archive
+      label: 'Archive'
+      url: '/archive'
+      submenu:
+          - id: mec16
+            label: 'MEC 2016, Montréal'
+            url: '/montreal2016'
+          - id: mec17
+            label: 'MEC 2017, Tours'
+            url: '/tours17'

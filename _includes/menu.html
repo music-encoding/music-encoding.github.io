@@ -1,0 +1,37 @@
+{% for m in site.menu %}
+    
+    <span class="dropdown">
+        <span class="btn btn-link dropdown-toggle" tabindex="{{ forloop.index0}}">
+            {{ m.label }} <i class="icon icon-caret"></i>
+        </span>
+        <!-- menu component -->
+        <ul class="menu">
+            
+            {% for item in m.submenu %}
+                <li class="menu-item">
+                    <a href="{{m.url}}{{item.url}}" class="btn btn-link">
+                        <i class="icon icon-link"></i> {{item.label}}
+                    </a>
+                </li>
+            {% endfor %}
+            
+        </ul>
+    </span>
+
+
+    <!--<span class="list-group sublist-group">
+        {{ m.label }}
+    </span>-->
+{% endfor %}
+
+<!--
+
+{% for m in site.menu %}
+    {% if page.active_section == m.id and page.hide_secondary != true %}
+    <div class="list-group sublist-group">
+        {% include secondary_link.html class="list-group-item" %}
+    </div>
+    {% endif %}
+{% endfor %}
+
+-->
