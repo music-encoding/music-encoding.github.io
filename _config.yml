@@ -7,3 +7,6 @@ twitter_username: music-encoding
 
 # Build settings
 markdown: kramdown
+
+gems:
+  - jekyll-redirect-from
