@@ -10,7 +10,7 @@ layout: default
             {% if page.sidemenu == m.id %}
                 {% for s in m.content %}
                 <span>
-                    {{ s.label }}
+                    <a href="{{m.url}}{{s.url}}">{{s.label}}</a>
                 </span>
                 {% endfor %}
             {% endif %}
