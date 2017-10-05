@@ -1,5 +1,6 @@
 ---
-layout: default
+layout: sidebar
+sidemenu: conference
 title: "MEC 2018"
 redirect_from: /community/conference/
 redirect_from: /conference/

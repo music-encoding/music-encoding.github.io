@@ -1,5 +1,6 @@
 ---
-layout: default
+layout: sidebar
+sidemenu: conference
 title: "Venue"
 ---
 ## Venue
