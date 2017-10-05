@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: "Introduction to MEI"
 ---
 # Introduction to MEI

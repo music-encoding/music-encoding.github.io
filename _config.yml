@@ -13,129 +13,75 @@ gems:
 
 
 menu:
-    - id: home
-      label: 'Home'
-      url: '/'
+    - id: about
+      label: 'About'
+      url: '/about'
+      submenu:
+          - id: faq
+            label: 'What is MEI?'
+            url: ''
+          - id: meibylaws
+            label: 'MEI By-laws'
+            url: '/mei-by-laws.html'
     - id: community
       label: 'Community'
       url: '/community'
       submenu:
           - id: projects
             label: 'Projects / Users'
-            url: '/projects-users'
+            url: '/projects-users.html'
           - id: news
             label: 'News / Events'
-            url: '/news-events'
-          - id: mec
-            label: 'Music Encoding Conference'
-            url: '/conference'
-          - id: organization
-            label: 'MEI Organization'
-            url: '/mei-organization'
-            submenu: 
-                - id: 
-                  label: ''
-                  url: '/'
-                - id: 
-                  label: ''
-                  url: '/'
-                - id: 
-                  label: ''
-                  url: '/'
-                - id: 
-                  label: ''
-                  url: '/'
-                - id: 
-                  label: ''
-                  url: '/'
+            url: '/news-events.html'
           - id: mailinglist
             label: 'Mailing List'
-            url: '/mailing-list'
+            url: '/mailing-list.html'
+          - id: interestgroups
+            label: 'Interest Groups'
+            url: '/interest-groups.html'
+          - id: technicalteams
+            label: 'Technical Team'
+            url: '/technical-team.html'
+          - id: meiboard
+            label: 'MEI Board'
+            url: '/mei-board.html'
+    - id: conference
+      label: 'Conference'
+      url: '/mec'
+      submenu:
+          - id: upcoming
+            label: 'Upcoming Conference'
+            url: '/2018'
+          - id: previous
+            label: 'Past Conferences'
+            url: '/past.html'
+          - id: hosting
+            label: 'Hosting Guidelines'
+            url: '/hosting-guidelines.html'
+    - id: resources
+      label: 'Resources'
+      url: '/resources'
+      submenu:
+          - id: introduction
+            label: 'Introduction'
+            url: '/introduction.html'
+          - id: tools
+            label: 'Tools'
+            url: '/tools.html'
           - id: bibliography
             label: 'Bibliography'
-            url: '/bibliography'
-    - id: downloads
-      label: 'Downloads'
-      url: '/downloads'
-      submenu:
-          - id: latestRelease
-            label: 'Latest Release'
-            url: '/latest-release'
-          - id: guidelinesPDF
-            label: 'Guidelines PDF'
-            url: '/guidelines-pdf'
-          - id: sampleEncodings
-            label: 'Sample Encodings'
-            url: '/sample-encodings'
-          - id: customizations
-            label: 'Customizations'
-            url: '/customizations'
-          - id: encodingTools
-            label: 'Encoding Tools'
-            url: '/encoding-tools'
-    - id: tools
-      label: 'Tools'
-      url: '/tools'
-      submenu:
-          - id: customizationService
-            label: 'Customization Service'
-            url: '/customization-service'
-          - id: sibmei
-            label: 'Sibelius to MEI Plugin'
-            url: '/sibmei'
-          - id: verovio
-            label: 'Verovio'
-            url: '/verovio'
-          - id: music21
-            label: 'Music21 Converter'
-            url: '/meitom21converter'
-          - id: vexflow
-            label: 'MEI2VexFlow'
-            url: '/mei-to-vexflow'
-          - id: libmei
-            label: 'LibMEI'
-            url: '/libmei'
-          - id: meise
-            label: 'MEISE'
-            url: '/meise'
-          - id: mermeid
-            label: 'MerMEId'
-            url: '/mermeid'
-    - id: support
-      label: 'Support'
-      url: '/support'
-      submenu:
-          - id: gentleIntroduction
-            label: 'An Introduction to MEI'
-            url: '/a-gentle-introduction-to-mei'
-          - id: guidelines
-            label: 'Guidelines'
-            url: '/guidelines'
-          - id: faq
-            label: 'FAQ'
-            url: '/faq'
-          - id: tutorials
-            label: 'Tutorials'
-            url: '/tutorials'
-            submenu:
-                - id: mei1st
-                  label: 'MEI 1st'
-                  url: '/mei-1st'
+            url: '/bibliography.html'
+    - id: documentation
+      label: 'Documentation'
+      url: 'http://music-encoding.org/documentation/3.0.0/chapters/'
     - id: archive
       label: 'Archive'
       url: '/archive'
-      submenu:
-          - id: mec16
-            label: 'MEC 2016, Montréal'
-            url: '/montreal2016'
-          - id: mec17
-            label: 'MEC 2017, Tours'
-            url: '/tours17'
        
 sidemenu:  
     - id: conference
       label: 'Support'
-      url: '/support'   
+      url: '/mec/2018/'   
       content: 
           - id: venue
             label: 'Venue'
@@ -151,4 +97,4 @@ sidemenu:
             url: 'registration.html'
           - id: accommodations
             label: 'Accommodations'
-            url: 'accommodations'
+            url: 'accommodations.html'

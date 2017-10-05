@@ -1,14 +1,12 @@
 ---
-layout: page
-title: "FAQ"
+layout: default
+title: "What is MEI?"
 ---
-# FAQ
-
-## What is MEI?
+# What is MEI?
 
 The Music Encoding Initiative (MEI) is a community-driven effort to define guidelines for encoding musical documents in a machine-readable structure. MEI closely mirrors work done by text scholars in the [Text Encoding Initiative](http://www.tei-c.org/) (TEI) and while the two encoding initiatives are not formally related, they share many common characteristics and development practices. MEI, like TEI, is an umbrella term to simultaneously describe an organization, a research community, and a markup language. It brings together specialists from various music research communities, including technologists, librarians, historians, and theorists in a common effort to discuss and define best practices for representing a broad range of musical documents and structures. The results of these discussions are then formalized into the MEI schema, a core set of rules for recording physical and intellectual characteristics of music notation documents. This schema is developed and maintained by the [MEI Technical Team](http://music-encoding.org/?page_id=18 "Technical Team").
 
-## What are the goals of MEI?
+# What are the goals of MEI?
 
 The scholarly community devoted to the historical study of music needs a representation that meets the following requirements:
 
@@ -28,15 +26,15 @@ Therefore, the Music Encoding Initiative strives to create a semantically rich m
 *   employs XML technologies; and
 *   permits the development of comprehensive and permanent international archives of notated music as a basis for editions, analysis, performances, and other forms of research.
 
-## Is MEI free?
+# Is MEI free?
 
 Yes! MEI is distributed under the Educational Community License, Version 2.0, a modified form of the Apache 2.0 license. Under this license, you are granted a "perpetual, worldwide, non-exclusive, no-charge, royalty-free, irrevocable copyright license to reproduce, prepare derivative works of, publicly display, publicly perform, sublicense, and distribute MEI and any derivative" version you create. For the legal details, [see the license](http://opensource.org/licenses/ECL-2.0 "Educational Community License"). Because MEI provides a flexible and extensible framework as well as the opportunity to participate in its development, it is free, not just in the sense of "free beer", but also in the sense of giving its users the freedom to use it as they desire.
 
-## How is MEI different from MusicXML?
+# How is MEI different from MusicXML?
 
 MEI and MusicXML share some similarities -- both of them encode music notation (notes, staves, rests, clefs, etc.), and they are both expressed in XML. However, they are guided by two different philosophies. The goal of MusicXML is to be an interchange format that allows one, for example, to export a file from Sibelius and import it into Finale with little to no loss of information or layout. While MEI could also be used as an interchange format, it is a superset of the functionality available in MusicXML. It contains nearly all of the same functionality in terms of notation and page layout. However, beyond this it can also encode information about the notation and its intellectual content, often called "metadata", in a structured and systematic way. MEI also supports notation systems outside of standard Common Western Notation, for example, mensural (Renaissance-era) and neume (Medieval) notations, not just through visual emulation, but by retaining the structure and semantics of these notation types. In addition, MEI can record the relationships between notational features and digital page images and audio recordings. Community-based development is another way in which MEI is different than MusicXML.
 
-## What is the history of MEI?
+# What is the history of MEI?
 
 In 1999, Perry Roland set about creating an XML schema (DTD) for the representation of music notation. Eventually, this DTD became known as MEI because it was influenced by the same principles that guided the creation of the [Text Encoding Initiative](http://www.tei-c.org/) (TEI). Perry presented his initial work at the first [International Society for Music Information Retrieval](http://ismir.net/conferences.html) in 2000.
 

@@ -2,7 +2,6 @@
 layout: default
 title: "Projects and users"
 ---
-
 # Projects and users
 
 Various projects are using MEI. A brief explanation of some of them are provided below. Let us know if you'd like to include information about your work with MEI.
