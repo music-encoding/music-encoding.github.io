@@ -1,0 +1,32 @@
+header.navbar {
+    
+    background-color: #2f3033;
+    padding: 5px;
+    margin-bottom: 20px;
+    height: 60px;
+    
+    a.btn.btn-link {
+        color: #e5e5e5;   
+    }
+    
+    .menu a.btn.btn-link {
+        color: #4240d4;   
+    }
+
+    .navbar-brand {
+        color: transparent;
+        background-image: url('./../pix/portfolioLogo_White.png');
+        background-size: 80px;
+        width: 80px;
+        background-repeat: no-repeat;
+        margin: 10px 30px 10px 10px;
+    }
+}
+
+
+.startCarousel {
+    height: 320px;
+    margin: 0 0 30px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+    border-radius: 5px;
+}

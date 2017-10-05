@@ -1,37 +1,46 @@
-{% for m in site.menu %}
-    
-    <span class="dropdown">
-        <span class="btn btn-link dropdown-toggle" tabindex="{{ forloop.index0}}">
-            {{ m.label }} <i class="icon icon-caret"></i>
-        </span>
-        <!-- menu component -->
-        <ul class="menu">
+{% for entry in site.menu %}
+    <span class="dropdown dropdownCustomMenuToggle">
+        {% if entry.submenu %}
+            <a href="{{m.url}}" class="btn btn-link" tabindex="{{ forloop.index0}}">
+                A {{ entry.label }} <i class="icon icon-caret"></i>
+            </a>
+        {% else %}
+            <a href="#" class="btn btn-link dropdown-toggle" tabindex="{{ forloop.index0}}">
+                B {{ entry.label }} <i class="icon icon-caret"></i>
+            </a>
             
-            {% for item in m.submenu %}
+            {% for item in entry.submenu %}
+            {% if forloop.first %} <ul class="menu"> {% endif %}
                 <li class="menu-item">
-                    <a href="{{m.url}}{{item.url}}" class="btn btn-link">
+                    <a href="{{entry.url}}{{item.url}}" class="btn btn-link">
                         <i class="icon icon-link"></i> {{item.label}}
                     </a>
                 </li>
+                {% if forloop.last %} </ul> {% endif %}
             {% endfor %}
             
-        </ul>
+        {% endif %}
     </span>
 
-
-    <!--<span class="list-group sublist-group">
-        {{ m.label }}
-    </span>-->
 {% endfor %}
 
-<!--
-
-{% for m in site.menu %}
-    {% if page.active_section == m.id and page.hide_secondary != true %}
-    <div class="list-group sublist-group">
-        {% include secondary_link.html class="list-group-item" %}
-    </div>
-    {% endif %}
-{% endfor %}
-
--->
+<script type="text/javascript">
+    /*var items = document.querySelectorAll('.dropdownCustomMenuToggle');
+    console.log(items);
+    
+    for(var i=0; i < items.length;i++) {
+        var item = items[i];
+        
+        item.addEventListener('mouseenter',function(e) {
+            console.log('opening menu')
+           
+            e.target.classList.add('active');
+        });
+        
+        item.addEventListener('mouseleave',function(e) {
+            console.log(e)
+            
+            e.target.classList.remove('active');
+        });
+    }*/
+</script>
