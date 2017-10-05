@@ -1,5 +1,6 @@
 ---
 layout: default
+title: "Projects and users"
 ---
 
 # Projects and users
