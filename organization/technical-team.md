@@ -1,5 +1,6 @@
 ---
 layout: default
+title: "Technical team"
 ---
 # Technical team
 

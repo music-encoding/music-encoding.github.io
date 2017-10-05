@@ -1,5 +1,6 @@
 ---
 layout: default
+title: "Organization"
 ---
 MEI is a non-profit, community-based organization, whose members are individuals and institutions -- universities, libraries, academic projects, research units, etc. The [Akademie der Wissenschaften und der Literatur Mainz](http://www.adwmainz.de/startseite.html) serves as the host institution for the MEI community.
 

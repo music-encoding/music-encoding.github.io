@@ -1,5 +1,6 @@
 ---
 layout: default
+title: "Interest groups"
 ---
 # Interest groups
 

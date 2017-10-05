@@ -1,5 +1,6 @@
 ---
 layout: default
+title: "Hosting guidelines"
 ---
 ## Purpose of these Guidelines
 

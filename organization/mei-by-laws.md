@@ -1,5 +1,6 @@
 ---
 layout: default
+title: "MEI By-laws"
 ---
 # MEI By-laws
 
