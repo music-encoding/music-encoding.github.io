@@ -42,7 +42,7 @@ header.navbar {
     
     .navbar-brand {
         color: transparent;
-        background-image: url('./../pix/meilogo-both.png');
+        background-image: url('{{site.baseurl}}/pix/meilogo-both.png');
         background-size: 80px;
         width: 80px;
         background-repeat: no-repeat;
