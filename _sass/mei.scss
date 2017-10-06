@@ -1,32 +1,97 @@
 header.navbar {
     
-    background-color: #2f3033;
+    background-color: #e5e5e5;
     padding: 5px;
     margin-bottom: 20px;
     height: 60px;
     
     a.btn.btn-link {
-        color: #e5e5e5;   
+        color: #333333;
+        font-weight:100;
     }
     
-    .menu a.btn.btn-link {
-        color: #4240d4;   
+    .twitterCircle {
+        margin: -32px 20px 0 0;
+        width: 40px;
+        height: 40px;
+        background-color: #333333;
+        
+        img {
+            width: 35px;
+            height: 35px;
+            margin: 5px;
+        }
     }
-
+    
+    .githubLink {
+        
+        margin: -25px 10px 0 0;
+        
+        img {
+            height: 40px;
+        }
+    }
+    
+    .dropdown.dropdownCustomMenuToggle {
+        margin-top: -35px;
+    }
+    
+    .menu {
+        z-index: 1000;
+    }
+    
     .navbar-brand {
         color: transparent;
-        background-image: url('./../pix/portfolioLogo_White.png');
+        background-image: url('./../pix/meilogo-both.png');
         background-size: 80px;
         width: 80px;
         background-repeat: no-repeat;
-        margin: 10px 30px 10px 10px;
+        margin: 4px 30px 10px 10px;
     }
 }
 
+.newsMenu {
+
+    .divider {
+        margin: .2rem 0 .8rem;
+    }
+    
+    p.tile-title {
+        margin: .1rem 0 -.2rem;
+    }
+}
 
 .startCarousel {
     height: 320px;
     margin: 0 0 30px;
     box-shadow: 0 3px 10px rgba(0,0,0,0.3);
     border-radius: 5px;
+}
+
+footer {
+    background-color: #333333;
+    background-image: linear-gradient(to bottom, #1a1a1a, #292929 25%, #222222);
+    
+    color: #e5e5e5;
+    padding-bottom: 30px;
+    
+    a {
+        color: #e5e5e5;
+        font-weight: 300;
+        &:visited, &:hover, &:active {
+            color: #e5e5e5;
+        }
+    }
+    
+    .institutions {
+        
+        padding: 20px;
+        
+        .institutionsLink {
+            
+            img {
+                
+            }
+        }
+    }
 }

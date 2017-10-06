@@ -22,7 +22,10 @@ XML is a hierarchical encoding system. An example of a very simple MEI XML hiera
 
 Attributes of an element are used to define properties of a particular object and are represented as key-value pairs, taking the form key="value". A ```<note>``` object that represents “middle C” (C4) on a keyboard would be encoded in MEI as ```<note pname="c" oct="4"/>```. (In prose, attribute and element names are distinguished by an additional “@” character on the attribute name, e.g., ```@pname```, even though this symbol does not appear in the XML encoding.)
 
-[caption id="attachment_744" align="alignleft" width="300"][![Simple MEI Encoding](http://music-encoding.org/wp-content/uploads/2015/03/mei-fig2-300x144.png)](http://music-encoding.org/wp-content/uploads/2015/03/mei-fig2.png) Figure 1: Left: XML Encoding; Right: Possible graphical representation (NB: Clef and Time Signature are given for reference and are not present in the encoding)[/caption]
+<figure class="figure">
+  <img src="http://music-encoding.org/wp-content/uploads/2015/03/mei-fig2-300x144.png" class="img-responsive" alt=""/>
+  <figcaption class="figure-caption">Figure 1: Left: XML Encoding; Right: Possible graphical representation (NB: Clef and Time Signature are given for reference and are not present in the encoding)</figcaption>
+</figure>
 
 At a minimum, a valid MEI-encoded file contains two structures within the parent ```<mei>``` element: the ```<meiHead>``` and ```<music>``` elements. The ```<meiHead>``` structure contains elements that describe the work (i.e., metadata), including information about authorship, encoding standards, and provenance. The ```<music>``` structure contains information regarding the encoded music itself. The music notation is represented using XML tags, arranged in a hierarchical relationship.
 
@@ -38,7 +41,12 @@ Yet in some cases, including avant-garde notation, composer-specific repertoire,
 
 MEI is expressed in a meta-schema language developed by the Text Encoding Initiative. The “[One Document Does-it-all](http://www.tei-c.org/Guidelines/Customization/odds.xml)” (ODD) format is designed to encode both the behaviors of the document encoding, and the human-readable documentation following a “[literate programming](http://en.wikipedia.org/wiki/Literate_programming)” technique. From a single ODD file, a formalized schema in one of the previously-mentioned XML schema languages, as well as human-readable documentation for that schema, may be derived. The MEI schemas and guideline documentation are generated from the MEI ODD file using software developed to support the TEI project.
 
-[caption id="attachment_1375" align="alignright" width="300"][![MEI Customization](http://music-encoding.org/wp-content/uploads/2015/04/romaDiagram.png)](http://music-encoding.org/wp-content/uploads/2015/04/romaDiagram.png) Figure 2: MEI Customization[/caption]
+<figure class="figure">
+  <img src="http://music-encoding.org/wp-content/uploads/2015/04/romaDiagram.png" class="img-responsive" alt="" width="300"/>
+  <figcaption class="figure-caption">Figure 2: MEI Customization</figcaption>
+</figure>
+
+
 
 To generate a schema and documentation, two files must be provided to the Roma processor. The first is the MEI “core” ODD file. This contains the rules and definitions of the behaviors of all elements supported by MEI, in all modules. The second is a “customization” file. This file, also written using ODD, is used to modify the encoding features supported in the generated schema, either by altering the behavior of the core MEI elements or by defining new ones. A customization file may also specify that entire modules in the MEI core are not necessary to include in the resulting schema. This provides a mechanism for generating dedicated schemas for validating only CWMN notation documents, and rejecting documents that encode, for example, neume or mensural notation, or vice-versa. These customization files may be shared with other users, allowing co-operative development of customized encoding systems for different repertoires. The customization process is shown in figure 2.
 

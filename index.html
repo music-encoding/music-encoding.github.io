@@ -76,15 +76,51 @@ layout: default
         If you want to become an active MEI member, you're invited to read more about the community and then join us on the MEI-L mailing list.
       </p>
     </div>
-    <div class="column col-4">
-      {% for post in site.posts %}
-      <div>
+    <div class="column col-4 newsMenu">
+      <h4>News</h4>
+      {% for post in site.posts limit:3 %}
+      
+      <!--<div class="panel">
+        <div class="panel-header">
+          <div class="panel-title"><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></div>
+        </div>
+        <div class="panel-nav">
+          <!-\- navigation components: tabs, breadcrumbs or pagination -\->
+        </div>
+        <div class="panel-body">
+          {{ post.excerpt }}
+          {{ post.date | date: "%b %-d, %Y" }}<!-\- contents -\->
+        </div>
+        <div class="panel-footer">
+          
+        </div>
+      </div>-->
+      
+      {% if forloop.index0 > 0 %}
+      <div class="divider"></div>
+      {% endif %}
+      
+      <div class="tile">
+        <div class="tile-icon">
+          <div class="example-tile-icon">
+            <i class="icon icon-forward centered"></i>
+          </div>
+        </div>
+        <div class="tile-content">
+          <p class="tile-title"><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></p>
+          <p class="tile-subtitle text-gray"><small>Posted {{ post.date | date: "%b %-d, %Y" }}</small></p>
+          <p>{{ post.excerpt }}</p>
+        </div>
+        
+      </div>
+      
+      <!--<div>
         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
         
         <h2>
           <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         </h2>
-      </div>
+      </div>-->
       {% endfor %}
     </div>
   </div>

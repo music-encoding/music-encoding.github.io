@@ -1,25 +1,25 @@
 {% for entry in site.menu %}
     <span class="dropdown dropdownCustomMenuToggle">
-        {% if entry.submenu %}
+        {% unless entry.submenu %}
             <a href="{{m.url}}" class="btn btn-link" tabindex="{{ forloop.index0}}">
-                A {{ entry.label }} <i class="icon icon-caret"></i>
+                {{ entry.label }}
             </a>
         {% else %}
             <a href="#" class="btn btn-link dropdown-toggle" tabindex="{{ forloop.index0}}">
-                B {{ entry.label }} <i class="icon icon-caret"></i>
+                {{ entry.label }} <i class="icon icon-caret"></i>
             </a>
             
             {% for item in entry.submenu %}
             {% if forloop.first %} <ul class="menu"> {% endif %}
                 <li class="menu-item">
-                    <a href="{{entry.url}}{{item.url}}" class="btn btn-link">
-                        <i class="icon icon-link"></i> {{item.label}}
+                    <a href="{{entry.url}}{{item.url}}" class="btn btn-link text-left">
+                        {{item.label}}
                     </a>
                 </li>
                 {% if forloop.last %} </ul> {% endif %}
             {% endfor %}
             
-        {% endif %}
+        {% endunless %}
     </span>
 
 {% endfor %}
