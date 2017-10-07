@@ -43,7 +43,7 @@ menu:
             url: '/mei-by-laws.html'
     - id: conference
       label: 'Conference'
-      url: '/mec'
+      url: '/conference'
       submenu:
           - id: upcoming
             label: 'Upcoming Conference'
