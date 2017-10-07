@@ -64,16 +64,14 @@ layout: default
     <div class="column col-8">
       <h1>Music Encoding Initiative</h1>
       <p>
-        The Music Encoding Initiative (MEI) is an open-source effort to define a system for encoding musical documents in a machine-readable structure. MEI brings together specialists from various music research communities, including technologists, librarians, historians, and theorists in a common effort to define best practices for representing a broad range of musical documents and structures. The results of these discussions are formalized in the MEI schema, a core set of rules for recording physical and intellectual characteristics of music notation documents expressed as an eXtensible Markup Language (XML) schema. It is complemented by the MEI Guidelines, which provide detailed explanations of the components of the MEI model and best practices suggestions.
+        The Music Encoding Initiative (MEI) is a community-driven effort to define a system for encoding musical documents in a machine-readable structure. MEI brings together specialists from various music research communities, including technologists, librarians, historians, and theorists in a common effort to define best practices for representing a broad range of musical documents and structures. The results of these discussions are formalized in the MEI schema, a core set of rules for recording physical and intellectual characteristics of music notation documents expressed as an eXtensible Markup Language (XML) schema. It is complemented by the MEI Guidelines, which provide detailed explanations of the components of the MEI model and best practices suggestions.
       </p>
       <p>
-        MEI is hosted by the Akademie der Wissenschaften und der Literatur, Mainz. The Mainz Academy coordinates basic research in musicology through editorial long-term projects. This includes the complete works of from Brahms to Weber. Each of these (currently 15) projects has a duration of at least 15 years, and some (like Haydn, Händel and Gluck) are running since the 1950s. Therefore, the Academy is one of the most prominent institutions in the field of scholarly music editing. Several Academy projects are using MEI already (c.f. projects), and the Academy's interest in MEI is a clear recommendation to use standards like MEI and TEI in such projects.
+        MEI is hosted by the <a href="http://www.adwmainz.de/startseite.html">Akademie der Wissenschaften und der Literatur</a>,
+        Mainz.
       </p>
       <p>
-        This website provides a Gentle Introduction to MEI, introductory training material, and information on projects and tools that utilize MEI. The latest MEI news, including information about additional opportunities for learning about MEI, is displayed on this page.
-      </p>
-      <p>
-        If you want to become an active MEI member, you're invited to read more about the community and then join us on the MEI-L mailing list.
+        If you want to become an active MEI member, you are invited to read more about the community and then join us on the MEI-L mailing list.
       </p>
     </div>
     <div class="column col-4 newsMenu">
@@ -107,20 +105,12 @@ layout: default
           </div>
         </div>
         <div class="tile-content">
-          <p class="tile-title"><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></p>
+          <h5 class="tile-title"><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h5>
           <p class="tile-subtitle text-gray"><small>Posted {{ post.date | date: "%b %-d, %Y" }}</small></p>
           <p>{{ post.excerpt }}</p>
         </div>
         
       </div>
-      
-      <!--<div>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-        
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </div>-->
       {% endfor %}
     </div>
   </div>
