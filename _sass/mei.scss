@@ -1,52 +1,61 @@
+
+/*
+    Sticky footer
+*/
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.content {
+    flex: 1;
+}
+
+/*
+    Navbar styles
+*/
 header.navbar {
-    
-    background-color: #e5e5e5;
-    padding: 5px;
+    background-color: $dark-color;
     margin-bottom: 20px;
-    height: 60px;
-    
-    a.btn.btn-link {
-        color: #333333;
-        font-weight:100;
-    }
-    
-    .twitterCircle {
-        margin: -32px 20px 0 0;
-        width: 40px;
-        height: 40px;
-        background-color: #333333;
-        
-        img {
-            width: 35px;
-            height: 35px;
-            margin: 5px;
+
+    a {
+        font-size: $menu-font-size;
+
+        i.icon {
+            margin-top: -14px;
         }
     }
-    
-    .githubLink {
-        
-        margin: -25px 10px 0 0;
-        
-        img {
-            height: 40px;
+
+    a.top-menu-link {
+        color: $mei-white;
+
+        &:focus {
+            background: $mei-highlight;
+            color: $mei-white;
+        }
+
+        &:hover {
+            background: $mei-highlight;
+            color: $mei-white;
         }
     }
-    
-    .dropdown.dropdownCustomMenuToggle {
-        margin-top: -35px;
+
+    a.menu-link {
+        color: $mei-dark;
     }
-    
+
     .menu {
         z-index: 1000;
     }
-    
+
     .navbar-brand {
-        color: transparent;
-        background-image: url('{{site.baseurl}}/pix/meilogo-both.png');
-        background-size: 80px;
-        width: 80px;
-        background-repeat: no-repeat;
-        margin: 4px 30px 10px 10px;
+        margin: 14px 14px 0 14px;
+    }
+
+    .logo {
+        margin-right: 20px;
+        height: 30px;
     }
 }
 
@@ -69,9 +78,8 @@ header.navbar {
 }
 
 footer {
-    background-color: #333333;
-    background-image: linear-gradient(to bottom, #1a1a1a, #292929 25%, #222222);
-    
+    margin-top: 20px;
+    background-color: $dark-color;
     color: #e5e5e5;
     padding-bottom: 30px;
     
