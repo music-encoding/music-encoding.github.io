@@ -116,3 +116,12 @@ p.sectionToc a {
         margin-left: 3em;
     }
 }
+
+a.link_odd_elementSpec {
+    &:before {
+        content: '<';
+    }
+    &:after {
+        content: '>';
+    }
+}
