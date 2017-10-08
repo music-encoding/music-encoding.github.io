@@ -97,3 +97,8 @@ sidemenu:
           - id: accommodations
             label: 'Accommodations'
             url: 'accommodations.html'
+            
+collections:
+  projects:
+    output: true
+    permalink: /:collection/:name
