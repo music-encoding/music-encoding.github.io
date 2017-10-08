@@ -104,14 +104,15 @@ footer {
     }
 }
 
-a {
-    &.link_odd_elementSpec {
-        &:before {
-            content: '&lt;';
-        }
-        
-        &:after {
-            content: '&gt;';
-        }
+
+p.sectionToc a {
+    display: block;
+    
+    a.level-3 {
+        margin-left: 1.5em;
+    }
+    
+    a.level-4 {
+        margin-left: 3em;
     }
 }
