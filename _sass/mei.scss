@@ -125,3 +125,22 @@ a.link_odd_elementSpec {
         content: '>';
     }
 }
+
+.wovenodd-col1 {
+    vertical-align: top;
+}
+
+.wovenodd-col2 .code {
+    .indent1 .indent {
+        margin-left: 1em;
+    }
+    
+    .attribute .attributevalue {
+        margin-left: -.6em;
+        
+        a {
+            margin-left: -.6em;
+        }
+    }
+}
+
