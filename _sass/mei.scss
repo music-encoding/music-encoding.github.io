@@ -104,15 +104,15 @@ footer {
     }
 }
 
-
 p.sectionToc a {
     display: block;
     
-    a.level-3 {
+    &.level-3 {
         margin-left: 1.5em;
+        
     }
     
-    a.level-4 {
+    &.level-4 {
         margin-left: 3em;
     }
 }
