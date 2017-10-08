@@ -1,11 +1,11 @@
 {% for entry in site.menu %}
     <span class="dropdown dropdownCustomMenuToggle">
         {% unless entry.submenu %}
-            <a href="{{m.url}}" class="btn btn-link top-menu-link" tabindex="{{ forloop.index0}}">
+            <a href="{{entry.url}}" class="btn btn-link top-menu-link" tabindex="{{forloop.index0 }}">
                 {{ entry.label }}
             </a>
         {% else %}
-            <a href="#" class="btn btn-link dropdown-toggle top-menu-link" tabindex="{{ forloop.index0}}">
+            <a href="#" class="btn btn-link dropdown-toggle top-menu-link" tabindex="{{forloop.index0}}">
                 {{ entry.label }} <i class="icon icon-caret"></i>
             </a>
             

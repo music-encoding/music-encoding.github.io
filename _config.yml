@@ -2,7 +2,7 @@
 title: Music Encoding Initiative
 email: info@music-encoding.org
 baseurl: "" 
-url: "http://music-encoding.org" # the base hostname & protocol for your site
+url: "https://music-encoding.github.io" # the base hostname & protocol for your site
 twitter_username: music-encoding
 
 # Build settings
@@ -72,7 +72,7 @@ menu:
             url: '/bibliography.html'
     - id: documentation
       label: 'Documentation'
-      url: 'http://music-encoding.org/documentation/3.0.0/chapters/'
+      url: '/guidelines'
     - id: archive
       label: 'Archive'
       url: '/archive'
@@ -80,7 +80,7 @@ menu:
 sidemenu:  
     - id: conference
       label: 'Support'
-      url: '/mec/2018/'   
+      url: '/conference/2018/'   
       content: 
           - id: venue
             label: 'Venue'
