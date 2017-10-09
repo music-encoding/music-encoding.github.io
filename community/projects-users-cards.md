@@ -6,7 +6,7 @@ title: "Projects and users"
 <p>We have {{ c.docs.size }} projects</p>
 <div class="columns">
 {% for project in c.docs %}
-<div class="column col-6 col-xs-12">
+<div class="column col-4 col-xs-12">
     <div class="card">
         <div class="card-header">
             <div class="card-title h5">
@@ -20,7 +20,7 @@ title: "Projects and users"
             <img src="{{ project.image }}" class="img-responsive"/>
         </div>
         <div class="card-body">
-            <a href="{{ project.url }}.html">more</a>
+            <a href="{{ project.url }}.html">More ...</a>
         </div>
     </div>
 </div>

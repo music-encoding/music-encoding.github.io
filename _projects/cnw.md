@@ -1,4 +1,5 @@
 ---
+layout: projects
 name: "Carl Nielsen's Works"
 fullname: "Catalogue of Carl Nielsen's Works (CNW)"
 image: http://music-encoding.org/wp-content/uploads/2015/03/BeethovensWerkstattGraphic02-300x165.jpg
