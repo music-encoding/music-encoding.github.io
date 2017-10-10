@@ -25,7 +25,9 @@ title: "Projects and users"
               </div>
           </div>
           <div class="card-image">
+              {% if project.image %}
               <img src="{{ site.baseurl }}/images/{{ project.image }}" class="img-responsive"/>
+              {% endif %}
           </div>
           <div class="card-body">
               <a href="{{ project.url }}.html">More ...</a>

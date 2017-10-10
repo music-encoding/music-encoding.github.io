@@ -17,7 +17,9 @@ layout: default
         <div class="tile">
           <div class="tile-icon">
             <div class="example-tile-icon">
+              {% if project.image %}
               <a href="{{ project.url }}.html"><img src="{{ site.baseurl }}/images/{{ project.image }}" style="float: right; margin-left: 10px; margin-bottom: 5px; width: 100px;"></a>
+              {% endif %}
             </div>
           </div>
           <div class="tile-content">
