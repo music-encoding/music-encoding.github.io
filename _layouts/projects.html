@@ -4,8 +4,30 @@ layout: default
 <div class="columns">
     <div class="column col-8">
         <h2>{{ page.fullname }}</h2>
+        {% if page.image %}
+            <img src="{{ page.image }}" style="float: right; margin-left: 10px; margin-bottom: 5px;">
+        {% endif %}
         {{ content }}
     </div>
     <div class="column col-4">
+        <h2>Other projects</h2>
+        {% assign c = site.collections | where: "label","projects" | first %}
+        {% for project in c.docs %}
+        {% if project.name != page.name %}
+        <div class="tile">
+          <div class="tile-icon">
+            <div class="example-tile-icon">
+              <a href="{{ project.url }}.html"><img src="{{ project.image }}" style="float: right; margin-left: 10px; margin-bottom: 5px; width: 100px;"></a>
+            </div>
+          </div>
+          <div class="tile-content">
+            <p class="tile-title">{{ project.name }}</p>
+          </div>
+          <div class="tile-action">
+            <a href="{{ project.url }}.html">More ...</a>
+          </div>
+        </div>
+        {% endif %}
+        {% endfor %}
     </div>
 </div>

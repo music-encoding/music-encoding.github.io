@@ -2,7 +2,7 @@
 layout: projects
 name: "Detmold Court Theatre"
 fullname: "Development of an MEI and TEI based Model for Contextual Indexing of Music Documentation: Holdings of the Detmold Court Theatre (1825–1875)"
-image: http://music-encoding.org/wp-content/uploads/2015/03/BeethovensWerkstattGraphic02-300x165.jpg
+image:
 ---
 **Irmlind Capelle, Kristina Richts, Musikwissenschaftliches Seminar, Detmold/Paderborn**
 
