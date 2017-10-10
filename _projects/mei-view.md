@@ -2,7 +2,7 @@
 layout: projects
 name: "MEI View"
 fullname: "MEI View"
-image: http://music-encoding.org/wp-content/uploads/2015/03/meiViewGraphic-300x213.png
+image: "projects/mei-view.png"
 archive: true
 ---
 **Raffaele Viglianti, Maryland**

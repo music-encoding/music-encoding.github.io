@@ -2,7 +2,7 @@
 layout: projects
 name: "Giuseppe Sarti"
 fullname: "A cosmopolitan composer in pre-revolutionary Europe – Giuseppe Sarti"
-image: "http://music-encoding.org/wp-content/uploads/2015/03/sartiGraphic02trans.png"
+image: "projects/sarti.png"
 ---
 **Bella Brover-Lubovsky, Jerusalem and Christine Siegert/Dörte Schmidt, Berlin**
 

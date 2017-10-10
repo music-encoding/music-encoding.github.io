@@ -2,7 +2,7 @@
 layout: projects
 name: "The Lost Voices Project"
 fullname: "The Lost Voices Project: A Digital Domain for Renaissance Music"
-image: http://music-encoding.org/wp-content/uploads/2015/03/LostVoicesGraphic-300x222.png
+image: "projects/lost-voices.png"
 ---
 **Richard Freedman, Haverford College** **Philippe Vendrix, Centre d'Études Supérieures de la Renaissance (CESR), Tours**
 

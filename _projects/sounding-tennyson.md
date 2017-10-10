@@ -2,7 +2,7 @@
 layout: projects
 name: "Sounding Tennyson"
 fullname: "Sounding Tennyson"
-image: http://music-encoding.org/wp-content/uploads/2015/03/soundingTennyson2-300x122.png
+image: "projects/sounding-tennyson.png"
 ---
 **Phyllis Weliver, Saint Louis University**
 

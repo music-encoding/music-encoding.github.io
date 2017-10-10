@@ -2,7 +2,7 @@
 layout: projects
 name: "meico: MEI Converter"
 fullname: "meico: MEI Converter"
-image: http://music-encoding.org/wp-content/uploads/2015/03/meico-screenshot-300x158.png
+image: "projects/meico.png"
 ---
 **Axel Berndt (author), Benjamin W. Bohl (MEI consultant) Center of Music and Film Informatics, Detmold, Germany**
 

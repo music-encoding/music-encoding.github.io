@@ -2,7 +2,7 @@
 layout: projects
 name: "SIMSSA"
 fullname: "Single Interface for Music Score Searching and Analysis (SIMSSA)"
-image: http://music-encoding.org/wp-content/uploads/2015/03/simsaaBackgroundSmaller-300x145.jpg
+image: "projects/simssa.png"
 ---
 **Ichiro Fujinaga/Julie Cumming, McGill University, Montréal**
 

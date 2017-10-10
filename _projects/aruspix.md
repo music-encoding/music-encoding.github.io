@@ -2,7 +2,7 @@
 layout: projects
 name: "Aruspix"
 fullname: "Aruspix"
-image: http://music-encoding.org/wp-content/uploads/2015/04/aruspix-300x223.jpg
+image: "projects/aruspix.jpg"
 ---
 **Laurent Pugin, Geneva**
 

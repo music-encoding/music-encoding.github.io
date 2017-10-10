@@ -2,7 +2,7 @@
 layout: projects
 name: "Corpus monodicum"
 fullname: "Corpus monodicum"
-image: http://music-encoding.org/wp-content/uploads/2015/03/CM-ban-300x123.png
+image: "projects/corpus-monodicum.png"
 ---
 **Andreas Haug (head of project), Universität Würzburg and Thomas Weber (technical concept), Notengrafik Berlin**
 

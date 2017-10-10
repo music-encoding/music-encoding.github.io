@@ -2,7 +2,7 @@
 layout: projects
 name: "Enhancing Music Notation Addressability"
 fullname: "Enhancing Music Notation Addressability (EMA)"
-image: http://music-encoding.org/wp-content/uploads/2016/05/ema_omas-300x114.png
+image: "projects/ema.png"
 ---
 **Raffaele Viglianti, Richard Freedmann, Andrew Hankinson**
 

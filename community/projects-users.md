@@ -25,7 +25,7 @@ title: "Projects and users"
               </div>
           </div>
           <div class="card-image">
-              <img src="{{ project.image }}" class="img-responsive"/>
+              <img src="{{ site.baseurl }}/images/{{ project.image }}" class="img-responsive"/>
           </div>
           <div class="card-body">
               <a href="{{ project.url }}.html">More ...</a>
