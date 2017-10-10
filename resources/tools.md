@@ -4,6 +4,8 @@ title: "Tools"
 ---
 # Tools
 
+The MEI community provides a wide range of tools for working with MEI data. They can serve a whole range of purposes, from data creation or conversion to rendering or analysis. Some of them are full software applications, but many of them are libraries, modules or stylesheets to be integrated into larger software environments. All the tools listed here are open-source and freely available.
+
 ## Customization service
 
 The MEI schema can be customized for various needs. A customization can be used to disable existing features of MEI in order to obtain a schema validating only a subset of the original schema, for example, a customization for validating MEI documents containing only common Western music notation (CWMN). This customization will disable all the functionality contained in MEI for representing other types of notation (tablature, mensural, or neume).
