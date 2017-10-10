@@ -2,7 +2,7 @@
 layout: projects
 name: "Beethovens Werkstatt"
 fullname: "Beethovens Werkstatt: Genetic Textual Criticism and Digital Edition"
-image: "projects/beethoven.png"
+image: "projects/beethoven.jpg"
 ---
 **Bernhard R. Appel, Federica Rovelli, Susanne Cox, Richard Sänger, Beethovenhaus, Bonn** 
 **Joachim Veit, Johannes Kepper, Maja Hartwig, Musikwissenschaftliches Seminar, Detmold/Paderborn**
