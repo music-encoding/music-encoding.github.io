@@ -4,7 +4,7 @@ title:  "MEI Workshop Announcement"
 date:   2017-07-21 12:08:18
 categories: update
 ---
-A free, three-day, hands-on MEI workshop will be offered Monday, October 2nd through Wednesday, October 4th, 2017 at the University of Virginia Library in Charlottesville, Virginia. 
+A free, three-day, hands-on MEI workshop will be offered Monday, October 2nd 2017 at the University of Virginia Library in Charlottesville, Virginia. 
 
 Led by members of the Music Encoding Initiative Board and Technical Team, the workshop will consist of two parallel tracks – “Introduction to MEI” and “Advanced MEI”. 
 
