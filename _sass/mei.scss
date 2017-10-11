@@ -80,27 +80,19 @@ header.navbar {
 footer {
     margin-top: 20px;
     background-color: $dark-color;
-    color: #e5e5e5;
+    color: $mei-white;
     padding-bottom: 30px;
     
     a {
-        color: #e5e5e5;
+        color: $mei-white;
         font-weight: 300;
         &:visited, &:hover, &:active {
-            color: #e5e5e5;
+            color: $mei-white;
         }
     }
-    
+
     .institutions {
-        
         padding: 20px;
-        
-        .institutionsLink {
-            
-            img {
-                
-            }
-        }
     }
 }
 
