@@ -12,10 +12,10 @@ title: "Projects and users"
     <label class="chip" for="tag-1">Active</label>
     <label class="chip" for="tag-2">Archived</label>
   </div>
-  <div class="filter-body columns">
+  <div class="filter-body columns projects">
   {% for project in c.docs %}
   <div class="column filter-item col-4 col-xs-12" data-tag="{% if project.archive == true %}tag-2{% else %}tag-1{% endif %}">
-      <div class="card">
+      <div class="card project">
           <div class="card-header">
               <div class="card-title h5">
                   {{ project.name }}

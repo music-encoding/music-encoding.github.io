@@ -192,6 +192,13 @@ ul.nav li.nav-item:first-child {
     }
 }
 
+.projects {
+    .card {
+        margin-bottom: 1rem;
+        box-shadow: 0 5px 15px #00000033;
+    }
+}
+
 .example-tile-icon {
     align-content: space-around;
     align-items: center;
