@@ -73,44 +73,57 @@ layout: default
       <p>
         If you want to become an active MEI member, you are invited to read more about the community and then join us on the MEI-L mailing list.
       </p>
+
+      <h3>Sponsors</h3>
+      <div class="columns">
+        <div class="column one-half">
+          <a target="_blank" href="http://adwmainz.de">
+            <img src="{{ site.baseurl }}/pix/akademie-large.png" height="100" />
+          </a>
+        </div>
+        <div class="column one-half">
+          <a target="_blank" href="https://www.library.virginia.edu/">
+            <img src="{{ site.baseurl }}/pix/uva-libraries-logo-large.png" height="100" />
+          </a>
+        </div>
+      </div>
+      <div class="divider"></div>
+      <h4>Institutional Members</h4>
+      <div class="columns">
+        <div class="column one-third">
+          <a target="_blank" href="http://tido-music.com">
+            <img src="{{ site.baseurl }}/pix/tido-logo.png" height="80" />
+          </a>
+        </div>
+        <div class="column one-third">
+          <a href="http://zenmem.de" target="_blank">
+            <img src="{{ site.baseurl }}/pix/zenmem-logo.png" height="80" />
+          </a>
+        </div>
+        <div class="column">
+          <img src="{{ site.baseurl }}/pix/oeaw-logo.png" height="80" />
+        </div>
+      </div>
     </div>
     <div class="column col-4 newsMenu">
       <h4>News</h4>
       {% for post in site.posts limit:3 %}
+        {% if forloop.index0 > 0 %}
+        <div class="divider"></div>
+        {% endif %}
       
-      <!--<div class="panel">
-        <div class="panel-header">
-          <div class="panel-title"><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></div>
-        </div>
-        <div class="panel-nav">
-          <!-\- navigation components: tabs, breadcrumbs or pagination -\->
-        </div>
-        <div class="panel-body">
-          {{ post.excerpt }}
-          {{ post.date | date: "%b %-d, %Y" }}<!-\- contents -\->
-        </div>
-        <div class="panel-footer">
-          
-        </div>
-      </div>-->
-      
-      {% if forloop.index0 > 0 %}
-      <div class="divider"></div>
-      {% endif %}
-      
-      <div class="tile">
-        <div class="tile-icon">
-          <div class="example-tile-icon">
-            <i class="icon icon-forward centered"></i>
+        <div class="tile">
+          <div class="tile-icon">
+            <div class="example-tile-icon">
+              <i class="icon icon-forward centered"></i>
+            </div>
+          </div>
+          <div class="tile-content">
+            <h5 class="tile-title"><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h5>
+            <p class="tile-subtitle text-gray"><small>Posted {{ post.date | date: "%b %-d, %Y" }}</small></p>
+            <p>{{ post.excerpt }}</p>
           </div>
         </div>
-        <div class="tile-content">
-          <h5 class="tile-title"><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h5>
-          <p class="tile-subtitle text-gray"><small>Posted {{ post.date | date: "%b %-d, %Y" }}</small></p>
-          <p>{{ post.excerpt }}</p>
-        </div>
-        
-      </div>
       {% endfor %}
     </div>
   </div>
