@@ -8,6 +8,10 @@ title: "Past Music Encoding Conferences"
 
 Conference program 2017
 
+## MEC2017, Tours, France
+
+[Conference program 2017](2017ConferenceProgram.pdf "Music Encoding Conference Program 2017")
+
 ## MEC2016, Montreal, Canada
 
 [Conference program 2016](2016ConferenceProgram.pdf "Music Encoding Conference Program 2016")
