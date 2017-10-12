@@ -51,6 +51,9 @@ header.navbar {
 
     .navbar-brand {
         margin: 14px 14px 0 14px;
+        img {
+            height: 40px;
+        }
     }
 
     .logo {
@@ -93,6 +96,11 @@ footer {
 
     .institutions {
         padding: 20px;
+        & a.institutionsLink {
+           img {
+               height: 80px;  
+           } 
+        }
     }
 }
 
