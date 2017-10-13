@@ -51,8 +51,8 @@ $on-laptop:        800px;
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
-        "spectre-0.4.3/src/spectre.scss",
-        "spectre-0.4.3/src/spectre-exp.scss",
-        "spectre-0.4.3/src/spectre-icons.scss",
+        "spectre/spectre.scss",
+        "spectre/spectre-exp.scss",
+        "spectre/spectre-icons.scss",
         "mei.scss"
 ;
