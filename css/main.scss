@@ -3,6 +3,8 @@
 ---
 @charset "utf-8";
 
+$baseurl: "{{ site.baseurl }}";
+
 $mei-dark: #333333;
 $mei-highlight: #2440AA;
 $mei-white: #FFFFFF;
@@ -13,8 +15,8 @@ $dark-color: $mei-dark;
 
 
 // Our variables
-$base-font-family: Helvetica, Arial, sans-serif;
-$base-font-size:   16px;
+// $base-font-family: Helvetica, Arial, sans-serif;
+$base-font-size:   0.8rem;
 $small-font-size:  $base-font-size * 0.875;
 $menu-font-size:   0.8rem;
 $base-line-height: 1.5;
