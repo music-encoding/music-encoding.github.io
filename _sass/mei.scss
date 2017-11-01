@@ -217,3 +217,16 @@ ul.nav li.nav-item:first-child {
     height: 2rem;
     width: 2rem;
 }
+
+.newsTitle {
+    small {
+        display: block;
+        color: #666666;
+        font-size: 70%;
+    }
+}
+
+.newsEntry {
+    margin-left: 1rem;
+    margin-bottom: 3rem;
+}
