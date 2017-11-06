@@ -129,6 +129,11 @@ a.link_odd_elementSpec {
 a.guidelines-edit {
     margin-left: 10px;
     float: right;
+    opacity: .2;
+}
+
+h2:hover a.guidelines-edit, h3:hover a.guidelines-edit, h4:hover a.guidelines-edit, h5:hover a.guidelines-edit, h6:hover a.guidelines-edit {
+    opacity: 1;
 }
 
 .wovenodd-col1 {
