@@ -253,3 +253,19 @@ ul.nav li.nav-item:first-child {
         background: unset;
     }
 }
+
+/* Tag Library */
+
+table.wovenodd {
+    
+    border-collapse: collapse;
+    width: 100%;
+
+    & > tbody > tr > td {
+        border: .5px solid #cccccc;
+        
+        table thead {
+            display: none;
+        }
+    }
+}
