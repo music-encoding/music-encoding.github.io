@@ -145,13 +145,13 @@ h2:hover a.guidelines-edit, h3:hover a.guidelines-edit, h4:hover a.guidelines-ed
         margin-left: 1em;
     }
     
-    .attribute .attributevalue {
+    /*.attribute .attributevalue {
         margin-left: -.6em;
         
         a {
             margin-left: -.6em;
         }
-    }
+    }*/
 }
 
 div.tile {
@@ -255,6 +255,20 @@ ul.nav li.nav-item:first-child {
 }
 
 /* Tag Library */
+
+.attributeDef .attributeClasses {
+
+    font-weight: 300;
+
+    &:before {
+        content: '(→ ';
+        margin-left: 5px;
+    }
+    
+    &:after {
+        content: ')';
+    }
+}
 
 table.wovenodd {
     
