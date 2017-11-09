@@ -22,7 +22,7 @@ The MEI Board manages the property and business of MEI. It promotes the developm
 
 ### Term 2015-2018
 
-* **Benjamin W. Bohl,** Musikwissenschaftliches Seminar Detmold/Paderborn 
+* **Benjamin W. Bohl,** Institut für Musikwissenschaft, Goethe Universität Frankfurt, Frankfurt am Main
 * **Ichiro Fujinaga**, McGill University, Montréal 
 * **Perry Roland (Technical Co-Chair)**, University of Virginia Library, Charlottesville
 
