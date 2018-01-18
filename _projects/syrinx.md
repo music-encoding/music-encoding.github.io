@@ -2,7 +2,7 @@
 layout: projects
 name: "Debussy's Syrinx"
 fullname: "Case Study Report: Debussy's Syrinx (La Flûte de Pan)"
-image: 
+image: "projects/syrinx.jpg"
 archive: true
 ---
 **Raffaele Viglianti, London**

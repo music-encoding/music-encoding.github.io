@@ -1,8 +1,8 @@
 ---
 layout: projects
 name: "Haydn by Hand"
-fullname: "Haydn by Hand"
-image: 
+fullname: "This was one of the first projects that tried to enrich a facsimile-based digital edition with encodings of its contents"
+image: "projects/haydn.jpg"
 archive: true
 ---
 **Christine Siegert, Berlin**

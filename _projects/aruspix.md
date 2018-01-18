@@ -1,8 +1,8 @@
 ---
 layout: projects
 name: "Aruspix"
-fullname: "Aruspix"
-image: "projects/aruspix.jpg"
+fullname: "A software application for the optical recognition, the superimposition and the collation of early music prints"
+image: "projects/aruspix_superimposition.jpg"
 ---
 **Laurent Pugin, Geneva**
 

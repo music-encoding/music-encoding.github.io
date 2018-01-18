@@ -1,7 +1,7 @@
 ---
 layout: projects
 name: "MEI View"
-fullname: "MEI View"
+fullname: "A proof of concept that illustrates interactive ways to give access to a critical apparatus in a digital edition"
 image: "projects/mei-view.png"
 archive: true
 ---

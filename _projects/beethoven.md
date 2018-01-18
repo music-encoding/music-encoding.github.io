@@ -1,7 +1,7 @@
 ---
 layout: projects
 name: "Beethovens Werkstatt"
-fullname: "Beethovens Werkstatt: Genetic Textual Criticism and Digital Edition"
+fullname: "A long-term project that seeks to implement genetic textual criticism by the means of digital music editions"
 image: "projects/beethoven.jpg"
 ---
 **Bernhard R. Appel, Federica Rovelli, Susanne Cox, Richard Sänger, Beethovenhaus, Bonn** 
