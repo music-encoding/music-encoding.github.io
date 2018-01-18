@@ -1,7 +1,7 @@
 ---
 layout: projects
 name: "meico: MEI Converter"
-fullname: "meico: MEI Converter"
+fullname: "meico allows to render MEI files into audio, using high-quality MIDI libraries, and considering tempo indications, repetitions and other features"
 image: "projects/meico.png"
 ---
 **Axel Berndt (author), Benjamin W. Bohl (MEI consultant) Center of Music and Film Informatics, Detmold, Germany**

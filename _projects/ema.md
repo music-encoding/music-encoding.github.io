@@ -1,7 +1,7 @@
 ---
 layout: projects
 name: "Enhancing Music Notation Addressability"
-fullname: "Enhancing Music Notation Addressability (EMA)"
+fullname: "EMA provides a simple API that allows to reference music snippets for micro-publications etc. The Omas webservice implements this API for MEI"
 image: "projects/ema.png"
 ---
 **Raffaele Viglianti, Richard Freedmann, Andrew Hankinson**

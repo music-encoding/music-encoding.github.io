@@ -1,7 +1,7 @@
 ---
 layout: projects
 name: "SIMSSA"
-fullname: "Single Interface for Music Score Searching and Analysis (SIMSSA)"
+fullname: "The 'Single Interface for Music Score Searching and Analysis' project seeks to design an infrastructure for digitizing large corpora or music "
 image: "projects/simssa.jpg"
 ---
 **Ichiro Fujinaga/Julie Cumming, McGill University, Montréal**

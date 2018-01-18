@@ -1,7 +1,7 @@
 ---
 layout: projects
 name: "Sounding Tennyson"
-fullname: "Sounding Tennyson"
+fullname: "This website includes Emily Tennyson’s music settings of “Break, Break, Break,” which preserve aspects of Alfred Tennyson’s recitation"
 image: "projects/sounding-tennyson.png"
 ---
 **Phyllis Weliver, Saint Louis University**

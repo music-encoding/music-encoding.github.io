@@ -1,7 +1,7 @@
 ---
 layout: projects
 name: "Corpus monodicum"
-fullname: "Corpus monodicum"
+fullname: "A long term edition project of sacred and secular monophonic repertories of the European Middle Ages with Latin texts"
 image: "projects/corpus-monodicum.png"
 ---
 **Andreas Haug (head of project), Universität Würzburg and Thomas Weber (technical concept), Notengrafik Berlin**

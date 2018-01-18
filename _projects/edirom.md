@@ -1,8 +1,9 @@
 ---
 layout: projects
-name: "Digital Scholarly Editions with MEI"
-fullname: "Digital Scholarly Editions with MEI"
-image: 
+name: "Edirom"
+fullname: "A project that explored the potentials of MEI-based digital scholarly editions of music, which has been adopted by many editorial projects"
+image: "projects/edirom.jpg"
+archive: true
 ---
 **Edirom Project, Detmold**
 
