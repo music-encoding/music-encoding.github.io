@@ -61,9 +61,6 @@ menu:
           - id: introduction
             label: 'Introduction'
             url: '/introduction.html'
-          - id: repositories
-            label: 'Repositories'
-            url: '/repositories.html'
           - id: tools
             label: 'Tools'
             url: '/tools.html'
