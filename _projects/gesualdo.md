@@ -1,7 +1,7 @@
 ---
 layout: projects
 name: "Gesualdo Online Project"
-fullname: "Gesualdo Online, built on Omeka, is a collaborative digital edition built on Omeka, which invites outside contributions"
+fullname: "Gesualdo Online, built on Omeka, is a collaborative digital edition which invites outside contributions"
 image: "projects/gesualdo.jpg"
 ---
 **Philippe Vendrix (Project Director), Vincent Besson (Project Manager), Hyacinthe Belliot/David Fiala/Marco Gurrieri  (Editorial Team), CESR/CNRS/University of Tours**
