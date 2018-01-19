@@ -2,7 +2,7 @@
 layout: projects
 name: "OMR for Plainchant"
 fullname: "Optical Music Recognition for Plainchant"
-image: 
+image: "projects/omr.png"
 ---
 **Ichiro Fujinaga/Julie Cumming, Montréal**
 
