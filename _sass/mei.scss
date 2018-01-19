@@ -140,18 +140,62 @@ h2:hover a.guidelines-edit, h3:hover a.guidelines-edit, h4:hover a.guidelines-ed
     vertical-align: top;
 }
 
-.wovenodd-col2 .code {
-    .indent1 .indent {
-        margin-left: 1em;
+.wovenodd-col2 {
+    
+    .table td, .table th {
+        border-bottom: none;
     }
     
-    /*.attribute .attributevalue {
-        margin-left: -.6em;
-        
-        a {
-            margin-left: -.6em;
+    .table.table-striped tbody tr:nth-of-type(2n+1) {
+        background: #e5e5e5;
+    }
+    
+    .schematronText {
+        margin-bottom: .8rem;
+    }
+    
+    .code {
+
+        code {
+            background-color: #f5f5f5;
+            border: .5px solid #cccccc;
         }
-    }*/
+    
+        .indent1 .indent {
+            margin-left: 1em;
+        }
+        
+        .element {
+            color: #000080;
+            color: #4767b1;
+            
+            .attribute {
+                color: #008080;
+                color: #f98859;
+                
+            }
+            
+            .attributevalue {
+                color: #dd1144;
+                color: #a14415;
+            }
+        }
+        
+        .comment {
+            color: #999988;
+            color: #208420;
+            font-style: italic;
+        }
+        
+        /*.attribute .attributevalue {
+            margin-left: -.6em;
+            
+            a {
+                margin-left: -.6em;
+            }
+        }*/
+    }
+    
 }
 
 div.tile {
@@ -261,19 +305,28 @@ ul.nav li.nav-item:first-child {
 
 /* Tag Library */
 
-.attributeDef .attributeClasses {
+.attributeDef  {
 
-    font-weight: 300;
-
-    &:before {
-        content: '(→ ';
-        margin-left: 5px;
+    .attributeUsage, .attributeDesc {
+        margin-left: .3rem;
     }
+
+    .attributeClasses {
     
-    &:after {
-        content: ')';
+        font-weight: 300;
+    
+        &:before {
+            content: '(→ ';
+            margin-left: 5px;
+        }
+        
+        &:after {
+            content: ')';
+        }
     }
+
 }
+
 
 table.wovenodd {
     
@@ -282,6 +335,7 @@ table.wovenodd {
 
     & > tbody > tr > td {
         border: .5px solid #cccccc;
+        padding: .3rem;
         
         table thead {
             display: none;
