@@ -49,8 +49,6 @@ $on-laptop:        800px;
     }
 }
 
-
-
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
         "spectre/spectre.scss",
@@ -58,3 +56,55 @@ $on-laptop:        800px;
         "spectre/spectre-icons.scss",
         "mei.scss"
 ;
+
+/* MEC 2018 */
+.mec2018-register {
+  font-weight: bold;
+  border: 1px solid $mei-highlight;
+}
+
+.mec2018-register:hover {
+  border: none;
+  border: 1px solid white;
+}
+
+.mec2018-page {
+  h2, h3, h4, h5 {
+    margin: .5em 0 .5em 0;
+  }
+
+  .mec2018-logo {
+    height: 3em;
+  }
+
+  .mec2018-program-row {
+    margin: 30px 0 30px 15px;
+
+    .mec2018-program-title {
+      margin: 10px 0 10px 0;
+    }
+
+    .mec2018-program-speakers {
+      font-style: italic;
+      font-size: 0.6rem;
+    }
+
+    .card {
+      width: 250px;
+      margin: 20px 0 20px 0;
+      box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+
+      .card-title {
+        font-weight: bold;
+      }
+
+    }
+
+  }
+
+  .mec2018-program-row-main {
+    margin: 30px 0 30px 0;
+    background-color: #f4f4f4;
+    padding: 20px 10px 20px 10px;
+  }
+}

@@ -1,7 +1,7 @@
 # Site settings
 title: Music Encoding Initiative
 email: info@music-encoding.org
-baseurl: "" 
+baseurl: ""
 style_baseurl: ""
 url: "https://music-encoding.github.io" # the base hostname & protocol for your site
 twitter_username: music-encoding
@@ -73,28 +73,31 @@ menu:
     - id: archive
       label: 'Archive'
       url: '/archive'
-       
-sidemenu:  
+
+sidemenu:
     - id: conference
       label: 'Support'
-      url: '/conference/2018/'   
-      content: 
-          - id: venue
-            label: 'Venue'
-            url: 'venue.html'
-          - id: call
-            label: 'Call for papers'
-            url: 'call.html'
+      url: '/conference/2018/'
+      content:
+          - id: register
+            label: 'Register now'
+            url: ''
+          - id: about
+            label: 'About'
+            url: ''
           - id: program
             label: 'Program'
-            url: 'program.html'
-          - id: registration
-            label: 'Registration'
-            url: 'registration.html'
-          - id: accommodations
-            label: 'Accommodations'
-            url: 'accommodations.html'
-            
+            url: 'program'
+          - id: maps
+            label: 'Maps and Dining'
+            url: 'maps'
+          - id: travel
+            label: 'Travel and Accommodation'
+            url: 'travel'
+          - id: call
+            label: 'Call for proposals'
+            url: 'call'
+
 collections:
   projects:
     output: true
