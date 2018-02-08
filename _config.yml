@@ -1,9 +1,9 @@
 # Site settings
 title: Music Encoding Initiative
 email: info@music-encoding.org
-baseurl: ""
+baseurl: "http://music-encoding.org"
 style_baseurl: ""
-url: "https://music-encoding.github.io" # the base hostname & protocol for your site
+url: "http://music-encoding.org" # the base hostname & protocol for your site
 twitter_username: music-encoding
 
 # Build settings
