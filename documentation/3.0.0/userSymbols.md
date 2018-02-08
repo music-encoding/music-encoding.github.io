@@ -204,7 +204,7 @@ layout: oldGuidelines
                            </figure>
                            
                            <figure class="figure">
-                              <img src="../../../../guidelines/3.0.0/Images/modules/usersymbols/triangle.png" class="graphic"></img>
+                              <img src="./Images/modules/usersymbols/triangle.png" class="graphic">
                               <figcaption class="caption">Figure 53. Rendition of the triangle defined above</figcaption>
                            </figure>
                            
@@ -247,7 +247,7 @@ layout: oldGuidelines
                            </figure>
                            
                            <figure class="figure">
-                              <img src="../../../../guidelines/3.0.0/Images/modules/usersymbols/triangleWithStick.png" class="graphic"></img>
+                              <img src="./Images/modules/usersymbols/triangleWithStick.png" class="graphic">
                               <figcaption class="caption">Figure 54. Rendition of the composite triangle symbol</figcaption>
                            </figure>
                            
@@ -282,7 +282,7 @@ layout: oldGuidelines
                            </p>
                            
                            <figure class="figure">
-                              <img src="../../../../guidelines/3.0.0/Images/modules/usersymbols/mignon.png" class="graphic"></img>
+                              <img src="./Images/modules/usersymbols/mignon.png" class="graphic">
                               <figcaption class="caption">Figure 55. Voice leading visualization as found in an Edition Peters print of 
                                  <span class="titlem">Album für
                                     die Jugend
@@ -560,7 +560,7 @@ layout: oldGuidelines
                            </p>
                            
                            <figure class="figure">
-                              <img src="../../../../guidelines/3.0.0/Images/modules/usersymbols/percussion.png" class="graphic"></img>
+                              <img src="./Images/modules/usersymbols/percussion.png" class="graphic">
                               <figcaption class="caption">Figure 56. Indicating percussion instruments using pictograms</figcaption>
                            </figure>
                            
@@ -904,7 +904,7 @@ layout: oldGuidelines
                            </p>
                            
                            <figure class="figure">
-                              <img src="../../../../guidelines/3.0.0/Images/modules/usersymbols/charpentier.png" class="graphic"></img>
+                              <img src="./Images/modules/usersymbols/charpentier.png" class="graphic">
                               <figcaption class="caption">Figure 57. Different treble clef renditions as written by Charpentier (source: 
                                  <a class="link_ref" href="www.sscm-jscm.org/v12/no1/gosine.html">Journal of Seventeenth-Century Music,
                                     Volume 12, No. 1 (2006)
@@ -1418,7 +1418,7 @@ layout: oldGuidelines
                            </p>
                            
                            <figure class="figure">
-                              <img src="../../../../guidelines/3.0.0/Images/modules/usersymbols/bulge.png" class="graphic"></img>
+                              <img src="./Images/modules/usersymbols/bulge.png" class="graphic">
                               <figcaption class="caption">Figure 58. Rendering a bulge attribute with value "-2 1"</figcaption>
                            </figure>
                            

@@ -162,7 +162,7 @@ layout: oldGuidelines
                                  <div id="index.xml-egXML-d39e17559" class="pre egXML_valid"><span data-indentation="1" class="element">&lt;symbolDef <span class="attribute">xml:id</span>="<span class="attributevalue">userSymbols.triangleSymbol3</span>"&gt;</span><br /><br /> <span data-indentation="2" class="element">&lt;line <span class="attribute">x</span>="<span class="attributevalue">0</span>" <span class="attribute">x2</span>="<span class="attributevalue">2.55</span>" <span class="attribute">y</span>="<span class="attributevalue">0</span>" <span class="attribute">y2</span>="<span class="attributevalue">4.25</span>"/&gt;</span><br /><br /> <span data-indentation="2" class="element">&lt;line <span class="attribute">x</span>="<span class="attributevalue">2.55</span>" <span class="attribute">x2</span>="<span class="attributevalue">5.1</span>" <span class="attribute">y</span>="<span class="attributevalue">4.25</span>" <span class="attribute">y2</span>="<span class="attributevalue">0</span>"/&gt;</span><br /><br /> <span data-indentation="2" class="element">&lt;line <span class="attribute">x</span>="<span class="attributevalue">5.1</span>" <span class="attribute">x2</span>="<span class="attributevalue">0.85</span>" <span class="attribute">y</span>="<span class="attributevalue">0</span>" <span class="attribute">y2</span>="<span class="attributevalue">0</span>"/&gt;</span><br /><br /><span data-indentation="1" class="element">&lt;/symbolDef&gt;</span></div>
                               </figure>
                               <figure class="figure">
-                                 <figcaption class="caption">Figure 50. Rendition of the triangle defined above</figcaption><img src="/guidelines/Images/modules/usersymbols/triangle.png" alt="Rendition of the triangle defined above" class="graphic" /></figure>
+                                 <figcaption class="caption">Figure 50. Rendition of the triangle defined above</figcaption><img src="./Images/modules/usersymbols/triangle.png" alt="Rendition of the triangle defined above" class="graphic" ></figure>
                               <figure class="figure">
                                  <figcaption class="caption">Figure 51. Symbol composed of the symbol
                                     defined above and additional graphics primitives
@@ -172,7 +172,7 @@ layout: oldGuidelines
                               <figure class="figure">
                                  <figcaption class="caption">Figure 52. Rendition of the composite triangle
                                     symbol
-                                 </figcaption><img src="/guidelines/Images/modules/usersymbols/triangleWithStick.svg" alt="Rendition of the composite triangle symbol" class="graphic" /></figure>
+                                 </figcaption><img src="./Images/modules/usersymbols/triangleWithStick.svg" alt="Rendition of the composite triangle symbol" class="graphic" ></figure>
                            </div>
                            <div class="teidiv2" id="index.xml-body.1_div.23_div.2_div.2">
                               <h3><span class="headingNumber">23.2.2 </span><span class="head">Elements Without
@@ -192,7 +192,7 @@ layout: oldGuidelines
                               <figure class="figure" id="mignonFigure">
                                  <figcaption class="caption">Figure 53. Voice leading visualization as found in an Edition Peters print of <span class="titlem">Album für die Jugend</span> by Schumann, No. 35 (Mignon), measure
                                     6. (Unknown date, plate number is 10478.)
-                                 </figcaption><img src="/guidelines/Images/modules/usersymbols/mignon.svg" alt="Voice leading visualization as found in an Edition Peters print of  by Schumann, No. 35 (Mignon), measure 6. (Unknown date, plate number&#xA;          is 10478.)" class="graphic" /></figure>
+                                 </figcaption><img src="./Images/modules/usersymbols/mignon.svg" alt="Voice leading visualization as found in an Edition Peters print of  by Schumann, No. 35 (Mignon), measure 6. (Unknown date, plate number&#xA;          is 10478.)" class="graphic" ></figure>
                               <figure class="figure">
                                  <figcaption class="caption">Figure
                                     54. Encoding of the Schumann example
@@ -212,7 +212,7 @@ layout: oldGuidelines
                               <figure class="figure">
                                  <figcaption class="caption">Figure 55. Indicating percussion
                                     instruments using pictograms
-                                 </figcaption><img src="/guidelines/Images/modules/usersymbols/percussion.svg" alt="Indicating percussion instruments using pictograms" class="graphic" /></figure>
+                                 </figcaption><img src="./Images/modules/usersymbols/percussion.svg" alt="Indicating percussion instruments using pictograms" class="graphic" ></figure>
                               <figure class="figure">
                                  <figcaption class="caption">Figure 56. Encoding of
                                     above example
@@ -228,7 +228,7 @@ layout: oldGuidelines
                                     as written by Charpentier (source: <a class="link_ref" href="www.sscm-jscm.org/v12/no1/gosine.html">Journal of Seventeenth-Century Music,
                                        Volume 12, No. 1 (2006)</a>, <a class="link_ref" href="http://www.sscm-jscm.org/v12/no1/gosine.html#ch10">figure
                                        3</a>)
-                                 </figcaption><img src="/guidelines/Images/modules/usersymbols/charpentier.png" alt="Different treble clef renditions as written by Charpentier (source: , )" class="graphic" /></figure>
+                                 </figcaption><img src="./Images/modules/usersymbols/charpentier.png" alt="Different treble clef renditions as written by Charpentier (source: , )" class="graphic" ></figure>
                               <figure class="figure">
                                  <figcaption class="caption">Figure
                                     58. Defining two staffs, each using its own treble clef shape
@@ -386,7 +386,7 @@ layout: oldGuidelines
                               <figure class="figure">
                                  <figcaption class="caption">Figure 59. Rendering a bulge attribute with value "-2
                                     1"
-                                 </figcaption><img src="/guidelines/Images/modules/usersymbols/bulge.png" alt="Rendering a bulge attribute with value &#34;-2 1&#34;" class="graphic" /></figure>
+                                 </figcaption><img src="./Images/modules/usersymbols/bulge.png" alt="Rendering a bulge attribute with value &#34;-2 1&#34;" class="graphic" ></figure>
                               <p>The interpolation algorithm used by the rendering application is
                                  implementation dependent.
                               </p>

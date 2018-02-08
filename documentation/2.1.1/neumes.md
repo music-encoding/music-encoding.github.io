@@ -85,7 +85,7 @@ layout: oldGuidelines
                                  
                                  <tr class="data">
                                     
-                                    <td colspan="1" rowspan="1" class="data"><img src="/guidelines/Images/modules/neumes/parrish_neumes.png" alt="" class="graphic" /></td>
+                                    <td colspan="1" rowspan="1" class="data"><img src="./Images/modules/neumes/parrish_neumes.png" alt="" class="graphic"></td>
                                     
                                  </tr>
                                  

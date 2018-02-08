@@ -83,449 +83,227 @@ data.PGSCALE = <a class="link_odd" href="/documentation/2.1.1/data.PERCENT">data
                <div class="textwidget">
                   <ul class="guidelinesList">
                      <li><a xmlns="http://www.w3.org/1999/xhtml" class="link_odd A" href="/documentation/2.1.1/data.ACCIDENTAL.EXPLICIT">data.ACCIDENTAL.EXPLICIT</a></li>
-                     <li>
-                        <br></br>
-                     </li>
+                     
                      <li><a xmlns="http://www.w3.org/1999/xhtml" class="link_odd A" href="/documentation/2.1.1/data.ACCIDENTAL.IMPLICIT">data.ACCIDENTAL.IMPLICIT</a></li>
-                     <li>
-                        <br></br>
-                     </li>
+                     
                      <li><a xmlns="http://www.w3.org/1999/xhtml" class="link_odd A" href="/documentation/2.1.1/data.ARTICULATION">data.ARTICULATION</a></li>
-                     <li>
-                        <br></br>
-                     </li>
+                     
                      <li><a xmlns="http://www.w3.org/1999/xhtml" class="link_odd A" href="/documentation/2.1.1/data.ARTICULATIONS">data.ARTICULATIONS</a></li>
-                     <li>
-                        <br></br>
-                     </li>
+                     
                      <li><a xmlns="http://www.w3.org/1999/xhtml" class="link_odd A" href="/documentation/2.1.1/data.AUGMENTDOT">data.AUGMENTDOT</a></li>
-                     <li>
-                        <br></br>
-                     </li>
+                     
                      <li><a xmlns="http://www.w3.org/1999/xhtml" class="link_odd B" href="/documentation/2.1.1/data.BARPLACE">data.BARPLACE</a></li>
-                     <li>
-                        <br></br>
-                     </li>
+                     
                      <li><a xmlns="http://www.w3.org/1999/xhtml" class="link_odd B" href="/documentation/2.1.1/data.BARRENDITION">data.BARRENDITION</a></li>
-                     <li>
-                        <br></br>
-                     </li>
+                     
                      <li><a xmlns="http://www.w3.org/1999/xhtml" class="link_odd B" href="/documentation/2.1.1/data.BEAM">data.BEAM</a></li>
-                     <li>
-                        <br></br>
-                     </li>
+                     
                      <li><a xmlns="http://www.w3.org/1999/xhtml" class="link_odd B" href="/documentation/2.1.1/data.BEAMS">data.BEAMS</a></li>
-                     <li>
-                        <br></br>
-                     </li>
+                     
                      <li><a xmlns="http://www.w3.org/1999/xhtml" class="link_odd B" href="/documentation/2.1.1/data.BEAT">data.BEAT</a></li>
-                     <li>
-                        <br></br>
-                     </li>
+                     
                      <li><a xmlns="http://www.w3.org/1999/xhtml" class="link_odd B" href="/documentation/2.1.1/data.BEATRPT.REND">data.BEATRPT.REND</a></li>
-                     <li>
-                        <br></br>
-                     </li>
+                     
                      <li><a xmlns="http://www.w3.org/1999/xhtml" class="link_odd B" href="/documentation/2.1.1/data.BEND.AMOUNT">data.BEND.AMOUNT</a></li>
-                     <li>
-                        <br></br>
-                     </li>
+                     
                      <li><a xmlns="http://www.w3.org/1999/xhtml" class="link_odd B" href="/documentation/2.1.1/data.BOOLEAN">data.BOOLEAN</a></li>
-                     <li>
-                        <br></br>
-                     </li>
+                     
                      <li><a xmlns="http://www.w3.org/1999/xhtml" class="link_odd C" href="/documentation/2.1.1/data.CERTAINTY">data.CERTAINTY</a></li>
-                     <li>
-                        <br></br>
-                     </li>
+                     
                      <li><a xmlns="http://www.w3.org/1999/xhtml" class="link_odd C" href="/documentation/2.1.1/data.CLEFLINE">data.CLEFLINE</a></li>
-                     <li>
-                        <br></br>
-                     </li>
+                     
                      <li><a xmlns="http://www.w3.org/1999/xhtml" class="link_odd C" href="/documentation/2.1.1/data.CLEFSHAPE">data.CLEFSHAPE</a></li>
-                     <li>
-                        <br></br>
-                     </li>
+                     
                      <li><a xmlns="http://www.w3.org/1999/xhtml" class="link_odd C" href="/documentation/2.1.1/data.CLUSTER">data.CLUSTER</a></li>
-                     <li>
-                        <br></br>
-                     </li>
+                     
                      <li><a xmlns="http://www.w3.org/1999/xhtml" class="link_odd C" href="/documentation/2.1.1/data.COLOR">data.COLOR</a></li>
-                     <li>
-                        <br></br>
-                     </li>
+                     
                      <li><a xmlns="http://www.w3.org/1999/xhtml" class="link_odd C" href="/documentation/2.1.1/data.COLORS">data.COLORS</a></li>
-                     <li>
-                        <br></br>
-                     </li>
+                     
                      <li><a xmlns="http://www.w3.org/1999/xhtml" class="link_odd C" href="/documentation/2.1.1/data.CURVERENDITION">data.CURVERENDITION</a></li>
-                     <li>
-                        <br></br>
-                     </li>
+                     
                      <li><a xmlns="http://www.w3.org/1999/xhtml" class="link_odd D" href="/documentation/2.1.1/data.DEGREES">data.DEGREES</a></li>
-                     <li>
-                        <br></br>
-                     </li>
+                     
                      <li><a xmlns="http://www.w3.org/1999/xhtml" class="link_odd D" href="/documentation/2.1.1/data.DURATION">data.DURATION</a></li>
-                     <li>
-                        <br></br>
-                     </li>
+                     
                      <li><a xmlns="http://www.w3.org/1999/xhtml" class="link_odd D" href="/documentation/2.1.1/data.DURATION.additive">data.DURATION.additive</a></li>
-                     <li>
-                        <br></br>
-                     </li>
+                     
                      <li><a xmlns="http://www.w3.org/1999/xhtml" class="link_odd D" href="/documentation/2.1.1/data.DURATION.cmn">data.DURATION.cmn</a></li>
-                     <li>
-                        <br></br>
-                     </li>
+                     
                      <li><a xmlns="http://www.w3.org/1999/xhtml" class="link_odd D" href="/documentation/2.1.1/data.DURATION.gestural">data.DURATION.gestural</a></li>
-                     <li>
-                        <br></br>
-                     </li>
+                     
                      <li><a xmlns="http://www.w3.org/1999/xhtml" class="link_odd D" href="/documentation/2.1.1/data.DURATION.mensural">data.DURATION.mensural</a></li>
-                     <li>
-                        <br></br>
-                     </li>
+                     
                      <li><a xmlns="http://www.w3.org/1999/xhtml" class="link_odd E" href="/documentation/2.1.1/data.ENCLOSURE">data.ENCLOSURE</a></li>
-                     <li>
-                        <br></br>
-                     </li>
+                     
                      <li><a xmlns="http://www.w3.org/1999/xhtml" class="link_odd F" href="/documentation/2.1.1/data.FINGER.FRET">data.FINGER.FRET</a></li>
-                     <li>
-                        <br></br>
-                     </li>
+                     
                      <li><a xmlns="http://www.w3.org/1999/xhtml" class="link_odd F" href="/documentation/2.1.1/data.FONTFAMILY">data.FONTFAMILY</a></li>
-                     <li>
-                        <br></br>
-                     </li>
+                     
                      <li><a xmlns="http://www.w3.org/1999/xhtml" class="link_odd F" href="/documentation/2.1.1/data.FONTNAME">data.FONTNAME</a></li>
-                     <li>
-                        <br></br>
-                     </li>
+                     
                      <li><a xmlns="http://www.w3.org/1999/xhtml" class="link_odd F" href="/documentation/2.1.1/data.FONTSIZE">data.FONTSIZE</a></li>
-                     <li>
-                        <br></br>
-                     </li>
+                     
                      <li><a xmlns="http://www.w3.org/1999/xhtml" class="link_odd F" href="/documentation/2.1.1/data.FONTSTYLE">data.FONTSTYLE</a></li>
-                     <li>
-                        <br></br>
-                     </li>
+                     
                      <li><a xmlns="http://www.w3.org/1999/xhtml" class="link_odd F" href="/documentation/2.1.1/data.FONTWEIGHT">data.FONTWEIGHT</a></li>
-                     <li>
-                        <br></br>
-                     </li>
+                     
                      <li><a xmlns="http://www.w3.org/1999/xhtml" class="link_odd F" href="/documentation/2.1.1/data.FRET">data.FRET</a></li>
-                     <li>
-                        <br></br>
-                     </li>
+                     
                      <li><a xmlns="http://www.w3.org/1999/xhtml" class="link_odd F" href="/documentation/2.1.1/data.FRETNUMBER">data.FRETNUMBER</a></li>
-                     <li>
-                        <br></br>
-                     </li>
+                     
                      <li><a xmlns="http://www.w3.org/1999/xhtml" class="link_odd G" href="/documentation/2.1.1/data.GLISSANDO">data.GLISSANDO</a></li>
-                     <li>
-                        <br></br>
-                     </li>
+                     
                      <li><a xmlns="http://www.w3.org/1999/xhtml" class="link_odd G" href="/documentation/2.1.1/data.GRACE">data.GRACE</a></li>
-                     <li>
-                        <br></br>
-                     </li>
+                     
                      <li><a xmlns="http://www.w3.org/1999/xhtml" class="link_odd H" href="/documentation/2.1.1/data.HEADSHAPE">data.HEADSHAPE</a></li>
-                     <li>
-                        <br></br>
-                     </li>
+                     
                      <li><a xmlns="http://www.w3.org/1999/xhtml" class="link_odd I" href="/documentation/2.1.1/data.IDREF">data.IDREF</a></li>
-                     <li>
-                        <br></br>
-                     </li>
+                     
                      <li><a xmlns="http://www.w3.org/1999/xhtml" class="link_odd I" href="/documentation/2.1.1/data.IDREFS">data.IDREFS</a></li>
-                     <li>
-                        <br></br>
-                     </li>
+                     
                      <li><a xmlns="http://www.w3.org/1999/xhtml" class="link_odd I" href="/documentation/2.1.1/data.INEUMEFORM">data.INEUMEFORM</a></li>
-                     <li>
-                        <br></br>
-                     </li>
+                     
                      <li><a xmlns="http://www.w3.org/1999/xhtml" class="link_odd I" href="/documentation/2.1.1/data.INEUMENAME">data.INEUMENAME</a></li>
-                     <li>
-                        <br></br>
-                     </li>
+                     
                      <li><a xmlns="http://www.w3.org/1999/xhtml" class="link_odd I" href="/documentation/2.1.1/data.INTERVAL.AMOUNT">data.INTERVAL.AMOUNT</a></li>
-                     <li>
-                        <br></br>
-                     </li>
+                     
                      <li><a xmlns="http://www.w3.org/1999/xhtml" class="link_odd I" href="/documentation/2.1.1/data.ISODATE">data.ISODATE</a></li>
-                     <li>
-                        <br></br>
-                     </li>
+                     
                      <li><a xmlns="http://www.w3.org/1999/xhtml" class="link_odd I" href="/documentation/2.1.1/data.ISOTIME">data.ISOTIME</a></li>
-                     <li>
-                        <br></br>
-                     </li>
+                     
                      <li><a xmlns="http://www.w3.org/1999/xhtml" class="link_odd K" href="/documentation/2.1.1/data.KEYSIGNATURE">data.KEYSIGNATURE</a></li>
-                     <li>
-                        <br></br>
-                     </li>
+                     
                      <li><a xmlns="http://www.w3.org/1999/xhtml" class="link_odd K" href="/documentation/2.1.1/data.KEYSIGTOKEN">data.KEYSIGTOKEN</a></li>
-                     <li>
-                        <br></br>
-                     </li>
+                     
                      <li><a xmlns="http://www.w3.org/1999/xhtml" class="link_odd L" href="/documentation/2.1.1/data.LAYERSCHEME">data.LAYERSCHEME</a></li>
-                     <li>
-                        <br></br>
-                     </li>
+                     
                      <li><a xmlns="http://www.w3.org/1999/xhtml" class="link_odd L" href="/documentation/2.1.1/data.LIGATUREFORM">data.LIGATUREFORM</a></li>
-                     <li>
-                        <br></br>
-                     </li>
+                     
                      <li><a xmlns="http://www.w3.org/1999/xhtml" class="link_odd L" href="/documentation/2.1.1/data.LINERENDITION">data.LINERENDITION</a></li>
-                     <li>
-                        <br></br>
-                     </li>
+                     
                      <li><a xmlns="http://www.w3.org/1999/xhtml" class="link_odd M" href="/documentation/2.1.1/data.MEASUREBEAT">data.MEASUREBEAT</a></li>
-                     <li>
-                        <br></br>
-                     </li>
+                     
                      <li><a xmlns="http://www.w3.org/1999/xhtml" class="link_odd M" href="/documentation/2.1.1/data.MEASUREMENT">data.MEASUREMENT</a></li>
-                     <li>
-                        <br></br>
-                     </li>
+                     
                      <li><a xmlns="http://www.w3.org/1999/xhtml" class="link_odd M" href="/documentation/2.1.1/data.MELODICFUNCTION">data.MELODICFUNCTION</a></li>
-                     <li>
-                        <br></br>
-                     </li>
+                     
                      <li><a xmlns="http://www.w3.org/1999/xhtml" class="link_odd M" href="/documentation/2.1.1/data.MENSURATIONSIGN">data.MENSURATIONSIGN</a></li>
-                     <li>
-                        <br></br>
-                     </li>
+                     
                      <li><a xmlns="http://www.w3.org/1999/xhtml" class="link_odd M" href="/documentation/2.1.1/data.METERSIGN">data.METERSIGN</a></li>
-                     <li>
-                        <br></br>
-                     </li>
+                     
                      <li><a xmlns="http://www.w3.org/1999/xhtml" class="link_odd M" href="/documentation/2.1.1/data.MIDICHANNEL">data.MIDICHANNEL</a></li>
-                     <li>
-                        <br></br>
-                     </li>
+                     
                      <li><a xmlns="http://www.w3.org/1999/xhtml" class="link_odd M" href="/documentation/2.1.1/data.MIDINAMES">data.MIDINAMES</a></li>
-                     <li>
-                        <br></br>
-                     </li>
+                     
                      <li><a xmlns="http://www.w3.org/1999/xhtml" class="link_odd M" href="/documentation/2.1.1/data.MIDITEMPO">data.MIDITEMPO</a></li>
-                     <li>
-                        <br></br>
-                     </li>
+                     
                      <li><a xmlns="http://www.w3.org/1999/xhtml" class="link_odd M" href="/documentation/2.1.1/data.MIDIVALUE">data.MIDIVALUE</a></li>
-                     <li>
-                        <br></br>
-                     </li>
+                     
                      <li><a xmlns="http://www.w3.org/1999/xhtml" class="link_odd M" href="/documentation/2.1.1/data.MODE">data.MODE</a></li>
-                     <li>
-                        <br></br>
-                     </li>
+                     
                      <li><a xmlns="http://www.w3.org/1999/xhtml" class="link_odd M" href="/documentation/2.1.1/data.MODUSMAIOR">data.MODUSMAIOR</a></li>
-                     <li>
-                        <br></br>
-                     </li>
+                     
                      <li><a xmlns="http://www.w3.org/1999/xhtml" class="link_odd M" href="/documentation/2.1.1/data.MODUSMINOR">data.MODUSMINOR</a></li>
-                     <li>
-                        <br></br>
-                     </li>
+                     
                      <li><a xmlns="http://www.w3.org/1999/xhtml" class="link_odd M" href="/documentation/2.1.1/data.MUSICFONT">data.MUSICFONT</a></li>
-                     <li>
-                        <br></br>
-                     </li>
+                     
                      <li><a xmlns="http://www.w3.org/1999/xhtml" class="link_odd O" href="/documentation/2.1.1/data.OCTAVE">data.OCTAVE</a></li>
-                     <li>
-                        <br></br>
-                     </li>
+                     
                      <li><a xmlns="http://www.w3.org/1999/xhtml" class="link_odd O" href="/documentation/2.1.1/data.OCTAVE.DIS">data.OCTAVE.DIS</a></li>
-                     <li>
-                        <br></br>
-                     </li>
+                     
                      <li><a xmlns="http://www.w3.org/1999/xhtml" class="link_odd O" href="/documentation/2.1.1/data.ORIENTATION">data.ORIENTATION</a></li>
-                     <li>
-                        <br></br>
-                     </li>
+                     
                      <li><a xmlns="http://www.w3.org/1999/xhtml" class="link_odd O" href="/documentation/2.1.1/data.ORNAM.cmn">data.ORNAM.cmn</a></li>
-                     <li>
-                        <br></br>
-                     </li>
+                     
                      <li><a xmlns="http://www.w3.org/1999/xhtml" class="link_odd O" href="/documentation/2.1.1/data.ORNAMS.cmn">data.ORNAMS.cmn</a></li>
-                     <li>
-                        <br></br>
-                     </li>
+                     
                      <li><a xmlns="http://www.w3.org/1999/xhtml" class="link_odd O" href="/documentation/2.1.1/data.OTHERSTAFF">data.OTHERSTAFF</a></li>
-                     <li>
-                        <br></br>
-                     </li>
+                     
                      <li><a xmlns="http://www.w3.org/1999/xhtml" class="link_odd P" href="/documentation/2.1.1/data.PAGE.PANELS">data.PAGE.PANELS</a></li>
-                     <li>
-                        <br></br>
-                     </li>
+                     
                      <li><a xmlns="http://www.w3.org/1999/xhtml" class="link_odd P" href="/documentation/2.1.1/data.PERCENT">data.PERCENT</a></li>
-                     <li>
-                        <br></br>
-                     </li>
+                     
                      <li><a xmlns="http://www.w3.org/1999/xhtml" class="link_odd P" href="/documentation/2.1.1/data.PGSCALE">data.PGSCALE</a></li>
-                     <li>
-                        <br></br>
-                     </li>
+                     
                      <li><a xmlns="http://www.w3.org/1999/xhtml" class="link_odd P" href="/documentation/2.1.1/data.PITCHCLASS">data.PITCHCLASS</a></li>
-                     <li>
-                        <br></br>
-                     </li>
+                     
                      <li><a xmlns="http://www.w3.org/1999/xhtml" class="link_odd P" href="/documentation/2.1.1/data.PITCHNAME">data.PITCHNAME</a></li>
-                     <li>
-                        <br></br>
-                     </li>
+                     
                      <li><a xmlns="http://www.w3.org/1999/xhtml" class="link_odd P" href="/documentation/2.1.1/data.PITCHNAME.GES">data.PITCHNAME.GES</a></li>
-                     <li>
-                        <br></br>
-                     </li>
+                     
                      <li><a xmlns="http://www.w3.org/1999/xhtml" class="link_odd P" href="/documentation/2.1.1/data.PITCHNUMBER">data.PITCHNUMBER</a></li>
-                     <li>
-                        <br></br>
-                     </li>
+                     
                      <li><a xmlns="http://www.w3.org/1999/xhtml" class="link_odd P" href="/documentation/2.1.1/data.PLACE">data.PLACE</a></li>
-                     <li>
-                        <br></br>
-                     </li>
+                     
                      <li><a xmlns="http://www.w3.org/1999/xhtml" class="link_odd P" href="/documentation/2.1.1/data.PROLATIO">data.PROLATIO</a></li>
-                     <li>
-                        <br></br>
-                     </li>
+                     
                      <li><a xmlns="http://www.w3.org/1999/xhtml" class="link_odd R" href="/documentation/2.1.1/data.RATIO">data.RATIO</a></li>
-                     <li>
-                        <br></br>
-                     </li>
+                     
                      <li><a xmlns="http://www.w3.org/1999/xhtml" class="link_odd S" href="/documentation/2.1.1/data.SCALEDEGREE">data.SCALEDEGREE</a></li>
-                     <li>
-                        <br></br>
-                     </li>
+                     
                      <li><a xmlns="http://www.w3.org/1999/xhtml" class="link_odd S" href="/documentation/2.1.1/data.SIZE">data.SIZE</a></li>
-                     <li>
-                        <br></br>
-                     </li>
+                     
                      <li><a xmlns="http://www.w3.org/1999/xhtml" class="link_odd S" href="/documentation/2.1.1/data.SLASH">data.SLASH</a></li>
-                     <li>
-                        <br></br>
-                     </li>
+                     
                      <li><a xmlns="http://www.w3.org/1999/xhtml" class="link_odd S" href="/documentation/2.1.1/data.SLUR">data.SLUR</a></li>
-                     <li>
-                        <br></br>
-                     </li>
+                     
                      <li><a xmlns="http://www.w3.org/1999/xhtml" class="link_odd S" href="/documentation/2.1.1/data.SLURDIRECTION">data.SLURDIRECTION</a></li>
-                     <li>
-                        <br></br>
-                     </li>
+                     
                      <li><a xmlns="http://www.w3.org/1999/xhtml" class="link_odd S" href="/documentation/2.1.1/data.SLURS">data.SLURS</a></li>
-                     <li>
-                        <br></br>
-                     </li>
+                     
                      <li><a xmlns="http://www.w3.org/1999/xhtml" class="link_odd S" href="/documentation/2.1.1/data.STAFFLOC">data.STAFFLOC</a></li>
-                     <li>
-                        <br></br>
-                     </li>
+                     
                      <li><a xmlns="http://www.w3.org/1999/xhtml" class="link_odd S" href="/documentation/2.1.1/data.STAFFREL">data.STAFFREL</a></li>
-                     <li>
-                        <br></br>
-                     </li>
+                     
                      <li><a xmlns="http://www.w3.org/1999/xhtml" class="link_odd S" href="/documentation/2.1.1/data.STEMDIRECTION">data.STEMDIRECTION</a></li>
-                     <li>
-                        <br></br>
-                     </li>
+                     
                      <li><a xmlns="http://www.w3.org/1999/xhtml" class="link_odd S" href="/documentation/2.1.1/data.STEMMODIFIER">data.STEMMODIFIER</a></li>
-                     <li>
-                        <br></br>
-                     </li>
+                     
                      <li><a xmlns="http://www.w3.org/1999/xhtml" class="link_odd S" href="/documentation/2.1.1/data.STEMPOSITION">data.STEMPOSITION</a></li>
-                     <li>
-                        <br></br>
-                     </li>
+                     
                      <li><a xmlns="http://www.w3.org/1999/xhtml" class="link_odd S" href="/documentation/2.1.1/data.STRINGNUMBER">data.STRINGNUMBER</a></li>
-                     <li>
-                        <br></br>
-                     </li>
+                     
                      <li><a xmlns="http://www.w3.org/1999/xhtml" class="link_odd T" href="/documentation/2.1.1/data.TEMPERAMENT">data.TEMPERAMENT</a></li>
-                     <li>
-                        <br></br>
-                     </li>
+                     
                      <li><a xmlns="http://www.w3.org/1999/xhtml" class="link_odd T" href="/documentation/2.1.1/data.TEMPOVALUE">data.TEMPOVALUE</a></li>
-                     <li>
-                        <br></br>
-                     </li>
+                     
                      <li><a xmlns="http://www.w3.org/1999/xhtml" class="link_odd T" href="/documentation/2.1.1/data.TEMPUS">data.TEMPUS</a></li>
-                     <li>
-                        <br></br>
-                     </li>
+                     
                      <li><a xmlns="http://www.w3.org/1999/xhtml" class="link_odd T" href="/documentation/2.1.1/data.TEXTRENDITION">data.TEXTRENDITION</a></li>
-                     <li>
-                        <br></br>
-                     </li>
+                     
                      <li><a xmlns="http://www.w3.org/1999/xhtml" class="link_odd T" href="/documentation/2.1.1/data.TIE">data.TIE</a></li>
-                     <li>
-                        <br></br>
-                     </li>
+                     
                      <li><a xmlns="http://www.w3.org/1999/xhtml" class="link_odd T" href="/documentation/2.1.1/data.TIEDIRECTION">data.TIEDIRECTION</a></li>
-                     <li>
-                        <br></br>
-                     </li>
+                     
                      <li><a xmlns="http://www.w3.org/1999/xhtml" class="link_odd T" href="/documentation/2.1.1/data.TIES">data.TIES</a></li>
-                     <li>
-                        <br></br>
-                     </li>
+                     
                      <li><a xmlns="http://www.w3.org/1999/xhtml" class="link_odd T" href="/documentation/2.1.1/data.TSTAMPOFFSET">data.TSTAMPOFFSET</a></li>
-                     <li>
-                        <br></br>
-                     </li>
+                     
                      <li><a xmlns="http://www.w3.org/1999/xhtml" class="link_odd T" href="/documentation/2.1.1/data.TUPLET">data.TUPLET</a></li>
-                     <li>
-                        <br></br>
-                     </li>
+                     
                      <li><a xmlns="http://www.w3.org/1999/xhtml" class="link_odd T" href="/documentation/2.1.1/data.TUPLETS">data.TUPLETS</a></li>
-                     <li>
-                        <br></br>
-                     </li>
+                     
                      <li><a xmlns="http://www.w3.org/1999/xhtml" class="link_odd U" href="/documentation/2.1.1/data.UNEUMEFORM">data.UNEUMEFORM</a></li>
-                     <li>
-                        <br></br>
-                     </li>
+                     
                      <li><a xmlns="http://www.w3.org/1999/xhtml" class="link_odd U" href="/documentation/2.1.1/data.UNEUMENAME">data.UNEUMENAME</a></li>
-                     <li>
-                        <br></br>
-                     </li>
+                     
                      <li><a xmlns="http://www.w3.org/1999/xhtml" class="link_odd U" href="/documentation/2.1.1/data.URI">data.URI</a></li>
-                     <li>
-                        <br></br>
-                     </li>
+                     
                      <li><a xmlns="http://www.w3.org/1999/xhtml" class="link_odd U" href="/documentation/2.1.1/data.URIS">data.URIS</a></li>
-                     <li>
-                        <br></br>
-                     </li>
+                     
                      <li><a xmlns="http://www.w3.org/1999/xhtml" class="link_odd ." href="/documentation/2.1.1/macro.availabilityPart">macro.availabilityPart</a></li>
-                     <li>
-                        <br></br>
-                     </li>
+                     
                      <li><a xmlns="http://www.w3.org/1999/xhtml" class="link_odd ." href="/documentation/2.1.1/macro.bibldescPart">macro.bibldescPart</a></li>
-                     <li>
-                        <br></br>
-                     </li>
+                     
                      <li><a xmlns="http://www.w3.org/1999/xhtml" class="link_odd ." href="/documentation/2.1.1/macro.metaLike.page">macro.metaLike.page</a></li>
-                     <li>
-                        <br></br>
-                     </li>
+                     
                      <li><a xmlns="http://www.w3.org/1999/xhtml" class="link_odd ." href="/documentation/2.1.1/macro.musicPart">macro.musicPart</a></li>
-                     <li>
-                        <br></br>
-                     </li>
+                     
                      <li><a xmlns="http://www.w3.org/1999/xhtml" class="link_odd ." href="/documentation/2.1.1/macro.neumeModifierLike">macro.neumeModifierLike</a></li>
-                     <li>
-                        <br></br>
-                     </li>
+                     
                      <li><a xmlns="http://www.w3.org/1999/xhtml" class="link_odd ." href="/documentation/2.1.1/macro.XSLT">macro.XSLT</a></li>
-                     <li>
-                        <br></br>
-                     </li>
+                     
                   </ul>
                </div>
             </div>

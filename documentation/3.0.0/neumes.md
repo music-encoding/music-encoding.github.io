@@ -111,7 +111,7 @@ layout: oldGuidelines
                         </p>
                         
                         <figure class="figure">
-                           <img src="../../../../guidelines/3.0.0/Images/modules/neumes/parrish_neumes.png" class="graphic"></img>
+                           <img src="./Images/modules/neumes/parrish_neumes.png" class="graphic">
                            <figcaption class="caption">Figure 21. Table 1. Variant neume notation. (From Parrish, "The notation of medieval
                               music,"
                               6)
