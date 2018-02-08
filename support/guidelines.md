@@ -15,7 +15,7 @@ The following pages provide thorough documentation for the MEI encoding format.
 * [Model Classes]({{ site.baseurl }}/documentation/3.0.0/models) (model classes which are used to structure MEI)
 * [Data Types]({{ site.baseurl }}/documentation/3.0.0/data) (definitions of data types used by attributes)
 
-The MEI Guidelines and Data Dictionary are also available for [download in PDF](({{ site.baseurl }}/docs/MEI_Guidelines_v3.0.0.pdf) format.
+The MEI Guidelines and Data Dictionary are also available for [download in PDF]({{ site.baseurl }}/docs/MEI_Guidelines_v3.0.0.pdf) format.
 
 ## Version 2.1.1
 
@@ -25,4 +25,4 @@ The MEI Guidelines and Data Dictionary are also available for [download in PDF](
 * [Model Classes]({{ site.baseurl }}/documentation/2.1.1/models) (model classes which are used to structure MEI)
 * [Data Types]({{ site.baseurl }}/documentation/2.1.1/data) (definitions of data types used by attributes)
 
-The MEI Guidelines and Data Dictionary are also available for [download in PDF](({{ site.baseurl }}/docs/MEI_Guidelines_v2.1.1.pdf) format.
+The MEI Guidelines and Data Dictionary are also available for [download in PDF]({{ site.baseurl }}/docs/MEI_Guidelines_v2.1.1.pdf) format.
