@@ -386,7 +386,7 @@ layout: oldGuidelines
                         
                         
                         <figure class="figure">
-                           <img src="../../../../guidelines/3.0.0/Images/modules/mensural/ex_ligatures01.png" class="graphic"></img>
+                           <img src="./Images/modules/mensural/ex_ligatures01.png" class="graphic">
                            <figcaption class="caption">Figure 19. Recta and obliqua ligatures</figcaption>
                         </figure>
                         
@@ -475,7 +475,7 @@ layout: oldGuidelines
                         
                         
                         <figure class="figure">
-                           <img src="../../../../guidelines/3.0.0/Images/modules/mensural/ex_ligatures02.png" class="graphic"></img>
+                           <img src="./Images/modules/mensural/ex_ligatures02.png" class="graphic">
                            <figcaption class="caption">Figure 20. Ligature with more than two notes with recta and obliqua</figcaption>
                         </figure>
                         
