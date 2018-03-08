@@ -510,7 +510,7 @@ layout: oldGuidelines
                            <p>or labels that are chord tablature grids:</p>
                            
                            <figure class="figure">
-                              <img src="../../../../guidelines/3.0.0/Images/modules/harmony/A7_5th.gif" class="graphic"></img>
+                              <img src="./Images/modules/harmony/A7_5th.gif" class="graphic">
                               <figcaption class="caption">Figure 39. Chord grid without label</figcaption>
                            </figure>
                            
@@ -532,7 +532,7 @@ layout: oldGuidelines
                            <p>or labels that mix these styles:</p>
                            
                            <figure class="figure">
-                              <img src="../../../../guidelines/3.0.0/Images/modules/harmony/A7_1st.gif" class="graphic"></img>
+                              <img src="./Images/modules/harmony/A7_1st.gif" class="graphic">
                               <figcaption class="caption">Figure 40. Chord grid with label</figcaption>
                            </figure>
                            
@@ -627,7 +627,7 @@ layout: oldGuidelines
                               </p>
                               
                               <figure class="figure">
-                                 <img src="../../../../guidelines/3.0.0/Images/modules/harmony/figuredBass01.png" class="graphic"></img>
+                                 <img src="./Images/modules/harmony/figuredBass01.png" class="graphic">
                                  <figcaption class="caption">Figure 41. Figured bass</figcaption>
                               </figure>
                               
@@ -695,7 +695,7 @@ layout: oldGuidelines
                               </p>
                               
                               <figure class="figure">
-                                 <img src="../../../../guidelines/3.0.0/Images/modules/harmony/figuredBass02.png" class="graphic"></img>
+                                 <img src="./Images/modules/harmony/figuredBass02.png" class="graphic">
                                  <figcaption class="caption">Figure 42. Figured bass with accidental</figcaption>
                               </figure>
                               
@@ -748,7 +748,7 @@ layout: oldGuidelines
                               </p>
                               
                               <figure class="figure">
-                                 <img src="../../../../guidelines/3.0.0/Images/modules/harmony/figuredBass03.png" class="graphic"></img>
+                                 <img src="./Images/modules/harmony/figuredBass03.png" class="graphic">
                                  <figcaption class="caption">Figure 43. Figured bass with chromatically altered figure</figcaption>
                               </figure>
                               
@@ -780,7 +780,7 @@ layout: oldGuidelines
                               
                               
                               <figure class="figure">
-                                 <img src="../../../../guidelines/3.0.0/Images/modules/harmony/figuredBass04.png" class="graphic"></img>
+                                 <img src="./Images/modules/harmony/figuredBass04.png" class="graphic">
                                  <figcaption class="caption">Figure 44. Figured bass with chromatically altered figures</figcaption>
                               </figure>
                               
@@ -829,7 +829,7 @@ layout: oldGuidelines
                               </p>
                               
                               <figure class="figure">
-                                 <img src="../../../../guidelines/3.0.0/Images/modules/harmony/figuredBass05.png" class="graphic"></img>
+                                 <img src="./Images/modules/harmony/figuredBass05.png" class="graphic">
                                  <figcaption class="caption">Figure 45. Figured bass with chromatically altered figure</figcaption>
                               </figure>
                               
@@ -880,7 +880,7 @@ layout: oldGuidelines
                               </p>
                               
                               <figure class="figure">
-                                 <img src="../../../../guidelines/3.0.0/Images/modules/harmony/figuredBass06.png" class="graphic"></img>
+                                 <img src="./Images/modules/harmony/figuredBass06.png" class="graphic">
                                  <figcaption class="caption">Figure 46. Figured bass with alternative sign</figcaption>
                               </figure>
                               
@@ -964,7 +964,7 @@ layout: oldGuidelines
                               </p>
                               
                               <figure class="figure">
-                                 <img src="../../../../guidelines/3.0.0/Images/modules/harmony/figuredBass07.png" class="graphic"></img>
+                                 <img src="./Images/modules/harmony/figuredBass07.png" class="graphic">
                                  <figcaption class="caption">Figure 47. Figured bass repetition </figcaption>
                               </figure>
                               
@@ -1004,7 +1004,7 @@ layout: oldGuidelines
                               </p>
                               
                               <figure class="figure">
-                                 <img src="../../../../guidelines/3.0.0/Images/modules/harmony/figuredBass09.png" class="graphic"></img>
+                                 <img src="./Images/modules/harmony/figuredBass09.png" class="graphic">
                                  <figcaption class="caption">Figure 48. Extenders and repetition</figcaption>
                               </figure>
                               
@@ -1213,7 +1213,7 @@ layout: oldGuidelines
                               </p>
                               
                               <figure class="figure">
-                                 <img src="../../../../guidelines/3.0.0/Images/modules/harmony/figuredBass10.png" class="graphic"></img>
+                                 <img src="./Images/modules/harmony/figuredBass10.png" class="graphic">
                                  <figcaption class="caption">Figure 49. Figured bass with alternative sign</figcaption>
                               </figure>
                               

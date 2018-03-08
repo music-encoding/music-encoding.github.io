@@ -428,14 +428,14 @@ layout: oldGuidelines
                               <figure class="figure">
                                  <figcaption class="caption">Figure 35. Chord grid
                                     without label
-                                 </figcaption><img src="/guidelines/Images/modules/harmony/A7_5th.gif" alt="Chord grid without label" class="graphic" style=" width:124px;" /></figure>
+                                 </figcaption><img src="./Images/modules/harmony/A7_5th.gif" alt="Chord grid without label" class="graphic" style=" width:124px;" ></figure>
                               <div id="index.xml-egXML-d39e14167" class="pre egXML_valid">
                                  <span data-indentation="1" class="element">&lt;harm <span class="attribute">chordref</span>="<span class="attributevalue">#harmonychordA</span>" <span class="attribute">tstamp</span>="<span class="attributevalue">1</span>"/&gt;</span>
                                        
                               </div>
                               <p>or labels that mix these styles:</p>
                               <figure class="figure">
-                                 <figcaption class="caption">Figure 36. Chord grid with label</figcaption><img src="/guidelines/Images/modules/harmony/A7_1st.gif" alt="Chord grid with label" class="graphic" style=" width:124px;" /></figure>
+                                 <figcaption class="caption">Figure 36. Chord grid with label</figcaption><img src="./Images/modules/harmony/A7_1st.gif" alt="Chord grid with label" class="graphic" style=" width:124px;" ></figure>
                               <div id="index.xml-egXML-d39e14177" class="pre egXML_valid">
                                  <span data-indentation="1" class="element">&lt;harm <span class="attribute">chordref</span>="<span class="attributevalue">#harmonychordA</span>" <span class="attribute">rendgrid</span>="<span class="attributevalue">gridtext</span>" <span class="attribute">tstamp</span>="<span class="attributevalue">1</span>"&gt;</span>A7<span data-indentation="1" class="element">&lt;/harm&gt;</span>       
                               </div>
@@ -488,7 +488,7 @@ layout: oldGuidelines
                                     the markup of figured bass:
                                  </p>
                                  <figure class="figure">
-                                    <figcaption class="caption">Figure 37. Figured bass</figcaption><img src="/guidelines/Images/modules/harmony/figuredBass01.png" alt="Figured bass" class="graphic" /></figure>
+                                    <figcaption class="caption">Figure 37. Figured bass</figcaption><img src="./Images/modules/harmony/figuredBass01.png" alt="Figured bass" class="graphic" ></figure>
                                  <div id="index.xml-egXML-d39e14237" class="pre egXML_valid">
                                     <span data-indentation="1" class="element">&lt;harm <span class="attribute">place</span>="<span class="attributevalue">above</span>" <span class="attribute">staff</span>="<span class="attributevalue">1</span>" <span class="attribute">tstamp</span>="<span class="attributevalue">1</span>"&gt;</span>6<span data-indentation="1" class="element">&lt;/harm&gt;</span>         
                                  </div>
@@ -509,7 +509,7 @@ layout: oldGuidelines
                                  <figure class="figure">
                                     <figcaption class="caption">Figure
                                        38. Figured bass with accidental
-                                    </figcaption><img src="/guidelines/Images/modules/harmony/figuredBass02.png" alt="Figured bass with accidental" class="graphic" /></figure>
+                                    </figcaption><img src="./Images/modules/harmony/figuredBass02.png" alt="Figured bass with accidental" class="graphic" ></figure>
                                  <div id="index.xml-egXML-d39e14261" class="pre egXML_valid">
                                     <span data-indentation="1" class="element">&lt;harm <span class="attribute">place</span>="<span class="attributevalue">above</span>" <span class="attribute">staff</span>="<span class="attributevalue">1</span>" <span class="attribute">tstamp</span>="<span class="attributevalue">1</span>"&gt;</span><br />   <span data-indentation="2" class="element">&lt;fb&gt;</span><br />     <span data-indentation="3" class="element">&lt;f&gt;</span>7<span data-indentation="3" class="element">&lt;/f&gt;</span><br />     <span data-indentation="3" class="element">&lt;f&gt;</span>♮<span data-indentation="3" class="element">&lt;/f&gt;</span><br />   <span data-indentation="2" class="element">&lt;/fb&gt;</span><br />
                                     <span data-indentation="1" class="element">&lt;/harm&gt;</span>         
@@ -525,7 +525,7 @@ layout: oldGuidelines
                                  <figure class="figure">
                                     <figcaption class="caption">Figure 39.
                                        Figured bass with chromatically altered figure
-                                    </figcaption><img src="/guidelines/Images/modules/harmony/figuredBass03.png" alt="Figured bass with chromatically altered figure" class="graphic" /></figure>
+                                    </figcaption><img src="./Images/modules/harmony/figuredBass03.png" alt="Figured bass with chromatically altered figure" class="graphic" ></figure>
                                  <div id="index.xml-egXML-d39e14288" class="pre egXML_valid">
                                     <span data-indentation="1" class="element">&lt;harm <span class="attribute">place</span>="<span class="attributevalue">below</span>"&gt;</span><br />   <span data-indentation="2" class="element">&lt;fb&gt;</span><br />     <span data-indentation="3" class="element">&lt;f&gt;</span>7♭<span data-indentation="3" class="element">&lt;/f&gt;</span><br />   <span data-indentation="2" class="element">&lt;/fb&gt;</span><br />
                                     <span data-indentation="1" class="element">&lt;/harm&gt;</span>         
@@ -533,7 +533,7 @@ layout: oldGuidelines
                                  <figure class="figure">
                                     <figcaption class="caption">Figure 40. Figured bass with chromatically altered
                                        figures
-                                    </figcaption><img src="/guidelines/Images/modules/harmony/figuredBass04.png" alt="Figured bass with chromatically altered figures" class="graphic" /></figure>
+                                    </figcaption><img src="./Images/modules/harmony/figuredBass04.png" alt="Figured bass with chromatically altered figures" class="graphic" ></figure>
                                  <div id="index.xml-egXML-d39e14303" class="pre egXML_valid">
                                     <span data-indentation="1" class="element">&lt;harm&gt;</span><br />   <span data-indentation="2" class="element">&lt;fb&gt;</span><br />
                                         <span data-indentation="3" class="element">&lt;f&gt;</span>6<span data-indentation="3" class="element">&lt;/f&gt;</span><br />
@@ -550,7 +550,7 @@ layout: oldGuidelines
                                  <figure class="figure">
                                     <figcaption class="caption">Figure 41. Figured bass with chromatically altered
                                        figure
-                                    </figcaption><img src="/guidelines/Images/modules/harmony/figuredBass05.png" alt="Figured bass with chromatically altered figure" class="graphic" /></figure>
+                                    </figcaption><img src="./Images/modules/harmony/figuredBass05.png" alt="Figured bass with chromatically altered figure" class="graphic" ></figure>
                                  <div id="index.xml-egXML-d39e14332" class="pre egXML_valid">
                                     <span data-indentation="1" class="element">&lt;harm&gt;</span><br />   <span data-indentation="2" class="element">&lt;fb&gt;</span><br />
                                         <span data-indentation="3" class="element">&lt;f&gt;</span>6<span class="solidus">⃥</span><span data-indentation="3" class="element">&lt;/f&gt;</span><br />          <span data-indentation="3" class="element">&lt;f&gt;</span>6\<span data-indentation="3" class="element">&lt;/f&gt;</span><br />   <span data-indentation="2" class="element">&lt;/fb&gt;</span><br />
@@ -566,7 +566,7 @@ layout: oldGuidelines
                                     COMBINING INVERTED BREVE.
                                  </p>
                                  <figure class="figure">
-                                    <figcaption class="caption">Figure 42. Figured bass with alternative sign</figcaption><img src="/guidelines/Images/modules/harmony/figuredBass06.png" alt="Figured bass with alternative sign" class="graphic" /></figure>
+                                    <figcaption class="caption">Figure 42. Figured bass with alternative sign</figcaption><img src="./Images/modules/harmony/figuredBass06.png" alt="Figured bass with alternative sign" class="graphic" ></figure>
                                  <div id="index.xml-egXML-d39e14358" class="pre egXML_invalid">
                                     <span data-indentation="1" class="element">&lt;harm <span class="attribute">tstamp</span>="<span class="attributevalue">1</span>"&gt;</span><br />   <span data-indentation="2" class="element">&lt;fb&gt;</span><br />     <span data-indentation="3" class="element">&lt;f&gt;</span>̑<span data-indentation="3" class="element">&lt;/f&gt;</span><br />     <span data-indentation="3" class="element">&lt;f <span class="attribute">extender</span>="<span class="attributevalue">true</span>"&gt;</span>5<span data-indentation="3" class="element">&lt;/f&gt;</span><br />     <span data-indentation="3" class="element">&lt;f <span class="attribute">altsym</span>="<span class="attributevalue">combo2plus</span>"&gt;</span>2+<span data-indentation="3" class="element">&lt;/f&gt;</span><br />   <span data-indentation="2" class="element">&lt;/fb&gt;</span><br />
                                     <span data-indentation="1" class="element">&lt;/harm&gt;</span><br />
@@ -581,7 +581,7 @@ layout: oldGuidelines
                                     figured bass encoding schemes.
                                  </p>
                                  <figure class="figure">
-                                    <figcaption class="caption">Figure 43. Figured bass repetition </figcaption><img src="/guidelines/Images/modules/harmony/figuredBass07.png" alt="Figured bass repetition " class="graphic" /></figure>
+                                    <figcaption class="caption">Figure 43. Figured bass repetition </figcaption><img src="./Images/modules/harmony/figuredBass07.png" alt="Figured bass repetition " class="graphic" ></figure>
                                  <div id="index.xml-egXML-d39e14397" class="pre egXML_valid">
                                     <span data-indentation="1" class="element">&lt;harm <span class="attribute">tstamp</span>="<span class="attributevalue">1.5</span>"&gt;</span><br />   <span data-indentation="2" class="element">&lt;fb&gt;</span><br />     <span data-indentation="3" class="element">&lt;f&gt;</span><br />-<span data-indentation="3" class="element">&lt;/f&gt;</span><br />   <span data-indentation="2" class="element">&lt;/fb&gt;</span><br />
                                     <span data-indentation="1" class="element">&lt;/harm&gt;</span>         
@@ -596,7 +596,7 @@ layout: oldGuidelines
                                  <figure class="figure">
                                     <figcaption class="caption">Figure 44. Extenders
                                        and repetition
-                                    </figcaption><img src="/guidelines/Images/modules/harmony/figuredBass09.png" alt="Extenders and repetition" class="graphic" /></figure>
+                                    </figcaption><img src="./Images/modules/harmony/figuredBass09.png" alt="Extenders and repetition" class="graphic" ></figure>
                                  <div id="index.xml-egXML-d39e14414" class="pre egXML_invalid">
                                     <span data-indentation="1" class="element">&lt;harm <span class="attribute">tstamp</span>="<span class="attributevalue">3.5</span>"&gt;</span><br />   <span data-indentation="2" class="element">&lt;fb&gt;</span><br />     <span data-indentation="3" class="element">&lt;f&gt;</span>♭3<span data-indentation="3" class="element">&lt;/f&gt;</span><br />     <span data-indentation="3" class="element">&lt;f&gt;</span>6<span data-indentation="3" class="element">&lt;/f&gt;</span><br />     <span data-indentation="3" class="element">&lt;f&gt;</span>5<span data-indentation="3" class="element">&lt;/f&gt;</span><br />   <span data-indentation="2" class="element">&lt;/fb&gt;</span><br />
                                     <span data-indentation="1" class="element">&lt;/harm&gt;</span><br />
@@ -629,7 +629,7 @@ layout: oldGuidelines
                                     encoding source material.
                                  </p>
                                  <figure class="figure">
-                                    <figcaption class="caption">Figure 45. Figured bass with alternative sign</figcaption><img src="/guidelines/Images/modules/harmony/figuredBass10.png" alt="Figured bass with alternative sign" class="graphic" /></figure>
+                                    <figcaption class="caption">Figure 45. Figured bass with alternative sign</figcaption><img src="./Images/modules/harmony/figuredBass10.png" alt="Figured bass with alternative sign" class="graphic" ></figure>
                                  <div id="index.xml-egXML-d39e14510" class="pre egXML_invalid">
                                     <span data-indentation="1" class="element">&lt;harm <span class="attribute">tstamp</span>="<span class="attributevalue">3</span>"&gt;</span><br />   <span data-indentation="2" class="element">&lt;fb&gt;</span><br />     <span data-indentation="3" class="element">&lt;f&gt;</span>8<span data-indentation="3" class="element">&lt;/f&gt;</span><br />     <span data-indentation="3" class="element">&lt;f <span class="attribute">altsym</span>="<span class="attributevalue">#my6_1</span>" <span class="attribute">facs</span>="<span class="attributevalue">#source6_1</span>"&gt;</span>6♮<span data-indentation="3" class="element">&lt;/f&gt;</span><br />     <span data-indentation="3" class="element">&lt;f&gt;</span>4+<span data-indentation="3" class="element">&lt;/f&gt;</span><br />     <span data-indentation="3" class="element">&lt;f&gt;</span>2<span data-indentation="3" class="element">&lt;/f&gt;</span><br />   <span data-indentation="2" class="element">&lt;/fb&gt;</span><br />
                                     <span data-indentation="1" class="element">&lt;/harm&gt;</span><br />

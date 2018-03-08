@@ -270,7 +270,7 @@ layout: oldGuidelines
                         </p>
                         
                         <figure class="figure">
-                           <img src="../../../../guidelines/3.0.0/Images/modules/analysis/Schubert_Erlkonig_Op1_m1.png" class="graphic"></img>
+                           <img src="./Images/modules/analysis/Schubert_Erlkonig_Op1_m1.png" class="graphic">
                            <figcaption class="caption">Figure 22. First measure of Schubert's Erlkönig</figcaption>
                         </figure>
                         
@@ -626,7 +626,7 @@ layout: oldGuidelines
                         </p>
                         
                         <figure class="figure">
-                           <img src="../../../../guidelines/3.0.0/Images/modules/analysis/chor003_m1-2.png" class="graphic"></img>
+                           <img src="./Images/modules/analysis/chor003_m1-2.png" class="graphic">
                            <figcaption class="caption">Figure 23. Bach Chorale, 
                               <span class="titlem">Ach Gott, vom Himmel sieh' darein</span>, m. 1-2
                            </figcaption>
@@ -1090,7 +1090,7 @@ layout: oldGuidelines
                         </p>
                         
                         <figure class="figure">
-                           <img src="../../../../guidelines/3.0.0/Images/modules/analysis/chor003_m6-7.png" class="graphic"></img>
+                           <img src="./Images/modules/analysis/chor003_m6-7.png" class="graphic">
                            <figcaption class="caption">Figure 24. Bach Chorale, 
                               <span class="titlem">Ach Gott, vom Himmel sieh' darein</span>, m. 6-7
                            </figcaption>

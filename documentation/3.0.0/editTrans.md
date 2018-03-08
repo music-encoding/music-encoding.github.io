@@ -460,7 +460,7 @@ layout: oldGuidelines
                            </p>
                            
                            <figure class="figure">
-                              <img src="../../../../guidelines/3.0.0/Images/ExampleImages/cpMark_2.png" class="graphic"></img>
+                              <img src="./Images/ExampleImages/cpMark_2.png" class="graphic">
                               <figcaption class="caption">Figure 37. Copy marks in the first and second violin of C.M.v.Weber's Freischütz,
                                  Autograph, Nr.3
                                  (Walzer), measures 223-231
@@ -562,7 +562,7 @@ layout: oldGuidelines
                            </div>
                            
                            <figure class="figure">
-                              <img src="../../../../guidelines/3.0.0/Images/ExampleImages/cpMark_3.png" class="graphic"></img>
+                              <img src="./Images/ExampleImages/cpMark_3.png" class="graphic">
                               <figcaption class="caption">Figure 38. A transcription of the example above with all shorthand resolved and colored</figcaption>
                            </figure>
                            

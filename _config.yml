@@ -3,7 +3,7 @@ title: Music Encoding Initiative
 email: info@music-encoding.org
 baseurl: ""
 style_baseurl: ""
-url: "https://music-encoding.github.io" # the base hostname & protocol for your site
+url: "http://music-encoding.org" # the base hostname & protocol for your site
 twitter_username: music-encoding
 
 # Build settings
@@ -77,26 +77,25 @@ menu:
 sidemenu:
     - id: conference
       label: 'Support'
-      url: '/conference/2018/'
       content:
           - id: register
             label: 'Register now'
-            url: ''
+            url: 'https://umd-mith-conference.fasttransact.net'
           - id: about
             label: 'About'
-            url: ''
+            url: '/conference/2018/'
           - id: program
             label: 'Program'
-            url: 'program'
+            url: '/conference/2018/program'
           - id: maps
             label: 'Maps and Dining'
-            url: 'maps'
+            url: '/conference/2018/maps'
           - id: travel
             label: 'Travel and Accommodation'
-            url: 'travel'
+            url: '/conference/2018/travel'
           - id: call
             label: 'Call for proposals'
-            url: 'call'
+            url: '/conference/2018/call'
 
 collections:
   projects:

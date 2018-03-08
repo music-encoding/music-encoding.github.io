@@ -1254,7 +1254,7 @@ layout: oldGuidelines
                                  </p>
                                  
                                  <figure class="figure">
-                                    <img src="../../../../guidelines/3.0.0/Images/modules/cmn/grace-300.png" class="graphic"></img>
+                                    <img src="./Images/modules/cmn/grace-300.png" class="graphic">
                                     <figcaption class="caption">Figure 2. Grace notes</figcaption>
                                  </figure>
                                  
@@ -1472,7 +1472,7 @@ layout: oldGuidelines
                                  </p>
                                  
                                  <figure class="figure">
-                                    <img src="../../../../guidelines/3.0.0/Images/modules/cmn/xchord-300.png" class="graphic"></img>
+                                    <img src="./Images/modules/cmn/xchord-300.png" class="graphic">
                                     <figcaption class="caption">Figure 3. Cross-staff chord</figcaption>
                                  </figure>
                                  
@@ -1818,7 +1818,7 @@ layout: oldGuidelines
                                  </p>
                                  
                                  <figure class="figure">
-                                    <img src="../../../../guidelines/3.0.0/Images/ExampleImages/multirest.png" class="graphic"></img>
+                                    <img src="./Images/ExampleImages/multirest.png" class="graphic">
                                     <figcaption class="caption">Figure 4. Forms of multiple measure rests</figcaption>
                                  </figure>
                                  
@@ -1868,7 +1868,7 @@ layout: oldGuidelines
                                  </p>
                                  
                                  <figure class="figure">
-                                    <img src="../../../../guidelines/3.0.0/Images/ExampleImages/mspace-300-20100514.png" class="graphic"></img>
+                                    <img src="./Images/ExampleImages/mspace-300-20100514.png" class="graphic">
                                     <figcaption class="caption">Figure 5. Empty measure</figcaption>
                                  </figure>
                                  
@@ -2162,7 +2162,7 @@ layout: oldGuidelines
                            </p>
                            
                            <figure class="figure">
-                              <img src="../../../../guidelines/3.0.0/Images/ExampleImages/beam-a-20100510.png" class="graphic"></img>
+                              <img src="./Images/ExampleImages/beam-a-20100510.png" class="graphic">
                               <figcaption class="caption">Figure 6. Primary and secondary beams</figcaption>
                            </figure>
                            
@@ -2366,7 +2366,7 @@ layout: oldGuidelines
                            </p>
                            
                            <figure class="figure">
-                              <img src="../../../../guidelines/3.0.0/Images/modules/cmn/beamAcc-Rit.png" class="graphic"></img>
+                              <img src="./Images/modules/cmn/beamAcc-Rit.png" class="graphic">
                               <figcaption class="caption">Figure 7. Accelerando beams</figcaption>
                            </figure>
                            
@@ -2486,7 +2486,7 @@ layout: oldGuidelines
                            <!-- TODO: Cross-staff beaming using @beam.with -->
                            
                            <figure class="figure">
-                              <img src="../../../../guidelines/3.0.0/Images/ExampleImages/beam-c-20100510.png" class="graphic"></img>
+                              <img src="./Images/ExampleImages/beam-c-20100510.png" class="graphic">
                               <figcaption class="caption">Figure 8. Cross-staff beam</figcaption>
                            </figure>
                            
@@ -2911,7 +2911,7 @@ layout: oldGuidelines
                            </p>
                            
                            <figure class="figure">
-                              <img src="../../../../guidelines/3.0.0/Images/modules/cmn/finger-300.png" class="graphic"></img>
+                              <img src="./Images/modules/cmn/finger-300.png" class="graphic">
                               <figcaption class="caption">Figure 9. Ties across barlines</figcaption>
                            </figure>
                            
@@ -3314,7 +3314,7 @@ layout: oldGuidelines
                            </p>
                            
                            <figure class="figure">
-                              <img src="../../../../guidelines/3.0.0/Images/ExampleImages/slur-300-20100514.png" class="graphic"></img>
+                              <img src="./Images/ExampleImages/slur-300-20100514.png" class="graphic">
                               <figcaption class="caption">Figure 10. Slurs</figcaption>
                            </figure>
                            
@@ -5203,7 +5203,7 @@ layout: oldGuidelines
                               </p>
                               
                               <figure class="figure">
-                                 <img src="../../../../guidelines/3.0.0/Images/ExampleImages/btrem-a-20100510.png" class="graphic"></img>
+                                 <img src="./Images/ExampleImages/btrem-a-20100510.png" class="graphic">
                                  <figcaption class="caption">Figure 11. Bowed tremolandi</figcaption>
                               </figure>
                               
@@ -5491,7 +5491,7 @@ layout: oldGuidelines
                               </p>
                               
                               <figure class="figure">
-                                 <img src="../../../../guidelines/3.0.0/Images/ExampleImages/octave-a-20100510.png" class="graphic"></img>
+                                 <img src="./Images/ExampleImages/octave-a-20100510.png" class="graphic">
                                  <figcaption class="caption">Figure 12. Octave displacement</figcaption>
                               </figure>
                               
@@ -6133,7 +6133,7 @@ layout: oldGuidelines
                            </p>
                            
                            <figure class="figure">
-                              <img src="../../../../guidelines/3.0.0/Images/modules/cmn/reh_berlioz.png" class="graphic"></img>
+                              <img src="./Images/modules/cmn/reh_berlioz.png" class="graphic">
                               <figcaption class="caption">Figure 13. Rehearsal mark</figcaption>
                            </figure>
                            
@@ -6316,7 +6316,7 @@ layout: oldGuidelines
                               </p>
                               
                               <figure class="figure">
-                                 <img src="../../../../guidelines/3.0.0/Images/ExampleImages/beatrpt-20100510.png" class="graphic"></img>
+                                 <img src="./Images/ExampleImages/beatrpt-20100510.png" class="graphic">
                                  <figcaption class="caption">Figure 14. Beat repeat signs</figcaption>
                               </figure>
                               
@@ -6399,7 +6399,7 @@ layout: oldGuidelines
                               </p>
                               
                               <figure class="figure">
-                                 <img src="../../../../guidelines/3.0.0/Images/ExampleImages/mrpt-20100510.png" class="graphic"></img>
+                                 <img src="./Images/ExampleImages/mrpt-20100510.png" class="graphic">
                                  <figcaption class="caption">Figure 15. Measure repetition</figcaption>
                               </figure>
                               
@@ -6601,7 +6601,7 @@ layout: oldGuidelines
                               </p>
                               
                               <figure class="figure">
-                                 <img src="../../../../guidelines/3.0.0/Images/modules/cmn/halfmRpt_beethoven.png" class="graphic"></img>
+                                 <img src="./Images/modules/cmn/halfmRpt_beethoven.png" class="graphic">
                                  <figcaption class="caption">Figure 16. Half-measure repeat</figcaption>
                               </figure>
                               
@@ -6753,12 +6753,12 @@ layout: oldGuidelines
                               </p>
                               
                               <figure class="figure">
-                                 <img src="../../../../guidelines/3.0.0/Images/ExampleImages/mrpt2-20100510.png" class="graphic"></img>
+                                 <img src="./Images/ExampleImages/mrpt2-20100510.png" class="graphic">
                                  <figcaption class="caption">Figure 17. Two-measure repetition</figcaption>
                               </figure>
                               
                               <figure class="figure">
-                                 <img src="../../../../guidelines/3.0.0/Images/ExampleImages/multirpt-20100510.png" class="graphic"></img>
+                                 <img src="./Images/ExampleImages/multirpt-20100510.png" class="graphic">
                                  <figcaption class="caption">Figure 18. Multi-measure repetition</figcaption>
                               </figure>
                               

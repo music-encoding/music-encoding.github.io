@@ -223,7 +223,7 @@ layout: oldGuidelines
                         </p>
                         
                         <figure class="figure">
-                           <img src="../../../../guidelines/3.0.0/Images/modules/lyrics/ex_syl_att.png" class="graphic"></img>
+                           <img src="./Images/modules/lyrics/ex_syl_att.png" class="graphic">
                            <figcaption class="caption">Figure 50. Handel, Messiah HWV 56, Halleluja</figcaption>
                         </figure>
                         
@@ -591,7 +591,7 @@ layout: oldGuidelines
                         </p>
                         
                         <figure class="figure">
-                           <img src="../../../../guidelines/3.0.0/Images/modules/lyrics/ex_verse_m.png" class="graphic"></img>
+                           <img src="./Images/modules/lyrics/ex_verse_m.png" class="graphic">
                            <figcaption class="caption">Figure 51. Example from Wagner's Rheingold with translated text.</figcaption>
                         </figure>
                         
@@ -1013,7 +1013,7 @@ layout: oldGuidelines
                         </p>
                         
                         <figure class="figure">
-                           <img src="../../../../guidelines/3.0.0/Images/modules/lyrics/ex_lyric.png" class="graphic"></img>
+                           <img src="./Images/modules/lyrics/ex_lyric.png" class="graphic">
                            <figcaption class="caption">Figure 52. Weber, Der Freischütz</figcaption>
                         </figure>
                         
