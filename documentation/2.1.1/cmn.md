@@ -686,7 +686,7 @@ layout: oldGuidelines
                                        attribute indicates a grace note.
                                     </p>
                                     <figure class="figure">
-                                       <figcaption class="caption">Figure 1. Grace notes</figcaption><img src="/guidelines/Images/modules/cmn/grace-300.png" alt="Grace notes" class="graphic" style=" width:500px;" /></figure>
+                                       <figcaption class="caption">Figure 1. Grace notes</figcaption><img src="./Images/modules/cmn/grace-300.png" alt="Grace notes" class="graphic" style=" width:500px;" ></figure>
                                     <p>The encoding of the left-most example would
                                        look like this:
                                     </p>
@@ -780,7 +780,7 @@ layout: oldGuidelines
                                     <figure class="figure">
                                        <figcaption class="caption">Figure 2.
                                           Cross-staff chord
-                                       </figcaption><img src="/guidelines/Images/modules/cmn/xchord-300.png" alt="Cross-staff chord" class="graphic" style=" width:500px;" /></figure>
+                                       </figcaption><img src="./Images/modules/cmn/xchord-300.png" alt="Cross-staff chord" class="graphic" style=" width:500px;" ></figure>
                                     <p>The
                                        following code snippet demonstrates one method of encoding the first chord in the
                                        last measure in the image above. The <span class="att">stem.with</span> attribute
@@ -872,7 +872,7 @@ layout: oldGuidelines
                                        may be created by rendering software.
                                     </p>
                                     <figure class="figure">
-                                       <figcaption class="caption">Figure 4. Forms of multiple measure rests</figcaption><img src="/guidelines/Images/ExampleImages/multirest.png" alt="Forms of multiple measure rests" class="graphic" style=" width:500px;" /></figure>
+                                       <figcaption class="caption">Figure 4. Forms of multiple measure rests</figcaption><img src="./Images/ExampleImages/multirest.png" alt="Forms of multiple measure rests" class="graphic" style=" width:500px;" ></figure>
                                     <div id="index.xml-egXML-d39e6740" class="pre egXML_valid">
                                        <span data-indentation="1" class="element">&lt;staff&gt;</span><br />   <span data-indentation="2" class="element">&lt;layer&gt;</span><br />     <span data-indentation="3" class="element">&lt;multiRest <span class="attribute">num</span>="<span class="attributevalue">9</span>"/&gt;</span><br />   <span data-indentation="2" class="element">&lt;/layer&gt;</span><br />
                                        <span data-indentation="1" class="element">&lt;/staff&gt;</span>           
@@ -888,7 +888,7 @@ layout: oldGuidelines
                                     <figure class="figure">
                                        <figcaption class="caption">Figure 5. Empty
                                           measure
-                                       </figcaption><img src="/guidelines/Images/ExampleImages/mspace-300-20100514.png" alt="Empty measure" class="graphic" style=" width:500px;" /></figure>
+                                       </figcaption><img src="./Images/ExampleImages/mspace-300-20100514.png" alt="Empty measure" class="graphic" style=" width:500px;" ></figure>
                                     <div id="index.xml-egXML-d39e6771" class="pre egXML_valid">
                                        <span data-indentation="1" class="element">&lt;measure <span class="attribute">n</span>="<span class="attributevalue">2</span>"&gt;</span><br />   <span data-indentation="2" class="element">&lt;staff&gt;</span><br />     <span data-indentation="3" class="element">&lt;layer&gt;</span><br />       <span data-indentation="4" class="element">&lt;mSpace/&gt;</span><br />     <span data-indentation="3" class="element">&lt;/layer&gt;</span><br />   <span data-indentation="2" class="element">&lt;/staff&gt;</span><br />
                                        <span data-indentation="1" class="element">&lt;/measure&gt;</span>
@@ -999,7 +999,7 @@ layout: oldGuidelines
                               <figure class="figure">
                                  <figcaption class="caption">Figure 6.
                                     Primary and secondary beams
-                                 </figcaption><img src="/guidelines/Images/ExampleImages/beam-a-20100510.png" alt="Primary and secondary beams" class="graphic" style=" width:500px;" /></figure>
+                                 </figcaption><img src="./Images/ExampleImages/beam-a-20100510.png" alt="Primary and secondary beams" class="graphic" style=" width:500px;" ></figure>
                               <div id="index.xml-egXML-d39e6932" class="pre egXML_valid">
                                  <span data-indentation="1" class="element">&lt;layer&gt;</span><br />   <span data-indentation="2" class="element">&lt;beam&gt;</span><br />
                                      <span data-indentation="3" class="element">&lt;note <span class="attribute">dots</span>="<span class="attributevalue">1</span>" <span class="attribute">dur</span>="<span class="attributevalue">8</span>"/&gt;</span><br />     <span data-indentation="3" class="element">&lt;note <span class="attribute">dur</span>="<span class="attributevalue">16</span>"/&gt;</span><br />   <span data-indentation="2" class="element">&lt;/beam&gt;</span><br />   <span data-indentation="2" class="element">&lt;beam&gt;</span><br />     <span data-indentation="3" class="element">&lt;note <span class="attribute">dur</span>="<span class="attributevalue">32</span>"/&gt;</span><br />
@@ -1054,7 +1054,7 @@ layout: oldGuidelines
                               <figure class="figure">
                                  <figcaption class="caption">Figure 7.
                                     Accelerando beams
-                                 </figcaption><img src="/guidelines/Images/modules/cmn/beamAcc-Rit.png" alt="Accelerando beams" class="graphic" style=" width:500px;" /></figure>
+                                 </figcaption><img src="./Images/modules/cmn/beamAcc-Rit.png" alt="Accelerando beams" class="graphic" style=" width:500px;" ></figure>
                               <div class="p">
                                  <div id="index.xml-egXML-d39e7022" class="pre egXML_valid">
                                     <span data-indentation="1" class="element">&lt;layer&gt;</span><br />      <span data-indentation="2" class="element">&lt;beam <span class="attribute">rend</span>="<span class="attributevalue">mixed</span>"&gt;</span><br />     <span data-indentation="3" class="element">&lt;note <span class="attribute">dur</span>="<span class="attributevalue">8</span>"/&gt;</span><br />
@@ -1062,7 +1062,7 @@ layout: oldGuidelines
                                  </div>
                               </div>
                               <figure class="figure">
-                                 <figcaption class="caption">Figure 8. Cross-staff beam</figcaption><img src="/guidelines/Images/ExampleImages/beam-c-20100510.png" alt="Cross-staff beam" class="graphic" style=" height:150px;" /></figure>
+                                 <figcaption class="caption">Figure 8. Cross-staff beam</figcaption><img src="./Images/ExampleImages/beam-c-20100510.png" alt="Cross-staff beam" class="graphic" style=" height:150px;" ></figure>
                               <p>Beams that connect events on
                                  different staves may be encoded in two different ways. First, a single-layer approach
                                  may be taken that treats the events lying under the beam as logically belonging to
@@ -1200,7 +1200,7 @@ layout: oldGuidelines
                               <figure class="figure">
                                  <figcaption class="caption">Figure
                                     9. Ties across barlines
-                                 </figcaption><img src="/guidelines/Images/modules/cmn/finger-300.png" alt="Ties across barlines" class="graphic" style=" width:500px;" /></figure>
+                                 </figcaption><img src="./Images/modules/cmn/finger-300.png" alt="Ties across barlines" class="graphic" style=" width:500px;" ></figure>
                               <div id="index.xml-egXML-d39e7324" class="pre egXML_valid">
                                  <span data-indentation="1" class="element">&lt;measure <span class="attribute">n</span>="<span class="attributevalue">1</span>"&gt;</span><br />      <span data-indentation="2" class="element">&lt;staff <span class="attribute">n</span>="<span class="attributevalue">2</span>"&gt;</span><br />     <span data-indentation="3" class="element">&lt;layer <span class="attribute">n</span>="<span class="attributevalue">1</span>"&gt;</span><br />       <span data-indentation="4" class="element">&lt;chord <span class="attribute">dur</span>="<span class="attributevalue">16</span>"/&gt;</span><br />       <span data-indentation="4" class="element">&lt;beam&gt;</span><br />         <span data-indentation="5" class="element">&lt;note <span class="attribute">pname</span>="<span class="attributevalue">f</span>" <span class="attribute">tie</span>="<span class="attributevalue">i</span>"/&gt;</span><br />         <span data-indentation="5" class="element">&lt;note <span class="attribute">pname</span>="<span class="attributevalue">a</span>" <span class="attribute">tie</span>="<span class="attributevalue">i</span>"/&gt;</span><br />         <span data-indentation="5" class="element">&lt;note <span class="attribute">pname</span>="<span class="attributevalue">c</span>" <span class="attribute">tie</span>="<span class="attributevalue">i</span>"/&gt;</span><br />       <span data-indentation="4" class="element">&lt;/beam&gt;</span><br />
                                        <span data-indentation="4" class="element">&lt;chord <span class="attribute">dur</span>="<span class="attributevalue">4</span>"&gt;</span><br />         <span data-indentation="5" class="element">&lt;note <span class="attribute">pname</span>="<span class="attributevalue">f</span>" <span class="attribute">tie</span>="<span class="attributevalue">i</span>"/&gt;</span><br />         <span data-indentation="5" class="element">&lt;note <span class="attribute">pname</span>="<span class="attributevalue">c</span>" <span class="attribute">tie</span>="<span class="attributevalue">m</span>"/&gt;</span><br />
@@ -1234,7 +1234,7 @@ layout: oldGuidelines
                                  in one breath, while a single bow is indicated for string instruments.
                               </p>
                               <figure class="figure">
-                                 <figcaption class="caption">Figure 10. Slurs</figcaption><img src="/guidelines/Images/ExampleImages/slur-300-20100514.png" alt="Slurs" class="graphic" style=" height:100px;" /></figure>
+                                 <figcaption class="caption">Figure 10. Slurs</figcaption><img src="./Images/ExampleImages/slur-300-20100514.png" alt="Slurs" class="graphic" style=" height:100px;" ></figure>
                               <p>In MEI, slurs may be encoded in a similar way
                                  to ties: <a class="link_odd_elementSpec" href="/documentation/2.1.1/note">note</a> and <a class="link_odd_elementSpec" href="/documentation/2.1.1/chord">chord</a> bear a <span class="att">slur</span> attribute that allows the
                                  commencement or ending of a slur at this element. The allowed values, however, are
@@ -1719,7 +1719,7 @@ layout: oldGuidelines
                                  <figure class="figure">
                                     <figcaption class="caption">Figure 11. Bowed
                                        tremolandi
-                                    </figcaption><img src="/guidelines/Images/ExampleImages/btrem-a-20100510.png" alt="Bowed tremolandi" class="graphic" style=" width:500px;" /></figure>
+                                    </figcaption><img src="./Images/ExampleImages/btrem-a-20100510.png" alt="Bowed tremolandi" class="graphic" style=" width:500px;" ></figure>
                                  <div id="index.xml-egXML-d39e8404" class="pre egXML_valid">
                                     <span data-indentation="1" class="element">&lt;bTrem&gt;</span><br />   <span data-indentation="2" class="element">&lt;note <span class="attribute">dur</span>="<span class="attributevalue">1</span>" <span class="attribute">oct</span>="<span class="attributevalue">4</span>" <span class="attribute">pname</span>="<span class="attributevalue">b</span>"/&gt;</span><br />
                                     <span data-indentation="1" class="element">&lt;/bTrem&gt;</span>         
@@ -1801,7 +1801,7 @@ layout: oldGuidelines
                                     octaves above or below its written pitch is represented by the <a class="link_odd_elementSpec" href="/documentation/2.1.1/octave">octave</a> element.
                                  </p>
                                  <figure class="figure">
-                                    <figcaption class="caption">Figure 12. Octave displacement</figcaption><img src="/guidelines/Images/ExampleImages/octave-a-20100510.png" alt="Octave displacement" class="graphic" style=" width:500px;" /></figure>
+                                    <figcaption class="caption">Figure 12. Octave displacement</figcaption><img src="./Images/ExampleImages/octave-a-20100510.png" alt="Octave displacement" class="graphic" style=" width:500px;" ></figure>
                                  <p>Its <span class="att">dis</span> and <span class="att">dis.place</span> attributes record the amount
                                     and direction of displacement, respectively. The <span class="att">rend</span>
                                     attribute captures the appearance of the continuation line associated with the
@@ -2019,7 +2019,7 @@ layout: oldGuidelines
                                     Fantastique</span> shows a typical example:
                               </p>
                               <figure class="figure">
-                                 <figcaption class="caption">Figure 13. Rehearsal mark</figcaption><img src="/guidelines/Images/modules/cmn/reh_berlioz.png" alt="Rehearsal mark" class="graphic" style=" width:185px;" /></figure>
+                                 <figcaption class="caption">Figure 13. Rehearsal mark</figcaption><img src="./Images/modules/cmn/reh_berlioz.png" alt="Rehearsal mark" class="graphic" style=" width:185px;" ></figure>
                               <div id="index.xml-egXML-d39e8984" class="pre egXML_valid">
                                  <span data-indentation="1" class="element">&lt;measure&gt;</span><br />   <span data-indentation="2" class="element">&lt;staff <span class="attribute">n</span>="<span class="attributevalue">1</span>"&gt;</span><br />     
                                    <span data-indentation="2" class="element">&lt;/staff&gt;</span><br />   <span data-indentation="2" class="element">&lt;staff <span class="attribute">n</span>="<span class="attributevalue">2</span>"&gt;</span><br />        <span data-indentation="2" class="element">&lt;/staff&gt;</span><br />   <span data-indentation="2" class="element">&lt;staff <span class="attribute">n</span>="<span class="attributevalue">3</span>"&gt;</span><br />        <span data-indentation="2" class="element">&lt;/staff&gt;</span><br />   <span data-indentation="2" class="element">&lt;reh <span class="attribute">place</span>="<span class="attributevalue">above</span>" <span class="attribute">staff</span>="<span class="attributevalue">1</span>" <span class="attribute">tstamp</span>="<span class="attributevalue">1</span>"&gt;</span><br />     <span data-indentation="3" class="element">&lt;rend <span class="attribute">rend</span>="<span class="attributevalue">box</span>"&gt;</span>37<span data-indentation="3" class="element">&lt;/rend&gt;</span><br />   <span data-indentation="2" class="element">&lt;/reh&gt;</span><br />
@@ -2063,7 +2063,7 @@ layout: oldGuidelines
                                     contains the most common signs:
                                  </p>
                                  <figure class="figure">
-                                    <figcaption class="caption">Figure 14. Beat repeat signs</figcaption><img src="/guidelines/Images/ExampleImages/beatrpt-20100510.png" alt="Beat repeat signs" class="graphic" style=" height:400px;" /></figure>
+                                    <figcaption class="caption">Figure 14. Beat repeat signs</figcaption><img src="./Images/ExampleImages/beatrpt-20100510.png" alt="Beat repeat signs" class="graphic" style=" height:400px;" ></figure>
                                  <p>In general, MEI places
                                     primary emphasis on the capture of the semantic meaning of symbols, not their visual
                                     rendition. In this case, the focus is on the material being repeated, for example,
@@ -2124,7 +2124,7 @@ layout: oldGuidelines
                                     attribute available on the <a class="link_odd_elementSpec" href="/documentation/2.1.1/scoreDef">scoreDef</a> and <a class="link_odd_elementSpec" href="/documentation/2.1.1/staffDef">staffDef</a> elements.
                                  </p>
                                  <figure class="figure">
-                                    <figcaption class="caption">Figure 15. Measure repetition</figcaption><img src="/guidelines/Images/ExampleImages/mrpt-20100510.png" alt="Measure repetition" class="graphic" style=" height:100px;" /></figure>
+                                    <figcaption class="caption">Figure 15. Measure repetition</figcaption><img src="./Images/ExampleImages/mrpt-20100510.png" alt="Measure repetition" class="graphic" style=" height:100px;" ></figure>
                                  <div id="index.xml-egXML-d39e9102" class="pre egXML_valid">
                                     <span data-indentation="1" class="element">&lt;measure&gt;</span><br />   <span data-indentation="2" class="element">&lt;staff&gt;</span><br />     <span data-indentation="3" class="element">&lt;layer&gt;</span><br />       <span data-indentation="4" class="element">&lt;beam&gt;</span><br />         <span data-indentation="5" class="element">&lt;note <span class="attribute">dur</span>="<span class="attributevalue">8</span>" <span class="attribute">oct</span>="<span class="attributevalue">4</span>" <span class="attribute">pname</span>="<span class="attributevalue">f</span>"/&gt;</span><br />         <span data-indentation="5" class="element">&lt;note <span class="attribute">dur</span>="<span class="attributevalue">16</span>" <span class="attribute">pname</span>="<span class="attributevalue">a</span>"/&gt;</span><br />         <span data-indentation="5" class="element">&lt;note <span class="attribute">oct</span>="<span class="attributevalue">5</span>" <span class="attribute">pname</span>="<span class="attributevalue">c</span>"/&gt;</span><br />         <span data-indentation="5" class="element">&lt;note <span class="attribute">dur</span>="<span class="attributevalue">8</span>" <span class="attribute">oct</span>="<span class="attributevalue">4</span>" <span class="attribute">pname</span>="<span class="attributevalue">a</span>"/&gt;</span><br />       <span data-indentation="4" class="element">&lt;/beam&gt;</span><br />
                                           <span data-indentation="4" class="element">&lt;beam&gt;</span><br />         <span data-indentation="5" class="element">&lt;note <span class="attribute">dur</span>="<span class="attributevalue">8</span>" <span class="attribute">oct</span>="<span class="attributevalue">5</span>" <span class="attribute">pname</span>="<span class="attributevalue">c</span>"/&gt;</span><br />         <span data-indentation="5" class="element">&lt;note <span class="attribute">oct</span>="<span class="attributevalue">4</span>" <span class="attribute">pname</span>="<span class="attributevalue">a</span>"/&gt;</span><br />         <span data-indentation="5" class="element">&lt;note <span class="attribute">pname</span>="<span class="attributevalue">g</span>"/&gt;</span><br />       <span data-indentation="4" class="element">&lt;/beam&gt;</span><br />     <span data-indentation="3" class="element">&lt;/layer&gt;</span><br />   <span data-indentation="2" class="element">&lt;/staff&gt;</span><br />
@@ -2146,7 +2146,7 @@ layout: oldGuidelines
                                  <figure class="figure">
                                     <figcaption class="caption">Figure 16. Half-measure
                                        repeat
-                                    </figcaption><img src="/guidelines/Images/modules/cmn/halfmRpt_beethoven.png" alt="Half-measure repeat" class="graphic" style=" width:418px;" /></figure>
+                                    </figcaption><img src="./Images/modules/cmn/halfmRpt_beethoven.png" alt="Half-measure repeat" class="graphic" style=" width:418px;" ></figure>
                                  <div id="index.xml-egXML-d39e9179" class="pre egXML_valid">
                                     <span data-indentation="1" class="element">&lt;measure&gt;</span><br />   <span data-indentation="2" class="element">&lt;staff <span class="attribute">n</span>="<span class="attributevalue">1</span>"/&gt;</span><br />
                                       <span data-indentation="2" class="element">&lt;staff <span class="attribute">n</span>="<span class="attributevalue">2</span>"&gt;</span><br />     <span data-indentation="3" class="element">&lt;layer <span class="attribute">n</span>="<span class="attributevalue">1</span>"/&gt;</span><br />     <span data-indentation="3" class="element">&lt;layer <span class="attribute">n</span>="<span class="attributevalue">2</span>"&gt;</span><br />
@@ -2169,9 +2169,9 @@ layout: oldGuidelines
                                  <figure class="figure">
                                     <figcaption class="caption">Figure 17.
                                        Two-measure repetition
-                                    </figcaption><img src="/guidelines/Images/ExampleImages/mrpt2-20100510.png" alt="Two-measure repetition" class="graphic" style=" height:200px;" /></figure>
+                                    </figcaption><img src="./Images/ExampleImages/mrpt2-20100510.png" alt="Two-measure repetition" class="graphic" style=" height:200px;" ></figure>
                                  <figure class="figure">
-                                    <figcaption class="caption">Figure 18. Multi-measure repetition</figcaption><img src="/guidelines/Images/ExampleImages/multirpt-20100510.png" alt="Multi-measure repetition" class="graphic" style=" height:100px;" /></figure>
+                                    <figcaption class="caption">Figure 18. Multi-measure repetition</figcaption><img src="./Images/ExampleImages/multirpt-20100510.png" alt="Multi-measure repetition" class="graphic" style=" height:100px;" ></figure>
                                  <p>The <a class="link_odd_elementSpec" href="/documentation/2.1.1/mRpt2">mRpt2</a> element represents repetition of a 2-measure fragment, while
                                     <a class="link_odd_elementSpec" href="/documentation/2.1.1/multiRpt">multiRpt</a> is for repetition of fragments longer
                                     than two measures. In modern publishing practice, repeats of more than two measures

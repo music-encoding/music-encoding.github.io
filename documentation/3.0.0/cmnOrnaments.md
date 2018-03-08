@@ -391,7 +391,7 @@ layout: oldGuidelines
                               <span>norm</span>
                            </dt>
                            <dd> - usually corresponding to the symbol: 
-                              <img src="../../../../guidelines/3.0.0/Images/modules/cmnOrnaments/lower_mordent.png" class="graphic"></img>. This mordent is
+                              <img src="./Images/modules/cmnOrnaments/lower_mordent.png" class="graphic">. This mordent is
                               commonly performed as the principal note, followed by its lower neighbor, with a return
                               to
                               the principal note.
@@ -400,7 +400,7 @@ layout: oldGuidelines
                               <span>inv</span>
                            </dt>
                            <dd> - usually corresponding to the symbol: 
-                              <img src="../../../../guidelines/3.0.0/Images/modules/cmnOrnaments/upper_mordent.png" class="graphic"></img>. This mordent is
+                              <img src="./Images/modules/cmnOrnaments/upper_mordent.png" class="graphic">. This mordent is
                               commonly performed as the principal note, followed by its upper neighbor, with a return
                               to
                               the principal note.
@@ -411,7 +411,7 @@ layout: oldGuidelines
                         <p>The following example demonstrates the encoding of simple mordents:</p>
                         
                         <figure class="figure">
-                           <img src="../../../../guidelines/3.0.0/Images/modules/cmnOrnaments/ex_mordent.png" class="graphic"></img>
+                           <img src="./Images/modules/cmnOrnaments/ex_mordent.png" class="graphic">
                            <figcaption class="caption">Figure 25. Example of simple mordent</figcaption>
                         </figure>
                         
@@ -519,7 +519,7 @@ layout: oldGuidelines
                         </p>
                         
                         <figure class="figure">
-                           <img src="../../../../guidelines/3.0.0/Images/modules/cmnOrnaments/ex_mordent_l.png" class="graphic"></img>
+                           <img src="./Images/modules/cmnOrnaments/ex_mordent_l.png" class="graphic">
                            <figcaption class="caption">Figure 26. Example of a long mordent</figcaption>
                         </figure>
                         
@@ -679,7 +679,7 @@ layout: oldGuidelines
                         <p>The following example demonstrates the encoding of simple trills:</p>
                         
                         <figure class="figure">
-                           <img src="../../../../guidelines/3.0.0/Images/modules/cmnOrnaments/ex_tr.png" class="graphic"></img>
+                           <img src="./Images/modules/cmnOrnaments/ex_tr.png" class="graphic">
                            <figcaption class="caption">Figure 27. Example of simple trills.</figcaption>
                         </figure>
                         
@@ -836,7 +836,7 @@ layout: oldGuidelines
                         </p>
                         
                         <figure class="figure">
-                           <img src="../../../../guidelines/3.0.0/Images/modules/cmnOrnaments/ex_trill_wavy.png" class="graphic"></img>
+                           <img src="./Images/modules/cmnOrnaments/ex_trill_wavy.png" class="graphic">
                            <figcaption class="caption">Figure 28. Example of trills followed by wavy lines.</figcaption>
                         </figure>
                         
@@ -1031,7 +1031,7 @@ layout: oldGuidelines
                         </p>
                         
                         <figure class="figure">
-                           <img src="../../../../guidelines/3.0.0/Images/modules/cmnOrnaments/ex_tr_accid.png" class="graphic"></img>
+                           <img src="./Images/modules/cmnOrnaments/ex_tr_accid.png" class="graphic">
                            <figcaption class="caption">Figure 29. Example alterations expressed on the staff.</figcaption>
                         </figure>
                         
@@ -1113,7 +1113,7 @@ layout: oldGuidelines
                         </p>
                         
                         <figure class="figure">
-                           <img src="../../../../guidelines/3.0.0/Images/modules/cmnOrnaments/ex_tr_grace.png" class="graphic"></img>
+                           <img src="./Images/modules/cmnOrnaments/ex_tr_grace.png" class="graphic">
                            <figcaption class="caption">Figure 30. Haydn, Sonata in D major, Hoboken XVI:33 (Wiener Urtex no. 34), mvmt. 1.</figcaption>
                         </figure>
                         
@@ -1264,7 +1264,7 @@ layout: oldGuidelines
                            </p>
                            
                            <figure class="figure">
-                              <img src="../../../../guidelines/3.0.0/Images/modules/cmnOrnaments/ex_tr_multi.png" class="graphic"></img>
+                              <img src="./Images/modules/cmnOrnaments/ex_tr_multi.png" class="graphic">
                               <figcaption class="caption">Figure 31. Example of multiple trills.</figcaption>
                            </figure>
                            
@@ -1639,7 +1639,7 @@ layout: oldGuidelines
                            </p>
                            
                            <figure class="figure">
-                              <img src="../../../../guidelines/3.0.0/Images/modules/cmnOrnaments/ex_tr_B.png" class="graphic"></img>
+                              <img src="./Images/modules/cmnOrnaments/ex_tr_B.png" class="graphic">
                               <figcaption class="caption">Figure 32. Trill transcribed from J.S. Bach's 
                                  <span class="titlem">Klavierbüchlein für Wilhelm Friedemann
                                     Bach
@@ -2048,14 +2048,14 @@ layout: oldGuidelines
                                  <span>norm</span>
                               </dt>
                               <dd> - usually corresponding to the symbol: 
-                                 <img src="../../../../guidelines/3.0.0/Images/modules/cmnOrnaments/turn.png" class="graphic"></img>. This turn is commonly
+                                 <img src="./Images/modules/cmnOrnaments/turn.png" class="graphic">. This turn is commonly
                                  performed beginning on a note higher than the principal note.
                               </dd>
                               <dt>
                                  <span>inv</span>
                               </dt>
                               <dd> - usually corresponding to the symbol: 
-                                 <img src="../../../../guidelines/3.0.0/Images/modules/cmnOrnaments/inv_turn.png" class="graphic"></img>. This turn is commonly
+                                 <img src="./Images/modules/cmnOrnaments/inv_turn.png" class="graphic">. This turn is commonly
                                  performed beginning on a note lower than the principal note.
                               </dd>
                            </dl>
@@ -2066,7 +2066,7 @@ layout: oldGuidelines
                         <p>The following example shows the encoding of a simple turn:</p>
                         
                         <figure class="figure">
-                           <img src="../../../../guidelines/3.0.0/Images/modules/cmnOrnaments/ex_turn.png" class="graphic"></img>
+                           <img src="./Images/modules/cmnOrnaments/ex_turn.png" class="graphic">
                            <figcaption class="caption">Figure 33. Example of a simple turn.</figcaption>
                         </figure>
                         
@@ -2189,7 +2189,7 @@ layout: oldGuidelines
                         </p>
                         
                         <figure class="figure">
-                           <img src="../../../../guidelines/3.0.0/Images/modules/cmnOrnaments/ex_turn_d.png" class="graphic"></img>
+                           <img src="./Images/modules/cmnOrnaments/ex_turn_d.png" class="graphic">
                            <figcaption class="caption">Figure 34. Delayed turn.</figcaption>
                         </figure>
                         
@@ -2327,7 +2327,7 @@ layout: oldGuidelines
                         </p>
                         
                         <figure class="figure">
-                           <img src="../../../../guidelines/3.0.0/Images/modules/cmnOrnaments/JSBtableofornaments.jpg" class="graphic"></img>
+                           <img src="./Images/modules/cmnOrnaments/JSBtableofornaments.jpg" class="graphic">
                            <figcaption class="caption">Figure 35. Table of ornaments used by Johann Sebastian Bach in the Klavierbüchlein
                               für Wilhelm
                               Friedemann Bach
@@ -2379,7 +2379,7 @@ layout: oldGuidelines
                         </p>
                         
                         <figure class="figure">
-                           <img src="../../../../guidelines/3.0.0/Images/modules/cmnOrnaments/ex_multi_orn.png" class="graphic"></img>
+                           <img src="./Images/modules/cmnOrnaments/ex_multi_orn.png" class="graphic">
                            <figcaption class="caption">Figure 36. Example of multiple ornaments. From C.P.E. Bach's sonata W.62/1.</figcaption>
                         </figure>
                         
