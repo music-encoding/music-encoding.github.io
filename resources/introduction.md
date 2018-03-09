@@ -23,7 +23,7 @@ XML is a hierarchical encoding system. An example of a very simple MEI XML hiera
 Attributes of an element are used to define properties of a particular object and are represented as key-value pairs, taking the form key="value". A ```<note>``` object that represents “middle C” (C4) on a keyboard would be encoded in MEI as ```<note pname="c" oct="4"/>```. (In prose, attribute and element names are distinguished by an additional “@” character on the attribute name, e.g., ```@pname```, even though this symbol does not appear in the XML encoding.)
 
 <figure class="figure">
-  <img src="http://music-encoding.org/wp-content/uploads/2015/03/mei-fig2-300x144.png" class="img-responsive" alt=""/>
+  <img src="/pix/mei-fig2-300x144.png" class="img-responsive" alt=""/>
   <figcaption class="figure-caption">Figure 1: Left: XML Encoding; Right: Possible graphical representation (NB: Clef and Time Signature are given for reference and are not present in the encoding)</figcaption>
 </figure>
 
