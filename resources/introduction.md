@@ -23,7 +23,7 @@ XML is a hierarchical encoding system. An example of a very simple MEI XML hiera
 Attributes of an element are used to define properties of a particular object and are represented as key-value pairs, taking the form key="value". A ```<note>``` object that represents “middle C” (C4) on a keyboard would be encoded in MEI as ```<note pname="c" oct="4"/>```. (In prose, attribute and element names are distinguished by an additional “@” character on the attribute name, e.g., ```@pname```, even though this symbol does not appear in the XML encoding.)
 
 <figure class="figure">
-  <img src="http://music-encoding.org/wp-content/uploads/2015/03/mei-fig2-300x144.png" class="img-responsive" alt=""/>
+  <img src="/pix/mei-fig2-300x144.png" class="img-responsive" alt=""/>
   <figcaption class="figure-caption">Figure 1: Left: XML Encoding; Right: Possible graphical representation (NB: Clef and Time Signature are given for reference and are not present in the encoding)</figcaption>
 </figure>
 
@@ -42,7 +42,7 @@ Yet in some cases, including avant-garde notation, composer-specific repertoire,
 MEI is expressed in a meta-schema language developed by the Text Encoding Initiative. The “[One Document Does-it-all](http://www.tei-c.org/Guidelines/Customization/odds.xml)” (ODD) format is designed to encode both the behaviors of the document encoding, and the human-readable documentation following a “[literate programming](http://en.wikipedia.org/wiki/Literate_programming)” technique. From a single ODD file, a formalized schema in one of the previously-mentioned XML schema languages, as well as human-readable documentation for that schema, may be derived. The MEI schemas and guideline documentation are generated from the MEI ODD file using software developed to support the TEI project.
 
 <figure class="figure">
-  <img src="http://music-encoding.org/wp-content/uploads/2015/04/romaDiagram.png" class="img-responsive" alt="" width="300"/>
+  <img src="/pix/romaDiagram.png" class="img-responsive" alt="" width="300"/>
   <figcaption class="figure-caption">Figure 2: MEI Customization</figcaption>
 </figure>
 
