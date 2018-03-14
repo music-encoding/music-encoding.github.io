@@ -60,6 +60,10 @@ header.navbar {
         margin-right: 20px;
         height: 30px;
     }
+	
+	section div.guidelines-warning {
+		width: 400px;
+	}
 }
 
 .newsMenu {
@@ -115,6 +119,10 @@ p.sectionToc a {
     &.level-4 {
         margin-left: 3em;
     }
+}
+
+p.mainToc {
+	margin: 0 0 0.2rem;
 }
 
 a.link_odd_elementSpec {
@@ -206,7 +214,7 @@ div.tile {
         margin-top: .5rem;
     }
     
-    & + p {
+    & + p, h1, h2, h3, h4, h5, h6 {
         margin-top: 1em;
     }
     
