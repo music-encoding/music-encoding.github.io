@@ -121,6 +121,10 @@ p.sectionToc a {
     }
 }
 
+p.mainToc {
+	margin: 0 0 0.2rem;
+}
+
 a.link_odd_elementSpec {
     &:before {
         content: '<';
