@@ -140,6 +140,15 @@ a.guidelines-edit {
     opacity: .2;
 }
 
+p.gloss {
+	padding: .2rem .4rem;
+	background: #ebebeb;
+}
+
+p.gloss {
+	margin-top: -10px;
+}
+
 h2:hover a.guidelines-edit, h3:hover a.guidelines-edit, h4:hover a.guidelines-edit, h5:hover a.guidelines-edit, h6:hover a.guidelines-edit {
     opacity: 1;
 }
