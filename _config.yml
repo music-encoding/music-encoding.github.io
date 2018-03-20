@@ -69,7 +69,7 @@ menu:
             url: '/bibliography.html'
     - id: documentation
       label: 'Documentation'
-      url: '/support/guidelines'
+      url: '/guidelines'
     - id: archive
       label: 'Archive'
       url: '/archive'
