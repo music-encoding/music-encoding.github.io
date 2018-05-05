@@ -12,7 +12,7 @@ Burlet, Gregory, et al. "Neon.js: Neume Editor Online." _13th International Soci
 
 Buschmeier, Gabriele and Thomas Betzwieser. "Digitale Editionen in Akademienprogramm: Die Projektpraxis am Beispiel OPERA." _Die Tonkunst: Magazin fur Klassische Musik und Musikwissenschaft_ 5.3 (2011): 263–269.
 
-Byrd, Donald and Eric Isaacson. "A Music Representation Requirement Specification for Academia." 2003; rev. 2016\. <[http://homes.soic.indiana.edu/donbyrd/Papers/MusicRepReqForAcad.doc](http://homes.soic.indiana.edu/donbyrd/Papers/MusicRepReqForAcad.doc)>.
+Byrd, Donald and Eric Isaacson. "A Music Representation Requirement Specification for Academia." _Computer Music Journal_ 27.4 (2003): 43–57\. <[http://www.jstor.org/stable/3681900](http://www.jstor.org/stable/3681900)>. rev. 2016\. <[http://homes.soic.indiana.edu/donbyrd/Papers/MusicRepReqForAcad.doc](http://homes.soic.indiana.edu/donbyrd/Papers/MusicRepReqForAcad.doc)>.
 
 Crawford, Tim and Richard Lewis. "Review: Music Encoding Initiative." _Journal of the American Musicological Society_ 69.1 (2016): 273–285\. <[http://jams.ucpress.edu/content/69/1/273](http://jams.ucpress.edu/content/69/1/273)>.
 
