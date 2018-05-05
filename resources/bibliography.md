@@ -28,7 +28,7 @@ Duval, Erik, et al. "Musicology of Early Music with Europeana Tools and Services
 
 Freedman, Richard and Philippe Vendrix. "The Chansonniers of Nicolas du Chemin: A Digital Forum for Renaissance Music Books." _Die Tonkunst: Magazin fur Klassische Musik und Musikwissenschaft_ 5.3 (2011): 284–288. 
 
-Hankinson, Andrew. Optical music recognition infrastructure for large-scale music document analysis. PhD diss., Schulich School of Music, McGill University, Montreal, Canada, 2014\. <[https://www.dropbox.com/s/ghupovhktchdfc8/hankinson_dissertation_submission.pdf?dl=0](https://www.dropbox.com/s/ghupovhktchdfc8/hankinson_dissertation_submission.pdf?dl=0)>. 
+Hankinson, Andrew. Optical Music Recognition Infrastructure for Large-Scale Music Document Analysis. PhD diss., Schulich School of Music, McGill University, Montreal, Canada, 2014\. <[https://www.dropbox.com/s/ghupovhktchdfc8/hankinson_dissertation_submission.pdf?dl=0](https://www.dropbox.com/s/ghupovhktchdfc8/hankinson_dissertation_submission.pdf?dl=0)>. 
 
 Hankinson, Andrew, et al. "Creating a Large-Scale Searchable Digital Collection from Printed Music Materials." _Proceedings of the 21st International Conference Companion on World Wide Web_. ACM, 2012\. 903–908. 
 
@@ -56,7 +56,7 @@ McKay, Cory, Tristano Tenaglia and Ichiro Fujinaga. "JSymbolic2: Extracting Feat
 
 Morent, Stefan and Gregor Schräder. "TüBingen - Digital Critical Edition of Medieval Music - The Music of Hildegard von Bingen [1198–1179]." _Digitale Medien und Musikedition, Kolloquium des Ausschusses fur musikwissenschaftliche Editionen der Union der deutschen Akademien der Wissenschaften_. Mainz, Germany, 2006\. 16–18\. <[http://www.adwmainz.de/fileadmin/adwmainz/MuKo_Veranstaltungen/S2-Digitale_Medien/TueBingen.pdf](http://www.adwmainz.de/fileadmin/adwmainz/MuKo_Veranstaltungen/S2-Digitale_Medien/TueBingen.pdf)>. 
 
-Pugin, Laurent. "The challenge of data in digital musicology." _Frontiers in Digital Humanities_ 2.4 (2015). <[http://www.frontiersin.org/Journal/FullText.aspx?s=1606&name=digital_musicology&ART_DOI=10.3389/fdigh.2015.00004](http://www.frontiersin.org/Journal/FullText.aspx?s=1606&name=digital_musicology&ART_DOI=10.3389/fdigh.2015.00004)>. 
+Pugin, Laurent. "The Challenge of Data in Digital Musicology." _Frontiers in Digital Humanities_ 2.4 (2015). <[http://www.frontiersin.org/Journal/FullText.aspx?s=1606&name=digital_musicology&ART_DOI=10.3389/fdigh.2015.00004](http://www.frontiersin.org/Journal/FullText.aspx?s=1606&name=digital_musicology&ART_DOI=10.3389/fdigh.2015.00004)>. 
 
 Pugin, Laurent, et al. "Separating Presentation and Content in MEI." _13th International Society for Music Information Retrieval Conference_. Porto, Portugal, 2012\. 505–510\. <[http://ismir2012.ismir.net/event/papers/505_ISMIR_2012.pdf](http://ismir2012.ismir.net/event/papers/505_ISMIR_2012.pdf)>. 
 
