@@ -74,17 +74,19 @@ Roland, Perry. Modular Design of the Music Encoding Initiative (MEI) DTD. _Music
 
 Roland, Perry. "The Music Encoding Initiative (MEI)." _Proceedings of the First International Conference on Musical Applications Using XML_. 2002\. 55–59\. <[http://xml.coverpages.org/MAX2002-PRoland.pdf](http://xml.coverpages.org/MAX2002-PRoland.pdf)>. 
 
-Roland, Perry. "The Music Encoding Initiative (MEI)." 2006. —. The Music Encoding Initiative (MEI) DTD and the OCVE. Powerpoint. University of Virginia. Charlottesville, VA, 2009\. <[pilot.ocve.org.uk/redist/ppt/MEIChopin.ppt](pilot.ocve.org.uk/redist/ppt/MEIChopin.ppt)>. 
+Roland, Perry. "The Music Encoding Initiative (MEI)." 2006. <[http://www.lib.virginia.edu/digital/resndev/mei](http://www.lib.virginia.edu/digital/resndev/mei)> [broken].
 
-Roland, Perry. "The Music Encoding Initiative (MEI) DTD and the Online Chopin Variorum Edition." n.d. <[http://pilot.ocve.org.uk/redist/pdf/roland.pdf](http://pilot.ocve.org.uk/redist/pdf/roland.pdf)>. 
+Roland, Perry. "The Music Encoding Initiative (MEI) DTD and the OCVE." Powerpoint. University of Virginia. Charlottesville, VA, 2009\. <[pilot.ocve.org.uk/redist/ppt/MEIChopin.ppt](pilot.ocve.org.uk/redist/ppt/MEIChopin.ppt)> [broken]. 
 
-Roland, Perry. "XML4MIR: Extensible Markup Language for Music Information Retrieval." _International Symposium on Music Information Retrieval_. Plymouth, Massachusetts, 2000\. <[http://ciir.cs.umass.edu/music2000/papers/roland_paper.pdf](http://ciir.cs.umass.edu/music2000/papers/roland_paper.pdf)>. 
+Roland, Perry. "The Music Encoding Initiative (MEI) DTD and the Online Chopin Variorum Edition." Technical report. 2009. <[http://pilot.ocve.org.uk/redist/pdf/roland.pdf](http://pilot.ocve.org.uk/redist/pdf/roland.pdf)> [broken]. 
 
-Roland, Perry, Andrew Hankinson and Laurent Pugin. "Early Music and the Music Encoding Initiative." _Early Music_ 42.4 (2014): 605–611\. <[http://em.oxfordjournals.org/content/42/4/605.full?keytype=ref&ijkey=faImCQIgU6WV9Xe](http://em.oxfordjournals.org/content/42/4/605.full?keytype=ref&ijkey=faImCQIgU6WV9Xe)>. 
+Roland, Perry. "XML4MIR: Extensible Markup Language for Music Information Retrieval." _International Symposium on Music Information Retrieval_. Plymouth, Massachusetts, 2000\. <[http://ismir2000.ismir.net/papers/roland_paper.pdf](http://ismir2000.ismir.net/papers/roland_paper.pdf)>. 
+
+Roland, Perry, Andrew Hankinson and Laurent Pugin. "Early Music and the Music Encoding Initiative." _Early Music_ 42.4 (2014): 605–611\. <[https://doi.org/10.1093/em/cau098](https://doi.org/10.1093/em/cau098)>. 
 
 Roland, Perry and Christine Siegert. "Process-Oriented Notation in MEI." _Die Tonkunst: Magazin fur Klassische Musik und Musikwissenschaft_ 5.3 (2011): 305–309. 
 
-Roland, Perry and J. Stephen Downie. "Recent Developments in the Music Encoding Initiative Project: Enhancing Digital Musicology and Scholarship." _19th Joint Conference on the Digital Humanities, Conference Abstracts_. 2007\. 186-189\. <[http://www.digitalhumanities.org/dh2007/dh2007.abstracts.pdf](http://www.digitalhumanities.org/dh2007/dh2007.abstracts.pdf)>, <[http://music-encoding.org/wp-content/uploads/2015/04/RolandDownie2007poster.pdf](http://music-encoding.org/wp-content/uploads/2015/04/RolandDownie2007poster.pdf)>. 
+Roland, Perry and J. Stephen Downie. "Recent Developments in the Music Encoding Initiative Project: Enhancing Digital Musicology and Scholarship." _19th Joint Conference on the Digital Humanities, Conference Abstracts_. 2007\. 186-189\. <[http://www.digitalhumanities.org/dh2007/dh2007.abstracts.pdf](http://www.digitalhumanities.org/dh2007/dh2007.abstracts.pdf)>, <[http://music-encoding.org/downloads/RolandDownie2007poster.pdf](http://music-encoding.org/downloads/RolandDownie2007poster.pdf)>. 
 
 Roland, Perry and Johannes Kepper, ed. _Music Encoding Conference Proceedings, 2013 and 2014_. Charlottesville, Virginia and Detmold, Germany: Music Encoding Initiative, 2015\. <[http://nbn-resolving.de/urn:nbn:de:bvb:12-babs2-0000007812](http://nbn-resolving.de/urn:nbn:de:bvb:12-babs2-0000007812)>. 
 
