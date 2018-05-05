@@ -14,7 +14,9 @@ Buschmeier, Gabriele and Thomas Betzwieser. "Digitale Editionen in Akademienprog
 
 Byrd, Donald and Eric Isaacson. "A Music Representation Requirement Specification for Academia." 2003; rev. 2016\. <[http://homes.soic.indiana.edu/donbyrd/Papers/MusicRepReqForAcad.doc](http://homes.soic.indiana.edu/donbyrd/Papers/MusicRepReqForAcad.doc)>.
 
-Crawford, Tim and Richard Lewis. "Review: Music Encoding Initiative." _Journal of the American Musicological Society_ 69.1 (2016): 273-285\. <[http://jams.ucpress.edu/content/69/1/273](http://jams.ucpress.edu/content/69/1/273)>. De Guise, Sylvaine Martin. "La MEI (Music Encoding Initiative): Un Standard Au Service De La Musique Kabyle." _Iles d Imesli_ 5 (2013): 245–277. 
+Crawford, Tim and Richard Lewis. "Review: Music Encoding Initiative." _Journal of the American Musicological Society_ 69.1 (2016): 273-285\. <[http://jams.ucpress.edu/content/69/1/273](http://jams.ucpress.edu/content/69/1/273)>.
+
+De Guise, Sylvaine Martin. "La MEI (Music Encoding Initiative): Un Standard Au Service De La Musique Kabyle." _Iles d Imesli_ 5 (2013): 245–277.
 
 Devaney, Johanna and Hubert Léveillé Gauvin. "Representing and Linking Music Performance Data with Score Information." _DLfM 2016: Proceedings of the 3rd International workshop on Digital Libraries for Musicology_. New York: Association for Computing Machinery, 2016\. 1-8\. <[http://dx.doi.org/10.1145/2970044.2970052](http://dx.doi.org/10.1145/2970044.2970052)>. 
 
@@ -40,7 +42,7 @@ Hartwig, Maja, Johannes Kepper and Kristina Richts. "Neue Wege der Musikerschlie
 
 Kepper, Johannes. "Codierungsformen von Musik." _Digitale Medien und Musikedition, Kolloquium des Ausschusses für musikwissenschaftliche Editionen der Union der deutschen Akademien der Wissenschaften_. Mainz, Germany, 2006\. 16–18\. <[http://www.adwmainz.de/fileadmin/adwmainz/MuKo_Veranstaltungen/S2-Digitale_Medien/kepper.pdf](http://www.adwmainz.de/fileadmin/adwmainz/MuKo_Veranstaltungen/S2-Digitale_Medien/kepper.pdf)>. 
 
-Hartwig, Maja, Johannes Kepper and Kristina Richts. "XML-Based Encoding of Musicological Data–About the Requirements of a Digital Music Philology." _Information Technology Methoden und Innovative Anwendungen der Informatik und Informationstechnik_ 51.4 (2009): 216–221\. <[http://www.degruyter.com/view/j/itit.2009.51.issue-4/itit.2009.0544/itit.2009.0544.xml](http://www.degruyter.com/view/j/itit.2009.51.issue-4/itit.2009.0544/itit.2009.0544.xml)>. 
+Kepper, Johannes. "XML-Based Encoding of Musicological Data–About the Requirements of a Digital Music Philology." _Information Technology Methoden und Innovative Anwendungen der Informatik und Informationstechnik_ 51.4 (2009): 216–221\. <[http://www.degruyter.com/view/j/itit.2009.51.issue-4/itit.2009.0544/itit.2009.0544.xml](http://www.degruyter.com/view/j/itit.2009.51.issue-4/itit.2009.0544/itit.2009.0544.xml)>. 
 
 Krabbe, Niels and Axel Teich Geertinger. "MEI (Music Encoding Initiative) as a Basis for Thematic Catalogues: Thoughts, Experiences, and Preliminary Results." _RISM Conference_. 2012\. <[http://www.rism.info/fileadmin/content/community-content/events/RISM_Conference_2012/TeichGeertinger_Final.pdf](http://www.rism.info/fileadmin/content/community-content/events/RISM_Conference_2012/TeichGeertinger_Final.pdf)>. 
 
@@ -52,7 +54,7 @@ McAulay, Karen. "Show Me a Strathspey: Taking Steps to Digitize Tune Collections
 
 McKay, Cory, Tristano Tenaglia and Ichiro Fujinaga. "JSymbolic2: Extracting Features from Symbolic Music Representations." _17th International Society for Music Information Retrieval Conference_. New York: International Society for Music Information Retrieval, 2016\. Late-Breaking Session. <[https://wp.nyu.edu/ismir2016/wp-content/uploads/sites/2294/2016/08/mckay-jsymbolic2.pdf](https://wp.nyu.edu/ismir2016/wp-content/uploads/sites/2294/2016/08/mckay-jsymbolic2.pdf)>. 
 
-Morent, Stefan and Gregor Schrader. "Tübingen - Digital Critical Edition of Medieval Music - The Music of Hildegard von Bingen [1198-1179]." _Digitale Medien und Musikedition, Kolloquium des Ausschusses fur musikwissenschaftliche Editionen der Union der deutschen Akademien der Wissenschaften_. Mainz, Germany, 2006\. 16–18\. <[http://www.adwmainz.de/fileadmin/adwmainz/MuKo_Veranstaltungen/S2-Digitale_Medien/TueBingen.pdf](http://www.adwmainz.de/fileadmin/adwmainz/MuKo_Veranstaltungen/S2-Digitale_Medien/TueBingen.pdf)>. 
+Morent, Stefan and Gregor Schräder. "TüBingen - Digital Critical Edition of Medieval Music - The Music of Hildegard von Bingen [1198-1179]." _Digitale Medien und Musikedition, Kolloquium des Ausschusses fur musikwissenschaftliche Editionen der Union der deutschen Akademien der Wissenschaften_. Mainz, Germany, 2006\. 16–18\. <[http://www.adwmainz.de/fileadmin/adwmainz/MuKo_Veranstaltungen/S2-Digitale_Medien/TueBingen.pdf](http://www.adwmainz.de/fileadmin/adwmainz/MuKo_Veranstaltungen/S2-Digitale_Medien/TueBingen.pdf)>. 
 
 Pugin, Laurent. "The challenge of data in digital musicology." _Frontiers in Digital Humanities_ 2.4 (2015). <[http://www.frontiersin.org/Journal/FullText.aspx?s=1606&name=digital_musicology&ART_DOI=10.3389/fdigh.2015.00004](http://www.frontiersin.org/Journal/FullText.aspx?s=1606&name=digital_musicology&ART_DOI=10.3389/fdigh.2015.00004)>. 
 
@@ -114,7 +116,7 @@ Viglianti, Raffaele and Joachim Veit. "Mind the Gap: A Preliminary Evaluation of
 
 Vigliensoni, Gabriel, et al. "Automatic Pitch Recognition in Printed Square-Note Notation." _12th International Society for Music Information Retrieval Conference_. Miami, 2011\. 423–428\. <[http://www.ismir2011.ismir.net/papers/PS3-12.pdf](http://www.ismir2011.ismir.net/papers/PS3-12.pdf)>. 
 
-Vigliensoni, Gabriel, Gregory Burlet and Ichiro Fujinaga. "Optical Measure Recognition in Common Music Notation." _14th Society for Music Information Retrieval Conference_. Porto, Portugal, 2013\. 125–130\. <[http://www.ppgia.pucpr.br/ismir2013/wp-content/uploads/2013/09/207_Paper.pdf](http://www.ppgia.pucpr.br/ismir2013/wp-content/uploads/2013/09/207_Paper.pdf)>. 
+Vigliensoni, Gabriel, Gregory Burlet and Ichiro Fujinaga. "Optical Measure Recognition in Common Music Notation." _14th Society for Music Information Retrieval Conference_. Curitiba, Brazil, 2013\. 125–130\. <[http://www.ppgia.pucpr.br/ismir2013/wp-content/uploads/2013/09/207_Paper.pdf](http://www.ppgia.pucpr.br/ismir2013/wp-content/uploads/2013/09/207_Paper.pdf)>. 
 
 Weigl, David M. and Kevin R. Page. "Dynamic Semantic Notation: Jamming Together Music Encoding and Linked Data." _17th International Society for Music Information Retrieval Conference_. New York: International Society for Music Information Retrieval Conference, 2016\. Late-Breaking Session. <[https://wp.nyu.edu/ismir2016/wp-content/uploads/sites/2294/2016/08/weigl-dynamic.pdf](https://wp.nyu.edu/ismir2016/wp-content/uploads/sites/2294/2016/08/weigl-dynamic.pdf)>. 
 
