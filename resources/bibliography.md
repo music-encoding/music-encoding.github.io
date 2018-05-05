@@ -108,7 +108,7 @@ Teich Geertinger, Axel. "Turning Music Catalogues into Archives of Musical Score
 
 Teich Geertinger, Axel and Laurent Pugin. "MEI for Bridging the Gap Between Music Cataloguing and Digital Critical Editions." _Magazin für klassische Musick und Musikwissenschaft_ 5.3 (2011): 289–294. 
 
-Veit, Joachim. "Wächst zusammen, was zusammen gehört? Wissenschaftliche Musikergesamtausgaben und Bibliotheken." _ZfBB_ Heft 3-4 (2012): 166–174\. <[http://zs.thulb.uni-jena.de/receive/jportal_jparticle_00266455](http://zs.thulb.uni-jena.de/receive/jportal_jparticle_00266455)>. 
+Veit, Joachim. "Wächst zusammen, was zusammen gehört? Wissenschaftliche Musikergesamtausgaben und Bibliotheken." _ZfBB_ 59.3–4 (2012): 166–174\. <[http://dx.doi.org/10.3196/1864295012593472](http://dx.doi.org/10.3196/1864295012593472)>. 
 
 Viglianti, Raffaele. "Critical Editing of Music in the Digital Medium: An Experiment in MEI." _Digital Humanities_ (2010): 380. 
 
