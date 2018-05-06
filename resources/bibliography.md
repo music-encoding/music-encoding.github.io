@@ -20,9 +20,9 @@ De Guise, Sylvaine Martin. "La MEI (Music Encoding Initiative): Un Standard Au S
 
 Devaney, Johanna and Hubert Léveillé Gauvin. "Representing and Linking Music Performance Data with Score Information." _DLfM 2016: Proceedings of the 3rd International workshop on Digital Libraries for Musicology_. New York: Association for Computing Machinery, 2016\. 1–8\. <[http://dx.doi.org/10.1145/2970044.2970052](http://dx.doi.org/10.1145/2970044.2970052)>. 
 
-Doi, Carolyn and Cathy Martin. "Conference Highlights and New Initiatives of MLA 2011." _CAML Review/Revue de l'ACBM_. 2011\. <[http://pi.library.yorku.ca/ojs/index.php/caml/article/viewFile/32103/29349](http://pi.library.yorku.ca/ojs/index.php/caml/article/viewFile/32103/29349)>. 
+Doi, Carolyn and Cathy Martin. "Conference Highlights and New Initiatives of MLA 2011." _CAML Review/Revue de l'ACBM_ 39.1 (2011): 28–33\. <[https://caml.journals.yorku.ca/index.php/caml/article/viewFile/32103/29349](https://caml.journals.yorku.ca/index.php/caml/article/viewFile/32103/29349)>. 
 
-Duguid, Timothy. "MuSO: Aggregation and Peer Review in Music." White paper. College Station: Texas A&M University, 2016\. <[http://oaktrust.library.tamu.edu/bitstream/handle/1969.1/157548/NEH-White-Paper.pdf?sequence=1](http://oaktrust.library.tamu.edu/bitstream/handle/1969.1/157548/NEH-White-Paper.pdf?sequence=1)>. 
+Duguid, Timothy. "MuSO: Aggregation and Peer Review in Music." White paper. College Station: Texas A&M University, 2016\. <[http://oaktrust.library.tamu.edu/bitstream/handle/1969.1/157548/NEH-White-Paper.pdf](http://oaktrust.library.tamu.edu/bitstream/handle/1969.1/157548/NEH-White-Paper.pdf)>. 
 
 Duval, Erik, et al. "Musicology of Early Music with Europeana Tools and Services." _Proceedings of the 16th International Society for Music Information Retrieval Conference_. Ed. Meinard Müller and Frans Wiering. Malaga, Spain: International Society for Music Information Retrieval, 2015\. 632–638\. <[http://ismir2015.uma.es/articles/232_Paper.pdf](http://ismir2015.uma.es/articles/232_Paper.pdf)>. 
 
@@ -34,7 +34,7 @@ Hankinson, Andrew, et al. "Creating a Large-Scale Searchable Digital Collection 
 
 Hankinson, Andrew, et al. "Digital Document Image Retrieval Using Optical Music Recognition." _13th International Society for Music Information Retrieval Conference_. Porto, Portugal, 2012\. 577–582\. <[http://ismir2012.ismir.net/event/papers/577_ISMIR_2012.pdf](http://ismir2012.ismir.net/event/papers/577_ISMIR_2012.pdf)>. 
 
-Hankinson, Andrew, Laurent Pugin and Ichiro Fujinaga. "An Interchange Format for Optical Music Recognition Applications." _11th International Society for Music Information Retrieval Conference_. Utrecht, Netherlands, 2010\. 51–56\. <[http://www.mirlab.org/conference_papers/International_Conference/ISMIR%202010/ISMIR_20](http://www.mirlab.org/conference_papers/International_Conference/ISMIR%202010/ISMIR_20)>. 
+Hankinson, Andrew, Laurent Pugin and Ichiro Fujinaga. "An Interchange Format for Optical Music Recognition Applications." _11th International Society for Music Information Retrieval Conference_. Utrecht, Netherlands, 2010\. 51–56\. <[http://ismir2010.ismir.net/proceedings/ismir2010-11.pdf](http://ismir2010.ismir.net/proceedings/ismir2010-11.pdf)>. 
 
 Hankinson, Andrew, Perry Roland and Ichiro Fujinaga. "The Music Encoding Initiative as a Document-Encoding Framework." _12th International Society for Music Information Retrieval Conference_. Miami, 2011\. 293–298\. <[http://ismir2011.ismir.net/papers/OS3-1.pdf](http://ismir2011.ismir.net/papers/OS3-1.pdf)>. 
 
@@ -70,15 +70,13 @@ Rizo, David and Alan Marsden. "A Standard Format Proposal for Hierarchical Analy
 
 Roland, Perry. "Design Patterns in XML Music Representation." _4th International Society for Music Information Retrieval Conference_. Baltimore: Johns Hopkins University, 2003\. <[https://jscholarship.library.jhu.edu/bitstream/handle/1774.2/50/paper.pdf](https://jscholarship.library.jhu.edu/bitstream/handle/1774.2/50/paper.pdf)>. 
 
-Roland, Perry. Modular Design of the Music Encoding Initiative (MEI) DTD. _MusicNetwork Notation Workshop: XML-Based Music Notation Solutions_. Leeds, England, 2003\. Powerpoint. —. Music Encoding Initiative (MEI) DTD. _MusicNetwork Notation Workshop: XML-Based Music Notation Solutions_. Leeds, England, 2003\. <[http://xml.coverpages.org/PerryMusicnetwork2003.pdf](http://xml.coverpages.org/PerryMusicnetwork2003.pdf)>. 
+Roland, Perry. Modular Design of the Music Encoding Initiative (MEI) DTD. _MusicNetwork Notation Workshop: XML-Based Music Notation Solutions_. Leeds, England, 2003\. Powerpoint. <[https://www.powershow.com/view1/20f360-ZDc1Z/Modular_Design_of_the_Music_Encoding_Initiative_MEI_DTD_powerpoint_ppt_presentation](https://www.powershow.com/view1/20f360-ZDc1Z/Modular_Design_of_the_Music_Encoding_Initiative_MEI_DTD_powerpoint_ppt_presentation)>. —. Music Encoding Initiative (MEI) DTD. _MusicNetwork Notation Workshop: XML-Based Music Notation Solutions_. Leeds, England, 2003\. <[http://xml.coverpages.org/PerryMusicnetwork2003.pdf](http://xml.coverpages.org/PerryMusicnetwork2003.pdf)>. 
 
 Roland, Perry. "The Music Encoding Initiative (MEI)." _Proceedings of the First International Conference on Musical Applications Using XML_. 2002\. 55–59\. <[http://xml.coverpages.org/MAX2002-PRoland.pdf](http://xml.coverpages.org/MAX2002-PRoland.pdf)>. 
 
-Roland, Perry. "The Music Encoding Initiative (MEI)." 2006. <[http://www.lib.virginia.edu/digital/resndev/mei](http://www.lib.virginia.edu/digital/resndev/mei)> [broken].
+Roland, Perry. "The Music Encoding Initiative (MEI)." 2006. <[http://www.lib.virginia.edu/digital/resndev/mei](http://www.lib.virginia.edu/digital/resndev/mei)> [link broken].
 
-Roland, Perry. "The Music Encoding Initiative (MEI) DTD and the OCVE." Powerpoint. University of Virginia. Charlottesville, VA, 2009\. <[pilot.ocve.org.uk/redist/ppt/MEIChopin.ppt](pilot.ocve.org.uk/redist/ppt/MEIChopin.ppt)> [broken]. 
-
-Roland, Perry. "The Music Encoding Initiative (MEI) DTD and the Online Chopin Variorum Edition." Technical report. 2009. <[http://pilot.ocve.org.uk/redist/pdf/roland.pdf](http://pilot.ocve.org.uk/redist/pdf/roland.pdf)> [broken]. 
+Roland, Perry. "The Music Encoding Initiative (MEI) DTD and the OCVE." Powerpoint. University of Virginia. Charlottesville, VA, 2009\. <[pilot.ocve.org.uk/redist/ppt/MEIChopin.ppt](pilot.ocve.org.uk/redist/ppt/MEIChopin.ppt)> [link broken]. —. "The Music Encoding Initiative (MEI) DTD and the Online Chopin Variorum Edition." Technical report. 2009. <[https://pdfs.semanticscholar.org/f216/823c759b89ad8f623cdbd0e3c6e77bc4fe7e.pdf](https://pdfs.semanticscholar.org/f216/823c759b89ad8f623cdbd0e3c6e77bc4fe7e.pdf)>. 
 
 Roland, Perry. "XML4MIR: Extensible Markup Language for Music Information Retrieval." _International Symposium on Music Information Retrieval_. Plymouth, Massachusetts, 2000\. <[http://ismir2000.ismir.net/papers/roland_paper.pdf](http://ismir2000.ismir.net/papers/roland_paper.pdf)>. 
 
@@ -118,7 +116,7 @@ Viglianti, Raffaele and Joachim Veit. "Mind the Gap: A Preliminary Evaluation of
 
 Vigliensoni, Gabriel, et al. "Automatic Pitch Recognition in Printed Square-Note Notation." _12th International Society for Music Information Retrieval Conference_. Miami, 2011\. 423–428\. <[http://www.ismir2011.ismir.net/papers/PS3-12.pdf](http://www.ismir2011.ismir.net/papers/PS3-12.pdf)>. 
 
-Vigliensoni, Gabriel, Gregory Burlet and Ichiro Fujinaga. "Optical Measure Recognition in Common Music Notation." _14th Society for Music Information Retrieval Conference_. Curitiba, Brazil, 2013\. 125–130\. <[http://www.ppgia.pucpr.br/ismir2013/wp-content/uploads/2013/09/207_Paper.pdf](http://www.ppgia.pucpr.br/ismir2013/wp-content/uploads/2013/09/207_Paper.pdf)>. 
+Vigliensoni, Gabriel, Gregory Burlet and Ichiro Fujinaga. "Optical Measure Recognition in Common Music Notation." _14th Society for Music Information Retrieval Conference_. Curitiba, Brazil, 2013\. 125–130\. <[http://ismir2013.ismir.net/wp-content/uploads/2013/09/207_Paper.pdf](http://ismir2013.ismir.net/wp-content/uploads/2013/09/207_Paper.pdf)>. 
 
 Weigl, David M. and Kevin R. Page. "Dynamic Semantic Notation: Jamming Together Music Encoding and Linked Data." _17th International Society for Music Information Retrieval Conference_. New York: International Society for Music Information Retrieval Conference, 2016\. Late-Breaking Session. <[https://wp.nyu.edu/ismir2016/wp-content/uploads/sites/2294/2016/08/weigl-dynamic.pdf](https://wp.nyu.edu/ismir2016/wp-content/uploads/sites/2294/2016/08/weigl-dynamic.pdf)>. 
 
