@@ -42,7 +42,9 @@ Hartwig, Maja, Johannes Kepper and Kristina Richts. "Neue Wege der Musikerschlie
 
 Kepper, Johannes. "Codierungsformen von Musik." _Digitale Medien und Musikedition, Kolloquium des Ausschusses für musikwissenschaftliche Editionen der Union der deutschen Akademien der Wissenschaften_. Mainz, Germany, 2006\. <[http://www.adwmainz.de/fileadmin/adwmainz/MuKo_Veranstaltungen/S2-Digitale_Medien/kepper.pdf](http://www.adwmainz.de/fileadmin/adwmainz/MuKo_Veranstaltungen/S2-Digitale_Medien/kepper.pdf)>. 
 
-Kepper, Johannes. "XML-Based Encoding of Musicological Data–About the Requirements of a Digital Music Philology." _Information Technology Methoden und Innovative Anwendungen der Informatik und Informationstechnik_ 51.4 (2009): 216–221\. <[http://www.degruyter.com/view/j/itit.2009.51.issue-4/itit.2009.0544/itit.2009.0544.xml](http://www.degruyter.com/view/j/itit.2009.51.issue-4/itit.2009.0544/itit.2009.0544.xml)>. 
+Kepper, Johannes. _Musikedition im Zeichen neuer Medien. Historische Entwicklung und gegenwärtige Perspektiven musikalischer Gesamtausgaben_. (Diss., Detmold/Paderborn 2009\.) Norderstedt: Books on Demand, 2011 (Schriften des Instituts für Dokumentologie und Editorik, 5)\. <[http://nbn-resolving.de/urn:nbn:de:hbz:38-66395](http://nbn-resolving.de/urn:nbn:de:hbz:38-66395)>.
+
+Kepper, Johannes. "XML-Based Encoding of Musicological Data–About the Requirements of a Digital Music Philology." _Information Technology Methoden und Innovative Anwendungen der Informatik und Informationstechnik_ 51.4 (2009): 216–221\. <[http://dx.doi.org/10.1524/itit.2009.0544](http://dx.doi.org/10.1524/itit.2009.0544)>. 
 
 Krabbe, Niels and Axel Teich Geertinger. "MEI (Music Encoding Initiative) as a Basis for Thematic Catalogues: Thoughts, Experiences, and Preliminary Results." _RISM Conference_. 2012\. <[http://www.rism.info/fileadmin/content/community-content/events/RISM_Conference_2012/TeichGeertinger_Final.pdf](http://www.rism.info/fileadmin/content/community-content/events/RISM_Conference_2012/TeichGeertinger_Final.pdf)>. 
 
