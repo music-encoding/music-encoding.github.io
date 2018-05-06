@@ -24,7 +24,7 @@ Doi, Carolyn and Cathy Martin. "Conference Highlights and New Initiatives of MLA
 
 Duguid, Timothy. "MuSO: Aggregation and Peer Review in Music." White paper. College Station: Texas A&M University, 2016\. <[http://oaktrust.library.tamu.edu/bitstream/handle/1969.1/157548/NEH-White-Paper.pdf?sequence=1](http://oaktrust.library.tamu.edu/bitstream/handle/1969.1/157548/NEH-White-Paper.pdf?sequence=1)>. 
 
-Duval, Erik, et al. "Musicology of Early Music with Europeana Tools and Services." _Proceedings of the 16th International Society for Music Information Retrieval Conference_. Ed. Meinard Müller and Frans Wiering. Malaga, Spain: International Society for Music Information Retrieval, 2015\. 632–638\. <[http://ismir2015.uma.es/proceedings.html](http://ismir2015.uma.es/proceedings.html)>. 
+Duval, Erik, et al. "Musicology of Early Music with Europeana Tools and Services." _Proceedings of the 16th International Society for Music Information Retrieval Conference_. Ed. Meinard Müller and Frans Wiering. Malaga, Spain: International Society for Music Information Retrieval, 2015\. 632–638\. <[http://ismir2015.uma.es/articles/232_Paper.pdf](http://ismir2015.uma.es/articles/232_Paper.pdf)>. 
 
 Freedman, Richard and Philippe Vendrix. "The Chansonniers of Nicolas du Chemin: A Digital Forum for Renaissance Music Books." _Die Tonkunst: Magazin fur Klassische Musik und Musikwissenschaft_ 5.3 (2011): 284–288. 
 
@@ -92,7 +92,7 @@ Roland, Perry and Johannes Kepper, ed. _Music Encoding Conference Proceedings, 2
 
 Röwenstrunk, Daniel. "Digital Music Notation Data Model and Prototype Delivery System: Ein deutsch-amerikanisches Projekt zur Förderung eines wissenschaftlichen Codierungsformats für Musiknotation." _Forum Musikbibliothek: Beitrage und Informationen aus der Musikbibliothekarischen Praxis_ 31.2 (2010): 134–138. 
 
-Sapp, Craig. "Graphic to Symbolic Representations of Musical Notation." _Proceedings of the First International Conference on Technologies for Music Notation and Representation - TENOR2015_. Ed. Marc Battier and Jean Bresson and Pierre Couprie and Cécile Davy-Rigaux and Dominique Fober and Yann Geslin and Hugues Genevois and François Picard and Alice Tacaille. Paris: Institut de Recherche en Musicologie, 2015\. 124–132\. <[http://tenor2015.tenor-conference.org/TENOR2015-Proceedings.pdf](http://tenor2015.tenor-conference.org/TENOR2015-Proceedings.pdf)>. 
+Sapp, Craig. "Graphic to Symbolic Representations of Musical Notation." _Proceedings of the First International Conference on Technologies for Music Notation and Representation - TENOR2015_. Ed. Marc Battier and Jean Bresson and Pierre Couprie and Cécile Davy-Rigaux and Dominique Fober and Yann Geslin and Hugues Genevois and François Picard and Alice Tacaille. Paris: Institut de Recherche en Musicologie, 2015\. 124–132\. <[http://tenor2015.tenor-conference.org/papers/20-Sapp-GraphicToSymbolic.pdf](http://tenor2015.tenor-conference.org/papers/20-Sapp-GraphicToSymbolic.pdf)>. 
 
 Schräder, Gregor. "Ein XML-Datenformat zur Repräsentation kritischer Musikedition unter besonderer Berücksichtigung von Neumennotation." Seminar Paper. 2007\. <[http://www.dimused.uni-tuebingen.de/downloads/studienarbeit.pdf](http://www.dimused.uni-tuebingen.de/downloads/studienarbeit.pdf)>. 
 
@@ -122,4 +122,4 @@ Vigliensoni, Gabriel, Gregory Burlet and Ichiro Fujinaga. "Optical Measure Recog
 
 Weigl, David M. and Kevin R. Page. "Dynamic Semantic Notation: Jamming Together Music Encoding and Linked Data." _17th International Society for Music Information Retrieval Conference_. New York: International Society for Music Information Retrieval Conference, 2016\. Late-Breaking Session. <[https://wp.nyu.edu/ismir2016/wp-content/uploads/sites/2294/2016/08/weigl-dynamic.pdf](https://wp.nyu.edu/ismir2016/wp-content/uploads/sites/2294/2016/08/weigl-dynamic.pdf)>. 
 
-Zitellini, Rodolfo and Laurent Pugin. "Representing Atypical Music Notation Practices: An Example with Late 17th Century Music." _Second International Conference on Technologies for Music Notation and Representation_. Cambridge, UK, 2016\. 71–76\. <[http://tenor2016.tenor-conference.org/TENOR2016-Proceedings.pdf](http://tenor2016.tenor-conference.org/TENOR2016-Proceedings.pdf)>.
+Zitellini, Rodolfo and Laurent Pugin. "Representing Atypical Music Notation Practices: An Example with Late 17th Century Music." _Proceedings of the Second International Conference on Technologies for Music Notation and Representation – TENOR2016_. Ed. Richard Hoadley and Dominique Fober and Chris Nash. Cambridge, UK: Anglia Ruskin University, 2016\. 71–76\. <[http://tenor2016.tenor-conference.org/papers/10_Zitellini_tenor2016.pdf](http://tenor2016.tenor-conference.org/papers/10_Zitellini_tenor2016.pdf)>.
