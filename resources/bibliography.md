@@ -16,8 +16,6 @@ Byrd, Donald and Eric Isaacson. "A Music Representation Requirement Specificatio
 
 Crawford, Tim and Richard Lewis. "Review: Music Encoding Initiative." _Journal of the American Musicological Society_ 69.1 (2016): 273–285\. <[https://doi.org/10.1525/jams.2016.69.1.273](https://doi.org/10.1525/jams.2016.69.1.273)>.
 
-De Guise, Sylvaine Martin. "La MEI (Music Encoding Initiative): Un Standard Au Service De La Musique Kabyle." _Iles d Imesli_ 5 (2013): 245–277\. <[http://revue.ummto.dz/index.php/idi/article/view/292/0](http://revue.ummto.dz/index.php/idi/article/view/292/0)>.
-
 Devaney, Johanna and Hubert Léveillé Gauvin. "Representing and Linking Music Performance Data with Score Information." _DLfM 2016: Proceedings of the 3rd International workshop on Digital Libraries for Musicology_. New York: Association for Computing Machinery, 2016\. 1–8\. <[https://doi.org/10.1145/2970044.2970052](https://doi.org/10.1145/2970044.2970052)>. 
 
 Doi, Carolyn and Cathy Martin. "Conference Highlights and New Initiatives of MLA 2011." _CAML Review/Revue de l'ACBM_ 39.1 (2011): 28–33\. <[https://caml.journals.yorku.ca/index.php/caml/article/viewFile/32103/29349](https://caml.journals.yorku.ca/index.php/caml/article/viewFile/32103/29349)>. 
@@ -51,6 +49,8 @@ Krabbe, Niels and Axel Teich Geertinger. "MEI (Music Encoding Initiative) as a B
 Laplante, Audrey and Ichiro Fujinaga. "Digitizing Musical Scores: Challenges and Opportunities for Libraries." _DLfM 2016: Proceedings of the 3rd International workshop on Digital Libraries for Musicology_. New York: Association for Computing Machinery, 2016\. 45–48\. <[https://doi.org/10.1145/2970044.2970055](https://doi.org/10.1145/2970044.2970055)>. 
 
 Lewis, Richard J., Tim Crawford, and David Lewis. "Exploring Information Retrieval, Semantic Technologies and Workflows for Music Scholarship: The Transforming Musicology Project." _Early Music_ 43.4 (2015): 635–647\. <[https://doi.org/10.1093/em/cav073](https://doi.org/10.1093/em/cav073)>. 
+
+Martin de Guise, Sylvaine. "La MEI (Music Encoding Initiative): Un Standard Au Service De La Musique Kabyle." _Iles d Imesli_ 5 (2013): 245–277\. <[http://revue.ummto.dz/index.php/idi/article/view/292/0](http://revue.ummto.dz/index.php/idi/article/view/292/0)>.
 
 McAulay, Karen. "Show Me a Strathspey: Taking Steps to Digitize Tune Collections." _Reference Reviews_ 30.7 (2016): 1–6\. <[https://doi.org/10.1108/RR-03-2015-0073](https://doi.org/10.1108/RR-03-2015-0073)>. 
 
