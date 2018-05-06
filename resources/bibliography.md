@@ -2,7 +2,7 @@
 layout: default
 title: "Bibliography"
 ---
-# Bibliography
+# Selective Bibliography
 
 Bell, Eamonn and Laurent Pugin. "Approaches to Handwritten Conductor Annotation Extraction in Musical Scores." _DLfM 2016: Proceedings of the 3rd International workshop on Digital Libraries for Musicology_. New York: Association for Computing Machinery, 2016\. 33–36\. <[https://doi.org/10.1145/2970044.2970053](https://doi.org/10.1145/2970044.2970053)>.
 
