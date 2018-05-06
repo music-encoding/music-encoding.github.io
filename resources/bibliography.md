@@ -76,9 +76,9 @@ Roland, Perry. Modular Design of the Music Encoding Initiative (MEI) DTD. _Music
 
 Roland, Perry. "The Music Encoding Initiative (MEI)." _Proceedings of the First International Conference on Musical Applications Using XML_. 2002\. 55–59\. <[http://xml.coverpages.org/MAX2002-PRoland.pdf](http://xml.coverpages.org/MAX2002-PRoland.pdf)>. 
 
-Roland, Perry. "The Music Encoding Initiative (MEI)." 2006. <[http://www.lib.virginia.edu/digital/resndev/mei](http://www.lib.virginia.edu/digital/resndev/mei)> [link broken].
+Roland, Perry. "The Music Encoding Initiative (MEI)." 2006. <[http://www.lib.virginia.edu/digital/resndev/mei](http://www.lib.virginia.edu/digital/resndev/mei)>.
 
-Roland, Perry. "The Music Encoding Initiative (MEI) DTD and the OCVE." Powerpoint. University of Virginia. Charlottesville, VA, 2009\. <[pilot.ocve.org.uk/redist/ppt/MEIChopin.ppt](pilot.ocve.org.uk/redist/ppt/MEIChopin.ppt)> [link broken]. —. "The Music Encoding Initiative (MEI) DTD and the Online Chopin Variorum Edition." Technical report. 2009. <[https://pdfs.semanticscholar.org/f216/823c759b89ad8f623cdbd0e3c6e77bc4fe7e.pdf](https://pdfs.semanticscholar.org/f216/823c759b89ad8f623cdbd0e3c6e77bc4fe7e.pdf)>. 
+Roland, Perry. "The Music Encoding Initiative (MEI) DTD and the OCVE." Powerpoint. University of Virginia. Charlottesville, VA, 2009\. <[http://slideplayer.com/slide/2544413/](http://slideplayer.com/slide/2544413/)>. —. "The Music Encoding Initiative (MEI) DTD and the Online Chopin Variorum Edition." Technical report. 2009. <[https://pdfs.semanticscholar.org/f216/823c759b89ad8f623cdbd0e3c6e77bc4fe7e.pdf](https://pdfs.semanticscholar.org/f216/823c759b89ad8f623cdbd0e3c6e77bc4fe7e.pdf)>. 
 
 Roland, Perry. "XML4MIR: Extensible Markup Language for Music Information Retrieval." _International Symposium on Music Information Retrieval_. Plymouth, Massachusetts, 2000\. <[http://ismir2000.ismir.net/papers/roland_paper.pdf](http://ismir2000.ismir.net/papers/roland_paper.pdf)>. 
 
