@@ -96,7 +96,7 @@ Schräder, Gregor. "Ein XML-Datenformat zur Repräsentation kritischer Musikedit
 
 Selfridge-Field, Eleanor. "Hybrid Critical Editions of Opera: Motives, Milestones, and Quandaries." _Notes_ 72.1 (2015): 9–22\. <[https://doi.org/10.1353/not.2015.0100](https://doi.org/10.1353/not.2015.0100)>. 
 
-Siegert, Christine. Movimento testuale ed edizione. Il caso dell'aria "Non per parlar d'amore". Lecture. Referat beim VI Seminario di filologia musicale "La filologia musicale oggi. Il retaggio storico e le nuove prospettive". Cremona, 2009. 
+Siegert, Christine. "Movimento testuale ed edizione. Il caso dell'aria 'Non per parlar d'amore'". Lecture. _VI Seminario di filologia musicale "La filologia musicale oggi. Il retaggio storico e le nuove prospettive"_. Cremona, 2009. 
 
 Stewart, Darin. "XML for Music." Dec 2003\. _Electronic Musician_. <[http://www.emusician.com/gear/1332/xml-for-music/33473](http://www.emusician.com/gear/1332/xml-for-music/33473)>. 
 
