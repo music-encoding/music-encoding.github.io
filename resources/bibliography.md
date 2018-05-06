@@ -14,7 +14,7 @@ Buschmeier, Gabriele and Thomas Betzwieser. "Digitale Editionen in Akademienprog
 
 Byrd, Donald and Eric Isaacson. "A Music Representation Requirement Specification for Academia." _Computer Music Journal_ 27.4 (2003): 43–57\. <[http://www.jstor.org/stable/3681900](http://www.jstor.org/stable/3681900)>. rev. 2016\. <[http://homes.soic.indiana.edu/donbyrd/Papers/MusicRepReqForAcad.doc](http://homes.soic.indiana.edu/donbyrd/Papers/MusicRepReqForAcad.doc)>.
 
-Crawford, Tim and Richard Lewis. "Review: Music Encoding Initiative." _Journal of the American Musicological Society_ 69.1 (2016): 273–285\. <[http://jams.ucpress.edu/content/69/1/273](http://jams.ucpress.edu/content/69/1/273)>.
+Crawford, Tim and Richard Lewis. "Review: Music Encoding Initiative." _Journal of the American Musicological Society_ 69.1 (2016): 273–285\. <[http://dx.doi.org/10.1525/jams.2016.69.1.273](http://dx.doi.org/10.1525/jams.2016.69.1.273)>.
 
 De Guise, Sylvaine Martin. "La MEI (Music Encoding Initiative): Un Standard Au Service De La Musique Kabyle." _Iles d Imesli_ 5 (2013): 245–277\. <[http://revue.ummto.dz/index.php/idi/article/view/292/0](http://revue.ummto.dz/index.php/idi/article/view/292/0)>.
 
@@ -48,7 +48,7 @@ Krabbe, Niels and Axel Teich Geertinger. "MEI (Music Encoding Initiative) as a B
 
 Laplante, Audrey and Ichiro Fujinaga. "Digitizing Musical Scores: Challenges and Opportunities for Libraries." _DLfM 2016: Proceedings of the 3rd International workshop on Digital Libraries for Musicology_. New York: Association for Computing Machinery, 2016\. 45–48\. <[http://dx.doi.org/10.1145/2970044.2970055](http://dx.doi.org/10.1145/2970044.2970055)>. 
 
-Lewis, Richard J., Tim Crawford, and David Lewis. "Exploring Information Retrieval, Semantic Technologies and Workflows for Music Scholarship: The Transforming Musicology Project." _Early Music_ 43.4 (2015): 635–647\. <[http://em.oxfordjournals.org/content/43/4/635.full.pdf+html](http://em.oxfordjournals.org/content/43/4/635.full.pdf+html)>. 
+Lewis, Richard J., Tim Crawford, and David Lewis. "Exploring Information Retrieval, Semantic Technologies and Workflows for Music Scholarship: The Transforming Musicology Project." _Early Music_ 43.4 (2015): 635–647\. <[http://dx.doi.org/10.1093/em/cav073](http://dx.doi.org/10.1093/em/cav073)>. 
 
 McAulay, Karen. "Show Me a Strathspey: Taking Steps to Digitize Tune Collections." _Reference Reviews_ 30.7 (2016): 1–6\. <[http://dx.doi.org/10.1108/RR-03-2015-0073](http://dx.doi.org/10.1108/RR-03-2015-0073)>. 
 
@@ -56,15 +56,15 @@ McKay, Cory, Tristano Tenaglia and Ichiro Fujinaga. "JSymbolic2: Extracting Feat
 
 Morent, Stefan and Gregor Schräder. "TüBingen - Digital Critical Edition of Medieval Music - The Music of Hildegard von Bingen [1198–1179]." _Digitale Medien und Musikedition, Kolloquium des Ausschusses fur musikwissenschaftliche Editionen der Union der deutschen Akademien der Wissenschaften_. Mainz, Germany, 2006\. 16–18\. <[http://www.adwmainz.de/fileadmin/adwmainz/MuKo_Veranstaltungen/S2-Digitale_Medien/TueBingen.pdf](http://www.adwmainz.de/fileadmin/adwmainz/MuKo_Veranstaltungen/S2-Digitale_Medien/TueBingen.pdf)>. 
 
-Pugin, Laurent. "The Challenge of Data in Digital Musicology." _Frontiers in Digital Humanities_ 2.4 (2015). <[http://www.frontiersin.org/Journal/FullText.aspx?s=1606&name=digital_musicology&ART_DOI=10.3389/fdigh.2015.00004](http://www.frontiersin.org/Journal/FullText.aspx?s=1606&name=digital_musicology&ART_DOI=10.3389/fdigh.2015.00004)>. 
+Pugin, Laurent. "The Challenge of Data in Digital Musicology." _Frontiers in Digital Humanities_ 2.4 (2015). <[https://doi.org/10.3389/fdigh.2015.00004](https://doi.org/10.3389/fdigh.2015.00004)>. 
 
 Pugin, Laurent, et al. "Separating Presentation and Content in MEI." _13th International Society for Music Information Retrieval Conference_. Porto, Portugal, 2012\. 505–510\. <[http://ismir2012.ismir.net/event/papers/505_ISMIR_2012.pdf](http://ismir2012.ismir.net/event/papers/505_ISMIR_2012.pdf)>. 
 
 Pugin, Laurent, Rodolfo Zitellini and Perry Roland. "Verovio: A Library for Engraving MEI Music Notation into SVG." _Proceedings of the 15th Conference of the International Society for Music Information Retrieval_. Ed. Hsin-Min Wang, Yi-Hsuan Yang and Jin Ha Lee. Taipei, Taiwan: ISMIR, 2014\. 107–112\. <[http://www.terasoft.com.tw/conf/ismir2014/proceedings/T020_221_Paper.pdf](http://www.terasoft.com.tw/conf/ismir2014/proceedings/T020_221_Paper.pdf)>. 
 
-Richts, Kristina. "Die FRBR Customization im Datenformat der Music Encoding Initiative (MEI)." Master's Thesis. Köln, Germany: Cologne University of Applied Sciences, 2013\. <[http://publiscologne.fh-koeln.de/frontdoor/index/index/docId/144](http://publiscologne.fh-koeln.de/frontdoor/index/index/docId/144)>. 
+Richts, Kristina. "Die FRBR Customization im Datenformat der Music Encoding Initiative (MEI)." Master's Thesis. Köln, Germany: Cologne University of Applied Sciences, 2013\. <[http://nbn-resolving.de/urn:nbn:de:hbz:79pbc-2013103042](http://nbn-resolving.de/urn:nbn:de:hbz:79pbc-2013103042)>. 
 
-Richts, Kristina. "Entwicklung von Schulungsmaterialien für Einsatzmöglichkeiten von MEI im bibliothekarischen Bereich." _MALIS Praxisprojekte 2013: Projektberichte aus dem berufsbegleitenden Masterstudiengang Bibliotheks- und Informationswissenschaft der Fachhochschule Köln_. Ed. Achim Oßwald, et al. Wiesbaden: Dinges & Frick, 2013\. 137–155\. <[http://publiscologne.fh-koeln.de/frontdoor/index/index/docId/376](http://publiscologne.fh-koeln.de/frontdoor/index/index/docId/376)>. 
+Richts, Kristina. "Entwicklung von Schulungsmaterialien für Einsatzmöglichkeiten von MEI im bibliothekarischen Bereich." _MALIS Praxisprojekte 2013: Projektberichte aus dem berufsbegleitenden Masterstudiengang Bibliotheks- und Informationswissenschaft der Fachhochschule Köln_. Ed. Achim Oßwald, et al. Wiesbaden: Dinges & Frick, 2013\. 137–155\. <[http://nbn-resolving.de/urn:nbn:de:hbz:79pbc-opus-3763](http://nbn-resolving.de/urn:nbn:de:hbz:79pbc-opus-3763)>. 
 
 Rizo, David and Alan Marsden. "A Standard Format Proposal for Hierarchical Analyses and Representations." _DLfM 2016: Proceedings of the 3rd International workshop on Digital Libraries for Musicology_. New York: Association for Computing Machinery, 2016\. 25–32\. <[http://dx.doi.org/10.1145/2970044.2970046](http://dx.doi.org/10.1145/2970044.2970046)>. 
 
@@ -96,13 +96,13 @@ Sapp, Craig. "Graphic to Symbolic Representations of Musical Notation." _Proceed
 
 Schräder, Gregor. "Ein XML-Datenformat zur Repräsentation kritischer Musikedition unter besonderer Berücksichtigung von Neumennotation." Seminar Paper. 2007\. <[http://www.dimused.uni-tuebingen.de/downloads/studienarbeit.pdf](http://www.dimused.uni-tuebingen.de/downloads/studienarbeit.pdf)>. 
 
-Selfridge-Field, Eleanor. "Hybrid Critical Editions of Opera: Motives, Milestones, and Quandaries." _Notes_ 72.1 (2015): 9–22\. <[http://muse.jhu.edu/journals/notes/v072/72.1.selfridge-field.pdf](http://muse.jhu.edu/journals/notes/v072/72.1.selfridge-field.pdf)>. 
+Selfridge-Field, Eleanor. "Hybrid Critical Editions of Opera: Motives, Milestones, and Quandaries." _Notes_ 72.1 (2015): 9–22\. <[https://doi.org/10.1353/not.2015.0100](https://doi.org/10.1353/not.2015.0100)>. 
 
 Siegert, Christine. Movimento testuale ed edizione. Il caso dell'aria "Non per parlar d'amore". Lecture. Referat beim VI Seminario di filologia musicale "La filologia musicale oggi. Il retaggio storico e le nuove prospettive". Cremona, 2009. 
 
 Stewart, Darin. "XML for Music." Dec 2003\. _Electronic Musician_. <[http://www.emusician.com/gear/1332/xml-for-music/33473](http://www.emusician.com/gear/1332/xml-for-music/33473)>. 
 
-Stinson, John and Jason Stoessel. "Encoding Medieval Music Notation for Research." _Early Music_ 42.4 (2014): 613–617\. <[http://em.oxfordjournals.org/content/42/4/613.full.pdf+html](http://em.oxfordjournals.org/content/42/4/613.full.pdf+html)>. 
+Stinson, John and Jason Stoessel. "Encoding Medieval Music Notation for Research." _Early Music_ 42.4 (2014): 613–617\. <[https://doi.org/10.1093/em/cau093](https://doi.org/10.1093/em/cau093)>. 
 
 Teich Geertinger, Axel. "Turning Music Catalogues into Archives of Musical Scores–or Vice Versa: Music Archives and Catalogues Based on MEI XML." _Fontes Artis Musicae_ 61.1 (2014): 61–66\. <[http://www.jstor.org/stable/24330408](http://www.jstor.org/stable/24330408)>.
 
