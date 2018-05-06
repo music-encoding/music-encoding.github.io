@@ -40,7 +40,7 @@ Hankinson, Andrew, Perry Roland and Ichiro Fujinaga. "The Music Encoding Initiat
 
 Hartwig, Maja, Johannes Kepper and Kristina Richts. "Neue Wege der Musikerschließung: Über den möglichen Einsatz von MEI in deutschen Bibliotheken." _Forum Musikbibliothek: Beiträge und Informationen aus der musikbibliothekarischen Praxis_ 33 (2012): 16–23\. <[https://oa.slub-dresden.de/ejournals/fmb/article/view/96](https://oa.slub-dresden.de/ejournals/fmb/article/view/96)>. 
 
-Kepper, Johannes. "Codierungsformen von Musik." _Digitale Medien und Musikedition, Kolloquium des Ausschusses für musikwissenschaftliche Editionen der Union der deutschen Akademien der Wissenschaften_. Mainz, Germany, 2006\. 16–18\. <[http://www.adwmainz.de/fileadmin/adwmainz/MuKo_Veranstaltungen/S2-Digitale_Medien/kepper.pdf](http://www.adwmainz.de/fileadmin/adwmainz/MuKo_Veranstaltungen/S2-Digitale_Medien/kepper.pdf)>. 
+Kepper, Johannes. "Codierungsformen von Musik." _Digitale Medien und Musikedition, Kolloquium des Ausschusses für musikwissenschaftliche Editionen der Union der deutschen Akademien der Wissenschaften_. Mainz, Germany, 2006\. <[http://www.adwmainz.de/fileadmin/adwmainz/MuKo_Veranstaltungen/S2-Digitale_Medien/kepper.pdf](http://www.adwmainz.de/fileadmin/adwmainz/MuKo_Veranstaltungen/S2-Digitale_Medien/kepper.pdf)>. 
 
 Kepper, Johannes. "XML-Based Encoding of Musicological Data–About the Requirements of a Digital Music Philology." _Information Technology Methoden und Innovative Anwendungen der Informatik und Informationstechnik_ 51.4 (2009): 216–221\. <[http://www.degruyter.com/view/j/itit.2009.51.issue-4/itit.2009.0544/itit.2009.0544.xml](http://www.degruyter.com/view/j/itit.2009.51.issue-4/itit.2009.0544/itit.2009.0544.xml)>. 
 
@@ -54,7 +54,7 @@ McAulay, Karen. "Show Me a Strathspey: Taking Steps to Digitize Tune Collections
 
 McKay, Cory, Tristano Tenaglia and Ichiro Fujinaga. "JSymbolic2: Extracting Features from Symbolic Music Representations." _17th International Society for Music Information Retrieval Conference_. New York: International Society for Music Information Retrieval, 2016\. Late-Breaking Session. <[https://wp.nyu.edu/ismir2016/wp-content/uploads/sites/2294/2016/08/mckay-jsymbolic2.pdf](https://wp.nyu.edu/ismir2016/wp-content/uploads/sites/2294/2016/08/mckay-jsymbolic2.pdf)>. 
 
-Morent, Stefan and Gregor Schräder. "TüBingen - Digital Critical Edition of Medieval Music - The Music of Hildegard von Bingen [1198–1179]." _Digitale Medien und Musikedition, Kolloquium des Ausschusses fur musikwissenschaftliche Editionen der Union der deutschen Akademien der Wissenschaften_. Mainz, Germany, 2006\. 16–18\. <[http://www.adwmainz.de/fileadmin/adwmainz/MuKo_Veranstaltungen/S2-Digitale_Medien/TueBingen.pdf](http://www.adwmainz.de/fileadmin/adwmainz/MuKo_Veranstaltungen/S2-Digitale_Medien/TueBingen.pdf)>. 
+Morent, Stefan and Gregor Schräder. "TüBingen - Digital Critical Edition of Medieval Music - The Music of Hildegard von Bingen [1198–1179]." _Digitale Medien und Musikedition, Kolloquium des Ausschusses fur musikwissenschaftliche Editionen der Union der deutschen Akademien der Wissenschaften_. Mainz, Germany, 2006\. <[http://www.adwmainz.de/fileadmin/adwmainz/MuKo_Veranstaltungen/S2-Digitale_Medien/TueBingen.pdf](http://www.adwmainz.de/fileadmin/adwmainz/MuKo_Veranstaltungen/S2-Digitale_Medien/TueBingen.pdf)>. 
 
 Pugin, Laurent. "The Challenge of Data in Digital Musicology." _Frontiers in Digital Humanities_ 2.4 (2015). <[https://doi.org/10.3389/fdigh.2015.00004](https://doi.org/10.3389/fdigh.2015.00004)>. 
 
