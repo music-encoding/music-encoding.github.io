@@ -4,7 +4,7 @@ title: "Bibliography"
 ---
 # Bibliography
 
-Bell, Eamonn and Laurent Pugin. "Approaches to Handwritten Conductor Annotation Extraction in Musical Scores." _DLfM 2016: Proceedings of the 3rd International workshop on Digital Libraries for Musicology_. New York: Association for Computing Machinery, 2016\. 33–36\. <[http://dx.doi.org/10.1145/2970044.2970053](http://dx.doi.org/10.1145/2970044.2970053)>.
+Bell, Eamonn and Laurent Pugin. "Approaches to Handwritten Conductor Annotation Extraction in Musical Scores." _DLfM 2016: Proceedings of the 3rd International workshop on Digital Libraries for Musicology_. New York: Association for Computing Machinery, 2016\. 33–36\. <[https://doi.org/10.1145/2970044.2970053](https://doi.org/10.1145/2970044.2970053)>.
 
 Burlet, Gregory and Ichiro Fujinaga. "Robotaba Guitar Tablature Transcription Framework." _14th International Society for Music Information Retrieval Conference_. Curitiba, Brazil, 2013\. 517–522\. <[http://ismir2013.ismir.net/wp-content/uploads/2013/09/217_Paper.pdf](http://ismir2013.ismir.net/wp-content/uploads/2013/09/217_Paper.pdf)>.
 
@@ -14,11 +14,11 @@ Buschmeier, Gabriele and Thomas Betzwieser. "Digitale Editionen in Akademienprog
 
 Byrd, Donald and Eric Isaacson. "A Music Representation Requirement Specification for Academia." _Computer Music Journal_ 27.4 (2003): 43–57\. <[http://www.jstor.org/stable/3681900](http://www.jstor.org/stable/3681900)>. rev. 2016\. <[http://homes.soic.indiana.edu/donbyrd/Papers/MusicRepReqForAcad.doc](http://homes.soic.indiana.edu/donbyrd/Papers/MusicRepReqForAcad.doc)>.
 
-Crawford, Tim and Richard Lewis. "Review: Music Encoding Initiative." _Journal of the American Musicological Society_ 69.1 (2016): 273–285\. <[http://dx.doi.org/10.1525/jams.2016.69.1.273](http://dx.doi.org/10.1525/jams.2016.69.1.273)>.
+Crawford, Tim and Richard Lewis. "Review: Music Encoding Initiative." _Journal of the American Musicological Society_ 69.1 (2016): 273–285\. <[https://doi.org/10.1525/jams.2016.69.1.273](https://doi.org/10.1525/jams.2016.69.1.273)>.
 
 De Guise, Sylvaine Martin. "La MEI (Music Encoding Initiative): Un Standard Au Service De La Musique Kabyle." _Iles d Imesli_ 5 (2013): 245–277\. <[http://revue.ummto.dz/index.php/idi/article/view/292/0](http://revue.ummto.dz/index.php/idi/article/view/292/0)>.
 
-Devaney, Johanna and Hubert Léveillé Gauvin. "Representing and Linking Music Performance Data with Score Information." _DLfM 2016: Proceedings of the 3rd International workshop on Digital Libraries for Musicology_. New York: Association for Computing Machinery, 2016\. 1–8\. <[http://dx.doi.org/10.1145/2970044.2970052](http://dx.doi.org/10.1145/2970044.2970052)>. 
+Devaney, Johanna and Hubert Léveillé Gauvin. "Representing and Linking Music Performance Data with Score Information." _DLfM 2016: Proceedings of the 3rd International workshop on Digital Libraries for Musicology_. New York: Association for Computing Machinery, 2016\. 1–8\. <[https://doi.org/10.1145/2970044.2970052](https://doi.org/10.1145/2970044.2970052)>. 
 
 Doi, Carolyn and Cathy Martin. "Conference Highlights and New Initiatives of MLA 2011." _CAML Review/Revue de l'ACBM_ 39.1 (2011): 28–33\. <[https://caml.journals.yorku.ca/index.php/caml/article/viewFile/32103/29349](https://caml.journals.yorku.ca/index.php/caml/article/viewFile/32103/29349)>. 
 
@@ -30,7 +30,7 @@ Freedman, Richard and Philippe Vendrix. "The Chansonniers of Nicolas du Chemin: 
 
 Hankinson, Andrew. Optical Music Recognition Infrastructure for Large-Scale Music Document Analysis. PhD diss., Schulich School of Music, McGill University, Montreal, Canada, 2014\. <[https://www.dropbox.com/s/ghupovhktchdfc8/hankinson_dissertation_submission.pdf?dl=0](https://www.dropbox.com/s/ghupovhktchdfc8/hankinson_dissertation_submission.pdf?dl=0)>. 
 
-Hankinson, Andrew, et al. "Creating a Large-Scale Searchable Digital Collection from Printed Music Materials." _Proceedings of the 21st International Conference Companion on World Wide Web_. ACM, 2012\. 903–908\. <[http://dx.doi.org/10.1145/2187980.2188221](http://dx.doi.org/10.1145/2187980.2188221)>. 
+Hankinson, Andrew, et al. "Creating a Large-Scale Searchable Digital Collection from Printed Music Materials." _Proceedings of the 21st International Conference Companion on World Wide Web_. ACM, 2012\. 903–908\. <[https://doi.org/10.1145/2187980.2188221](https://doi.org/10.1145/2187980.2188221)>. 
 
 Hankinson, Andrew, et al. "Digital Document Image Retrieval Using Optical Music Recognition." _13th International Society for Music Information Retrieval Conference_. Porto, Portugal, 2012\. 577–582\. <[http://ismir2012.ismir.net/event/papers/577_ISMIR_2012.pdf](http://ismir2012.ismir.net/event/papers/577_ISMIR_2012.pdf)>. 
 
@@ -44,15 +44,15 @@ Kepper, Johannes. "Codierungsformen von Musik." _Digitale Medien und Musikeditio
 
 Kepper, Johannes. _Musikedition im Zeichen neuer Medien. Historische Entwicklung und gegenwärtige Perspektiven musikalischer Gesamtausgaben_. (Diss., Detmold/Paderborn 2009\.) Norderstedt: Books on Demand, 2011 (Schriften des Instituts für Dokumentologie und Editorik, 5)\. <[http://nbn-resolving.de/urn:nbn:de:hbz:38-66395](http://nbn-resolving.de/urn:nbn:de:hbz:38-66395)>.
 
-Kepper, Johannes. "XML-Based Encoding of Musicological Data–About the Requirements of a Digital Music Philology." _Information Technology Methoden und Innovative Anwendungen der Informatik und Informationstechnik_ 51.4 (2009): 216–221\. <[http://dx.doi.org/10.1524/itit.2009.0544](http://dx.doi.org/10.1524/itit.2009.0544)>. 
+Kepper, Johannes. "XML-Based Encoding of Musicological Data–About the Requirements of a Digital Music Philology." _Information Technology Methoden und Innovative Anwendungen der Informatik und Informationstechnik_ 51.4 (2009): 216–221\. <[https://doi.org/10.1524/itit.2009.0544](https://doi.org/10.1524/itit.2009.0544)>. 
 
 Krabbe, Niels and Axel Teich Geertinger. "MEI (Music Encoding Initiative) as a Basis for Thematic Catalogues: Thoughts, Experiences, and Preliminary Results." _RISM Conference_. 2012\. <[http://www.rism.info/fileadmin/content/community-content/events/RISM_Conference_2012/TeichGeertinger_Final.pdf](http://www.rism.info/fileadmin/content/community-content/events/RISM_Conference_2012/TeichGeertinger_Final.pdf)>. 
 
-Laplante, Audrey and Ichiro Fujinaga. "Digitizing Musical Scores: Challenges and Opportunities for Libraries." _DLfM 2016: Proceedings of the 3rd International workshop on Digital Libraries for Musicology_. New York: Association for Computing Machinery, 2016\. 45–48\. <[http://dx.doi.org/10.1145/2970044.2970055](http://dx.doi.org/10.1145/2970044.2970055)>. 
+Laplante, Audrey and Ichiro Fujinaga. "Digitizing Musical Scores: Challenges and Opportunities for Libraries." _DLfM 2016: Proceedings of the 3rd International workshop on Digital Libraries for Musicology_. New York: Association for Computing Machinery, 2016\. 45–48\. <[https://doi.org/10.1145/2970044.2970055](https://doi.org/10.1145/2970044.2970055)>. 
 
-Lewis, Richard J., Tim Crawford, and David Lewis. "Exploring Information Retrieval, Semantic Technologies and Workflows for Music Scholarship: The Transforming Musicology Project." _Early Music_ 43.4 (2015): 635–647\. <[http://dx.doi.org/10.1093/em/cav073](http://dx.doi.org/10.1093/em/cav073)>. 
+Lewis, Richard J., Tim Crawford, and David Lewis. "Exploring Information Retrieval, Semantic Technologies and Workflows for Music Scholarship: The Transforming Musicology Project." _Early Music_ 43.4 (2015): 635–647\. <[https://doi.org/10.1093/em/cav073](https://doi.org/10.1093/em/cav073)>. 
 
-McAulay, Karen. "Show Me a Strathspey: Taking Steps to Digitize Tune Collections." _Reference Reviews_ 30.7 (2016): 1–6\. <[http://dx.doi.org/10.1108/RR-03-2015-0073](http://dx.doi.org/10.1108/RR-03-2015-0073)>. 
+McAulay, Karen. "Show Me a Strathspey: Taking Steps to Digitize Tune Collections." _Reference Reviews_ 30.7 (2016): 1–6\. <[https://doi.org/10.1108/RR-03-2015-0073](https://doi.org/10.1108/RR-03-2015-0073)>. 
 
 McKay, Cory, Tristano Tenaglia and Ichiro Fujinaga. "JSymbolic2: Extracting Features from Symbolic Music Representations." _17th International Society for Music Information Retrieval Conference_. New York: International Society for Music Information Retrieval, 2016\. Late-Breaking Session. <[https://wp.nyu.edu/ismir2016/wp-content/uploads/sites/2294/2016/08/mckay-jsymbolic2.pdf](https://wp.nyu.edu/ismir2016/wp-content/uploads/sites/2294/2016/08/mckay-jsymbolic2.pdf)>. 
 
@@ -68,7 +68,7 @@ Richts, Kristina. "Die FRBR Customization im Datenformat der Music Encoding Init
 
 Richts, Kristina. "Entwicklung von Schulungsmaterialien für Einsatzmöglichkeiten von MEI im bibliothekarischen Bereich." _MALIS Praxisprojekte 2013: Projektberichte aus dem berufsbegleitenden Masterstudiengang Bibliotheks- und Informationswissenschaft der Fachhochschule Köln_. Ed. Achim Oßwald, et al. Wiesbaden: Dinges & Frick, 2013\. 137–155\. <[http://nbn-resolving.de/urn:nbn:de:hbz:79pbc-opus-3763](http://nbn-resolving.de/urn:nbn:de:hbz:79pbc-opus-3763)>. 
 
-Rizo, David and Alan Marsden. "A Standard Format Proposal for Hierarchical Analyses and Representations." _DLfM 2016: Proceedings of the 3rd International workshop on Digital Libraries for Musicology_. New York: Association for Computing Machinery, 2016\. 25–32\. <[http://dx.doi.org/10.1145/2970044.2970046](http://dx.doi.org/10.1145/2970044.2970046)>. 
+Rizo, David and Alan Marsden. "A Standard Format Proposal for Hierarchical Analyses and Representations." _DLfM 2016: Proceedings of the 3rd International workshop on Digital Libraries for Musicology_. New York: Association for Computing Machinery, 2016\. 25–32\. <[https://doi.org/10.1145/2970044.2970046](https://doi.org/10.1145/2970044.2970046)>. 
 
 Roland, Perry. "Design Patterns in XML Music Representation." _4th International Society for Music Information Retrieval Conference_. Baltimore: Johns Hopkins University, 2003\. <[https://jscholarship.library.jhu.edu/bitstream/handle/1774.2/50/paper.pdf](https://jscholarship.library.jhu.edu/bitstream/handle/1774.2/50/paper.pdf)>. 
 
@@ -108,11 +108,11 @@ Teich Geertinger, Axel. "Turning Music Catalogues into Archives of Musical Score
 
 Teich Geertinger, Axel and Laurent Pugin. "MEI for Bridging the Gap Between Music Cataloguing and Digital Critical Editions." _Magazin für klassische Musick und Musikwissenschaft_ 5.3 (2011): 289–294. 
 
-Veit, Joachim. "Wächst zusammen, was zusammen gehört? Wissenschaftliche Musikergesamtausgaben und Bibliotheken." _ZfBB_ 59.3–4 (2012): 166–174\. <[http://dx.doi.org/10.3196/1864295012593472](http://dx.doi.org/10.3196/1864295012593472)>. 
+Veit, Joachim. "Wächst zusammen, was zusammen gehört? Wissenschaftliche Musikergesamtausgaben und Bibliotheken." _ZfBB_ 59.3–4 (2012): 166–174\. <[https://doi.org/10.3196/1864295012593472](https://doi.org/10.3196/1864295012593472)>. 
 
 Viglianti, Raffaele. "Critical Editing of Music in the Digital Medium: An Experiment in MEI." _Digital Humanities 2010 (DH2010), Conference Abstracts_. London, UK, 2010\. 380–382\. <[http://dh2010.cch.kcl.ac.uk/academic-programme/abstracts/papers/pdf/ab-819.pdf](http://dh2010.cch.kcl.ac.uk/academic-programme/abstracts/papers/pdf/ab-819.pdf)>. 
 
-Viglianti, Raffaele. "The Music Addressability API." _DLfM 2016: Proceedings of the 3rd International workshop on Digital Libraries for Musicology_. New York: Association for Computing Machinery, 2016\. 57–60\. <[http://dx.doi.org/10.1145/2970044.2970056](http://dx.doi.org/10.1145/2970044.2970056)>. 
+Viglianti, Raffaele. "The Music Addressability API." _DLfM 2016: Proceedings of the 3rd International workshop on Digital Libraries for Musicology_. New York: Association for Computing Machinery, 2016\. 57–60\. <[https://doi.org/10.1145/2970044.2970056](https://doi.org/10.1145/2970044.2970056)>. 
 
 Viglianti, Raffaele and Joachim Veit. "Mind the Gap: A Preliminary Evaluation of Issues in Combining Text and Music Encoding." _Die Tonkunst: Magazin für Klassische Musik und Musikwissenschaft_ 5.3 (2011): 318–325. 
 
