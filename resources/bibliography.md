@@ -16,6 +16,8 @@ Byrd, Donald and Eric Isaacson. "A Music Representation Requirement Specificatio
 
 Crawford, Tim and Richard Lewis. "Review: Music Encoding Initiative." _Journal of the American Musicological Society_ 69.1 (2016): 273–285\. <[https://doi.org/10.1525/jams.2016.69.1.273](https://doi.org/10.1525/jams.2016.69.1.273)>.
 
+Destandau, Marie: La MEI dans tous ses états. La Music Encoding Initiative, de l'encodage aux usages. Master's Thesis. Lille, France: Université de Lille 3, 2016\. <[http://www.pas-sages.org/_preview/master/memoireMEI-2016-09-15-5.pdf](http://www.pas-sages.org/_preview/master/memoireMEI-2016-09-15-5.pdf)>. 
+
 Devaney, Johanna and Hubert Léveillé Gauvin. "Representing and Linking Music Performance Data with Score Information." _DLfM 2016: Proceedings of the 3rd International workshop on Digital Libraries for Musicology_. New York: Association for Computing Machinery, 2016\. 1–8\. <[https://doi.org/10.1145/2970044.2970052](https://doi.org/10.1145/2970044.2970052)>. 
 
 Doi, Carolyn and Cathy Martin. "Conference Highlights and New Initiatives of MLA 2011." _CAML Review/Revue de l'ACBM_ 39.1 (2011): 28–33\. <[https://caml.journals.yorku.ca/index.php/caml/article/viewFile/32103/29349](https://caml.journals.yorku.ca/index.php/caml/article/viewFile/32103/29349)>. 
@@ -48,6 +50,8 @@ Krabbe, Niels and Axel Teich Geertinger. "MEI (Music Encoding Initiative) as a B
 
 Laplante, Audrey and Ichiro Fujinaga. "Digitizing Musical Scores: Challenges and Opportunities for Libraries." _DLfM 2016: Proceedings of the 3rd International workshop on Digital Libraries for Musicology_. New York: Association for Computing Machinery, 2016\. 45–48\. <[https://doi.org/10.1145/2970044.2970055](https://doi.org/10.1145/2970044.2970055)>. 
 
+Leblond Martin, Sylvaine. "Musiques orales, leur notation musicale et l'encodage numérique MEI – Music Encoding Initiative – de cette notation." _Musiques orales, notations musicales et encodages numériques_. Ed. Sylvaine Leblond Martin. Paris: Les Éditions de l'Immateriél, 2016\. 220–243. 
+
 Lewis, Richard J., Tim Crawford, and David Lewis. "Exploring Information Retrieval, Semantic Technologies and Workflows for Music Scholarship: The Transforming Musicology Project." _Early Music_ 43.4 (2015): 635–647\. <[https://doi.org/10.1093/em/cav073](https://doi.org/10.1093/em/cav073)>. 
 
 Martin de Guise, Sylvaine. "La MEI (Music Encoding Initiative): Un Standard Au Service De La Musique Kabyle." _Iles d Imesli_ 5 (2013): 245–277\. <[http://revue.ummto.dz/index.php/idi/article/view/292/0](http://revue.ummto.dz/index.php/idi/article/view/292/0)>.
@@ -60,11 +64,13 @@ Morent, Stefan and Gregor Schräder. "TüBingen - Digital Critical Edition of Me
 
 Pugin, Laurent. "The Challenge of Data in Digital Musicology." _Frontiers in Digital Humanities_ 2.4 (2015). <[https://doi.org/10.3389/fdigh.2015.00004](https://doi.org/10.3389/fdigh.2015.00004)>. 
 
+Pugin, Laurent. "Encodage de documents musicaux avec la MEI." _Musiques orales, notations musicales et encodages numériques_. Ed. Sylvaine Leblond Martin. Paris: Les Éditions de l'Immateriél, 2016\. 162–175. 
+
 Pugin, Laurent, et al. "Separating Presentation and Content in MEI." _13th International Society for Music Information Retrieval Conference_. Porto, Portugal, 2012\. 505–510\. <[http://ismir2012.ismir.net/event/papers/505_ISMIR_2012.pdf](http://ismir2012.ismir.net/event/papers/505_ISMIR_2012.pdf)>. 
 
 Pugin, Laurent, Rodolfo Zitellini and Perry Roland. "Verovio: A Library for Engraving MEI Music Notation into SVG." _Proceedings of the 15th Conference of the International Society for Music Information Retrieval_. Ed. Hsin-Min Wang, Yi-Hsuan Yang and Jin Ha Lee. Taipei, Taiwan: ISMIR, 2014\. 107–112\. <[http://www.terasoft.com.tw/conf/ismir2014/proceedings/T020_221_Paper.pdf](http://www.terasoft.com.tw/conf/ismir2014/proceedings/T020_221_Paper.pdf)>. 
 
-Richts, Kristina. "Die FRBR Customization im Datenformat der Music Encoding Initiative (MEI)." Master's Thesis. Köln, Germany: Cologne University of Applied Sciences, 2013\. <[http://nbn-resolving.de/urn:nbn:de:hbz:79pbc-2013103042](http://nbn-resolving.de/urn:nbn:de:hbz:79pbc-2013103042)>. 
+Richts, Kristina. Die FRBR Customization im Datenformat der Music Encoding Initiative (MEI). Master's Thesis. Köln, Germany: Cologne University of Applied Sciences, 2013\. <[http://nbn-resolving.de/urn:nbn:de:hbz:79pbc-2013103042](http://nbn-resolving.de/urn:nbn:de:hbz:79pbc-2013103042)>. 
 
 Richts, Kristina. "Entwicklung von Schulungsmaterialien für Einsatzmöglichkeiten von MEI im bibliothekarischen Bereich." _MALIS Praxisprojekte 2013: Projektberichte aus dem berufsbegleitenden Masterstudiengang Bibliotheks- und Informationswissenschaft der Fachhochschule Köln_. Ed. Achim Oßwald, et al. Wiesbaden: Dinges & Frick, 2013\. 137–155\. <[http://nbn-resolving.de/urn:nbn:de:hbz:79pbc-opus-3763](http://nbn-resolving.de/urn:nbn:de:hbz:79pbc-opus-3763)>. 
 
