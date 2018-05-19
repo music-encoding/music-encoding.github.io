@@ -8,9 +8,9 @@ id: program
 <div class="mec2018-page">
   <img src="/images/conference/2018/mec2018logo.jpg" class="img-responsive" alt="MEC 2018"/>
 
-  <h2>Program <small class="label">(Subject to change)</small></h2>
+  <h2>Program</h2>
 
-  <!--<div><button class="btn btn-primary" disabled>Download as PDF</button></div>-->
+  <div><a class="btn btn-primary" href="/conference/2018ConferenceProgram.pdf" target="_blank">Download as PDF</a></div>
 
   <div class="mec2018-program-row">
     <h4>Tuesday 22 May 2018</h4>
@@ -43,23 +43,6 @@ id: program
             </div>
           </div>
         </div>
-        <div class="card rounded">
-          <div class="card-header">
-            <div class="card-title">14:00 - 17:00</div>
-            <div class="card-subtitle">
-              <div class="mec2018-program-title">Workshop: Introduction to MEI (part II)</div>
-              <div class="mec2018-program-speakers">Perry Roland</div>
-              <button onclick="toggleDescription('mec2018-intromei2')">Description</button>
-              <div id="mec2018-intromei2" style="display:none;">
-                <p>This workshop is designed to introduce MEI to those interested in its history, current uses, and future
-                development. No previous experience with MEI or XML is required; however, an understanding of music
-                notation and other markup schemes, like HTML and TEI, will be helpful. For hands-on exercises,
-                participants are encouraged to bring laptop computers with the oXygen XML editor, which is available
-                gratis from <a href="http://www.oxygenxml.com">www.oxygenxml.com</a> for a limited trial period, or similar software.</p>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
       <div class="column">
         <span class="chip">Room 6103</span>
@@ -82,21 +65,53 @@ id: program
             </div>
           </div>
         </div>
+      </div>
+    </div>
+
+    <div class="divider text-center" data-content="LUNCH (not provided)"></div>
+
+    <div class="columns">
+      <div class="column">
+        <div class="card rounded">
+          <div class="card-header">
+            <div class="card-title">14:00 - 17:00</div>
+            <div class="card-subtitle">
+              <div class="mec2018-program-title">Workshop: Introduction to MEI (part II)</div>
+              <div class="mec2018-program-speakers">Perry Roland</div>
+              <button onclick="toggleDescription('mec2018-intromei2')">Description</button>
+              <div id="mec2018-intromei2" style="display:none;">
+                <p>This workshop is designed to introduce MEI to those interested in its history, current uses, and future
+                development. No previous experience with MEI or XML is required; however, an understanding of music
+                notation and other markup schemes, like HTML and TEI, will be helpful. For hands-on exercises,
+                participants are encouraged to bring laptop computers with the oXygen XML editor, which is available
+                gratis from <a href="http://www.oxygenxml.com">www.oxygenxml.com</a> for a limited trial period, or similar software.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="column">
         <div class="card rounded">
           <div class="card-header">
             <div class="card-title">14:00 - 17:00</div>
             <div class="card-subtitle">
               <div class="mec2018-program-title">Workshop: Contributing to the MEI Guidelines</div>
               <div class="mec2018-program-speakers">Johannes Kepper and Laurent Pugin</div>
+              <div class="mec2018-program-detail">
+                <button onclick="toggleDescription('mec2018-contribDesc')">Description</button>
+                <div id="mec2018-contribDesc" style="display:none;">
+                  Learn about contributing to the MEI Guidelines on GitHub.
+                </div>
+                </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+
   </div>
 
-  <div class="columns mec2018-program-row mec2018-program-row-main">
-    <div class="column">
+  <div class="mec2018-program-row mec2018-program-row-main">
       <h4>Wednesday 23 May 2018</h4>
       <span class="chip">The Clarice: Grand Pavilion</span>
       <div class="card rounded">
@@ -112,7 +127,7 @@ id: program
         <div class="card-header">
           <div class="card-title">9:00 - 10:30</div>
           <div class="card-subtitle">
-            <div class="mec2018-program-title">Keynote I</div>
+            <div class="mec2018-program-title">Keynote: (Not) Beyond the Score: Decoding Musical Performance</div>
             <div class="mec2018-program-speakers">John Rink</div>
           </div>
         </div>
@@ -131,7 +146,7 @@ id: program
           </div>
         </div>
       </div>
-      <div class="divider text-center" data-content="LUNCH"></div>
+      <div class="divider text-center" data-content="LUNCH (provided)"></div>
       <div class="card rounded">
         <div class="card-header">
           <div class="card-title">13:30 - 15:00</div>
@@ -155,9 +170,7 @@ id: program
             <div class="mec2018-program-title">Updates to Verovio Humdrum Viewer</div>
             <div class="mec2018-program-speakers">Craig Stuart Sapp</div>
             <div class="mec2018-program-title">Seeing is believing – The VideApp from Beethovens Werkstatt</div>
-            <div class="mec2018-program-speakers">Johannes Kepper and Maja Hartwig</div>
-            <div class="mec2018-program-title">Increasing the Availability of Music in Digital Library: Polona 2019</div>
-            <div class="mec2018-program-speakers">Sonia Wronkowska</div>
+            <div class="mec2018-program-speakers">Johannes Kepper</div>
             <div class="mec2018-program-title">Zimmermann as a proof of concept for an MEI work catalogue</div>
             <div class="mec2018-program-speakers">Kristin Herold</div>
             <div class="mec2018-program-title">Digital Music Edition through the example of the Clarinet Concerto by W. A. Mozart</div>
@@ -176,13 +189,11 @@ id: program
           <div class="card-title">17:15 - 18:30</div>
           <div class="card-subtitle">
             <div class="mec2018-program-title">Reception and demo</div>
-            <div class="mec2018-program-speakers">sponsored by Tido</div>
+            <div class="mec2018-program-speakers">sponsored by <a href="https://tido-music.com/">Tido</a></div>
           </div>
         </div>
       </div>
-    </div>
     <div class="divider-vert hide-sm"></div>
-    <div class="column">
       <h4>Thursday 24 May 2018</h4>
       <span class="chip">The Clarice: Grand Pavilion</span>
       <div class="card rounded">
@@ -221,7 +232,7 @@ id: program
           </div>
         </div>
       </div>
-      <div class="divider text-center" data-content="LUNCH"></div>
+      <div class="divider text-center" data-content="LUNCH (provided)"></div>
       <div class="card rounded">
         <div class="card-header">
           <div class="card-title">13:30 - 15:00</div>
@@ -240,41 +251,83 @@ id: program
         <div class="card-header">
           <div class="card-title">15:30 - 17:00</div>
           <div class="card-subtitle">
-            <div class="mec2018-program-title">Keynote II</div>
+            <div class="mec2018-program-title">Keynote: What does the data tell us?: Representation, Canon, and Music Encoding</div>
             <div class="mec2018-program-speakers">Anna Kijas</div>
           </div>
         </div>
       </div>
-      <div class="divider text-center" data-content="BREAK"></div>
-      <span class="chip">MilkBoy ArtHouse</span>
+      <div class="divider text-center" data-content=""></div>
+      <span class="chip">MilkBoy ArtHouse<a href="https://www.google.com/maps/place/MilkBoy+ArtHouse/@38.9814575,-76.9403626,17z/data=!4m5!3m4!1s0x0:0xec7c9e5502ff146c!8m2!3d38.9814529!4d-76.9381738">(7416 Baltimore Ave)</a></span>
       <div class="card rounded">
         <div class="card-header">
           <div class="card-title">19:00</div>
           <div class="card-subtitle">
             <div class="mec2018-program-title">Banquet</div>
+            <div class="mec2018-program-speakers">
+              We will honor our student bursary winners:<br/>
+              Benjamin Bohl; Giuseppe Conti; Oleksii Sapov; Agnes Seipelt; Martha Eliada Thomae
+              Elias.
+            </div>
           </div>
         </div>
       </div>
-    </div>
   </div>
 
   <div class="mec2018-program-row">
     <h4>Friday 25 May 2018</h4>
     <span class="chip">MITH - Hornbake Library, lower ground floor</span>
+    <br/>
+    <span class="chip">Seminar Room</span>
+    <div class="card rounded">
+      <div class="card-header">
+        <div class="card-title">9:00 - 10:30</div>
+        <div class="card-subtitle">MEI Members Meeting (with coffee and snacks)</div>
+      </div>
+    </div>
+    <div class="card rounded">
+      <div class="card-header">
+        <div class="card-title">10:30 - 12:30</div>
+        <div class="card-subtitle">Unconference / Breaking groups</div>
+      </div>
+    </div>
+    <div class="divider text-center" data-content="LUNCH (not provided)"></div>
     <div class="columns">
-      <div class="column col-4">
-        <div class="card rounded">
-          <div class="card-header">
-            <div class="card-title">9:00 - 10:00</div>
-            <div class="card-subtitle">MEI Community Meeting</div>
+      <div class="column">
+        <span class="chip">Seminar Room</span>
+          <div class="card rounded">
+            <div class="card-header">
+              <div class="card-title">14:00 - 15:00</div>
+              <div class="card-subtitle">Unconference / Breaking groups</div>
+            </div>
           </div>
-        </div>
-        <div class="card rounded">
-          <div class="card-header">
-            <div class="card-title">10:00 - 17:00</div>
-            <div class="card-subtitle">Unconference</div>
+          <div class="card rounded">
+            <div class="card-header">
+              <div class="card-title">15:00 - 16:00</div>
+              <div class="card-subtitle">Unconference / Breaking groups</div>
+            </div>
           </div>
-        </div>
+      </div>
+      <div class="column">
+        <span class="chip">Ada Room (0301B)</span>
+          <div class="card rounded">
+            <div class="card-header">
+              <div class="card-title">14:00 - 15:00</div>
+              <div class="card-subtitle">Interest Group: Mensural Notation</div>
+            </div>
+          </div>
+          <div class="card rounded">
+            <div class="card-header">
+              <div class="card-title">15:00 - 16:00</div>
+              <div class="card-subtitle">Interest Group: Neumes</div>
+            </div>
+          </div>
+      </div>
+    </div>
+    <span class="chip">Seminar Room</span>
+    <div class="card rounded">
+      <div class="card-header">
+        <div class="card-title">16:00 - 16:15</div>
+        <div class="card-subtitle">Closing remarks</div>
       </div>
     </div>
   </div>
