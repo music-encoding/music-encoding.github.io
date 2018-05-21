@@ -5,11 +5,11 @@ layout: default
     <div class="column col-10 col-sm-11">
       <div class="dropdown col-sm-1 show-sm">
         <div class="rounded bg-gray text-center my-1">
-          <button class="btn btn-primary dropdown-toggle btn-lg">
+          <button class="btn btn-primary dropdown-toggle btn-lg" id="mec2018-menuBtn">
             <i class="icon icon-menu"></i>
           </button>
 
-          <ul class="menu text-left">
+          <ul class="menu text-left" id="mec2018-menu">
             {% for m in site.sidemenu %}
                 {% if page.sidemenu == m.id %}
                     {% for s in m.content %}
@@ -37,4 +37,15 @@ layout: default
         {% endfor %}
       </ul>
     </div>
+    <script>
+      // For iphones
+      document.querySelector("#mec2018-menuBtn").addEventListener("touchstart", function() {
+        let m = document.querySelector(".dropdown .menu")
+        if (m.style.display === 'none') {
+          m.style.display = 'block'
+        } else {
+          m.style.display = 'none'
+        }
+      })
+    </script>
 </div>
