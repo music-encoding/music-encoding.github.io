@@ -78,9 +78,6 @@ sidemenu:
     - id: conference
       label: 'Support'
       content:
-          - id: register
-            label: 'Register now'
-            url: 'https://umd-mith-conference.fasttransact.net'
           - id: about
             label: 'About'
             url: '/conference/2018/'
