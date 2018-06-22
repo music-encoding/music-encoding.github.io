@@ -4,6 +4,14 @@ title: "Bibliography"
 ---
 # Selective Bibliography
 
+<script src="https://bibbase.org/show?bib=https%3A%2F%2Fraw.githubusercontent.com%2Fmusic-encoding%2Fmusic-encoding.github.io%2Fmaster%2Fresources%2Fmei_bibliography.bib&authorFirst=1&nocache=1&jsonp=1"></script>
+
+
+{::comment} 
+This is the former "hard-coded" bibliography. It is commented out and left here for historical reasons. 
+{:/comment}
+
+{::comment}
 Bell, Eamonn and Laurent Pugin. "Approaches to Handwritten Conductor Annotation Extraction in Musical Scores." _DLfM 2016: Proceedings of the 3rd International workshop on Digital Libraries for Musicology_. New York: Association for Computing Machinery, 2016\. 33–36\. <[https://doi.org/10.1145/2970044.2970053](https://doi.org/10.1145/2970044.2970053)>.
 
 Burlet, Gregory and Ichiro Fujinaga. "Robotaba Guitar Tablature Transcription Framework." _14th International Society for Music Information Retrieval Conference_. Curitiba, Brazil, 2013\. 517–522\. <[http://ismir2013.ismir.net/wp-content/uploads/2013/09/217_Paper.pdf](http://ismir2013.ismir.net/wp-content/uploads/2013/09/217_Paper.pdf)>.
@@ -127,3 +135,5 @@ Vigliensoni, Gabriel, Gregory Burlet and Ichiro Fujinaga. "Optical Measure Recog
 Weigl, David M. and Kevin R. Page. "Dynamic Semantic Notation: Jamming Together Music Encoding and Linked Data." _17th International Society for Music Information Retrieval Conference_. New York: International Society for Music Information Retrieval Conference, 2016\. Late-Breaking Session. <[https://wp.nyu.edu/ismir2016/wp-content/uploads/sites/2294/2016/08/weigl-dynamic.pdf](https://wp.nyu.edu/ismir2016/wp-content/uploads/sites/2294/2016/08/weigl-dynamic.pdf)>. 
 
 Zitellini, Rodolfo and Laurent Pugin. "Representing Atypical Music Notation Practices: An Example with Late 17th Century Music." _Proceedings of the Second International Conference on Technologies for Music Notation and Representation – TENOR2016_. Ed. Richard Hoadley and Dominique Fober and Chris Nash. Cambridge, UK: Anglia Ruskin University, 2016\. 71–76\. <[http://tenor2016.tenor-conference.org/papers/10_Zitellini_tenor2016.pdf](http://tenor2016.tenor-conference.org/papers/10_Zitellini_tenor2016.pdf)>.
+
+{:/comment}
