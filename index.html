@@ -18,7 +18,7 @@ layout: default
             </label>
             <img src="pix/schumann_overlay.jpg" class="img-responsive rounded" alt="Schumann">
           </figure>
-          
+
           <figure class="carousel-item">
             <label class="item-prev btn btn-action btn-lg" for="slide-1">
               <i class="icon icon-arrow-left"></i>
@@ -28,7 +28,7 @@ layout: default
             </label>
             <img src="pix/slider_cmn.jpg" class="img-responsive rounded" alt="CMN">
           </figure>
-          
+
           <figure class="carousel-item">
             <label class="item-prev btn btn-action btn-lg" for="slide-2">
               <i class="icon icon-arrow-left"></i>
@@ -38,7 +38,7 @@ layout: default
             </label>
             <img src="pix/slider_neumes.jpg" class="img-responsive rounded" alt="Neumes">
           </figure>
-          
+
           <figure class="carousel-item">
             <label class="item-prev btn btn-action btn-lg" for="slide-3">
               <i class="icon icon-arrow-left"></i>
@@ -72,30 +72,33 @@ layout: default
         If you want to become an active MEI member, you are invited to read more about the community and then join us on the <a href="{{ site.baseurl}}/community/mailing-list.html">MEI-L mailing list</a>.
       </p>
 
-      <h5 style="margin-top: 5rem;">MEI is sponsored by the following Institutional Members:</h5>
-      <div class="columns">
-        <div class="column one-third">
-          <a target="_blank" href="http://tido-music.com">
-            <img src="{{ site.baseurl }}/pix/tido-logo.png" height="80" />
-          </a>
+      <section class="sponsors" style="margin-top: 5rem;">
+        <h5>MEI is sponsored by the following Institutional Members:</h5>
+        <div class="columns">
+          <div class="column one-third">
+            <a target="_blank" href="http://tido-music.com">
+              <img src="{{ site.baseurl }}/pix/tido-logo.png" height="80" alt="TIDO logo"/>
+            </a>
+          </div>
+          <div class="column one-third">
+            <a href="http://zenmem.de" target="_blank">
+              <img src="{{ site.baseurl }}/pix/zenmem-logo.png" height="80" alt="ZenMEM logo"/>
+            </a>
+          </div>
+          <div class="column">
+            <img src="{{ site.baseurl }}/pix/oeaw-logo.png" height="80" alt="ÖAW logo"/>
+          </div>
         </div>
-        <div class="column one-third">
-          <a href="http://zenmem.de" target="_blank">
-            <img src="{{ site.baseurl }}/pix/zenmem-logo.png" height="80" />
-          </a>
-        </div>
-        <div class="column">
-          <img src="{{ site.baseurl }}/pix/oeaw-logo.png" height="80" />
-        </div>
-      </div>
+      </section>
     </div>
+
     <div class="column col-4 newsMenu">
       <h4>News</h4>
       {% for post in site.posts limit:3 %}
         {% if forloop.index0 > 0 %}
         <div class="divider"></div>
         {% endif %}
-      
+
         <div class="tile">
           <div class="tile-icon">
             <div class="example-tile-icon">
@@ -111,5 +114,3 @@ layout: default
       {% endfor %}
     </div>
   </div>
-
-
