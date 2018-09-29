@@ -1,3 +1,8 @@
+---
+layout: default
+title: "2018-01-15 Virtual MEI Board Meeting"
+---
+
 # 2018-01-15 Virtual MEI Board Meeting
 
 Present: Johannes Kepper, Perry Roland, Kristina Richts, Laurent Pugin, Norbert Dubowy, Ichiro Fujinaga (left early), Benjamin W. Bohl
