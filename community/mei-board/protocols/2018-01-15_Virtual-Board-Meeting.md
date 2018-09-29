@@ -8,7 +8,7 @@ title: "2018-01-15 Virtual MEI Board Meeting"
 Present: Johannes Kepper, Perry Roland, Kristina Richts, Laurent Pugin, Norbert Dubowy, Ichiro Fujinaga (left early), Benjamin W. Bohl
 Absent: Eleanor Selfridge-Field, Andrew Hankinson
 
-The constitutional meeting of the *MEI Board* after the *2017 MEI Board Elections* took place on 15 January 2018 at 7 pm UTC via Elluminate. In order to establish the Board's capacity to act the roles of the Administrative Chair and the two Technical Co-chairs had to be filled. AJohannes Kepper volunteered as Administrative Chair and was reappointed with six approvals and one abstention out of seven votes. Andrew Hankinson and Perry Roland were appointed Technical Co-Chairs with broad consent.
+The constitutional meeting of the *MEI Board* after the *2017 MEI Board Elections* took place on 15 January 2018 at 7 pm UTC via Elluminate. In order to establish the Board's capacity to act the roles of the Administrative Chair and the two Technical Co-chairs had to be filled. Johannes Kepper volunteered as Administrative Chair and was reappointed with six approvals and one abstention out of seven votes. Andrew Hankinson and Perry Roland were appointed Technical Co-Chairs with broad consent.
 
 ## Roles
 
