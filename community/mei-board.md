@@ -33,9 +33,9 @@ The MEI Board manages the property and business of MEI. It promotes the developm
 
 ## Protocols of Board Meetings
 
-* [2015-05-21, Face to Face meeting at the MEC2015 in Florence](http://music-encoding.org/communitymei-organizationmei-boardmeetings2015-05-21/)
-* [2017-05-17, Face to Face meeting at the MEC2017 in Tours](http://music-encoding.org/?p=2283)
-* [2017-08-29, Virtual Board Meeting](http://music-encoding.org/2017-08-29-virtual-board-meeting/)
+* [2015-05-21, Face to Face meeting at the MEC2015 in Florence](mei-board/protocols/2015-05-21_Face-to-Face-Meeting-MEC2015-Florence.md)
+* [2017-05-17, Face to Face meeting at the MEC2017 in Tours](mei-board/protocols/2017-05-17_Face-to-Face-Meeting-MEC2017-Tours.md)
+* [2017-08-29, Virtual Board Meeting](mei-board/protocols/2017-08-29-Virtual-Board-Meeting.md)
 * [2018-01-15, Virtual Board Meeting](mei-board/protocols/2018-01-15_Virtual-Board-Meeting.md)
 
 ## Elections
