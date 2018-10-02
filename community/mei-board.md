@@ -35,7 +35,7 @@ The MEI Board manages the property and business of MEI. It promotes the developm
 
 * [2015-05-21, Face to Face meeting at the MEC2015 in Florence](mei-board/protocols/2015-05-21_Face-to-Face-Meeting-MEC2015-Florence.md)
 * [2017-05-17, Face to Face meeting at the MEC2017 in Tours](mei-board/protocols/2017-05-17_Face-to-Face-Meeting-MEC2017-Tours.md)
-* [2017-08-29, Virtual Board Meeting](mei-board/protocols/2017-08-29-Virtual-Board-Meeting.md)
+* [2017-08-29, Virtual Board Meeting](mei-board/protocols/2017-08-29_Virtual-Board-Meeting.md)
 * [2018-01-15, Virtual Board Meeting](mei-board/protocols/2018-01-15_Virtual-Board-Meeting.md)
 
 ## Elections
