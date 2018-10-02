@@ -6,7 +6,6 @@
   color: $light-color;
   display: block;
   padding: $layout-spacing;
-  width: 100%;
 
   &.toast-primary {
     @include toast-variant($primary-color);
