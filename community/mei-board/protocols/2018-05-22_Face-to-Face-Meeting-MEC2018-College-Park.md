@@ -1,4 +1,9 @@
-# 2018-05-22 Face-to-Face Meeting MEC2018 College Park
+---
+layout: default
+title: "2018-05-22 Face-to-Face Meeting at the MEC2018 in College Park"
+---
+
+# 2018-05-22 Face-to-Face Meeting at the MEC2018 in College Park
 
 Present: Andrew Hankinson, Ichiro Fujinaga, Johannes Kepper, Laurent Pugin, Perry Roland, Benjamin W. Bohl
 Absent: Eleanor Selfridge-Field, Kristina Richts, Norbert Dubowy
