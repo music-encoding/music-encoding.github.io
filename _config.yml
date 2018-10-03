@@ -46,8 +46,8 @@ menu:
       url: '/conference'
       submenu:
           - id: upcoming
-            label: 'MEC 2018'
-            url: '/2018'
+            label: 'MEC 2019'
+            url: '/2019'
           - id: previous
             label: 'Past Conferences'
             url: '/past.html'
@@ -80,19 +80,19 @@ sidemenu:
       content:
           - id: about
             label: 'About'
-            url: '/conference/2018/'
+            url: '/conference/2019/'
           - id: program
             label: 'Program'
-            url: '/conference/2018/program'
+            url: #'/conference/2019/program'
           - id: maps
             label: 'Maps and Dining'
-            url: '/conference/2018/maps'
+            url: #'/conference/2019/maps'
           - id: travel
             label: 'Travel and Accommodation'
-            url: '/conference/2018/travel'
+            url: #'/conference/2019/travel'
           - id: call
             label: 'Call for proposals'
-            url: '/conference/2018/call'
+            url: #'/conference/2019/call'
 
 collections:
   projects:
