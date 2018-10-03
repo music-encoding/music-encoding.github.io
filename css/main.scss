@@ -58,34 +58,34 @@ $on-laptop:        800px;
         "bib.scss"
 ;
 
-/* MEC 2018 */
-.mec2018-register {
+/* MEC 2019 */
+.mec2019-register {
   font-weight: bold;
   border: 1px solid $mei-highlight;
 }
 
-.mec2018-register:hover {
+.mec2019-register:hover {
   border: none;
   border: 1px solid white;
 }
 
-.mec2018-page {
+.mec2019-page {
   h2, h3, h4, h5 {
     margin: .5em 0 .5em 0;
   }
 
-  .mec2018-logo {
+  .mec2019-logo {
     height: 3em;
   }
 
-  .mec2018-program-row {
+  .mec2019-program-row {
     margin: 30px 0 30px 15px;
 
-    .mec2018-program-title {
+    .mec2019-program-title {
       margin: 10px 0 10px 0;
     }
 
-    .mec2018-program-speakers {
+    .mec2019-program-speakers {
       font-style: italic;
       font-size: 0.6rem;
     }
@@ -106,7 +106,7 @@ $on-laptop:        800px;
 
   }
 
-  .mec2018-program-row-main {
+  .mec2019-program-row-main {
     margin: 30px 0 30px 0;
     background-color: #f4f4f4;
     padding: 20px 10px 20px 10px;
