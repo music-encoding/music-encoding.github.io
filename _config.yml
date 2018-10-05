@@ -83,13 +83,13 @@ sidemenu:
             url: '/conference/2019/'
           - id: program
             label: 'Program'
-            url: #'/conference/2019/program'
-          - id: maps
-            label: 'Maps and Dining'
-            url: #'/conference/2019/maps'
-          - id: travel
-            label: 'Travel and Accommodation'
-            url: #'/conference/2019/travel'
+            url: '/conference/2019/program'
+          #- id: maps
+            #label: 'Maps and Dining'
+            #url: '/conference/2019/maps'
+          #- id: travel
+            #label: 'Travel and Accommodation'
+            #url: #'/conference/2019/travel'
           - id: call
             label: 'Call for proposals'
             url: #'/conference/2019/call'
