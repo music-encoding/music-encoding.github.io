@@ -89,12 +89,12 @@ sidemenu:
             #url: '/conference/2019/maps'
           #- id: travel
             #label: 'Travel and Accommodation'
-            #url: #'/conference/2019/travel'
+            #url: '/conference/2019/travel'
           - id: call
             label: 'Call for proposals'
-            url: #'/conference/2019/call'
+            url: '/conference/2019/call'
 
 collections:
   projects:
     output: true
-    permalink: /:collection/:name
+    permalink: /:collection/:name   
