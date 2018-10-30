@@ -38,7 +38,8 @@ The MEI Board manages the property and business of MEI. It promotes the developm
 * [2017-08-29, Virtual Board Meeting](mei-board/protocols/2017-08-29_Virtual-Board-Meeting.md)
 * [2018-01-15, Virtual Board Meeting](mei-board/protocols/2018-01-15_Virtual-Board-Meeting.md)
 * [2018-05-22, Face to Face meeting at the MEC2018 in College Park](mei-board/protocols/2018-05-22_Face-to-Face-Meeting-MEC2018-College-Park.md)
-
+* [2018-10-12, Virtual Board Meeting](mei-board/protocols/2018-10-12_Virtual-Board-Meeting.md)
+* 
 ## Elections
 
 The elected members of the Board are each elected for a three year term. Terms on the Board are staggered so that three positions are open for election each year. Terms of office begin January 1 at 2 pm UTC. The initial Board has been elected in December 2014.
