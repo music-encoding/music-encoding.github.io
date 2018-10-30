@@ -64,14 +64,15 @@ The _MEI LilyPond Engraving Refinement_ (MEILER) is a set of XSLT stylesheets to
 
 Possible LilyPond output formats are PDF, PNG and SVG. It's available on  [GitHub](https://github.com/rettinghaus/MEILER). You may have a look at some test files [here](https://github.com/rettinghaus/MEILER/tree/master/tests) and [here](https://github.com/rettinghaus/mei-test-set/), to get an impression of it's capabilites. Also there's a [poster](https://doi.org/10.13140/RG.2.2.15014.93760) available.
 
-
+<!---
 ### MEISE
 
 The _MEI Score Editor_ (MEISE) is an eclipse-based music notation editor software for viewing and editing encoded music in CWN (Common Western Notation) within MEI files. It facilitates e.g. proof reading or editing and visualization of variants and readings. MEISE is currently available in two versions. Both have been developed at the [Musicology Seminar Detmold/Paderborn](http://muwi-detmold-paderborn.de/ "Muiscology Seminar Detmold/Paderborn") as part of the German eHumanities projects [TextGrid](https://www.textgrid.de/ "TextGrid") and [DARIAH-DE](https://de.dariah.eu/ "DARIAH-DE").  
 
-MEISE 1.1 can be downloaded at [sourceforge.net](https://sourceforge.net/projects/meise/ "MEISE at sourceforge.net"). Important introductory information on system requirements and installation as well as a first steps guide are provided at the [wiki section](https://sourceforge.net/p/meise/wiki/Home/ "MEISE Wiki at sourceforge.net"). Furthermore, use case and workflow descriptions can be found within [MEISE's project page](https://de.dariah.eu/mei-score-editor) at the DARIAH-DE website.  
+MEISE 1.1 can be downloaded at [sourceforge.net](https://sourceforge.net/projects/meise/ "MEISE at sourceforge.net"). Important introductory information on system requirements and installation as well as a first steps guide are provided at the [wiki section](https://sourceforge.net/p/meise/wiki/Home/ "MEISE Wiki at sourceforge.net"). Furthermore, use case and workflow descriptions can be found within [MEISE's project page](https://meise.de.dariah.eu/) at the DARIAH-DE website.  
 
 Currently, a completely new version of MEISE, coordinated by the Musicology Seminar Detmold/Paderborn within the project scope of DARIAH-DE is developed in cooperation with several editor and rendering approaches throughout the MEI community. Contact: Nikolaos Beer, University of Paderborn, Musicology Seminar Detmold/Paderborn, [nikolaos.beer@upb.de](mailto:nikolaos.beer@upb.de)
+-->
 
 ### meiView
 
