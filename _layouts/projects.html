@@ -17,11 +17,11 @@ layout: default
         <div class="tile">
           <div class="tile-icon">
             <div class="example-tile-icon">
-              <a href="{{ project.url }}.html" class="icon icon-forward centered"></a>
+              <a href="{{ project.url }}.html" class="icon icon-forward centered" title="{{ project.name }}"></a>
             </div>
           </div>
           <div class="tile-content">
-            <p class="tile-title"><a href="{{ project.url }}.html">{{ project.name }}</a></p>
+            <p class="tile-title"><a href="{{ project.url }}.html" title="{{ project.name }}">{{ project.name }}</a></p>
           </div>
         </div>
         {% endif %}
