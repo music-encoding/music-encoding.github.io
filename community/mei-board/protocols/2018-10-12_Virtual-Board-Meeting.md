@@ -16,7 +16,7 @@ Minutes: Benjamin W. Bohl
 
 # Announcement Music Encoding Conference 2020
 
-Announcement of the Music Encoding Conference 2020 has not gone public so far. This could be due to the two alternative dates in the  application. Johannes Kepper will double check past correspondence on the dates and get in touch with the local organizer to settle the question who is goint to announce it on MEI-L.
+Announcement of the Music Encoding Conference 2020 has not gone public so far. This could be due to the two alternative dates in the  application. Johannes Kepper will double check past correspondence on the dates and get in touch with the local organizer to settle the question who is going to announce it on MEI-L.
 
 # MEI Board Elections 2018
 
