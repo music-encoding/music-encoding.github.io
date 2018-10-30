@@ -9,7 +9,7 @@ twitter_username: music-encoding
 # Build settings
 markdown: kramdown
 
-plugins:
+gems:
   - jekyll-redirect-from
 
 menu:
@@ -67,6 +67,9 @@ menu:
           - id: bibliography
             label: 'Bibliography'
             url: '/bibliography.html'
+          - id: tutorials
+            label: 'Tutorials'
+            url: '/tutorials.html'
     - id: documentation
       label: 'Documentation'
       url: '/guidelines'
@@ -97,4 +100,8 @@ sidemenu:
 collections:
   projects:
     output: true
-    permalink: /:collection/:name   
+    permalink: /:collection/:name
+  tutorials:
+    output: true
+    permalink: /:collection/:name
+    

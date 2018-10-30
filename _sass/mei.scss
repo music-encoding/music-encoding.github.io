@@ -12,6 +12,10 @@ body {
     flex: 1;
 }
 
+code, kbd, pre, samp {
+    font-family: 'Courier';
+}
+
 /*
     Navbar styles
 */
@@ -171,6 +175,10 @@ h2:hover a.guidelines-edit, h3:hover a.guidelines-edit, h4:hover a.guidelines-ed
         margin-bottom: .8rem;
     }
     
+    img {
+        max-width: 100%;
+    }
+    
     .code {
 
         code {
@@ -310,6 +318,51 @@ ul.nav li.nav-item:first-child {
 .icon {
     color: #ffffff;
 }
+
+/* Tutorials Start */
+
+.tutorialBox {
+    
+    h3 {
+        font-size: 1rem;
+        margin: .8rem 0 0;
+    }
+
+    #stepBox {
+        margin: 2rem;
+    }
+
+    
+    #editorBox {
+        height: 5rem;
+        margin: .5rem 0;
+        
+        background-color: #e5e5e5;
+        border: .5px solid #999999;
+        border-radius: .3rem;
+        padding: .3rem;
+        
+        #editor {
+            background-color: transparent;
+            font-size: .9rem;
+            font-family: 'Courier';
+            height: 100%;
+            
+            * {
+                font-family: 'Courier';
+            }
+        }
+
+    }
+    
+    #rendering {
+        min-height: 4rem;
+        margin: 0 .5rem .5rem;
+        
+    }
+}
+
+/* Tutorials End */
 
 /* Code Display for Samples */
 
