@@ -23,7 +23,7 @@ The MEI schema can be customized for various needs. A customization can be used 
 
 On the other hand, a customization can also be useful for extending the schema in order to include features not already available in MEI. This can be desirable when doing developments or experiments with the schema but in can also be used in "production" for projects that have very specific needs for features that are not expected to be included in "out-of-the-box" MEI.
 
-We provide an [online customization](http://custom.simssa.ca) service that makes it easy to generate a schema (or other output formats) from an MEI source file and a customization file. The source code for the customization service itself is available on [GitHub](https://github.com/music-encoding/customeization)
+We provide an [online customization](http://custom.music-encoding.org) service that makes it easy to generate a schema (or other output formats) from an MEI source file and a customization file. The source code for the customization service itself is available on [GitHub](https://github.com/music-encoding/customeization)
 
 ---
 # Community tools
