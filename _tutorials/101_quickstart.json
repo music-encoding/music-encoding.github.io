@@ -1,0 +1,28 @@
+{
+  "steps": [
+    {
+        "label":"First Note",
+        "desc":"Welcome, please encode a single note like so: <code>&lt;note pname=\"c\" oct=\"4\" dur=\"4\"\/&gt;<\/code>.",
+        "xpaths": [
+            {"rule":"count(//mei:note) = 1","renderanyway":false,"hint":"You need one note element."},
+            {"rule":"count(//mei:note/@*) = 3","renderanyway":false,"hint":"You need three attributes."},
+            {"rule":"//mei:note/@pname = 'c'","renderanyway":false,"hint":"You need a @pname attribute, with a value of c."},
+            {"rule":"//mei:note/@oct = '4'","renderanyway":false,"hint":"You need an @oct attribute, with a value of 4."},
+            {"rule":"//mei:note/@dur = '4'","renderanyway":false,"hint":"You need a @dur attribute, with a value of 4."}
+        ],
+        "xmlfile": "101_quickstart.1.xml"
+    },
+    {
+        "label":"",
+        "desc":"Congratulations, you've just encoded your first note in MEI. To continue, write a half note G4.",
+        "xpaths": [
+            {"rule":"count(//mei:note) = 1","renderanyway":false},
+            {"rule":"//mei:note/@pname = 'g'","renderanyway":true},
+            {"rule":"//mei:note/@oct = '4'","renderanyway":true},
+            {"rule":"//mei:note/@dur = '2'","renderanyway":true}
+        ],
+        "xmlfile": "101_quickstart.1.xml"
+    }
+  ],
+  "outro":"Congratulations, you've done right."
+}
