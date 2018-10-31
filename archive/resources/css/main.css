@@ -79,6 +79,12 @@ td.classes ul li.changed:before, td.content ul li.changed:before, td.atts ul li.
     left: -1rem;
 }
 
+td.classes ul li.casechanged:before, td.content ul li.casechanged:before, td.atts ul li.casechanged:before {
+    content: '~';
+    position: absolute;
+    left: -1rem;
+}
+
 #chartArea {
     position: -webkit-sticky; /* Safari */
     position: sticky;

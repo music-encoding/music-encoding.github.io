@@ -1,25 +1,18 @@
 ---
 layout: default
-title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
+title: "Comparison of MEI Version 4.0.0 and Version 3.0.0"
 ---
 <div>
    <link rel="stylesheet" href="resources/css/main.css">
-   <h1 style="float: left;">MEI Comparison <br><small><span class="">Version 4.0.0</span><span class=""> vs </span><span class="">Version 3.0.0</span></small></h1>
+   <h1>MEI Comparison <br><small><span class="">Version 4.0.0</span><span class=""> vs </span><span class="">Version 3.0.0</span></small></h1>
    <div id="chartArea">
       <div id="chartsBox">
-        <div id="elementsChart" class="chartBox"><label>Elements</label></div>
-        <div id="attClassesChart" class="chartBox"><label>Attribute Classes</label></div>
-        <div id="modelClassesChart" class="chartBox"><label>Model Classes</label></div>
-        <div id="macroPeChart" class="chartBox"><label>Macro Groups</label></div>
-        <div id="macroDtChart" class="chartBox"><label>Data Types</label></div>
-        <div style="margin-top: -.5rem;">
-          <span class="added sample">added content</span>
-          <span class="changed sample">changed content</span>
-          <span class="removed sample">removed content</span>
-          <span class="unchanged sample">unchanged content</span>
-          <span class="sample">|</span>
-          <span class="sample">click slice to go to section</span>
-          </div>
+         <div id="elementsChart" class="chartBox"><label>Elements</label></div>
+         <div id="attClassesChart" class="chartBox"><label>Attribute Classes</label></div>
+         <div id="modelClassesChart" class="chartBox"><label>Model Classes</label></div>
+         <div id="macroPeChart" class="chartBox"><label>Macro Groups</label></div>
+         <div id="macroDtChart" class="chartBox"><label>Data Types</label></div>
+         <div style="margin-top: -.5rem;"><span class="added sample">added content</span><span class="changed sample">changed content</span><span class="removed sample">removed content</span><span class="unchanged sample">unchanged content</span><span class="sample">|</span><span class="sample">click slice to go to section</span></div>
       </div>
    </div>
    <h2>Element Comparison</h2>
@@ -661,9 +654,9 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">arpeg</td>
          <td class="module">MEI.cmn</td>
-         <td class="desc"><span class="removed block">(arpeggiation) – Indicates that the notes of a chord are to be performed successively
-               rather than simultaneously, usually from lowest to highest. Sometimes called a "roll".</span><span class="added block">(arpeggiation) – Indicates that the notes of a chord are to be performed successively
-               rather than simultaneously, usually from lowest to highest. Sometimes called a "roll".</span></td>
+         <td class="desc">(arpeggiation) – Indicates that the notes of a chord are to be performed successively
+            rather than simultaneously, usually from lowest to highest. Sometimes called a "roll".
+         </td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.facsimile</li>
@@ -740,9 +733,9 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">beam</td>
          <td class="module">MEI.cmn</td>
-         <td class="desc"><span class="removed block">A container for a series of explicitly beamed events that begins and ends entirely
-               within a measure.</span><span class="added block">A container for a series of explicitly beamed events that begins and ends entirely
-               within a measure.</span></td>
+         <td class="desc">A container for a series of explicitly beamed events that begins and ends entirely
+            within a measure.
+         </td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.facsimile</li>
@@ -797,9 +790,9 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">beamSpan</td>
          <td class="module">MEI.cmn</td>
-         <td class="desc"><span class="removed block">(beam span) – Alternative element for explicitly encoding beams, particularly those
-               which extend across bar lines.</span><span class="added block">(beam span) – Alternative element for explicitly encoding beams, particularly those
-               which extend across bar lines.</span></td>
+         <td class="desc">(beam span) – Alternative element for explicitly encoding beams, particularly those
+            which extend across bar lines.
+         </td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.facsimile</li>
@@ -869,7 +862,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">beatRpt</td>
          <td class="module">MEI.cmn</td>
-         <td class="desc"><span class="removed block">(beat repeat) – An indication that material on a preceding beat should be repeated.</span><span class="added block">(beat repeat) – An indication that material on a preceding beat should be repeated.</span></td>
+         <td class="desc">(beat repeat) – An indication that material on a preceding beat should be repeated.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.facsimile</li>
@@ -934,9 +927,9 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">bend</td>
          <td class="module">MEI.cmn</td>
-         <td class="desc"><span class="removed block">A variation in pitch (often micro-tonal) upwards or downwards during the course of
-               a note.</span><span class="added block">A variation in pitch (often micro-tonal) upwards or downwards during the course of
-               a note.</span></td>
+         <td class="desc">A variation in pitch (often micro-tonal) upwards or downwards during the course of
+            a note.
+         </td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.facsimile</li>
@@ -1013,9 +1006,9 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">breath</td>
          <td class="module">MEI.cmn</td>
-         <td class="desc">(breath mark) – An indication of a point at which the performer on an instrument requiring
-            breath (including the voice) may breathe.
-         </td>
+         <td class="desc"><span class="removed block">(breath mark) – A indication of a point at which the performer on an instrument requiring
+               breath (including the voice) may breathe.</span><span class="added block">(breath mark) – An indication of a point at which the performer on an instrument requiring
+               breath (including the voice) may breathe.</span></td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.facsimile</li>
@@ -1092,7 +1085,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">bTrem</td>
          <td class="module">MEI.cmn</td>
-         <td class="desc"><span class="removed block">(bowed tremolo) – A rapid alternation on a single pitch or chord.</span><span class="added block">(bowed tremolo) – A rapid alternation on a single pitch or chord.</span></td>
+         <td class="desc">(bowed tremolo) – A rapid alternation on a single pitch or chord.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.facsimile</li>
@@ -1145,11 +1138,10 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">fermata</td>
          <td class="module">MEI.cmn</td>
-         <td class="desc"><span class="removed block">An indication placed over a note or rest to indicate that it should be held longer
-               than its written value. May also occur over a bar line to indicate the end of a phrase
-               or section. Sometimes called a 'hold' or 'pause'.</span><span class="added block">An indication placed over a note or rest to indicate that it should be held longer
-               than its written value. May also occur over a bar line to indicate the end of a phrase
-               or section. Sometimes called a 'hold' or 'pause'.</span></td>
+         <td class="desc">An indication placed over a note or rest to indicate that it should be held longer
+            than its written value. May also occur over a bar line to indicate the end of a phrase
+            or section. Sometimes called a 'hold' or 'pause'.
+         </td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.facsimile</li>
@@ -1228,9 +1220,9 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">fTrem</td>
          <td class="module">MEI.cmn</td>
-         <td class="desc"><span class="removed block">(fingered tremolo) – A rapid alternation between a pair of notes (or chords or perhaps
-               between a note and a chord) that are (usually) farther apart than a major second.</span><span class="added block">(fingered tremolo) – A rapid alternation between a pair of notes (or chords or perhaps
-               between a note and a chord) that are (usually) farther apart than a major second.</span></td>
+         <td class="desc">(fingered tremolo) – A rapid alternation between a pair of notes (or chords or perhaps
+            between a note and a chord) that are (usually) farther apart than a major second.
+         </td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.facsimile</li>
@@ -1288,9 +1280,9 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">gliss</td>
          <td class="module">MEI.cmn</td>
-         <td class="desc"><span class="removed block">(glissando) – A continuous or sliding movement from one pitch to another, usually
-               indicated by a straight or wavy line.</span><span class="added block">(glissando) – A continuous or sliding movement from one pitch to another, usually
-               indicated by a straight or wavy line.</span></td>
+         <td class="desc">(glissando) – A continuous or sliding movement from one pitch to another, usually
+            indicated by a straight or wavy line.
+         </td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.facsimile</li>
@@ -1389,9 +1381,9 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">hairpin</td>
          <td class="module">MEI.cmn</td>
-         <td class="desc"><span class="removed block">Indicates continuous dynamics expressed on the score as wedge-shaped graphics, e.g.
-               &lt; and &gt;.</span><span class="added block">Indicates continuous dynamics expressed on the score as wedge-shaped graphics, e.g.
-               &lt; and &gt;.</span></td>
+         <td class="desc">Indicates continuous dynamics expressed on the score as wedge-shaped graphics, e.g.
+            &lt; and &gt;.
+         </td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.facsimile</li>
@@ -1478,7 +1470,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">halfmRpt</td>
          <td class="module">MEI.cmn</td>
-         <td class="desc"><span class="removed block">(half-measure repeat) – A half-measure repeat in any meter.</span><span class="added block">(half-measure repeat) – A half-measure repeat in any meter.</span></td>
+         <td class="desc">(half-measure repeat) – A half-measure repeat in any meter.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.facsimile</li>
@@ -1546,7 +1538,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">harpPedal</td>
          <td class="module">MEI.cmn</td>
-         <td class="desc"><span class="removed block">(harp pedal) – Harp pedal diagram.</span><span class="added block">(harp pedal) – Harp pedal diagram.</span></td>
+         <td class="desc">(harp pedal) – Harp pedal diagram.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.facsimile</li>
@@ -1630,9 +1622,9 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">measure</td>
          <td class="module">MEI.cmn</td>
-         <td class="desc">Unit of musical time consisting of a fixed number of note values of a given type,
-            as determined by the prevailing meter, and delimited in musical notation by bar lines.
-         </td>
+         <td class="desc"><span class="removed block">Unit of musical time consisting of a fixed number of note-values of a given type,
+               as determined by the prevailing meter, and delimited in musical notation by bar lines.</span><span class="added block">Unit of musical time consisting of a fixed number of note values of a given type,
+               as determined by the prevailing meter, and delimited in musical notation by bar lines.</span></td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.facsimile</li>
@@ -1708,7 +1700,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">meterSig</td>
          <td class="module">MEI.cmn</td>
-         <td class="desc"><span class="removed block">(meter signature) – Written meter signature.</span><span class="added block">(meter signature) – Written meter signature.</span></td>
+         <td class="desc">(meter signature) – Written meter signature.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.facsimile</li>
@@ -1764,9 +1756,9 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">meterSigGrp</td>
          <td class="module">MEI.cmn</td>
-         <td class="desc"><span class="removed block">(meter signature group) – Used to capture alternating, interchanging, and mixed meter
-               signatures.</span><span class="added block">(meter signature group) – Used to capture alternating, interchanging, and mixed meter
-               signatures.</span></td>
+         <td class="desc">(meter signature group) – Used to capture alternating, interchanging, and mixed meter
+            signatures.
+         </td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.facsimile</li>
@@ -1806,7 +1798,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">mRest</td>
          <td class="module">MEI.cmn</td>
-         <td class="desc"><span class="removed block">(measure rest) – Complete measure rest in any meter.</span><span class="added block">(measure rest) – Complete measure rest in any meter.</span></td>
+         <td class="desc">(measure rest) – Complete measure rest in any meter.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.facsimile</li>
@@ -1883,7 +1875,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">mRpt</td>
          <td class="module">MEI.cmn</td>
-         <td class="desc"><span class="removed block">(measure repeat) – An indication that the previous measure should be repeated.</span><span class="added block">(measure repeat) – An indication that the previous measure should be repeated.</span></td>
+         <td class="desc">(measure repeat) – An indication that the previous measure should be repeated.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.facsimile</li>
@@ -1941,7 +1933,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">mRpt2</td>
          <td class="module">MEI.cmn</td>
-         <td class="desc"><span class="removed block">(2-measure repeat) – An indication that the previous two measures should be repeated.</span><span class="added block">(2-measure repeat) – An indication that the previous two measures should be repeated.</span></td>
+         <td class="desc">(2-measure repeat) – An indication that the previous two measures should be repeated.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.facsimile</li>
@@ -1999,7 +1991,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">mSpace</td>
          <td class="module">MEI.cmn</td>
-         <td class="desc"><span class="removed block">(measure space) – A measure containing only empty space in any meter.</span><span class="added block">(measure space) – A measure containing only empty space in any meter.</span></td>
+         <td class="desc">(measure space) – A measure containing only empty space in any meter.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.facsimile</li>
@@ -2058,9 +2050,9 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">multiRest</td>
          <td class="module">MEI.cmn</td>
-         <td class="desc"><span class="removed block">(multiple rest) – Multiple measures of rest compressed into a single symbol, frequently
-               found in performer parts.</span><span class="added block">(multiple rest) – Multiple measures of rest compressed into a single symbol, frequently
-               found in performer parts.</span></td>
+         <td class="desc">(multiple rest) – Multiple measures of rest compressed into a single symbol, frequently
+            found in performer parts.
+         </td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.facsimile</li>
@@ -2128,7 +2120,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">multiRpt</td>
          <td class="module">MEI.cmn</td>
-         <td class="desc"><span class="removed block">(multiple repeat) – Multiple repeated measures.</span><span class="added block">(multiple repeat) – Multiple repeated measures.</span></td>
+         <td class="desc">(multiple repeat) – Multiple repeated measures.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.facsimile</li>
@@ -2186,9 +2178,9 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">octave</td>
          <td class="module">MEI.cmn</td>
-         <td class="desc"><span class="removed block">An indication that a passage should be performed one or more octaves above or below
-               its written pitch.</span><span class="added block">An indication that a passage should be performed one or more octaves above or below
-               its written pitch.</span></td>
+         <td class="desc">An indication that a passage should be performed one or more octaves above or below
+            its written pitch.
+         </td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.facsimile</li>
@@ -2275,9 +2267,8 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">ossia</td>
          <td class="module">MEI.cmn</td>
-         <td class="desc">Captures original notation and a differently notated version *present in the source
-            being transcribed* .
-         </td>
+         <td class="desc"><span class="removed block">An alternate notational version *present in the source being transcribed* .</span><span class="added block">Captures original notation and a differently notated version *present in the source
+               being transcribed* .</span></td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.facsimile</li>
@@ -2319,7 +2310,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">pedal</td>
          <td class="module">MEI.cmn</td>
-         <td class="desc"><span class="removed block">Piano pedal mark.</span><span class="added block">Piano pedal mark.</span></td>
+         <td class="desc">Piano pedal mark.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.facsimile</li>
@@ -2405,9 +2396,9 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">reh</td>
          <td class="module">MEI.cmn</td>
-         <td class="desc"><span class="removed block">(rehearsal mark) – In an orchestral score and its corresponding parts, a mark indicating
-               a convenient point from which to resume rehearsal after a break.</span><span class="added block">(rehearsal mark) – In an orchestral score and its corresponding parts, a mark indicating
-               a convenient point from which to resume rehearsal after a break.</span></td>
+         <td class="desc">(rehearsal mark) – In an orchestral score and its corresponding parts, a mark indicating
+            a convenient point from which to resume rehearsal after a break.
+         </td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.facsimile</li>
@@ -2472,7 +2463,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">slur</td>
          <td class="module">MEI.cmn</td>
-         <td class="desc"><span class="removed block">Indication of 1) a "unified melodic idea" or 2) performance technique.</span><span class="added block">Indication of 1) a "unified melodic idea" or 2) performance technique.</span></td>
+         <td class="desc">Indication of 1) a "unified melodic idea" or 2) performance technique.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.facsimile</li>
@@ -2555,9 +2546,9 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">tie</td>
          <td class="module">MEI.cmn</td>
-         <td class="desc"><span class="removed block">An indication that two notes of the same pitch form a single note with their combined
-               rhythmic values.</span><span class="added block">An indication that two notes of the same pitch form a single note with their combined
-               rhythmic values.</span></td>
+         <td class="desc">An indication that two notes of the same pitch form a single note with their combined
+            rhythmic values.
+         </td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.facsimile</li>
@@ -2631,11 +2622,10 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">tuplet</td>
          <td class="module">MEI.cmn</td>
-         <td class="desc"><span class="removed block">A group of notes with "irregular" (sometimes called "irrational") rhythmic values,
-               for example, three notes in the time normally occupied by two or nine in the time
-               of five.</span><span class="added block">A group of notes with "irregular" (sometimes called "irrational") rhythmic values,
-               for example, three notes in the time normally occupied by two or nine in the time
-               of five.</span></td>
+         <td class="desc">A group of notes with "irregular" (sometimes called "irrational") rhythmic values,
+            for example, three notes in the time normally occupied by two or nine in the time
+            of five.
+         </td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.facsimile</li>
@@ -2703,9 +2693,9 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">tupletSpan</td>
          <td class="module">MEI.cmn</td>
-         <td class="desc"><span class="removed block">(tuplet span) – Alternative element for encoding tuplets, especially useful for tuplets
-               that extend across bar lines.</span><span class="added block">(tuplet span) – Alternative element for encoding tuplets, especially useful for tuplets
-               that extend across bar lines.</span></td>
+         <td class="desc">(tuplet span) – Alternative element for encoding tuplets, especially useful for tuplets
+            that extend across bar lines.
+         </td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.facsimile</li>
@@ -2778,9 +2768,9 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">mordent</td>
          <td class="module">MEI.cmnOrnaments</td>
-         <td class="desc"><span class="removed block">An ornament indicating rapid alternation of the main note with a secondary note, usually
-               a step below, but sometimes a step above.</span><span class="added block">An ornament indicating rapid alternation of the main note with a secondary note, usually
-               a step below, but sometimes a step above.</span></td>
+         <td class="desc">An ornament indicating rapid alternation of the main note with a secondary note, usually
+            a step below, but sometimes a step above.
+         </td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.facsimile</li>
@@ -2853,7 +2843,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">trill</td>
          <td class="module">MEI.cmnOrnaments</td>
-         <td class="desc"><span class="removed block">Rapid alternation of a note with another (usually at the interval of a second above).</span><span class="added block">Rapid alternation of a note with another (usually at the interval of a second above).</span></td>
+         <td class="desc">Rapid alternation of a note with another (usually at the interval of a second above).</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.facsimile</li>
@@ -2951,9 +2941,9 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">turn</td>
          <td class="module">MEI.cmnOrnaments</td>
-         <td class="desc"><span class="removed block">An ornament consisting of four notes — the upper neighbor of the written note, the
-               written note, the lower neighbor, and the written note.</span><span class="added block">An ornament consisting of four notes — the upper neighbor of the written note, the
-               written note, the lower neighbor, and the written note.</span></td>
+         <td class="desc">An ornament consisting of four notes — the upper neighbor of the written note, the
+            written note, the lower neighbor, and the written note.
+         </td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.facsimile</li>
@@ -3027,9 +3017,9 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">meiCorpus</td>
          <td class="module">MEI.corpus</td>
-         <td class="desc">(MEI corpus) – A group of related MEI documents, consisting of a header for the group,
-            and one or more mei elements, each with its own complete header.
-         </td>
+         <td class="desc"><span class="removed block">(MEI corpus) – A group of related MEI documents, consisting of a header for the group,
+               and one or more &lt;mei&gt; elements, each with its own complete header.</span><span class="added block">(MEI corpus) – A group of related MEI documents, consisting of a header for the group,
+               and one or more mei elements, each with its own complete header.</span></td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="casechanged" title="was: att.meiversion">att.meiVersion</li>
@@ -3064,7 +3054,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">app</td>
          <td class="module">MEI.critapp</td>
-         <td class="desc"><span class="removed block">(apparatus) – Contains one or more alternative encodings.</span><span class="added block">(apparatus) – Contains one or more alternative encodings.</span></td>
+         <td class="desc">(apparatus) – Contains one or more alternative encodings.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">model.appLike</li>
@@ -3100,7 +3090,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">lem</td>
          <td class="module">MEI.critapp</td>
-         <td class="desc"><span class="removed block">(lemma) – Contains the lemma, or base text, of a textual variation.</span><span class="added block">(lemma) – Contains the lemma, or base text, of a textual variation.</span></td>
+         <td class="desc">(lemma) – Contains the lemma, or base text, of a textual variation.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.crit</li>
@@ -3168,7 +3158,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">rdg</td>
          <td class="module">MEI.critapp</td>
-         <td class="desc"><span class="removed block">(reading) – Contains a single reading within a textual variation.</span><span class="added block">(reading) – Contains a single reading within a textual variation.</span></td>
+         <td class="desc">(reading) – Contains a single reading within a textual variation.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.crit</li>
@@ -3236,9 +3226,9 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">abbr</td>
          <td class="module">MEI.edittrans</td>
-         <td class="desc"><span class="removed block">(abbreviation) – A generic element for 1) a shortened form of a word, including an
-               acronym or 2) a shorthand notation.</span><span class="added block">(abbreviation) – A generic element for 1) a shortened form of a word, including an
-               acronym or 2) a shorthand notation.</span></td>
+         <td class="desc">(abbreviation) – A generic element for 1) a shortened form of a word, including an
+            acronym or 2) a shorthand notation.
+         </td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.edit</li>
@@ -3313,7 +3303,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">add</td>
          <td class="module">MEI.edittrans</td>
-         <td class="desc"><span class="removed block">(addition) – Marks an addition to the text.</span><span class="added block">(addition) – Marks an addition to the text.</span></td>
+         <td class="desc">(addition) – Marks an addition to the text.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.facsimile</li>
@@ -3395,7 +3385,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">choice</td>
          <td class="module">MEI.edittrans</td>
-         <td class="desc"><span class="removed block">Groups a number of alternative encodings for the same point in a text.</span><span class="added block">Groups a number of alternative encodings for the same point in a text.</span></td>
+         <td class="desc">Groups a number of alternative encodings for the same point in a text.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">model.editLike</li>
@@ -3427,7 +3417,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">corr</td>
          <td class="module">MEI.edittrans</td>
-         <td class="desc"><span class="removed block">(correction) – Contains the correct form of an apparent erroneous passage.</span><span class="added block">(correction) – Contains the correct form of an apparent erroneous passage.</span></td>
+         <td class="desc">(correction) – Contains the correct form of an apparent erroneous passage.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.edit</li>
@@ -3509,9 +3499,9 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">cpMark</td>
          <td class="module">MEI.edittrans</td>
-         <td class="desc"><span class="removed block">(copy/colla parte mark) – A verbal or graphical indication to copy musical material
-               written elsewhere.</span><span class="added block">(copy/colla parte mark) – A verbal or graphical indication to copy musical material
-               written elsewhere.</span></td>
+         <td class="desc">(copy/colla parte mark) – A verbal or graphical indication to copy musical material
+            written elsewhere.
+         </td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.facsimile</li>
@@ -3604,7 +3594,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">damage</td>
          <td class="module">MEI.edittrans</td>
-         <td class="desc"><span class="removed block">Contains an area of damage to the physical medium.</span><span class="added block">Contains an area of damage to the physical medium.</span></td>
+         <td class="desc">Contains an area of damage to the physical medium.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="casechanged" title="was: att.agentident">att.agentIdent</li>
@@ -3682,9 +3672,9 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">del</td>
          <td class="module">MEI.edittrans</td>
-         <td class="desc"><span class="removed block">(deletion) – Contains information deleted, marked as deleted, or otherwise indicated
-               as superfluous or spurious in the copy text by an author, scribe, annotator, or corrector.</span><span class="added block">(deletion) – Contains information deleted, marked as deleted, or otherwise indicated
-               as superfluous or spurious in the copy text by an author, scribe, annotator, or corrector.</span></td>
+         <td class="desc">(deletion) – Contains information deleted, marked as deleted, or otherwise indicated
+            as superfluous or spurious in the copy text by an author, scribe, annotator, or corrector.
+         </td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="added" title="added class">att.edit</li>
@@ -3770,7 +3760,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">expan</td>
          <td class="module">MEI.edittrans</td>
-         <td class="desc"><span class="removed block">(expansion) – Contains the expansion of an abbreviation.</span><span class="added block">(expansion) – Contains the expansion of an abbreviation.</span></td>
+         <td class="desc">(expansion) – Contains the expansion of an abbreviation.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.edit</li>
@@ -3853,9 +3843,9 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">gap</td>
          <td class="module">MEI.edittrans</td>
-         <td class="desc"><span class="removed block">Indicates a point where material has been omitted in a transcription, whether as part
-               of sampling practice or for editorial reasons described in the MEI header.</span><span class="added block">Indicates a point where material has been omitted in a transcription, whether as part
-               of sampling practice or for editorial reasons described in the MEI header.</span></td>
+         <td class="desc">Indicates a point where material has been omitted in a transcription, whether as part
+            of sampling practice or for editorial reasons described in the MEI header.
+         </td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.edit</li>
@@ -3904,9 +3894,9 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">handShift</td>
          <td class="module">MEI.edittrans</td>
-         <td class="desc"><span class="removed block">Marks the beginning of a passage written in a new hand, or of a change in the scribe,
-               writing style, ink or character of the document hand.</span><span class="added block">Marks the beginning of a passage written in a new hand, or of a change in the scribe,
-               writing style, ink or character of the document hand.</span></td>
+         <td class="desc">Marks the beginning of a passage written in a new hand, or of a change in the scribe,
+            writing style, ink or character of the document hand.
+         </td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.edit</li>
@@ -3949,9 +3939,9 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">orig</td>
          <td class="module">MEI.edittrans</td>
-         <td class="desc"><span class="removed block">(original) – Contains material which is marked as following the original, rather than
-               being normalized or corrected.</span><span class="added block">(original) – Contains material which is marked as following the original, rather than
-               being normalized or corrected.</span></td>
+         <td class="desc">(original) – Contains material which is marked as following the original, rather than
+            being normalized or corrected.
+         </td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.edit</li>
@@ -4029,9 +4019,9 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">reg</td>
          <td class="module">MEI.edittrans</td>
-         <td class="desc"><span class="removed block">(regularization) – Contains material which has been regularized or normalized in some
-               sense.</span><span class="added block">(regularization) – Contains material which has been regularized or normalized in some
-               sense.</span></td>
+         <td class="desc">(regularization) – Contains material which has been regularized or normalized in some
+            sense.
+         </td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.authorized</li>
@@ -4111,9 +4101,9 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">restore</td>
          <td class="module">MEI.edittrans</td>
-         <td class="desc"><span class="removed block">Indicates restoration of material to an earlier state by cancellation of an editorial
-               or authorial marking or instruction.</span><span class="added block">Indicates restoration of material to an earlier state by cancellation of an editorial
-               or authorial marking or instruction.</span></td>
+         <td class="desc">Indicates restoration of material to an earlier state by cancellation of an editorial
+            or authorial marking or instruction.
+         </td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.edit</li>
@@ -4197,7 +4187,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">sic</td>
          <td class="module">MEI.edittrans</td>
-         <td class="desc"><span class="removed block">Contains apparently incorrect or inaccurate material.</span><span class="added block">Contains apparently incorrect or inaccurate material.</span></td>
+         <td class="desc">Contains apparently incorrect or inaccurate material.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="added" title="added class">att.edit</li>
@@ -4273,9 +4263,9 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">subst</td>
          <td class="module">MEI.edittrans</td>
-         <td class="desc"><span class="removed block">(substitution) – Groups transcriptional elements when the combination is to be regarded
-               as a single intervention in the text.</span><span class="added block">(substitution) – Groups transcriptional elements when the combination is to be regarded
-               as a single intervention in the text.</span></td>
+         <td class="desc">(substitution) – Groups transcriptional elements when the combination is to be regarded
+            as a single intervention in the text.
+         </td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.edit</li>
@@ -4318,7 +4308,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">supplied</td>
          <td class="module">MEI.edittrans</td>
-         <td class="desc"><span class="removed block">Contains material supplied by the transcriber or editor for any reason.</span><span class="added block">Contains material supplied by the transcriber or editor for any reason.</span></td>
+         <td class="desc">Contains material supplied by the transcriber or editor for any reason.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="casechanged" title="was: att.agentident">att.agentIdent</li>
@@ -4398,9 +4388,9 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">unclear</td>
          <td class="module">MEI.edittrans</td>
-         <td class="desc"><span class="removed block">Contains material that cannot be transcribed with certainty because it is illegible
-               or inaudible in the source.</span><span class="added block">Contains material that cannot be transcribed with certainty because it is illegible
-               or inaudible in the source.</span></td>
+         <td class="desc">Contains material that cannot be transcribed with certainty because it is illegible
+            or inaudible in the source.
+         </td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="casechanged" title="was: att.agentident">att.agentIdent</li>
@@ -4482,9 +4472,9 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">facsimile</td>
          <td class="module">MEI.facsimile</td>
-         <td class="desc">Contains a representation of a written source in the form of a set of images rather
-            than as transcribed or encoded text.
-         </td>
+         <td class="desc"><span class="removed block">Contains a representation of some written source in the form of a set of images rather
+               than as transcribed or encoded text.</span><span class="added block">Contains a representation of a written source in the form of a set of images rather
+               than as transcribed or encoded text.</span></td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="added" title="added class">att.metadataPointing</li>
@@ -4520,11 +4510,10 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">surface</td>
          <td class="module">MEI.facsimile</td>
-         <td class="desc"><span class="removed block">Defines a writing surface in terms of a rectangular coordinate space, optionally grouping
-               one or more graphic representations of that space, and rectangular zones of interest
-               within it.</span><span class="added block">Defines a writing surface in terms of a rectangular coordinate space, optionally grouping
-               one or more graphic representations of that space, and rectangular zones of interest
-               within it.</span></td>
+         <td class="desc">Defines a writing surface in terms of a rectangular coordinate space, optionally grouping
+            one or more graphic representations of that space, and rectangular zones of interest
+            within it.
+         </td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.coordinated</li>
@@ -4571,7 +4560,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">zone</td>
          <td class="module">MEI.facsimile</td>
-         <td class="desc"><span class="removed block">Defines an area of interest within a surface or graphic file.</span><span class="added block">Defines an area of interest within a surface or graphic file.</span></td>
+         <td class="desc">Defines an area of interest within a surface or graphic file.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.coordinated</li>
@@ -4612,9 +4601,9 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">fig</td>
          <td class="module">MEI.figtable</td>
-         <td class="desc"><span class="removed block">(figure) – Groups elements representing or containing graphic information such as
-               an illustration or figure.</span><span class="added block">(figure) – Groups elements representing or containing graphic information such as
-               an illustration or figure.</span></td>
+         <td class="desc">(figure) – Groups elements representing or containing graphic information such as
+            an illustration or figure.
+         </td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.facsimile</li>
@@ -4660,9 +4649,9 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">figDesc</td>
          <td class="module">MEI.figtable</td>
-         <td class="desc"><span class="removed block">(figure description) – Contains a brief prose description of the appearance or content
-               of a graphic figure, for use when documenting an image without displaying it.</span><span class="added block">(figure description) – Contains a brief prose description of the appearance or content
-               of a graphic figure, for use when documenting an image without displaying it.</span></td>
+         <td class="desc">(figure description) – Contains a brief prose description of the appearance or content
+            of a graphic figure, for use when documenting an image without displaying it.
+         </td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.lang</li>
@@ -4699,7 +4688,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">graphic</td>
          <td class="module">MEI.figtable</td>
-         <td class="desc"><span class="removed block">Indicates the location of an inline graphic.</span><span class="added block">Indicates the location of an inline graphic.</span></td>
+         <td class="desc">Indicates the location of an inline graphic.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.dimensions</li>
@@ -4759,7 +4748,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">table</td>
          <td class="module">MEI.figtable</td>
-         <td class="desc"><span class="removed block">Contains text displayed in tabular form.</span><span class="added block">Contains text displayed in tabular form.</span></td>
+         <td class="desc">Contains text displayed in tabular form.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.facsimile</li>
@@ -4801,9 +4790,9 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">td</td>
          <td class="module">MEI.figtable</td>
-         <td class="desc"><span class="removed block">(table data) – Designates a table cell that contains data as opposed to a cell that
-               contains column or row heading information.</span><span class="added block">(table data) – Designates a table cell that contains data as opposed to a cell that
-               contains column or row heading information.</span></td>
+         <td class="desc">(table data) – Designates a table cell that contains data as opposed to a cell that
+            contains column or row heading information.
+         </td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.facsimile</li>
@@ -4849,9 +4838,9 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">th</td>
          <td class="module">MEI.figtable</td>
-         <td class="desc"><span class="removed block">(table header) – Designates a table cell containing column or row heading information
-               as opposed to one containing data.</span><span class="added block">(table header) – Designates a table cell containing column or row heading information
-               as opposed to one containing data.</span></td>
+         <td class="desc">(table header) – Designates a table cell containing column or row heading information
+            as opposed to one containing data.
+         </td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.facsimile</li>
@@ -4897,9 +4886,9 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">tr</td>
          <td class="module">MEI.figtable</td>
-         <td class="desc">(table row) – A formatting element that contains one or more cells (intersection of
-            a row and a column) in a table .
-         </td>
+         <td class="desc"><span class="removed block">(table row) – A formatting element that contains one or more cells (intersection of
+               a row and a column) in a &lt;table&gt;.</span><span class="added block">(table row) – A formatting element that contains one or more cells (intersection of
+               a row and a column) in a table .</span></td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.facsimile</li>
@@ -4939,7 +4928,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">fing</td>
          <td class="module">MEI.fingering</td>
-         <td class="desc"><span class="removed block">finger – An individual finger in a fingering indication.</span><span class="added block">finger – An individual finger in a fingering indication.</span></td>
+         <td class="desc">finger – An individual finger in a fingering indication.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.facsimile</li>
@@ -5022,7 +5011,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">fingGrp</td>
          <td class="module">MEI.fingering</td>
-         <td class="desc"><span class="removed block">(finger group)– A group of individual fingers in a fingering indication.</span><span class="added block">(finger group)– A group of individual fingers in a fingering indication.</span></td>
+         <td class="desc">(finger group)– A group of individual fingers in a fingering indication.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.facsimile</li>
@@ -5106,7 +5095,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">expression</td>
          <td class="module">MEI.frbr</td>
-         <td class="desc"><span class="removed block">Intellectual or artistic realization of a work.</span><span class="added block">Intellectual or artistic realization of a work.</span></td>
+         <td class="desc">Intellectual or artistic realization of a work.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="added" title="added class">att.authorized</li>
@@ -5168,7 +5157,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">expressionList</td>
          <td class="module">MEI.frbr</td>
-         <td class="desc"><span class="removed block">Gathers bibliographic expression entities.</span><span class="added block">Gathers bibliographic expression entities.</span></td>
+         <td class="desc">Gathers bibliographic expression entities.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
             </ul>
@@ -5200,7 +5189,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">item</td>
          <td class="module">MEI.frbr</td>
-         <td class="desc"><span class="removed block">Single instance or exemplar of a source/manifestation.</span><span class="added block">Single instance or exemplar of a source/manifestation.</span></td>
+         <td class="desc">Single instance or exemplar of a source/manifestation.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="added" title="added class">att.authorized</li>
@@ -5259,7 +5248,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">itemList</td>
          <td class="module">MEI.frbr</td>
-         <td class="desc"><span class="removed block">Gathers bibliographic item entities.</span><span class="added block">Gathers bibliographic item entities.</span></td>
+         <td class="desc">Gathers bibliographic item entities.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="removed" title="removed class">att.typed</li>
@@ -5293,7 +5282,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">chordDef</td>
          <td class="module">MEI.harmony</td>
-         <td class="desc"><span class="removed block">(chord definition) – Chord tablature definition.</span><span class="added block">(chord definition) – Chord tablature definition.</span></td>
+         <td class="desc">(chord definition) – Chord tablature definition.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="added" title="added class">att.chordDef.anl</li>
@@ -5332,7 +5321,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">chordMember</td>
          <td class="module">MEI.harmony</td>
-         <td class="desc">An individual pitch in a chord defined by a chordDef element.</td>
+         <td class="desc"><span class="removed block">An individual pitch in a chord defined by a &lt;chordDef&gt; element.</span><span class="added block">An individual pitch in a chord defined by a chordDef element.</span></td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="added" title="added class">att.chordMember.anl</li>
@@ -5380,7 +5369,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">chordTable</td>
          <td class="module">MEI.harmony</td>
-         <td class="desc"><span class="removed block">Chord/tablature look-up table.</span><span class="added block">Chord/tablature look-up table.</span></td>
+         <td class="desc">Chord/tablature look-up table.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">model.chordTableLike</li>
@@ -5412,7 +5401,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">f</td>
          <td class="module">MEI.harmony</td>
-         <td class="desc"><span class="removed block">(figure) – Single element of a figured bass indication.</span><span class="added block">(figure) – Single element of a figured bass indication.</span></td>
+         <td class="desc">(figure) – Single element of a figured bass indication.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.facsimile</li>
@@ -5493,9 +5482,9 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">fb</td>
          <td class="module">MEI.harmony</td>
-         <td class="desc"><span class="removed block">(figured bass) – Symbols added to a bass line that indicate harmony. Used to improvise
-               a chordal accompaniment. Sometimes called Generalbass, thoroughbass, or basso continuo.</span><span class="added block">(figured bass) – Symbols added to a bass line that indicate harmony. Used to improvise
-               a chordal accompaniment. Sometimes called Generalbass, thoroughbass, or basso continuo.</span></td>
+         <td class="desc">(figured bass) – Symbols added to a bass line that indicate harmony. Used to improvise
+            a chordal accompaniment. Sometimes called Generalbass, thoroughbass, or basso continuo.
+         </td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.facsimile</li>
@@ -5533,9 +5522,9 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">harm</td>
          <td class="module">MEI.harmony</td>
-         <td class="desc"><span class="removed block">(harmony) – An indication of harmony, e.g., chord names, tablature grids, harmonic
-               analysis, figured bass.</span><span class="added block">(harmony) – An indication of harmony, e.g., chord names, tablature grids, harmonic
-               analysis, figured bass.</span></td>
+         <td class="desc">(harmony) – An indication of harmony, e.g., chord names, tablature grids, harmonic
+            analysis, figured bass.
+         </td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.facsimile</li>
@@ -5627,7 +5616,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">accessRestrict</td>
          <td class="module">MEI.header</td>
-         <td class="desc"><span class="removed block">(access restriction) – Describes the conditions that affect the accessibility of material.</span><span class="added block">(access restriction) – Describes the conditions that affect the accessibility of material.</span></td>
+         <td class="desc">(access restriction) – Describes the conditions that affect the accessibility of material.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="added" title="added class">att.authorized</li>
@@ -5670,11 +5659,10 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">altId</td>
          <td class="module">MEI.header</td>
-         <td class="desc"><span class="removed block">(alternative identifier) – May contain a bibliographic identifier that does not fit
-               within the meiHead element's id attribute, for example because the identifier does
-               not fit the definition of an XML id or because multiple identifiers are needed.</span><span class="added block">(alternative identifier) – May contain a bibliographic identifier that does not fit
-               within the meiHead element's id attribute, for example because the identifier does
-               not fit the definition of an XML id or because multiple identifiers are needed.</span></td>
+         <td class="desc">(alternative identifier) – May contain a bibliographic identifier that does not fit
+            within the meiHead element's id attribute, for example because the identifier does
+            not fit the definition of an XML id or because multiple identifiers are needed.
+         </td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.bibl</li>
@@ -5711,9 +5699,9 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">appInfo</td>
          <td class="module">MEI.header</td>
-         <td class="desc"><span class="removed block">(application information) – Groups information about applications which have acted
-               upon the MEI file.</span><span class="added block">(application information) – Groups information about applications which have acted
-               upon the MEI file.</span></td>
+         <td class="desc">(application information) – Groups information about applications which have acted
+            upon the MEI file.
+         </td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">model.encodingPart</li>
@@ -5746,7 +5734,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">application</td>
          <td class="module">MEI.header</td>
-         <td class="desc"><span class="removed block">Provides information about an application which has acted upon the current document.</span><span class="added block">Provides information about an application which has acted upon the current document.</span></td>
+         <td class="desc">Provides information about an application which has acted upon the current document.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.datable</li>
@@ -5788,11 +5776,10 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">audience</td>
          <td class="module">MEI.header</td>
-         <td class="desc"><span class="removed block">Defines the class of user for which the work is intended, as defined by age group
-               (e.g., children, young adults, adults, etc.), educational level (e.g., primary, secondary,
-               etc.), or other categorization.</span><span class="added block">Defines the class of user for which the work is intended, as defined by age group
-               (e.g., children, young adults, adults, etc.), educational level (e.g., primary, secondary,
-               etc.), or other categorization.</span></td>
+         <td class="desc">Defines the class of user for which the work is intended, as defined by age group
+            (e.g., children, young adults, adults, etc.), educational level (e.g., primary, secondary,
+            etc.), or other categorization.
+         </td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.authorized</li>
@@ -5836,9 +5823,9 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">availability</td>
          <td class="module">MEI.header</td>
-         <td class="desc"><span class="removed block">Groups elements that describe the availability of and access to a bibliographic item,
-               including an MEI-encoded document.</span><span class="added block">Groups elements that describe the availability of and access to a bibliographic item,
-               including an MEI-encoded document.</span></td>
+         <td class="desc">Groups elements that describe the availability of and access to a bibliographic item,
+            including an MEI-encoded document.
+         </td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.bibl</li>
@@ -5875,7 +5862,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">byline</td>
          <td class="module">MEI.header</td>
-         <td class="desc"><span class="removed block">Contains the primary statement of responsibility given for a work on its title page.</span><span class="added block">Contains the primary statement of responsibility given for a work on its title page.</span></td>
+         <td class="desc">Contains the primary statement of responsibility given for a work on its title page.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.bibl</li>
@@ -5916,9 +5903,9 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">captureMode</td>
          <td class="module">MEI.header</td>
-         <td class="desc"><span class="removed block">(capture mode) – The means used to record notation, sound, or images in the production
-               of a source/manifestation (e.g., analogue, acoustic, electric, digital, optical etc.).</span><span class="added block">(capture mode) – The means used to record notation, sound, or images in the production
-               of a source/manifestation (e.g., analogue, acoustic, electric, digital, optical etc.).</span></td>
+         <td class="desc">(capture mode) – The means used to record notation, sound, or images in the production
+            of a source/manifestation (e.g., analogue, acoustic, electric, digital, optical etc.).
+         </td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.authorized</li>
@@ -5963,15 +5950,12 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">carrierForm</td>
          <td class="module">MEI.header</td>
-         <td class="desc"><span class="removed block">(carrier form) – The specific class of material to which the physical carrier of the
-               source/manifestation belongs (e.g., sound cassette, videodisc, microfilm cartridge,
-               transparency, etc.). The carrier for a manifestation comprising multiple physical
-               components may include more than one form (e.g., a filmstrip with an accompanying
-               booklet, a separate sound disc carrying the sound track for a film, etc.).</span><span class="added block">(carrier form) – The specific class of material to which the physical carrier of the
-               source/manifestation belongs (e.g., sound cassette, videodisc, microfilm cartridge,
-               transparency, etc.). The carrier for a manifestation comprising multiple physical
-               components may include more than one form (e.g., a filmstrip with an accompanying
-               booklet, a separate sound disc carrying the sound track for a film, etc.).</span></td>
+         <td class="desc">(carrier form) – The specific class of material to which the physical carrier of the
+            source/manifestation belongs (e.g., sound cassette, videodisc, microfilm cartridge,
+            transparency, etc.). The carrier for a manifestation comprising multiple physical
+            components may include more than one form (e.g., a filmstrip with an accompanying
+            booklet, a separate sound disc carrying the sound track for a film, etc.).
+         </td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.authorized</li>
@@ -6016,7 +6000,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">change</td>
          <td class="module">MEI.header</td>
-         <td class="desc"><span class="removed block">Individual change within the revision description.</span><span class="added block">Individual change within the revision description.</span></td>
+         <td class="desc">Individual change within the revision description.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.bibl</li>
@@ -6060,7 +6044,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">changeDesc</td>
          <td class="module">MEI.header</td>
-         <td class="desc"><span class="removed block">(change description) – Description of a revision of the MEI file.</span><span class="added block">(change description) – Description of a revision of the MEI file.</span></td>
+         <td class="desc">(change description) – Description of a revision of the MEI file.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.bibl</li>
@@ -6096,7 +6080,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">classification</td>
          <td class="module">MEI.header</td>
-         <td class="desc"><span class="removed block">Groups information which describes the nature or topic of an entity.</span><span class="added block">Groups information which describes the nature or topic of an entity.</span></td>
+         <td class="desc">Groups information which describes the nature or topic of an entity.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.bibl</li>
@@ -6133,11 +6117,10 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">condition</td>
          <td class="module">MEI.header</td>
-         <td class="desc"><span class="removed block">The physical condition of an item, particularly any variances between the physical
-               make-up of the item and that of other copies of the same item (e.g., missing pages
-               or plates, brittleness, faded images, etc.).</span><span class="added block">The physical condition of an item, particularly any variances between the physical
-               make-up of the item and that of other copies of the same item (e.g., missing pages
-               or plates, brittleness, faded images, etc.).</span></td>
+         <td class="desc">The physical condition of an item, particularly any variances between the physical
+            make-up of the item and that of other copies of the same item (e.g., missing pages
+            or plates, brittleness, faded images, etc.).
+         </td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.bibl</li>
@@ -6176,7 +6159,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">contentItem</td>
          <td class="module">MEI.header</td>
-         <td class="desc"><span class="removed block">Contains a single entry within a content description element.</span><span class="added block">Contains a single entry within a content description element.</span></td>
+         <td class="desc">Contains a single entry within a content description element.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.bibl</li>
@@ -6215,7 +6198,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">contents</td>
          <td class="module">MEI.header</td>
-         <td class="desc">List of the material contained within a resource.</td>
+         <td class="desc"><span class="removed block">Description of the material contained within a resource.</span><span class="added block">List of the material contained within a resource.</span></td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.bibl</li>
@@ -6259,13 +6242,11 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">context</td>
          <td class="module">MEI.header</td>
-         <td class="desc"><span class="removed block">The historical, social, intellectual, artistic, or other context within which the
-               work was originally conceived (e.g., the 17th century restoration of the monarchy
-               in England, the aesthetic movement of the late 19th century, etc.) or the historical,
-               social, intellectual, artistic, or other context within which the expression was realized.</span><span class="added block">The historical, social, intellectual, artistic, or other context within which the
-               work was originally conceived (e.g., the 17th century restoration of the monarchy
-               in England, the aesthetic movement of the late 19th century, etc.) or the historical,
-               social, intellectual, artistic, or other context within which the expression was realized.</span></td>
+         <td class="desc">The historical, social, intellectual, artistic, or other context within which the
+            work was originally conceived (e.g., the 17th century restoration of the monarchy
+            in England, the aesthetic movement of the late 19th century, etc.) or the historical,
+            social, intellectual, artistic, or other context within which the expression was realized.
+         </td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.authorized</li>
@@ -6309,7 +6290,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">correction</td>
          <td class="module">MEI.header</td>
-         <td class="desc"><span class="removed block">States how and under what circumstances corrections have been made in the text.</span><span class="added block">States how and under what circumstances corrections have been made in the text.</span></td>
+         <td class="desc">States how and under what circumstances corrections have been made in the text.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.bibl</li>
@@ -6352,9 +6333,9 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">editionStmt</td>
          <td class="module">MEI.header</td>
-         <td class="desc"><span class="removed block">(edition statement) – Container for meta-data pertaining to a particular edition of
-               the material being described.</span><span class="added block">(edition statement) – Container for meta-data pertaining to a particular edition of
-               the material being described.</span></td>
+         <td class="desc">(edition statement) – Container for meta-data pertaining to a particular edition of
+            the material being described.
+         </td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.bibl</li>
@@ -6393,9 +6374,9 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">editorialDecl</td>
          <td class="module">MEI.header</td>
-         <td class="desc"><span class="removed block">(editorial declaration) – Used to provide details of editorial principles and practices
-               applied during the encoding of musical text.</span><span class="added block">(editorial declaration) – Used to provide details of editorial principles and practices
-               applied during the encoding of musical text.</span></td>
+         <td class="desc">(editorial declaration) – Used to provide details of editorial principles and practices
+            applied during the encoding of musical text.
+         </td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.bibl</li>
@@ -6437,11 +6418,10 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">encodingDesc</td>
          <td class="module">MEI.header</td>
-         <td class="desc"><span class="removed block">(encoding description) – Documents the relationship between an electronic file and
-               the source or sources from which it was derived as well as applications used in the
-               encoding/editing process.</span><span class="added block">(encoding description) – Documents the relationship between an electronic file and
-               the source or sources from which it was derived as well as applications used in the
-               encoding/editing process.</span></td>
+         <td class="desc">(encoding description) – Documents the relationship between an electronic file and
+            the source or sources from which it was derived as well as applications used in the
+            encoding/editing process.
+         </td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.bibl</li>
@@ -6482,7 +6462,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">exhibHist</td>
          <td class="module">MEI.header</td>
-         <td class="desc"><span class="removed block">(exhibition history) – A record of public exhibitions, including dates, venues, etc.</span><span class="added block">(exhibition history) – A record of public exhibitions, including dates, venues, etc.</span></td>
+         <td class="desc">(exhibition history) – A record of public exhibitions, including dates, venues, etc.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.bibl</li>
@@ -6521,7 +6501,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">extMeta</td>
          <td class="module">MEI.header</td>
-         <td class="desc"><span class="removed block">(extended metadata) – Provides a container element for non-MEI metadata formats.</span><span class="added block">(extended metadata) – Provides a container element for non-MEI metadata formats.</span></td>
+         <td class="desc">(extended metadata) – Provides a container element for non-MEI metadata formats.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="added" title="added class">att.bibl</li>
@@ -6557,13 +6537,11 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">fileChar</td>
          <td class="module">MEI.header</td>
-         <td class="desc"><span class="removed block">(file characteristics) – Standards or schemes used to encode the file (e.g., ASCII,
-               SGML, etc.), physical characteristics of the file (e.g., recording density, parity,
-               blocking, etc.), and other characteristics that have a bearing on how the file can
-               be processed.</span><span class="added block">(file characteristics) – Standards or schemes used to encode the file (e.g., ASCII,
-               SGML, etc.), physical characteristics of the file (e.g., recording density, parity,
-               blocking, etc.), and other characteristics that have a bearing on how the file can
-               be processed.</span></td>
+         <td class="desc">(file characteristics) – Standards or schemes used to encode the file (e.g., ASCII,
+            SGML, etc.), physical characteristics of the file (e.g., recording density, parity,
+            blocking, etc.), and other characteristics that have a bearing on how the file can
+            be processed.
+         </td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.bibl</li>
@@ -6601,7 +6579,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">fileDesc</td>
          <td class="module">MEI.header</td>
-         <td class="desc"><span class="removed block">(file description) – Contains a full bibliographic description of the MEI file.</span><span class="added block">(file description) – Contains a full bibliographic description of the MEI file.</span></td>
+         <td class="desc">(file description) – Contains a full bibliographic description of the MEI file.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.bibl</li>
@@ -6640,11 +6618,10 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">fingerprint</td>
          <td class="module">MEI.header</td>
-         <td class="desc"><span class="removed block">Contains a string that uniquely identifies an item, such as those constructed by combining
-               groups of characters transcribed from specified pages of a printed item or a file's
-               checksum.</span><span class="added block">Contains a string that uniquely identifies an item, such as those constructed by combining
-               groups of characters transcribed from specified pages of a printed item or a file's
-               checksum.</span></td>
+         <td class="desc">Contains a string that uniquely identifies an item, such as those constructed by combining
+            groups of characters transcribed from specified pages of a printed item or a file's
+            checksum.
+         </td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.authorized</li>
@@ -6685,7 +6662,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">hand</td>
          <td class="module">MEI.header</td>
-         <td class="desc"><span class="removed block">Defines a distinct scribe or handwriting style.</span><span class="added block">Defines a distinct scribe or handwriting style.</span></td>
+         <td class="desc">Defines a distinct scribe or handwriting style.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.bibl</li>
@@ -6729,7 +6706,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">handList</td>
          <td class="module">MEI.header</td>
-         <td class="desc"><span class="removed block">Container for one or more hand elements.</span><span class="added block">Container for one or more hand elements.</span></td>
+         <td class="desc">Container for one or more hand elements.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.bibl</li>
@@ -6768,9 +6745,10 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">history</td>
          <td class="module">MEI.header</td>
-         <td class="desc">Provides a container for information about the history of a resource other than the
-            circumstances of its creation.
-         </td>
+         <td class="desc"><span class="removed block">Provides a container for information about the history of a resource. To facilitate
+               efficient data interchange, basic information about the circumstances surrounding
+               the creation of bibliographic resources should be recorded within the creation element.</span><span class="added block">Provides a container for information about the history of a resource other than the
+               circumstances of its creation.</span></td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.bibl</li>
@@ -6807,7 +6785,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">incipCode</td>
          <td class="module">MEI.header</td>
-         <td class="desc"><span class="removed block">Incipit coded in a non-XML, plain text format, such as Plaine &amp; Easie Code.</span><span class="added block">Incipit coded in a non-XML, plain text format, such as Plaine &amp; Easie Code.</span></td>
+         <td class="desc">Incipit coded in a non-XML, plain text format, such as Plaine &amp; Easie Code.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.bibl</li>
@@ -6851,7 +6829,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">incipText</td>
          <td class="module">MEI.header</td>
-         <td class="desc"><span class="removed block">Opening words of a musical composition.</span><span class="added block">Opening words of a musical composition.</span></td>
+         <td class="desc">Opening words of a musical composition.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.bibl</li>
@@ -6897,9 +6875,9 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">inscription</td>
          <td class="module">MEI.header</td>
-         <td class="desc"><span class="removed block">An inscription added to an item, such as a bookplate, a note designating the item
-               as a gift, and/or the author's signature.</span><span class="added block">An inscription added to an item, such as a bookplate, a note designating the item
-               as a gift, and/or the author's signature.</span></td>
+         <td class="desc">An inscription added to an item, such as a bookplate, a note designating the item
+            as a gift, and/or the author's signature.
+         </td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.bibl</li>
@@ -6940,9 +6918,9 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">interpretation</td>
          <td class="module">MEI.header</td>
-         <td class="desc"><span class="removed block">Describes the scope of any analytic or interpretive information added to the transcription
-               of the music.</span><span class="added block">Describes the scope of any analytic or interpretive information added to the transcription
-               of the music.</span></td>
+         <td class="desc">Describes the scope of any analytic or interpretive information added to the transcription
+            of the music.
+         </td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.bibl</li>
@@ -6981,7 +6959,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">key</td>
          <td class="module">MEI.header</td>
-         <td class="desc"><span class="removed block">Key captures information about tonal center and mode.</span><span class="added block">Key captures information about tonal center and mode.</span></td>
+         <td class="desc">Key captures information about tonal center and mode.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="added" title="added class">att.accidental</li>
@@ -7023,7 +7001,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">language</td>
          <td class="module">MEI.header</td>
-         <td class="desc"><span class="removed block">Description of a language used in the document.</span><span class="added block">Description of a language used in the document.</span></td>
+         <td class="desc">Description of a language used in the document.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.authorized</li>
@@ -7066,9 +7044,9 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">langUsage</td>
          <td class="module">MEI.header</td>
-         <td class="desc"><span class="removed block">(language usage) – Groups elements describing the languages, sub-languages, dialects,
-               etc., represented within the encoded resource.</span><span class="added block">(language usage) – Groups elements describing the languages, sub-languages, dialects,
-               etc., represented within the encoded resource.</span></td>
+         <td class="desc">(language usage) – Groups elements describing the languages, sub-languages, dialects,
+            etc., represented within the encoded resource.
+         </td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.bibl</li>
@@ -7104,9 +7082,9 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">meiHead</td>
          <td class="module">MEI.header</td>
-         <td class="desc"><span class="removed block">(MEI header) – Supplies the descriptive and declarative metadata prefixed to every
-               MEI-conformant text.</span><span class="added block">(MEI header) – Supplies the descriptive and declarative metadata prefixed to every
-               MEI-conformant text.</span></td>
+         <td class="desc">(MEI header) – Supplies the descriptive and declarative metadata prefixed to every
+            MEI-conformant text.
+         </td>
          <td class="classes">Classes:<br><ul>
                <li class="added" title="added class">att.basic</li>
                <li class="unchanged">att.bibl</li>
@@ -7146,7 +7124,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">mensuration</td>
          <td class="module">MEI.header</td>
-         <td class="desc"><span class="removed block">Captures information about mensuration within bibliographic descriptions.</span><span class="added block">Captures information about mensuration within bibliographic descriptions.</span></td>
+         <td class="desc">Captures information about mensuration within bibliographic descriptions.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.bibl</li>
@@ -7193,7 +7171,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">meter</td>
          <td class="module">MEI.header</td>
-         <td class="desc"><span class="removed block">Captures information about the time signature within bibliographic descriptions.</span><span class="added block">Captures information about the time signature within bibliographic descriptions.</span></td>
+         <td class="desc">Captures information about the time signature within bibliographic descriptions.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.bibl</li>
@@ -7234,9 +7212,9 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">normalization</td>
          <td class="module">MEI.header</td>
-         <td class="desc"><span class="removed block">Indicates the extent of normalization or regularization of the original source carried
-               out in converting it to electronic form.</span><span class="added block">Indicates the extent of normalization or regularization of the original source carried
-               out in converting it to electronic form.</span></td>
+         <td class="desc">Indicates the extent of normalization or regularization of the original source carried
+            out in converting it to electronic form.
+         </td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.bibl</li>
@@ -7278,9 +7256,9 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">notesStmt</td>
          <td class="module">MEI.header</td>
-         <td class="desc"><span class="removed block">(notes statement)– Collects any notes providing information about a text additional
-               to that recorded in other parts of the bibliographic description.</span><span class="added block">(notes statement)– Collects any notes providing information about a text additional
-               to that recorded in other parts of the bibliographic description.</span></td>
+         <td class="desc">(notes statement)– Collects any notes providing information about a text additional
+            to that recorded in other parts of the bibliographic description.
+         </td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.bibl</li>
@@ -7314,9 +7292,9 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">otherChar</td>
          <td class="module">MEI.header</td>
-         <td class="desc"><span class="removed block">(other distinguishing characteristic) – Any characteristic that serves to differentiate
-               a work or expression from another.</span><span class="added block">(other distinguishing characteristic) – Any characteristic that serves to differentiate
-               a work or expression from another.</span></td>
+         <td class="desc">(other distinguishing characteristic) – Any characteristic that serves to differentiate
+            a work or expression from another.
+         </td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.bibl</li>
@@ -7354,9 +7332,9 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">perfDuration</td>
          <td class="module">MEI.header</td>
-         <td class="desc"><span class="removed block">(performance duration) – Used to express the duration of performance of printed or
-               manuscript music or the playing time for a sound recording, videorecording, etc.</span><span class="added block">(performance duration) – Used to express the duration of performance of printed or
-               manuscript music or the playing time for a sound recording, videorecording, etc.</span></td>
+         <td class="desc">(performance duration) – Used to express the duration of performance of printed or
+            manuscript music or the playing time for a sound recording, videorecording, etc.
+         </td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.bibl</li>
@@ -7400,9 +7378,9 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">perfMedium</td>
          <td class="module">MEI.header</td>
-         <td class="desc"><span class="removed block">(performance medium) – Indicates the number and character of the performing forces
-               used in a musical composition.</span><span class="added block">(performance medium) – Indicates the number and character of the performing forces
-               used in a musical composition.</span></td>
+         <td class="desc">(performance medium) – Indicates the number and character of the performing forces
+            used in a musical composition.
+         </td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.authorized</li>
@@ -7445,9 +7423,9 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">perfRes</td>
          <td class="module">MEI.header</td>
-         <td class="desc"><span class="removed block">(performance resource) – Name of an instrument on which a performer plays, a performer's
-               voice range, or a standard performing ensemble designation.</span><span class="added block">(performance resource) – Name of an instrument on which a performer plays, a performer's
-               voice range, or a standard performing ensemble designation.</span></td>
+         <td class="desc">(performance resource) – Name of an instrument on which a performer plays, a performer's
+            voice range, or a standard performing ensemble designation.
+         </td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.authorized</li>
@@ -7498,7 +7476,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">perfResList</td>
          <td class="module">MEI.header</td>
-         <td class="desc"><span class="removed block">Several instrumental or vocal resources treated as a group.</span><span class="added block">Several instrumental or vocal resources treated as a group.</span></td>
+         <td class="desc">Several instrumental or vocal resources treated as a group.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.authorized</li>
@@ -7549,11 +7527,10 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">physDesc</td>
          <td class="module">MEI.header</td>
-         <td class="desc"><span class="removed block">(physical description) – Container for information about the appearance, construction,
-               or handling of physical materials, such as their dimension, quantity, color, style,
-               and technique of creation.</span><span class="added block">(physical description) – Container for information about the appearance, construction,
-               or handling of physical materials, such as their dimension, quantity, color, style,
-               and technique of creation.</span></td>
+         <td class="desc">(physical description) – Container for information about the appearance, construction,
+            or handling of physical materials, such as their dimension, quantity, color, style,
+            and technique of creation.
+         </td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.bibl</li>
@@ -7588,9 +7565,9 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">physMedium</td>
          <td class="module">MEI.header</td>
-         <td class="desc"><span class="removed block">(physical medium) – Records the physical materials used in the source, such as ink
-               and paper.</span><span class="added block">(physical medium) – Records the physical materials used in the source, such as ink
-               and paper.</span></td>
+         <td class="desc">(physical medium) – Records the physical materials used in the source, such as ink
+            and paper.
+         </td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.authorized</li>
@@ -7635,9 +7612,9 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">plateNum</td>
          <td class="module">MEI.header</td>
-         <td class="desc"><span class="removed block">(plate number) – Designation assigned to a resource by a music publisher, usually
-               printed at the bottom of each page, and sometimes appearing also on the title page.</span><span class="added block">(plate number) – Designation assigned to a resource by a music publisher, usually
-               printed at the bottom of each page, and sometimes appearing also on the title page.</span></td>
+         <td class="desc">(plate number) – Designation assigned to a resource by a music publisher, usually
+            printed at the bottom of each page, and sometimes appearing also on the title page.
+         </td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.bibl</li>
@@ -7679,9 +7656,9 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">playingSpeed</td>
          <td class="module">MEI.header</td>
-         <td class="desc"><span class="removed block">Playing speed for a sound recording is the speed at which the carrier must be operated
-               to produce the sound intended (e.g., 33 1/3 rpm, 19 cm/s, etc.).</span><span class="added block">Playing speed for a sound recording is the speed at which the carrier must be operated
-               to produce the sound intended (e.g., 33 1/3 rpm, 19 cm/s, etc.).</span></td>
+         <td class="desc">Playing speed for a sound recording is the speed at which the carrier must be operated
+            to produce the sound intended (e.g., 33 1/3 rpm, 19 cm/s, etc.).
+         </td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.bibl</li>
@@ -7720,7 +7697,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">price</td>
          <td class="module">MEI.header</td>
-         <td class="desc"><span class="removed block">The cost of access to a bibliographic item.</span><span class="added block">The cost of access to a bibliographic item.</span></td>
+         <td class="desc">The cost of access to a bibliographic item.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.bibl</li>
@@ -7761,11 +7738,10 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">projectDesc</td>
          <td class="module">MEI.header</td>
-         <td class="desc"><span class="removed block">(project description) – Project-level meta-data describing the aim or purpose for
-               which the electronic file was encoded, funding agencies, etc. together with any other
-               relevant information concerning the process by which it was assembled or collected.</span><span class="added block">(project description) – Project-level meta-data describing the aim or purpose for
-               which the electronic file was encoded, funding agencies, etc. together with any other
-               relevant information concerning the process by which it was assembled or collected.</span></td>
+         <td class="desc">(project description) – Project-level meta-data describing the aim or purpose for
+            which the electronic file was encoded, funding agencies, etc. together with any other
+            relevant information concerning the process by which it was assembled or collected.
+         </td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.bibl</li>
@@ -7805,7 +7781,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">provenance</td>
          <td class="module">MEI.header</td>
-         <td class="desc"><span class="removed block">The record of ownership or custodianship of an item.</span><span class="added block">The record of ownership or custodianship of an item.</span></td>
+         <td class="desc">The record of ownership or custodianship of an item.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.bibl</li>
@@ -7851,11 +7827,10 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">pubStmt</td>
          <td class="module">MEI.header</td>
-         <td class="desc"><span class="removed block">(publication statement) – Container for information regarding the publication or distribution
-               of a bibliographic item, including the publisher's name and address, the date of publication,
-               and other relevant details.</span><span class="added block">(publication statement) – Container for information regarding the publication or distribution
-               of a bibliographic item, including the publisher's name and address, the date of publication,
-               and other relevant details.</span></td>
+         <td class="desc">(publication statement) – Container for information regarding the publication or distribution
+            of a bibliographic item, including the publisher's name and address, the date of publication,
+            and other relevant details.
+         </td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.bibl</li>
@@ -7890,9 +7865,9 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">revisionDesc</td>
          <td class="module">MEI.header</td>
-         <td class="desc"><span class="removed block">(revision description) – Container for information about alterations that have been
-               made to an MEI file.</span><span class="added block">(revision description) – Container for information about alterations that have been
-               made to an MEI file.</span></td>
+         <td class="desc">(revision description) – Container for information about alterations that have been
+            made to an MEI file.
+         </td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.bibl</li>
@@ -7926,9 +7901,9 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">samplingDecl</td>
          <td class="module">MEI.header</td>
-         <td class="desc"><span class="removed block">(sampling declaration) – Contains a prose description of the rationale and methods
-               used in sampling texts in the creation of a corpus or collection.</span><span class="added block">(sampling declaration) – Contains a prose description of the rationale and methods
-               used in sampling texts in the creation of a corpus or collection.</span></td>
+         <td class="desc">(sampling declaration) – Contains a prose description of the rationale and methods
+            used in sampling texts in the creation of a corpus or collection.
+         </td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.bibl</li>
@@ -7968,9 +7943,9 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">scoreFormat</td>
          <td class="module">MEI.header</td>
-         <td class="desc"><span class="removed block">Describes the type of score used to represent a musical composition (e.g., short score,
-               full score, condensed score, close score, etc.).</span><span class="added block">Describes the type of score used to represent a musical composition (e.g., short score,
-               full score, condensed score, close score, etc.).</span></td>
+         <td class="desc">Describes the type of score used to represent a musical composition (e.g., short score,
+            full score, condensed score, close score, etc.).
+         </td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.authorized</li>
@@ -8014,9 +7989,9 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">segmentation</td>
          <td class="module">MEI.header</td>
-         <td class="desc"><span class="removed block">Describes the principles according to which the musical text has been segmented, for
-               example into movements, sections, etc.</span><span class="added block">Describes the principles according to which the musical text has been segmented, for
-               example into movements, sections, etc.</span></td>
+         <td class="desc">Describes the principles according to which the musical text has been segmented, for
+            example into movements, sections, etc.
+         </td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.bibl</li>
@@ -8056,9 +8031,9 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">seriesStmt</td>
          <td class="module">MEI.header</td>
-         <td class="desc"><span class="removed block">(series statement) – Groups information about the series, if any, to which a publication
-               belongs.</span><span class="added block">(series statement) – Groups information about the series, if any, to which a publication
-               belongs.</span></td>
+         <td class="desc">(series statement) – Groups information about the series, if any, to which a publication
+            belongs.
+         </td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.bibl</li>
@@ -8099,9 +8074,9 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">soundChan</td>
          <td class="module">MEI.header</td>
-         <td class="desc"><span class="removed block">(sound channels) – Reflects the number of apparent sound channels in the playback
-               of a recording (monaural, stereophonic, quadraphonic, etc.).</span><span class="added block">(sound channels) – Reflects the number of apparent sound channels in the playback
-               of a recording (monaural, stereophonic, quadraphonic, etc.).</span></td>
+         <td class="desc">(sound channels) – Reflects the number of apparent sound channels in the playback
+            of a recording (monaural, stereophonic, quadraphonic, etc.).
+         </td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.authorized</li>
@@ -8146,7 +8121,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">source</td>
          <td class="module">MEI.header</td>
-         <td class="desc"><span class="removed block">A bibliographic description of a source used in the creation of the electronic file.</span><span class="added block">A bibliographic description of a source used in the creation of the electronic file.</span></td>
+         <td class="desc">A bibliographic description of a source used in the creation of the electronic file.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="added" title="added class">att.authorized</li>
@@ -8214,9 +8189,9 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">sourceDesc</td>
          <td class="module">MEI.header</td>
-         <td class="desc"><span class="removed block">(source description) – A container for the descriptions of the source(s) used in the
-               creation of the electronic file.</span><span class="added block">(source description) – A container for the descriptions of the source(s) used in the
-               creation of the electronic file.</span></td>
+         <td class="desc">(source description) – A container for the descriptions of the source(s) used in the
+            creation of the electronic file.
+         </td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
             </ul>
@@ -8248,9 +8223,9 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">specRepro</td>
          <td class="module">MEI.header</td>
-         <td class="desc"><span class="removed block">(special reproduction characteristic) – The equalization system, noise reduction system,
-               etc. used in making the recording (e.g., NAB, DBX, Dolby, etc.).</span><span class="added block">(special reproduction characteristic) – The equalization system, noise reduction system,
-               etc. used in making the recording (e.g., NAB, DBX, Dolby, etc.).</span></td>
+         <td class="desc">(special reproduction characteristic) – The equalization system, noise reduction system,
+            etc. used in making the recording (e.g., NAB, DBX, Dolby, etc.).
+         </td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.authorized</li>
@@ -8295,9 +8270,9 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">stdVals</td>
          <td class="module">MEI.header</td>
-         <td class="desc"><span class="removed block">(standard values) – Specifies the format used when standardized date or number values
-               are supplied.</span><span class="added block">(standard values) – Specifies the format used when standardized date or number values
-               are supplied.</span></td>
+         <td class="desc">(standard values) – Specifies the format used when standardized date or number values
+            are supplied.
+         </td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.bibl</li>
@@ -8337,7 +8312,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">sysReq</td>
          <td class="module">MEI.header</td>
-         <td class="desc"><span class="removed block">(system requirements) – System requirements for using the electronic item.</span><span class="added block">(system requirements) – System requirements for using the electronic item.</span></td>
+         <td class="desc">(system requirements) – System requirements for using the electronic item.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.bibl</li>
@@ -8376,7 +8351,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">termList</td>
          <td class="module">MEI.header</td>
-         <td class="desc"><span class="removed block">Collection of text phrases which describe a resource.</span><span class="added block">Collection of text phrases which describe a resource.</span></td>
+         <td class="desc">Collection of text phrases which describe a resource.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.bibl</li>
@@ -8422,7 +8397,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">titleStmt</td>
          <td class="module">MEI.header</td>
-         <td class="desc"><span class="removed block">(title statement) – Container for title and responsibility meta-data.</span><span class="added block">(title statement) – Container for title and responsibility meta-data.</span></td>
+         <td class="desc">(title statement) – Container for title and responsibility meta-data.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.bibl</li>
@@ -8457,9 +8432,9 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">trackConfig</td>
          <td class="module">MEI.header</td>
-         <td class="desc"><span class="removed block">(track configuration) – Number of physical/input tracks on a sound medium (e.g., eight
-               track, twelve track).</span><span class="added block">(track configuration) – Number of physical/input tracks on a sound medium (e.g., eight
-               track, twelve track).</span></td>
+         <td class="desc">(track configuration) – Number of physical/input tracks on a sound medium (e.g., eight
+            track, twelve track).
+         </td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.authorized</li>
@@ -8505,9 +8480,9 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">treatHist</td>
          <td class="module">MEI.header</td>
-         <td class="desc"><span class="removed block">(treatment history) – A record of the treatment the item has undergone (e.g., de-acidification,
-               restoration, etc.).</span><span class="added block">(treatment history) – A record of the treatment the item has undergone (e.g., de-acidification,
-               restoration, etc.).</span></td>
+         <td class="desc">(treatment history) – A record of the treatment the item has undergone (e.g., de-acidification,
+            restoration, etc.).
+         </td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.bibl</li>
@@ -8546,9 +8521,9 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">treatSched</td>
          <td class="module">MEI.header</td>
-         <td class="desc"><span class="removed block">(treatment scheduled) – Scheduled treatment, e.g. de-acidification, restoration, etc.,
-               for an item.</span><span class="added block">(treatment scheduled) – Scheduled treatment, e.g. de-acidification, restoration, etc.,
-               for an item.</span></td>
+         <td class="desc">(treatment scheduled) – Scheduled treatment, e.g. de-acidification, restoration, etc.,
+            for an item.
+         </td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.bibl</li>
@@ -8587,7 +8562,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">unpub</td>
          <td class="module">MEI.header</td>
-         <td class="desc"><span class="removed block">(unpublished) – Used to explicitly indicate that a bibliographic resource is unpublished.</span><span class="added block">(unpublished) – Used to explicitly indicate that a bibliographic resource is unpublished.</span></td>
+         <td class="desc">(unpublished) – Used to explicitly indicate that a bibliographic resource is unpublished.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.bibl</li>
@@ -8623,9 +8598,9 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">useRestrict</td>
          <td class="module">MEI.header</td>
-         <td class="desc"><span class="removed block">(usage restrictions) – Container for information about the conditions that affect
-               use of a bibliographic item after access has been granted.</span><span class="added block">(usage restrictions) – Container for information about the conditions that affect
-               use of a bibliographic item after access has been granted.</span></td>
+         <td class="desc">(usage restrictions) – Container for information about the conditions that affect
+            use of a bibliographic item after access has been granted.
+         </td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="added" title="added class">att.authorized</li>
@@ -8668,7 +8643,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">watermark</td>
          <td class="module">MEI.header</td>
-         <td class="desc"><span class="removed block">Contains a description of a watermark or similar device.</span><span class="added block">Contains a description of a watermark or similar device.</span></td>
+         <td class="desc">Contains a description of a watermark or similar device.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.bibl</li>
@@ -8710,10 +8685,11 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">work</td>
          <td class="module">MEI.header</td>
-         <td class="desc">Provides a detailed description of a work — a distinct intellectual or artistic creation
-            — specifically its history, language use, and high-level musical attributes (e.g.,
-            key, tempo, meter, medium of performance, and intended duration).
-         </td>
+         <td class="desc"><span class="removed block">Provides a detailed description of a work, specifically its history, language use,
+               and high-level musical attributes: key, tempo, meter, medium of performance, and intended
+               duration.</span><span class="added block">Provides a detailed description of a work — a distinct intellectual or artistic creation
+               — specifically its history, language use, and high-level musical attributes (e.g.,
+               key, tempo, meter, medium of performance, and intended duration).</span></td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="added" title="added class">att.authorized</li>
@@ -8783,9 +8759,8 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">verse</td>
          <td class="module">MEI.lyrics</td>
-         <td class="desc">Division of a poem or song lyrics, sometimes having a fixed length, meter or rhyme
-            scheme; a stanza.
-         </td>
+         <td class="desc"><span class="removed block">Lyric verse.</span><span class="added block">Division of a poem or song lyrics, sometimes having a fixed length, meter or rhyme
+               scheme; a stanza.</span></td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.facsimile</li>
@@ -8850,7 +8825,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">ligature</td>
          <td class="module">MEI.mensural</td>
-         <td class="desc"><span class="removed block">A mensural notation symbol that combines two or more notes into a single sign.</span><span class="added block">A mensural notation symbol that combines two or more notes into a single sign.</span></td>
+         <td class="desc">A mensural notation symbol that combines two or more notes into a single sign.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.facsimile</li>
@@ -8897,9 +8872,9 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">mensur</td>
          <td class="module">MEI.mensural</td>
-         <td class="desc"><span class="removed block">(mensuration) – Collects information about the metrical relationship between a note
-               value and the next smaller value; that is, either triple or duple.</span><span class="added block">(mensuration) – Collects information about the metrical relationship between a note
-               value and the next smaller value; that is, either triple or duple.</span></td>
+         <td class="desc">(mensuration) – Collects information about the metrical relationship between a note
+            value and the next smaller value; that is, either triple or duple.
+         </td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.facsimile</li>
@@ -8965,7 +8940,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">proport</td>
          <td class="module">MEI.mensural</td>
-         <td class="desc"><span class="removed block">(proportion) – Description of note duration as arithmetic ratio.</span><span class="added block">(proportion) – Description of note duration as arithmetic ratio.</span></td>
+         <td class="desc">(proportion) – Description of note duration as arithmetic ratio.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.facsimile</li>
@@ -9021,7 +8996,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">cc</td>
          <td class="module">MEI.midi</td>
-         <td class="desc"><span class="removed block">(control change) – MIDI parameter/control change.</span><span class="added block">(control change) – MIDI parameter/control change.</span></td>
+         <td class="desc">(control change) – MIDI parameter/control change.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.midi.event</li>
@@ -9066,7 +9041,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">chan</td>
          <td class="module">MEI.midi</td>
-         <td class="desc"><span class="removed block">(channel) – MIDI channel assignment.</span><span class="added block">(channel) – MIDI channel assignment.</span></td>
+         <td class="desc">(channel) – MIDI channel assignment.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.midi.event</li>
@@ -9108,7 +9083,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">chanPr</td>
          <td class="module">MEI.midi</td>
-         <td class="desc"><span class="removed block">(channel pressure) – MIDI channel pressure/after touch.</span><span class="added block">(channel pressure) – MIDI channel pressure/after touch.</span></td>
+         <td class="desc">(channel pressure) – MIDI channel pressure/after touch.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.midi.event</li>
@@ -9151,7 +9126,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">cue</td>
          <td class="module">MEI.midi</td>
-         <td class="desc"><span class="removed block">MIDI cue point.</span><span class="added block">MIDI cue point.</span></td>
+         <td class="desc">MIDI cue point.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.lang</li>
@@ -9195,7 +9170,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">hex</td>
          <td class="module">MEI.midi</td>
-         <td class="desc"><span class="removed block">Arbitrary MIDI data in hexadecimal form.</span><span class="added block">Arbitrary MIDI data in hexadecimal form.</span></td>
+         <td class="desc">Arbitrary MIDI data in hexadecimal form.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.midi.event</li>
@@ -9236,7 +9211,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">instrDef</td>
          <td class="module">MEI.midi</td>
-         <td class="desc"><span class="removed block">(instrument definition) – MIDI instrument declaration.</span><span class="added block">(instrument definition) – MIDI instrument declaration.</span></td>
+         <td class="desc">(instrument definition) – MIDI instrument declaration.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="added" title="added class">att.instrDef.anl</li>
@@ -9286,7 +9261,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">instrGrp</td>
          <td class="module">MEI.midi</td>
-         <td class="desc"><span class="removed block">(instrument group) – Collects MIDI instrument definitions.</span><span class="added block">(instrument group) – Collects MIDI instrument definitions.</span></td>
+         <td class="desc">(instrument group) – Collects MIDI instrument definitions.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
             </ul>
@@ -9317,7 +9292,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">marker</td>
          <td class="module">MEI.midi</td>
-         <td class="desc"><span class="removed block">MIDI marker meta-event.</span><span class="added block">MIDI marker meta-event.</span></td>
+         <td class="desc">MIDI marker meta-event.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.lang</li>
@@ -9361,7 +9336,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">metaText</td>
          <td class="module">MEI.midi</td>
-         <td class="desc"><span class="removed block">MIDI text meta-event.</span><span class="added block">MIDI text meta-event.</span></td>
+         <td class="desc">MIDI text meta-event.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.lang</li>
@@ -9405,7 +9380,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">midi</td>
          <td class="module">MEI.midi</td>
-         <td class="desc"><span class="removed block">Container for elements that contain information useful when generating MIDI output.</span><span class="added block">Container for elements that contain information useful when generating MIDI output.</span></td>
+         <td class="desc">Container for elements that contain information useful when generating MIDI output.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.midi.log</li>
@@ -9459,7 +9434,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">noteOff</td>
          <td class="module">MEI.midi</td>
-         <td class="desc"><span class="removed block">MIDI note-off event.</span><span class="added block">MIDI note-off event.</span></td>
+         <td class="desc">MIDI note-off event.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.midi.event</li>
@@ -9502,7 +9477,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">noteOn</td>
          <td class="module">MEI.midi</td>
-         <td class="desc"><span class="removed block">MIDI note-on event.</span><span class="added block">MIDI note-on event.</span></td>
+         <td class="desc">MIDI note-on event.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.midi.event</li>
@@ -9545,7 +9520,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">port</td>
          <td class="module">MEI.midi</td>
-         <td class="desc"><span class="removed block">MIDI port.</span><span class="added block">MIDI port.</span></td>
+         <td class="desc">MIDI port.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.midi.event</li>
@@ -9588,7 +9563,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">prog</td>
          <td class="module">MEI.midi</td>
-         <td class="desc"><span class="removed block">(program) – MIDI program change.</span><span class="added block">(program) – MIDI program change.</span></td>
+         <td class="desc">(program) – MIDI program change.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.midi.event</li>
@@ -9631,7 +9606,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">seqNum</td>
          <td class="module">MEI.midi</td>
-         <td class="desc"><span class="removed block">(sequence number) – MIDI sequence number.</span><span class="added block">(sequence number) – MIDI sequence number.</span></td>
+         <td class="desc">(sequence number) – MIDI sequence number.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.midi.event</li>
@@ -9673,7 +9648,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">trkName</td>
          <td class="module">MEI.midi</td>
-         <td class="desc"><span class="removed block">(track name) – MIDI track/sequence name.</span><span class="added block">(track name) – MIDI track/sequence name.</span></td>
+         <td class="desc">(track name) – MIDI track/sequence name.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.lang</li>
@@ -9717,7 +9692,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">vel</td>
          <td class="module">MEI.midi</td>
-         <td class="desc"><span class="removed block">(velocity) – MIDI Note-on/off velocity.</span><span class="added block">(velocity) – MIDI Note-on/off velocity.</span></td>
+         <td class="desc">(velocity) – MIDI Note-on/off velocity.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.midi.event</li>
@@ -9761,9 +9736,9 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">addName</td>
          <td class="module">MEI.namesdates</td>
-         <td class="desc"><span class="removed block">(additional name) – Contains an additional name component, such as a nickname, epithet,
-               or alias, or any other descriptive phrase used within a personal name.</span><span class="added block">(additional name) – Contains an additional name component, such as a nickname, epithet,
-               or alias, or any other descriptive phrase used within a personal name.</span></td>
+         <td class="desc">(additional name) – Contains an additional name component, such as a nickname, epithet,
+            or alias, or any other descriptive phrase used within a personal name.
+         </td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.bibl</li>
@@ -9825,9 +9800,9 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">bloc</td>
          <td class="module">MEI.namesdates</td>
-         <td class="desc">Contains the name of a geopolitical unit consisting of two or more nation states or
-            countries.
-         </td>
+         <td class="desc"><span class="removed block">Contains the name of a geo-political unit consisting of two or more nation states
+               or countries.</span><span class="added block">Contains the name of a geopolitical unit consisting of two or more nation states or
+               countries.</span></td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.bibl</li>
@@ -9889,9 +9864,9 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">corpName</td>
          <td class="module">MEI.namesdates</td>
-         <td class="desc"><span class="removed block">(corporate name) – Identifies an organization or group of people that acts as a single
-               entity.</span><span class="added block">(corporate name) – Identifies an organization or group of people that acts as a single
-               entity.</span></td>
+         <td class="desc">(corporate name) – Identifies an organization or group of people that acts as a single
+            entity.
+         </td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.bibl</li>
@@ -9953,9 +9928,9 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">country</td>
          <td class="module">MEI.namesdates</td>
-         <td class="desc">Contains the name of a geopolitical unit, such as a nation, country, colony, or commonwealth,
-            larger than or administratively superior to a region and smaller than a bloc.
-         </td>
+         <td class="desc"><span class="removed block">Contains the name of a geo-political unit, such as a nation, country, colony, or commonwealth,
+               larger than or administratively superior to a region and smaller than a bloc.</span><span class="added block">Contains the name of a geopolitical unit, such as a nation, country, colony, or commonwealth,
+               larger than or administratively superior to a region and smaller than a bloc.</span></td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.bibl</li>
@@ -10017,9 +9992,9 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">district</td>
          <td class="module">MEI.namesdates</td>
-         <td class="desc"><span class="removed block">Contains the name of any kind of subdivision of a settlement, such as a parish, ward,
-               or other administrative or geographic unit.</span><span class="added block">Contains the name of any kind of subdivision of a settlement, such as a parish, ward,
-               or other administrative or geographic unit.</span></td>
+         <td class="desc">Contains the name of any kind of subdivision of a settlement, such as a parish, ward,
+            or other administrative or geographic unit.
+         </td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.bibl</li>
@@ -10081,9 +10056,9 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">famName</td>
          <td class="module">MEI.namesdates</td>
-         <td class="desc"><span class="removed block">(family name) – Contains a family (inherited) name, as opposed to a given, baptismal,
-               or nick name.</span><span class="added block">(family name) – Contains a family (inherited) name, as opposed to a given, baptismal,
-               or nick name.</span></td>
+         <td class="desc">(family name) – Contains a family (inherited) name, as opposed to a given, baptismal,
+            or nick name.
+         </td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.bibl</li>
@@ -10146,7 +10121,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">foreName</td>
          <td class="module">MEI.namesdates</td>
-         <td class="desc"><span class="removed block">Contains a forename, given or baptismal name.</span><span class="added block">Contains a forename, given or baptismal name.</span></td>
+         <td class="desc">Contains a forename, given or baptismal name.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.bibl</li>
@@ -10208,9 +10183,9 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">genName</td>
          <td class="module">MEI.namesdates</td>
-         <td class="desc"><span class="removed block">(generational name component) – Contains a name component used to distinguish otherwise
-               similar names on the basis of the relative ages or generations of the persons named.</span><span class="added block">(generational name component) – Contains a name component used to distinguish otherwise
-               similar names on the basis of the relative ages or generations of the persons named.</span></td>
+         <td class="desc">(generational name component) – Contains a name component used to distinguish otherwise
+            similar names on the basis of the relative ages or generations of the persons named.
+         </td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.bibl</li>
@@ -10272,7 +10247,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">geogFeat</td>
          <td class="module">MEI.namesdates</td>
-         <td class="desc"><span class="removed block">(geographical feature name) – Contains a common noun identifying a geographical feature.</span><span class="added block">(geographical feature name) – Contains a common noun identifying a geographical feature.</span></td>
+         <td class="desc">(geographical feature name) – Contains a common noun identifying a geographical feature.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.bibl</li>
@@ -10334,9 +10309,9 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">geogName</td>
          <td class="module">MEI.namesdates</td>
-         <td class="desc"><span class="removed block">(geographic name) – The proper noun designation for a place, natural feature, or political
-               jurisdiction.</span><span class="added block">(geographic name) – The proper noun designation for a place, natural feature, or political
-               jurisdiction.</span></td>
+         <td class="desc">(geographic name) – The proper noun designation for a place, natural feature, or political
+            jurisdiction.
+         </td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.bibl</li>
@@ -10398,9 +10373,9 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">nameLink</td>
          <td class="module">MEI.namesdates</td>
-         <td class="desc"><span class="removed block">(name link) – Contains a connecting phrase or link used within a name but not regarded
-               as part of it, such as "van der" or "of", "from", etc.</span><span class="added block">(name link) – Contains a connecting phrase or link used within a name but not regarded
-               as part of it, such as "van der" or "of", "from", etc.</span></td>
+         <td class="desc">(name link) – Contains a connecting phrase or link used within a name but not regarded
+            as part of it, such as "van der" or "of", "from", etc.
+         </td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.bibl</li>
@@ -10462,9 +10437,9 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">periodName</td>
          <td class="module">MEI.namesdates</td>
-         <td class="desc"><span class="removed block">(period name) – A label that describes a period of time, such as 'Baroque' or '3rd
-               Style period'.</span><span class="added block">(period name) – A label that describes a period of time, such as 'Baroque' or '3rd
-               Style period'.</span></td>
+         <td class="desc">(period name) – A label that describes a period of time, such as 'Baroque' or '3rd
+            Style period'.
+         </td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.bibl</li>
@@ -10526,9 +10501,9 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">persName</td>
          <td class="module">MEI.namesdates</td>
-         <td class="desc"><span class="removed block">(personal name) – Designation for an individual, including any or all of that individual's
-               forenames, surnames, honorific titles, and added names.</span><span class="added block">(personal name) – Designation for an individual, including any or all of that individual's
-               forenames, surnames, honorific titles, and added names.</span></td>
+         <td class="desc">(personal name) – Designation for an individual, including any or all of that individual's
+            forenames, surnames, honorific titles, and added names.
+         </td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.bibl</li>
@@ -10591,9 +10566,9 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">postBox</td>
          <td class="module">MEI.namesdates</td>
-         <td class="desc"><span class="removed block">(postal box or post office box) contains a number or other identifier for some postal
-               delivery point other than a street address.</span><span class="added block">(postal box or post office box) contains a number or other identifier for some postal
-               delivery point other than a street address.</span></td>
+         <td class="desc">(postal box or post office box) contains a number or other identifier for some postal
+            delivery point other than a street address.
+         </td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.facsimile</li>
@@ -10632,9 +10607,9 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">postCode</td>
          <td class="module">MEI.namesdates</td>
-         <td class="desc"><span class="removed block">(postal code) contains a numerical or alphanumeric code used as part of a postal address
-               to simplify sorting or delivery of mail.</span><span class="added block">(postal code) contains a numerical or alphanumeric code used as part of a postal address
-               to simplify sorting or delivery of mail.</span></td>
+         <td class="desc">(postal code) contains a numerical or alphanumeric code used as part of a postal address
+            to simplify sorting or delivery of mail.
+         </td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.facsimile</li>
@@ -10673,9 +10648,9 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">region</td>
          <td class="module">MEI.namesdates</td>
-         <td class="desc"><span class="removed block">Contains the name of an administrative unit such as a state, province, or county,
-               larger than a settlement, but smaller than a country.</span><span class="added block">Contains the name of an administrative unit such as a state, province, or county,
-               larger than a settlement, but smaller than a country.</span></td>
+         <td class="desc">Contains the name of an administrative unit such as a state, province, or county,
+            larger than a settlement, but smaller than a country.
+         </td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.bibl</li>
@@ -10737,9 +10712,9 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">roleName</td>
          <td class="module">MEI.namesdates</td>
-         <td class="desc"><span class="removed block">(role name) – Contains a name component which indicates that the referent has a particular
-               role or position in society, such as an official title or rank.</span><span class="added block">(role name) – Contains a name component which indicates that the referent has a particular
-               role or position in society, such as an official title or rank.</span></td>
+         <td class="desc">(role name) – Contains a name component which indicates that the referent has a particular
+            role or position in society, such as an official title or rank.
+         </td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.bibl</li>
@@ -10801,9 +10776,9 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">settlement</td>
          <td class="module">MEI.namesdates</td>
-         <td class="desc">Contains the name of a settlement such as a city, town, or village identified as a
-            single geopolitical or administrative unit.
-         </td>
+         <td class="desc"><span class="removed block">Contains the name of a settlement such as a city, town, or village identified as a
+               single geo-political or administrative unit.</span><span class="added block">Contains the name of a settlement such as a city, town, or village identified as a
+               single geopolitical or administrative unit.</span></td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.bibl</li>
@@ -10865,9 +10840,9 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">street</td>
          <td class="module">MEI.namesdates</td>
-         <td class="desc"><span class="removed block">full street address including any name or number identifying a building as well as
-               the name of the street or route on which it is located.</span><span class="added block">full street address including any name or number identifying a building as well as
-               the name of the street or route on which it is located.</span></td>
+         <td class="desc">full street address including any name or number identifying a building as well as
+            the name of the street or route on which it is located.
+         </td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.facsimile</li>
@@ -10907,9 +10882,9 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">styleName</td>
          <td class="module">MEI.namesdates</td>
-         <td class="desc"><span class="removed block">(style name) – A label for a characteristic style of writing or performance, such
-               as 'bebop' or 'rock-n-roll'.</span><span class="added block">(style name) – A label for a characteristic style of writing or performance, such
-               as 'bebop' or 'rock-n-roll'.</span></td>
+         <td class="desc">(style name) – A label for a characteristic style of writing or performance, such
+            as 'bebop' or 'rock-n-roll'.
+         </td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.bibl</li>
@@ -10971,9 +10946,9 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">syllable</td>
          <td class="module">MEI.neumes</td>
-         <td class="desc"><span class="removed block">Neume notation can be thought of as "neumed text". Therefore, the syllable element
-               provides high-level organization in this repertoire.</span><span class="added block">Neume notation can be thought of as "neumed text". Therefore, the syllable element
-               provides high-level organization in this repertoire.</span></td>
+         <td class="desc">Neume notation can be thought of as "neumed text". Therefore, the syllable element
+            provides high-level organization in this repertoire.
+         </td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="added" title="added class">att.facsimile</li>
@@ -11023,7 +10998,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">avFile</td>
          <td class="module">MEI.performance</td>
-         <td class="desc"><span class="removed block">(audio/video file) – References an external digital audio or video file.</span><span class="added block">(audio/video file) – References an external digital audio or video file.</span></td>
+         <td class="desc">(audio/video file) – References an external digital audio or video file.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.bibl</li>
@@ -11071,9 +11046,9 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">clip</td>
          <td class="module">MEI.performance</td>
-         <td class="desc"><span class="removed block">Defines a time segment of interest within a recording or within a digital audio or
-               video file.</span><span class="added block">Defines a time segment of interest within a recording or within a digital audio or
-               video file.</span></td>
+         <td class="desc">Defines a time segment of interest within a recording or within a digital audio or
+            video file.
+         </td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="casechanged" title="was: att.datapointing">att.dataPointing</li>
@@ -11116,7 +11091,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">performance</td>
          <td class="module">MEI.performance</td>
-         <td class="desc"><span class="removed block">A presentation of one or more musical works.</span><span class="added block">A presentation of one or more musical works.</span></td>
+         <td class="desc">A presentation of one or more musical works.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="added" title="added class">att.metadataPointing</li>
@@ -11151,7 +11126,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">recording</td>
          <td class="module">MEI.performance</td>
-         <td class="desc"><span class="removed block">A recorded performance.</span><span class="added block">A recorded performance.</span></td>
+         <td class="desc">A recorded performance.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="casechanged" title="was: att.datapointing">att.dataPointing</li>
@@ -11195,9 +11170,9 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">when</td>
          <td class="module">MEI.performance</td>
-         <td class="desc"><span class="removed block">Indicates a point in time either absolutely (using the absolute attribute), or relative
-               to another when element (using the since, interval and inttype attributes).</span><span class="added block">Indicates a point in time either absolutely (using the absolute attribute), or relative
-               to another when element (using the since, interval and inttype attributes).</span></td>
+         <td class="desc">Indicates a point in time either absolutely (using the absolute attribute), or relative
+            to another when element (using the since, interval and inttype attributes).
+         </td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="casechanged" title="was: att.datapointing">att.dataPointing</li>
@@ -11235,9 +11210,9 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">ptr</td>
          <td class="module">MEI.ptrref</td>
-         <td class="desc">(pointer) – Defines a traversible pointer to another location, using only attributes
-            to describe the destination.
-         </td>
+         <td class="desc"><span class="removed block">(pointer) – Defines a pointer to another location, using only attributes to describe
+               the destination.</span><span class="added block">(pointer) – Defines a traversible pointer to another location, using only attributes
+               to describe the destination.</span></td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="casechanged" title="was: att.internetmedia">att.internetMedia</li>
@@ -11283,9 +11258,9 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">ref</td>
          <td class="module">MEI.ptrref</td>
-         <td class="desc">(reference) – Defines a traversible reference to another location. May contain text
-            and sub-elements that describe the destination.
-         </td>
+         <td class="desc"><span class="removed block">(reference) – Defines a reference to another location that may contain text and sub-elements
+               to describe the destination.</span><span class="added block">(reference) – Defines a traversible reference to another location. May contain text
+               and sub-elements that describe the destination.</span></td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="casechanged" title="was: att.internetmedia">att.internetMedia</li>
@@ -11335,7 +11310,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">accid</td>
          <td class="module">MEI.shared</td>
-         <td class="desc"><span class="removed block">(accidental) – Records a temporary alteration to the pitch of a note.</span><span class="added block">(accidental) – Records a temporary alteration to the pitch of a note.</span></td>
+         <td class="desc">(accidental) – Records a temporary alteration to the pitch of a note.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.facsimile</li>
@@ -11408,7 +11383,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">actor</td>
          <td class="module">MEI.shared</td>
-         <td class="desc"><span class="removed block">Name of an actor appearing within a cast list.</span><span class="added block">Name of an actor appearing within a cast list.</span></td>
+         <td class="desc">Name of an actor appearing within a cast list.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.facsimile</li>
@@ -11445,7 +11420,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">address</td>
          <td class="module">MEI.shared</td>
-         <td class="desc"><span class="removed block">Contains a postal address, for example of a publisher, an organization, or an individual.</span><span class="added block">Contains a postal address, for example of a publisher, an organization, or an individual.</span></td>
+         <td class="desc">Contains a postal address, for example of a publisher, an organization, or an individual.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.facsimile</li>
@@ -11483,7 +11458,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">addrLine</td>
          <td class="module">MEI.shared</td>
-         <td class="desc"><span class="removed block">(address line) – Single line of a postal address.</span><span class="added block">(address line) – Single line of a postal address.</span></td>
+         <td class="desc">(address line) – Single line of a postal address.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.facsimile</li>
@@ -11522,9 +11497,9 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">annot</td>
          <td class="module">MEI.shared</td>
-         <td class="desc">(annotation) – Provides a statement explaining the text or indicating the basis for
-            an assertion.
-         </td>
+         <td class="desc"><span class="removed block">(annotation) – Provides a short statement explaining the text or indicating the basis
+               for an assertion.</span><span class="added block">(annotation) – Provides a statement explaining the text or indicating the basis for
+               an assertion.</span></td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.annot.log</li>
@@ -11607,11 +11582,10 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">arranger</td>
          <td class="module">MEI.shared</td>
-         <td class="desc"><span class="removed block">A person or organization who transcribes a musical composition, usually for a different
-               medium from that of the original; in an arrangement the musical substance remains
-               essentially unchanged.</span><span class="added block">A person or organization who transcribes a musical composition, usually for a different
-               medium from that of the original; in an arrangement the musical substance remains
-               essentially unchanged.</span></td>
+         <td class="desc">A person or organization who transcribes a musical composition, usually for a different
+            medium from that of the original; in an arrangement the musical substance remains
+            essentially unchanged.
+         </td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.bibl</li>
@@ -11656,7 +11630,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">artic</td>
          <td class="module">MEI.shared</td>
-         <td class="desc"><span class="removed block">(articulation) – An indication of how to play a note or chord.</span><span class="added block">(articulation) – An indication of how to play a note or chord.</span></td>
+         <td class="desc">(articulation) – An indication of how to play a note or chord.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.facsimile</li>
@@ -11730,7 +11704,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">author</td>
          <td class="module">MEI.shared</td>
-         <td class="desc"><span class="removed block">The name of the creator of the intellectual content of a non-musical, literary work.</span><span class="added block">The name of the creator of the intellectual content of a non-musical, literary work.</span></td>
+         <td class="desc">The name of the creator of the intellectual content of a non-musical, literary work.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.bibl</li>
@@ -11775,9 +11749,9 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">barLine</td>
          <td class="module">MEI.shared</td>
-         <td class="desc"><span class="removed block">Vertical line drawn through one or more staves that divides musical notation into
-               metrical units.</span><span class="added block">Vertical line drawn through one or more staves that divides musical notation into
-               metrical units.</span></td>
+         <td class="desc">Vertical line drawn through one or more staves that divides musical notation into
+            metrical units.
+         </td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.facsimile</li>
@@ -11842,9 +11816,9 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">bibl</td>
          <td class="module">MEI.shared</td>
-         <td class="desc"><span class="removed block">(bibliographic reference) – Provides a loosely-structured bibliographic citation in
-               which the sub-components may or may not be explicitly marked.</span><span class="added block">(bibliographic reference) – Provides a loosely-structured bibliographic citation in
-               which the sub-components may or may not be explicitly marked.</span></td>
+         <td class="desc">(bibliographic reference) – Provides a loosely-structured bibliographic citation in
+            which the sub-components may or may not be explicitly marked.
+         </td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.bibl</li>
@@ -11894,7 +11868,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">biblList</td>
          <td class="module">MEI.shared</td>
-         <td class="desc"><span class="removed block">List of bibliographic references.</span><span class="added block">List of bibliographic references.</span></td>
+         <td class="desc">List of bibliographic references.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.bibl</li>
@@ -11939,9 +11913,9 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">biblScope</td>
          <td class="module">MEI.shared</td>
-         <td class="desc"><span class="removed block">(scope of citation) – Defines the scope of a bibliographic reference, for example
-               as a list of page numbers, or a named subdivision of a larger work.</span><span class="added block">(scope of citation) – Defines the scope of a bibliographic reference, for example
-               as a list of page numbers, or a named subdivision of a larger work.</span></td>
+         <td class="desc">(scope of citation) – Defines the scope of a bibliographic reference, for example
+            as a list of page numbers, or a named subdivision of a larger work.
+         </td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.bibl</li>
@@ -11992,7 +11966,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">body</td>
          <td class="module">MEI.shared</td>
-         <td class="desc"><span class="removed block">Contains the whole of a single musical text, excluding any front or back matter.</span><span class="added block">Contains the whole of a single musical text, excluding any front or back matter.</span></td>
+         <td class="desc">Contains the whole of a single musical text, excluding any front or back matter.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="added" title="added class">att.metadataPointing</li>
@@ -12028,7 +12002,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">caption</td>
          <td class="module">MEI.shared</td>
-         <td class="desc"><span class="removed block">A label which accompanies an illustration or a table.</span><span class="added block">A label which accompanies an illustration or a table.</span></td>
+         <td class="desc">A label which accompanies an illustration or a table.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.facsimile</li>
@@ -12068,7 +12042,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">castGrp</td>
          <td class="module">MEI.shared</td>
-         <td class="desc"><span class="removed block">(cast group) – Groups one or more individual castItem elements within a cast list.</span><span class="added block">(cast group) – Groups one or more individual castItem elements within a cast list.</span></td>
+         <td class="desc">(cast group) – Groups one or more individual castItem elements within a cast list.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.facsimile</li>
@@ -12106,9 +12080,9 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">castItem</td>
          <td class="module">MEI.shared</td>
-         <td class="desc"><span class="removed block">Contains a single entry within a cast list, describing either a single role or a list
-               of non-speaking roles.</span><span class="added block">Contains a single entry within a cast list, describing either a single role or a list
-               of non-speaking roles.</span></td>
+         <td class="desc">Contains a single entry within a cast list, describing either a single role or a list
+            of non-speaking roles.
+         </td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.bibl</li>
@@ -12150,7 +12124,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">castList</td>
          <td class="module">MEI.shared</td>
-         <td class="desc"><span class="removed block">Contains a single cast list or dramatis personae.</span><span class="added block">Contains a single cast list or dramatis personae.</span></td>
+         <td class="desc">Contains a single cast list or dramatis personae.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.bibl</li>
@@ -12193,7 +12167,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">chord</td>
          <td class="module">MEI.shared</td>
-         <td class="desc"><span class="removed block">A simultaneous sounding of two or more notes in the same layer *with the same duration*.</span><span class="added block">A simultaneous sounding of two or more notes in the same layer *with the same duration*.</span></td>
+         <td class="desc">A simultaneous sounding of two or more notes in the same layer *with the same duration*.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.facsimile</li>
@@ -12294,9 +12268,9 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">clef</td>
          <td class="module">MEI.shared</td>
-         <td class="desc"><span class="removed block">Indication of the exact location of a particular note on the staff and, therefore,
-               the other notes as well.</span><span class="added block">Indication of the exact location of a particular note on the staff and, therefore,
-               the other notes as well.</span></td>
+         <td class="desc">Indication of the exact location of a particular note on the staff and, therefore,
+            the other notes as well.
+         </td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.event</li>
@@ -12362,7 +12336,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">clefGrp</td>
          <td class="module">MEI.shared</td>
-         <td class="desc"><span class="removed block">(clef group) – A set of simultaneously-occurring clefs.</span><span class="added block">(clef group) – A set of simultaneously-occurring clefs.</span></td>
+         <td class="desc">(clef group) – A set of simultaneously-occurring clefs.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.event</li>
@@ -12408,7 +12382,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">composer</td>
          <td class="module">MEI.shared</td>
-         <td class="desc"><span class="removed block">The name of the creator of the intellectual content of a musical work.</span><span class="added block">The name of the creator of the intellectual content of a musical work.</span></td>
+         <td class="desc">The name of the creator of the intellectual content of a musical work.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.bibl</li>
@@ -12453,11 +12427,10 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">creation</td>
          <td class="module">MEI.shared</td>
-         <td class="desc"><span class="removed block">Non-bibliographic details of the creation of an intellectual entity, in narrative
-               form, such as the date, place, and circumstances of its composition. More detailed
-               information may be captured within the history element.</span><span class="added block">Non-bibliographic details of the creation of an intellectual entity, in narrative
-               form, such as the date, place, and circumstances of its composition. More detailed
-               information may be captured within the history element.</span></td>
+         <td class="desc">Non-bibliographic details of the creation of an intellectual entity, in narrative
+            form, such as the date, place, and circumstances of its composition. More detailed
+            information may be captured within the history element.
+         </td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.bibl</li>
@@ -12507,9 +12480,9 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">custos</td>
          <td class="module">MEI.shared</td>
-         <td class="desc"><span class="removed block">Symbol placed at the end of a line of music to indicate the first note of the next
-               line. Sometimes called a "direct".</span><span class="added block">Symbol placed at the end of a line of music to indicate the first note of the next
-               line. Sometimes called a "direct".</span></td>
+         <td class="desc">Symbol placed at the end of a line of music to indicate the first note of the next
+            line. Sometimes called a "direct".
+         </td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.facsimile</li>
@@ -12567,7 +12540,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">date</td>
          <td class="module">MEI.shared</td>
-         <td class="desc"><span class="removed block">A string identifying a point in time or the time period between two such points.</span><span class="added block">A string identifying a point in time or the time period between two such points.</span></td>
+         <td class="desc">A string identifying a point in time or the time period between two such points.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.bibl</li>
@@ -12621,7 +12594,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">depth</td>
          <td class="module">MEI.shared</td>
-         <td class="desc"><span class="removed block">Description of a measurement taken through a three-dimensional object.</span><span class="added block">Description of a measurement taken through a three-dimensional object.</span></td>
+         <td class="desc">Description of a measurement taken through a three-dimensional object.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.bibl</li>
@@ -12668,9 +12641,9 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">desc</td>
          <td class="module">MEI.shared</td>
-         <td class="desc"><span class="removed block">(description) – Container for text that briefly describes the feature to which it
-               is attached, including its intended usage, purpose, or application as appropriate.</span><span class="added block">(description) – Container for text that briefly describes the feature to which it
-               is attached, including its intended usage, purpose, or application as appropriate.</span></td>
+         <td class="desc">(description) – Container for text that briefly describes the feature to which it
+            is attached, including its intended usage, purpose, or application as appropriate.
+         </td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.facsimile</li>
@@ -12715,7 +12688,8 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">dimensions</td>
          <td class="module">MEI.shared</td>
-         <td class="desc">Information about the physical size of an entity; usually includes numerical data.</td>
+         <td class="desc"><span class="removed block">Information about the physical size of a bibliographic source; usually includes numerical
+               data.</span><span class="added block">Information about the physical size of an entity; usually includes numerical data.</span></td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.bibl</li>
@@ -12761,11 +12735,13 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">dir</td>
          <td class="module">MEI.shared</td>
-         <td class="desc">(directive) – An instruction expressed as a combination of text and symbols — such
-            as segno and coda symbols, fermatas over a bar line, etc., typically above, below,
-            or between staves, but not on the staff — that is not encoded elsewhere in more specific
-            elements, like tempo or dynam .
-         </td>
+         <td class="desc"><span class="removed block">(directive) – An instruction expressed as a combination of text and symbols — such
+               as segno and coda symbols, fermatas over a bar line, etc., typically above, below,
+               or between staves, but not on the staff — that is not encoded elsewhere in more specific
+               elements, like &lt;tempo&gt; or &lt;dynam&gt;.</span><span class="added block">(directive) – An instruction expressed as a combination of text and symbols — such
+               as segno and coda symbols, fermatas over a bar line, etc., typically above, below,
+               or between staves, but not on the staff — that is not encoded elsewhere in more specific
+               elements, like tempo or dynam .</span></td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.facsimile</li>
@@ -12856,9 +12832,9 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">distributor</td>
          <td class="module">MEI.shared</td>
-         <td class="desc"><span class="removed block">Person or agency, other than a publisher, from which access (including electronic
-               access) to a bibliographic entity may be obtained.</span><span class="added block">Person or agency, other than a publisher, from which access (including electronic
-               access) to a bibliographic entity may be obtained.</span></td>
+         <td class="desc">Person or agency, other than a publisher, from which access (including electronic
+            access) to a bibliographic entity may be obtained.
+         </td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.bibl</li>
@@ -12899,7 +12875,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">div</td>
          <td class="module">MEI.shared</td>
-         <td class="desc"><span class="removed block">(division) – Major structural division of text, such as a preface, chapter or section.</span><span class="added block">(division) – Major structural division of text, such as a preface, chapter or section.</span></td>
+         <td class="desc">(division) – Major structural division of text, such as a preface, chapter or section.</td>
          <td class="classes">Classes:<br><ul>
                <li class="added" title="added class">att.basic</li>
                <li class="added" title="added class">att.classed</li>
@@ -12952,7 +12928,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">dot</td>
          <td class="module">MEI.shared</td>
-         <td class="desc"><span class="removed block">Dot of augmentation or division.</span><span class="added block">Dot of augmentation or division.</span></td>
+         <td class="desc">Dot of augmentation or division.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.facsimile</li>
@@ -13021,7 +12997,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">dynam</td>
          <td class="module">MEI.shared</td>
-         <td class="desc"><span class="removed block">(dynamic) – Indication of the volume of a note, phrase, or section of music.</span><span class="added block">(dynamic) – Indication of the volume of a note, phrase, or section of music.</span></td>
+         <td class="desc">(dynamic) – Indication of the volume of a note, phrase, or section of music.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.dynam.log</li>
@@ -13111,15 +13087,12 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">edition</td>
          <td class="module">MEI.shared</td>
-         <td class="desc"><span class="removed block">(edition designation) – A word or text phrase that indicates a difference in either
-               content or form between the item being described and a related item previously issued
-               by the same publisher/distributor (e.g. 2nd edition, version 2.0, etc.), or simultaneously
-               issued by either the same publisher/distributor or another publisher/distributor (e.g.
-               large print edition, British edition, etc.).</span><span class="added block">(edition designation) – A word or text phrase that indicates a difference in either
-               content or form between the item being described and a related item previously issued
-               by the same publisher/distributor (e.g. 2nd edition, version 2.0, etc.), or simultaneously
-               issued by either the same publisher/distributor or another publisher/distributor (e.g.
-               large print edition, British edition, etc.).</span></td>
+         <td class="desc">(edition designation) – A word or text phrase that indicates a difference in either
+            content or form between the item being described and a related item previously issued
+            by the same publisher/distributor (e.g. 2nd edition, version 2.0, etc.), or simultaneously
+            issued by either the same publisher/distributor or another publisher/distributor (e.g.
+            large print edition, British edition, etc.).
+         </td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.bibl</li>
@@ -13160,9 +13133,9 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">editor</td>
          <td class="module">MEI.shared</td>
-         <td class="desc"><span class="removed block">The name of the individual(s), institution(s) or organization(s) acting in an editorial
-               capacity.</span><span class="added block">The name of the individual(s), institution(s) or organization(s) acting in an editorial
-               capacity.</span></td>
+         <td class="desc">The name of the individual(s), institution(s) or organization(s) acting in an editorial
+            capacity.
+         </td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.bibl</li>
@@ -13207,9 +13180,9 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">ending</td>
          <td class="module">MEI.shared</td>
-         <td class="desc"><span class="removed block">Alternative ending for a repeated passage of music; i.e., prima volta, seconda volta,
-               etc.</span><span class="added block">Alternative ending for a repeated passage of music; i.e., prima volta, seconda volta,
-               etc.</span></td>
+         <td class="desc">Alternative ending for a repeated passage of music; i.e., prima volta, seconda volta,
+            etc.
+         </td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.ending.anl</li>
@@ -13279,7 +13252,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">event</td>
          <td class="module">MEI.shared</td>
-         <td class="desc"><span class="removed block">Contains a free-text event description.</span><span class="added block">Contains a free-text event description.</span></td>
+         <td class="desc">Contains a free-text event description.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.bibl</li>
@@ -13338,7 +13311,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">eventList</td>
          <td class="module">MEI.shared</td>
-         <td class="desc"><span class="removed block">Contains historical information given as a sequence of significant past events.</span><span class="added block">Contains historical information given as a sequence of significant past events.</span></td>
+         <td class="desc">Contains historical information given as a sequence of significant past events.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.bibl</li>
@@ -13384,9 +13357,9 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">expansion</td>
          <td class="module">MEI.shared</td>
-         <td class="desc"><span class="removed block">Indicates how a section may be programmatically expanded into its 'through-composed'
-               form.</span><span class="added block">Indicates how a section may be programmatically expanded into its 'through-composed'
-               form.</span></td>
+         <td class="desc">Indicates how a section may be programmatically expanded into its 'through-composed'
+            form.
+         </td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.plist</li>
@@ -13425,9 +13398,10 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">extent</td>
          <td class="module">MEI.shared</td>
-         <td class="desc">Used to express size in terms other than physical dimensions, such as number of pages,
-            records, bytes, physical components, etc.
-         </td>
+         <td class="desc"><span class="removed block">Used to express size in terms other than physical dimensions, such as number of pages,
+               number of records in file, number of bytes, performance duration for music, audio
+               recordings and visual projections, etc.</span><span class="added block">Used to express size in terms other than physical dimensions, such as number of pages,
+               records, bytes, physical components, etc.</span></td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.bibl</li>
@@ -13478,11 +13452,10 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">funder</td>
          <td class="module">MEI.shared</td>
-         <td class="desc"><span class="removed block">Names of individuals, institutions, or organizations responsible for funding. Funders
-               provide financial support for a project; they are distinct from sponsors, who provide
-               intellectual support and authority.</span><span class="added block">Names of individuals, institutions, or organizations responsible for funding. Funders
-               provide financial support for a project; they are distinct from sponsors, who provide
-               intellectual support and authority.</span></td>
+         <td class="desc">Names of individuals, institutions, or organizations responsible for funding. Funders
+            provide financial support for a project; they are distinct from sponsors, who provide
+            intellectual support and authority.
+         </td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.bibl</li>
@@ -13525,9 +13498,9 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">genre</td>
          <td class="module">MEI.shared</td>
-         <td class="desc"><span class="removed block">Term or terms that designate a category characterizing a particular style, form, or
-               content.</span><span class="added block">Term or terms that designate a category characterizing a particular style, form, or
-               content.</span></td>
+         <td class="desc">Term or terms that designate a category characterizing a particular style, form, or
+            content.
+         </td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.authorized</li>
@@ -13573,11 +13546,10 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">group</td>
          <td class="module">MEI.shared</td>
-         <td class="desc"><span class="removed block">Contains a composite musical text, grouping together a sequence of distinct musical
-               texts (or groups of such musical texts) which are regarded as a unit for some purpose,
-               for example, the collected works of a composer.</span><span class="added block">Contains a composite musical text, grouping together a sequence of distinct musical
-               texts (or groups of such musical texts) which are regarded as a unit for some purpose,
-               for example, the collected works of a composer.</span></td>
+         <td class="desc">Contains a composite musical text, grouping together a sequence of distinct musical
+            texts (or groups of such musical texts) which are regarded as a unit for some purpose,
+            for example, the collected works of a composer.
+         </td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="added" title="added class">att.metadataPointing</li>
@@ -13615,9 +13587,9 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">grpSym</td>
          <td class="module">MEI.shared</td>
-         <td class="desc"><span class="removed block">(group symbol) – A brace or bracket used to group two or more staves of a score or
-               part.</span><span class="added block">(group symbol) – A brace or bracket used to group two or more staves of a score or
-               part.</span></td>
+         <td class="desc">(group symbol) – A brace or bracket used to group two or more staves of a score or
+            part.
+         </td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.facsimile</li>
@@ -13676,9 +13648,9 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">head</td>
          <td class="module">MEI.shared</td>
-         <td class="desc"><span class="removed block">(heading) – Contains any heading, for example, the title of a section of text, or
-               the heading of a list.</span><span class="added block">(heading) – Contains any heading, for example, the title of a section of text, or
-               the heading of a list.</span></td>
+         <td class="desc">(heading) – Contains any heading, for example, the title of a section of text, or
+            the heading of a list.
+         </td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.facsimile</li>
@@ -13723,7 +13695,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">height</td>
          <td class="module">MEI.shared</td>
-         <td class="desc"><span class="removed block">Description of the vertical size of an object.</span><span class="added block">Description of the vertical size of an object.</span></td>
+         <td class="desc">Description of the vertical size of an object.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.bibl</li>
@@ -13770,7 +13742,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">identifier</td>
          <td class="module">MEI.shared</td>
-         <td class="desc"><span class="removed block">An alpha-numeric string that establishes the identity of the described material.</span><span class="added block">An alpha-numeric string that establishes the identity of the described material.</span></td>
+         <td class="desc">An alpha-numeric string that establishes the identity of the described material.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.authorized</li>
@@ -13817,7 +13789,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">imprint</td>
          <td class="module">MEI.shared</td>
-         <td class="desc"><span class="removed block">Information relating to the publication or distribution of a bibliographic item.</span><span class="added block">Information relating to the publication or distribution of a bibliographic item.</span></td>
+         <td class="desc">Information relating to the publication or distribution of a bibliographic item.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.bibl</li>
@@ -13858,7 +13830,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">incip</td>
          <td class="module">MEI.shared</td>
-         <td class="desc">(incipit) – The opening music and/or words of a musical or textual work.</td>
+         <td class="desc"><span class="removed block">(incipit) – The opening music and/or words of a composition.</span><span class="added block">(incipit) – The opening music and/or words of a musical or textual work.</span></td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.bibl</li>
@@ -13909,7 +13881,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">keyAccid</td>
          <td class="module">MEI.shared</td>
-         <td class="desc"><span class="removed block">(key accidental) – Accidental in a key signature.</span><span class="added block">(key accidental) – Accidental in a key signature.</span></td>
+         <td class="desc">(key accidental) – Accidental in a key signature.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.facsimile</li>
@@ -13968,7 +13940,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">keySig</td>
          <td class="module">MEI.shared</td>
-         <td class="desc"><span class="removed block">(key signature) – Written key signature.</span><span class="added block">(key signature) – Written key signature.</span></td>
+         <td class="desc">(key signature) – Written key signature.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.facsimile</li>
@@ -14015,9 +13987,8 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">label</td>
          <td class="module">MEI.shared</td>
-         <td class="desc">A container for document text that identifies the feature to which it is attached.
-            For a "tool tip" or other generated label, use the label attribute.
-         </td>
+         <td class="desc"><span class="removed block">A container for text that identifies the feature to which it is attached.</span><span class="added block">A container for document text that identifies the feature to which it is attached.
+               For a "tool tip" or other generated label, use the label attribute.</span></td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.facsimile</li>
@@ -14061,7 +14032,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">layer</td>
          <td class="module">MEI.shared</td>
-         <td class="desc"><span class="removed block">An independent stream of events on a staff.</span><span class="added block">An independent stream of events on a staff.</span></td>
+         <td class="desc">An independent stream of events on a staff.</td>
          <td class="classes">Classes:<br><ul>
                <li class="added" title="added class">att.basic</li>
                <li class="unchanged">att.facsimile</li>
@@ -14119,7 +14090,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">layerDef</td>
          <td class="module">MEI.shared</td>
-         <td class="desc"><span class="removed block">(layer definition) – Container for layer meta-information.</span><span class="added block">(layer definition) – Container for layer meta-information.</span></td>
+         <td class="desc">(layer definition) – Container for layer meta-information.</td>
          <td class="classes">Classes:<br><ul>
                <li class="added" title="added class">att.basic</li>
                <li class="added" title="added class">att.labelled</li>
@@ -14186,9 +14157,8 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">lb</td>
          <td class="module">MEI.shared</td>
-         <td class="desc">(line beginning) – An empty formatting element that forces text to begin on a new
-            line.
-         </td>
+         <td class="desc"><span class="removed block">(line break) – An empty formatting element that forces text to begin on a new line.</span><span class="added block">(line beginning) – An empty formatting element that forces text to begin on a new
+               line.</span></td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.facsimile</li>
@@ -14227,11 +14197,10 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">lg</td>
          <td class="module">MEI.shared</td>
-         <td class="desc"><span class="removed block">(line group) – May be used for any section of text that is organized as a group of
-               lines; however, it is most often used for a group of verse lines functioning as a
-               formal unit, e.g. a stanza, refrain, verse paragraph, etc.</span><span class="added block">(line group) – May be used for any section of text that is organized as a group of
-               lines; however, it is most often used for a group of verse lines functioning as a
-               formal unit, e.g. a stanza, refrain, verse paragraph, etc.</span></td>
+         <td class="desc">(line group) – May be used for any section of text that is organized as a group of
+            lines; however, it is most often used for a group of verse lines functioning as a
+            formal unit, e.g. a stanza, refrain, verse paragraph, etc.
+         </td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.facsimile</li>
@@ -14293,7 +14262,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">librettist</td>
          <td class="module">MEI.shared</td>
-         <td class="desc"><span class="removed block">Person or organization who is a writer of the text of an opera, oratorio, etc.</span><span class="added block">Person or organization who is a writer of the text of an opera, oratorio, etc.</span></td>
+         <td class="desc">Person or organization who is a writer of the text of an opera, oratorio, etc.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.bibl</li>
@@ -14338,7 +14307,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">lyricist</td>
          <td class="module">MEI.shared</td>
-         <td class="desc"><span class="removed block">Person or organization who is a writer of the text of a song.</span><span class="added block">Person or organization who is a writer of the text of a song.</span></td>
+         <td class="desc">Person or organization who is a writer of the text of a song.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.bibl</li>
@@ -14383,7 +14352,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">mdiv</td>
          <td class="module">MEI.shared</td>
-         <td class="desc"><span class="removed block">(musical division) – Contains a subdivision of the body of a musical text.</span><span class="added block">(musical division) – Contains a subdivision of the body of a musical text.</span></td>
+         <td class="desc">(musical division) – Contains a subdivision of the body of a musical text.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.facsimile</li>
@@ -14430,9 +14399,9 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">mei</td>
          <td class="module">MEI.shared</td>
-         <td class="desc"><span class="removed block">Contains a single MEI-conformant document, consisting of an MEI header and a musical
-               text, either in isolation or as part of an meiCorpus element.</span><span class="added block">Contains a single MEI-conformant document, consisting of an MEI header and a musical
-               text, either in isolation or as part of an meiCorpus element.</span></td>
+         <td class="desc">Contains a single MEI-conformant document, consisting of an MEI header and a musical
+            text, either in isolation or as part of an meiCorpus element.
+         </td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.id</li>
                <li class="casechanged" title="was: att.meiversion">att.meiVersion</li>
@@ -14454,9 +14423,9 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">music</td>
          <td class="module">MEI.shared</td>
-         <td class="desc"><span class="removed block">Contains a single musical text of any kind, whether unitary or composite, for example,
-               an etude, opera, song cycle, symphony, or anthology of piano solos.</span><span class="added block">Contains a single musical text of any kind, whether unitary or composite, for example,
-               an etude, opera, song cycle, symphony, or anthology of piano solos.</span></td>
+         <td class="desc">Contains a single musical text of any kind, whether unitary or composite, for example,
+            an etude, opera, song cycle, symphony, or anthology of piano solos.
+         </td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="casechanged" title="was: att.meiversion">att.meiVersion</li>
@@ -14493,7 +14462,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">name</td>
          <td class="module">MEI.shared</td>
-         <td class="desc"><span class="removed block">Proper noun or noun phrase.</span><span class="added block">Proper noun or noun phrase.</span></td>
+         <td class="desc">Proper noun or noun phrase.</td>
          <td class="classes">Classes:<br><ul>
                <li class="added" title="added class">att.basic</li>
                <li class="unchanged">att.bibl</li>
@@ -14561,7 +14530,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">note</td>
          <td class="module">MEI.shared</td>
-         <td class="desc"><span class="removed block">A single pitched event.</span><span class="added block">A single pitched event.</span></td>
+         <td class="desc">A single pitched event.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.facsimile</li>
@@ -14694,7 +14663,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">num</td>
          <td class="module">MEI.shared</td>
-         <td class="desc"><span class="removed block">(number) – Numeric information in any form.</span><span class="added block">(number) – Numeric information in any form.</span></td>
+         <td class="desc">(number) – Numeric information in any form.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.facsimile</li>
@@ -14745,7 +14714,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">ornam</td>
          <td class="module">MEI.shared</td>
-         <td class="desc"><span class="removed block">An element indicating an ornament that is not a mordent, turn, or trill.</span><span class="added block">An element indicating an ornament that is not a mordent, turn, or trill.</span></td>
+         <td class="desc">An element indicating an ornament that is not a mordent, turn, or trill.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.facsimile</li>
@@ -14825,7 +14794,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">p</td>
          <td class="module">MEI.shared</td>
-         <td class="desc"><span class="removed block">(paragraph) – One or more text phrases that form a logical prose passage.</span><span class="added block">(paragraph) – One or more text phrases that form a logical prose passage.</span></td>
+         <td class="desc">(paragraph) – One or more text phrases that form a logical prose passage.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.facsimile</li>
@@ -14869,7 +14838,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">pad</td>
          <td class="module">MEI.shared</td>
-         <td class="desc"><span class="removed block">(padding) – An indication of extra visual space between notational elements.</span><span class="added block">(padding) – An indication of extra visual space between notational elements.</span></td>
+         <td class="desc">(padding) – An indication of extra visual space between notational elements.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.pad.log</li>
@@ -14913,9 +14882,9 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">part</td>
          <td class="module">MEI.shared</td>
-         <td class="desc"><span class="removed block">An alternative visual rendition of the score from the point of view of a particular
-               performer (or group of performers).</span><span class="added block">An alternative visual rendition of the score from the point of view of a particular
-               performer (or group of performers).</span></td>
+         <td class="desc">An alternative visual rendition of the score from the point of view of a particular
+            performer (or group of performers).
+         </td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="added" title="added class">att.metadataPointing</li>
@@ -14966,7 +14935,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">parts</td>
          <td class="module">MEI.shared</td>
-         <td class="desc"><span class="removed block">Provides a container for performers' parts.</span><span class="added block">Provides a container for performers' parts.</span></td>
+         <td class="desc">Provides a container for performers' parts.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="added" title="added class">att.metadataPointing</li>
@@ -15008,9 +14977,8 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">pb</td>
          <td class="module">MEI.shared</td>
-         <td class="desc">(page beginning) – An empty formatting element that forces text to begin on a new
-            page.
-         </td>
+         <td class="desc"><span class="removed block">(page break) – An empty formatting element that forces text to begin on a new page.</span><span class="added block">(page beginning) – An empty formatting element that forces text to begin on a new
+               page.</span></td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.facsimile</li>
@@ -15060,9 +15028,9 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">pgDesc</td>
          <td class="module">MEI.shared</td>
-         <td class="desc"><span class="removed block">(page description) – Contains a brief prose description of the appearance or description
-               of the content of a physical page.</span><span class="added block">(page description) – Contains a brief prose description of the appearance or description
-               of the content of a physical page.</span></td>
+         <td class="desc">(page description) – Contains a brief prose description of the appearance or description
+            of the content of a physical page.
+         </td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.lang</li>
@@ -15101,9 +15069,9 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">pgFoot</td>
          <td class="module">MEI.shared</td>
-         <td class="desc"><span class="removed block">(page footer) – A running footer on the first page. Also, used to temporarily override
-               a running footer on individual pages.</span><span class="added block">(page footer) – A running footer on the first page. Also, used to temporarily override
-               a running footer on individual pages.</span></td>
+         <td class="desc">(page footer) – A running footer on the first page. Also, used to temporarily override
+            a running footer on individual pages.
+         </td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.facsimile</li>
@@ -15148,7 +15116,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">pgFoot2</td>
          <td class="module">MEI.shared</td>
-         <td class="desc"><span class="removed block">(page footer 2) – A running footer on the pages following the first.</span><span class="added block">(page footer 2) – A running footer on the pages following the first.</span></td>
+         <td class="desc">(page footer 2) – A running footer on the pages following the first.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.facsimile</li>
@@ -15193,9 +15161,9 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">pgHead</td>
          <td class="module">MEI.shared</td>
-         <td class="desc"><span class="removed block">(page header) – A running header on the first page. Also, used to temporarily override
-               a running header on individual pages.</span><span class="added block">(page header) – A running header on the first page. Also, used to temporarily override
-               a running header on individual pages.</span></td>
+         <td class="desc">(page header) – A running header on the first page. Also, used to temporarily override
+            a running header on individual pages.
+         </td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.facsimile</li>
@@ -15240,7 +15208,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">pgHead2</td>
          <td class="module">MEI.shared</td>
-         <td class="desc"><span class="removed block">(page header 2) – A running header on the pages following the first.</span><span class="added block">(page header 2) – A running header on the pages following the first.</span></td>
+         <td class="desc">(page header 2) – A running header on the pages following the first.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.facsimile</li>
@@ -15285,7 +15253,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">phrase</td>
          <td class="module">MEI.shared</td>
-         <td class="desc"><span class="removed block">Indication of 1) a "unified melodic idea" or 2) performance technique.</span><span class="added block">Indication of 1) a "unified melodic idea" or 2) performance technique.</span></td>
+         <td class="desc">Indication of 1) a "unified melodic idea" or 2) performance technique.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.facsimile</li>
@@ -15368,11 +15336,10 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">physLoc</td>
          <td class="module">MEI.shared</td>
-         <td class="desc"><span class="removed block">(physical location) – Groups information about the current physical location of a
-               bibliographic item, such as the repository in which it is located and its shelf mark(s),
-               and its previous locations.</span><span class="added block">(physical location) – Groups information about the current physical location of a
-               bibliographic item, such as the repository in which it is located and its shelf mark(s),
-               and its previous locations.</span></td>
+         <td class="desc">(physical location) – Groups information about the current physical location of a
+            bibliographic item, such as the repository in which it is located and its shelf mark(s),
+            and its previous locations.
+         </td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.bibl</li>
@@ -15412,7 +15379,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">publisher</td>
          <td class="module">MEI.shared</td>
-         <td class="desc"><span class="removed block">Name of the organization responsible for the publication of a bibliographic item.</span><span class="added block">Name of the organization responsible for the publication of a bibliographic item.</span></td>
+         <td class="desc">Name of the organization responsible for the publication of a bibliographic item.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.bibl</li>
@@ -15453,7 +15420,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">pubPlace</td>
          <td class="module">MEI.shared</td>
-         <td class="desc"><span class="removed block">(publication place) – Name of the place where a bibliographic item was published.</span><span class="added block">(publication place) – Name of the place where a bibliographic item was published.</span></td>
+         <td class="desc">(publication place) – Name of the place where a bibliographic item was published.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.bibl</li>
@@ -15494,7 +15461,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">recipient</td>
          <td class="module">MEI.shared</td>
-         <td class="desc"><span class="removed block">The name of the individual(s), institution(s) or organization(s) receiving correspondence.</span><span class="added block">The name of the individual(s), institution(s) or organization(s) receiving correspondence.</span></td>
+         <td class="desc">The name of the individual(s), institution(s) or organization(s) receiving correspondence.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.bibl</li>
@@ -15534,9 +15501,9 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">relatedItem</td>
          <td class="module">MEI.shared</td>
-         <td class="desc"><span class="removed block">(related item) – Contains or references another bibliographic item which is related
-               to the present one.</span><span class="added block">(related item) – Contains or references another bibliographic item which is related
-               to the present one.</span></td>
+         <td class="desc">(related item) – Contains or references another bibliographic item which is related
+            to the present one.
+         </td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.bibl</li>
@@ -15585,7 +15552,8 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">relation</td>
          <td class="module">MEI.shared</td>
-         <td class="desc">Describes a relationship or linkage amongst entities.</td>
+         <td class="desc"><span class="removed block">A relation element describes the relationship between its parent and the object referenced
+               by the relation element's target attribute.</span><span class="added block">Describes a relationship or linkage amongst entities.</span></td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="added" title="added class">att.authorized</li>
@@ -15646,7 +15614,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">relationList</td>
          <td class="module">MEI.shared</td>
-         <td class="desc">Gathers relation elements.</td>
+         <td class="desc"><span class="removed block">Gathers bibliographic relation elements.</span><span class="added block">Gathers relation elements.</span></td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="added" title="added class">model.relationLike</li>
@@ -15679,9 +15647,9 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">rend</td>
          <td class="module">MEI.shared</td>
-         <td class="desc"><span class="removed block">(render) – A formatting element indicating special visual rendering, e.g., bold or
-               italicized, of a text word or phrase.</span><span class="added block">(render) – A formatting element indicating special visual rendering, e.g., bold or
-               italicized, of a text word or phrase.</span></td>
+         <td class="desc">(render) – A formatting element indicating special visual rendering, e.g., bold or
+            italicized, of a text word or phrase.
+         </td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.color</li>
                <li class="unchanged">att.common</li>
@@ -15737,7 +15705,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">repository</td>
          <td class="module">MEI.shared</td>
-         <td class="desc"><span class="removed block">Institution, agency, or individual which holds a bibliographic item.</span><span class="added block">Institution, agency, or individual which holds a bibliographic item.</span></td>
+         <td class="desc">Institution, agency, or individual which holds a bibliographic item.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.bibl</li>
@@ -15793,7 +15761,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">resp</td>
          <td class="module">MEI.shared</td>
-         <td class="desc"><span class="removed block">(responsibility) – A phrase describing the nature of intellectual responsibility.</span><span class="added block">(responsibility) – A phrase describing the nature of intellectual responsibility.</span></td>
+         <td class="desc">(responsibility) – A phrase describing the nature of intellectual responsibility.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.authorized</li>
@@ -15845,10 +15813,11 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">respStmt</td>
          <td class="module">MEI.shared</td>
-         <td class="desc">(responsibility statement) – Transcription of text that names one or more individuals,
-            groups, or in rare cases, mechanical processes, responsible for creation, realization,
-            production, funding, or distribution of the intellectual or artistic content.
-         </td>
+         <td class="desc"><span class="removed block">(responsibility statement) – Names one or more individuals, groups, or in rare cases,
+               mechanical processes, responsible for creation or realization of the intellectual
+               or artistic content.</span><span class="added block">(responsibility statement) – Transcription of text that names one or more individuals,
+               groups, or in rare cases, mechanical processes, responsible for creation, realization,
+               production, funding, or distribution of the intellectual or artistic content.</span></td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.bibl</li>
@@ -15889,7 +15858,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">rest</td>
          <td class="module">MEI.shared</td>
-         <td class="desc"><span class="removed block">A non-sounding event found in the source being transcribed.</span><span class="added block">A non-sounding event found in the source being transcribed.</span></td>
+         <td class="desc">A non-sounding event found in the source being transcribed.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.facsimile</li>
@@ -15970,7 +15939,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">role</td>
          <td class="module">MEI.shared</td>
-         <td class="desc"><span class="removed block">Name of a dramatic role, as given in a cast list.</span><span class="added block">Name of a dramatic role, as given in a cast list.</span></td>
+         <td class="desc">Name of a dramatic role, as given in a cast list.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.facsimile</li>
@@ -16007,7 +15976,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">roleDesc</td>
          <td class="module">MEI.shared</td>
-         <td class="desc"><span class="removed block">(role description) – Describes a character's role in a drama.</span><span class="added block">(role description) – Describes a character's role in a drama.</span></td>
+         <td class="desc">(role description) – Describes a character's role in a drama.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.facsimile</li>
@@ -16044,9 +16013,9 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">sb</td>
          <td class="module">MEI.shared</td>
-         <td class="desc">(system beginning) – An empty formatting element that forces musical notation to begin
-            on a new line.
-         </td>
+         <td class="desc"><span class="removed block">(system break) – An empty formatting element that forces musical notation to begin
+               on a new line.</span><span class="added block">(system beginning) – An empty formatting element that forces musical notation to begin
+               on a new line.</span></td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.facsimile</li>
@@ -16100,7 +16069,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">score</td>
          <td class="module">MEI.shared</td>
-         <td class="desc"><span class="removed block">Full score view of the musical content.</span><span class="added block">Full score view of the musical content.</span></td>
+         <td class="desc">Full score view of the musical content.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="added" title="added class">att.metadataPointing</li>
@@ -16152,7 +16121,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">scoreDef</td>
          <td class="module">MEI.shared</td>
-         <td class="desc"><span class="removed block">(score definition) – Container for score meta-information.</span><span class="added block">(score definition) – Container for score meta-information.</span></td>
+         <td class="desc">(score definition) – Container for score meta-information.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.scoreDef.log</li>
@@ -16312,7 +16281,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">section</td>
          <td class="module">MEI.shared</td>
-         <td class="desc"><span class="removed block">Segment of music data.</span><span class="added block">Segment of music data.</span></td>
+         <td class="desc">Segment of music data.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.facsimile</li>
@@ -16375,9 +16344,9 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">series</td>
          <td class="module">MEI.shared</td>
-         <td class="desc"><span class="removed block">Contains information about the serial publication in which a bibliographic item has
-               appeared.</span><span class="added block">Contains information about the serial publication in which a bibliographic item has
-               appeared.</span></td>
+         <td class="desc">Contains information about the serial publication in which a bibliographic item has
+            appeared.
+         </td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.bibl</li>
@@ -16426,9 +16395,9 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">space</td>
          <td class="module">MEI.shared</td>
-         <td class="desc"><span class="removed block">A placeholder used to fill an incomplete measure, layer, etc. most often so that the
-               combined duration of the events equals the number of beats in the measure.</span><span class="added block">A placeholder used to fill an incomplete measure, layer, etc. most often so that the
-               combined duration of the events equals the number of beats in the measure.</span></td>
+         <td class="desc">A placeholder used to fill an incomplete measure, layer, etc. most often so that the
+            combined duration of the events equals the number of beats in the measure.
+         </td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.facsimile</li>
@@ -16485,11 +16454,10 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">sponsor</td>
          <td class="module">MEI.shared</td>
-         <td class="desc"><span class="removed block">Names of sponsoring individuals, organizations or institutions. Sponsors give their
-               intellectual authority to a project; they are to be distinguished from funders, who
-               provide the funding but do not necessarily take intellectual responsibility.</span><span class="added block">Names of sponsoring individuals, organizations or institutions. Sponsors give their
-               intellectual authority to a project; they are to be distinguished from funders, who
-               provide the funding but do not necessarily take intellectual responsibility.</span></td>
+         <td class="desc">Names of sponsoring individuals, organizations or institutions. Sponsors give their
+            intellectual authority to a project; they are to be distinguished from funders, who
+            provide the funding but do not necessarily take intellectual responsibility.
+         </td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.bibl</li>
@@ -16532,7 +16500,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">stack</td>
          <td class="module">MEI.shared</td>
-         <td class="desc"><span class="removed block">(stacked text) – An inline table with a single column.</span><span class="added block">(stacked text) – An inline table with a single column.</span></td>
+         <td class="desc">(stacked text) – An inline table with a single column.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.facsimile</li>
@@ -16572,13 +16540,11 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">staff</td>
          <td class="module">MEI.shared</td>
-         <td class="desc"><span class="removed block">A group of equidistant horizontal lines on which notes are placed in order to represent
-               pitch or a grouping element for individual 'strands' of notes, rests, etc. that may
-               or may not actually be rendered on staff lines; that is, both diastematic and non-diastematic
-               signs.</span><span class="added block">A group of equidistant horizontal lines on which notes are placed in order to represent
-               pitch or a grouping element for individual 'strands' of notes, rests, etc. that may
-               or may not actually be rendered on staff lines; that is, both diastematic and non-diastematic
-               signs.</span></td>
+         <td class="desc">A group of equidistant horizontal lines on which notes are placed in order to represent
+            pitch or a grouping element for individual 'strands' of notes, rests, etc. that may
+            or may not actually be rendered on staff lines; that is, both diastematic and non-diastematic
+            signs.
+         </td>
          <td class="classes">Classes:<br><ul>
                <li class="added" title="added class">att.basic</li>
                <li class="unchanged">att.facsimile</li>
@@ -16638,7 +16604,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">staffDef</td>
          <td class="module">MEI.shared</td>
-         <td class="desc"><span class="removed block">(staff definition) – Container for staff meta-information.</span><span class="added block">(staff definition) – Container for staff meta-information.</span></td>
+         <td class="desc">(staff definition) – Container for staff meta-information.</td>
          <td class="classes">Classes:<br><ul>
                <li class="added" title="added class">att.basic</li>
                <li class="added" title="added class">att.labelled</li>
@@ -16778,7 +16744,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">staffGrp</td>
          <td class="module">MEI.shared</td>
-         <td class="desc"><span class="removed block">(staff group) – A group of bracketed or braced staves.</span><span class="added block">(staff group) – A group of bracketed or braced staves.</span></td>
+         <td class="desc">(staff group) – A group of bracketed or braced staves.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.facsimile</li>
@@ -16833,7 +16799,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">syl</td>
          <td class="module">MEI.shared</td>
-         <td class="desc"><span class="removed block">(syllable) – Individual lyric syllable.</span><span class="added block">(syllable) – Individual lyric syllable.</span></td>
+         <td class="desc">(syllable) – Individual lyric syllable.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.facsimile</li>
@@ -16892,7 +16858,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">symbol</td>
          <td class="module">MEI.shared</td>
-         <td class="desc"><span class="removed block">A reference to a previously defined symbol.</span><span class="added block">A reference to a previously defined symbol.</span></td>
+         <td class="desc">A reference to a previously defined symbol.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.facsimile</li>
@@ -16965,9 +16931,9 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">tempo</td>
          <td class="module">MEI.shared</td>
-         <td class="desc"><span class="removed block">Text and symbols descriptive of tempo, mood, or style, e.g., "allarg.", "a tempo",
-               "cantabile", "Moderato", "♩=60", "Moderato ♩ =60").</span><span class="added block">Text and symbols descriptive of tempo, mood, or style, e.g., "allarg.", "a tempo",
-               "cantabile", "Moderato", "♩=60", "Moderato ♩ =60").</span></td>
+         <td class="desc">Text and symbols descriptive of tempo, mood, or style, e.g., "allarg.", "a tempo",
+            "cantabile", "Moderato", "♩=60", "Moderato ♩ =60").
+         </td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.bibl</li>
@@ -17045,7 +17011,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">term</td>
          <td class="module">MEI.shared</td>
-         <td class="desc"><span class="removed block">Keyword or phrase which describes a resource.</span><span class="added block">Keyword or phrase which describes a resource.</span></td>
+         <td class="desc">Keyword or phrase which describes a resource.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.bibl</li>
@@ -17090,9 +17056,9 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">textLang</td>
          <td class="module">MEI.shared</td>
-         <td class="desc"><span class="removed block">(text language) – Identifies the languages and writing systems within the work described
-               by a bibliographic description, not the language of the description.</span><span class="added block">(text language) – Identifies the languages and writing systems within the work described
-               by a bibliographic description, not the language of the description.</span></td>
+         <td class="desc">(text language) – Identifies the languages and writing systems within the work described
+            by a bibliographic description, not the language of the description.
+         </td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.bibl</li>
@@ -17136,7 +17102,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">title</td>
          <td class="module">MEI.shared</td>
-         <td class="desc"><span class="removed block">Title of a bibliographic entity.</span><span class="added block">Title of a bibliographic entity.</span></td>
+         <td class="desc">Title of a bibliographic entity.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.authorized</li>
                <li class="added" title="added class">att.basic</li>
@@ -17197,7 +17163,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">titlePage</td>
          <td class="module">MEI.shared</td>
-         <td class="desc"><span class="removed block">Contains a transcription of the title page of a text.</span><span class="added block">Contains a transcription of the title page of a text.</span></td>
+         <td class="desc">Contains a transcription of the title page of a text.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.bibl</li>
@@ -17247,7 +17213,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">width</td>
          <td class="module">MEI.shared</td>
-         <td class="desc"><span class="removed block">Description of the horizontal size of an object.</span><span class="added block">Description of the horizontal size of an object.</span></td>
+         <td class="desc">Description of the horizontal size of an object.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.bibl</li>
@@ -17294,7 +17260,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">barre</td>
          <td class="module">MEI.stringtab</td>
-         <td class="desc">A barre in a chord tablature grid.</td>
+         <td class="desc"><span class="removed block">An indication of fingering in a chord tablature grid.</span><span class="added block">A barre in a chord tablature grid.</span></td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="casechanged" title="was: att.startendid">att.startEndId</li>
@@ -17330,9 +17296,9 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">back</td>
          <td class="module">MEI.text</td>
-         <td class="desc"><span class="removed block">(back matter) – Contains any appendixes, advertisements, indexes, etc. following the
-               main body of a musical text.</span><span class="added block">(back matter) – Contains any appendixes, advertisements, indexes, etc. following the
-               main body of a musical text.</span></td>
+         <td class="desc">(back matter) – Contains any appendixes, advertisements, indexes, etc. following the
+            main body of a musical text.
+         </td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.facsimile</li>
@@ -17376,7 +17342,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">front</td>
          <td class="module">MEI.text</td>
-         <td class="desc"><span class="removed block">(front matter) – Bundles prefatory text found before the start of the musical text.</span><span class="added block">(front matter) – Bundles prefatory text found before the start of the musical text.</span></td>
+         <td class="desc">(front matter) – Bundles prefatory text found before the start of the musical text.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.facsimile</li>
@@ -17420,7 +17386,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">l</td>
          <td class="module">MEI.text</td>
-         <td class="desc"><span class="removed block">(line of text) – Contains a single line of text within a line group.</span><span class="added block">(line of text) – Contains a single line of text within a line group.</span></td>
+         <td class="desc">(line of text) – Contains a single line of text within a line group.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.facsimile</li>
@@ -17462,7 +17428,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">li</td>
          <td class="module">MEI.text</td>
-         <td class="desc">(list item) – Single item in a list .</td>
+         <td class="desc"><span class="removed block">(list item) – Single item in a &lt;list&gt;.</span><span class="added block">(list item) – Single item in a list .</span></td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.facsimile</li>
@@ -17502,9 +17468,9 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">list</td>
          <td class="module">MEI.text</td>
-         <td class="desc"><span class="removed block">A formatting element that contains a series of items separated from one another and
-               arranged in a linear, often vertical, sequence.</span><span class="added block">A formatting element that contains a series of items separated from one another and
-               arranged in a linear, often vertical, sequence.</span></td>
+         <td class="desc">A formatting element that contains a series of items separated from one another and
+            arranged in a linear, often vertical, sequence.
+         </td>
          <td class="classes">Classes:<br><ul>
                <li class="added" title="added class">att.basic</li>
                <li class="added" title="added class">att.classed</li>
@@ -17554,10 +17520,11 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">quote</td>
          <td class="module">MEI.text</td>
-         <td class="desc">(quoted material) – Contains a paragraph-like block of text attributed to an external
-            source, normally set off from the surrounding text by spacing or other typographic
-            distinction.
-         </td>
+         <td class="desc"><span class="removed block">(block quote) – A formatting element that designates an extended quotation; that is,
+               a passage attributed to a source external to the text and normally set off from the
+               text by spacing or other typographic distinction.</span><span class="added block">(quoted material) – Contains a paragraph-like block of text attributed to an external
+               source, normally set off from the surrounding text by spacing or other typographic
+               distinction.</span></td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.facsimile</li>
@@ -17603,9 +17570,9 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">anchoredText</td>
          <td class="module">MEI.usersymbols</td>
-         <td class="desc"><span class="removed block">Container for text that is fixed to a particular page location, regardless of changes
-               made to the layout of the measures around it.</span><span class="added block">Container for text that is fixed to a particular page location, regardless of changes
-               made to the layout of the measures around it.</span></td>
+         <td class="desc">Container for text that is fixed to a particular page location, regardless of changes
+            made to the layout of the measures around it.
+         </td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.facsimile</li>
@@ -17663,7 +17630,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">curve</td>
          <td class="module">MEI.usersymbols</td>
-         <td class="desc"><span class="removed block">A curved line that cannot be represented by a more specific element, such as a slur.</span><span class="added block">A curved line that cannot be represented by a more specific element, such as a slur.</span></td>
+         <td class="desc">A curved line that cannot be represented by a more specific element, such as a slur.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="added" title="added class">att.curve.anl</li>
@@ -17735,7 +17702,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">line</td>
          <td class="module">MEI.usersymbols</td>
-         <td class="desc"><span class="removed block">A visual line that cannot be represented by a more specific; i.e., semantic, element.</span><span class="added block">A visual line that cannot be represented by a more specific; i.e., semantic, element.</span></td>
+         <td class="desc">A visual line that cannot be represented by a more specific; i.e., semantic, element.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.facsimile</li>
@@ -17822,9 +17789,9 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">mapping</td>
          <td class="module">MEI.usersymbols</td>
-         <td class="desc"><span class="removed block">One or more characters which are related to the parent symbol in some respect, as
-               specified by the type attribute.</span><span class="added block">One or more characters which are related to the parent symbol in some respect, as
-               specified by the type attribute.</span></td>
+         <td class="desc">One or more characters which are related to the parent symbol in some respect, as
+            specified by the type attribute.
+         </td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="removed" title="removed class">att.responsibility</li>
@@ -17859,7 +17826,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">propName</td>
          <td class="module">MEI.usersymbols</td>
-         <td class="desc"><span class="removed block">(property name) – Name of a property of the symbol.</span><span class="added block">(property name) – Name of a property of the symbol.</span></td>
+         <td class="desc">(property name) – Name of a property of the symbol.</td>
          <td class="classes">Classes:<br><ul>
                <li class="added" title="added class">att.basic</li>
                <li class="added" title="added class">att.labelled</li>
@@ -17894,7 +17861,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">propValue</td>
          <td class="module">MEI.usersymbols</td>
-         <td class="desc"><span class="removed block">(property value) – A single property value.</span><span class="added block">(property value) – A single property value.</span></td>
+         <td class="desc">(property value) – A single property value.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
             </ul>
@@ -17925,7 +17892,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">symbolDef</td>
          <td class="module">MEI.usersymbols</td>
-         <td class="desc"><span class="removed block">(symbol definition) – Declaration of an individual symbol in a symbolTable.</span><span class="added block">(symbol definition) – Declaration of an individual symbol in a symbolTable.</span></td>
+         <td class="desc">(symbol definition) – Declaration of an individual symbol in a symbolTable.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">att.coordinated</li>
@@ -17968,7 +17935,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">symName</td>
          <td class="module">MEI.usersymbols</td>
-         <td class="desc"><span class="removed block">(symbol name) – Contains the name of a symbol, expressed following Unicode conventions.</span><span class="added block">(symbol name) – Contains the name of a symbol, expressed following Unicode conventions.</span></td>
+         <td class="desc">(symbol name) – Contains the name of a symbol, expressed following Unicode conventions.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
             </ul>
@@ -17999,7 +17966,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">symProp</td>
          <td class="module">MEI.usersymbols</td>
-         <td class="desc"><span class="removed block">(symbol property) – Provides a name and value for some property of the parent symbol.</span><span class="added block">(symbol property) – Provides a name and value for some property of the parent symbol.</span></td>
+         <td class="desc">(symbol property) – Provides a name and value for some property of the parent symbol.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
             </ul>
@@ -18031,7 +17998,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="element ident">symbolTable</td>
          <td class="module">MEI.usersymbols</td>
-         <td class="desc"><span class="removed block">Contains a set of user-defined symbols.</span><span class="added block">Contains a set of user-defined symbols.</span></td>
+         <td class="desc">Contains a set of user-defined symbols.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.common</li>
                <li class="unchanged">model.symbolTableLike</li>
@@ -20022,7 +19989,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.accid.anl</td>
          <td class="module">MEI.analytical</td>
-         <td class="desc"><span class="removed block">Analytical domain attributes.</span><span class="added block">Analytical domain attributes.</span></td>
+         <td class="desc">Analytical domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="removed" title="removed class">att.common.anl</li>
             </ul>
@@ -20033,7 +20000,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.annot.anl</td>
          <td class="module">MEI.analytical</td>
-         <td class="desc"><span class="removed block">Analytical domain attributes.</span><span class="added block">Analytical domain attributes.</span></td>
+         <td class="desc">Analytical domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="removed" title="removed class">att.common.anl</li>
             </ul>
@@ -20044,7 +20011,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.arpeg.anl</td>
          <td class="module">MEI.analytical</td>
-         <td class="desc"><span class="removed block">Analytical domain attributes.</span><span class="added block">Analytical domain attributes.</span></td>
+         <td class="desc">Analytical domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="removed" title="removed class">att.common.anl</li>
             </ul>
@@ -20055,7 +20022,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.artic.anl</td>
          <td class="module">MEI.analytical</td>
-         <td class="desc"><span class="removed block">Analytical domain attributes.</span><span class="added block">Analytical domain attributes.</span></td>
+         <td class="desc">Analytical domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="removed" title="removed class">att.common.anl</li>
             </ul>
@@ -20066,7 +20033,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.barLine.anl</td>
          <td class="module">MEI.analytical</td>
-         <td class="desc"><span class="removed block">Analytical domain attributes.</span><span class="added block">Analytical domain attributes.</span></td>
+         <td class="desc">Analytical domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="removed" title="removed class">att.common.anl</li>
             </ul>
@@ -20077,7 +20044,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.beam.anl</td>
          <td class="module">MEI.analytical</td>
-         <td class="desc"><span class="removed block">Analytical domain attributes.</span><span class="added block">Analytical domain attributes.</span></td>
+         <td class="desc">Analytical domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="removed" title="removed class">att.common.anl</li>
             </ul>
@@ -20088,7 +20055,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.beamSpan.anl</td>
          <td class="module">MEI.analytical</td>
-         <td class="desc"><span class="removed block">Analytical domain attributes.</span><span class="added block">Analytical domain attributes.</span></td>
+         <td class="desc">Analytical domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="removed" title="removed class">att.common.anl</li>
             </ul>
@@ -20099,7 +20066,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.beatRpt.anl</td>
          <td class="module">MEI.analytical</td>
-         <td class="desc"><span class="removed block">Analytical domain attributes.</span><span class="added block">Analytical domain attributes.</span></td>
+         <td class="desc">Analytical domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="removed" title="removed class">att.common.anl</li>
             </ul>
@@ -20110,7 +20077,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.bend.anl</td>
          <td class="module">MEI.analytical</td>
-         <td class="desc"><span class="removed block">Analytical domain attributes.</span><span class="added block">Analytical domain attributes.</span></td>
+         <td class="desc">Analytical domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="removed" title="removed class">att.common.anl</li>
             </ul>
@@ -20121,7 +20088,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.breath.anl</td>
          <td class="module">MEI.analytical</td>
-         <td class="desc"><span class="removed block">Analytical domain attributes.</span><span class="added block">Analytical domain attributes.</span></td>
+         <td class="desc">Analytical domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="removed" title="removed class">att.common.anl</li>
             </ul>
@@ -20132,7 +20099,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.bTrem.anl</td>
          <td class="module">MEI.analytical</td>
-         <td class="desc"><span class="removed block">Analytical domain attributes.</span><span class="added block">Analytical domain attributes.</span></td>
+         <td class="desc">Analytical domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="removed" title="removed class">att.common.anl</li>
             </ul>
@@ -20143,7 +20110,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.chord.anl</td>
          <td class="module">MEI.analytical</td>
-         <td class="desc"><span class="removed block">Analytical domain attributes.</span><span class="added block">Analytical domain attributes.</span></td>
+         <td class="desc">Analytical domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="added" title="added class">att.chord.anl.cmn</li>
                <li class="removed" title="removed class">att.common.anl</li>
@@ -20155,7 +20122,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.clef.anl</td>
          <td class="module">MEI.analytical</td>
-         <td class="desc"><span class="removed block">Analytical domain attributes.</span><span class="added block">Analytical domain attributes.</span></td>
+         <td class="desc">Analytical domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="removed" title="removed class">att.common.anl</li>
             </ul>
@@ -20166,7 +20133,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.clefGrp.anl</td>
          <td class="module">MEI.analytical</td>
-         <td class="desc"><span class="removed block">Analytical domain attributes.</span><span class="added block">Analytical domain attributes.</span></td>
+         <td class="desc">Analytical domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="removed" title="removed class">att.common.anl</li>
             </ul>
@@ -20177,7 +20144,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.cpMark.anl</td>
          <td class="module">MEI.analytical</td>
-         <td class="desc"><span class="removed block">Analytical domain attributes.</span><span class="added block">Analytical domain attributes.</span></td>
+         <td class="desc">Analytical domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="removed" title="removed class">att.common.anl</li>
             </ul>
@@ -20188,7 +20155,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.custos.anl</td>
          <td class="module">MEI.analytical</td>
-         <td class="desc"><span class="removed block">Analytical domain attributes.</span><span class="added block">Analytical domain attributes.</span></td>
+         <td class="desc">Analytical domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="removed" title="removed class">att.common.anl</li>
             </ul>
@@ -20199,7 +20166,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.dir.anl</td>
          <td class="module">MEI.analytical</td>
-         <td class="desc"><span class="removed block">Analytical domain attributes.</span><span class="added block">Analytical domain attributes.</span></td>
+         <td class="desc">Analytical domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="removed" title="removed class">att.common.anl</li>
             </ul>
@@ -20210,7 +20177,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.dot.anl</td>
          <td class="module">MEI.analytical</td>
-         <td class="desc"><span class="removed block">Analytical domain attributes.</span><span class="added block">Analytical domain attributes.</span></td>
+         <td class="desc">Analytical domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="removed" title="removed class">att.common.anl</li>
             </ul>
@@ -20221,7 +20188,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.dynam.anl</td>
          <td class="module">MEI.analytical</td>
-         <td class="desc"><span class="removed block">Analytical domain attributes.</span><span class="added block">Analytical domain attributes.</span></td>
+         <td class="desc">Analytical domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="removed" title="removed class">att.common.anl</li>
             </ul>
@@ -20232,7 +20199,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.ending.anl</td>
          <td class="module">MEI.analytical</td>
-         <td class="desc"><span class="removed block">Analytical domain attributes.</span><span class="added block">Analytical domain attributes.</span></td>
+         <td class="desc">Analytical domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="removed" title="removed class">att.common.anl</li>
             </ul>
@@ -20243,7 +20210,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.f.anl</td>
          <td class="module">MEI.analytical</td>
-         <td class="desc"><span class="removed block">Analytical domain attributes.</span><span class="added block">Analytical domain attributes.</span></td>
+         <td class="desc">Analytical domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="removed" title="removed class">att.common.anl</li>
             </ul>
@@ -20254,7 +20221,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.fermata.anl</td>
          <td class="module">MEI.analytical</td>
-         <td class="desc"><span class="removed block">Analytical domain attributes.</span><span class="added block">Analytical domain attributes.</span></td>
+         <td class="desc">Analytical domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="removed" title="removed class">att.common.anl</li>
             </ul>
@@ -20265,7 +20232,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.fing.anl</td>
          <td class="module">MEI.analytical</td>
-         <td class="desc"><span class="removed block">Analytical domain attributes.</span><span class="added block">Analytical domain attributes.</span></td>
+         <td class="desc">Analytical domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="removed" title="removed class">att.common.anl</li>
             </ul>
@@ -20276,7 +20243,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.fingGrp.anl</td>
          <td class="module">MEI.analytical</td>
-         <td class="desc"><span class="removed block">Analytical domain attributes.</span><span class="added block">Analytical domain attributes.</span></td>
+         <td class="desc">Analytical domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="removed" title="removed class">att.common.anl</li>
             </ul>
@@ -20287,7 +20254,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.fTrem.anl</td>
          <td class="module">MEI.analytical</td>
-         <td class="desc"><span class="removed block">Analytical domain attributes.</span><span class="added block">Analytical domain attributes.</span></td>
+         <td class="desc">Analytical domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="removed" title="removed class">att.common.anl</li>
             </ul>
@@ -20298,7 +20265,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.gliss.anl</td>
          <td class="module">MEI.analytical</td>
-         <td class="desc"><span class="removed block">Analytical domain attributes.</span><span class="added block">Analytical domain attributes.</span></td>
+         <td class="desc">Analytical domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="removed" title="removed class">att.common.anl</li>
             </ul>
@@ -20309,7 +20276,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.grpSym.anl</td>
          <td class="module">MEI.analytical</td>
-         <td class="desc"><span class="removed block">Analytical domain attributes.</span><span class="added block">Analytical domain attributes.</span></td>
+         <td class="desc">Analytical domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="removed" title="removed class">att.common.anl</li>
             </ul>
@@ -20320,7 +20287,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.hairpin.anl</td>
          <td class="module">MEI.analytical</td>
-         <td class="desc"><span class="removed block">Analytical domain attributes.</span><span class="added block">Analytical domain attributes.</span></td>
+         <td class="desc">Analytical domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="removed" title="removed class">att.common.anl</li>
             </ul>
@@ -20331,7 +20298,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.halfmRpt.anl</td>
          <td class="module">MEI.analytical</td>
-         <td class="desc"><span class="removed block">Analytical domain attributes.</span><span class="added block">Analytical domain attributes.</span></td>
+         <td class="desc">Analytical domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="removed" title="removed class">att.common.anl</li>
             </ul>
@@ -20342,7 +20309,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.harm.anl</td>
          <td class="module">MEI.analytical</td>
-         <td class="desc"><span class="removed block">Analytical domain attributes.</span><span class="added block">Analytical domain attributes.</span></td>
+         <td class="desc">Analytical domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="casechanged" title="was: att.intervalharmonic">att.intervalHarmonic</li>
                <li class="removed" title="removed class">att.common.anl</li>
@@ -20356,7 +20323,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.harpPedal.anl</td>
          <td class="module">MEI.analytical</td>
-         <td class="desc"><span class="removed block">Analytical domain attributes.</span><span class="added block">Analytical domain attributes.</span></td>
+         <td class="desc">Analytical domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="removed" title="removed class">att.common.anl</li>
             </ul>
@@ -20367,7 +20334,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.keyAccid.anl</td>
          <td class="module">MEI.analytical</td>
-         <td class="desc"><span class="removed block">Analytical domain attributes.</span><span class="added block">Analytical domain attributes.</span></td>
+         <td class="desc">Analytical domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="removed" title="removed class">att.common.anl</li>
             </ul>
@@ -20378,7 +20345,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.keySig.anl</td>
          <td class="module">MEI.analytical</td>
-         <td class="desc"><span class="removed block">Analytical domain attributes.</span><span class="added block">Analytical domain attributes.</span></td>
+         <td class="desc">Analytical domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="added" title="added class">att.accidental</li>
                <li class="added" title="added class">att.pitch</li>
@@ -20393,7 +20360,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.layer.anl</td>
          <td class="module">MEI.analytical</td>
-         <td class="desc"><span class="removed block">Analytical domain attributes.</span><span class="added block">Analytical domain attributes.</span></td>
+         <td class="desc">Analytical domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="removed" title="removed class">att.common.anl</li>
             </ul>
@@ -20404,7 +20371,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.ligature.anl</td>
          <td class="module">MEI.analytical</td>
-         <td class="desc"><span class="removed block">Analytical domain attributes.</span><span class="added block">Analytical domain attributes.</span></td>
+         <td class="desc">Analytical domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="removed" title="removed class">att.common.anl</li>
             </ul>
@@ -20415,7 +20382,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.lyrics.anl</td>
          <td class="module">MEI.analytical</td>
-         <td class="desc"><span class="removed block">Analytical domain attributes.</span><span class="added block">Analytical domain attributes.</span></td>
+         <td class="desc">Analytical domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="removed" title="removed class">att.common.anl</li>
             </ul>
@@ -20426,7 +20393,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.measure.anl</td>
          <td class="module">MEI.analytical</td>
-         <td class="desc"><span class="removed block">Analytical domain attributes.</span><span class="added block">Analytical domain attributes.</span></td>
+         <td class="desc">Analytical domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.joined</li>
                <li class="removed" title="removed class">att.common.anl</li>
@@ -20438,7 +20405,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.mensur.anl</td>
          <td class="module">MEI.analytical</td>
-         <td class="desc"><span class="removed block">Analytical domain attributes.</span><span class="added block">Analytical domain attributes.</span></td>
+         <td class="desc">Analytical domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="removed" title="removed class">att.common.anl</li>
             </ul>
@@ -20449,7 +20416,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.meterSig.anl</td>
          <td class="module">MEI.analytical</td>
-         <td class="desc"><span class="removed block">Analytical domain attributes.</span><span class="added block">Analytical domain attributes.</span></td>
+         <td class="desc">Analytical domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="removed" title="removed class">att.common.anl</li>
             </ul>
@@ -20460,7 +20427,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.meterSigGrp.anl</td>
          <td class="module">MEI.analytical</td>
-         <td class="desc"><span class="removed block">Analytical domain attributes.</span><span class="added block">Analytical domain attributes.</span></td>
+         <td class="desc">Analytical domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="removed" title="removed class">att.common.anl</li>
             </ul>
@@ -20471,7 +20438,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.midi.anl</td>
          <td class="module">MEI.analytical</td>
-         <td class="desc"><span class="removed block">Analytical domain attributes.</span><span class="added block">Analytical domain attributes.</span></td>
+         <td class="desc">Analytical domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="removed" title="removed class">att.common.anl</li>
             </ul>
@@ -20482,7 +20449,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.mordent.anl</td>
          <td class="module">MEI.analytical</td>
-         <td class="desc"><span class="removed block">Analytical domain attributes.</span><span class="added block">Analytical domain attributes.</span></td>
+         <td class="desc">Analytical domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="removed" title="removed class">att.common.anl</li>
             </ul>
@@ -20493,7 +20460,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.mRest.anl</td>
          <td class="module">MEI.analytical</td>
-         <td class="desc">Analytical domain attributes in the CMN repertoire.</td>
+         <td class="desc"><span class="removed block">Analytical domain attributes.</span><span class="added block">Analytical domain attributes in the CMN repertoire.</span></td>
          <td class="classes">Classes:<br><ul>
                <li class="added" title="added class">att.fermataPresent</li>
                <li class="removed" title="removed class">att.common.anl</li>
@@ -20505,7 +20472,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.mRpt.anl</td>
          <td class="module">MEI.analytical</td>
-         <td class="desc"><span class="removed block">Analytical domain attributes.</span><span class="added block">Analytical domain attributes.</span></td>
+         <td class="desc">Analytical domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="removed" title="removed class">att.common.anl</li>
             </ul>
@@ -20516,7 +20483,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.mRpt2.anl</td>
          <td class="module">MEI.analytical</td>
-         <td class="desc"><span class="removed block">Analytical domain attributes.</span><span class="added block">Analytical domain attributes.</span></td>
+         <td class="desc">Analytical domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="removed" title="removed class">att.common.anl</li>
             </ul>
@@ -20527,9 +20494,9 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.mSpace.anl</td>
          <td class="module">MEI.analytical</td>
-         <td class="desc">Analytical domain attributes in the CMN repertoire. Use the n attribute to explicitly
-            encode this measure's position in a string of measures containing only  mRest  elements.
-         </td>
+         <td class="desc"><span class="removed block">Analytical domain attributes. Use the n attribute to explicitly encode this measure's
+               position in a string of measures containing only &lt;mRest&gt; elements.</span><span class="added block">Analytical domain attributes in the CMN repertoire. Use the n attribute to explicitly
+               encode this measure's position in a string of measures containing only  mRest  elements.</span></td>
          <td class="classes">Classes:<br><ul>
                <li class="added" title="added class">att.fermataPresent</li>
                <li class="removed" title="removed class">att.common.anl</li>
@@ -20541,7 +20508,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.multiRest.anl</td>
          <td class="module">MEI.analytical</td>
-         <td class="desc"><span class="removed block">Analytical domain attributes.</span><span class="added block">Analytical domain attributes.</span></td>
+         <td class="desc">Analytical domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="removed" title="removed class">att.common.anl</li>
             </ul>
@@ -20552,7 +20519,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.multiRpt.anl</td>
          <td class="module">MEI.analytical</td>
-         <td class="desc"><span class="removed block">Analytical domain attributes.</span><span class="added block">Analytical domain attributes.</span></td>
+         <td class="desc">Analytical domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="removed" title="removed class">att.common.anl</li>
             </ul>
@@ -20563,7 +20530,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.note.anl</td>
          <td class="module">MEI.analytical</td>
-         <td class="desc"><span class="removed block">Analytical domain attributes.</span><span class="added block">Analytical domain attributes.</span></td>
+         <td class="desc">Analytical domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="added" title="added class">att.accidental</li>
                <li class="added" title="added class">att.articulation</li>
@@ -20583,7 +20550,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.octave.anl</td>
          <td class="module">MEI.analytical</td>
-         <td class="desc"><span class="removed block">Analytical domain attributes.</span><span class="added block">Analytical domain attributes.</span></td>
+         <td class="desc">Analytical domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="removed" title="removed class">att.common.anl</li>
             </ul>
@@ -20594,7 +20561,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.ornam.anl</td>
          <td class="module">MEI.analytical</td>
-         <td class="desc"><span class="removed block">Analytical domain attributes.</span><span class="added block">Analytical domain attributes.</span></td>
+         <td class="desc">Analytical domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="removed" title="removed class">att.common.anl</li>
             </ul>
@@ -20605,7 +20572,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.ossia.anl</td>
          <td class="module">MEI.analytical</td>
-         <td class="desc"><span class="removed block">Analytical domain attributes.</span><span class="added block">Analytical domain attributes.</span></td>
+         <td class="desc">Analytical domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="removed" title="removed class">att.common.anl</li>
             </ul>
@@ -20616,7 +20583,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.part.anl</td>
          <td class="module">MEI.analytical</td>
-         <td class="desc"><span class="removed block">Analytical domain attributes.</span><span class="added block">Analytical domain attributes.</span></td>
+         <td class="desc">Analytical domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="removed" title="removed class">att.common.anl</li>
             </ul>
@@ -20627,7 +20594,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.parts.anl</td>
          <td class="module">MEI.analytical</td>
-         <td class="desc"><span class="removed block">Analytical domain attributes.</span><span class="added block">Analytical domain attributes.</span></td>
+         <td class="desc">Analytical domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="removed" title="removed class">att.common.anl</li>
             </ul>
@@ -20638,7 +20605,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.pb.anl</td>
          <td class="module">MEI.analytical</td>
-         <td class="desc"><span class="removed block">Analytical domain attributes.</span><span class="added block">Analytical domain attributes.</span></td>
+         <td class="desc">Analytical domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="removed" title="removed class">att.common.anl</li>
             </ul>
@@ -20649,7 +20616,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.pedal.anl</td>
          <td class="module">MEI.analytical</td>
-         <td class="desc"><span class="removed block">Analytical domain attributes.</span><span class="added block">Analytical domain attributes.</span></td>
+         <td class="desc">Analytical domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="removed" title="removed class">att.common.anl</li>
             </ul>
@@ -20660,7 +20627,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.phrase.anl</td>
          <td class="module">MEI.analytical</td>
-         <td class="desc"><span class="removed block">Analytical domain attributes.</span><span class="added block">Analytical domain attributes.</span></td>
+         <td class="desc">Analytical domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.joined</li>
                <li class="removed" title="removed class">att.common.anl</li>
@@ -20672,7 +20639,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.proport.anl</td>
          <td class="module">MEI.analytical</td>
-         <td class="desc"><span class="removed block">Analytical domain attributes.</span><span class="added block">Analytical domain attributes.</span></td>
+         <td class="desc">Analytical domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="removed" title="removed class">att.common.anl</li>
             </ul>
@@ -20683,7 +20650,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.rdg.anl</td>
          <td class="module">MEI.analytical</td>
-         <td class="desc"><span class="removed block">Analytical domain attributes.</span><span class="added block">Analytical domain attributes.</span></td>
+         <td class="desc">Analytical domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="removed" title="removed class">att.common.anl</li>
             </ul>
@@ -20694,7 +20661,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.reh.anl</td>
          <td class="module">MEI.analytical</td>
-         <td class="desc"><span class="removed block">Analytical domain attributes.</span><span class="added block">Analytical domain attributes.</span></td>
+         <td class="desc">Analytical domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="removed" title="removed class">att.common.anl</li>
             </ul>
@@ -20705,7 +20672,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.rest.anl</td>
          <td class="module">MEI.analytical</td>
-         <td class="desc"><span class="removed block">Analytical domain attributes.</span><span class="added block">Analytical domain attributes.</span></td>
+         <td class="desc">Analytical domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="added" title="added class">att.rest.anl.cmn</li>
                <li class="removed" title="removed class">att.common.anl</li>
@@ -20717,7 +20684,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.sb.anl</td>
          <td class="module">MEI.analytical</td>
-         <td class="desc"><span class="removed block">Analytical domain attributes.</span><span class="added block">Analytical domain attributes.</span></td>
+         <td class="desc">Analytical domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="removed" title="removed class">att.common.anl</li>
             </ul>
@@ -20728,7 +20695,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.score.anl</td>
          <td class="module">MEI.analytical</td>
-         <td class="desc"><span class="removed block">Analytical domain attributes.</span><span class="added block">Analytical domain attributes.</span></td>
+         <td class="desc">Analytical domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="removed" title="removed class">att.common.anl</li>
             </ul>
@@ -20739,7 +20706,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.scoreDef.anl</td>
          <td class="module">MEI.analytical</td>
-         <td class="desc"><span class="removed block">Analytical domain attributes.</span><span class="added block">Analytical domain attributes.</span></td>
+         <td class="desc">Analytical domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="added" title="added class">att.keySigDefault.anl</li>
             </ul>
@@ -20750,7 +20717,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.section.anl</td>
          <td class="module">MEI.analytical</td>
-         <td class="desc"><span class="removed block">Analytical domain attributes.</span><span class="added block">Analytical domain attributes.</span></td>
+         <td class="desc">Analytical domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="removed" title="removed class">att.common.anl</li>
             </ul>
@@ -20761,7 +20728,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.slur.anl</td>
          <td class="module">MEI.analytical</td>
-         <td class="desc"><span class="removed block">Analytical domain attributes.</span><span class="added block">Analytical domain attributes.</span></td>
+         <td class="desc">Analytical domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.joined</li>
                <li class="removed" title="removed class">att.common.anl</li>
@@ -20773,7 +20740,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.space.anl</td>
          <td class="module">MEI.analytical</td>
-         <td class="desc"><span class="removed block">Analytical domain attributes.</span><span class="added block">Analytical domain attributes.</span></td>
+         <td class="desc">Analytical domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="added" title="added class">att.space.anl.cmn</li>
                <li class="removed" title="removed class">att.common.anl</li>
@@ -20785,7 +20752,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.staff.anl</td>
          <td class="module">MEI.analytical</td>
-         <td class="desc"><span class="removed block">Analytical domain attributes.</span><span class="added block">Analytical domain attributes.</span></td>
+         <td class="desc">Analytical domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="removed" title="removed class">att.common.anl</li>
             </ul>
@@ -20796,7 +20763,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.staffDef.anl</td>
          <td class="module">MEI.analytical</td>
-         <td class="desc"><span class="removed block">Analytical domain attributes.</span><span class="added block">Analytical domain attributes.</span></td>
+         <td class="desc">Analytical domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="added" title="added class">att.keySigDefault.anl</li>
             </ul>
@@ -20807,7 +20774,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.syl.anl</td>
          <td class="module">MEI.analytical</td>
-         <td class="desc"><span class="removed block">Analytical domain attributes.</span><span class="added block">Analytical domain attributes.</span></td>
+         <td class="desc">Analytical domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="removed" title="removed class">att.common.anl</li>
             </ul>
@@ -20818,7 +20785,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.tempo.anl</td>
          <td class="module">MEI.analytical</td>
-         <td class="desc"><span class="removed block">Analytical domain attributes.</span><span class="added block">Analytical domain attributes.</span></td>
+         <td class="desc">Analytical domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="removed" title="removed class">att.common.anl</li>
             </ul>
@@ -20829,7 +20796,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.tie.anl</td>
          <td class="module">MEI.analytical</td>
-         <td class="desc"><span class="removed block">Analytical domain attributes.</span><span class="added block">Analytical domain attributes.</span></td>
+         <td class="desc">Analytical domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="removed" title="removed class">att.common.anl</li>
             </ul>
@@ -20840,7 +20807,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.trill.anl</td>
          <td class="module">MEI.analytical</td>
-         <td class="desc"><span class="removed block">Analytical domain attributes.</span><span class="added block">Analytical domain attributes.</span></td>
+         <td class="desc">Analytical domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="removed" title="removed class">att.common.anl</li>
             </ul>
@@ -20851,7 +20818,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.tuplet.anl</td>
          <td class="module">MEI.analytical</td>
-         <td class="desc"><span class="removed block">Analytical domain attributes.</span><span class="added block">Analytical domain attributes.</span></td>
+         <td class="desc">Analytical domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="removed" title="removed class">att.common.anl</li>
             </ul>
@@ -20862,7 +20829,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.turn.anl</td>
          <td class="module">MEI.analytical</td>
-         <td class="desc"><span class="removed block">Analytical domain attributes.</span><span class="added block">Analytical domain attributes.</span></td>
+         <td class="desc">Analytical domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="removed" title="removed class">att.common.anl</li>
             </ul>
@@ -20873,7 +20840,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.verse.anl</td>
          <td class="module">MEI.analytical</td>
-         <td class="desc"><span class="removed block">Analytical domain attributes.</span><span class="added block">Analytical domain attributes.</span></td>
+         <td class="desc">Analytical domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="removed" title="removed class">att.common.anl</li>
             </ul>
@@ -20884,7 +20851,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.arpeg.log</td>
          <td class="module">MEI.cmn</td>
-         <td class="desc"><span class="removed block">Logical domain attributes.</span><span class="added block">Logical domain attributes.</span></td>
+         <td class="desc">Logical domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="casechanged" title="was: att.controlevent">att.controlEvent</li>
                <li class="casechanged" title="was: att.startid">att.startId</li>
@@ -20898,7 +20865,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.beam.log</td>
          <td class="module">MEI.cmn</td>
-         <td class="desc"><span class="removed block">Logical domain attributes.</span><span class="added block">Logical domain attributes.</span></td>
+         <td class="desc">Logical domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.event</li>
                <li class="casechanged" title="was: att.beamedwith">att.beamedWith</li>
@@ -20910,7 +20877,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.beamSpan.log</td>
          <td class="module">MEI.cmn</td>
-         <td class="desc"><span class="removed block">Logical domain attributes.</span><span class="added block">Logical domain attributes.</span></td>
+         <td class="desc">Logical domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="casechanged" title="was: att.controlevent">att.controlEvent</li>
                <li class="casechanged" title="was: att.beamedwith">att.beamedWith</li>
@@ -20927,7 +20894,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.beatRpt.log</td>
          <td class="module">MEI.cmn</td>
-         <td class="desc"><span class="removed block">Logical domain attributes.</span><span class="added block">Logical domain attributes.</span></td>
+         <td class="desc">Logical domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.event</li>
             </ul>
@@ -20941,7 +20908,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.bend.log</td>
          <td class="module">MEI.cmn</td>
-         <td class="desc"><span class="removed block">Logical domain attributes.</span><span class="added block">Logical domain attributes.</span></td>
+         <td class="desc">Logical domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="casechanged" title="was: att.controlevent">att.controlEvent</li>
                <li class="unchanged">att.duration.additive</li>
@@ -20957,7 +20924,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.breath.log</td>
          <td class="module">MEI.cmn</td>
-         <td class="desc"><span class="removed block">Logical domain attributes.</span><span class="added block">Logical domain attributes.</span></td>
+         <td class="desc">Logical domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="added" title="added class">att.alignment</li>
                <li class="added" title="added class">att.layerIdent</li>
@@ -20978,7 +20945,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.bTrem.log</td>
          <td class="module">MEI.cmn</td>
-         <td class="desc"><span class="removed block">Logical domain attributes.</span><span class="added block">Logical domain attributes.</span></td>
+         <td class="desc">Logical domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.event</li>
                <li class="casechanged" title="was: att.augmentdots">att.augmentDots</li>
@@ -20995,7 +20962,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.chord.ges.cmn</td>
          <td class="module">MEI.cmn</td>
-         <td class="desc"><span class="removed block">Gestural domain attributes for CMN features.</span><span class="added block">Gestural domain attributes for CMN features.</span></td>
+         <td class="desc">Gestural domain attributes for CMN features.</td>
          <td class="classes">Classes:<br><ul>
                <li class="removed" title="removed class">att.graced</li>
             </ul>
@@ -21006,7 +20973,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.chord.log.cmn</td>
          <td class="module">MEI.cmn</td>
-         <td class="desc">Logical domain attributes in the CMN repertoire.</td>
+         <td class="desc"><span class="removed block">Logical domain attributes for CMN features.</span><span class="added block">Logical domain attributes in the CMN repertoire.</span></td>
          <td class="classes">Classes:<br><ul>
                <li class="added" title="added class">att.graced</li>
                <li class="removed" title="removed class">att.beamed</li>
@@ -21020,13 +20987,18 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.chord.vis.cmn</td>
          <td class="module">MEI.cmn</td>
-         <td class="desc">Visual domain attributes for chord. The slur, slur.dir, slur.rend, tie, tie.dir, and
-            tie.rend attributes here are "syntactic sugar" for these attributes on each of the
-            chord's
-            individual notes. The values here apply to all the notes in the chord. If some notes
-            are
-            slurred or tied while others aren't, then the individual note attributes must be used.
-         </td>
+         <td class="desc"><span class="removed block">Visual domain attributes for chord. The slur, slur.dir, slur.rend, tie, tie.dir, and
+               tie.rend attributes here are "syntactic sugar" for these attributes on each of the
+               chord's
+               individual notes. The values here apply to all the notes in the chord. If some notes
+               are
+               slurred or tied while others aren't, then the individual note attributes must be
+               used.</span><span class="added block">Visual domain attributes for chord. The slur, slur.dir, slur.rend, tie, tie.dir, and
+               tie.rend attributes here are "syntactic sugar" for these attributes on each of the
+               chord's
+               individual notes. The values here apply to all the notes in the chord. If some notes
+               are
+               slurred or tied while others aren't, then the individual note attributes must be used.</span></td>
          <td class="classes">Classes:<br><ul>
                <li class="casechanged" title="was: att.beamsecondary">att.beamSecondary</li>
             </ul>
@@ -21037,7 +21009,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.fermata.log</td>
          <td class="module">MEI.cmn</td>
-         <td class="desc"><span class="removed block">Logical domain attributes.</span><span class="added block">Logical domain attributes.</span></td>
+         <td class="desc">Logical domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="casechanged" title="was: att.controlevent">att.controlEvent</li>
                <li class="casechanged" title="was: att.startendid">att.startEndId</li>
@@ -21049,7 +21021,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.fTrem.log</td>
          <td class="module">MEI.cmn</td>
-         <td class="desc"><span class="removed block">Logical domain attributes.</span><span class="added block">Logical domain attributes.</span></td>
+         <td class="desc">Logical domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.event</li>
                <li class="casechanged" title="was: att.augmentdots">att.augmentDots</li>
@@ -21065,7 +21037,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.gliss.log</td>
          <td class="module">MEI.cmn</td>
-         <td class="desc"><span class="removed block">Logical domain attributes.</span><span class="added block">Logical domain attributes.</span></td>
+         <td class="desc">Logical domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="casechanged" title="was: att.controlevent">att.controlEvent</li>
                <li class="unchanged">att.duration.additive</li>
@@ -21081,7 +21053,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.hairpin.log</td>
          <td class="module">MEI.cmn</td>
-         <td class="desc"><span class="removed block">Logical domain attributes.</span><span class="added block">Logical domain attributes.</span></td>
+         <td class="desc">Logical domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="casechanged" title="was: att.controlevent">att.controlEvent</li>
                <li class="unchanged">att.duration.additive</li>
@@ -21100,7 +21072,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.halfmRpt.log</td>
          <td class="module">MEI.cmn</td>
-         <td class="desc"><span class="removed block">Logical domain attributes.</span><span class="added block">Logical domain attributes.</span></td>
+         <td class="desc">Logical domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.event</li>
                <li class="added" title="added class">att.duration.logical</li>
@@ -21113,9 +21085,9 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.harpPedal.log</td>
          <td class="module">MEI.cmn</td>
-         <td class="desc">Logical domain attributes. The pedal setting, i.e., flat, natural, or sharp, for each
-            diatonic pitch name is indicated by the seven letter-named attributes.
-         </td>
+         <td class="desc"><span class="removed block">Logical domain attributes. The pedal setting, i.e., flat, natural, or sharp, for each
+               diatonic pitch name is indicated by the seven letter-named attributes.</span><span class="added block">Logical domain attributes. The pedal setting, i.e., flat, natural, or sharp, for each
+               diatonic pitch name is indicated by the seven letter-named attributes.</span></td>
          <td class="classes">Classes:<br><ul>
                <li class="casechanged" title="was: att.controlevent">att.controlEvent</li>
                <li class="casechanged" title="was: att.startendid">att.startEndId</li>
@@ -21135,21 +21107,31 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.measure.log</td>
          <td class="module">MEI.cmn</td>
-         <td class="desc">Logical domain attributes. The n attribute contains a name or number associated with
-            the
-            measure (Read, p. 445). Often, this is an integer, but not always. For example, some
-            measures,
-            especially incomplete measures or those under an ending mark, may have labels that
-            contain an
-            integer plus a suffix, such as '12a'. Measures may even have labels, especially in
-            editorial
-            or analytical uses of MEI, that are entirely non-numeric strings. Measure numbers
-            may be
-            machine-generated instead of encoding them in the markup. However, an explicit measure
-            number
-            should restart numbering with the given value. The join attribute may be used to indicate
-            another measure which metrically completes the current, incomplete one.
-         </td>
+         <td class="desc"><span class="removed block">Logical domain attributes. The n attribute contains a name or number associated with
+               the
+               measure (Read, p. 445). Often, this is an integer, but not always. For example, some
+               measures, especially incomplete measures or those under an ending mark, may have labels
+               that
+               contain an integer plus a suffix, such as '12a'. Measures may even have labels, especially
+               in editorial or analytical uses of MEI, that are entirely non-numeric strings. Measure
+               numbers may be machine-generated instead of encoding them in the markup. However,
+               an
+               explicit measure number should restart numbering with the given value. The join attribute
+               may be used to indicate another measure which metrically completes the current, incomplete
+               one.</span><span class="added block">Logical domain attributes. The n attribute contains a name or number associated with
+               the
+               measure (Read, p. 445). Often, this is an integer, but not always. For example, some
+               measures,
+               especially incomplete measures or those under an ending mark, may have labels that
+               contain an
+               integer plus a suffix, such as '12a'. Measures may even have labels, especially in
+               editorial
+               or analytical uses of MEI, that are entirely non-numeric strings. Measure numbers
+               may be
+               machine-generated instead of encoding them in the markup. However, an explicit measure
+               number
+               should restart numbering with the given value. The join attribute may be used to indicate
+               another measure which metrically completes the current, incomplete one.</span></td>
          <td class="classes">Classes:<br><ul>
                <li class="added" title="added class">att.alignment</li>
                <li class="casechanged" title="was: att.meterconformance.bar">att.meterConformance.bar</li>
@@ -21164,7 +21146,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.mRest.log</td>
          <td class="module">MEI.cmn</td>
-         <td class="desc"><span class="removed block">Logical domain attributes.</span><span class="added block">Logical domain attributes.</span></td>
+         <td class="desc">Logical domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="added" title="added class">att.cue</li>
                <li class="added" title="added class">att.duration.additive</li>
@@ -21179,7 +21161,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.mSpace.log</td>
          <td class="module">MEI.cmn</td>
-         <td class="desc">Logical domain attributes in the CMN repertoire.</td>
+         <td class="desc"><span class="removed block">Logical domain attributes.</span><span class="added block">Logical domain attributes in the CMN repertoire.</span></td>
          <td class="classes">Classes:<br><ul>
                <li class="added" title="added class">att.duration.additive</li>
                <li class="unchanged">att.event</li>
@@ -21194,7 +21176,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.note.log.cmn</td>
          <td class="module">MEI.cmn</td>
-         <td class="desc"><span class="removed block">Logical domain attributes.</span><span class="added block">Logical domain attributes.</span></td>
+         <td class="desc">Logical domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="added" title="added class">att.graced</li>
                <li class="removed" title="removed class">att.beamed</li>
@@ -21208,7 +21190,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.note.vis.cmn</td>
          <td class="module">MEI.cmn</td>
-         <td class="desc"><span class="removed block">Visual domain attributes.</span><span class="added block">Visual domain attributes.</span></td>
+         <td class="desc">Visual domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="casechanged" title="was: att.beamsecondary">att.beamSecondary</li>
             </ul>
@@ -21219,7 +21201,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.octave.log</td>
          <td class="module">MEI.cmn</td>
-         <td class="desc"><span class="removed block">Logical domain attributes.</span><span class="added block">Logical domain attributes.</span></td>
+         <td class="desc">Logical domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="casechanged" title="was: att.controlevent">att.controlEvent</li>
                <li class="unchanged">att.duration.additive</li>
@@ -21238,7 +21220,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.pedal.log</td>
          <td class="module">MEI.cmn</td>
-         <td class="desc"><span class="removed block">Logical domain attributes.</span><span class="added block">Logical domain attributes.</span></td>
+         <td class="desc">Logical domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="casechanged" title="was: att.controlevent">att.controlEvent</li>
                <li class="casechanged" title="was: att.startendid">att.startEndId</li>
@@ -21254,7 +21236,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.phrase.vis.cmn</td>
          <td class="module">MEI.cmn</td>
-         <td class="desc"><span class="removed block">Visual domain attributes.</span><span class="added block">Visual domain attributes.</span></td>
+         <td class="desc">Visual domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.curvature</li>
                <li class="casechanged" title="was: att.curverend">att.curveRend</li>
@@ -21266,7 +21248,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.reh.log</td>
          <td class="module">MEI.cmn</td>
-         <td class="desc"><span class="removed block">Logical domain attributes.</span><span class="added block">Logical domain attributes.</span></td>
+         <td class="desc">Logical domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="added" title="added class">att.alignment</li>
                <li class="added" title="added class">att.partIdent</li>
@@ -21284,7 +21266,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.rest.log.cmn</td>
          <td class="module">MEI.cmn</td>
-         <td class="desc">Logical domain attributes in the CMN repertoire.</td>
+         <td class="desc"><span class="removed block">Logical domain attributes.</span><span class="added block">Logical domain attributes in the CMN repertoire.</span></td>
          <td class="classes">Classes:<br><ul>
                <li class="removed" title="removed class">att.beamed</li>
             </ul>
@@ -21295,7 +21277,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.rest.vis.cmn</td>
          <td class="module">MEI.cmn</td>
-         <td class="desc"><span class="removed block">Visual domain attributes.</span><span class="added block">Visual domain attributes.</span></td>
+         <td class="desc">Visual domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="added" title="added class">att.beamSecondary</li>
             </ul>
@@ -21306,7 +21288,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.scoreDef.vis.cmn</td>
          <td class="module">MEI.cmn</td>
-         <td class="desc"><span class="removed block">Visual domain attributes.</span><span class="added block">Visual domain attributes.</span></td>
+         <td class="desc">Visual domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.beaming.vis</li>
                <li class="casechanged" title="was: att.pianopedals">att.pianoPedals</li>
@@ -21323,7 +21305,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.slur.log</td>
          <td class="module">MEI.cmn</td>
-         <td class="desc"><span class="removed block">Logical domain attributes.</span><span class="added block">Logical domain attributes.</span></td>
+         <td class="desc">Logical domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="casechanged" title="was: att.controlevent">att.controlEvent</li>
                <li class="unchanged">att.duration.additive</li>
@@ -21339,7 +21321,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.space.log.cmn</td>
          <td class="module">MEI.cmn</td>
-         <td class="desc">Logical domain attributes in the CMN repertoire.</td>
+         <td class="desc"><span class="removed block">Logical domain attributes for CMN features.</span><span class="added block">Logical domain attributes in the CMN repertoire.</span></td>
          <td class="classes">Classes:<br><ul>
                <li class="removed" title="removed class">att.beamed</li>
             </ul>
@@ -21350,7 +21332,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.staffDef.vis.cmn</td>
          <td class="module">MEI.cmn</td>
-         <td class="desc"><span class="removed block">Visual domain attributes for staffDef in the CMN repertoire.</span><span class="added block">Visual domain attributes for staffDef in the CMN repertoire.</span></td>
+         <td class="desc">Visual domain attributes for staffDef in the CMN repertoire.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.beaming.vis</li>
                <li class="casechanged" title="was: att.pianopedals">att.pianoPedals</li>
@@ -21365,7 +21347,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.tie.log</td>
          <td class="module">MEI.cmn</td>
-         <td class="desc"><span class="removed block">Logical domain attributes.</span><span class="added block">Logical domain attributes.</span></td>
+         <td class="desc">Logical domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="casechanged" title="was: att.controlevent">att.controlEvent</li>
                <li class="casechanged" title="was: att.startendid">att.startEndId</li>
@@ -21379,7 +21361,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.tuplet.log</td>
          <td class="module">MEI.cmn</td>
-         <td class="desc"><span class="removed block">Logical domain attributes.</span><span class="added block">Logical domain attributes.</span></td>
+         <td class="desc">Logical domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="casechanged" title="was: att.beamedwith">att.beamedWith</li>
                <li class="unchanged">att.duration.additive</li>
@@ -21395,7 +21377,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.tupletSpan.log</td>
          <td class="module">MEI.cmn</td>
-         <td class="desc"><span class="removed block">Logical domain attributes.</span><span class="added block">Logical domain attributes.</span></td>
+         <td class="desc">Logical domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="casechanged" title="was: att.beamedwith">att.beamedWith</li>
                <li class="casechanged" title="was: att.controlevent">att.controlEvent</li>
@@ -21413,7 +21395,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.mordent.log</td>
          <td class="module">MEI.cmnOrnaments</td>
-         <td class="desc"><span class="removed block">Logical domain attributes.</span><span class="added block">Logical domain attributes.</span></td>
+         <td class="desc">Logical domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="casechanged" title="was: att.controlevent">att.controlEvent</li>
                <li class="casechanged" title="was: att.startendid">att.startEndId</li>
@@ -21429,7 +21411,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.trill.log</td>
          <td class="module">MEI.cmnOrnaments</td>
-         <td class="desc"><span class="removed block">Logical domain attributes.</span><span class="added block">Logical domain attributes.</span></td>
+         <td class="desc">Logical domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="casechanged" title="was: att.controlevent">att.controlEvent</li>
                <li class="unchanged">att.duration.additive</li>
@@ -21446,7 +21428,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.turn.log</td>
          <td class="module">MEI.cmnOrnaments</td>
-         <td class="desc"><span class="removed block">Logical domain attributes.</span><span class="added block">Logical domain attributes.</span></td>
+         <td class="desc">Logical domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="casechanged" title="was: att.controlevent">att.controlEvent</li>
                <li class="casechanged" title="was: att.ornamentaccid">att.ornamentAccid</li>
@@ -21462,7 +21444,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.crit</td>
          <td class="module">MEI.critapp</td>
-         <td class="desc"><span class="removed block">Attributes common to all elements representing variant readings.</span><span class="added block">Attributes common to all elements representing variant readings.</span></td>
+         <td class="desc">Attributes common to all elements representing variant readings.</td>
          <td class="classes">Classes:<br><ul>
                <li class="casechanged" title="was: att.handident">att.handIdent</li>
                <li class="unchanged">att.sequence</li>
@@ -21478,7 +21460,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.cpMark.log</td>
          <td class="module">MEI.edittrans</td>
-         <td class="desc"><span class="removed block">Logical domain attributes.</span><span class="added block">Logical domain attributes.</span></td>
+         <td class="desc">Logical domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="casechanged" title="was: att.controlevent">att.controlEvent</li>
                <li class="added" title="added class">att.origin.timestamp.logical</li>
@@ -21498,9 +21480,9 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.edit</td>
          <td class="module">MEI.edittrans</td>
-         <td class="desc">Attributes describing the nature of an encoded scholarly intervention or
-            interpretation.
-         </td>
+         <td class="desc"><span class="removed block">Attributes describing the nature of an encoded scholarly intervention or
+               interpretation.</span><span class="added block">Attributes describing the nature of an encoded scholarly intervention or
+               interpretation.</span></td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.source</li>
                <li class="unchanged">att.evidence</li>
@@ -21513,9 +21495,9 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.trans</td>
          <td class="module">MEI.edittrans</td>
-         <td class="desc">Attributes for elements encoding authorial or scribal intervention when transcribing
-            manuscript or similar sources.
-         </td>
+         <td class="desc"><span class="removed block">Attributes for elements encoding authorial or scribal intervention when transcribing
+               manuscript or similar sources.</span><span class="added block">Attributes for elements encoding authorial or scribal intervention when transcribing
+               manuscript or similar sources.</span></td>
          <td class="classes">Classes:<br><ul>
                <li class="added" title="added class">att.geneticState</li>
                <li class="casechanged" title="was: att.handident">att.handIdent</li>
@@ -21529,7 +21511,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.fing.log</td>
          <td class="module">MEI.fingering</td>
-         <td class="desc"><span class="removed block">Logical domain attributes.</span><span class="added block">Logical domain attributes.</span></td>
+         <td class="desc">Logical domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="casechanged" title="was: att.controlevent">att.controlEvent</li>
                <li class="unchanged">att.duration.additive</li>
@@ -21545,7 +21527,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.fingGrp.log</td>
          <td class="module">MEI.fingering</td>
-         <td class="desc"><span class="removed block">Logical domain attributes.</span><span class="added block">Logical domain attributes.</span></td>
+         <td class="desc">Logical domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="casechanged" title="was: att.controlevent">att.controlEvent</li>
                <li class="unchanged">att.duration.additive</li>
@@ -21563,7 +21545,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.accid.ges</td>
          <td class="module">MEI.gestural</td>
-         <td class="desc"><span class="removed block">Gestural domain attributes.</span><span class="added block">Gestural domain attributes.</span></td>
+         <td class="desc">Gestural domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="added" title="added class">att.accidental.gestural</li>
                <li class="removed" title="removed class">att.accidental.performed</li>
@@ -21575,7 +21557,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.annot.ges</td>
          <td class="module">MEI.gestural</td>
-         <td class="desc"><span class="removed block">Gestural domain attributes.</span><span class="added block">Gestural domain attributes.</span></td>
+         <td class="desc">Gestural domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="added" title="added class">att.duration.gestural</li>
                <li class="added" title="added class">att.timestamp.gestural</li>
@@ -21589,7 +21571,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.artic.ges</td>
          <td class="module">MEI.gestural</td>
-         <td class="desc"><span class="removed block">Gestural domain attributes.</span><span class="added block">Gestural domain attributes.</span></td>
+         <td class="desc">Gestural domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="added" title="added class">att.articulation.gestural</li>
                <li class="removed" title="removed class">att.articulation.performed</li>
@@ -21601,7 +21583,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.barLine.ges</td>
          <td class="module">MEI.gestural</td>
-         <td class="desc"><span class="removed block">Gestural domain attributes.</span><span class="added block">Gestural domain attributes.</span></td>
+         <td class="desc">Gestural domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="removed" title="removed class">att.timestamp.musical</li>
             </ul>
@@ -21612,7 +21594,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.beamSpan.ges</td>
          <td class="module">MEI.gestural</td>
-         <td class="desc"><span class="removed block">Gestural domain attributes.</span><span class="added block">Gestural domain attributes.</span></td>
+         <td class="desc">Gestural domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="added" title="added class">att.duration.gestural</li>
                <li class="added" title="added class">att.timestamp2.gestural</li>
@@ -21625,7 +21607,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.bend.ges</td>
          <td class="module">MEI.gestural</td>
-         <td class="desc"><span class="removed block">Gestural domain attributes.</span><span class="added block">Gestural domain attributes.</span></td>
+         <td class="desc">Gestural domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="added" title="added class">att.timestamp2.gestural</li>
             </ul>
@@ -21638,7 +21620,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.breath.ges</td>
          <td class="module">MEI.gestural</td>
-         <td class="desc"><span class="removed block">Gestural domain attributes.</span><span class="added block">Gestural domain attributes.</span></td>
+         <td class="desc">Gestural domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="added" title="added class">att.timestamp.gestural</li>
             </ul>
@@ -21649,7 +21631,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.bTrem.ges</td>
          <td class="module">MEI.gestural</td>
-         <td class="desc"><span class="removed block">Gestural domain attributes.</span><span class="added block">Gestural domain attributes.</span></td>
+         <td class="desc">Gestural domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="casechanged" title="was: att.tremmeasured">att.tremMeasured</li>
             </ul>
@@ -21660,7 +21642,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.chord.ges</td>
          <td class="module">MEI.gestural</td>
-         <td class="desc"><span class="removed block">Gestural domain attributes.</span><span class="added block">Gestural domain attributes.</span></td>
+         <td class="desc">Gestural domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="added" title="added class">att.articulation.gestural</li>
                <li class="added" title="added class">att.duration.gestural</li>
@@ -21676,7 +21658,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.cpMark.ges</td>
          <td class="module">MEI.gestural</td>
-         <td class="desc"><span class="removed block">Gestural domain attributes.</span><span class="added block">Gestural domain attributes.</span></td>
+         <td class="desc">Gestural domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="added" title="added class">att.duration.gestural</li>
                <li class="added" title="added class">att.timestamp2.gestural</li>
@@ -21689,7 +21671,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.dir.ges</td>
          <td class="module">MEI.gestural</td>
-         <td class="desc"><span class="removed block">Gestural domain attributes.</span><span class="added block">Gestural domain attributes.</span></td>
+         <td class="desc">Gestural domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="added" title="added class">att.duration.gestural</li>
                <li class="added" title="added class">att.timestamp2.gestural</li>
@@ -21702,7 +21684,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.dynam.ges</td>
          <td class="module">MEI.gestural</td>
-         <td class="desc"><span class="removed block">Gestural domain attributes.</span><span class="added block">Gestural domain attributes.</span></td>
+         <td class="desc">Gestural domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="added" title="added class">att.duration.gestural</li>
                <li class="casechanged" title="was: att.midivalue">att.midiValue</li>
@@ -21717,7 +21699,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.f.ges</td>
          <td class="module">MEI.gestural</td>
-         <td class="desc"><span class="removed block">Gestural domain attributes.</span><span class="added block">Gestural domain attributes.</span></td>
+         <td class="desc">Gestural domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="added" title="added class">att.duration.gestural</li>
                <li class="added" title="added class">att.timestamp2.gestural</li>
@@ -21730,7 +21712,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.fermata.ges</td>
          <td class="module">MEI.gestural</td>
-         <td class="desc"><span class="removed block">Gestural domain attributes.</span><span class="added block">Gestural domain attributes.</span></td>
+         <td class="desc">Gestural domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="added" title="added class">att.duration.gestural</li>
                <li class="removed" title="removed class">att.duration.performed</li>
@@ -21742,7 +21724,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.fing.ges</td>
          <td class="module">MEI.gestural</td>
-         <td class="desc"><span class="removed block">Gestural domain attributes.</span><span class="added block">Gestural domain attributes.</span></td>
+         <td class="desc">Gestural domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="added" title="added class">att.duration.gestural</li>
                <li class="added" title="added class">att.timestamp2.gestural</li>
@@ -21755,7 +21737,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.fingGrp.ges</td>
          <td class="module">MEI.gestural</td>
-         <td class="desc"><span class="removed block">Gestural domain attributes.</span><span class="added block">Gestural domain attributes.</span></td>
+         <td class="desc">Gestural domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="added" title="added class">att.duration.gestural</li>
                <li class="added" title="added class">att.timestamp2.gestural</li>
@@ -21768,7 +21750,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.fTrem.ges</td>
          <td class="module">MEI.gestural</td>
-         <td class="desc"><span class="removed block">Gestural domain attributes.</span><span class="added block">Gestural domain attributes.</span></td>
+         <td class="desc">Gestural domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="casechanged" title="was: att.tremmeasured">att.tremMeasured</li>
             </ul>
@@ -21779,7 +21761,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.gliss.ges</td>
          <td class="module">MEI.gestural</td>
-         <td class="desc"><span class="removed block">Gestural domain attributes.</span><span class="added block">Gestural domain attributes.</span></td>
+         <td class="desc">Gestural domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="added" title="added class">att.duration.gestural</li>
                <li class="added" title="added class">att.timestamp2.gestural</li>
@@ -21792,7 +21774,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.hairpin.ges</td>
          <td class="module">MEI.gestural</td>
-         <td class="desc"><span class="removed block">Gestural domain attributes.</span><span class="added block">Gestural domain attributes.</span></td>
+         <td class="desc">Gestural domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="added" title="added class">att.duration.gestural</li>
                <li class="casechanged" title="was: att.midivalue">att.midiValue</li>
@@ -21807,7 +21789,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.halfmRpt.ges</td>
          <td class="module">MEI.gestural</td>
-         <td class="desc"><span class="removed block">Gestural domain attributes.</span><span class="added block">Gestural domain attributes.</span></td>
+         <td class="desc">Gestural domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="added" title="added class">att.duration.gestural</li>
             </ul>
@@ -21818,7 +21800,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.harm.ges</td>
          <td class="module">MEI.gestural</td>
-         <td class="desc"><span class="removed block">Gestural domain attributes.</span><span class="added block">Gestural domain attributes.</span></td>
+         <td class="desc">Gestural domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="added" title="added class">att.duration.gestural</li>
                <li class="added" title="added class">att.timestamp2.gestural</li>
@@ -21831,7 +21813,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.harpPedal.ges</td>
          <td class="module">MEI.gestural</td>
-         <td class="desc"><span class="removed block">Gestural domain attributes.</span><span class="added block">Gestural domain attributes.</span></td>
+         <td class="desc">Gestural domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="added" title="added class">att.duration.gestural</li>
                <li class="removed" title="removed class">att.duration.performed</li>
@@ -21843,7 +21825,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.layerDef.ges</td>
          <td class="module">MEI.gestural</td>
-         <td class="desc"><span class="removed block">Gestural domain attributes.</span><span class="added block">Gestural domain attributes.</span></td>
+         <td class="desc">Gestural domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="casechanged" title="was: att.instrumentident">att.instrumentIdent</li>
             </ul>
@@ -21854,7 +21836,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.line.ges</td>
          <td class="module">MEI.gestural</td>
-         <td class="desc"><span class="removed block">Attributes for describing the performed components of a line.</span><span class="added block">Attributes for describing the performed components of a line.</span></td>
+         <td class="desc">Attributes for describing the performed components of a line.</td>
          <td class="classes">Classes:<br><ul>
                <li class="added" title="added class">att.duration.gestural</li>
                <li class="added" title="added class">att.timestamp2.gestural</li>
@@ -21867,11 +21849,13 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.measure.ges</td>
          <td class="module">MEI.gestural</td>
-         <td class="desc">Gestural domain attributes. The tstamp.ges and tstamp.real attributes encode the onset
-            time of the measure. In reality, this is usually the same as the onset time of the
-            first event
-            in the measure.
-         </td>
+         <td class="desc"><span class="removed block">Gestural domain attributes. The tstamp.ges and tstamp.real attributes encode the onset
+               time of the measure. In reality, this is usually the same as the onset time of the
+               first
+               event in the measure.</span><span class="added block">Gestural domain attributes. The tstamp.ges and tstamp.real attributes encode the onset
+               time of the measure. In reality, this is usually the same as the onset time of the
+               first event
+               in the measure.</span></td>
          <td class="classes">Classes:<br><ul>
                <li class="added" title="added class">att.timestamp.gestural</li>
                <li class="removed" title="removed class">att.timestamp.performed</li>
@@ -21883,7 +21867,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.mRest.ges</td>
          <td class="module">MEI.gestural</td>
-         <td class="desc"><span class="removed block">Gestural domain attributes.</span><span class="added block">Gestural domain attributes.</span></td>
+         <td class="desc">Gestural domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="added" title="added class">att.duration.gestural</li>
                <li class="casechanged" title="was: att.instrumentident">att.instrumentIdent</li>
@@ -21896,7 +21880,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.mSpace.ges</td>
          <td class="module">MEI.gestural</td>
-         <td class="desc"><span class="removed block">Gestural domain attributes.</span><span class="added block">Gestural domain attributes.</span></td>
+         <td class="desc">Gestural domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="added" title="added class">att.duration.gestural</li>
                <li class="casechanged" title="was: att.instrumentident">att.instrumentIdent</li>
@@ -21909,7 +21893,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.multiRest.ges</td>
          <td class="module">MEI.gestural</td>
-         <td class="desc"><span class="removed block">Gestural domain attributes.</span><span class="added block">Gestural domain attributes.</span></td>
+         <td class="desc">Gestural domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="added" title="added class">att.duration.gestural</li>
                <li class="casechanged" title="was: att.instrumentident">att.instrumentIdent</li>
@@ -21922,7 +21906,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.note.ges</td>
          <td class="module">MEI.gestural</td>
-         <td class="desc"><span class="removed block">Gestural domain attributes.</span><span class="added block">Gestural domain attributes.</span></td>
+         <td class="desc">Gestural domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="added" title="added class">att.accidental.gestural</li>
                <li class="added" title="added class">att.articulation.gestural</li>
@@ -21949,7 +21933,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.octave.ges</td>
          <td class="module">MEI.gestural</td>
-         <td class="desc"><span class="removed block">Gestural domain attributes.</span><span class="added block">Gestural domain attributes.</span></td>
+         <td class="desc">Gestural domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="added" title="added class">att.duration.gestural</li>
                <li class="added" title="added class">att.timestamp2.gestural</li>
@@ -21962,7 +21946,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.ornam.ges</td>
          <td class="module">MEI.gestural</td>
-         <td class="desc"><span class="removed block">Gestural domain attributes.</span><span class="added block">Gestural domain attributes.</span></td>
+         <td class="desc">Gestural domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="added" title="added class">att.duration.gestural</li>
                <li class="added" title="added class">att.timestamp2.gestural</li>
@@ -21975,7 +21959,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.pedal.ges</td>
          <td class="module">MEI.gestural</td>
-         <td class="desc"><span class="removed block">Gestural domain attributes.</span><span class="added block">Gestural domain attributes.</span></td>
+         <td class="desc">Gestural domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="added" title="added class">att.timestamp2.gestural</li>
             </ul>
@@ -21986,7 +21970,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.phrase.ges</td>
          <td class="module">MEI.gestural</td>
-         <td class="desc"><span class="removed block">Gestural domain attributes.</span><span class="added block">Gestural domain attributes.</span></td>
+         <td class="desc">Gestural domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="added" title="added class">att.duration.gestural</li>
                <li class="added" title="added class">att.timestamp2.gestural</li>
@@ -21999,7 +21983,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.rest.ges</td>
          <td class="module">MEI.gestural</td>
-         <td class="desc"><span class="removed block">Gestural domain attributes.</span><span class="added block">Gestural domain attributes.</span></td>
+         <td class="desc">Gestural domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="added" title="added class">att.duration.gestural</li>
                <li class="casechanged" title="was: att.instrumentident">att.instrumentIdent</li>
@@ -22013,18 +21997,27 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.scoreDef.ges</td>
          <td class="module">MEI.gestural</td>
-         <td class="desc">Gestural domain attributes for scoreDef. The values set in these attributes act as
-            score-wide defaults for attributes that are not set in descendant elements. For example,
-            the
-            grace attribute value here applies to all the grace attribute values in the score
-            (or, more
-            accurately, until the next  scoreDef  element) without having to
-            individually set each note's grace attribute value. The midi.* attributes function
-            as default
-            values when creating sounding output. The tune.* attributes provide the capability
-            of
-            recording a tuning reference pitch.
-         </td>
+         <td class="desc"><span class="removed block">Gestural domain attributes for scoreDef. The values set in these attributes act as
+               score-wide defaults for attributes that are not set in descendant elements. For example,
+               the
+               grace attribute value here applies to all the grace attribute values in the score
+               (or, more
+               accurately, until the next &lt;scoreDef&gt; element) without having to individually set
+               each
+               note's grace attribute value. The midi.* attributes function as default values when
+               creating
+               sounding output. The tune.* attributes provide the capability of recording a tuning
+               reference pitch.</span><span class="added block">Gestural domain attributes for scoreDef. The values set in these attributes act as
+               score-wide defaults for attributes that are not set in descendant elements. For example,
+               the
+               grace attribute value here applies to all the grace attribute values in the score
+               (or, more
+               accurately, until the next  scoreDef  element) without having to
+               individually set each note's grace attribute value. The midi.* attributes function
+               as default
+               values when creating sounding output. The tune.* attributes provide the capability
+               of
+               recording a tuning reference pitch.</span></td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.channelized</li>
                <li class="casechanged" title="was: att.timebase">att.timeBase</li>
@@ -22042,7 +22035,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.section.ges</td>
          <td class="module">MEI.gestural</td>
-         <td class="desc"><span class="removed block">Gestural domain attributes.</span><span class="added block">Gestural domain attributes.</span></td>
+         <td class="desc">Gestural domain attributes.</td>
          <td class="classes">Classes:<br><ul></ul>
          </td>
          <td class="content">Attributes:<br><ul>
@@ -22053,7 +22046,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.slur.ges</td>
          <td class="module">MEI.gestural</td>
-         <td class="desc"><span class="removed block">Gestural domain attributes.</span><span class="added block">Gestural domain attributes.</span></td>
+         <td class="desc">Gestural domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="added" title="added class">att.duration.gestural</li>
                <li class="added" title="added class">att.timestamp2.gestural</li>
@@ -22066,7 +22059,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.space.ges</td>
          <td class="module">MEI.gestural</td>
-         <td class="desc"><span class="removed block">Gestural domain attributes.</span><span class="added block">Gestural domain attributes.</span></td>
+         <td class="desc">Gestural domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="added" title="added class">att.duration.gestural</li>
                <li class="removed" title="removed class">att.duration.performed</li>
@@ -22078,7 +22071,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.staffDef.ges</td>
          <td class="module">MEI.gestural</td>
-         <td class="desc"><span class="removed block">Gestural domain attributes for staffDef in the CMN repertoire.</span><span class="added block">Gestural domain attributes for staffDef in the CMN repertoire.</span></td>
+         <td class="desc">Gestural domain attributes for staffDef in the CMN repertoire.</td>
          <td class="classes">Classes:<br><ul>
                <li class="casechanged" title="was: att.instrumentident">att.instrumentIdent</li>
                <li class="added" title="added class">att.stringtab.tuning</li>
@@ -22092,7 +22085,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.staffGrp.ges</td>
          <td class="module">MEI.gestural</td>
-         <td class="desc"><span class="removed block">Gestural domain attributes.</span><span class="added block">Gestural domain attributes.</span></td>
+         <td class="desc">Gestural domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="casechanged" title="was: att.instrumentident">att.instrumentIdent</li>
             </ul>
@@ -22103,7 +22096,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.tempo.ges</td>
          <td class="module">MEI.gestural</td>
-         <td class="desc"><span class="removed block">Gestural domain attributes.</span><span class="added block">Gestural domain attributes.</span></td>
+         <td class="desc">Gestural domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="casechanged" title="was: att.miditempo">att.midiTempo</li>
                <li class="removed" title="removed class">att.mmtempo</li>
@@ -22115,7 +22108,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.tie.ges</td>
          <td class="module">MEI.gestural</td>
-         <td class="desc"><span class="removed block">Gestural domain attributes.</span><span class="added block">Gestural domain attributes.</span></td>
+         <td class="desc">Gestural domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="added" title="added class">att.timestamp2.gestural</li>
             </ul>
@@ -22126,7 +22119,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.trill.ges</td>
          <td class="module">MEI.gestural</td>
-         <td class="desc"><span class="removed block">Gestural domain attributes.</span><span class="added block">Gestural domain attributes.</span></td>
+         <td class="desc">Gestural domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="added" title="added class">att.duration.gestural</li>
                <li class="added" title="added class">att.timestamp2.gestural</li>
@@ -22139,7 +22132,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.tuplet.ges</td>
          <td class="module">MEI.gestural</td>
-         <td class="desc"><span class="removed block">Gestural domain attributes.</span><span class="added block">Gestural domain attributes.</span></td>
+         <td class="desc">Gestural domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="added" title="added class">att.duration.gestural</li>
                <li class="removed" title="removed class">att.duration.performed</li>
@@ -22151,7 +22144,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.tupletSpan.ges</td>
          <td class="module">MEI.gestural</td>
-         <td class="desc"><span class="removed block">Gestural domain attributes.</span><span class="added block">Gestural domain attributes.</span></td>
+         <td class="desc">Gestural domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="added" title="added class">att.timestamp2.gestural</li>
                <li class="unchanged">att.tuplet.ges</li>
@@ -22163,7 +22156,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.f.log</td>
          <td class="module">MEI.harmony</td>
-         <td class="desc"><span class="removed block">Logical domain attributes.</span><span class="added block">Logical domain attributes.</span></td>
+         <td class="desc">Logical domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="casechanged" title="was: att.controlevent">att.controlEvent</li>
                <li class="unchanged">att.duration.additive</li>
@@ -22179,7 +22172,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.harm.log</td>
          <td class="module">MEI.harmony</td>
-         <td class="desc"><span class="removed block">Logical domain attributes.</span><span class="added block">Logical domain attributes.</span></td>
+         <td class="desc">Logical domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="casechanged" title="was: att.controlevent">att.controlEvent</li>
                <li class="unchanged">att.duration.additive</li>
@@ -22197,7 +22190,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.lyrics.log</td>
          <td class="module">MEI.lyrics</td>
-         <td class="desc"><span class="removed block">Logical domain attributes.</span><span class="added block">Logical domain attributes.</span></td>
+         <td class="desc">Logical domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="casechanged" title="was: att.layerident">att.layerIdent</li>
                <li class="added" title="added class">att.partIdent</li>
@@ -22210,10 +22203,10 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.verse.log</td>
          <td class="module">MEI.lyrics</td>
-         <td class="desc">Logical domain attributes. The n attribute should be used for verse numbers. Numbers
-            need
-            not be consecutive; they may also be expressed as ranges, e.g. 2-3,6.
-         </td>
+         <td class="desc"><span class="removed block">Logical domain attributes. The n attribute should be used for verse numbers. Numbers
+               need not be consecutive; they may also be expressed as ranges, e.g. 2-3,6.</span><span class="added block">Logical domain attributes. The n attribute should be used for verse numbers. Numbers
+               need
+               not be consecutive; they may also be expressed as ranges, e.g. 2-3,6.</span></td>
          <td class="classes">Classes:<br><ul></ul>
          </td>
          <td class="content">Attributes:<br><ul>
@@ -22225,7 +22218,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.note.log.mensural</td>
          <td class="module">MEI.mensural</td>
-         <td class="desc">Logical domain attributes in the Mensural repertoire.</td>
+         <td class="desc"><span class="removed block">Logical domain attributes.</span><span class="added block">Logical domain attributes in the Mensural repertoire.</span></td>
          <td class="classes">Classes:<br><ul></ul>
          </td>
          <td class="content">Attributes:<br><ul>
@@ -22236,7 +22229,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.midi.event</td>
          <td class="module">MEI.midi</td>
-         <td class="desc"><span class="removed block">Attributes common to MIDI events.</span><span class="added block">Attributes common to MIDI events.</span></td>
+         <td class="desc">Attributes common to MIDI events.</td>
          <td class="classes">Classes:<br><ul>
                <li class="casechanged" title="was: att.layerident">att.layerIdent</li>
                <li class="added" title="added class">att.partIdent</li>
@@ -22252,7 +22245,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.midi.log</td>
          <td class="module">MEI.midi</td>
-         <td class="desc"><span class="removed block">Logical domain attributes.</span><span class="added block">Logical domain attributes.</span></td>
+         <td class="desc">Logical domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="casechanged" title="was: att.layerident">att.layerIdent</li>
                <li class="added" title="added class">att.partIdent</li>
@@ -22265,7 +22258,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.accid.log</td>
          <td class="module">MEI.shared</td>
-         <td class="desc"><span class="removed block">Logical domain attributes.</span><span class="added block">Logical domain attributes.</span></td>
+         <td class="desc">Logical domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.accidental</li>
                <li class="casechanged" title="was: att.controlevent">att.controlEvent</li>
@@ -22279,11 +22272,13 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.annot.log</td>
          <td class="module">MEI.shared</td>
-         <td class="desc">Logical domain attributes for annot. Values for the type attribute can be taken from
-            any
-            convenient typology of annotation suitable to the work in hand; e.g. annotation, gloss,
-            citation, digression, preliminary, temporary, etc.
-         </td>
+         <td class="desc"><span class="removed block">Logical domain attributes for annot. Values for the type attribute can be taken from
+               any
+               convenient typology of annotation suitable to the work in hand; e.g. annotation, gloss,
+               citation, digression, preliminary, temporary, etc.</span><span class="added block">Logical domain attributes for annot. Values for the type attribute can be taken from
+               any
+               convenient typology of annotation suitable to the work in hand; e.g. annotation, gloss,
+               citation, digression, preliminary, temporary, etc.</span></td>
          <td class="classes">Classes:<br><ul>
                <li class="added" title="added class">att.alignment</li>
                <li class="unchanged">att.duration.additive</li>
@@ -22305,7 +22300,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.artic.log</td>
          <td class="module">MEI.shared</td>
-         <td class="desc"><span class="removed block">Logical domain attributes.</span><span class="added block">Logical domain attributes.</span></td>
+         <td class="desc">Logical domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.articulation</li>
                <li class="casechanged" title="was: att.controlevent">att.controlEvent</li>
@@ -22317,7 +22312,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.authorized</td>
          <td class="module">MEI.shared</td>
-         <td class="desc"><span class="removed block">Attributes that describe the source of a controlled value.</span><span class="added block">Attributes that describe the source of a controlled value.</span></td>
+         <td class="desc">Attributes that describe the source of a controlled value.</td>
          <td class="classes">Classes:<br><ul>
                <li class="added" title="added class">att.canonical</li>
             </ul>
@@ -22333,7 +22328,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.barLine.log</td>
          <td class="module">MEI.shared</td>
-         <td class="desc"><span class="removed block">Logical domain attributes.</span><span class="added block">Logical domain attributes.</span></td>
+         <td class="desc">Logical domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="casechanged" title="was: att.meterconformance.bar">att.meterConformance.bar</li>
             </ul>
@@ -22346,17 +22341,24 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.chord.log</td>
          <td class="module">MEI.shared</td>
-         <td class="desc">Logical domain attributes for chord. The artic, dots, and dur attributes encode the
-            written articulations, augmentation dots, and duration values. The beam, fermata,
-            lv, slur,
-            syl, tie, and tuplet attributes may be used to indicate the attachment of these things
-            to this
-            chord. If visual information about these things needs to be recorded, then either
-            the elements
-            corresponding to these attributes or the attributes available in the att.vis.chord
-            class
-            should be employed.
-         </td>
+         <td class="desc"><span class="removed block">Logical domain attributes for chord. The artic, dots, and dur attributes encode the
+               written articulations, augmentation dots, and duration values. The beam, fermata,
+               lv, slur,
+               syl, tie, and tuplet attributes may be used to indicate the attachment of these things
+               to
+               this chord. If visual information about these things needs to be recorded, then either
+               the
+               elements corresponding to these attributes or the attributes available in the att.vis.chord
+               class should be employed.</span><span class="added block">Logical domain attributes for chord. The artic, dots, and dur attributes encode the
+               written articulations, augmentation dots, and duration values. The beam, fermata,
+               lv, slur,
+               syl, tie, and tuplet attributes may be used to indicate the attachment of these things
+               to this
+               chord. If visual information about these things needs to be recorded, then either
+               the elements
+               corresponding to these attributes or the attributes available in the att.vis.chord
+               class
+               should be employed.</span></td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.articulation</li>
                <li class="casechanged" title="was: att.augmentdots">att.augmentDots</li>
@@ -22378,7 +22380,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.clef.log</td>
          <td class="module">MEI.shared</td>
-         <td class="desc"><span class="removed block">Logical domain attributes.</span><span class="added block">Logical domain attributes.</span></td>
+         <td class="desc">Logical domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="casechanged" title="was: att.clefshape">att.clefShape</li>
                <li class="casechanged" title="was: att.lineloc">att.lineLoc</li>
@@ -22394,7 +22396,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.common</td>
          <td class="module">MEI.shared</td>
-         <td class="desc"><span class="removed block">Attributes common to many elements.</span><span class="added block">Attributes common to many elements.</span></td>
+         <td class="desc">Attributes common to many elements.</td>
          <td class="classes">Classes:<br><ul>
                <li class="added" title="added class">att.basic</li>
                <li class="added" title="added class">att.labelled</li>
@@ -22413,7 +22415,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.dir.log</td>
          <td class="module">MEI.shared</td>
-         <td class="desc"><span class="removed block">Logical domain attributes.</span><span class="added block">Logical domain attributes.</span></td>
+         <td class="desc">Logical domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="casechanged" title="was: att.controlevent">att.controlEvent</li>
                <li class="unchanged">att.duration.additive</li>
@@ -22429,7 +22431,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.dot.log</td>
          <td class="module">MEI.shared</td>
-         <td class="desc"><span class="removed block">Logical domain attributes.</span><span class="added block">Logical domain attributes.</span></td>
+         <td class="desc">Logical domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="casechanged" title="was: att.controlevent">att.controlEvent</li>
             </ul>
@@ -22442,7 +22444,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.dynam.log</td>
          <td class="module">MEI.shared</td>
-         <td class="desc"><span class="removed block">Logical domain attributes.</span><span class="added block">Logical domain attributes.</span></td>
+         <td class="desc">Logical domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="casechanged" title="was: att.controlevent">att.controlEvent</li>
                <li class="unchanged">att.duration.additive</li>
@@ -22458,7 +22460,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.ending.log</td>
          <td class="module">MEI.shared</td>
-         <td class="desc"><span class="removed block">Logical domain attributes.</span><span class="added block">Logical domain attributes.</span></td>
+         <td class="desc">Logical domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="added" title="added class">att.alignment</li>
             </ul>
@@ -22469,7 +22471,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.event</td>
          <td class="module">MEI.shared</td>
-         <td class="desc"><span class="removed block">Attributes that apply to all written events, e.g., note, chord, rest, etc.</span><span class="added block">Attributes that apply to all written events, e.g., note, chord, rest, etc.</span></td>
+         <td class="desc">Attributes that apply to all written events, e.g., note, chord, rest, etc.</td>
          <td class="classes">Classes:<br><ul>
                <li class="added" title="added class">att.alignment</li>
                <li class="casechanged" title="was: att.layerident">att.layerIdent</li>
@@ -22486,10 +22488,11 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.extender</td>
          <td class="module">MEI.shared</td>
-         <td class="desc">Attributes that describe extension symbols, typically lines. Members of this class
-            are
-            also typically members of the att.lineRend class.
-         </td>
+         <td class="desc"><span class="removed block">Attributes that describe extension symbols, typically lines. Members of this class
+               are
+               also typically members of the att.linerend class.</span><span class="added block">Attributes that describe extension symbols, typically lines. Members of this class
+               are
+               also typically members of the att.lineRend class.</span></td>
          <td class="classes">Classes:<br><ul>
                <li class="casechanged" title="was: att.linerend">att.lineRend</li>
             </ul>
@@ -22502,7 +22505,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.extent</td>
          <td class="module">MEI.shared</td>
-         <td class="desc">Provides attributes for describing the size of an entity.</td>
+         <td class="desc"><span class="removed block">Attributes for identification of the extent of editorial assertions.</span><span class="added block">Provides attributes for describing the size of an entity.</span></td>
          <td class="classes">Classes:<br><ul>
                <li class="added" title="added class">att.measurement</li>
                <li class="added" title="added class">att.ranging</li>
@@ -22516,7 +22519,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.grpSym.log</td>
          <td class="module">MEI.shared</td>
-         <td class="desc"><span class="removed block">Logical domain attributes.</span><span class="added block">Logical domain attributes.</span></td>
+         <td class="desc">Logical domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="casechanged" title="was: att.staffgroupingsym">att.staffGroupingSym</li>
                <li class="casechanged" title="was: att.startendid">att.startEndId</li>
@@ -22530,7 +22533,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.keySig.log</td>
          <td class="module">MEI.shared</td>
-         <td class="desc"><span class="removed block">Logical domain attributes.</span><span class="added block">Logical domain attributes.</span></td>
+         <td class="desc">Logical domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="removed" title="removed class">att.accidental</li>
                <li class="removed" title="removed class">att.pitch</li>
@@ -22546,9 +22549,9 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.keySigDefault.log</td>
          <td class="module">MEI.shared</td>
-         <td class="desc">Used by staffDef and scoreDef to provide default values for attributes in the logical
-            domain that are related to key signatures.
-         </td>
+         <td class="desc"><span class="removed block">Used by staffDef and scoreDef to provide default values for attributes in the logical
+               domain related to key signatures.</span><span class="added block">Used by staffDef and scoreDef to provide default values for attributes in the logical
+               domain that are related to key signatures.</span></td>
          <td class="classes">Classes:<br><ul></ul>
          </td>
          <td class="content">Attributes:<br><ul>
@@ -22563,7 +22566,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.layer.log</td>
          <td class="module">MEI.shared</td>
-         <td class="desc"><span class="removed block">Logical domain attributes.</span><span class="added block">Logical domain attributes.</span></td>
+         <td class="desc">Logical domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="casechanged" title="was: att.meterconformance">att.meterConformance</li>
             </ul>
@@ -22576,7 +22579,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.layerDef.log</td>
          <td class="module">MEI.shared</td>
-         <td class="desc"><span class="removed block">Logical domain attributes.</span><span class="added block">Logical domain attributes.</span></td>
+         <td class="desc">Logical domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.duration.default</li>
                <li class="unchanged">att.layerDef.log.cmn</li>
@@ -22590,7 +22593,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.mensur.log</td>
          <td class="module">MEI.shared</td>
-         <td class="desc"><span class="removed block">Logical domain attributes.</span><span class="added block">Logical domain attributes.</span></td>
+         <td class="desc">Logical domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.duration.ratio</li>
                <li class="unchanged">att.mensural.shared</li>
@@ -22606,9 +22609,9 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.meterSigDefault.log</td>
          <td class="module">MEI.shared</td>
-         <td class="desc">Used by staffDef and scoreDef to provide default values for attributes in the logical
-            domain related to meter signature.
-         </td>
+         <td class="desc"><span class="removed block">Used by staffDef and scoreDef to provide default values for attributes in the logical
+               domain related to meter signature.</span><span class="added block">Used by staffDef and scoreDef to provide default values for attributes in the logical
+               domain related to meter signature.</span></td>
          <td class="classes">Classes:<br><ul></ul>
          </td>
          <td class="content">Attributes:<br><ul>
@@ -22621,7 +22624,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.name</td>
          <td class="module">MEI.shared</td>
-         <td class="desc"><span class="removed block">Attributes shared by names.</span><span class="added block">Attributes shared by names.</span></td>
+         <td class="desc">Attributes shared by names.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.authorized</li>
                <li class="unchanged">att.datable</li>
@@ -22638,7 +22641,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.note.log</td>
          <td class="module">MEI.shared</td>
-         <td class="desc"><span class="removed block">Logical domain attributes.</span><span class="added block">Logical domain attributes.</span></td>
+         <td class="desc">Logical domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="casechanged" title="was: att.augmentdots">att.augmentDots</li>
                <li class="added" title="added class">att.coloration</li>
@@ -22664,7 +22667,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.ornam.log</td>
          <td class="module">MEI.shared</td>
-         <td class="desc"><span class="removed block">Logical domain attributes.</span><span class="added block">Logical domain attributes.</span></td>
+         <td class="desc">Logical domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="casechanged" title="was: att.controlevent">att.controlEvent</li>
                <li class="unchanged">att.duration.additive</li>
@@ -22680,7 +22683,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.pad.log</td>
          <td class="module">MEI.shared</td>
-         <td class="desc"><span class="removed block">Logical domain attributes.</span><span class="added block">Logical domain attributes.</span></td>
+         <td class="desc">Logical domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.event</li>
                <li class="added" title="added class">att.width</li>
@@ -22694,7 +22697,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.pb.log</td>
          <td class="module">MEI.shared</td>
-         <td class="desc"><span class="removed block">Logical domain attributes.</span><span class="added block">Logical domain attributes.</span></td>
+         <td class="desc">Logical domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="added" title="added class">att.alignment</li>
             </ul>
@@ -22705,7 +22708,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.phrase.log</td>
          <td class="module">MEI.shared</td>
-         <td class="desc"><span class="removed block">Logical domain attributes.</span><span class="added block">Logical domain attributes.</span></td>
+         <td class="desc">Logical domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="casechanged" title="was: att.controlevent">att.controlEvent</li>
                <li class="unchanged">att.duration.additive</li>
@@ -22721,7 +22724,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.quantity</td>
          <td class="module">MEI.shared</td>
-         <td class="desc"><span class="removed block">Attributes that specify a measurement in numerical terms.</span><span class="added block">Attributes that specify a measurement in numerical terms.</span></td>
+         <td class="desc">Attributes that specify a measurement in numerical terms.</td>
          <td class="classes">Classes:<br><ul>
                <li class="added" title="added class">att.measurement</li>
                <li class="added" title="added class">att.ranging</li>
@@ -22735,7 +22738,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.rest.log</td>
          <td class="module">MEI.shared</td>
-         <td class="desc"><span class="removed block">Logical domain attributes.</span><span class="added block">Logical domain attributes.</span></td>
+         <td class="desc">Logical domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="casechanged" title="was: att.augmentdots">att.augmentDots</li>
                <li class="added" title="added class">att.cue</li>
@@ -22753,7 +22756,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.sb.log</td>
          <td class="module">MEI.shared</td>
-         <td class="desc"><span class="removed block">Logical domain attributes.</span><span class="added block">Logical domain attributes.</span></td>
+         <td class="desc">Logical domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="added" title="added class">att.alignment</li>
             </ul>
@@ -22764,10 +22767,11 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.scoreDef.log</td>
          <td class="module">MEI.shared</td>
-         <td class="desc">Logical domain attributes for scoreDef in the CMN repertoire. The values set in these
-            attributes act as score-wide defaults for attributes that are not set in descendant
-            elements.
-         </td>
+         <td class="desc"><span class="removed block">Logical domain attributes for scoreDef in the CMN repertoire. The values set in these
+               attributes act as score-wide defaults for attributes that are not set in descendant
+               elements.</span><span class="added block">Logical domain attributes for scoreDef in the CMN repertoire. The values set in these
+               attributes act as score-wide defaults for attributes that are not set in descendant
+               elements.</span></td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.cleffing.log</li>
                <li class="unchanged">att.duration.default</li>
@@ -22785,7 +22789,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.section.log</td>
          <td class="module">MEI.shared</td>
-         <td class="desc"><span class="removed block">Logical domain attributes.</span><span class="added block">Logical domain attributes.</span></td>
+         <td class="desc">Logical domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="added" title="added class">att.alignment</li>
             </ul>
@@ -22796,7 +22800,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.space.log</td>
          <td class="module">MEI.shared</td>
-         <td class="desc"><span class="removed block">Logical domain attributes.</span><span class="added block">Logical domain attributes.</span></td>
+         <td class="desc">Logical domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="casechanged" title="was: att.augmentdots">att.augmentDots</li>
                <li class="added" title="added class">att.duration.logical</li>
@@ -22813,7 +22817,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.staff.log</td>
          <td class="module">MEI.shared</td>
-         <td class="desc"><span class="removed block">Logical domain attributes.</span><span class="added block">Logical domain attributes.</span></td>
+         <td class="desc">Logical domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="casechanged" title="was: att.meterconformance">att.meterConformance</li>
             </ul>
@@ -22826,7 +22830,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.staffDef.log</td>
          <td class="module">MEI.shared</td>
-         <td class="desc"><span class="removed block">Logical domain attributes for staffDef.</span><span class="added block">Logical domain attributes for staffDef.</span></td>
+         <td class="desc">Logical domain attributes for staffDef.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.cleffing.log</li>
                <li class="unchanged">att.duration.default</li>
@@ -22847,9 +22851,9 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.stems</td>
          <td class="module">MEI.shared</td>
-         <td class="desc">Attributes that describe the properties of stemmed features; that is, chords and
-            notes.
-         </td>
+         <td class="desc"><span class="removed block">Attributes that describe the properties of stemmed features; that is, chords and
+               notes.</span><span class="added block">Attributes that describe the properties of stemmed features; that is, chords and
+               notes.</span></td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.stems.cmn</li>
             </ul>
@@ -22868,7 +22872,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.tempo.log</td>
          <td class="module">MEI.shared</td>
-         <td class="desc"><span class="removed block">Logical domain attributes.</span><span class="added block">Logical domain attributes.</span></td>
+         <td class="desc">Logical domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="casechanged" title="was: att.controlevent">att.controlEvent</li>
                <li class="added" title="added class">att.mmTempo</li>
@@ -22883,7 +22887,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.typed</td>
          <td class="module">MEI.shared</td>
-         <td class="desc">Attributes which can be used to classify features.</td>
+         <td class="desc"><span class="removed block">Attributes which can be used to classify or sub-classify features.</span><span class="added block">Attributes which can be used to classify features.</span></td>
          <td class="classes">Classes:<br><ul>
                <li class="added" title="added class">att.classed</li>
             </ul>
@@ -22897,7 +22901,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.line.log</td>
          <td class="module">MEI.usersymbols</td>
-         <td class="desc">Attributes for describing the logical behavior of a line.</td>
+         <td class="desc"><span class="removed block">Attributes for describing the logical behaviour of a line.</span><span class="added block">Attributes for describing the logical behavior of a line.</span></td>
          <td class="classes">Classes:<br><ul>
                <li class="casechanged" title="was: att.controlevent">att.controlEvent</li>
                <li class="unchanged">att.duration.additive</li>
@@ -22914,7 +22918,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.accid.vis</td>
          <td class="module">MEI.visual</td>
-         <td class="desc"><span class="removed block">Visual domain attributes.</span><span class="added block">Visual domain attributes.</span></td>
+         <td class="desc">Visual domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="casechanged" title="was: att.altsym">att.altSym</li>
                <li class="unchanged">att.color</li>
@@ -22936,7 +22940,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.annot.vis</td>
          <td class="module">MEI.visual</td>
-         <td class="desc"><span class="removed block">Visual domain attributes.</span><span class="added block">Visual domain attributes.</span></td>
+         <td class="desc">Visual domain attributes.</td>
          <td class="classes">Classes:<br><ul></ul>
          </td>
          <td class="content">Attributes:<br><ul>
@@ -22947,7 +22951,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.arpeg.vis</td>
          <td class="module">MEI.visual</td>
-         <td class="desc"><span class="removed block">Visual domain attributes.</span><span class="added block">Visual domain attributes.</span></td>
+         <td class="desc">Visual domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="casechanged" title="was: att.altsym">att.altSym</li>
                <li class="unchanged">att.color</li>
@@ -22971,7 +22975,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.artic.vis</td>
          <td class="module">MEI.visual</td>
-         <td class="desc"><span class="removed block">Visual domain attributes.</span><span class="added block">Visual domain attributes.</span></td>
+         <td class="desc">Visual domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="casechanged" title="was: att.altsym">att.altSym</li>
                <li class="unchanged">att.color</li>
@@ -22991,7 +22995,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.barLine.vis</td>
          <td class="module">MEI.visual</td>
-         <td class="desc"><span class="removed block">Visual domain attributes.</span><span class="added block">Visual domain attributes.</span></td>
+         <td class="desc">Visual domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="added" title="added class">att.altSym</li>
                <li class="unchanged">att.color</li>
@@ -23012,7 +23016,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.beam.vis</td>
          <td class="module">MEI.visual</td>
-         <td class="desc"><span class="removed block">Visual domain attributes.</span><span class="added block">Visual domain attributes.</span></td>
+         <td class="desc">Visual domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.color</li>
                <li class="added" title="added class">att.cue</li>
@@ -23025,7 +23029,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.beatRpt.vis</td>
          <td class="module">MEI.visual</td>
-         <td class="desc"><span class="removed block">Visual domain attributes.</span><span class="added block">Visual domain attributes.</span></td>
+         <td class="desc">Visual domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="casechanged" title="was: att.altsym">att.altSym</li>
                <li class="unchanged">att.color</li>
@@ -23043,16 +23047,24 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.bend.vis</td>
          <td class="module">MEI.visual</td>
-         <td class="desc">Visual domain attributes. If the bulge or bezier attributes are present, the bend
-            should
-            be rendered as a curve. Otherwise, it should be rendered using lines. The ho and vo
-            attributes
-            describe the visual offset of the entire rendered bend. The endho, endvo and startho,
-            startvo
-            attribute pairs may be used to encode start and end points relative to their programmatic
-            placement. For exact placement of the endpoints of the bend, use the x and y
-            attributes.
-         </td>
+         <td class="desc"><span class="removed block">Visual domain attributes. If the bulge or bezier attributes are present, the bend
+               should
+               be rendered as a curve. Otherwise, it should be rendered using lines. The ho and vo
+               attributes describe the visual offset of the entire rendered bend. The endho, endvo
+               and
+               startho, startvo attribute pairs may be used to encode start and end points relative
+               to
+               their programmatic placement. For exact placement of the endpoints of the bend, use
+               the x
+               and y attributes.</span><span class="added block">Visual domain attributes. If the bulge or bezier attributes are present, the bend
+               should
+               be rendered as a curve. Otherwise, it should be rendered using lines. The ho and vo
+               attributes
+               describe the visual offset of the entire rendered bend. The endho, endvo and startho,
+               startvo
+               attribute pairs may be used to encode start and end points relative to their programmatic
+               placement. For exact placement of the endpoints of the bend, use the x and y
+               attributes.</span></td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.color</li>
                <li class="casechanged" title="was: att.visualoffset">att.visualOffset</li>
@@ -23069,7 +23081,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.breath.vis</td>
          <td class="module">MEI.visual</td>
-         <td class="desc"><span class="removed block">Visual domain attributes.</span><span class="added block">Visual domain attributes.</span></td>
+         <td class="desc">Visual domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="casechanged" title="was: att.altsym">att.altSym</li>
                <li class="unchanged">att.color</li>
@@ -23088,7 +23100,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.bTrem.vis</td>
          <td class="module">MEI.visual</td>
-         <td class="desc"><span class="removed block">Visual domain attributes.</span><span class="added block">Visual domain attributes.</span></td>
+         <td class="desc">Visual domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="casechanged" title="was: att.numberplacement">att.numberPlacement</li>
             </ul>
@@ -23099,12 +23111,16 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.chord.vis</td>
          <td class="module">MEI.visual</td>
-         <td class="desc">Visual domain attributes for chord. The slur, slur.dir, slur.rend, tie, tie.dir, and
-            tie.rend attributes here are syntactic sugar for these attributes on each of the chord's
-            individual notes. The values here apply to all the notes in the chord. If some notes
-            are
-            slurred or tied while others aren't, then the individual note attributes must be used.
-         </td>
+         <td class="desc"><span class="removed block">Visual domain attributes for chord. The slur, slur.dir, slur.rend, tie, tie.dir, and
+               tie.rend attributes here are syntactic sugar for these attributes on each of the chord's
+               individual notes. The values here apply to all the notes in the chord. If some notes
+               are
+               slurred or tied while others aren't, then the individual note attributes must be
+               used.</span><span class="added block">Visual domain attributes for chord. The slur, slur.dir, slur.rend, tie, tie.dir, and
+               tie.rend attributes here are syntactic sugar for these attributes on each of the chord's
+               individual notes. The values here apply to all the notes in the chord. If some notes
+               are
+               slurred or tied while others aren't, then the individual note attributes must be used.</span></td>
          <td class="classes">Classes:<br><ul>
                <li class="casechanged" title="was: att.altsym">att.altSym</li>
                <li class="unchanged">att.color</li>
@@ -23128,7 +23144,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.clef.vis</td>
          <td class="module">MEI.visual</td>
-         <td class="desc"><span class="removed block">Visual domain attributes.</span><span class="added block">Visual domain attributes.</span></td>
+         <td class="desc">Visual domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="casechanged" title="was: att.altsym">att.altSym</li>
                <li class="unchanged">att.color</li>
@@ -23143,7 +23159,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.cpMark.vis</td>
          <td class="module">MEI.visual</td>
-         <td class="desc"><span class="removed block">Visual domain attributes.</span><span class="added block">Visual domain attributes.</span></td>
+         <td class="desc">Visual domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="casechanged" title="was: att.altsym">att.altSym</li>
                <li class="unchanged">att.color</li>
@@ -23161,7 +23177,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.custos.vis</td>
          <td class="module">MEI.visual</td>
-         <td class="desc"><span class="removed block">Visual domain attributes.</span><span class="added block">Visual domain attributes.</span></td>
+         <td class="desc">Visual domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="casechanged" title="was: att.altsym">att.altSym</li>
                <li class="unchanged">att.color</li>
@@ -23176,7 +23192,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.dir.vis</td>
          <td class="module">MEI.visual</td>
-         <td class="desc"><span class="removed block">Visual domain attributes.</span><span class="added block">Visual domain attributes.</span></td>
+         <td class="desc">Visual domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.extender</li>
                <li class="unchanged">att.placement</li>
@@ -23193,7 +23209,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.dot.vis</td>
          <td class="module">MEI.visual</td>
-         <td class="desc"><span class="removed block">Visual domain attributes.</span><span class="added block">Visual domain attributes.</span></td>
+         <td class="desc">Visual domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="casechanged" title="was: att.altsym">att.altSym</li>
                <li class="unchanged">att.color</li>
@@ -23213,7 +23229,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.dynam.vis</td>
          <td class="module">MEI.visual</td>
-         <td class="desc"><span class="removed block">Visual domain attributes.</span><span class="added block">Visual domain attributes.</span></td>
+         <td class="desc">Visual domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="added" title="added class">att.extender</li>
                <li class="unchanged">att.placement</li>
@@ -23230,7 +23246,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.ending.vis</td>
          <td class="module">MEI.visual</td>
-         <td class="desc"><span class="removed block">Visual domain attributes.</span><span class="added block">Visual domain attributes.</span></td>
+         <td class="desc">Visual domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="added" title="added class">att.lineRend</li>
             </ul>
@@ -23241,7 +23257,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.f.vis</td>
          <td class="module">MEI.visual</td>
-         <td class="desc"><span class="removed block">Visual domain attributes.</span><span class="added block">Visual domain attributes.</span></td>
+         <td class="desc">Visual domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="casechanged" title="was: att.altsym">att.altSym</li>
                <li class="unchanged">att.extender</li>
@@ -23256,7 +23272,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.fermata.vis</td>
          <td class="module">MEI.visual</td>
-         <td class="desc"><span class="removed block">Visual domain attributes.</span><span class="added block">Visual domain attributes.</span></td>
+         <td class="desc">Visual domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="casechanged" title="was: att.altsym">att.altSym</li>
                <li class="unchanged">att.color</li>
@@ -23276,7 +23292,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.fing.vis</td>
          <td class="module">MEI.visual</td>
-         <td class="desc"><span class="removed block">Visual domain attributes.</span><span class="added block">Visual domain attributes.</span></td>
+         <td class="desc">Visual domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="casechanged" title="was: att.altsym">att.altSym</li>
                <li class="unchanged">att.extender</li>
@@ -23291,7 +23307,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.fingGrp.vis</td>
          <td class="module">MEI.visual</td>
-         <td class="desc"><span class="removed block">Visual domain attributes.</span><span class="added block">Visual domain attributes.</span></td>
+         <td class="desc">Visual domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="casechanged" title="was: att.altsym">att.altSym</li>
                <li class="unchanged">att.extender</li>
@@ -23308,7 +23324,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.fTrem.vis</td>
          <td class="module">MEI.visual</td>
-         <td class="desc"><span class="removed block">Visual domain attributes.</span><span class="added block">Visual domain attributes.</span></td>
+         <td class="desc">Visual domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="removed" title="removed class">att.slashcount</li>
             </ul>
@@ -23323,7 +23339,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.gliss.vis</td>
          <td class="module">MEI.visual</td>
-         <td class="desc"><span class="removed block">Visual domain attributes.</span><span class="added block">Visual domain attributes.</span></td>
+         <td class="desc">Visual domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="casechanged" title="was: att.altsym">att.altSym</li>
                <li class="unchanged">att.color</li>
@@ -23342,7 +23358,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.grpSym.vis</td>
          <td class="module">MEI.visual</td>
-         <td class="desc"><span class="removed block">Visual domain attributes.</span><span class="added block">Visual domain attributes.</span></td>
+         <td class="desc">Visual domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="casechanged" title="was: att.altsym">att.altSym</li>
                <li class="casechanged" title="was: att.extsym">att.extSym</li>
@@ -23357,21 +23373,32 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.hairpin.vis</td>
          <td class="module">MEI.visual</td>
-         <td class="desc">Visual domain attributes. The startho and startvo attributes record the horizontal
-            and
-            vertical offsets of the left end, endho and endvo record the horizontal and vertical
-            offsets
-            of the right end, and the opening attribute records the width of the opening in staff
-            inter-line units. The x and y attributes give the absolute coordinates of the left
-            end point,
-            and x2 and y2 the right end point, of an imaginary line that defines the length of
-            the hairpin
-            and horizontally bifurcates it. The so-called "pitch" of hairpin may be controlled
-            by use of
-            the startho, endho, startvo, and endvo attributes, while the placement of the entire
-            rendered
-            mark may be controlled by use of the ho and vo attributes.
-         </td>
+         <td class="desc"><span class="removed block">Visual domain attributes. The startho and startvo attributes record the horizontal
+               and
+               vertical offsets of the left end, endho and endvo record the horizontal and vertical
+               offsets
+               of the right end, and the opening attribute records the width of the opening in staff
+               inter-line units. The x and y attributes give the absolute coordinates of the left
+               end
+               point, and x2 and y2 the right end point, of an imaginary line that defines the length
+               of
+               the hairpin and horizontally bifurcates it. The so-called "pitch" of hairpin may be
+               controlled by use of the startho, endho, startvo, and endvo attributes, while the
+               placement
+               of the entire rendered mark may be controlled by use of the ho and vo attributes.</span><span class="added block">Visual domain attributes. The startho and startvo attributes record the horizontal
+               and
+               vertical offsets of the left end, endho and endvo record the horizontal and vertical
+               offsets
+               of the right end, and the opening attribute records the width of the opening in staff
+               inter-line units. The x and y attributes give the absolute coordinates of the left
+               end point,
+               and x2 and y2 the right end point, of an imaginary line that defines the length of
+               the hairpin
+               and horizontally bifurcates it. The so-called "pitch" of hairpin may be controlled
+               by use of
+               the startho, endho, startvo, and endvo attributes, while the placement of the entire
+               rendered
+               mark may be controlled by use of the ho and vo attributes.</span></td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.color</li>
                <li class="casechanged" title="was: att.linerend.base">att.lineRend.base</li>
@@ -23391,7 +23418,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.halfmRpt.vis</td>
          <td class="module">MEI.visual</td>
-         <td class="desc"><span class="removed block">Visual domain attributes.</span><span class="added block">Visual domain attributes.</span></td>
+         <td class="desc">Visual domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="casechanged" title="was: att.altsym">att.altSym</li>
                <li class="unchanged">att.color</li>
@@ -23407,7 +23434,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.harm.vis</td>
          <td class="module">MEI.visual</td>
-         <td class="desc"><span class="removed block">Visual domain attributes.</span><span class="added block">Visual domain attributes.</span></td>
+         <td class="desc">Visual domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.extender</li>
                <li class="unchanged">att.placement</li>
@@ -23425,7 +23452,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.harpPedal.vis</td>
          <td class="module">MEI.visual</td>
-         <td class="desc"><span class="removed block">Visual domain attributes.</span><span class="added block">Visual domain attributes.</span></td>
+         <td class="desc">Visual domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="casechanged" title="was: att.altsym">att.altSym</li>
                <li class="unchanged">att.color</li>
@@ -23442,7 +23469,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.keyAccid.vis</td>
          <td class="module">MEI.visual</td>
-         <td class="desc"><span class="removed block">Visual domain attributes.</span><span class="added block">Visual domain attributes.</span></td>
+         <td class="desc">Visual domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="casechanged" title="was: att.altsym">att.altSym</li>
                <li class="casechanged" title="was: att.enclosingchars">att.enclosingChars</li>
@@ -23458,9 +23485,9 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.keySigDefault.vis</td>
          <td class="module">MEI.visual</td>
-         <td class="desc">Used by staffDef and scoreDef to provide default values for attributes in the visual
-            domain related to key signatures.
-         </td>
+         <td class="desc"><span class="removed block">Used by staffDef and scoreDef to provide default values for attributes in the visual
+               domain related to key signatures.</span><span class="added block">Used by staffDef and scoreDef to provide default values for attributes in the visual
+               domain related to key signatures.</span></td>
          <td class="classes">Classes:<br><ul></ul>
          </td>
          <td class="content">Attributes:<br><ul>
@@ -23474,7 +23501,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.layerDef.vis</td>
          <td class="module">MEI.visual</td>
-         <td class="desc"><span class="removed block">Visual domain attributes.</span><span class="added block">Visual domain attributes.</span></td>
+         <td class="desc">Visual domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.beaming.vis</li>
                <li class="casechanged" title="was: att.textstyle">att.textStyle</li>
@@ -23488,7 +23515,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.ligature.vis</td>
          <td class="module">MEI.visual</td>
-         <td class="desc"><span class="removed block">Visual domain attributes.</span><span class="added block">Visual domain attributes.</span></td>
+         <td class="desc">Visual domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="added" title="added class">att.color</li>
             </ul>
@@ -23499,7 +23526,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.line.vis</td>
          <td class="module">MEI.visual</td>
-         <td class="desc"><span class="removed block">Attributes for describing the visual appearance of a line.</span><span class="added block">Attributes for describing the visual appearance of a line.</span></td>
+         <td class="desc">Attributes for describing the visual appearance of a line.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.color</li>
                <li class="unchanged">att.placement</li>
@@ -23524,7 +23551,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.measure.vis</td>
          <td class="module">MEI.visual</td>
-         <td class="desc"><span class="removed block">Visual domain attributes.</span><span class="added block">Visual domain attributes.</span></td>
+         <td class="desc">Visual domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="added" title="added class">att.barring</li>
                <li class="unchanged">att.width</li>
@@ -23538,9 +23565,9 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.mensur.vis</td>
          <td class="module">MEI.visual</td>
-         <td class="desc">Visual domain attributes. These attributes describe the physical appearance of the
-            mensuration sign/time signature of mensural notation.
-         </td>
+         <td class="desc"><span class="removed block">Visual domain attributes. These attributes describe the physical appearance of the
+               mensuration sign/time signature of mensural notation.</span><span class="added block">Visual domain attributes. These attributes describe the physical appearance of the
+               mensuration sign/time signature of mensural notation.</span></td>
          <td class="classes">Classes:<br><ul>
                <li class="casechanged" title="was: att.altsym">att.altSym</li>
                <li class="unchanged">att.color</li>
@@ -23559,7 +23586,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.meterSig.vis</td>
          <td class="module">MEI.visual</td>
-         <td class="desc"><span class="removed block">Visual domain attributes.</span><span class="added block">Visual domain attributes.</span></td>
+         <td class="desc">Visual domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="casechanged" title="was: att.altsym">att.altSym</li>
                <li class="added" title="added class">att.color</li>
@@ -23575,9 +23602,9 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.meterSigDefault.vis</td>
          <td class="module">MEI.visual</td>
-         <td class="desc">Used by staffDef and scoreDef to provide default values for attributes in the visual
-            domain related to meter signature.
-         </td>
+         <td class="desc"><span class="removed block">Used by staffDef and scoreDef to provide default values for attributes in the visual
+               domain related to meter signature.</span><span class="added block">Used by staffDef and scoreDef to provide default values for attributes in the visual
+               domain related to meter signature.</span></td>
          <td class="classes">Classes:<br><ul></ul>
          </td>
          <td class="content">Attributes:<br><ul>
@@ -23591,7 +23618,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.mordent.vis</td>
          <td class="module">MEI.visual</td>
-         <td class="desc"><span class="removed block">Visual domain attributes.</span><span class="added block">Visual domain attributes.</span></td>
+         <td class="desc">Visual domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="casechanged" title="was: att.altsym">att.altSym</li>
                <li class="unchanged">att.color</li>
@@ -23607,7 +23634,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.mRest.vis</td>
          <td class="module">MEI.visual</td>
-         <td class="desc"><span class="removed block">Visual domain attributes.</span><span class="added block">Visual domain attributes.</span></td>
+         <td class="desc">Visual domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="casechanged" title="was: att.altsym">att.altSym</li>
                <li class="unchanged">att.cutout</li>
@@ -23627,7 +23654,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.mRpt.vis</td>
          <td class="module">MEI.visual</td>
-         <td class="desc"><span class="removed block">Visual domain attributes.</span><span class="added block">Visual domain attributes.</span></td>
+         <td class="desc">Visual domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="casechanged" title="was: att.altsym">att.altSym</li>
                <li class="unchanged">att.color</li>
@@ -23642,7 +23669,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.mRpt2.vis</td>
          <td class="module">MEI.visual</td>
-         <td class="desc"><span class="removed block">Visual domain attributes.</span><span class="added block">Visual domain attributes.</span></td>
+         <td class="desc">Visual domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="casechanged" title="was: att.altsym">att.altSym</li>
                <li class="unchanged">att.color</li>
@@ -23657,7 +23684,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.mSpace.vis</td>
          <td class="module">MEI.visual</td>
-         <td class="desc"><span class="removed block">Visual domain attributes.</span><span class="added block">Visual domain attributes.</span></td>
+         <td class="desc">Visual domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="casechanged" title="was: att.altsym">att.altSym</li>
                <li class="unchanged">att.cutout</li>
@@ -23671,7 +23698,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.multiRest.vis</td>
          <td class="module">MEI.visual</td>
-         <td class="desc"><span class="removed block">Visual domain attributes.</span><span class="added block">Visual domain attributes.</span></td>
+         <td class="desc">Visual domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="casechanged" title="was: att.altsym">att.altSym</li>
                <li class="casechanged" title="was: att.extsym">att.extSym</li>
@@ -23688,7 +23715,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.multiRpt.vis</td>
          <td class="module">MEI.visual</td>
-         <td class="desc"><span class="removed block">Visual domain attributes.</span><span class="added block">Visual domain attributes.</span></td>
+         <td class="desc">Visual domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="casechanged" title="was: att.altsym">att.altSym</li>
                <li class="unchanged">att.expandable</li>
@@ -23702,7 +23729,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.note.vis</td>
          <td class="module">MEI.visual</td>
-         <td class="desc"><span class="removed block">Visual domain attributes.</span><span class="added block">Visual domain attributes.</span></td>
+         <td class="desc">Visual domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="casechanged" title="was: att.altsym">att.altSym</li>
                <li class="unchanged">att.color</li>
@@ -23727,7 +23754,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.octave.vis</td>
          <td class="module">MEI.visual</td>
-         <td class="desc"><span class="removed block">Visual domain attributes.</span><span class="added block">Visual domain attributes.</span></td>
+         <td class="desc">Visual domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.color</li>
                <li class="unchanged">att.extender</li>
@@ -23743,7 +23770,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.ornam.vis</td>
          <td class="module">MEI.visual</td>
-         <td class="desc"><span class="removed block">Visual domain attributes.</span><span class="added block">Visual domain attributes.</span></td>
+         <td class="desc">Visual domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="added" title="added class">att.altSym</li>
                <li class="unchanged">att.color</li>
@@ -23760,14 +23787,17 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.pedal.vis</td>
          <td class="module">MEI.visual</td>
-         <td class="desc">Visual domain attributes. The place attribute captures the placement of the pedal
-            marking
-            with respect to the staff with which it is associated. Modern publishing standards
-            require the
-            place to be 'below'; however, for transcriptions of manuscript works, this attribute
-            class
-            allows the full range of values.
-         </td>
+         <td class="desc"><span class="removed block">Visual domain attributes. The place attribute captures the placement of the pedal
+               marking with respect to the staff with which it is associated. Modern publishing standards
+               require the place to be 'below'; however, for transcriptions of manuscript works,
+               this
+               attribute class allows the full range of values.</span><span class="added block">Visual domain attributes. The place attribute captures the placement of the pedal
+               marking
+               with respect to the staff with which it is associated. Modern publishing standards
+               require the
+               place to be 'below'; however, for transcriptions of manuscript works, this attribute
+               class
+               allows the full range of values.</span></td>
          <td class="classes">Classes:<br><ul>
                <li class="casechanged" title="was: att.altsym">att.altSym</li>
                <li class="unchanged">att.color</li>
@@ -23787,7 +23817,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.phrase.vis</td>
          <td class="module">MEI.visual</td>
-         <td class="desc"><span class="removed block">Visual domain attributes.</span><span class="added block">Visual domain attributes.</span></td>
+         <td class="desc">Visual domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.color</li>
                <li class="casechanged" title="was: att.visualoffset">att.visualOffset</li>
@@ -23803,7 +23833,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.proport.vis</td>
          <td class="module">MEI.visual</td>
-         <td class="desc"><span class="removed block">Visual domain attributes.</span><span class="added block">Visual domain attributes.</span></td>
+         <td class="desc">Visual domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="casechanged" title="was: att.altsym">att.altSym</li>
                <li class="added" title="added class">att.color</li>
@@ -23818,7 +23848,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.reh.vis</td>
          <td class="module">MEI.visual</td>
-         <td class="desc"><span class="removed block">Visual domain attributes.</span><span class="added block">Visual domain attributes.</span></td>
+         <td class="desc">Visual domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.color</li>
                <li class="unchanged">att.placement</li>
@@ -23833,7 +23863,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.rest.vis</td>
          <td class="module">MEI.visual</td>
-         <td class="desc"><span class="removed block">Visual domain attributes.</span><span class="added block">Visual domain attributes.</span></td>
+         <td class="desc">Visual domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="casechanged" title="was: att.altsym">att.altSym</li>
                <li class="unchanged">att.color</li>
@@ -23854,7 +23884,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.sb.vis</td>
          <td class="module">MEI.visual</td>
-         <td class="desc"><span class="removed block">Visual domain attributes.</span><span class="added block">Visual domain attributes.</span></td>
+         <td class="desc">Visual domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="casechanged" title="was: att.altsym">att.altSym</li>
                <li class="casechanged" title="was: att.extsym">att.extSym</li>
@@ -23869,7 +23899,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.scoreDef.vis</td>
          <td class="module">MEI.visual</td>
-         <td class="desc"><span class="removed block">Visual domain attributes for scoreDef in the CMN repertoire.</span><span class="added block">Visual domain attributes for scoreDef in the CMN repertoire.</span></td>
+         <td class="desc">Visual domain attributes for scoreDef in the CMN repertoire.</td>
          <td class="classes">Classes:<br><ul>
                <li class="added" title="added class">att.barring</li>
                <li class="unchanged">att.cleffing.vis</li>
@@ -23901,9 +23931,9 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.slur.vis</td>
          <td class="module">MEI.visual</td>
-         <td class="desc">Visual domain attributes for slur. The vo attribute is the vertical offset (from its
-            normal position) of the entire rendered slur/phrase mark.
-         </td>
+         <td class="desc"><span class="removed block">Visual domain attributes for slur. The vo attribute is the vertical offset (from its
+               normal position) of the entire rendered slur/phrase mark.</span><span class="added block">Visual domain attributes for slur. The vo attribute is the vertical offset (from its
+               normal position) of the entire rendered slur/phrase mark.</span></td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.color</li>
                <li class="casechanged" title="was: att.visualoffset">att.visualOffset</li>
@@ -23920,7 +23950,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.space.vis</td>
          <td class="module">MEI.visual</td>
-         <td class="desc"><span class="removed block">Visual domain attributes.</span><span class="added block">Visual domain attributes.</span></td>
+         <td class="desc">Visual domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="added" title="added class">att.cutout</li>
             </ul>
@@ -23933,7 +23963,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.staffDef.vis</td>
          <td class="module">MEI.visual</td>
-         <td class="desc"><span class="removed block">Visual domain attributes for staffDef.</span><span class="added block">Visual domain attributes for staffDef.</span></td>
+         <td class="desc">Visual domain attributes for staffDef.</td>
          <td class="classes">Classes:<br><ul>
                <li class="added" title="added class">att.barring</li>
                <li class="unchanged">att.cleffing.vis</li>
@@ -23966,7 +23996,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.staffGrp.vis</td>
          <td class="module">MEI.visual</td>
-         <td class="desc"><span class="removed block">Visual domain attributes.</span><span class="added block">Visual domain attributes.</span></td>
+         <td class="desc">Visual domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="added" title="added class">att.barring</li>
                <li class="casechanged" title="was: att.staffgroupingsym">att.staffGroupingSym</li>
@@ -23983,7 +24013,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.syl.vis</td>
          <td class="module">MEI.visual</td>
-         <td class="desc"><span class="removed block">Visual domain attributes.</span><span class="added block">Visual domain attributes.</span></td>
+         <td class="desc">Visual domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="added" title="added class">att.placement</li>
                <li class="unchanged">att.typography</li>
@@ -23998,7 +24028,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.tempo.vis</td>
          <td class="module">MEI.visual</td>
-         <td class="desc"><span class="removed block">Visual domain attributes.</span><span class="added block">Visual domain attributes.</span></td>
+         <td class="desc">Visual domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.placement</li>
                <li class="added" title="added class">att.verticalGroup</li>
@@ -24014,16 +24044,23 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.tie.vis</td>
          <td class="module">MEI.visual</td>
-         <td class="desc">Visual domain attributes. The vo attribute is the vertical offset (from its normal
-            position) of the entire rendered tie. The startho, startvo, endho, and endvo attributes
-            describe the horizontal and vertical offsets of the start and end points of the tie
-            in terms
-            of staff interline distance; that is, in units of 1/2 the distance between adjacent
-            staff
-            lines. Startto and endto describe the start and end points in terms of time; that
-            is,
-            beats.
-         </td>
+         <td class="desc"><span class="removed block">Visual domain attributes. The vo attribute is the vertical offset (from its normal
+               position) of the entire rendered tie. The startho, startvo, endho, and endvo attributes
+               describe the horizontal and vertical offsets of the start and end points of the tie
+               in terms
+               of staff interline distance; that is, in units of 1/2 the distance between adjacent
+               staff
+               lines. Startto and endto describe the start and end points in terms of time; that
+               is,
+               beats.</span><span class="added block">Visual domain attributes. The vo attribute is the vertical offset (from its normal
+               position) of the entire rendered tie. The startho, startvo, endho, and endvo attributes
+               describe the horizontal and vertical offsets of the start and end points of the tie
+               in terms
+               of staff interline distance; that is, in units of 1/2 the distance between adjacent
+               staff
+               lines. Startto and endto describe the start and end points in terms of time; that
+               is,
+               beats.</span></td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.color</li>
                <li class="casechanged" title="was: att.visualoffset">att.visualOffset</li>
@@ -24040,7 +24077,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.trill.vis</td>
          <td class="module">MEI.visual</td>
-         <td class="desc"><span class="removed block">Visual domain attributes.</span><span class="added block">Visual domain attributes.</span></td>
+         <td class="desc">Visual domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="casechanged" title="was: att.altsym">att.altSym</li>
                <li class="unchanged">att.color</li>
@@ -24060,7 +24097,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.tuplet.vis</td>
          <td class="module">MEI.visual</td>
-         <td class="desc"><span class="removed block">Visual domain attributes.</span><span class="added block">Visual domain attributes.</span></td>
+         <td class="desc">Visual domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.color</li>
                <li class="casechanged" title="was: att.numberplacement">att.numberPlacement</li>
@@ -24077,7 +24114,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.turn.vis</td>
          <td class="module">MEI.visual</td>
-         <td class="desc"><span class="removed block">Visual domain attributes.</span><span class="added block">Visual domain attributes.</span></td>
+         <td class="desc">Visual domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="casechanged" title="was: att.altsym">att.altSym</li>
                <li class="unchanged">att.color</li>
@@ -24094,7 +24131,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="attClass ident">att.verse.vis</td>
          <td class="module">MEI.visual</td>
-         <td class="desc"><span class="removed block">Visual domain attributes.</span><span class="added block">Visual domain attributes.</span></td>
+         <td class="desc">Visual domain attributes.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged">att.color</li>
                <li class="added" title="added class">att.placement</li>
@@ -25118,7 +25155,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="modelClass ident">model.eventLike.cmn</td>
          <td class="module">MEI.cmn</td>
-         <td class="desc"><span class="removed block">Groups events that appear in CMN.</span><span class="added block">Groups events that appear in CMN.</span></td>
+         <td class="desc">Groups events that appear in CMN.</td>
          <td class="classes">Classes:<br><ul>
                <li class="added model" title="added model">model.layerPart.cmn</li>
                <li class="removed model" title="removed model">model.eventLike</li>
@@ -25128,7 +25165,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="modelClass ident">model.eventLike.measureFilling</td>
          <td class="module">MEI.cmn</td>
-         <td class="desc">Groups events that completely fill a CMN measure.</td>
+         <td class="desc"><span class="removed block">Groups events that appear in CMN and that completely fill a measure.</span><span class="added block">Groups events that completely fill a CMN measure.</span></td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged model">model.layerPart.cmn</li>
                <li class="removed model" title="removed model">model.rdgPart.critapp</li>
@@ -25138,7 +25175,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="modelClass ident">model.ornamentLike.cmn</td>
          <td class="module">MEI.cmnOrnaments</td>
-         <td class="desc"><span class="removed block">Groups CMN ornament elements.</span><span class="added block">Groups CMN ornament elements.</span></td>
+         <td class="desc">Groups CMN ornament elements.</td>
          <td class="classes">Classes:<br><ul>
                <li class="casechanged model" title="was: model.controleventLike.cmn">model.controlEventLike.cmn</li>
             </ul>
@@ -25147,7 +25184,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="modelClass ident">model.rdgPart.text</td>
          <td class="module">MEI.critapp</td>
-         <td class="desc"><span class="removed block">Groups elements that may appear as part of a textual variant.</span><span class="added block">Groups elements that may appear as part of a textual variant.</span></td>
+         <td class="desc">Groups elements that may appear as part of a textual variant.</td>
          <td class="classes">Classes:<br><ul>
                <li class="added model" title="added model">model.rdgPart</li>
             </ul>
@@ -25156,10 +25193,10 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="modelClass ident">model.figureLike</td>
          <td class="module">MEI.figtable</td>
-         <td class="desc">Groups elements representing or containing graphic information such as an illustration
-            or
-            figure.
-         </td>
+         <td class="desc"><span class="removed block">Groups elements representing or containing graphic information such as an illustration
+               or figure.</span><span class="added block">Groups elements representing or containing graphic information such as an illustration
+               or
+               figure.</span></td>
          <td class="classes">Classes:<br><ul>
                <li class="casechanged model" title="was: model.textphraseLike.limited">model.textPhraseLike.limited</li>
             </ul>
@@ -25168,7 +25205,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="modelClass ident">model.tableLike</td>
          <td class="module">MEI.figtable</td>
-         <td class="desc"><span class="removed block">Groups table-like elements.</span><span class="added block">Groups table-like elements.</span></td>
+         <td class="desc">Groups table-like elements.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged model">model.paracontentPart</li>
                <li class="casechanged model" title="was: model.textcomponentLike">model.textComponentLike</li>
@@ -25178,10 +25215,10 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="modelClass ident">model.fingeringLike</td>
          <td class="module">MEI.fingering</td>
-         <td class="desc">Groups elements that capture performance instructions regarding the use of the fingers
-            of
-            the hand (or a subset of them).
-         </td>
+         <td class="desc"><span class="removed block">Groups elements that capture performance instructions regarding the use of the fingers
+               of the hand (or a subset of them).</span><span class="added block">Groups elements that capture performance instructions regarding the use of the fingers
+               of
+               the hand (or a subset of them).</span></td>
          <td class="classes">Classes:<br><ul>
                <li class="casechanged model" title="was: model.controleventLike">model.controlEventLike</li>
             </ul>
@@ -25190,7 +25227,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="modelClass ident">model.harmLike</td>
          <td class="module">MEI.harmony</td>
-         <td class="desc">Groups elements that record indications of harmony.</td>
+         <td class="desc"><span class="removed block">Groups elements that record harmony.</span><span class="added block">Groups elements that record indications of harmony.</span></td>
          <td class="classes">Classes:<br><ul>
                <li class="casechanged model" title="was: model.controleventLike.harmony">model.controlEventLike.harmony</li>
             </ul>
@@ -25199,7 +25236,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="modelClass ident">model.verseLike</td>
          <td class="module">MEI.lyrics</td>
-         <td class="desc"><span class="removed block">Groups elements that contain a lyric verse.</span><span class="added block">Groups elements that contain a lyric verse.</span></td>
+         <td class="desc">Groups elements that contain a lyric verse.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged model">model.syllablePart</li>
                <li class="added model" title="added model">model.rdgPart.music</li>
@@ -25211,7 +25248,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="modelClass ident">model.eventLike.mensural</td>
          <td class="module">MEI.mensural</td>
-         <td class="desc"><span class="removed block">Groups event elements that occur in the mensural repertoire.</span><span class="added block">Groups event elements that occur in the mensural repertoire.</span></td>
+         <td class="desc">Groups event elements that occur in the mensural repertoire.</td>
          <td class="classes">Classes:<br><ul>
                <li class="added model" title="added model">model.layerPart.mensural</li>
                <li class="removed model" title="removed model">model.eventLike</li>
@@ -25221,7 +25258,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="modelClass ident">model.midiLike</td>
          <td class="module">MEI.midi</td>
-         <td class="desc"><span class="removed block">Groups elements which group MIDI-like elements.</span><span class="added block">Groups elements which group MIDI-like elements.</span></td>
+         <td class="desc">Groups elements which group MIDI-like elements.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged model">model.layerPart.mensuralAndNeumes</li>
                <li class="unchanged model">model.measurePart</li>
@@ -25233,7 +25270,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="modelClass ident">model.addressPart</td>
          <td class="module">MEI.namesdates</td>
-         <td class="desc"><span class="removed block">Groups elements used as part of a physical address.</span><span class="added block">Groups elements used as part of a physical address.</span></td>
+         <td class="desc">Groups elements used as part of a physical address.</td>
          <td class="classes">Classes:<br><ul>
                <li class="casechanged model" title="was: model.textphraseLike.limited">model.textPhraseLike.limited</li>
             </ul>
@@ -25242,7 +25279,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="modelClass ident">model.nameLike.label</td>
          <td class="module">MEI.namesdates</td>
-         <td class="desc"><span class="removed block">Groups elements that serve as stylistic labels.</span><span class="added block">Groups elements that serve as stylistic labels.</span></td>
+         <td class="desc">Groups elements that serve as stylistic labels.</td>
          <td class="classes">Classes:<br><ul>
                <li class="casechanged model" title="was: model.textphraseLike.limited">model.textPhraseLike.limited</li>
             </ul>
@@ -25251,7 +25288,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="modelClass ident">model.eventLike.neumes</td>
          <td class="module">MEI.neumes</td>
-         <td class="desc"><span class="removed block">Groups event elements that occur in the neume repertoire.</span><span class="added block">Groups event elements that occur in the neume repertoire.</span></td>
+         <td class="desc">Groups event elements that occur in the neume repertoire.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged model">model.layerPart.neumes</li>
                <li class="unchanged model">model.syllablePart</li>
@@ -25262,7 +25299,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="modelClass ident">model.syllableLike</td>
          <td class="module">MEI.neumes</td>
-         <td class="desc"><span class="removed block">Groups elements that accommodate neumed text.</span><span class="added block">Groups elements that accommodate neumed text.</span></td>
+         <td class="desc">Groups elements that accommodate neumed text.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged model">model.layerPart.neumes</li>
                <li class="removed model" title="removed model">model.rdgPart.critapp</li>
@@ -25272,7 +25309,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="modelClass ident">model.locrefLike</td>
          <td class="module">MEI.ptrref</td>
-         <td class="desc"><span class="removed block">Groups elements used for purposes of location and reference.</span><span class="added block">Groups elements used for purposes of location and reference.</span></td>
+         <td class="desc">Groups elements used for purposes of location and reference.</td>
          <td class="classes">Classes:<br><ul>
                <li class="casechanged model" title="was: model.textphraseLike.limited">model.textPhraseLike.limited</li>
             </ul>
@@ -25281,7 +25318,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="modelClass ident">model.addressLike</td>
          <td class="module">MEI.shared</td>
-         <td class="desc"><span class="removed block">Groups elements used to represent a postal address.</span><span class="added block">Groups elements used to represent a postal address.</span></td>
+         <td class="desc">Groups elements used to represent a postal address.</td>
          <td class="classes">Classes:<br><ul>
                <li class="casechanged model" title="was: model.textphraseLike.limited">model.textPhraseLike.limited</li>
                <li class="unchanged model">model.pubStmtPart</li>
@@ -25292,7 +25329,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="modelClass ident">model.annotLike</td>
          <td class="module">MEI.shared</td>
-         <td class="desc"><span class="removed block">Groups annotation-like elements.</span><span class="added block">Groups annotation-like elements.</span></td>
+         <td class="desc">Groups annotation-like elements.</td>
          <td class="classes">Classes:<br><ul>
                <li class="casechanged model" title="was: model.textphraseLike.limited">model.textPhraseLike.limited</li>
             </ul>
@@ -25301,7 +25338,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="modelClass ident">model.biblLike</td>
          <td class="module">MEI.shared</td>
-         <td class="desc"><span class="removed block">Groups elements containing a bibliographic description.</span><span class="added block">Groups elements containing a bibliographic description.</span></td>
+         <td class="desc">Groups elements containing a bibliographic description.</td>
          <td class="classes">Classes:<br><ul>
                <li class="casechanged model" title="was: model.textphraseLike.limited">model.textPhraseLike.limited</li>
             </ul>
@@ -25310,7 +25347,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="modelClass ident">model.dateLike</td>
          <td class="module">MEI.shared</td>
-         <td class="desc"><span class="removed block">Groups elements containing date expressions.</span><span class="added block">Groups elements containing date expressions.</span></td>
+         <td class="desc">Groups elements containing date expressions.</td>
          <td class="classes">Classes:<br><ul>
                <li class="casechanged model" title="was: model.textphraseLike.limited">model.textPhraseLike.limited</li>
                <li class="unchanged model">model.pubStmtPart</li>
@@ -25322,10 +25359,11 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="modelClass ident">model.dimLike</td>
          <td class="module">MEI.shared</td>
-         <td class="desc">Groups elements which describe a measurement forming part of the physical dimensions
-            of an
-            object.
-         </td>
+         <td class="desc"><span class="removed block">Groups elements which describe a measurement forming part of the physical dimensions
+               of
+               an object.</span><span class="added block">Groups elements which describe a measurement forming part of the physical dimensions
+               of an
+               object.</span></td>
          <td class="classes">Classes:<br><ul>
                <li class="added model" title="added model">model.textPhraseLike.limited</li>
             </ul>
@@ -25334,7 +25372,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="modelClass ident">model.editionLike</td>
          <td class="module">MEI.shared</td>
-         <td class="desc"><span class="removed block">Groups elements containing bibliographic edition information.</span><span class="added block">Groups elements containing bibliographic edition information.</span></td>
+         <td class="desc">Groups elements containing bibliographic edition information.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged model">model.biblPart</li>
                <li class="added model" title="added model">model.titlePagePart</li>
@@ -25345,7 +25383,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="modelClass ident">model.editorialLike</td>
          <td class="module">MEI.shared</td>
-         <td class="desc"><span class="removed block">Groups editorial intervention elements.</span><span class="added block">Groups editorial intervention elements.</span></td>
+         <td class="desc">Groups editorial intervention elements.</td>
          <td class="classes">Classes:<br><ul>
                <li class="casechanged model" title="was: model.textphraseLike.limited">model.textPhraseLike.limited</li>
                <li class="unchanged model">model.choicePart</li>
@@ -25355,7 +25393,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="modelClass ident">model.eventLike</td>
          <td class="module">MEI.shared</td>
-         <td class="desc"><span class="removed block">Groups event elements that occur in all notational repertoires.</span><span class="added block">Groups event elements that occur in all notational repertoires.</span></td>
+         <td class="desc">Groups event elements that occur in all notational repertoires.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged model">model.layerPart</li>
                <li class="unchanged model">model.syllablePart</li>
@@ -25366,7 +25404,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="modelClass ident">model.identifierLike</td>
          <td class="module">MEI.shared</td>
-         <td class="desc"><span class="removed block">Groups identifier-like elements.</span><span class="added block">Groups identifier-like elements.</span></td>
+         <td class="desc">Groups identifier-like elements.</td>
          <td class="classes">Classes:<br><ul>
                <li class="casechanged model" title="was: model.textphraseLike.limited">model.textPhraseLike.limited</li>
                <li class="unchanged model">model.pubStmtPart</li>
@@ -25377,7 +25415,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="modelClass ident">model.incipLike</td>
          <td class="module">MEI.shared</td>
-         <td class="desc"><span class="removed block">Groups elements used to represent a textual or musical incipit.</span><span class="added block">Groups elements used to represent a textual or musical incipit.</span></td>
+         <td class="desc">Groups elements used to represent a textual or musical incipit.</td>
          <td class="classes">Classes:<br><ul>
                <li class="added model" title="added model">model.physDescPart</li>
                <li class="unchanged model">model.workIdent</li>
@@ -25387,7 +25425,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="modelClass ident">model.layerLike</td>
          <td class="module">MEI.shared</td>
-         <td class="desc"><span class="removed block">Groups elements that function as notational layers within a staff.</span><span class="added block">Groups elements that function as notational layers within a staff.</span></td>
+         <td class="desc">Groups elements that function as notational layers within a staff.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged model">model.staffPart</li>
                <li class="added model" title="added model">model.rdgPart.music</li>
@@ -25399,7 +25437,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="modelClass ident">model.lbLike</td>
          <td class="module">MEI.shared</td>
-         <td class="desc">Groups elements that function like line beginnings.</td>
+         <td class="desc"><span class="removed block">Groups elements that function like line breaks.</span><span class="added block">Groups elements that function like line beginnings.</span></td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged model">model.milestoneLike.text</li>
                <li class="casechanged model" title="was: model.textphraseLike.limited">model.textPhraseLike.limited</li>
@@ -25409,7 +25447,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="modelClass ident">model.measurementLike</td>
          <td class="module">MEI.shared</td>
-         <td class="desc"><span class="removed block">Groups elements that represent a measurement.</span><span class="added block">Groups elements that represent a measurement.</span></td>
+         <td class="desc">Groups elements that represent a measurement.</td>
          <td class="classes">Classes:<br><ul>
                <li class="casechanged model" title="was: model.textphraseLike.limited">model.textPhraseLike.limited</li>
             </ul>
@@ -25418,7 +25456,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="modelClass ident">model.nameLike</td>
          <td class="module">MEI.shared</td>
-         <td class="desc"><span class="removed block">Groups elements that contain names.</span><span class="added block">Groups elements that contain names.</span></td>
+         <td class="desc">Groups elements that contain names.</td>
          <td class="classes">Classes:<br><ul>
                <li class="casechanged model" title="was: model.textphraseLike.limited">model.textPhraseLike.limited</li>
             </ul>
@@ -25427,7 +25465,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="modelClass ident">model.noteModifierLike</td>
          <td class="module">MEI.shared</td>
-         <td class="desc"><span class="removed block">Groups elements that modify note-like features.</span><span class="added block">Groups elements that modify note-like features.</span></td>
+         <td class="desc">Groups elements that modify note-like features.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged model">model.layerPart.mensural</li>
                <li class="removed model" title="removed model">model.syllablePart</li>
@@ -25438,7 +25476,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="modelClass ident">model.pbLike</td>
          <td class="module">MEI.shared</td>
-         <td class="desc">Groups page beginning-like elements.</td>
+         <td class="desc"><span class="removed block">Groups pagebreak-like elements.</span><span class="added block">Groups page beginning-like elements.</span></td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged model">model.milestoneLike.music</li>
                <li class="unchanged model">model.milestoneLike.text</li>
@@ -25449,7 +25487,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="modelClass ident">model.pLike</td>
          <td class="module">MEI.shared</td>
-         <td class="desc"><span class="removed block">Groups paragraph-like elements.</span><span class="added block">Groups paragraph-like elements.</span></td>
+         <td class="desc">Groups paragraph-like elements.</td>
          <td class="classes">Classes:<br><ul>
                <li class="casechanged model" title="was: model.textcomponentLike">model.textComponentLike</li>
             </ul>
@@ -25458,7 +25496,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="modelClass ident">model.relationLike</td>
          <td class="module">MEI.shared</td>
-         <td class="desc">Collects elements that express a relationship.</td>
+         <td class="desc"><span class="removed block">Collects relationLike elements.</span><span class="added block">Collects elements that express a relationship.</span></td>
          <td class="classes">Classes:<br><ul>
                <li class="added model" title="added model">model.textPhraseLike.limited</li>
             </ul>
@@ -25467,7 +25505,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="modelClass ident">model.rendLike</td>
          <td class="module">MEI.shared</td>
-         <td class="desc"><span class="removed block">Groups elements that mark typographical features.</span><span class="added block">Groups elements that mark typographical features.</span></td>
+         <td class="desc">Groups elements that mark typographical features.</td>
          <td class="classes">Classes:<br><ul>
                <li class="casechanged model" title="was: model.textphraseLike.limited">model.textPhraseLike.limited</li>
             </ul>
@@ -25476,7 +25514,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="modelClass ident">model.scoreDefLike</td>
          <td class="module">MEI.shared</td>
-         <td class="desc"><span class="removed block">Groups elements that provide score meta-information.</span><span class="added block">Groups elements that provide score meta-information.</span></td>
+         <td class="desc">Groups elements that provide score meta-information.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged model">model.sectionPart</li>
                <li class="removed model" title="removed model">model.scorePart</li>
@@ -25488,7 +25526,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="modelClass ident">model.staffDefLike</td>
          <td class="module">MEI.shared</td>
-         <td class="desc"><span class="removed block">Groups elements that permit declaration of staff properties.</span><span class="added block">Groups elements that permit declaration of staff properties.</span></td>
+         <td class="desc">Groups elements that permit declaration of staff properties.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged model">model.sectionPart</li>
                <li class="removed model" title="removed model">model.scorePart</li>
@@ -25500,7 +25538,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="modelClass ident">model.sylLike</td>
          <td class="module">MEI.shared</td>
-         <td class="desc"><span class="removed block">Groups elements that contain a lyric syllable.</span><span class="added block">Groups elements that contain a lyric syllable.</span></td>
+         <td class="desc">Groups elements that contain a lyric syllable.</td>
          <td class="classes">Classes:<br><ul>
                <li class="added model" title="added model">model.editTransPart</li>
                <li class="added model" title="added model">model.rdgPart</li>
@@ -25512,7 +25550,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="modelClass ident">model.titleLike</td>
          <td class="module">MEI.shared</td>
-         <td class="desc">Groups elements that denote the name of a bibliographic item.</td>
+         <td class="desc"><span class="removed block">Groups elements that denote names of a bibliographic item.</span><span class="added block">Groups elements that denote the name of a bibliographic item.</span></td>
          <td class="classes">Classes:<br><ul>
                <li class="casechanged model" title="was: model.textphraseLike.limited">model.textPhraseLike.limited</li>
                <li class="unchanged model">model.titlePagePart</li>
@@ -25522,7 +25560,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="modelClass ident">model.lgLike</td>
          <td class="module">MEI.text</td>
-         <td class="desc"><span class="removed block">Groups elements that have a line-grouping function.</span><span class="added block">Groups elements that have a line-grouping function.</span></td>
+         <td class="desc">Groups elements that have a line-grouping function.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged model">model.paracontentPart</li>
                <li class="casechanged model" title="was: model.textcomponentLike">model.textComponentLike</li>
@@ -25532,7 +25570,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="modelClass ident">model.listLike</td>
          <td class="module">MEI.text</td>
-         <td class="desc"><span class="removed block">Groups list-like elements.</span><span class="added block">Groups list-like elements.</span></td>
+         <td class="desc">Groups list-like elements.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged model">model.paracontentPart</li>
                <li class="casechanged model" title="was: model.textcomponentLike">model.textComponentLike</li>
@@ -25542,7 +25580,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="modelClass ident">model.quoteLike</td>
          <td class="module">MEI.text</td>
-         <td class="desc"><span class="removed block">Groups elements used to directly contain quotations.</span><span class="added block">Groups elements used to directly contain quotations.</span></td>
+         <td class="desc">Groups elements used to directly contain quotations.</td>
          <td class="classes">Classes:<br><ul>
                <li class="unchanged model">model.paracontentPart</li>
                <li class="casechanged model" title="was: model.textcomponentLike">model.textComponentLike</li>
@@ -26050,10 +26088,10 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="macroClass ident">macro.availabilityPart</td>
          <td class="module">MEI.header</td>
-         <td class="desc">Groups elements that may appear as part of a description of the availability of and
-            access
-            to a bibliographic item.
-         </td>
+         <td class="desc"><span class="removed block">Groups elements that may appear as part of a description of the availability of and
+               access to a bibliographic item.</span><span class="added block">Groups elements that may appear as part of a description of the availability of and
+               access
+               to a bibliographic item.</span></td>
          <td class="classes">Classes:<br><ul>
                <li class="added macro pe" title="added macro">model.headLike</li>
                <li class="unchanged macro pe">accessRestrict</li>
@@ -26380,12 +26418,14 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="macroSpec datatype ident">data.ARTICULATION</td>
          <td class="module">MEI</td>
-         <td class="desc">The following list of articulations mostly corresponds to symbols from the Western
-            Musical
-            Symbols portion of the Unicode Standard. The dot and stroke values may be used in
-            cases where
-            interpretation is difficult or undesirable.
-         </td>
+         <td class="desc"><span class="removed block">The following list of articulations mostly corresponds to symbols from the Western
+               Musical Symbols portion of the Unicode Standard. The dot and stroke values may be
+               used in
+               cases where interpretation is difficult or undesirable.</span><span class="added block">The following list of articulations mostly corresponds to symbols from the Western
+               Musical
+               Symbols portion of the Unicode Standard. The dot and stroke values may be used in
+               cases where
+               interpretation is difficult or undesirable.</span></td>
          <td class="classes">Referenced Macros:<br><ul></ul>
          </td>
          <td class="classes">Allowed values:<br><ul>
@@ -26430,7 +26470,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="macroSpec datatype ident">data.BEATRPT.REND</td>
          <td class="module">MEI</td>
-         <td class="desc"><span class="removed block">Visual and performance information for a repeated beat symbol.</span><span class="added block">Visual and performance information for a repeated beat symbol.</span></td>
+         <td class="desc">Visual and performance information for a repeated beat symbol.</td>
          <td class="classes">Referenced Macros:<br><ul></ul>
          </td>
          <td class="classes">Allowed values:<br><ul>
@@ -26443,9 +26483,8 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="macroSpec datatype ident">data.COLORNAMES</td>
          <td class="module">MEI</td>
-         <td class="desc">List of SVG-recognized color keyword names described at
-            https://www.w3.org/TR/SVG/types.html#ColorKeywords.
-         </td>
+         <td class="desc"><span class="removed block">List of HTML 4.01 color names.</span><span class="added block">List of SVG-recognized color keyword names described at
+               https://www.w3.org/TR/SVG/types.html#ColorKeywords.</span></td>
          <td class="classes">Referenced Macros:<br><ul></ul>
          </td>
          <td class="classes">Allowed values:<br><ul>
@@ -26602,9 +26641,9 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="macroSpec datatype ident">data.COLOR</td>
          <td class="module">MEI</td>
-         <td class="desc">A value in one of the following forms is expected: 1) hexadecimal RRGGBB, 2) hexadecimal
-            AARRGGBB, 3) CSS RGB, 4) CSS RGBA, 5) HSL, 6) HSLA, or 7) HTML 4.01 color name.
-         </td>
+         <td class="desc"><span class="removed block">A value in one of the following forms is expected: 1) hexadecimal RRGGBB, 2) hexadecimal
+               AARRGGBB, 3) CSS RGB, 4) CSS RGBA, 5) HSL, 6) HSLA, or 7) HTML 4.01 color name.</span><span class="added block">A value in one of the following forms is expected: 1) hexadecimal RRGGBB, 2) hexadecimal
+               AARRGGBB, 3) CSS RGB, 4) CSS RGBA, 5) HSL, 6) HSLA, or 7) HTML 4.01 color name.</span></td>
          <td class="classes">Referenced Macros:<br><ul>
                <li class="added macro datatype" title="added macroSpec">data.COLORNAMES</li>
                <li class="added macro datatype" title="added macroSpec">data.COLORVALUES</li>
@@ -26616,7 +26655,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="macroSpec datatype ident">data.DURATION.gestural</td>
          <td class="module">MEI</td>
-         <td class="desc"><span class="removed block">Performed duration attribute values.</span><span class="added block">Performed duration attribute values.</span></td>
+         <td class="desc">Performed duration attribute values.</td>
          <td class="classes">Referenced Macros:<br><ul>
                <li class="added macro datatype" title="added macroSpec">data.DURATION.cmn</li>
                <li class="added macro datatype" title="added macroSpec">data.DURATION.mensural</li>
@@ -26628,7 +26667,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="macroSpec datatype ident">data.FONTSIZE</td>
          <td class="module">MEI</td>
-         <td class="desc"><span class="removed block">Font size expressions.</span><span class="added block">Font size expressions.</span></td>
+         <td class="desc">Font size expressions.</td>
          <td class="classes">Referenced Macros:<br><ul>
                <li class="added macro datatype" title="added macroSpec">data.FONTSIZENUMERIC</li>
                <li class="added macro datatype" title="added macroSpec">data.FONTSIZETERM</li>
@@ -26641,7 +26680,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="macroSpec datatype ident">data.FONTSIZENUMERIC</td>
          <td class="module">MEI</td>
-         <td class="desc">Font size expressed as numbers; i.e. points or virtual units.</td>
+         <td class="desc"><span class="removed block">Font size expressed as numbers; i.e. points.</span><span class="added block">Font size expressed as numbers; i.e. points or virtual units.</span></td>
          <td class="classes">Referenced Macros:<br><ul></ul>
          </td>
          <td class="classes">Allowed values:<br><ul>
@@ -26653,7 +26692,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="macroSpec datatype ident">data.FONTSIZETERM</td>
          <td class="module">MEI</td>
-         <td class="desc">Font size expressed as relative term.</td>
+         <td class="desc"><span class="removed block">Font size expressed as terms.</span><span class="added block">Font size expressed as relative term.</span></td>
          <td class="classes">Referenced Macros:<br><ul></ul>
          </td>
          <td class="classes">Allowed values:<br><ul>
@@ -26673,7 +26712,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="macroSpec datatype ident">data.HEADSHAPE</td>
          <td class="module">MEI</td>
-         <td class="desc"><span class="removed block">Note head shapes.</span><span class="added block">Note head shapes.</span></td>
+         <td class="desc">Note head shapes.</td>
          <td class="classes">Referenced Macros:<br><ul>
                <li class="added macro datatype" title="added macroSpec">data.HEADSHAPE.list</li>
                <li class="added macro datatype" title="added macroSpec">data.HEXNUM</li>
@@ -26686,11 +26725,14 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="macroSpec datatype ident">data.INTERVAL.MELODIC</td>
          <td class="module">MEI</td>
-         <td class="desc">A token indicating direction of the interval but not its precise value, a diatonic
-            interval (with optional direction and quality), or a decimal value in half steps.
-            Decimal
-            values are permitted to accommodate micro-tuning.
-         </td>
+         <td class="desc"><span class="removed block">A token indicating direction of the interval but not its precise value, an indication
+               of
+               diatonic interval quality and size, or a decimal value in half steps. Decimal values
+               are
+               permitted to accommodate micro-tuning.</span><span class="added block">A token indicating direction of the interval but not its precise value, a diatonic
+               interval (with optional direction and quality), or a decimal value in half steps.
+               Decimal
+               values are permitted to accommodate micro-tuning.</span></td>
          <td class="classes">Referenced Macros:<br><ul></ul>
          </td>
          <td class="classes">Allowed values:<br><ul>
@@ -26706,7 +26748,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="macroSpec datatype ident">data.LINESTARTENDSYMBOL</td>
          <td class="module">MEI</td>
-         <td class="desc"><span class="removed block">Symbol that may begin/end a line.</span><span class="added block">Symbol that may begin/end a line.</span></td>
+         <td class="desc">Symbol that may begin/end a line.</td>
          <td class="classes">Referenced Macros:<br><ul></ul>
          </td>
          <td class="classes">Allowed values:<br><ul>
@@ -26736,7 +26778,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="macroSpec datatype ident">data.LINEWIDTH</td>
          <td class="module">MEI</td>
-         <td class="desc"><span class="removed block">Datatype of line width measurements.</span><span class="added block">Datatype of line width measurements.</span></td>
+         <td class="desc">Datatype of line width measurements.</td>
          <td class="classes">Referenced Macros:<br><ul>
                <li class="added macro datatype" title="added macroSpec">data.LINEWIDTHTERM</li>
                <li class="added macro datatype" title="added macroSpec">data.MEASUREMENTABS</li>
@@ -26748,7 +26790,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="macroSpec datatype ident">data.MIDICHANNEL</td>
          <td class="module">MEI</td>
-         <td class="desc">MIDI channel number. One-based values must be followed by a lower-case letter "o".</td>
+         <td class="desc"><span class="removed block">MIDI channel numbers.</span><span class="added block">MIDI channel number. One-based values must be followed by a lower-case letter "o".</span></td>
          <td class="classes">Referenced Macros:<br><ul></ul>
          </td>
          <td class="classes">Allowed values:<br><ul>
@@ -26760,7 +26802,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="macroSpec datatype ident">data.MIDIVALUE</td>
          <td class="module">MEI</td>
-         <td class="desc">Generic MIDI value. One-based values must be followed by a lower-case letter "o".</td>
+         <td class="desc"><span class="removed block">MIDI values in the following range.</span><span class="added block">Generic MIDI value. One-based values must be followed by a lower-case letter "o".</span></td>
          <td class="classes">Referenced Macros:<br><ul></ul>
          </td>
          <td class="classes">Allowed values:<br><ul>
@@ -26772,9 +26814,9 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="macroSpec datatype ident">data.NOTEHEADMODIFIER</td>
          <td class="module">MEI</td>
-         <td class="desc">Captures any notehead "modifiers"; that is, symbols added to the notehead, such as
-            slashes, lines, text, and enclosures, etc.
-         </td>
+         <td class="desc"><span class="removed block">Captures any notehead "modifiers"; that is, symbols added to the notehead, such as
+               slashes, lines, text, and enclosures, etc.</span><span class="added block">Captures any notehead "modifiers"; that is, symbols added to the notehead, such as
+               slashes, lines, text, and enclosures, etc.</span></td>
          <td class="classes">Referenced Macros:<br><ul>
                <li class="added macro datatype" title="added macroSpec">data.NOTEHEADMODIFIER.list</li>
                <li class="added macro datatype" title="added macroSpec">data.NOTEHEADMODIFIER.pat</li>
@@ -26786,7 +26828,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="macroSpec datatype ident">data.ROTATION</td>
          <td class="module">MEI</td>
-         <td class="desc"><span class="removed block">Rotation.</span><span class="added block">Rotation.</span></td>
+         <td class="desc">Rotation.</td>
          <td class="classes">Referenced Macros:<br><ul>
                <li class="added macro datatype" title="added macroSpec">data.DEGREES</li>
                <li class="added macro datatype" title="added macroSpec">data.ROTATIONDIRECTION</li>
@@ -26798,7 +26840,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="macroSpec datatype ident">data.STAFFREL</td>
          <td class="module">MEI</td>
-         <td class="desc"><span class="removed block">Location of musical material relative to a staff.</span><span class="added block">Location of musical material relative to a staff.</span></td>
+         <td class="desc">Location of musical material relative to a staff.</td>
          <td class="classes">Referenced Macros:<br><ul>
                <li class="added macro datatype" title="added macroSpec">data.STAFFREL.basic</li>
                <li class="added macro datatype" title="added macroSpec">data.STAFFREL.extended</li>
@@ -26814,7 +26856,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="macroSpec datatype ident">data.STEMDIRECTION</td>
          <td class="module">MEI</td>
-         <td class="desc"><span class="removed block">Stem direction.</span><span class="added block">Stem direction.</span></td>
+         <td class="desc">Stem direction.</td>
          <td class="classes">Referenced Macros:<br><ul>
                <li class="added macro datatype" title="added macroSpec">data.STEMDIRECTION.basic</li>
                <li class="added macro datatype" title="added macroSpec">data.STEMDIRECTION.extended</li>
@@ -26826,7 +26868,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="macroSpec datatype ident">data.TEXTRENDITIONLIST</td>
          <td class="module">MEI</td>
-         <td class="desc"><span class="removed block">Closed list of text rendition values.</span><span class="added block">Closed list of text rendition values.</span></td>
+         <td class="desc">Closed list of text rendition values.</td>
          <td class="classes">Referenced Macros:<br><ul></ul>
          </td>
          <td class="classes">Allowed values:<br><ul>
@@ -26864,7 +26906,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="macroSpec datatype ident">data.TEXTRENDITIONPAR</td>
          <td class="module">MEI</td>
-         <td class="desc"><span class="removed block">Parameterized text rendition values.</span><span class="added block">Parameterized text rendition values.</span></td>
+         <td class="desc">Parameterized text rendition values.</td>
          <td class="classes">Referenced Macros:<br><ul></ul>
          </td>
          <td class="classes">Allowed values:<br><ul>
@@ -26877,7 +26919,7 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
       <tr class="c">
          <td class="macroSpec datatype ident">data.TEXTRENDITION</td>
          <td class="module">MEI</td>
-         <td class="desc"><span class="removed block">Text rendition values.</span><span class="added block">Text rendition values.</span></td>
+         <td class="desc">Text rendition values.</td>
          <td class="classes">Referenced Macros:<br><ul>
                <li class="added macro datatype" title="added macroSpec">data.TEXTRENDITIONLIST</li>
                <li class="added macro datatype" title="added macroSpec">data.TEXTRENDITIONPAR</li>
@@ -27471,34 +27513,34 @@ title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
          <td class="unchanged">Datatypes for values in begin, end, abstype and inttype attributes.</td>
       </tr>
    </table><script type="text/javascript" src="resources/js/d3.min.js"></script><script type="text/javascript">
-                        var elements = [
-                            {type:'added', count: 91, ref:'#elementsAdded'},
-                            {type:'changed', count: 323, ref:'#elementsChanged'},
-                            {type:'removed', count: 6, ref:'#elementsRemoved'},
-                            {type:'unchanged', count: 0, ref:'#elementsUnchanged'}
-                        ];
-                        var attClasses = [
-                        {type:'added', count: 250, ref:'#attClassesAdded'},
-                        {type:'changed', count: 277, ref:'#attClassesChanged'},
-                        {type:'removed', count: 113, ref:'#attClassesRemoved'},
-                        {type:'unchanged', count: 150, ref:'#attClassesUnchanged'}
-                        ];
-                        var modelClasses = [
-                        {type:'added', count: 22, ref:'#modelClassesAdded'},
-                        {type:'changed', count: 42, ref:'#modelClassesChanged'},
-                        {type:'removed', count: 10, ref:'#modelClassesRemoved'},
-                        {type:'unchanged', count: 85, ref:'#modelClassesUnchanged'}
-                        ];
-                        var macroPe = [
-                        {type:'added', count: 2, ref:'#macroPeAdded'},
-                        {type:'changed', count: 1, ref:'#macroPeChanged'},
-                        {type:'removed', count: 2, ref:'#macroPeRemoved'},
-                        {type:'unchanged', count: 4, ref:'#macroPeUnchanged'}
-                        ];
-                        var macroDt = [
-                        {type:'added', count: 33, ref:'#macroDtAdded'},
-                        {type:'changed', count: 21, ref:'#macroDtChanged'},
-                        {type:'removed', count: 14, ref:'#macroDtRemoved'},
-                        {type:'unchanged', count: 90, ref:'#macroDtUnchanged'}
-                        ];
-                    </script><script type="text/javascript" src="resources/js/main.js"></script></div>
+                    var elements = [
+                        {type:'added', count: 91, ref:'#elementsAdded'},
+                        {type:'changed', count: 323, ref:'#elementsChanged'},
+                        {type:'removed', count: 6, ref:'#elementsRemoved'},
+                        {type:'unchanged', count: 0, ref:'#elementsUnchanged'}
+                    ];
+                    var attClasses = [
+                    {type:'added', count: 250, ref:'#attClassesAdded'},
+                    {type:'changed', count: 277, ref:'#attClassesChanged'},
+                    {type:'removed', count: 113, ref:'#attClassesRemoved'},
+                    {type:'unchanged', count: 150, ref:'#attClassesUnchanged'}
+                    ];
+                    var modelClasses = [
+                    {type:'added', count: 22, ref:'#modelClassesAdded'},
+                    {type:'changed', count: 42, ref:'#modelClassesChanged'},
+                    {type:'removed', count: 10, ref:'#modelClassesRemoved'},
+                    {type:'unchanged', count: 85, ref:'#modelClassesUnchanged'}
+                    ];
+                    var macroPe = [
+                    {type:'added', count: 2, ref:'#macroPeAdded'},
+                    {type:'changed', count: 1, ref:'#macroPeChanged'},
+                    {type:'removed', count: 2, ref:'#macroPeRemoved'},
+                    {type:'unchanged', count: 4, ref:'#macroPeUnchanged'}
+                    ];
+                    var macroDt = [
+                    {type:'added', count: 33, ref:'#macroDtAdded'},
+                    {type:'changed', count: 21, ref:'#macroDtChanged'},
+                    {type:'removed', count: 14, ref:'#macroDtRemoved'},
+                    {type:'unchanged', count: 90, ref:'#macroDtUnchanged'}
+                    ];
+                </script><script type="text/javascript" src="resources/js/main.js"></script></div>
