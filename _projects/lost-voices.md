@@ -3,9 +3,10 @@ layout: projects
 name: "The Lost Voices Project"
 fullname: "The Lost Voices Project: A Digital Domain for Renaissance Music"
 image: "projects/lost-voices.png"
+contributors:
+    - "Richard Freedman, Haverford College"
+    - "Philippe Vendrix, Centre d'Études Supérieures de la Renaissance (CESR), Tours"
 ---
-**Richard Freedman, Haverford College** **Philippe Vendrix, Centre d'Études Supérieures de la Renaissance (CESR), Tours**
-
 The [Lost Voices project](http://digitalduchemin.org/) explores a little-studied repertory of sixteen sets of French polyphonic songs published in Paris by Nicolas Du Chemin between 1549 and 1568\. Digital technologies are put to work in the service of these books in ways that will engender a broader discussion about style and structure in the sixteenth-century chanson.
 
 This project features digital facsimiles of the set, freely available for display and download; complete modern editions of all the chansons, engraved as high quality PDF files; essays about the books, the music, and their historical context; and a searchable database of analytic observations about the music.
