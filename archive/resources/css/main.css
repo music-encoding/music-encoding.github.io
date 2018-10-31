@@ -79,17 +79,28 @@ td.classes ul li.changed:before, td.content ul li.changed:before, td.atts ul li.
     left: -1rem;
 }
 
-#chartArea {;
+#chartArea {
+    position: -webkit-sticky; /* Safari */
     position: sticky;
-    background-color: #ffffffe5;
     top: 0;
-    right: 0;
     z-index: 5;
+    text-align: right;
+}
+
+#chartsBox {
     border-left: .5px solid #999999;
     border-bottom: .5px solid #999999;
     border-right: .5px solid #999999;
     border-radius: 0 0 8px 8px;
+    background-color: #ffffffe5;
     margin: 0 1rem 1rem;
+    display: inline-block;
+}
+
+#chartsBox .sample {
+    padding: 0 .1rem; 
+    margin: 0 .2rem;
+    font-size: .7rem;
 }
 
 .chartBox {

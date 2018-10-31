@@ -1,12 +1,26 @@
+---
+layout: default
+title: "Comparison of MEI 4.0.0 with MEI 3.0.0"
+---
 <div>
    <link rel="stylesheet" href="resources/css/main.css">
-   <h1>MEI Comparison <br><small><span class="">Version 4.0.0</span><span class=""> vs </span><span class="">Version 3.0.0</span></small></h1>
+   <h1 style="float: left;">MEI Comparison <br><small><span class="">Version 4.0.0</span><span class=""> vs </span><span class="">Version 3.0.0</span></small></h1>
    <div id="chartArea">
-      <div id="elementsChart" class="chartBox"><label>Elements</label></div>
-      <div id="attClassesChart" class="chartBox"><label>Attribute Classes</label></div>
-      <div id="modelClassesChart" class="chartBox"><label>Model Classes</label></div>
-      <div id="macroPeChart" class="chartBox"><label>Macro Groups</label></div>
-      <div id="macroDtChart" class="chartBox"><label>Data Types</label></div>
+      <div id="chartsBox">
+        <div id="elementsChart" class="chartBox"><label>Elements</label></div>
+        <div id="attClassesChart" class="chartBox"><label>Attribute Classes</label></div>
+        <div id="modelClassesChart" class="chartBox"><label>Model Classes</label></div>
+        <div id="macroPeChart" class="chartBox"><label>Macro Groups</label></div>
+        <div id="macroDtChart" class="chartBox"><label>Data Types</label></div>
+        <div style="margin-top: -.5rem;">
+          <span class="added sample">added content</span>
+          <span class="changed sample">changed content</span>
+          <span class="removed sample">removed content</span>
+          <span class="unchanged sample">unchanged content</span>
+          <span class="sample">|</span>
+          <span class="sample">click slice to go to section</span>
+          </div>
+      </div>
    </div>
    <h2>Element Comparison</h2>
    <h3 id="elementsAdded">91 new elements:</h3>
