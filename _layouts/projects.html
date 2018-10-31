@@ -3,9 +3,16 @@ layout: default
 ---
 <div class="columns">
     <div class="column col-8">
-        <h2>{{ page.fullname }}</h2>
+        <h2>{{ page.name }}</h2>
+        <h4 style="font-style: italic;">{{ page.fullname }}</h4>
+        <ul style="list-style-type: disclosure-closed; margin-left: 0;">
+        {% for contributor in page.contributors %}
+            <li><strong>{{ contributor }}</strong></li>
+        {% endfor %}
+        </ul>
+
         {% if page.image %}
-            <img src="{{ site.baseurl }}/images/{{ page.image }}" style="float: right; margin-left: 10px; margin-bottom: 5px;">
+            <img src="{{ site.baseurl }}/images/{{ page.image }}" style="float: right; margin-left: 10px; margin-bottom: 5px; width: 300px;">
         {% endif %}
         {{ content }}
     </div>
@@ -17,11 +24,11 @@ layout: default
         <div class="tile">
           <div class="tile-icon">
             <div class="example-tile-icon">
-              <a href="{{ project.url }}.html" class="icon icon-forward centered"></a>
+              <a href="{{ project.url }}.html" class="icon icon-forward centered" title="{{ project.name }}"></a>
             </div>
           </div>
           <div class="tile-content">
-            <p class="tile-title"><a href="{{ project.url }}.html">{{ project.name }}</a></p>
+            <p class="tile-title"><a href="{{ project.url }}.html" title="{{ project.name }}">{{ project.name }}</a></p>
           </div>
         </div>
         {% endif %}
