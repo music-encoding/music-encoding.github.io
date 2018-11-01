@@ -29,6 +29,9 @@ menu:
           - id: mailinglist
             label: 'Mailing List'
             url: '/mailing-list.html'
+          - id: slackchannel
+            label: 'Slack Channel'
+            url: '/slack.html'
           - id: interestgroups
             label: 'Interest Groups'
             url: '/interest-groups.html'
