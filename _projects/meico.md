@@ -3,9 +3,9 @@ layout: projects
 name: "meico: MEI Converter"
 fullname: "meico allows to render MEI files into audio, using high-quality MIDI libraries, and considering tempo indications, repetitions and other features"
 image: "projects/meico.png"
+contributors: 
+    - "Axel Berndt (author), Benjamin W. Bohl (MEI consultant), Center of Music and Film Informatics, Detmold, Germany"
 ---
-**Axel Berndt (author), Benjamin W. Bohl (MEI consultant) Center of Music and Film Informatics, Detmold, Germany**
-
 Meico is a Java-based converter framework for MEI files. It parses MEI files into an intermediate format, called MSM (Musical Sequence Markup), and MIDI. There are several possibilities to use meico:
 
 *   It implements a graphical user interface where users can drag & drop their MEI, MSM and MIDI files and work with them, listen to the music they just edited (very useful for "proof-reading") and apply further built-in tools. Simply double-click the Jar file to start meico in window mode.
