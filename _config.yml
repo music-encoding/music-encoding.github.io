@@ -3,6 +3,7 @@ title: Music Encoding Initiative
 email: info@music-encoding.org
 baseurl: ""
 style_baseurl: ""
+repository: music-encoding/music-encoding.github.io
 url: "http://music-encoding.org" # the base hostname & protocol for your site
 twitter_username: music-encoding
 
