@@ -96,10 +96,28 @@ function loadTutorialStep(data,stepNum) {
             return response.text()
         })
         .then(function(xmlString) {
-
-            var fileStart = xmlString.substr(0, xmlString.indexOf('<?snippet-start?>'));
-            var fileEnd = xmlString.substr(xmlString.indexOf('<?snippet-end?>'));
-
+            
+            var startIndex = xmlString.indexOf('<?snippet-start?>');
+            var endIndex = xmlString.indexOf('<?snippet-end?>');
+            
+            var fileStart = xmlString.substr(0, startIndex);
+            var fileEnd = xmlString.substr(endIndex);
+            
+            var correctSolution = xmlString.substr(startIndex + 17, (endIndex - startIndex - 17));
+            //console.log(rightSolution);
+            
+            if(typeof step.prefill !== 'undefined' && step.prefill !== '') {
+                fetch('../' + step.prefill)
+                    .then(function(response) {
+                        return response.text()
+                    })
+                    .then(function(prefill) {
+                        editor.setValue(prefill);
+                        editor.clearSelection();
+                    })
+            }
+            
+            
             var parser = new DOMParser();
 
             var wellformed = false;
