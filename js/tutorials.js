@@ -11,14 +11,14 @@ editor.setShowPrintMargin(false);
 var vrvToolkit = new verovio.toolkit();
 
 var options = {
-pageHeight: 1000,
-pageWidth: 4200,
-adjustPageHeight: 1,
-ignoreLayout: 1,
-noHeader: 1,
-noFooter: 1,
-border: 0,
-scale: 50
+    pageHeight: 1000,
+    pageWidth: 4200,
+    adjustPageHeight: 1,
+    ignoreLayout: 1,
+    noHeader: 1,
+    noFooter: 1,
+    border: 0,
+    scale: 50
 };
 
 vrvToolkit.setOptions(options);
@@ -74,10 +74,22 @@ function loadTutorialStep(data,stepNum) {
     //console.log(data)
     
     var step = data.steps[stepNum];
+    
+    
+    
     document.querySelector('#instruction').innerHTML = step.desc;
     document.querySelector('#stepLabel').innerHTML = (step.label !== '') ? step.label : 'Step ' + (stepNum + 1)
     
     activateStepListItem(data,stepNum);
+    
+    fetch('../' + step.descfile)
+        .then(function(response) {
+            return response.text()
+        })
+        .then(function(descriptionFile) {
+            console.log('loaded file');
+            document.querySelector('#instruction').innerHTML = descriptionFile;
+        })
     
     fetch('../' + step.xmlfile)
         .then(function(response) {
@@ -91,7 +103,12 @@ function loadTutorialStep(data,stepNum) {
             var parser = new DOMParser();
 
             var wellformed = false;
-
+            
+            //the overhead of .7rem is intended to avoid flickering / scrolling
+            var editorLines = (typeof step.editorLines !== 'undefined') ? (step.editorLines + .7) : 5.7;
+            document.getElementById('editorBox').style.height = editorLines + 'rem';
+            editor.resize();
+            
             editor.session.on('change', function(delta) {
                 // delta.start, delta.end, delta.lines, delta.action
                 

@@ -2,7 +2,7 @@
   "steps": [
     {
         "label":"First Note",
-        "desc":"Welcome! To encode a single note, you'll need a <code>node</code> element and the three attributes <code>pname</code> (name of the pitch), <code>oct</code> (octave) and <code>dur</code> (duration). So try to enter the following encoding: <code>&lt;note pname=\"c\" oct=\"4\" dur=\"4\"\/&gt;<\/code>.",
+        "editorLines":1,
         "xpaths": [
             {"rule":"count(//mei:note) = 1","renderanyway":false,"hint":"You need one note element."},
             {"rule":"count(//mei:note/@*) = 3","renderanyway":false,"hint":"You need three attributes."},
@@ -10,17 +10,19 @@
             {"rule":"//mei:note/@oct = '4'","renderanyway":false,"hint":"You need an @oct attribute, with a value of 4."},
             {"rule":"//mei:note/@dur = '4'","renderanyway":false,"hint":"You need a @dur attribute, with a value of 4."}
         ],
+        "descfile": "step-01-desc.html",
         "xmlfile": "101_quickstart.1.xml"
     },
     {
         "label":"",
-        "desc":"Congratulations, you've just encoded your first note in MEI. To continue, write a half note G4 in fifth octave (pitch name g with a duration of 2 in octave 5).",
+        "editorLines":3,
         "xpaths": [
             {"rule":"count(//mei:note) = 1","renderanyway":false},
             {"rule":"//mei:note/@pname = 'g'","renderanyway":false,"hint":"You need a @pname attribute, with a value of g."},
             {"rule":"//mei:note/@oct = '5'","renderanyway":false,"hint":"You need an @oct attribute, with a value of 5."},
             {"rule":"//mei:note/@dur = '2'","renderanyway":false,"hint":"You need a @dur attribute, with a value of 2."}
         ],
+        "descfile": "step-02-desc.html",
         "xmlfile": "101_quickstart.1.xml"
     }
   ],
