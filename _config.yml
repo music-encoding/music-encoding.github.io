@@ -67,6 +67,9 @@ menu:
           - id: bibliography
             label: 'Bibliography'
             url: '/bibliography.html'
+          - id: schemas
+            label: 'Schemas and Namespace'
+            url: '/schemas.html'
     - id: documentation
       label: 'Documentation'
       url: '/guidelines'
