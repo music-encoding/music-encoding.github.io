@@ -1,7 +1,24 @@
 <div>
-    Welcome! To <i>encode</i> a single <u>note</u>, you'll need a <code>&lt;note/&gt;</code> element and the three
+    <p>Welcome! To <i>encode</i> a single <u>note</u>, you'll need a <code>&lt;note/&gt;</code> element and the three
     attributes <code>@pname</code> (name of the pitch), <code>@oct</code> (octave) and
         <code>@dur</code> (duration). So try to enter the following encoding: <code>&lt;note
         pname="c" oct="4" dur="4"/&gt;</code>.
-    
+    </p>
+    <h1>Attention: This is also a tutorial on how to write tutorials now. </h1>
+    <p>
+        If you want to prefill the editor at any given step of a tutorial, please add a property 
+        <b>"prefill"</b> to the JSON, which points to a corresponding file. These file names really don't matter,
+        they just have to match a file in the folder of the tutorial.<br/>
+        If "prefill" is set, the corresponding file will be loaded, and it's content will be inserted into 
+        the editor, replacing it's previous content (if any). If done on the first step of a tutorial, this allows
+        you to start with something in the editor right away (if not, the editor will start empty).<br/>
+        Without "prefill" being set, the previous content of the editor will be preserved for the next step. With
+        "prefill" set at a later step, it allows to change that to a default value, or a new "entry point" into the 
+        MEI file being edited.
+    </p>
+    <p>
+        You may want to have a different height for the editor in each tutorial step. For this purpose,
+        an optional property <b>"editorLines"</b> may be set with integers (no strings please). If not 
+        specified, a default of 5 will be assumed. 
+    </p>
 </div>

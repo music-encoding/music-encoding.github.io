@@ -22,6 +22,7 @@
             {"rule":"//mei:note/@oct = '5'","renderanyway":false,"hint":"You need an @oct attribute, with a value of 5."},
             {"rule":"//mei:note/@dur = '2'","renderanyway":false,"hint":"You need a @dur attribute, with a value of 2."}
         ],
+        "prefill":"just-a-name.xml",
         "descfile": "step-02-desc.html",
         "xmlfile": "101_quickstart.1.xml"
     }
