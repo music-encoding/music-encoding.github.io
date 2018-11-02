@@ -1,0 +1,12 @@
+{
+  "steps": [
+    {
+      "label":"Staffdef",
+      "desc":"Welcome! <code>&lt;meiHead&gt;&lt;fileDesc&gt;&lt;titleStmt&gt;&lt;title type=\"main\"&gt;Hallingdal Bataljons March&lt;/title&gt;&lt;/titleStmt&gt;&lt;/fileDesc&gt;&lt;/meiHead&gt;<code> <br / > Identify the title statement and enter a title.",
+      "xpaths": [
+      ],
+      "xmlfile": "100_structure.1.xml"
+    }
+  ],
+  "outro":"Congratulations, you've done right."
+}
