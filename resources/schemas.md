@@ -16,3 +16,5 @@ The MEI Schemas are available at the following URLs:
  - MEI Mensural: [https://music-encoding.org/schema/4.0.0/mei-Mensural.rng](https://music-encoding.org/schema/4.0.0/mei-Mensural.rng)
  - MEI Neumes: [https://music-encoding.org/schema/4.0.0/mei-Neumes.rng](https://music-encoding.org/schema/4.0.0/mei-Neumes.rng)
  - MEI All (Any Start Element): [https://music-encoding.org/schema/4.0.0/mei-all_anyStart.rng](https://music-encoding.org/schema/4.0.0/mei-all_anyStart.rng)
+ 
+ A detailed overview of the changes for the MEI 4.0 schema is available here:  [https://music-encoding.org/archive/comparison-4.0.html](https://music-encoding.org/archive/comparison-4.0.html)
