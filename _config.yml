@@ -26,9 +26,9 @@ menu:
           - id: news
             label: 'News / Events'
             url: '/news-events.html'
-          - id: mailinglist
-            label: 'Mailing List'
-            url: '/mailing-list.html'
+          - id: communitycontacts
+            label: 'Community Contacts'
+            url: '/community-contacts.html'
           - id: interestgroups
             label: 'Interest Groups'
             url: '/interest-groups.html'
@@ -100,4 +100,4 @@ sidemenu:
 collections:
   projects:
     output: true
-    permalink: /:collection/:name   
+    permalink: /:collection/:name
