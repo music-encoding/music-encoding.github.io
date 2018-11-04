@@ -15,7 +15,7 @@ Also, the archives of the list are open to the public and can be browsed online:
 
 # Slack channel
 
-MEI has a Slack team that is used for discussion, questions, announcements, and interest groups.
+MEI has a Slack channel that is used for discussion, questions, announcements, and collaboration, [https://music-encoding.slack.com](https://music-encoding.slack.com).
 
 To join, please fill in our [Slack Invitation Form](https://goo.gl/forms/cDWLuDgicFjXSENi2) and you will receive an invitation.
 
