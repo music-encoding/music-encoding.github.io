@@ -21,3 +21,7 @@ To join, please fill in our [Slack Invitation Form](https://goo.gl/forms/cDWLuDg
 
 Slack has [clients](https://slack.com/) for Mac, PC, Linux, and mobile devices, and may be used via any web browser.
 
+# Contact info
+
+You can also contact MEI by [email](mailto:{{site.email}}).
+
