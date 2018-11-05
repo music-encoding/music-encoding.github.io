@@ -328,6 +328,19 @@ ul.nav li.nav-item:first-child {
         margin: .8rem 0 0;
     }
 
+    #tutorialGoal{
+        margin-top: .5rem;
+    }
+    #tutorialGoal:before {
+        font-weight: bold;
+        content: "Goal: "
+    }
+
+    #tutorialTask:before {
+        font-weight: bold;
+        content: "Task: "
+    }
+
     #stepBox {
         margin: 2rem;
     }

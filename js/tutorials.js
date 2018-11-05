@@ -78,7 +78,7 @@ function loadTutorialStep(data,stepNum) {
     
     
     document.querySelector('#instruction').innerHTML = step.desc;
-    document.querySelector('#stepLabel').innerHTML = (step.label !== '') ? step.label : 'Step ' + (stepNum + 1)
+    document.querySelector('#stepLabel').innerHTML = (step.label !== '') ? step.label : 'Step ' + (stepNum + 1);
     
     activateStepListItem(data,stepNum);
     
