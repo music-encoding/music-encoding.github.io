@@ -2,7 +2,18 @@
   "steps": [
     {
       "label":"Score & staff setup",
-      "desc":"Please encode the basic information about the staff, clef and key of the example. Below you can see the structure skeleton including the score definition <code>&lt;scoreDef&gt;</code> tag, its child element staff group <code>&lt;staffGrp&gt;</code> and its child element staff definition <code>&lt;staffDef&gt;</code>. <br/> The key and time signature are common for the whole score, that’s why you describe them in <code>&lt;scoreDef&gt;</code> regardless of how many staffs are there. You need to use the following attributes of <code>&lt;scoreDef&gt;</code>: <br/> key signature <code>@key.sig</code> – the number of sharps/flats in written key signature, e.g. <code>“1s”</code> for 1 sharp, <code>“2f”</code> for 2 flats, etc. <br/> meter symbol <code>@meter.sym</code> – <code>“common”</code> for common time (C) or <code>“cut”</code> for cut time (C/). In case of numeric time signature you’d use other attributes: <code>@meter.count</code> for the top number of the meter signature and <code>@meter.unit</code> for the bottom number of the meter signature. <br/> Clef is described in the <code>&lt;staffDef&gt;</code> element, because it is related to an individual staff. You need to use the following attributes of <code>&lt;staffDef&gt;</code>: <br/> ordinal number <code>@n</code> – <code>”1”</code> for the first staff, <br/> <code>@lines</code> – <code>“5”</code> for five-line staff, <br/> <code>@clef.shape</code> – the type of clef: <code>“F”</code>, <code>“C”</code> or <code>“G”</code>, <br/> <code>@clef.line</code> – the staff line on which the clef is placed (counting from the bottom), e.g.: <code>“1”</code>, <code>“2”</code>, <code>“5”</code>.",
+      "editorLines":6,
+      "xpaths": [
+        {"rule":"count(//mei:scoreDef) = 1","renderanyway":false,"hint":"You need one scoreDef element."},
+        {"rule":"count(//mei:staffGrp) = 1","renderanyway":false,"hint":"You need one staffGroup element."},
+        {"rule":"count(//mei:staffDef) = 1","renderanyway":false,"hint":"You need one staffDef element."}
+      ],
+      "descfile": "102_march_step-01-desc.html",
+      "xmlfile": "102_march.01.xml"
+    },
+    {
+      "label":"Score & staff attributes",
+      "editorLines":6,
       "xpaths": [
         {"rule":"count(//mei:scoreDef) = 1","renderanyway":false,"hint":"You need one scoreDef element."},
         {"rule":"count(//mei:scoreDef/@*) = 2","renderanyway":false,"hint":"You need two attributes on scoreDef (@key.sig & @meter.sym)."},
@@ -16,17 +27,36 @@
         {"rule":"//mei:staffDef/@clef.shape = 'G'","renderanyway":false,"hint":"You need a @clef.shape attribute, with a value of G."},
         {"rule":"//mei:staffDef/@clef.line = '2'","renderanyway":false,"hint":"You need a @clef.line attribute, with a value of 2."}
       ],
-      "xmlfile": "102_march.0.xml"
+      "descfile": "102_march_step-02-desc.html",
+      "xmlfile": "102_march.02.xml"
     },
     {
-      "label":"Bar",
-      "desc":"Please encode the empty <code>&lt;measure&gt;</code>. You need to add new child element <code>&lt;measure&gt;</code> to <code>&lt;score&gt;</code> element, after <code>&lt;scoreDef&gt;</code> element. You need to use the numeric designation <code>@n</code> attribute, specifically value <code>“0”</code> for a pickup measure. Remember to provide closing statement to the tag, like in this example: <code>&lt;element attribute=”value”&gt;&lt;/element&gt;</code>. The measure will be empty and you are going to fill it in the next steps.",
+      "label":"Measure setup (empty)",
+      "editorLines":7,
       "xpaths": [
         {"rule":"count(//mei:measure) = 1","renderanyway":false,"hint":"You need one measure element."},
         {"rule":"count(//mei:measure/@*) = 1","renderanyway":false,"hint":"You need one attribute on measure (@n)."},
-        {"rule":"//mei:measure/@n = '0'","renderanyway":false,"hint":"You need a @n attribute, with a value of 0."}
+        {"rule":"//mei:measure/@n = '0'","renderanyway":false,"hint":"You need a @n attribute, with a value of 0."},
+        {"rule":"count(//mei:staff) = 1","renderanyway":false,"hint":"You need one measure element."},
+        {"rule":"count(//mei:staff/@*) = 1","renderanyway":false,"hint":"You need one attribute on measure (@n)."},
+        {"rule":"//mei:staff/@n = '0'","renderanyway":false,"hint":"You need a @n attribute, with a value of 0."},
+        {"rule":"count(//mei:layer) = 1","renderanyway":false,"hint":"You need one layer element."}
       ],
-      "xmlfile": "102_march.1.xml"
+      "descfile": "102_march_step-03-desc.html",
+      "xmlfile": "102_march.03.xml"
+    },
+    {
+      "label":"First note",
+      "editorLines":7,
+      "xpaths": [
+        {"rule":"count(//mei:note) = 1","renderanyway":false,"hint":"You need one note element."},
+        {"rule":"count(//mei:note/@*) = 3","renderanyway":false,"hint":"You need three attributes on note (@pname, @oct a& @dur)."},
+        {"rule":"//mei:note/@pname = 'b'","renderanyway":false,"hint":"You need a @pname attribute, with a value of c."},
+        {"rule":"//mei:note/@oct = '3'","renderanyway":false,"hint":"You need an @oct attribute, with a value of 4."},
+        {"rule":"//mei:note/@dur = '4'","renderanyway":false,"hint":"You need a @dur attribute, with a value of 4."}
+      ],
+      "descfile": "102_march_step-04-desc.html",
+      "xmlfile": "102_march.04.xml"
     }
   ],
   "outro":"Congratulations, you've done right."
