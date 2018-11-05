@@ -1,11 +1,35 @@
 {
   "steps": [
     {
-      "label":"Staffdef",
-      "desc":"Welcome! <code>&lt;meiHead&gt;&lt;fileDesc&gt;&lt;titleStmt&gt;&lt;title type=\"main\"&gt;Hallingdal Bataljons March&lt;/title&gt;&lt;/titleStmt&gt;&lt;/fileDesc&gt;&lt;/meiHead&gt;<code> <br / > Identify the title statement and enter a title.",
+      "label":"Your very first MEI element",
+      "editorLines": 3,
       "xpaths": [
+        {"rule":"count(//mei) = 1","renderanyway":true,"hint":"You need one mei element."}
       ],
-      "xmlfile": "100_structure.1.xml"
+      "descfile": "100_structure_step-01-desc.html",
+      "xmlfile": "100_structure_step-01.xml"
+    },
+    {
+      "label":"The MEI namespace",
+      "editorLines": 3,
+      "xpaths": [
+        {"rule":"count(//mei) = 1","renderanyway":false,"hint":"You need one mei element."},
+        {"rule":"count(//mei/@*) = 1","renderanyway":false,"hint":"You need one attribute on mei (@xmlns)."},
+        {"rule":"//mei/@xmlns = 'http://www.music-encoding.org/ns/mei'","renderanyway":false,"hint":"You need a @xmlns attribute, with a value of 'http://www.music-encoding.org/ns/mei'."}
+      ],
+      "descfile": "100_structure_step-02-desc.html",
+      "xmlfile": "100_structure_step-02.xml"
+    },
+    {
+      "label":"Two basic child elements",
+      "editorLines": 5,
+      "xpaths": [
+        {"rule":"count(//mei) = 1","renderanyway":false,"hint":"You need one mei element."},
+        {"rule":"count(//mei/meiHead) = 1","renderanyway":false,"hint":"You need one child element meiHead."},
+        {"rule":"count(//mei/music) = 1","renderanyway":false,"hint":"You need one child element music."}
+      ],
+      "descfile": "100_structure_step-03-desc.html",
+      "xmlfile": "100_structure_step-03.xml"
     }
   ],
   "outro":"Congratulations, you've done right."
