@@ -5,7 +5,7 @@
       "editorLines": 7,
       "descfile": "102_march_step-01-desc.html",
       "prefill": "102_march_step-01-prefill.xml",
-      "xmlfile": "102_march.01.xml",
+      "xmlfile": "102_march_step-01.xml",
       "xpaths": [
         {"rule": "count(//mei:scoreDef) = 1","renderanyway":false,"hint":"You need one scoreDef element."},
         {"rule": "count(//mei:staffGrp) = 1","renderanyway":false,"hint":"You need one staffGrp element."},
@@ -19,7 +19,7 @@
       "editorLines": 7,
       "descfile": "102_march_step-02-desc.html",
       "prefill": "102_march_step-02-prefill.xml",
-      "xmlfile": "102_march.02.xml",
+      "xmlfile": "102_march_step-02.xml",
       "xpaths": [
         {"rule": "count(//mei:scoreDef) = 1","renderanyway":false,"hint":"2: You need one scoreDef element."},
         {"rule": "count(//mei:staffGrp) = 1","renderanyway":false,"hint":"You need one staffGroup element."},
@@ -41,7 +41,7 @@
       "editorLines": 14,
       "descfile": "102_march_step-03-desc.html",
       "prefill": "102_march_step-03-prefill.xml",
-      "xmlfile": "102_march.03.xml",
+      "xmlfile": "102_march_step-03.xml",
       "xpaths": [
         {"rule": "count(//mei:section) = 1","renderanyway":false,"hint":"You need one section element."},
         {"rule": "//mei:score/mei:section","renderanyway":false,"hint":"section element has to be a child of score element."},
@@ -62,7 +62,7 @@
       "editorLines": 3,
       "descfile": "102_march_step-04-desc.html",
       "prefill": "102_march_step-04-prefill.xml",
-      "xmlfile": "102_march.04.xml",
+      "xmlfile": "102_march_step-04.xml",
       "xpaths": [
         {"rule": "count(//mei:note) = 1","renderanyway":false,"hint":"You need one note element."},
         {"rule": "count(//mei:note/@*) = 3","renderanyway":false,"hint":"You need three attributes on note (@pname, @oct a& @dur)."},
