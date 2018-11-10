@@ -58,7 +58,10 @@ layout: default
                 try {
                     fetch("../{{page.data}}")
                         .then(function(response) {
-                            return response.json()
+                            if (response.ok) {
+                                return response.json()
+                            }
+                            throw new Error('Network response was not ok while trying to fetch ', page.data);
                         })
                         .then(function(data) {
                             setupTutorial(data);
