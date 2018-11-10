@@ -1,8 +1,8 @@
-/* This file contains only generic preparations anf dunctions for tutorials */
+/* This file contains only generic preparations and functions for tutorials */
 
-var editor = ace.edit("editor");
-editor.setTheme("ace/theme/textmate");
-editor.session.setMode("ace/mode/xml");
+var editor = ace.edit('editor');
+editor.setTheme('ace/theme/textmate');
+editor.session.setMode('ace/mode/xml');
 editor.setDisplayIndentGuides(false);
 editor.setHighlightActiveLine(false);
 editor.renderer.setShowGutter(false);
@@ -15,13 +15,15 @@ var options = {
     pageHeight: 1000,
     pageWidth: 4200,
     adjustPageHeight: 1,
-    ignoreLayout: 1,
+    breaks: 'auto',
     noHeader: 1,
     noFooter: 1,
-    border: 0,
+    pageMarginBottom: 0,
+    pageMarginLeft: 0,
+    pageMarginRight: 0,
+    pageMarginTop: 0,
     scale: 50
 };
-
 vrvToolkit.setOptions(options);
 
 
@@ -277,9 +279,18 @@ function nextTutorialStep(data, stepNum) {
 
 
 function renderVerovio(validationString) {
-    console.log('tried to render verovio');
-    var svg = vrvToolkit.renderData(validationString, {});
-    document.getElementById('rendering').innerHTML= svg;
+    var svg = '';
+
+    // try to render validationString with Verovio
+    try {
+        console.log('tried to render verovio');
+        svg = vrvToolkit.renderData(validationString, {});
+    } catch (error) {
+        console.log('error rendering verovio: ' + error);
+    }
+
+    // insert svg into DOM
+    document.getElementById('rendering').innerHTML = svg;
 }
 
 
