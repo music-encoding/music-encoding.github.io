@@ -379,14 +379,20 @@ function fetchFile(file) {
  **********************************/
 
 function getSnippetPositions(xmlString, start, end) {
-
     // search for start and end snippet string in xmlString
     // and return position indices of snippet strings
+    // if no start or end is given, take the start and end
+    // of the whole file as default values
+    var startIndex = (xmlString.indexOf(start) > - 1) ? xmlString.indexOf(start) : 0;
+    var startIndex_end = (xmlString.indexOf(start) > - 1) ? (xmlString.indexOf(start) + start.length) : 0;
+    var endIndex = (xmlString.indexOf(end) > - 1) ? xmlString.indexOf(end) : (xmlString.lastIndexOf('</mei>') + '</mei>'.length);
+    var endIndex_end = (xmlString.indexOf(end) > - 1) ? (xmlString.indexOf(end) + end.length) : (xmlString.lastIndexOf('</mei>') + '</mei>'.length);
+
     return {
-        startIndex: xmlString.indexOf(start),
-        startIndex_end: xmlString.indexOf(start) + start.length,
-        endIndex: xmlString.indexOf(end),
-        endIndex_end: xmlString.indexOf(end) + end.length
+        startIndex: startIndex,
+        startIndex_end: startIndex_end,
+        endIndex: endIndex,
+        endIndex_end: endIndex_end
     }
 }
 
