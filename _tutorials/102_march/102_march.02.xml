@@ -10,6 +10,7 @@
     <music>
         <body>
             <mdiv>
+                <?preview-start?>
                 <score>
                     <?snippet-start?>
                     <scoreDef key.sig="3f" meter.sym="cut">
@@ -18,16 +19,8 @@
                         </staffGrp>
                     </scoreDef>
                     <?snippet-end?>
-                    <section>
-                        <measure n="0">
-                            <staff>
-                                <layer>
-                                    <note pname="b" oct="4" dur="4" visible="false"></note>
-                                </layer>
-                            </staff>
-                        </measure>
-                    </section>
                 </score>
+                <?preview-end?>
             </mdiv>
         </body>
     </music>

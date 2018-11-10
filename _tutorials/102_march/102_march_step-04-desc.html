@@ -1,10 +1,15 @@
 <div>
-    <p id="tutorialGoal">In this step you will learn encode a single note.</p>
-    <p id="tutorialTask">Please encode the first note of the example. Here is an example of how to encode a whole note C4: <code>&lt;note pname="c" oct="4" dur="1"&gt;&lt;/note&gt;</code>.</p>
-    <p>In <code>&lt;note&gt;</code> element you can define single note characteristics by using the following attributes:</p>
+    <p id="tutorialGoal">In this step you will encode the first note of the example.</p>
+
+    <p>The <code>&lt;note&gt;</code> element in MEI describes a single pitched event. You can define single note characteristics by using the following attributes:</p>
+
     <ul>
-        <li>pitch name <code>@pname</code> – <code>“c”</code>, <code>“d”</code>, <code>“e”</code>, <code>“f”</code>, <code>“g”</code>, <code>“a”</code> or <code>“b”</code>&lt;/li>
-        <li>octave <code>@oct</code> – pitch’s octave notated in scientific pitch notation, namely <code>“0”</code>-<code>”9”</code>&lt;/li>
-        <li>duration <code>@dur</code> – e.g. <code>“1”</code> for whole note, <code>“2”</code> for half note, <code>“4”</code> for quarter note, <code>“8”</code> for eighth note, <code>“16”</code> for sixteenth note, … <code>“2048”</code> for 2048th note</li>
+        <li><code>@pname</code> (pitch name) – <code>“c”</code>, <code>“d”</code>, <code>“e”</code>, <code>“f”</code>, <code>“g”</code>, <code>“a”</code> or <code>“b”</code>&lt;/li>
+        <li><code>@oct</code> (octave) – pitch’s octave value, following Acoustical Society of America representation, namely <code>“0”</code>-<code>”9”</code>&lt;/li>
+        <li><code>@dur</code> (duration) – e.g. <code>“1”</code> for whole note, <code>“2”</code> for half note, <code>“4”</code> for quarter note, <code>“8”</code> for eighth note, <code>“16”</code> for sixteenth note, … <code>“2048”</code> for 2048th note</li>
     </ul>
+
+    <p>Here is an example of how to encode a whole note C4: <code>&lt;note pname="c" oct="4" dur="1"&gt;&lt;/note&gt;</code>. In MEI, notes are allowed to be children of <code>&lt;layer&gt;</code> elements.</p>
+
+    <p id="tutorialTask">In the editor below, please enter the encoding of the first note of the example inside the <code>&lt;layer&gt;</code> element (see preview).</p>
 </div>

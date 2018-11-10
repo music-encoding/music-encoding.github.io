@@ -1,5 +1,11 @@
 <div>
-    <p id="tutorialGoal">In this step you will learn how to setup a <code>&lt;measure&gt;</code>.</p>
+    <p id="tutorialGoal">In this step you will setup a single <code>&lt;measure&gt;</code> with an empty <code>&lt;staff&gt;</code> and <code>&lt;layer&gt;</code>.</p>
 
-    <p id="tutorialTask">Within the <code>&lt;score&gt;</code> element, the <code>&lt;section&gt;</code> element follows the <code>&lt;scoreDef&gt;</code> element and is the container for the <code>&lt;measure&gt;</code> elements. You will need to add a new child element <code>&lt;measure&gt;</code> to the <code>&lt;score&gt;</code> element right after the closing statement of the <code>&lt;/scoreDef&gt;</code>. Measures are numbered by the attribute <code>@n</code>. Set the number of the pickup measure to <code>"0"</code>.</p>
+    <p>Within <code>&lt;score&gt;</code>, the <code>&lt;section&gt;</code> element is the container for the <code>&lt;measure&gt;</code> elements. It's positioned directly after <code>&lt;scoreDef&gt;</code>.</p>
+
+    <p>Measures can contain multiple staves (<code>&lt;staff&gt;</code>) which can have multiple layers (<code>&lt;layer&gt;</code>). The <code>&lt;layer&gt;</code> element will be the parent element for the <code>&lt;note&gt;</code> elements in the next step.</p>
+
+    <p>To indicate the numbered position of measures, staves or layers, the attribute <code>@n</code> can be used.</p>
+
+    <p id="tutorialTask">In the editor, insert a <code>&lt;section&gt;</code> element. Inside <code>&lt;section&gt;</code> add an empty <code>&lt;measure&gt;</code> element. Set the number of the pickup measure to <code>"0"</code>. Add a child element <code>&lt;staff&gt;</code> to the <code>&lt;measure&gt;</code> element and set its number to <code>"1"</code> (first staff in measure 0). Then add an unnumbered child element <code>&lt;layer&gt;</code> to the <code>&lt;staff&gt;</code> element. Again, your input will automatically be inserted at the correct position right after the closing statement of <code>&lt;/scoreDef&gt;</code>.</p>
 </div>

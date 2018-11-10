@@ -16,17 +16,19 @@
                             <staffDef n="1" lines="5" clef.shape="G" clef.line="2" />
                         </staffGrp>
                     </scoreDef>
+                    <?preview-start?>
                     <section>
-                        <?snippet-start?>
                         <measure n="0">
                             <staff n="1">
                                 <layer>
-                                    <note pname="b" oct="3" dur="4"></note>
+                                    <?snippet-start?>
+                                    <note pname="b" oct="3" dur="4" />
+                                    <?snippet-end?>
                                 </layer>
                             </staff>
                         </measure>
-                        <?snippet-end?>
                     </section>
+                    <?preview-end?>
                 </score>
             </mdiv>
         </body>
