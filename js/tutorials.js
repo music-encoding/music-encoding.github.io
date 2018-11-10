@@ -24,6 +24,7 @@ var options = {
 
 vrvToolkit.setOptions(options);
 
+
 function nsResolver(prefix) {
     var ns = {
         'mei' : 'http://www.music-encoding.org/ns/mei',
@@ -32,40 +33,39 @@ function nsResolver(prefix) {
     return ns[prefix] || null;
 }
 
+
 function setupTutorial(data) {
-    
+
     var stepCount = data.steps.length;
-    var stepBox = document.querySelector('#stepBox');
-    
-    
-    for(var i=0;i<stepCount;i++) {
+    var stepBox = document.getElementById('stepBox');
+
+    for(var i = 0; i < stepCount; i++) {
         var step = data.steps[i];
-        
+
         var li = document.createElement('li');
         li.classList.add('step-item');
         li.setAttribute('data-step-n',i);
         var a = document.createElement('a');
         //a.classList.add('tooltip');
-        var text = (step.label !== '') ? step.label : 'Step ' + (i+1);
+        var text = (step.label !== '') ? step.label : 'Step ' + (i + 1);
         a.innerHTML = text;
         //a.setAttribute('data-tooltip','unavailable yet');
         li.appendChild(a);
         stepBox.appendChild(li);
     }
-    
+
     var li = document.createElement('li');
         li.classList.add('step-item');
         li.setAttribute('data-step-n','outro');
         var a = document.createElement('a');
         //a.classList.add('tooltip');
-        var text = 'Finish'
+        var text = 'Finish';
         a.innerHTML = text;
         //a.setAttribute('data-tooltip','unavailable yet');
         li.appendChild(a);
         stepBox.appendChild(li);
-    
-    loadTutorialStep(data,0);
-    
+
+    loadTutorialStep(data, 0);
 }
 
 
@@ -329,11 +329,11 @@ function activateStepListItem(data, stepNum) {
             })*/
         }
     } catch(err) {
-        console.log('No active step so far: ' + err)
+        console.log('No active step so far: ' + err);
     }
-    
+
     var stepLi = document.querySelector('li.step-item[data-step-n="' + stepNum + '"]');
-    //stepLi.setAttribute('data-tooltip','Current Step')
+    // stepLi.setAttribute('data-tooltip','Current Step');
     stepLi.classList.add('active');
 }
 
@@ -354,8 +354,9 @@ function displayWarning(text) {
     toast.classList.add('toast');
     toast.classList.add('toast-warning');
     toast.innerHTML = text;
-    
-    document.querySelector('#hints').appendChild(toast);
+
+    document.getElementById('hints').appendChild(toast);
+}
 
 
 function fetchFile(file) {
