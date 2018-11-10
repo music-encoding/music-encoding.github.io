@@ -75,11 +75,7 @@ function loadTutorialStep(data, stepNum) {
     console.log('\nloading step ' + stepNum + ', maximum step is ' + data.steps.length);
     // console.log(data);
 
-    // clean up hints and rendering
-    cleanUpHelpers();
-
     var step = data.steps[stepNum];
-    console.log('step: ', stepNum, step);
 
     // update stepLabel
     document.getElementById('stepLabel').innerHTML = (step.label !== '') ? step.label : 'Step ' + (stepNum + 1);
@@ -132,7 +128,6 @@ function fetchXmlFiles(data, stepNum, step) {
 
 
 function setupEditor(data, stepNum, step, xmlString, prefillString) {
-    console.log(stepNum, step.xpaths);
 
     // snippet positions
     var startSnippetStr = '<?snippet-start?>';
@@ -153,12 +148,10 @@ function setupEditor(data, stepNum, step, xmlString, prefillString) {
 
     // string parts for preview snippet
     var previewStringParts = getPreviewStringParts(filePositions, prefillString);
-    console.log('previewSnippet', previewStringParts.snippet);
+    // console.log('previewSnippet', previewStringParts.snippet);
 
     // update preview with preview snippet
     previewTextarea.value = previewStringParts.snippet;
-
-    // console.log('previewSnippet length', previewStringParts.snippet.split(/\r\n|\r|\n/).length);
 
     // update editor with prefill string
     editor.setValue(prefillString);
@@ -173,8 +166,6 @@ function setupEditor(data, stepNum, step, xmlString, prefillString) {
 
 
 function checkForEditorChanges(data, stepNum, step, validationStringParts, previewStringParts) {
-
-    console.log('called checkForEditorChanges');
 
     var parser = new DOMParser();
     var xmlDoc;
@@ -196,7 +187,7 @@ function checkForEditorChanges(data, stepNum, step, validationStringParts, previ
         // get user input
         editValue = editor.getSession().getValue();
 
-        // update preview textarea with preview snippet
+        // update preview string and preview textarea
         previewString = previewStringParts.start + editValue + previewStringParts.end;
         previewTextarea.value = previewString;
 
@@ -216,7 +207,7 @@ function checkForEditorChanges(data, stepNum, step, validationStringParts, previ
         if (!wellformed) {
                 console.log('not well-formed');
                 displayWarning('Your code is not well-formed.');
-                document.getElementById('rendering').innerHTML= '';
+                document.getElementById('rendering').innerHTML = '';
         } else {
 
             isValid = true;
@@ -261,7 +252,7 @@ function checkForEditorChanges(data, stepNum, step, validationStringParts, previ
             }
 
             if (!isValid) {
-                // run check again
+                // run input check again
                 checkForEditorChanges(data, stepNum, step, validationStringParts, previewStringParts);
             } else {
                 // proceed with tutorial
@@ -273,13 +264,8 @@ function checkForEditorChanges(data, stepNum, step, validationStringParts, previ
 
 
 function nextTutorialStep(data, stepNum) {
-    // clean up hints and rendering
-    cleanUpHelpers();
-
-    // load next tutorial step
     if (data.steps.length > (stepNum + 1)) {
-        console.log('CONTINUE with step', stepNum + 1);
-
+        // load next tutorial step
         loadTutorialStep(data, stepNum + 1);
     } else {
         // finish tutorial
@@ -298,6 +284,8 @@ function renderVerovio(validationString) {
 
 
 function resizeEditor(step) {
+    // console.log('snippet length', previewStringParts.snippet.split(/\r\n|\r|\n/).length);
+
     //the overhead of .7rem is intended to avoid flickering / scrolling
     var editorLines = (typeof step.editorLines !== 'undefined') ? (step.editorLines + .7) : 5.7;
     document.getElementById('editorBox').style.height = editorLines + 'rem';
@@ -339,13 +327,15 @@ function activateStepListItem(data, stepNum) {
 
 
 function cleanUpHelpers() {
+    // reset hints
     var hints = document.getElementById('hints');
     while (hints.hasChildNodes()) {
         hints.removeChild(hints.firstChild);
     }
-    hints.innerHtml = '';
-    document.getElementById('rendering').innerHTML= '';
+    hints.innerHTML = '';
 
+    // reset rendering
+    document.getElementById('rendering').innerHTML= '';
 }
 
 
