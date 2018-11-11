@@ -390,10 +390,13 @@ function getSnippetPositions(xmlString, start, end) {
     // and return position indices of snippet strings
     // if no start or end is given, take the start and end
     // of the whole file as default values
+
+    var meiEndTag = '</mei>'; // if end doesn't exist, find the mei end tag
+
     var startIndex = (xmlString.indexOf(start) > - 1) ? xmlString.indexOf(start) : 0;
     var startIndex_end = (xmlString.indexOf(start) > - 1) ? (xmlString.indexOf(start) + start.length) : 0;
-    var endIndex = (xmlString.indexOf(end) > - 1) ? xmlString.indexOf(end) : (xmlString.lastIndexOf('</mei>') + '</mei>'.length);
-    var endIndex_end = (xmlString.indexOf(end) > - 1) ? (xmlString.indexOf(end) + end.length) : (xmlString.lastIndexOf('</mei>') + '</mei>'.length);
+    var endIndex = (xmlString.indexOf(end) > - 1) ? xmlString.indexOf(end) : (xmlString.lastIndexOf(meiEndTag) + meiEndTag.length);
+    var endIndex_end = (xmlString.indexOf(end) > - 1) ? (xmlString.indexOf(end) + end.length) : (xmlString.lastIndexOf(meiEndTag) + meiEndTag.length);
 
     return {
         startIndex: startIndex,
@@ -406,12 +409,18 @@ function getSnippetPositions(xmlString, start, end) {
 
 function getFilePositions(xmlString, snippetPositions, previewPositions) {
     // TODO: check that previewStartIndex < snippetStartIndex && previewEndIndex > snippetEndIndex else throw error
+    var fileStartToPreviewStart = xmlString.substr(0, previewPositions.startIndex);
+    var fileEndFromPreviewEnd = xmlString.substr(previewPositions.endIndex_end);
+    var previewStartToSnippetStart = xmlString.substr(previewPositions.startIndex_end, (snippetPositions.startIndex - previewPositions.startIndex_end));
+    var snippetEndToPreviewEnd = xmlString.substr(snippetPositions.endIndex_end, (previewPositions.endIndex - snippetPositions.endIndex_end));
+    var snippetStartToSnippetEnd = xmlString.substr(snippetPositions.startIndex_end, (snippetPositions.endIndex - snippetPositions.startIndex_end));
+
     return {
-        fileStartToPreviewStart: xmlString.substr(0, previewPositions.startIndex),
-        fileEndFromPreviewEnd: xmlString.substr(previewPositions.endIndex_end),
-        previewStartToSnippetStart: xmlString.substr(previewPositions.startIndex_end, (snippetPositions.startIndex - previewPositions.startIndex_end)),
-        snippetEndToPreviewEnd: xmlString.substr(snippetPositions.endIndex_end, (previewPositions.endIndex - snippetPositions.endIndex_end)),
-        snippetStartToSnippetEnd: xmlString.substr(snippetPositions.startIndex_end, (snippetPositions.endIndex - snippetPositions.startIndex_end))
+        fileStartToPreviewStart: fileStartToPreviewStart,
+        fileEndFromPreviewEnd: fileEndFromPreviewEnd,
+        previewStartToSnippetStart: previewStartToSnippetStart,
+        snippetEndToPreviewEnd: snippetEndToPreviewEnd,
+        snippetStartToSnippetEnd: snippetStartToSnippetEnd
     }
 }
 
