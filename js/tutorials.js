@@ -280,17 +280,24 @@ function nextTutorialStep(data, stepNum) {
 
 function renderVerovio(validationString) {
     var svg = '';
+    var error = true;
 
     // try to render validationString with Verovio
     try {
         console.log('tried to render verovio');
         svg = vrvToolkit.renderData(validationString, {});
+        error = false;
     } catch (error) {
         console.log('error rendering verovio: ' + error);
     }
 
-    // insert svg into DOM
-    document.getElementById('rendering').innerHTML = svg;
+    if (error) {
+        // display message
+        document.getElementById('rendering').innerHTML = 'Not possible to render.';
+    } else {
+        // display svg
+        document.getElementById('rendering').innerHTML = svg;
+    }
 }
 
 
