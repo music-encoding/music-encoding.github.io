@@ -7,11 +7,11 @@
       "prefill": "102_march_step-01-prefill.xml",
       "xmlfile": "102_march_step-01.xml",
       "xpaths": [
-        {"rule": "count(//mei:scoreDef) = 1","renderanyway":false,"hint":"You need one scoreDef element."},
-        {"rule": "count(//mei:staffGrp) = 1","renderanyway":false,"hint":"You need one staffGrp element."},
-        {"rule": "//mei:scoreDef/mei:staffGrp","renderanyway":false,"hint":"staffGrp element has to be a child of scoreDef element."},
-        {"rule": "count(//mei:staffDef) = 1","renderanyway":false,"hint":"You need one staffDef element."},
-        {"rule": "//mei:staffGrp/mei:staffDef","renderanyway":false,"hint":"staffDef element has to be a child of staffGrp element."}
+        {"rule": "count(//mei:scoreDef) = 1", "renderanyway": false, "hint": "You need one scoreDef element."},
+        {"rule": "count(//mei:staffGrp) = 1", "renderanyway": false, "hint": "You need one staffGrp element."},
+        {"rule": "//mei:scoreDef/mei:staffGrp", "renderanyway": false, "hint": "staffGrp element has to be a child of scoreDef element."},
+        {"rule": "count(//mei:staffDef) = 1", "renderanyway": false, "hint": "You need one staffDef element."},
+        {"rule": "//mei:staffGrp/mei:staffDef", "renderanyway": false, "hint": "staffDef element has to be a child of staffGrp element."}
       ]
     },
     {
@@ -21,19 +21,19 @@
       "prefill": "102_march_step-02-prefill.xml",
       "xmlfile": "102_march_step-02.xml",
       "xpaths": [
-        {"rule": "count(//mei:scoreDef) = 1","renderanyway":false,"hint":"2: You need one scoreDef element."},
-        {"rule": "count(//mei:staffGrp) = 1","renderanyway":false,"hint":"You need one staffGroup element."},
-        {"rule": "//mei:scoreDef/mei:staffGrp","renderanyway":false,"hint":"staffGrp element has to be a child of scoreDef element."},
-        {"rule": "count(//mei:staffDef) = 1","renderanyway":false,"hint":"You need one staffDef element."},
-        {"rule": "//mei:staffGrp/mei:staffDef","renderanyway":false,"hint":"staffDef element has to be a child of staffGrp element."},
-        {"rule": "count(//mei:scoreDef/@*) = 2","renderanyway":false,"hint":"You need two attributes on scoreDef (@key.sig & @meter.sym)."},
-        {"rule": "//mei:scoreDef/@key.sig = '3f'","renderanyway":false,"hint":"You need a @key.sig attribute with a value of 3f."},
-        {"rule": "//mei:scoreDef/@meter.sym = 'cut'","renderanyway":false,"hint":"You need an @meter.sym attribute with a value of cut."},
-        {"rule": "count(//mei:staffDef/@*) = 4","renderanyway":false,"hint":"You need four attributes on staffDef (@n, @lines, @clef.shape & @clef.line)."},
-        {"rule": "//mei:staffDef/@n = '1'","renderanyway":false,"hint":"You need a @n attribute with a value of 1."},
-        {"rule": "//mei:staffDef/@lines = '5'","renderanyway":false,"hint":"You need a @lines attribute with a value of 5."},
-        {"rule": "//mei:staffDef/@clef.shape = 'G'","renderanyway":false,"hint":"You need a @clef.shape attribute with a value of G."},
-        {"rule": "//mei:staffDef/@clef.line = '2'","renderanyway":false,"hint":"You need a @clef.line attribute with a value of 2."}
+        {"rule": "count(//mei:scoreDef) = 1", "renderanyway": false, "hint": "You need one scoreDef element."},
+        {"rule": "count(//mei:staffGrp) = 1", "renderanyway": false, "hint": "You need one staffGroup element."},
+        {"rule": "//mei:scoreDef/mei:staffGrp", "renderanyway": false, "hint": "staffGrp element has to be a child of scoreDef element."},
+        {"rule": "count(//mei:staffDef) = 1", "renderanyway": false, "hint": "You need one staffDef element."},
+        {"rule": "//mei:staffGrp/mei:staffDef", "renderanyway": false, "hint": "staffDef element has to be a child of staffGrp element."},
+        {"rule": "count(//mei:scoreDef/@*) = 2", "renderanyway": false, "hint": "You need two attributes on scoreDef (@key.sig & @meter.sym)."},
+        {"rule": "//mei:scoreDef/@key.sig = '3f'", "renderanyway": false, "hint": "You need a @key.sig attribute with a value of 3f."},
+        {"rule": "//mei:scoreDef/@meter.sym = 'cut'", "renderanyway": false, "hint": "You need an @meter.sym attribute with a value of cut."},
+        {"rule": "count(//mei:staffDef/@*) = 4", "renderanyway": false, "hint": "You need four attributes on staffDef (@n, @lines, @clef.shape & @clef.line)."},
+        {"rule": "//mei:staffDef/@n = '1'", "renderanyway": false, "hint": "You need a @n attribute with a value of 1."},
+        {"rule": "//mei:staffDef/@lines = '5'", "renderanyway": false, "hint": "You need a @lines attribute with a value of 5."},
+        {"rule": "//mei:staffDef/@clef.shape = 'G'", "renderanyway": false, "hint": "You need a @clef.shape attribute with a value of G."},
+        {"rule": "//mei:staffDef/@clef.line = '2'", "renderanyway": false, "hint": "You need a @clef.line attribute with a value of 2."}
       ]
     },
     {
@@ -43,18 +43,18 @@
       "prefill": "102_march_step-03-prefill.xml",
       "xmlfile": "102_march_step-03.xml",
       "xpaths": [
-        {"rule": "count(//mei:section) = 1","renderanyway":false,"hint":"You need one section element."},
-        {"rule": "//mei:score/mei:section","renderanyway":false,"hint":"section element has to be a child of score element."},
-        {"rule": "count(//mei:measure) = 1","renderanyway":false,"hint":"You need one measure element."},
-        {"rule": "//mei:section/mei:measure","renderanyway":false,"hint":"measure element has to be a child of section element."},
-        {"rule": "count(//mei:measure/@*) = 1","renderanyway":false,"hint":"You need one attribute on measure (@n)."},
-        {"rule": "//mei:measure/@n = '0'","renderanyway":false,"hint":"You need a @n attribute with a value of 0."},
-        {"rule": "count(//mei:staff) = 1","renderanyway":false,"hint":"You need one staff element."},
-        {"rule": "//mei:measure/mei:staff","renderanyway":false,"hint":"staff element has to be a child of measure element."},
-        {"rule":"count(//mei:staff/@*) = 1","renderanyway":false,"hint":"You need one attribute on staff (@n)."},
-        {"rule": "//mei:staff/@n = '1'","renderanyway":false,"hint":"You need a @n attribute with a value of 1."},
-        {"rule": "count(//mei:layer) = 1","renderanyway":false,"hint":"You need one layer element."},
-        {"rule": "//mei:staff/mei:layer","renderanyway":false,"hint":"layer element has to be a child of staff element."}
+        {"rule": "count(//mei:section) = 1", "renderanyway": false, "hint": "You need one section element."},
+        {"rule": "//mei:score/mei:section", "renderanyway": false, "hint": "section element has to be a child of score element."},
+        {"rule": "count(//mei:measure) = 1", "renderanyway": false, "hint": "You need one measure element."},
+        {"rule": "//mei:section/mei:measure", "renderanyway": false, "hint": "measure element has to be a child of section element."},
+        {"rule": "count(//mei:measure/@*) = 1", "renderanyway": false, "hint": "You need one attribute on measure (@n)."},
+        {"rule": "//mei:measure/@n = '0'", "renderanyway": false, "hint": "You need a @n attribute with a value of 0."},
+        {"rule": "count(//mei:staff) = 1", "renderanyway": false, "hint": "You need one staff element."},
+        {"rule": "//mei:measure/mei:staff", "renderanyway": false, "hint": "staff element has to be a child of measure element."},
+        {"rule":"count(//mei:staff/@*) = 1", "renderanyway": false, "hint": "You need one attribute on staff (@n)."},
+        {"rule": "//mei:staff/@n = '1'", "renderanyway": false, "hint": "You need a @n attribute with a value of 1."},
+        {"rule": "count(//mei:layer) = 1", "renderanyway": false, "hint": "You need one layer element."},
+        {"rule": "//mei:staff/mei:layer", "renderanyway": false, "hint": "layer element has to be a child of staff element."}
       ]
     },
     {
@@ -64,11 +64,11 @@
       "prefill": "102_march_step-04-prefill.xml",
       "xmlfile": "102_march_step-04.xml",
       "xpaths": [
-        {"rule": "count(//mei:note) = 1","renderanyway":false,"hint":"You need one note element."},
-        {"rule": "count(//mei:note/@*) = 3","renderanyway":false,"hint":"You need three attributes on note (@pname, @oct a& @dur)."},
-        {"rule": "//mei:note/@pname = 'b'","renderanyway":false,"hint":"You need a @pname attribute with a value of b."},
-        {"rule": "//mei:note/@oct = '3'","renderanyway":false,"hint":"You need an @oct attribute with a value of 3."},
-        {"rule": "//mei:note/@dur = '4'","renderanyway":false,"hint":"You need a @dur attribute with a value of 4."}
+        {"rule": "count(//mei:note) = 1", "renderanyway": false, "hint": "You need one note element."},
+        {"rule": "count(//mei:note/@*) = 3", "renderanyway": false, "hint": "You need three attributes on note (@pname, @oct a& @dur)."},
+        {"rule": "//mei:note/@pname = 'b'", "renderanyway": false, "hint": "You need a @pname attribute with a value of b."},
+        {"rule": "//mei:note/@oct = '3'", "renderanyway": false, "hint": "You need an @oct attribute with a value of 3."},
+        {"rule": "//mei:note/@dur = '4'", "renderanyway": false, "hint": "You need a @dur attribute with a value of 4."}
       ]
     }
   ],

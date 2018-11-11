@@ -7,7 +7,7 @@
       "prefill": "100_structure_step-01-prefill.xml",
       "xmlfile": "100_structure_step-01.xml",
       "xpaths": [
-        {"rule": "count(//mei) = 1","renderanyway": true,"hint": "1: You need one mei element."}
+        {"rule": "count(//mei) = 1", "renderanyway": true, "hint": "1: You need one mei element."}
       ]
     },
     {
@@ -17,8 +17,8 @@
       "prefill": "100_structure_step-02-prefill.xml",
       "xmlfile": "100_structure_step-02.xml",
       "xpaths": [
-        {"rule": "count(*[local-name()='mei']) = 1","renderanyway": true,"hint": "You need one mei element."},
-        {"rule": "*[local-name()='mei' and namespace-uri()='http://www.music-encoding.org/ns/mei']","renderanyway": true,"hint": "You need a @xmlns declaration with the mei namespace 'http://www.music-encoding.org/ns/mei'."}
+        {"rule": "count(*[local-name()='mei']) = 1", "renderanyway": true, "hint": "You need one mei element."},
+        {"rule": "*[local-name()='mei' and namespace-uri()='http://www.music-encoding.org/ns/mei']", "renderanyway": true, "hint": "You need a @xmlns declaration with the mei namespace 'http://www.music-encoding.org/ns/mei'."}
       ]
     },
     {
@@ -28,9 +28,9 @@
       "prefill": "100_structure_step-03-prefill.xml",
       "xmlfile": "100_structure_step-03.xml",
       "xpaths": [
-        {"rule": "count(//*[local-name()='mei']) = 1","renderanyway": false,"hint": "You need one mei element."},
-        {"rule": "count(//*[local-name()='mei']/*[local-name()='meiHead']) = 1","renderanyway": false,"hint": "You need one child element meiHead."},
-        {"rule": "count(//*[local-name()='mei']/*[local-name()='music']) = 1","renderanyway": false,"hint": "You need one child element music."}
+        {"rule": "count(//*[local-name()='mei']) = 1", "renderanyway": false, "hint": "You need one mei element."},
+        {"rule": "count(//*[local-name()='mei']/*[local-name()='meiHead']) = 1", "renderanyway": false, "hint": "You need one child element meiHead."},
+        {"rule": "count(//*[local-name()='mei']/*[local-name()='music']) = 1", "renderanyway": false, "hint": "You need one child element music."}
       ]
     }
   ],
