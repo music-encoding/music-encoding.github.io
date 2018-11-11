@@ -3,9 +3,9 @@
     {
         "label":"First Note",
         "editorLines":1,
-        "descfile": "101_quickstart_step-01-desc.html",
-        "prefill": "101_quickstart_step-01-prefill.xml",
-        "xmlfile": "101_quickstart_step-01.xml",
+        "descFile": "101_quickstart_step-01-desc.html",
+        "prefillFile": "101_quickstart_step-01-prefill.xml",
+        "xmlFile": "101_quickstart_step-01.xml",
         "xpaths": [
             {"rule":"count(//mei:note) = 1", "renderanyway": false, "hint": "You need one note element."},
             {"rule":"count(//mei:note/@*) = 3", "renderanyway": false, "hint": "You need three attributes."},
@@ -17,9 +17,9 @@
     {
         "label":"",
         "editorLines":3,
-        "descfile": "101_quickstart_step-02-desc.html",
-        "prefill":"101_quickstart_step-02-prefill.xml",
-        "xmlfile": "101_quickstart_step-02.xml",
+        "descFile": "101_quickstart_step-02-desc.html",
+        "prefillFile":"101_quickstart_step-02-prefill.xml",
+        "xmlFile": "101_quickstart_step-02.xml",
         "xpaths": [
             {"rule":"count(//mei:note) = 1", "renderanyway": false},
             {"rule":"//mei:note/@pname = 'g'", "renderanyway": false, "hint": "You need a @pname attribute, with a value of g."},

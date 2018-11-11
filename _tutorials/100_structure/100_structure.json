@@ -3,9 +3,9 @@
     {
       "label": "Your very first MEI element",
       "editorLines": 1,
-      "descfile": "100_structure_step-01-desc.html",
-      "prefill": "100_structure_step-01-prefill.xml",
-      "xmlfile": "100_structure_step-01.xml",
+      "descFile": "100_structure_step-01-desc.html",
+      "prefillFile": "100_structure_step-01-prefill.xml",
+      "xmlFile": "100_structure_step-01.xml",
       "xpaths": [
         {"rule": "count(//mei) = 1", "renderanyway": true, "hint": "1: You need one mei element."}
       ]
@@ -13,9 +13,9 @@
     {
       "label": "The MEI namespace",
       "editorLines": 3,
-      "descfile": "100_structure_step-02-desc.html",
-      "prefill": "100_structure_step-02-prefill.xml",
-      "xmlfile": "100_structure_step-02.xml",
+      "descFile": "100_structure_step-02-desc.html",
+      "prefillFile": "100_structure_step-02-prefill.xml",
+      "xmlFile": "100_structure_step-02.xml",
       "xpaths": [
         {"rule": "count(*[local-name()='mei']) = 1", "renderanyway": true, "hint": "You need one mei element."},
         {"rule": "*[local-name()='mei' and namespace-uri()='http://www.music-encoding.org/ns/mei']", "renderanyway": true, "hint": "You need a @xmlns declaration with the mei namespace 'http://www.music-encoding.org/ns/mei'."}
@@ -24,9 +24,9 @@
     {
       "label": "Two basic child elements",
       "editorLines": 7,
-      "descfile": "100_structure_step-03-desc.html",
-      "prefill": "100_structure_step-03-prefill.xml",
-      "xmlfile": "100_structure_step-03.xml",
+      "descFile": "100_structure_step-03-desc.html",
+      "prefillFile": "100_structure_step-03-prefill.xml",
+      "xmlFile": "100_structure_step-03.xml",
       "xpaths": [
         {"rule": "count(//*[local-name()='mei']) = 1", "renderanyway": false, "hint": "You need one mei element."},
         {"rule": "count(//*[local-name()='mei']/*[local-name()='meiHead']) = 1", "renderanyway": false, "hint": "You need one child element meiHead."},

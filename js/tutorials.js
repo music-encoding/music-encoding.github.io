@@ -92,25 +92,25 @@ function loadTutorialStep(data, stepNum) {
 
 function fetchDescriptionFile(step) {
     // fetch description file
-    fetchFile(step.descfile)
+    fetchFile(step.descFile)
         .then(function(descriptionFile) {
             // update instruction section
             document.getElementById('instruction').innerHTML = descriptionFile;
         })
         .catch(function(error) {
-            console.log('There has been a problem with the fetch operation for ', step.descfile, error.message);
+            console.log('There has been a problem with the fetch operation for ', step.descFile, error.message);
         });
 }
 
 
 function fetchXmlFiles(data, stepNum, step) {
-    // use promise array to resolve xmlfile and prefill fetch
+    // use promise array to resolve xmlFile and prefillFile fetch
 
     // fetch xml file
-    var xmlPromise = fetchFile(step.xmlfile);
+    var xmlPromise = fetchFile(step.xmlFile);
 
     // fetch prefill file if existing, otherwise return promise of empty string
-    var prefillPromise = (typeof step.prefill !== 'undefined' && step.prefill !== '') ? fetchFile(step.prefill) : new Promise(function(resolve) { resolve(''); });
+    var prefillPromise = (typeof step.prefillFile !== 'undefined' && step.prefillFile !== '') ? fetchFile(step.prefillFile) : new Promise(function(resolve) { resolve(''); });
 
     // array of the promises to be resolved
     var promiseArray = [xmlPromise, prefillPromise];
@@ -272,7 +272,7 @@ function nextTutorialStep(data, stepNum) {
     } else {
         // finish tutorial
         activateStepListItem(data, 'outro');
-        document.getElementById('stepLabel').innerHTML = 'Finished succesfully!';
+        document.getElementById('stepLabel').innerHTML = 'Finished successfully!';
         document.getElementById('instruction').innerHTML = data.outro;
     }
 }
