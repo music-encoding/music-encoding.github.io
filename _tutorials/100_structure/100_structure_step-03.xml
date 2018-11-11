@@ -1,14 +1,9 @@
+<?preview-start?>
+<!-- CAUTION: This is not a valid MEI document yet -->
 <?snippet-start?>
 <mei xmlns="http://www.music-encoding.org/ns/mei">
-    <meiHead>
-        <fileDesc>
-            <titleStmt>
-                <title></title>
-            </titleStmt>
-            <pubStmt></pubStmt>
-        </fileDesc>
-    </meiHead>
-    <music>
-    </music>
+    <meiHead></meiHead>
+    <music></music>
 </mei>
 <?snippet-end?>
+<?preview-end?>
