@@ -7,13 +7,14 @@
     <h1>Attention: This is also a tutorial on how to write tutorials now. </h1>
     <p>
         If you want to prefill the editor at any given step of a tutorial, please add a property 
-        <b>"prefill"</b> to the JSON, which points to a corresponding file. These file names really don't matter,
-        they just have to match a file in the folder of the tutorial.<br/>
-        If "prefill" is set, the corresponding file will be loaded, and it's content will be inserted into 
+        <b>"prefillFile"</b> to the JSON, which points to a corresponding file. While these file names really don't matter
+        (they just have to match a file in the folder of the tutorial),
+        it is recommended to name them according to the corresponding tutorial step.<br/>
+        If "prefillFile" is set, the corresponding file will be loaded, and it's content will be inserted into
         the editor, replacing it's previous content (if any). If done on the first step of a tutorial, this allows
         you to start with something in the editor right away (if not, the editor will start empty).<br/>
-        Without "prefill" being set, the previous content of the editor will be preserved for the next step. With
-        "prefill" set at a later step, it allows to change that to a default value, or a new "entry point" into the 
+        Without "prefillFile" being set, the previous content of the editor will be preserved for the next step. With
+        "prefillFile" set at a later step, it allows to change that to a default value, or a new "entry point" into the
         MEI file being edited.
     </p>
     <p>
