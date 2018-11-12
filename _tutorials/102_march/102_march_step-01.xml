@@ -12,13 +12,13 @@
             <mdiv>
                 <?preview-start?>
                 <score>
-                    <?snippet-start?>
+                    <?edit-start?>
                     <scoreDef>
                         <staffGrp>
                             <staffDef></staffDef>
                         </staffGrp>
                     </scoreDef>
-                    <?snippet-end?>
+                    <?edit-end?>
                 </score>
                 <?preview-end?>
             </mdiv>

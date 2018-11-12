@@ -131,18 +131,18 @@ function fetchXmlFiles(data, stepNum, step) {
 
 function setupEditor(data, stepNum, step, xmlString, prefillString) {
 
-    // snippet positions
-    var startSnippetStr = '<?snippet-start?>';
-    var endSnippetStr = '<?snippet-end?>';
-    var snippetPositions = getSnippetPositions(xmlString, startSnippetStr, endSnippetStr);
+    // edit snippet positions
+    var editSnippetStartString = '<?edit-start?>';
+    var editSnippetEndString = '<?edit-end?>';
+    var editSnippetPositions = getSnippetPositions(xmlString, editSnippetStartString, editSnippetEndString);
 
-    // preview positions
-    var previewStartStr = '<?preview-start?>';
-    var previewEndStr = '<?preview-end?>';
-    var previewPositions = getSnippetPositions(xmlString, previewStartStr, previewEndStr);
+    // preview snippet positions
+    var previewSnippetStartString = '<?preview-start?>';
+    var previewSnippetEndString = '<?preview-end?>';
+    var previewSnippetPositions = getSnippetPositions(xmlString, previewSnippetStartString, previewSnippetEndString);
 
     // filePositions
-    var filePositions = getFilePositions(xmlString, snippetPositions, previewPositions);
+    var filePositions = getFilePositions(xmlString, editSnippetPositions, previewSnippetPositions);
 
     // string parts for validation file
     var validationStringParts = getValidationStringParts(filePositions);
@@ -407,27 +407,27 @@ function getSnippetPositions(xmlString, start, end) {
 }
 
 
-function getFilePositions(xmlString, snippetPositions, previewPositions) {
+function getFilePositions(xmlString, editSnippetPositions, previewSnippetPositions) {
     // TODO: check that previewStartIndex < snippetStartIndex && previewEndIndex > snippetEndIndex else throw error
-    var fileStartToPreviewStart = xmlString.substr(0, previewPositions.startIndex);
-    var fileEndFromPreviewEnd = xmlString.substr(previewPositions.endIndex_end);
-    var previewStartToSnippetStart = xmlString.substr(previewPositions.startIndex_end, (snippetPositions.startIndex - previewPositions.startIndex_end));
-    var snippetEndToPreviewEnd = xmlString.substr(snippetPositions.endIndex_end, (previewPositions.endIndex - snippetPositions.endIndex_end));
-    var snippetStartToSnippetEnd = xmlString.substr(snippetPositions.startIndex_end, (snippetPositions.endIndex - snippetPositions.startIndex_end));
+    var fileStartToPreviewStart = xmlString.substr(0, previewSnippetPositions.startIndex);
+    var fileEndFromPreviewEnd = xmlString.substr(previewSnippetPositions.endIndex_end);
+    var previewStartToEditStart = xmlString.substr(previewSnippetPositions.startIndex_end, (editSnippetPositions.startIndex - previewSnippetPositions.startIndex_end));
+    var editEndToPreviewEnd = xmlString.substr(editSnippetPositions.endIndex_end, (previewSnippetPositions.endIndex - editSnippetPositions.endIndex_end));
+    var editStartToEditEnd = xmlString.substr(editSnippetPositions.startIndex_end, (editSnippetPositions.endIndex - editSnippetPositions.startIndex_end));
 
     return {
         fileStartToPreviewStart: fileStartToPreviewStart,
         fileEndFromPreviewEnd: fileEndFromPreviewEnd,
-        previewStartToSnippetStart: previewStartToSnippetStart,
-        snippetEndToPreviewEnd: snippetEndToPreviewEnd,
-        snippetStartToSnippetEnd: snippetStartToSnippetEnd
+        previewStartToEditStart: previewStartToEditStart,
+        editEndToPreviewEnd: editEndToPreviewEnd,
+        editStartToEditEnd: editStartToEditEnd
     }
 }
 
 
 function getPreviewStringParts(filePositions, prefillString) {
-    var start = filePositions.previewStartToSnippetStart.trim() + '\n';
-    var end = '\n' + filePositions.snippetEndToPreviewEnd.trim();
+    var start = filePositions.previewStartToEditStart.trim() + '\n';
+    var end = '\n' + filePositions.editEndToPreviewEnd.trim();
     var snippet = start + prefillString + end;
 
     return {
@@ -439,9 +439,9 @@ function getPreviewStringParts(filePositions, prefillString) {
 
 
 function getValidationStringParts(filePositions) {
-    var start = filePositions.fileStartToPreviewStart + filePositions.previewStartToSnippetStart;
-    var end = filePositions.snippetEndToPreviewEnd + filePositions.fileEndFromPreviewEnd;
-    var snippet = filePositions.snippetStartToSnippetEnd;
+    var start = filePositions.fileStartToPreviewStart + filePositions.previewStartToEditStart;
+    var end = filePositions.editEndToPreviewEnd + filePositions.fileEndFromPreviewEnd;
+    var snippet = filePositions.editStartToEditEnd;
 
     return {
         start: start,

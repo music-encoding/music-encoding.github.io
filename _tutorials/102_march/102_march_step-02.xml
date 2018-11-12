@@ -12,13 +12,13 @@
             <mdiv>
                 <?preview-start?>
                 <score>
-                    <?snippet-start?>
+                    <?edit-start?>
                     <scoreDef key.sig="3f" meter.sym="cut">
                         <staffGrp>
                             <staffDef n="1" lines="5" clef.shape="G" clef.line="2"></staffDef>
                         </staffGrp>
                     </scoreDef>
-                    <?snippet-end?>
+                    <?edit-end?>
                 </score>
                 <?preview-end?>
             </mdiv>

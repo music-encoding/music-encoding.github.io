@@ -21,9 +21,9 @@
                             <staff n="1">
                                 <layer>
                                     <?preview-start?>
-                                    <?snippet-start?>
+                                    <?edit-start?>
                                     <note pname="g" oct="5" dur="2"/>
-                                    <?snippet-end?>
+                                    <?edit-end?>
                                     <?preview-end?>
                                 </layer>
                             </staff>
