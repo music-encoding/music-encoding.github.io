@@ -21,9 +21,9 @@
                         <measure n="0">
                             <staff n="1">
                                 <layer>
-                                    <?snippet-start?>
+                                    <?edit-start?>
                                     <note pname="b" oct="3" dur="4" />
-                                    <?snippet-end?>
+                                    <?edit-end?>
                                 </layer>
                             </staff>
                         </measure>

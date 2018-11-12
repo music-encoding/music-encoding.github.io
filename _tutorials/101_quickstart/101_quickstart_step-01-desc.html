@@ -45,7 +45,7 @@
 
         <li>The <code>xmlFile</code> has the actual MEI encoding that is the final goal of the tutorial step. Two snippets can help to define different sections of the file:</li>
             <ul>
-                <li>An "edit snippet" can be inserted to mark the start (<code>&lt;?snippet-start?&gt;</code>) and end (<code>&lt;?snippet-end?&gt;</code>) of the section that the user is meant to edit or to enter into the editor. During user input, the preview box will be live updated automatically. For validation, the <code>xmlFile</code>'s content between snippet start and end will be cut out and replaced by the user's input.</li>
+                <li>An "edit snippet" can be inserted to mark the start (<code>&lt;?edit-start?&gt;</code>) and end (<code>&lt;?edit-end?&gt;</code>) of the section that the user is meant to edit or to enter into the editor. During user input, the preview box will be live updated automatically. For validation, the <code>xmlFile</code>'s content between snippet start and end will be cut out and replaced by the user's input.</li>
                 <li>A "preview snippet" can be inserted to mark the start (<code>&lt;?preview-start?&gt;</code>) and end (<code>&lt;?preview-end?&gt;</code>) of the section that the user is meant to see in the preview box (if it is necessary to provide some additional context). The preview snippet has no influence on validation and it is expected to be placed outside of the preview snippet.</li>
             </ul>
 
