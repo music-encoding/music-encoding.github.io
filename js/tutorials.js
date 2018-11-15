@@ -41,7 +41,7 @@ function setupTutorial(data) {
     var stepCount = data.steps.length;
     var stepBox = document.getElementById('stepBox');
 
-    for(var i = 0; i < stepCount; i++) {
+    for(var i=0; i<stepCount; i++) {
         var step = data.steps[i];
 
         var li = document.createElement('li');
@@ -66,29 +66,50 @@ function setupTutorial(data) {
         //a.setAttribute('data-tooltip','unavailable yet');
         li.appendChild(a);
         stepBox.appendChild(li);
-
-    loadTutorialStep(data, 0);
+    
+    loadTutorialStep(data,0);
+    
+    document.getElementById('nextStepButton').addEventListener('click',(e) => {
+        var stepNum = parseInt(e.target.getAttribute('data-stepnum'));
+        loadTutorialStep(data,stepNum + 1);   
+    });
+    
+    loadTutorialStep(data,stepNum + 1);    
 }
 
 
 function loadTutorialStep(data, stepNum) {
     //data object available here
 
-    console.log('\nloading step ' + stepNum + ', maximum step is ' + data.steps.length);
+    //console.log('\nloading step ' + stepNum + ', maximum step is ' + data.steps.length);
     // console.log(data);
 
     var step = data.steps[stepNum];
-
-    // update stepLabel
-    document.getElementById('stepLabel').innerHTML = (step.label !== '') ? step.label : 'Step ' + (stepNum + 1);
-
-    activateStepListItem(data, stepNum);
-
+    
+    document.getElementById('stepLabel').innerHTML = (typeof step.label !== 'undefined' && step.label !== '') ? step.label : 'Step ' + (stepNum + 1)
+    
+    activateStepListItem(data,stepNum);
+    
+    var requiresEditor = (typeof step.xmlFile !== 'undefined' && step.xmlFile !== '') && typeof step.xpaths !== 'undefined' && step.xpaths.length > 0;
+    var editorContainer = document.getElementById('editorContainer');
+    var nextStepButton = document.getElementById('nextStepButton');
+    
+    nextStepButton.setAttribute('data-stepnum',stepNum);
+    
+    if(!requiresEditor) {
+        editorContainer.style.display = 'none';
+        nextStepButton.style.display = 'block';
+    } else {
+        editorContainer.style.display = 'block';
+        nextStepButton.style.display = 'none';
+        
+        fetchXmlFiles(data, stepNum, step);
+    }
+    
     fetchDescriptionFile(step);
-
-    fetchXmlFiles(data, stepNum, step);
+    
+    
 }
-
 
 function fetchDescriptionFile(step) {
     // fetch description file
@@ -96,6 +117,7 @@ function fetchDescriptionFile(step) {
         .then(function(descriptionFile) {
             // update instruction section
             document.getElementById('instruction').innerHTML = descriptionFile;
+            console.log('done fetching description')
         })
         .catch(function(error) {
             console.log('There has been a problem with the fetch operation for ', step.descFile, error.message);
@@ -104,121 +126,123 @@ function fetchDescriptionFile(step) {
 
 
 function fetchXmlFiles(data, stepNum, step) {
+    
+    console.log('fetchXmlFiles')
+    
     // use promise array to resolve xmlFile and prefillFile fetch
-
+    
     // fetch xml file
     var xmlPromise = fetchFile(step.xmlFile);
-
+    
     // fetch prefill file if existing, otherwise return promise of empty string
     var prefillPromise = (typeof step.prefillFile !== 'undefined' && step.prefillFile !== '') ? fetchFile(step.prefillFile) : new Promise(function(resolve) { resolve(''); });
-
+    
     // array of the promises to be resolved
     var promiseArray = [xmlPromise, prefillPromise];
-
+    
     // resolve all promises
     Promise.all(promiseArray)
-        .then(function(responseArray) {
-            var xmlString = responseArray[0];       // resolved xmlPromise
-            var prefillString = responseArray[1];   // resolved prefillPromise (prefill || '')
-
-            setupEditor(data, stepNum, step, xmlString, prefillString);
-        })
-        .catch(function(error) {
-            console.log('There has been a problem with the fetch operation for: ', promiseArray, error.message);
-        });
+    .then(function(responseArray) {
+          var xmlString = responseArray[0];       // resolved xmlPromise
+          var prefillString = responseArray[1];   // resolved prefillPromise (prefill || '')
+          
+          setupEditor(data, stepNum, step, xmlString, prefillString);
+          })
+    .catch(function(error) {
+           console.log('There has been a problem with the fetch operation for: ', promiseArray, error.message);
+           });
 }
 
 
 function setupEditor(data, stepNum, step, xmlString, prefillString) {
-
+    
     // edit snippet positions
     var editSnippetStartString = '<?edit-start?>';
     var editSnippetEndString = '<?edit-end?>';
     var editSnippetPositions = getSnippetPositions(xmlString, editSnippetStartString, editSnippetEndString);
-
+    
     // preview snippet positions
     var previewSnippetStartString = '<?preview-start?>';
     var previewSnippetEndString = '<?preview-end?>';
     var previewSnippetPositions = getSnippetPositions(xmlString, previewSnippetStartString, previewSnippetEndString);
-
+    
     // filePositions
     var filePositions = getFilePositions(xmlString, editSnippetPositions, previewSnippetPositions);
-
+    
     // string parts for validation file
     var validationStringParts = getValidationStringParts(filePositions);
     console.log('editSnippet', validationStringParts.snippet);
-
+    
     // string parts for preview snippet
     var previewStringParts = getPreviewStringParts(filePositions, prefillString);
     // console.log('previewSnippet', previewStringParts.snippet);
-
+    
     // update preview with preview snippet
     previewTextarea.value = previewStringParts.snippet;
-
+    
     // update editor with prefill string
     editor.setValue(prefillString);
     editor.clearSelection();
-
+    
     // adjust size of editor box
     resizeEditor(step);
-
+    
     // check for editor changes by user input
     checkForEditorChanges(data, stepNum, step, validationStringParts, previewStringParts);
 }
 
 
 function checkForEditorChanges(data, stepNum, step, validationStringParts, previewStringParts) {
-
+    
     var parser = new DOMParser();
     var xmlDoc;
-
+    
     var isValid = false;
     var wellformed = false;
-
+    
     var editValue = '';
     var previewString = '';
     var validationString = '';
-
+    
     // watch out for changes by user input
     editor.session.on('change', function changeListener(delta) {
         // delta.start, delta.end, delta.lines, delta.action
-
+        
         // clean up hints and rendering
         cleanUpHelpers();
-
+        
         // get user input
         editValue = editor.getSession().getValue();
-
+        
         // update preview string and preview textarea
         previewString = previewStringParts.start + editValue + previewStringParts.end;
         previewTextarea.value = previewString;
-
+        
         // update validation string
         validationString = validationStringParts.start + editValue + validationStringParts.end;
-
+        
         // try to parse validation string into xmlDoc
         try {
             xmlDoc = parser.parseFromString(validationString, "text/xml");
-
+            
             // check if parsed xmlDoc is wellformed
             wellformed = (xmlDoc.activeElement && xmlDoc.activeElement.localName && xmlDoc.activeElement.localName === 'parsererror') ? false : true;
         } catch (error) {
             console.log('parserError: ' + error);
         }
-
+        
         if (!wellformed) {
-                console.log('not well-formed');
-                displayWarning('Your code is not well-formed.');
-                document.getElementById('rendering').innerHTML = '';
+            console.log('not well-formed');
+            displayWarning('Your code is not well-formed.');
+            document.getElementById('rendering').innerHTML = '';
         } else {
-
             isValid = true;
             var renderAnyway = true;
-
+            
             for (var i = 0; i < step.xpaths.length; i++) {
-
+        
                 var xpathResult;
-
+        
                 try {
                     xpathResult = xmlDoc.evaluate(step.xpaths[i].rule, xmlDoc, nsResolver, XPathResult.BOOLEAN_TYPE, null);
                 } catch (error) {
@@ -226,15 +250,15 @@ function checkForEditorChanges(data, stepNum, step, validationStringParts, previ
                     isValid = false;
                     break;
                 }
-
+        
                 if (!xpathResult.booleanValue) {
-
+        
                     isValid = false;
-
+        
                     if (!step.xpaths[i].renderanyway) {
                         renderAnyway = false;
                     }
-
+        
                     // if there is no warning, let the user play without interruptions
                     if (typeof step.xpaths[i].hint !== 'undefined' && step.xpaths[i].hint !== '') {
                         var text = step.xpaths[i].hint;
@@ -244,17 +268,17 @@ function checkForEditorChanges(data, stepNum, step, validationStringParts, previ
                     break;
                 }
             }
-
+        
             // stop change propagation to prevent infinite loop
             editor.session.off('change', changeListener);
-
+        
             // render if things are valid or renderable
             if(isValid || renderAnyway) {
                 renderVerovio(validationString);
             }
-
+        
+            // run input check again
             if (!isValid) {
-                // run input check again
                 checkForEditorChanges(data, stepNum, step, validationStringParts, previewStringParts);
             } else {
                 // proceed with tutorial
@@ -264,6 +288,147 @@ function checkForEditorChanges(data, stepNum, step, validationStringParts, previ
     });
 }
 
+/*
+
+    var requiresEditor = (typeof step.xmlfile !== 'undefined' && step.xmlfile !== '') && typeof step.xpaths !== 'undefined' && step.xpaths.length > 0;
+    var editorContainer = document.getElementById('editorContainer');
+    var nextStepButton = document.getElementById('nextStepButton');
+    
+    if(!requiresEditor) {
+        editorContainer.style.display = 'none';
+        nextStepButton.style.display = 'block';
+        nextStepButton.setAttribute('data-stepnum',stepNum);
+    } else {
+        fetch('../' + step.xmlfile)
+            .then(function(response) {
+                return response.text()
+            })
+            .then(function(xmlString) {
+                
+                editorContainer.style.display = 'block';
+                nextStepButton.style.display = requiresEditing ? 'block':'none';
+                
+                var startIndex = xmlString.indexOf('<?snippet-start?>');
+                var endIndex = xmlString.indexOf('<?snippet-end?>');
+                
+                var fileStart = xmlString.substr(0, startIndex);
+                var fileEnd = xmlString.substr(endIndex);
+                
+                var correctSolution = xmlString.substr(startIndex + 17, (endIndex - startIndex - 17));
+                //console.log(rightSolution);
+                
+                if(typeof step.prefill !== 'undefined' && step.prefill !== '') {
+                    fetch('../' + step.prefill)
+                        .then(function(response) {
+                            return response.text()
+                        })
+                        .then(function(prefill) {
+                            editor.setValue(prefill);
+                            editor.clearSelection();
+                        })
+                }
+                
+                
+                var parser = new DOMParser();
+    
+                var wellformed = false;
+                
+                //the overhead of .7rem is intended to avoid flickering / scrolling
+                var editorLines = (typeof step.editorLines !== 'undefined') ? (step.editorLines + .7) : 5.7;
+                document.getElementById('editorBox').style.height = editorLines + 'rem';
+                editor.resize();
+                
+                editor.session.on('change', function(delta) {
+                    // delta.start, delta.end, delta.lines, delta.action
+                    
+                    //clean up warnings
+                    document.querySelector('#hints').innerHTML = '';
+                    //empty existing rendering
+                    document.getElementById('rendering').innerHTML= '';
+                    
+                    var value = editor.getValue();
+                    var string = fileStart + value + fileEnd;
+                    var xmlDoc;
+                        
+                    try {
+                        xmlDoc = parser.parseFromString(string,"text/xml");
+        
+                        if(xmlDoc.activeElement && xmlDoc.activeElement.localName && xmlDoc.activeElement.localName === 'parsererror') {
+                            wellformed = false;
+                        } else {
+                            wellformed = true;
+                        }
+        
+                    } catch(err) {
+                        console.log('parserError: ' + err);
+                    }
+        
+                    if(wellformed) {
+        
+                        var isValid = true;
+                        var renderAnyway = true;
+        
+                        for(var i=0;i<step.xpaths.length;i++) {
+                            
+                            var xpathResult;
+                            
+                            try {
+                                xpathResult = xmlDoc.evaluate(step.xpaths[i].rule, xmlDoc, nsResolver, XPathResult.BOOLEAN_TYPE, null );
+                            } catch(err) {
+                                console.log('error resolving xpath: ' + err)
+                                isValid = false;
+                                break;
+                            }
+                            
+                            if(!xpathResult.booleanValue) {
+                                
+                                isValid = false;  
+                                
+                                if(!step.xpaths[i].renderanyway) {
+                                    renderAnyway = false;
+                                }
+                                
+                                //if there is no warning, let the user play without interuptions
+                                if(typeof step.xpaths[i].hint !== 'undefined' && step.xpaths[i].hint !== '') {
+                                    displayWarning(step.xpaths[i].hint)    
+                                }
+                                break;
+                            }
+                        }
+                        
+                        //render if things are valid or renderable
+                        if(isValid || renderAnyway) {
+                            var svg = vrvToolkit.renderData(string, {});
+                            document.getElementById('rendering').innerHTML= svg;
+                        }
+                        
+                        //proceed with tutorial
+                        if(isValid) {
+                            
+                            if(data.steps.length > (stepNum +1)) {
+                                loadTutorialStep(data,stepNum + 1);    
+                            } else {
+                            
+                                //todo: fix to load end
+                                activateStepListItem(data,'outro');
+                                document.querySelector('#instruction').innerHTML = data.outro;
+                            }
+                            
+                        } 
+        
+                    } else {
+                        console.log('not well-formed')
+                        displayWarning('Your code is not well-formed.');
+                        document.getElementById('rendering').innerHTML= '';
+                    }
+        
+                });
+        
+            });
+    }
+}
+ 
+*/
 
 function nextTutorialStep(data, stepNum) {
     if (data.steps.length > (stepNum + 1)) {
@@ -281,7 +446,7 @@ function nextTutorialStep(data, stepNum) {
 function renderVerovio(validationString) {
     var svg = '';
     var error = true;
-
+    
     // try to render validationString with Verovio
     try {
         console.log('tried to render verovio');
@@ -290,7 +455,7 @@ function renderVerovio(validationString) {
     } catch (error) {
         console.log('error rendering verovio: ' + error);
     }
-
+    
     if (error) {
         // display message
         document.getElementById('rendering').innerHTML = 'Not possible to render.';
@@ -303,17 +468,15 @@ function renderVerovio(validationString) {
 
 function resizeEditor(step) {
     // console.log('snippet length', previewStringParts.snippet.split(/\r\n|\r|\n/).length);
-
+    
     //the overhead of .7rem is intended to avoid flickering / scrolling
     var editorLines = (typeof step.editorLines !== 'undefined') ? (step.editorLines + .7) : 5.7;
     document.getElementById('editorBox').style.height = editorLines + 'rem';
     editor.resize();
-
+    
     // adjust preview rows according to editorLines
     previewTextarea.rows = editorLines;
 }
-
-
 
 /**********************************
  *
@@ -321,7 +484,7 @@ function resizeEditor(step) {
  *
  **********************************/
 
-function activateStepListItem(data, stepNum) {
+function activateStepListItem(data,stepNum) {
     try {
         if(stepNum > 0 || isNaN(stepNum)) {
             var oldStep = document.querySelector('li.step-item.active')
