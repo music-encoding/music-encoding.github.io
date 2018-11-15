@@ -10,18 +10,17 @@
     <music>
         <body>
             <mdiv>
+                <?preview-start?>
                 <score>
-                    <scoreDef key.sig="3f" meter.sym="cut">
+                    <?edit-start?>
+                    <scoreDef>
                         <staffGrp>
-                            <staffDef n="1" lines="5" clef.shape="G" clef.line="2"></staffDef>
+                            <staffDef></staffDef>
                         </staffGrp>
                     </scoreDef>
-                    <section>
-                        <?snippet-start?>
-                        <measure n="0"></measure>
-                        <?snippet-end?>
-                    </section>
+                    <?edit-end?>
                 </score>
+                <?preview-end?>
             </mdiv>
         </body>
     </music>

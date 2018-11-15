@@ -1,36 +1,38 @@
 {
   "steps": [
     {
-      "label":"Your very first MEI element",
-      "editorLines": 3,
+      "label": "Your very first MEI element",
+      "editorLines": 1,
+      "descFile": "100_structure_step-01-desc.html",
+      "prefillFile": "100_structure_step-01-prefill.xml",
+      "xmlFile": "100_structure_step-01.xml",
       "xpaths": [
-        {"rule":"count(//mei) = 1","renderanyway":true,"hint":"You need one mei element."}
-      ],
-      "descfile": "100_structure_step-01-desc.html",
-      "xmlfile": "100_structure_step-01.xml"
+        {"rule": "count(//mei) = 1", "renderanyway": true, "hint": "1: You need one mei element."}
+      ]
     },
     {
-      "label":"The MEI namespace",
+      "label": "The MEI namespace",
       "editorLines": 3,
+      "descFile": "100_structure_step-02-desc.html",
+      "prefillFile": "100_structure_step-02-prefill.xml",
+      "xmlFile": "100_structure_step-02.xml",
       "xpaths": [
-        {"rule":"count(//mei) = 1","renderanyway":false,"hint":"You need one mei element."},
-        {"rule":"count(//mei/@*) = 1","renderanyway":false,"hint":"You need one attribute on mei (@xmlns)."},
-        {"rule":"//mei/@xmlns = 'http://www.music-encoding.org/ns/mei'","renderanyway":false,"hint":"You need a @xmlns attribute, with a value of 'http://www.music-encoding.org/ns/mei'."}
-      ],
-      "descfile": "100_structure_step-02-desc.html",
-      "xmlfile": "100_structure_step-02.xml"
+        {"rule": "count(*[local-name()='mei']) = 1", "renderanyway": true, "hint": "You need one mei element."},
+        {"rule": "*[local-name()='mei' and namespace-uri()='http://www.music-encoding.org/ns/mei']", "renderanyway": true, "hint": "You need a @xmlns declaration with the mei namespace 'http://www.music-encoding.org/ns/mei'."}
+      ]
     },
     {
-      "label":"Two basic child elements",
-      "editorLines": 5,
+      "label": "Two basic child elements",
+      "editorLines": 7,
+      "descFile": "100_structure_step-03-desc.html",
+      "prefillFile": "100_structure_step-03-prefill.xml",
+      "xmlFile": "100_structure_step-03.xml",
       "xpaths": [
-        {"rule":"count(//mei) = 1","renderanyway":false,"hint":"You need one mei element."},
-        {"rule":"count(//mei/meiHead) = 1","renderanyway":false,"hint":"You need one child element meiHead."},
-        {"rule":"count(//mei/music) = 1","renderanyway":false,"hint":"You need one child element music."}
-      ],
-      "descfile": "100_structure_step-03-desc.html",
-      "xmlfile": "100_structure_step-03.xml"
+        {"rule": "count(//*[local-name()='mei']) = 1", "renderanyway": false, "hint": "You need one mei element."},
+        {"rule": "count(//*[local-name()='mei']/*[local-name()='meiHead']) = 1", "renderanyway": false, "hint": "You need one child element meiHead."},
+        {"rule": "count(//*[local-name()='mei']/*[local-name()='music']) = 1", "renderanyway": false, "hint": "You need one child element music."}
+      ]
     }
   ],
-  "outro":"Congratulations, you've done right."
+  "outro": "Congratulations, you've successfully completed this tutorial."
 }

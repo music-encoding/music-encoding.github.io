@@ -10,24 +10,17 @@
     <music>
         <body>
             <mdiv>
+                <?preview-start?>
                 <score>
-                    <?snippet-start?>
+                    <?edit-start?>
                     <scoreDef key.sig="3f" meter.sym="cut">
                         <staffGrp>
                             <staffDef n="1" lines="5" clef.shape="G" clef.line="2"></staffDef>
                         </staffGrp>
                     </scoreDef>
-                    <?snippet-end?>
-                    <section>
-                        <measure n="0">
-                            <staff>
-                                <layer>
-                                    <note pname="b" oct="4" dur="4" visible="false"></note>
-                                </layer>
-                            </staff>
-                        </measure>
-                    </section>
+                    <?edit-end?>
                 </score>
+                <?preview-end?>
             </mdiv>
         </body>
     </music>

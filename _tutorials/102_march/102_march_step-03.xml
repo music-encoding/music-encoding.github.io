@@ -2,32 +2,32 @@
     <meiHead>
         <fileDesc>
             <titleStmt>
-                <title/>
+                <title type="main">March</title>
             </titleStmt>
-            <pubStmt/>
+            <pubStmt></pubStmt>
         </fileDesc>
     </meiHead>
     <music>
         <body>
             <mdiv>
+                <?preview-start?>
                 <score>
-                    <scoreDef>
+                    <?edit-start?>
+                    <scoreDef key.sig="3f" meter.sym="cut">
                         <staffGrp>
-                            <staffDef clef.shape="G" clef.line="2" n="1" lines="5"/>
+                            <staffDef n="1" lines="5" clef.shape="G" clef.line="2"></staffDef>
                         </staffGrp>
                     </scoreDef>
                     <section>
-                        <measure>
+                        <measure n="0">
                             <staff n="1">
-                                <layer>
-                                    <?snippet-start?>
-                                    <note pname="c" oct="4" dur="4"/>
-                                    <?snippet-end?>
-                                </layer>
+                                <layer></layer>
                             </staff>
                         </measure>
                     </section>
+                    <?edit-end?>
                 </score>
+                <?preview-end?>
             </mdiv>
         </body>
     </music>
