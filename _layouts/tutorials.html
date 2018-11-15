@@ -23,32 +23,32 @@ layout: default
             <div id="instruction">
                 <!-- instruction texts go in here -->
             </div>
+            <button id="nextStepButton" class="btn btn-primary btn-sm float-right" style="display: none;">Continue <i class="icon icon-forward"></i></button>
+            <div id="editorContainer" style="display: none;">
+                <h3>MEI Editor</h3>
+                <div id="editorBox">
+                    <div id="editor"></div>
+                </div>
 
-            <h3>MEI Editor</h3>
-            <div id="editorBox">
-                <div id="editor"></div>
+                <div id="hints">
+                    <!-- validation hints go in here -->
+                </div>
+
+                <h4>Preview</h4>
+                <div id="previewBox">
+                    <textarea name="preview" id="preview" rows="7" cols="55" disabled="disabled"></textarea>
+                </div>
+
+                <button id="toggletextarea-btn">Hide Preview</button>
+
+                <h3>Rendition</h3>
+                <div id="rendering">
+                    <!-- verovio rendering goes in here -->
+                </div>
             </div>
-
-            <div id="hints">
-                <!-- validation hints go in here -->
-            </div>
-
-            <h4>Preview</h4>
-            <div id="previewBox">
-                <textarea name="preview" id="preview" rows="7" cols="55" disabled="disabled"></textarea>
-            </div>
-
-            <button id="toggletextarea-btn">Hide Preview</button>
-
-            <h3>Rendition</h3>
-            <div id="rendering">
-                <!-- verovio rendering goes in here -->
-            </div>
-
             <ul id="stepBox" class="step">
                 <!-- tutorial step list goes in here -->
             </ul>
-
 
             <script src="/js/ace-src-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
             <script src="/js/verovio-toolkit.js" type="text/javascript" charset="utf-8"></script>
