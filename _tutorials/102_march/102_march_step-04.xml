@@ -11,22 +11,24 @@
         <body>
             <mdiv>
                 <score>
-                    <?snippet-start?>
-                    <scoreDef>
+                    <scoreDef key.sig="3f" meter.sym="cut">
                         <staffGrp>
-                            <staffDef></staffDef>
+                            <staffDef n="1" lines="5" clef.shape="G" clef.line="2" />
                         </staffGrp>
                     </scoreDef>
-                    <?snippet-end?>
+                    <?preview-start?>
                     <section>
                         <measure n="0">
-                            <staff>
+                            <staff n="1">
                                 <layer>
-                                    <note pname="b" oct="4" dur="4" visible="false"></note>
+                                    <?edit-start?>
+                                    <note pname="b" oct="3" dur="4" />
+                                    <?edit-end?>
                                 </layer>
                             </staff>
                         </measure>
                     </section>
+                    <?preview-end?>
                 </score>
             </mdiv>
         </body>
