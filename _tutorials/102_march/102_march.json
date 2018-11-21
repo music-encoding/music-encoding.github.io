@@ -8,9 +8,12 @@
       "xmlFile": "102_march_step-01.xml",
       "xpaths": [
         {"rule": "count(//mei:scoreDef) = 1", "renderanyway": false, "hint": "You need one scoreDef element."},
+        {"rule": "count(//mei:scoreDef/@*) = 0", "renderanyway": false, "hint": "You need no attribute on the scoreDef element."},
         {"rule": "count(//mei:staffGrp) = 1", "renderanyway": false, "hint": "You need one staffGrp element."},
+        {"rule": "count(//mei:staffGrp/@*) = 0", "renderanyway": false, "hint": "You need no attribute on the staffGrp element."},
         {"rule": "//mei:scoreDef/mei:staffGrp", "renderanyway": false, "hint": "staffGrp element has to be a child of scoreDef element."},
         {"rule": "count(//mei:staffDef) = 1", "renderanyway": false, "hint": "You need one staffDef element."},
+        {"rule": "count(//mei:staffDef/@*) = 0", "renderanyway": false, "hint": "You need no attribute on the staffDef element."},
         {"rule": "//mei:staffGrp/mei:staffDef", "renderanyway": false, "hint": "staffDef element has to be a child of staffGrp element."}
       ]
     },
@@ -23,6 +26,7 @@
       "xpaths": [
         {"rule": "count(//mei:scoreDef) = 1", "renderanyway": false, "hint": "You need one scoreDef element."},
         {"rule": "count(//mei:staffGrp) = 1", "renderanyway": false, "hint": "You need one staffGroup element."},
+        {"rule": "count(//mei:staffGrp/@*) = 0", "renderanyway": false, "hint": "You need no attribute on the staffGrp element."},
         {"rule": "//mei:scoreDef/mei:staffGrp", "renderanyway": false, "hint": "staffGrp element has to be a child of scoreDef element."},
         {"rule": "count(//mei:staffDef) = 1", "renderanyway": false, "hint": "You need one staffDef element."},
         {"rule": "//mei:staffGrp/mei:staffDef", "renderanyway": false, "hint": "staffDef element has to be a child of staffGrp element."},
@@ -44,6 +48,7 @@
       "xmlFile": "102_march_step-03.xml",
       "xpaths": [
         {"rule": "count(//mei:section) = 1", "renderanyway": false, "hint": "You need one section element."},
+        {"rule": "count(//mei:section/@*) = 0", "renderanyway": false, "hint": "You need no attribute on the section element."},
         {"rule": "//mei:score/mei:section", "renderanyway": false, "hint": "section element has to be a child of score element."},
         {"rule": "count(//mei:measure) = 1", "renderanyway": false, "hint": "You need one measure element."},
         {"rule": "//mei:section/mei:measure", "renderanyway": false, "hint": "measure element has to be a child of section element."},
@@ -54,6 +59,7 @@
         {"rule":"count(//mei:staff/@*) = 1", "renderanyway": false, "hint": "You need one attribute on staff (@n)."},
         {"rule": "//mei:staff/@n = '1'", "renderanyway": false, "hint": "You need a @n attribute with a value of 1."},
         {"rule": "count(//mei:layer) = 1", "renderanyway": false, "hint": "You need one layer element."},
+        {"rule": "count(//mei:layer/@*) = 0", "renderanyway": false, "hint": "You need no attribute on the layer element."},
         {"rule": "//mei:staff/mei:layer", "renderanyway": false, "hint": "layer element has to be a child of staff element."}
       ]
     },
