@@ -408,6 +408,33 @@
         {"rule": "//mei:measure[4]/mei:staff/mei:layer/mei:note/mei:artic/@place = 'above'", "renderanyway": false, "hint": "Measure n=3: You need an @place attribute with a value of above on the artic element."}
       ]
     },
+    {
+      "label": "Dynamics (referencing tstamps)",
+      "editorLines": 10,
+      "descFile": "102_march_step-11-desc.html",
+      "prefillFile": "102_march_step-11-prefill.xml",
+      "xmlFile": "102_march_step-11.xml",
+      "xpaths": [
+        {"rule": "count(//mei:measure[@n=0]) = 1", "renderanyway": false, "hint": "You need one measure with n = 0."},
+        {"rule": "//mei:measure[1]/mei:staff", "renderanyway": false, "hint": "You need a staff element inside the measure element."},
+        {"rule": "count(//mei:measure[1]/mei:staff/@*) = 1", "renderanyway": false, "hint": "You need one attribute on staff (@n)."},
+        {"rule": "//mei:measure[1]/mei:staff/@n = 1", "renderanyway": false, "hint": "You need a @n attribute with a value of 1 on staff."},
+        {"rule": "//mei:measure[1]/mei:staff/mei:layer", "renderanyway": false, "hint": "You need a layer element inside staff."},
+        {"rule": "count(//mei:measure[1]/mei:staff/mei:layer/@*) = 0", "renderanyway": false, "hint": "You need no attribute on the layer element."},
+        {"rule": "count(//mei:measure[1]/mei:staff/mei:layer/mei:note) = 1", "renderanyway": false, "hint": "You need one note element."},
+        {"rule": "//mei:measure[1]/mei:staff/mei:layer/mei:note", "renderanyway": false, "hint": "Note has to be a child of layer element."},
+        {"rule": "count(//mei:measure[1]/mei:staff/mei:layer/mei:note/@*) = 3", "renderanyway": false, "hint": "You need three attributes on the note (@pname, @oct & @dur)."},
+        {"rule": "//mei:measure[1]/mei:staff/mei:layer/mei:note/@pname = 'b'", "renderanyway": false, "hint": "You need a @pname attribute with a value of b on note."},
+        {"rule": "//mei:measure[1]/mei:staff/mei:layer/mei:note/@oct = '3'", "renderanyway": false, "hint": "You need an @oct attribute with a value of 3 on note."},
+        {"rule": "//mei:measure[1]/mei:staff/mei:layer/mei:note/@dur = '4'", "renderanyway": false, "hint": "You need a @dur attribute with a value of 4 on note."},
+        {"rule": "count(//mei:measure[1]/mei:dynam) = '1'", "renderanyway": false, "hint": "You need a dynam element as children of measure."},
+        {"rule": "//mei:measure[1]/mei:staff/following-sibling::mei:dynam", "renderanyway": false, "hint": "dynam element as has to follow staff element."},
+        {"rule": "count(//mei:measure[1]/mei:dynam/@*) = 3", "renderanyway": false, "hint": "You need three attributes on the dynam element (@staff, @tstamp & @place)."},
+        {"rule": "//mei:measure[1]/mei:dynam/@staff = '1'", "renderanyway": false, "hint": "You need a @staff attribute with a value of 1 on the dynam element."},
+        {"rule": "//mei:measure[1]/mei:dynam/@tstamp = '1'", "renderanyway": false, "hint": "You need a @tstamp attribute with a value of 1 on the dynam element."},
+        {"rule": "//mei:measure[1]/mei:dynam/@place = 'below'", "renderanyway": false, "hint": "You need an @place attribute with a value of below on the dynam element."}
+      ]
+    },
     }
   ],
   "outro": "Congratulations, you've successfully finished this tutorial!"
