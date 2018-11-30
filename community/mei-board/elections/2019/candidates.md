@@ -70,19 +70,3 @@ I feel honoured to have been nominated as member of the MEI Board. It is a privi
 For more than five years now I am strongly interested in MEI. I introduced it in Leipzig and try to encourage and help others using it. I am particularly interested in music engraving in combination with MEI. So I invented MEILER (https://github.com/rettinghaus/MEILER) and take part in the development of Verovio (http://www.verovio.org/).
 
 Being a board member, I hope to be able to put even more love and time into MEI.
-
-## Perry Roland
-
-#### CV
-
-I have many years of experience with MEI, having dabbled in it at the end of the last century.  Before, during, and after that I was (and will be) a teacher (mostly of music, but other things as well) and a student (again, mostly music, but other things too).
- 
-At various times, I have been a performer (tuba, piano, recorder, crumhorn, and sackbut, if you must know), academic (2 Master’s degrees, no Ph D), librarian (government documents and metadata), and technologist (“scripter” – I dare not say “programmer”), mostly of the “pseudo” variety of each, and may be again in the future.
- 
-I like to think that my wide range of experience gives me the ability to look at problems and their solutions from multiple vantage points, but I will let others be the judge of that.
-
-#### Statement
-
-I am happy to stand for election for the MEI Board.  I’m very grateful to the Community for its continuing support of MEI.  I have been fortunate to work alongside so many intelligent and thoughtful people.  MEI has reached a level of success that some projects, regardless of their worthiness, never see.  However, that doesn’t mean the work on MEI is finished.
- 
-Having ironed out many of the technical issues that come with the comprehensive scope of MEI (but certainly not all), much work remains to be done, including more (and better) documentation and outreach, as well as an improved plan for financial sustainability.  If I am elected, I will continue to work for a better MEI.
