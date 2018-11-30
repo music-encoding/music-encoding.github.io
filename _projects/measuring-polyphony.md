@@ -2,7 +2,7 @@
 layout: projects
 name: "Measuring Polyphony"
 fullname: "‘Measuring Polyphony’ presents, for the first time, digitisations of polyphonic compositions written during the thirteenth and fourteenth centuries in mensural notation, linked directly, in most cases, to high-resolution images of the original manuscript sources."
-image: "projects/"
+image: "projects/measuring-polyphony.png"
 contributors: 
     - "Karen Desmond, Brandeis"
 ---
