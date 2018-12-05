@@ -3,14 +3,13 @@ title: Music Encoding Initiative
 email: info@music-encoding.org
 baseurl: ""
 style_baseurl: ""
-repository: music-encoding/music-encoding.github.io
 url: "http://music-encoding.org" # the base hostname & protocol for your site
 twitter_username: music-encoding
 
 # Build settings
 markdown: kramdown
 
-gems:
+plugins:
   - jekyll-redirect-from
 
 menu:
@@ -27,9 +26,9 @@ menu:
           - id: news
             label: 'News / Events'
             url: '/news-events.html'
-          - id: mailinglist
-            label: 'Mailing List'
-            url: '/mailing-list.html'
+          - id: communitycontacts
+            label: 'Community Contacts'
+            url: '/community-contacts.html'
           - id: interestgroups
             label: 'Interest Groups'
             url: '/interest-groups.html'
@@ -68,6 +67,9 @@ menu:
           - id: bibliography
             label: 'Bibliography'
             url: '/bibliography.html'
+          - id: schemas
+            label: 'Schemas and Namespace'
+            url: '/schemas.html'
           - id: tutorials
             label: 'Tutorials'
             url: '/tutorials.html'
@@ -105,4 +107,3 @@ collections:
   tutorials:
     output: true
     permalink: /:collection/:name
-    
