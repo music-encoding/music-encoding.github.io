@@ -12,7 +12,7 @@ The Technical Team consists of interested developers and two Board-appointed Co-
 * **Ichiro Fujinaga**, McGill University, Montréal
 * **Johannes Kepper**, Musikwissenschaftliches Seminar Detmold/Paderborn
 * **Laurent Pugin**, Swiss RISM Project, Bern
-* **Klaus Rettinghaus**, Bach Archiv, Leipzig
+* **Klaus Rettinghaus**, Bach-Archiv, Leipzig
 * **Daniel Röwenstrunk**, Musikwissenschaftliches Seminar Detmold/Paderborn
 * **Craig Sapp**, Center for Computer-Assisted Research in the Humanities, Stanford University
 * **Raffaele Viglianti**, Maryland Institute for Technology in the Humanities
