@@ -1,3 +1,6 @@
+$regular-font-weight: 400;
+$label-font-weight: bold;
+
 .specPage {
     .facet {
             
@@ -9,7 +12,7 @@
             padding: 0;
             background: none;
             line-height: 1.5;
-            font-weight: 700;
+            font-weight: $label-font-weight;
         }
         
         & > .statement {
@@ -34,13 +37,13 @@
             
             .emptyStatement { //used for empty elements
                 font-size: .7rem;
-                font-weight: 100;
+                font-weight: $regular-font-weight;
             }
             
             .dtBox .ident {
                 display: inline-block;
                 padding: 0 0.5rem 0 0;
-                font-weight: 300;
+                font-weight: $regular-font-weight;
             }
             
             .dataValue.ident {
@@ -58,7 +61,7 @@
                 }
                 
                 &#attributes_tabbedContent_compact .ident {
-                    font-weight: 300;
+                    font-weight: $regular-font-weight;
                 }
                 
                 /*&#attDisplay_compact, &#containedByDisplay_compact, &#containsDisplay_compact {
@@ -123,19 +126,19 @@
     
     .chapterLinksBox {
         font-size: .75rem;
-        font-weight: 300;
+        font-weight: $regular-font-weight;
         
         &:before {
             display: block;
             content: 'Referenced in Chapters:';
             margin-top: .5rem;
-            font-weight: 500;
+            font-weight: $label-font-weight;
         }
         
         .chapterLink {
             
             &.desc {
-                font-weight: 700;
+                font-weight: $label-font-weight;
             }
             
             & + .chapterLink {
@@ -152,18 +155,18 @@
         
         .attributeUsage {
             font-size: .7rem;
-            font-weight: 300;
+            font-weight: $regular-font-weight;
             font-style: italic;
         }
         
         .attributeDesc {
             font-size: .7rem;
-            font-weight: 300;
+            font-weight: $regular-font-weight;
         }
         
         .attributeValues {
             font-size: .7rem;
-            font-weight: 300;
+            font-weight: $regular-font-weight;
         }
         
         &:nth-of-type(2n+1) {
@@ -174,7 +177,7 @@
     .memberOf .groupDesc {
         padding-left: .5rem;
         font-size: .7rem;
-        font-weight: 100;
+        font-weight: $regular-font-weight;
     }
     
     .classBox {
@@ -192,13 +195,13 @@
             border-bottom: .5px solid #999999;
             
             .classLabel {
-                font-weight: 500;
+                font-weight: $label-font-weight;
             }
             
             .classDesc {
                 padding-left: .5rem;
                 font-size: .7rem;
-                font-weight: 100;
+                font-weight: $label-font-weight;
             } 
         }
         
@@ -229,14 +232,14 @@
             margin-bottom: .5rem;
             
             .link_odd_elementSpec {
-                font-weight: 700;
+                font-weight: $label-font-weight;
             }
         }
         
         .elementDesc {
             padding-left: .5rem;
             font-size: .7rem;
-            font-weight: 300;
+            font-weight: $regular-font-weight;
         }
         
         
