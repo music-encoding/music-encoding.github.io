@@ -1,0 +1,287 @@
+.specPage {
+    .facet {
+            
+        padding: 1rem 0;
+        
+        & > .label {
+            float: left;
+            width: 6rem;
+            padding: 0;
+            background: none;
+            line-height: 1.5;
+            font-weight: 700;
+        }
+        
+        & > .statement {
+            margin-left: 6rem;
+            
+            
+            & > .tab {
+                margin-top: 0;
+                
+                .tab-item a {
+                    padding-top: 0;
+                }
+            }
+            
+            p {
+                margin: 0;
+                
+                & + p {
+                    margin: 1rem 0 0;
+                }
+            }
+            
+            .emptyStatement { //used for empty elements
+                font-size: .7rem;
+                font-weight: 100;
+            }
+            
+            .dtBox .ident {
+                display: inline-block;
+                padding: 0 0.5rem 0 0;
+                font-weight: 300;
+            }
+            
+            .dataValue.ident {
+                display: inline-block;
+                width: 6rem;
+                text-align: right;
+                padding: 0 0.8rem 0 0;
+            }
+            
+            .facetTabbedContent {
+                display: none;
+                
+                &.active {
+                    display: block;
+                }
+                
+                &#attributes_tabbedContent_compact .ident {
+                    font-weight: 300;
+                }
+                
+                /*&#attDisplay_compact, &#containedByDisplay_compact, &#containsDisplay_compact {
+                    padding: .3rem .6rem .3rem .6rem;
+                    
+                    .ident {
+                        font-weight: 300;
+                        display: inline-block;
+                    }
+                }
+                
+                &.constraintsDisplay {
+                    padding: .3rem .6rem .3rem .6rem;
+                }*/
+                
+                .constraint {
+                    margin-bottom: 1rem;
+                }
+            }
+            
+        }
+        
+        & + .facet {
+            border-top: .5px solid #666666;
+        }
+        
+        &.letter {
+            min-height: 5rem;
+            .label {
+                font-size: 3rem;
+                line-height: .7;
+            }
+            
+            a.overviewLink {
+                display: inline-block;
+                padding: 0 .2rem;
+                
+                &.element {
+                    &:before {
+                        content: '<';
+                    }
+                    
+                    &:after {
+                        content: '>';
+                    }
+                }
+                
+                &.attribute {
+                    padding: 0 .3rem;
+                }
+            }
+        }
+    } 
+
+    .ident {
+        font-weight: bold;
+        
+        &.attribute:before {
+            content: '@';
+        }
+    }
+    
+    .chapterLinksBox {
+        font-size: .75rem;
+        font-weight: 300;
+        
+        &:before {
+            display: block;
+            content: 'Referenced in Chapters:';
+            margin-top: .5rem;
+            font-weight: 500;
+        }
+        
+        .chapterLink {
+            
+            &.desc {
+                font-weight: 700;
+            }
+            
+            & + .chapterLink {
+                padding-left: .5rem;
+            }
+        }
+    }
+    
+    .attributeDef {
+        
+        padding: .3rem .6rem .3rem 1.6rem;
+        border-radius: .3rem;
+        text-indent: -1rem;
+        
+        .attributeUsage {
+            font-size: .7rem;
+            font-weight: 300;
+            font-style: italic;
+        }
+        
+        .attributeDesc {
+            font-size: .7rem;
+            font-weight: 300;
+        }
+        
+        .attributeValues {
+            font-size: .7rem;
+            font-weight: 300;
+        }
+        
+        &:nth-of-type(2n+1) {
+            background-color: #f5f5f5;
+        }
+    }
+    
+    .memberOf .groupDesc {
+        padding-left: .5rem;
+        font-size: .7rem;
+        font-weight: 100;
+    }
+    
+    .classBox {
+        border-left: .5px solid #999999;
+        border-top: .5px solid #999999;
+        padding: 0 0 0 .5rem;
+        margin: .5rem 0;
+        overflow: visible;
+        
+        .classHeading {
+        
+            background-color: #f5f5f5;
+            padding: 0 0 .1rem .5rem;
+            margin-left: -.5rem;
+            border-bottom: .5px solid #999999;
+            
+            .classLabel {
+                font-weight: 500;
+            }
+            
+            .classDesc {
+                padding-left: .5rem;
+                font-size: .7rem;
+                font-weight: 100;
+            } 
+        }
+        
+        & > .attributes.class {
+            margin-left: 0;
+        }
+        
+        .attributeDef .attributeUsage {
+            display: none;
+        }
+        
+        .attributeDef .attributeDesc {
+            font-size: .7rem;
+        }
+        
+        .attributeDef .attributeValues {
+            display: none;
+        }
+        
+        .attributeDef:nth-of-type(2n+1) {
+            background-color: #ffffff;
+        }
+        
+        .elementRef {
+            padding: .3rem .6rem .3rem 1.6rem;
+            text-indent: -1.2rem;
+            line-height: 1.2;
+            margin-bottom: .5rem;
+            
+            .link_odd_elementSpec {
+                font-weight: 700;
+            }
+        }
+        
+        .elementDesc {
+            padding-left: .5rem;
+            font-size: .7rem;
+            font-weight: 300;
+        }
+        
+        
+        .elementDef {
+            padding: .3rem .6rem .3rem 1.6rem;
+            border-radius: .3rem;
+            text-indent: -1rem;
+        }
+    }
+    
+    /* Codeblock */
+    
+    .code code {
+        background-color: #f5f5f5;
+        border: .5px solid #cccccc;
+    }
+    
+    .indent1 .indent {
+        margin-left: 1em;
+    }
+    
+    .element {
+        color: #000080;
+        color: #4767b1;
+        
+        .attribute {
+            color: #008080;
+            color: #f98859;
+            
+        }
+        
+        .attributevalue {
+            color: #dd1144;
+            color: #a14415;
+        }
+    }
+    
+    .comment {
+        color: #999988;
+        color: #208420;
+        font-style: italic;
+    }
+    
+    /* Schematron Constraints */
+    .schematronText {
+        margin-bottom: .5rem;
+    }
+}
