@@ -87,12 +87,12 @@ sidemenu:
           - id: program
             label: 'Program'
             url: '/conference/2019/program'
-          #- id: maps
-            #label: 'Maps and Dining'
-            #url: '/conference/2019/maps'
-          #- id: travel
-            #label: 'Travel and Accommodation'
-            #url: '/conference/2019/travel'
+          - id: travel
+            label: 'Travel and Accommodation'
+            url: '/conference/2019/travel'
+          - id: maps
+            label: 'Maps and Dining'
+            url: '/conference/2019/maps'
           - id: call
             label: 'Call for proposals'
             url: '/conference/2019/call'
