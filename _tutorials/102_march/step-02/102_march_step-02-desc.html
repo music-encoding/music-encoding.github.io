@@ -1,0 +1,21 @@
+<div>
+    <p id="tutorialGoal">In this step, you will add some attributes to the structure skeleton that you created in the previous step. These attributes will provide basic information about the staff, clef and key of the example.</p>
+
+    <p>The key and time signature are common for the whole score, that’s why you describe them in <code>&lt;scoreDef&gt;</code> regardless of how many staffs there are. You need to use the following attributes of <code>&lt;scoreDef&gt;</code>: </p>
+    <ul>
+        <li><code>@key.sig</code> (key signature) – the number of sharps/flats in written key signature, e.g. <code>“1s”</code> for 1 sharp, <code>“2f”</code> for 2 flats, etc.
+        </li>
+        <li><code>@meter.sym</code> (meter symbol) – <code>“common”</code> for common time (C) or <code>“cut”</code> for cut time (C/). In case of numeric time signature you’d use other attributes: <code>@meter.count</code> for the top number of the meter signature and <code>@meter.unit</code> for the bottom number of the meter signature.
+        </li>
+    </ul>
+
+    <p>Clef is described in the <code>&lt;staffDef&gt;</code> element, because it is related to an individual staff. You need to use the following attributes of <code>&lt;staffDef&gt;</code>:</p>
+    <ul>
+        <li><code>@n</code> (ordinal number) – <code>”1”</code> for the first staff</li>
+        <li><code>@lines</code> – <code>“5”</code> for five-line staff</li>
+        <li><code>@clef.shape</code> – the type of clef: <code>“F”</code>, <code>“C”</code> or <code>“G”</code></li>
+        <li><code>@clef.line</code> – the staff line on which the clef is placed (counting from the bottom), e.g.: <code>“1”</code>, <code>“2”</code>, <code>“5”</code>."</li>
+    </ul>
+
+    <p id="tutorialTask">Add the attributes described above and their respective values to <code>&lt;scoreDef&gt;</code> and <code>&lt;staffDef&gt;</code> in the editor below.</p>
+</div>
