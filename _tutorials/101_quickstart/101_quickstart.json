@@ -1,0 +1,32 @@
+{
+  "steps": [
+    {
+        "label":"First Note",
+        "editorLines":1,
+        "descFile": "101_quickstart_step-01-desc.html",
+        "prefillFile": "101_quickstart_step-01-prefill.xml",
+        "xmlFile": "101_quickstart_step-01.xml",
+        "xpaths": [
+            {"rule":"count(//mei:note) = 1", "renderanyway": false, "hint": "You need one note element."},
+            {"rule":"count(//mei:note/@*) = 3", "renderanyway": false, "hint": "You need three attributes."},
+            {"rule":"//mei:note/@pname = 'c'", "renderanyway": false, "hint": "You need a @pname attribute, with a value of c."},
+            {"rule":"//mei:note/@oct = '4'", "renderanyway": false, "hint": "You need an @oct attribute, with a value of 4."},
+            {"rule":"//mei:note/@dur = '4'", "renderanyway": false, "hint": "You need a @dur attribute, with a value of 4."}
+        ]
+    },
+    {
+        "label":"",
+        "editorLines":3,
+        "descFile": "101_quickstart_step-02-desc.html",
+        "prefillFile":"101_quickstart_step-02-prefill.xml",
+        "xmlFile": "101_quickstart_step-02.xml",
+        "xpaths": [
+            {"rule":"count(//mei:note) = 1", "renderanyway": false},
+            {"rule":"//mei:note/@pname = 'g'", "renderanyway": false, "hint": "You need a @pname attribute, with a value of g."},
+            {"rule":"//mei:note/@oct = '5'", "renderanyway": false, "hint": "You need an @oct attribute, with a value of 5."},
+            {"rule":"//mei:note/@dur = '2'", "renderanyway": false, "hint": "You need a @dur attribute, with a value of 2."}
+        ]
+    }
+  ],
+  "outro":"Congratulations, you've done right."
+}
