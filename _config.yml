@@ -70,9 +70,6 @@ menu:
           - id: schemas
             label: 'Schemas and Namespace'
             url: '/schemas.html'
-          - id: tutorials
-            label: 'Tutorials'
-            url: '/tutorials.html'
     - id: documentation
       label: 'Documentation'
       url: '/guidelines'
@@ -102,8 +99,5 @@ sidemenu:
 
 collections:
   projects:
-    output: true
-    permalink: /:collection/:name
-  tutorials:
     output: true
     permalink: /:collection/:name
