@@ -22,7 +22,7 @@ Perry Roland has done a great service to us all in creating MEI and inspiring sc
 
 # Website
 
-As Kristina Richts is not available at the moment the website needs another caretaker. The main task is to keep an eye on the functionality and the up-to-dateness of the contents, others will help in solving the issues. Elsa De Luca volunteered to take care of this.
+As Kristina Richts is not available at the moment the website needs another caretaker. The main task is to keep an eye on the functionality and the up-to-dateness of the contents, others will help in solving the issues. Elsa De Luca and Laurent Pugin volunteered to take care of this.
 
 # Developer meeting in Nashville
 
