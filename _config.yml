@@ -91,7 +91,7 @@ sidemenu:
             label: 'Travel and Accommodation'
             url: '/conference/2019/travel'
           - id: maps
-            label: 'Maps and Dining'
+            label: 'Maps'
             url: '/conference/2019/maps'
           - id: call
             label: 'Call for proposals'
