@@ -84,6 +84,9 @@ sidemenu:
           - id: about
             label: 'About'
             url: '/conference/2019/'
+          - id: green_meeting
+            label: 'Green Meeting'
+            url: '/conference/2019/green_meeting'
           - id: program
             label: 'Program'
             url: '/conference/2019/program'
