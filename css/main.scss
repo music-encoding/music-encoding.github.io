@@ -88,7 +88,21 @@ $on-laptop:        800px;
       background-color:#d4d4d4;
       }
     }   
-
+    
+    .workshop {
+        width: 185pt;
+        height: 180pt;
+    }
+    
+    .workshop-title {
+        width: 160pt;
+        height: 105pt;
+    }
+    
+    .poster-session {
+        width: 370pt;
+        height: 520pt;
+    }
     .mec2019-program-speakers {
       font-style: italic;
       font-size: 0.6rem;
