@@ -91,7 +91,7 @@ $on-laptop:        800px;
     
     .workshop {
         width: 185pt;
-        height: 180pt;
+        height: 190pt;
     }
     
     .workshop-title {
@@ -127,7 +127,12 @@ $on-laptop:        800px;
     }
 
   }
-
+  
+  .mec2019-abstract {
+        font-size: 20px;
+        font-weight: bold;
+        
+  }
   .mec2019-program-row-main {
     margin: 30px 0 30px 0;
     background-color: #f4f4f4;
