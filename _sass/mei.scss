@@ -328,15 +328,15 @@ ul.nav li.nav-item:first-child {
         margin: .8rem 0 0;
     }
 
-    #tutorialGoal{
+    .tutorialGoal{
         margin-top: .5rem;
     }
-    #tutorialGoal:before {
+    .tutorialGoal:before {
         font-weight: bold;
         content: "Goal: "
     }
 
-    #tutorialTask:before {
+    .task:before {
         font-weight: bold;
         content: "Task: "
     }
@@ -345,6 +345,11 @@ ul.nav li.nav-item:first-child {
         margin: 2rem 0;
     }
 
+    #btn-openFullFileModal {
+        font-size: .65rem;
+        font-weight: 400;
+        cursor: pointer;
+    }
     
     #editorBox {
         height: 5rem;
@@ -366,6 +371,63 @@ ul.nav li.nav-item:first-child {
             }
         }
 
+    }
+    #fullFileModal {
+    
+        a#fullFileModalCloseBack {
+            background-color: #333333;
+            opacity: .9;
+        }
+    
+        .modal-body {
+            
+            height: 20rem;
+        
+            #fullFileContent {
+                background-color: transparent;
+                font-size: .7rem;
+                font-family: 'Courier';
+                height: 100%;
+                
+                * {
+                    font-family: 'Courier';
+                }
+            }        
+        }
+    }
+        
+    #acknowledgments {
+        font-size: .7rem;
+        margin: 3rem 0 0;
+        
+        h3 {
+            font-size: .8rem;
+        }
+        
+        p {
+          margin-bottom: .2rem;  
+        }
+        
+        #ackList {
+            font-size: .7rem;
+            list-style-type: none;
+            margin: .5rem 0;
+            
+            .name {
+                font-weight: 500;
+            }
+            
+            .affiliation {
+                font-weight: 300;
+                color: #666666;
+                
+                &:before {
+                    content: ' | ';                    
+                }
+            }
+        }
+        
+        
     }
     
     pre.codeblock {

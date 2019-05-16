@@ -1,6 +1,10 @@
 {
   "steps": [
     {
+        "label":"Welcome to MEI",
+        "descFile": "101_quickstart_step-00-desc.html"
+    },
+    {
         "label":"First Note",
         "editorLines":1,
         "descFile": "101_quickstart_step-01-desc.html",
@@ -8,25 +12,33 @@
         "xmlFile": "101_quickstart_step-01.xml",
         "xpaths": [
             {"rule":"count(//mei:note) = 1", "renderanyway": false, "hint": "You need one note element."},
-            {"rule":"count(//mei:note/@*) = 3", "renderanyway": false, "hint": "You need three attributes."},
-            {"rule":"//mei:note/@pname = 'c'", "renderanyway": false, "hint": "You need a @pname attribute, with a value of c."},
-            {"rule":"//mei:note/@oct = '4'", "renderanyway": false, "hint": "You need an @oct attribute, with a value of 4."},
-            {"rule":"//mei:note/@dur = '4'", "renderanyway": false, "hint": "You need a @dur attribute, with a value of 4."}
+            {"rule":"count(//mei:note/@*) = 3 and //mei:note/@pname and //mei:note/@oct and //mei:note/@dur", "renderanyway": false, "hint": "You need three attributes: @pname, @oct, and @dur."},
+            {"rule":"//mei:note/@pname", "renderanyway": false, "hint": "The @pname attribute allows values from 'a' to 'g'."},
+            {"rule":"//mei:note/@oct", "renderanyway": false, "hint": "The @oct attribute requires integers."},
+            {"rule":"//mei:note/@dur", "renderanyway": false, "hint": "The @dur attribute allows values such as '1', '2', '4', '8'…"},
+            {"rule":"//mei:note/@pname = 'c'", "renderanyway": true, "hint": "You need a @pname attribute, with a value of c."},
+            {"rule":"//mei:note/@oct = '4'", "renderanyway": true, "hint": "You need an @oct attribute, with a value of 4."},
+            {"rule":"//mei:note/@dur = '4'", "renderanyway": true, "hint": "You need a @dur attribute, with a value of 4."}
         ]
     },
     {
         "label":"",
-        "editorLines":3,
+        "editorLines":5,
         "descFile": "101_quickstart_step-02-desc.html",
-        "prefillFile":"101_quickstart_step-02-prefill.xml",
         "xmlFile": "101_quickstart_step-02.xml",
         "xpaths": [
             {"rule":"count(//mei:note) = 1", "renderanyway": false},
-            {"rule":"//mei:note/@pname = 'g'", "renderanyway": false, "hint": "You need a @pname attribute, with a value of g."},
-            {"rule":"//mei:note/@oct = '5'", "renderanyway": false, "hint": "You need an @oct attribute, with a value of 5."},
-            {"rule":"//mei:note/@dur = '2'", "renderanyway": false, "hint": "You need a @dur attribute, with a value of 2."}
+            {"rule":"//mei:note/@pname = 'g'", "renderanyway": true, "hint": "You need a @pname attribute, with a value of g."},
+            {"rule":"//mei:note/@oct = '5'", "renderanyway": true, "hint": "You need an @oct attribute, with a value of 5."},
+            {"rule":"//mei:note/@dur = '2'", "renderanyway": true, "hint": "You need a @dur attribute, with a value of 2."}
         ]
     }
   ],
-  "outro":"Congratulations, you've done right."
+  "end":"101_quickstart_end.html",
+  "resp":[
+    {
+        "name":"Johannes Kepper",
+        "affiliation":"Beethovens Werkstatt | Universität Paderborn"
+    }
+  ]
 }
