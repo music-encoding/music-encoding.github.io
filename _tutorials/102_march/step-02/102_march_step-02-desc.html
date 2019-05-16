@@ -1,11 +1,15 @@
 <div>
-    <p id="tutorialGoal">In this step, you will add some attributes to the structure skeleton that you created in the previous step. These attributes will provide basic information about the staff, clef and key of the example.</p>
+    <p id="tutorialGoal">In this second step, you will add some attributes to the structure skeleton that you created in the previous step. These attributes will provide basic information about the staff,
+    clef and key of the example.</p>
 
-    <p>The key and time signature are common for the whole score, that’s why you describe them in <code>&lt;scoreDef&gt;</code> regardless of how many staffs there are. You need to use the following attributes of <code>&lt;scoreDef&gt;</code>: </p>
+    <p>The key and time signature are common for the whole score in this example, which is why you describe them in <code>&lt;scoreDef&gt;</code> regardless of how many staffs there are.
+    You need to use the following attributes of <code>&lt;scoreDef&gt;</code>: </p>
     <ul>
         <li><code>@key.sig</code> (key signature) – the number of sharps/flats in written key signature, e.g. <code>“1s”</code> for 1 sharp, <code>“2f”</code> for 2 flats, etc.
         </li>
-        <li><code>@meter.sym</code> (meter symbol) – <code>“common”</code> for common time (C) or <code>“cut”</code> for cut time (C/). In case of numeric time signature you’d use other attributes: <code>@meter.count</code> for the top number of the meter signature and <code>@meter.unit</code> for the bottom number of the meter signature.
+        <li><code>@meter.sym</code> (meter symbol) – <code>“common”</code> for common time (C) or <code>“cut”</code> for cut time (C/).
+        In case of numeric time signature you use other attributes: <code>@meter.count</code> for the top number of the meter signature and <code>@meter.unit</code> for the bottom number of
+        the meter signature.
         </li>
     </ul>
 
