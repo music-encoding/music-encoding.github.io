@@ -19,13 +19,12 @@ layout: default
                 {{ content }}
             {% endif %}
 
-            <h3>Instructions: <span id="stepLabel"></span></h3>
+            <h3 id="stepLabel"></h3>
             <div id="instruction">
                 <!-- instruction texts go in here -->
             </div>
-            <button id="nextStepButton" class="btn btn-primary btn-sm float-right" style="display: none;">Continue <i class="icon icon-forward"></i></button>
             <div id="editorContainer" style="display: none;">
-                <h3>MEI Editor</h3>
+                <h3>MEI Editor <button id="btn-openFullFileModal" class="btn btn-link float-right disabled" title="only allowed when valid">show full encoding</button></h3>
                 <div id="editorBox">
                     <div id="editor"></div>
                 </div>
@@ -34,25 +33,43 @@ layout: default
                     <!-- validation hints go in here -->
                 </div>
 
-                <h4>Preview</h4>
-                <div id="previewBox">
-                    <textarea name="preview" id="preview" rows="7" cols="55" disabled="disabled"></textarea>
-                </div>
-
-                <button id="toggletextarea-btn">Hide Preview</button>
-
                 <h3>Rendition</h3>
                 <div id="rendering">
                     <!-- verovio rendering goes in here -->
                 </div>
             </div>
+            <button id="nextStepButton" class="btn btn-primary btn-sm float-right">Continue <i class="icon icon-forward"></i></button>
+            
+            <div id="acknowledgments" style="display: none;">
+                <h3>Acknowledgments</h3>
+                <p>This tutorial was brought to you by:</p>
+                <ul id="ackList"></ul>
+            </div>
+            
             <ul id="stepBox" class="step">
                 <!-- tutorial step list goes in here -->
             </ul>
+        
+            <div class="modal modal-lg" id="fullFileModal"><a id="fullFileModalCloseBack" class="modal-overlay" href="#modals-sizes" aria-label="Close"></a>
+                <div class="modal-container" role="document">
+                    <div class="modal-header"><a id="fullFileModalCloseTop" class="btn btn-clear float-right" href="#modals-sizes" aria-label="Close"></a>
+                        <div id="fullFileTitle" class="modal-title h5"></div>
+                    </div>
+                    <div class="modal-body">
+                        <div id="fullFileContent" class="content">
+                            
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <a id="fullFileDownloadBtn" class="btn btn-primary"><i class="icon icon-download"></i> Download</a>
+                        <a id="fullFileModalCloseBottom" class="btn btn-link" href="#modals-sizes">Close</a>
+                    </div>
+                </div>
+            </div>
 
             <script src="/js/ace-src-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
             <script src="/js/verovio-toolkit.js" type="text/javascript" charset="utf-8"></script>
-            <script src="/js/tutorials.js" type="text/javascript" charset="utf-8"></script>
+            <script src="/js/mei-tutorials.js" type="text/javascript" charset="utf-8"></script>
             <script type="text/javascript">
 
                 try {

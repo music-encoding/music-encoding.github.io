@@ -20,11 +20,7 @@
                         <measure>
                             <staff n="1">
                                 <layer>
-                                    <?preview-start?>
-                                    <?edit-start?>
-                                    <note pname="c" oct="4" dur="4"/>
-                                    <?edit-end?>
-                                    <?preview-end?>
+                                    <?edit-start?><note pname="c" oct="4" dur="4"/><?edit-end?>
                                 </layer>
                             </staff>
                         </measure>
