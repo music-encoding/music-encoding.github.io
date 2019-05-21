@@ -10,7 +10,6 @@
     <music>
         <body>
             <mdiv>
-                <?preview-start?>
                 <score>
                     <?edit-start?>
                     <scoreDef key.sig="3f" meter.sym="cut">
@@ -20,7 +19,6 @@
                     </scoreDef>
                     <?edit-end?>
                 </score>
-                <?preview-end?>
             </mdiv>
         </body>
     </music>

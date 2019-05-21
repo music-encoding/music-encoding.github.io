@@ -16,7 +16,6 @@
                             <staffDef n="1" lines="5" clef.shape="G" clef.line="2" />
                         </staffGrp>
                     </scoreDef>
-                    <?preview-start?>
                     <?edit-start?>
                     <section>
                         <measure n="0">
@@ -35,7 +34,6 @@
                         </measure>
                     </section>
                     <?edit-end?>
-                    <?preview-end?>
                 </score>
             </mdiv>
         </body>
