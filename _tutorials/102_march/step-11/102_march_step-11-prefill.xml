@@ -4,5 +4,5 @@
             <note pname="b" oct="3" dur="4" />
         </layer>
     </staff>
-    <!-- Your encoding goes here -->
+    <!-- Your encoding should replace this line -->
 </measure>
