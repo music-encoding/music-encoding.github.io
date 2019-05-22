@@ -11,6 +11,7 @@
         <body>
             <mdiv>
                 <score>
+                    <?edit-start?>
                     <scoreDef key.sig="3f" meter.sym="cut">
                         <staffGrp>
                             <staffDef n="1" lines="5" clef.shape="G" clef.line="2" />
@@ -20,13 +21,12 @@
                         <measure n="0">
                             <staff n="1">
                                 <layer>
-                                    <?edit-start?>
                                     <note pname="b" oct="3" dur="4" />
-                                    <?edit-end?>
                                 </layer>
                             </staff>
                         </measure>
                     </section>
+                    <?edit-end?>
                 </score>
             </mdiv>
         </body>
