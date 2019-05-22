@@ -65,7 +65,7 @@
     },
     {
       "label": "First note",
-      "editorLines": 3,
+      "editorLines": 15,
       "descFile": "102_march_step-04-desc.html",
       "prefillFile": "102_march_step-04-prefill.xml",
       "xmlFile": "102_march_step-04.xml",
