@@ -3,9 +3,9 @@
 
     <p>There are two different ways to encode a slur in MEI:</p>
     <ol>
-        <li>1. <code>@slur</code> attribute on <code>&lt;note&gt;</code> or <code>&lt;chord&gt;</code> with a value of <code>i=initial</code>, <code>m=medial</code> or
+        <li><code>@slur</code> attribute on <code>&lt;note&gt;</code> or <code>&lt;chord&gt;</code> with a value of <code>i=initial</code>, <code>m=medial</code> or
         <code>t=terminal</code>.</li>
-        <li>2. A separate <code>&lt;slur&gt;</code> element.</li>
+        <li>A separate <code>&lt;slur&gt;</code> element.</li>
     </ol>
 
     <p>In this last step, you will use the second approach: Like dynamics, <code>&lt;slur&gt;</code> elements are control events. They are not encoded as child elements of the
@@ -18,13 +18,11 @@
 
     <p>Along with <code>@startid</code> and <code>@endid</code>, the following attributes should be used in this step:</p>
     <ul>
-        <li><code>@staff</code> – the identification number of the staff to which an element is applied, e.g. <code>“1”</code> in this case</li>
-        <li><code>@curvedir</code> (curve direction) – describes a curve with a generic term indicating the direction of curvature: <code>“above”</code>, <code>“below”</code> or <code>“mixed”</code></li>
-        <li><code>@startid</code> – reference to the <code>xml:id</code> of the start note of the slur, in the form: <code>#xml:id</code> (note the hash <code>#</code>)</li>
-        <li><code>@endid</code> – reference to the <code>xml:id</code> of the ending note of the slur, in the form: <code>#xml:id</code> (note the hash <code>#</code>)</li>
+        <li><code>@staff</code> – the identification number of the staff to which an element is applied, e.g. <code>“1”</code> in this case,</li>
+        <li><code>@curvedir</code> (curve direction) – describes a curve with a generic term indicating the direction of curvature: <code>“above”</code>, <code>“below”</code> or <code>“mixed”</code>,</li>
+        <li><code>@startid</code> – reference to the <code>xml:id</code> of the start note of the slur, in the form: <code>#xml:id</code> (note the hash <code>#</code>),</li>
+        <li><code>@endid</code> – reference to the <code>xml:id</code> of the ending note of the slur, in the form: <code>#xml:id</code> (note the hash <code>#</code>).</li>
     </ul>
 
-    <p class="task">Please identify the first and the last note to which the slur is attached (inside the first <code>&lt;beam&gt;</code> element). Add an attribute <code>@xml:id</code>
-    to both <code>&lt;note&gt;</code> elements. Set a unique value for each <code>@xml:id</code>, for this example you can use the values: <code>“d1e4614”</code>, <code>“d1e4615”</code>.
-    Add a <code>&lt;slur&gt;</code> control element after the closing tag of <code>&lt;staff&gt;</code> element and apply the corresponding attributes.</p>
+    <p class="task">Please identify the first and the last note to which the slur is attached (inside the first <code>&lt;beam&gt;</code> element of measure 3) and add <code>@xml:id</code>s to both <code>&lt;note&gt;</code> elements. Set a unique value for each <code>@xml:id</code>, for this example you can use the values: <code>“d1e4614”</code>, <code>“d1e4615”</code>. Add a <code>&lt;slur&gt;</code> control element after the closing tag of <code>&lt;staff&gt;</code> element and apply the corresponding attributes.</p>
 </div>
