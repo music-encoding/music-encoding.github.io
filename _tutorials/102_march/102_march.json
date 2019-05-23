@@ -494,5 +494,31 @@
       ]
     }
   ],
-  "outro": "Congratulations, you've successfully finished this tutorial!"
+  "end": "102_march_end.html",
+  "resp": [
+    {
+      "name": "Margrethe S. Bue",
+      "affiliation": "Nasjonalbiblioteket Oslo"
+    },
+    {
+      "name": "Sonja Wronkowska",
+      "affiliation": "RISM Poland | National Library of Poland"
+    },
+    {
+      "name": "Debra Nakos",
+      "affiliation": "University of Maryland, College Park"
+    },
+    {
+      "name": "Johannes Kepper",
+      "affiliation": "Beethovens Werkstatt | Universität Paderborn"
+    },
+    {
+      "name": "Andrew Hankinson",
+      "affiliation": "Bodleian Libraries | University of Oxford"
+    },
+    {
+      "name": "Stefan Münnich",
+      "affiliation": "Anton Webern Gesamtausgabe | University of Basel"
+    }
+  ]
 }
