@@ -1,7 +1,7 @@
 <div>
     <p class="tutorialGoal">Step eleven: adding the dynamic marking to your encoding of the example.</p>
 
-    <p>Dynamics are defined with a <code>&lt;dynam&gt;</code> element. The <code>&lt;dynam&gt;</code> element may be used for instantaneous or continuous textual dynamics, e.g. <code>“p”</code>, <code>“mf”</code>, or <code>“cresc. poco a poco”</code>. These verbal instructions are placed as plain text between the opening and closing tag of the <code>&lt;dynam&gt;</code> element, like <code>&lt;dynam&gt;pp&lt;/dynam&gt;</code>.</p>
+    <p>Dynamics are defined with a <code>&lt;dynam&gt;</code> element. The <code>&lt;dynam&gt;</code> element may be used for instantaneous or continuous textual dynamics, e.g. <code>“p”</code>, <code>“mf”</code>, or <code>“cresc. poco a poco”</code>. These are placed as plain text between the opening and closing tag of the <code>&lt;dynam&gt;</code> element, like <code>&lt;dynam&gt;pp&lt;/dynam&gt;</code>.</p>
 
     <p>Unlike articulation signs, the <code>&lt;dynam&gt;</code> element is a so-called <code>control event</code> which groups elements (such as dynamics, ties, phrase marks, pedal marks, etc.), that depend upon other events, such as notes or rests, for their validity. In general, <code>control events</code> are not encoded as child elements of the corresponding events they are meant to control. In practice, it means that they are placed outside the <code>staff</code> elements in most cases.</p>
 
