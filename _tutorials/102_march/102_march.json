@@ -417,7 +417,7 @@
         {"rule": "//mei:measure[1]/mei:staff/mei:layer", "renderanyway": false, "hint": "You need a layer element inside staff."},
         {"rule": "count(//mei:measure[1]/mei:staff/mei:layer/@*) = 0", "renderanyway": false, "hint": "You do not need an attribute on the layer element."},
         {"rule": "count(//mei:measure[1]/mei:staff/mei:layer/mei:note) = 1", "renderanyway": false, "hint": "You need one note element."},
-        {"rule": "//mei:measure[1]/mei:staff/mei:layer/mei:note", "renderanyway": false, "hint": "Note element has to be a child of the layer element."},
+        {"rule": "//mei:measure[1]/mei:staff/mei:layer/mei:note", "renderanyway": false, "hint": "The note element has to be a child of the layer element."},
         {"rule": "count(//mei:measure[1]/mei:staff/mei:layer/mei:note/@*) = 3", "renderanyway": false, "hint": "You need three attributes on the note element (@pname, @oct & @dur)."},
         {"rule": "//mei:measure[1]/mei:staff/mei:layer/mei:note/@pname = 'b'", "renderanyway": false, "hint": "You need a @pname attribute with a value of b on note."},
         {"rule": "//mei:measure[1]/mei:staff/mei:layer/mei:note/@oct = '3'", "renderanyway": false, "hint": "You need an @oct attribute with a value of 3 on note."},
