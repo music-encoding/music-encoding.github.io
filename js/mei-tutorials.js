@@ -505,7 +505,7 @@ function cleanUpHelpers() {
 function displayWarning(text) {
     var toast = document.createElement('div');
     toast.classList.add('toast');
-    toast.classList.add('toast-warning');
+    toast.classList.add('toast-primary');
     toast.innerHTML = text;
 
     document.getElementById('hints').appendChild(toast);
