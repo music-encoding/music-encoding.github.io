@@ -435,6 +435,7 @@ function renderVerovio(validationString) {
  */
 function allowNextStep() {
     document.getElementById('nextStepButton').classList.remove('disabled');
+    document.querySelector('.tutorialBox #editorBox').style.borderColor = 'green';
     disallowHint();
 }
 
@@ -444,6 +445,7 @@ function allowNextStep() {
  */
 function blockNextStep() {
     document.getElementById('nextStepButton').classList.add('disabled');
+    document.querySelector('.tutorialBox #editorBox').style.borderColor = 'orangered';
 }
 
 /* 
