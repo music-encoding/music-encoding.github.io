@@ -40,7 +40,7 @@ var verovioOptions = {
     pageMarginRight: 0,
     pageMarginTop: 0,
     scale: 50
-}
+};
 // strings that identify certain positions in XML file
 var editSnippetStartString = '<?edit-start?>';
 var editSnippetEndString = '<?edit-end?>';
@@ -116,6 +116,8 @@ function setupTutorial(data) {
     //add listener to allow going to the next step
     document.getElementById('nextStepButton').addEventListener('click',(e) => {
         var stepNum = parseInt(e.target.getAttribute('data-stepnum'));
+
+        // load next step
         loadTutorialStep(data,stepNum + 1);   
     });        
 }
@@ -214,8 +216,8 @@ function setupEditor(data, stepNum, xmlString, requiresPrefill, prefillString) {
         start: getFilePart(xmlString,'start'),
         end: getFilePart(xmlString,'end'),
         center: getFilePart(xmlString,'center')
-    }
-    
+    };
+
     // update editor with prefill string
     if(requiresPrefill) {
         editor.setValue(prefillString);
@@ -321,8 +323,8 @@ function handleEditorChanges(data, stepNum, step, file) {
                 //make full file available for download
                 var downloadStr = 'data:text/xml;charset=utf-8,' + encodeURIComponent(validationString);
                 var downloadBtn = document.getElementById('fullFileDownloadBtn');
-                downloadBtn.setAttribute('href',downloadStr);
-                downloadBtn.setAttribute('download',data.steps[stepNum].xmlFile);
+                downloadBtn.setAttribute('href', downloadStr);
+                downloadBtn.setAttribute('download', data.steps[stepNum].xmlFile);
             }
         
             //decide if user may continue or not
@@ -360,7 +362,7 @@ function showFinalPage(data) {
             document.getElementById('stepLabel').style.display = 'none';
             
             // activate last bullet point
-            activateStepListItem(data,'outro')
+            activateStepListItem(data,'outro');
             
             //show acknowledgments
             var ack = document.getElementById('acknowledgments');
