@@ -131,7 +131,8 @@ function loadTutorialStep(data, stepNum) {
     
     console.log('\nloading step ' + stepNum + ', maximum step is ' + data.steps.length);
     
-    //disable nextStepButton
+    // do not allow download or continuation before tutorial is set up
+    disallowDownload();
     blockNextStep();
     
     //if all steps are passed, move on to the final page, and skip rest of function
@@ -272,6 +273,10 @@ function handleEditorChanges(data, stepNum, step, file) {
             console.log('not well-formed');
             displayWarning('Your code is not well-formed.');
             document.getElementById('rendering').innerHTML = '';
+
+            // do not allow download or continuation until file is wellformed
+            disallowDownload();
+            blockNextStep();
         } else {
             isValid = true;
             var renderAnyway = true;
