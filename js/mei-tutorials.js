@@ -15,7 +15,7 @@
  * HTML. There, it will load the tutorials JSON file
  * and call setupTutorial() with that file's content.
  * 
- * written 2019 by Stefan Münnich and Johannes Kepper,
+ * written 2019 by Johannes Kepper and Stefan Münnich,
  * with input from many others from the MEI Community
  */
  
