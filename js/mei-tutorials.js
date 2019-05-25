@@ -428,6 +428,7 @@ function renderVerovio(validationString) {
  */
 function allowNextStep() {
     document.getElementById('nextStepButton').classList.remove('disabled');
+    disallowHint();
 }
 
 /* 
@@ -452,6 +453,22 @@ function allowDownload() {
  */
 function disallowDownload() {
     document.getElementById('btn-openFullFileModal').classList.add('disabled');
+}
+
+/*
+ * function allowHint
+ * This function enables the btn-toggleHint
+ */
+function allowHint() {
+    document.getElementById('btn-toggleHint').classList.remove('disabled');
+}
+
+/*
+ * function disallowHint
+ * This function disables the btn-toggleHint
+ */
+function disallowHint() {
+    document.getElementById('btn-toggleHint').classList.add('disabled');
 }
 
 
@@ -483,6 +500,8 @@ function displayWarning(text) {
     toast.innerHTML = text;
 
     document.getElementById('hints').appendChild(toast);
+
+    allowHint();
 }
 
 
@@ -568,7 +587,7 @@ function resizeEditor(editorLines) {
     
     //the overhead of .7rem is intended to avoid flickering / scrolling
     var editorLines = (typeof editorLines !== 'undefined') ? (editorLines + .7) : 5.7;
-    document.getElementById('editorBox').style.height = editorLines + 'rem';
+    document.querySelector('.tutorialBox #editorBox').style.height = editorLines + 'rem';
     editor.resize();
 }
 
@@ -577,9 +596,9 @@ function resizeEditor(editorLines) {
  * sets listeners on the page
  */
 function setListeners() {
-    
+
+    document.getElementById('btn-toggleHint').addEventListener('click', toggleHint);
     document.getElementById('btn-openFullFileModal').addEventListener('click',openFullFileModal);
-    
     document.getElementById('fullFileModalCloseTop').addEventListener('click',closeFullFileModal);
     document.getElementById('fullFileModalCloseBottom').addEventListener('click',closeFullFileModal);
     document.getElementById('fullFileModalCloseBack').addEventListener('click',closeFullFileModal);
@@ -600,6 +619,26 @@ function openFullFileModal() {
 function closeFullFileModal() {
     document.getElementById('fullFileModal').classList.remove('active');
 }
+
+
+/*
+ * function toggleHint
+ * This function displays or hides a hint for the user
+ */
+function toggleHint() {
+
+    // read current values
+    const hintStyle = document.getElementById('hints');
+    var hintMessage = document.getElementById('btn-toggleHint').innerText;
+
+    // toggle values
+    hintStyle.style.display = hintStyle.style.display === 'none' ? 'block' : 'none';
+    hintMessage = hintMessage === 'hide hint' ? 'show hint' : 'hide hint';
+
+    // set new values
+    document.getElementById('btn-toggleHint').innerText = hintMessage;
+}
+
 
 /* 
  * function nsResolver
