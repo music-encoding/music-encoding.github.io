@@ -15,7 +15,7 @@
  * HTML. There, it will load the tutorials JSON file
  * and call setupTutorial() with that file's content.
  * 
- * written 2019 by Stefan Münnich and Johannes Kepper,
+ * written 2019 by Johannes Kepper and Stefan Münnich,
  * with input from many others from the MEI Community
  */
  
@@ -40,7 +40,7 @@ var verovioOptions = {
     pageMarginRight: 0,
     pageMarginTop: 0,
     scale: 50
-}
+};
 // strings that identify certain positions in XML file
 var editSnippetStartString = '<?edit-start?>';
 var editSnippetEndString = '<?edit-end?>';
@@ -116,6 +116,8 @@ function setupTutorial(data) {
     //add listener to allow going to the next step
     document.getElementById('nextStepButton').addEventListener('click',(e) => {
         var stepNum = parseInt(e.target.getAttribute('data-stepnum'));
+
+        // load next step
         loadTutorialStep(data,stepNum + 1);   
     });        
 }
@@ -129,7 +131,8 @@ function loadTutorialStep(data, stepNum) {
     
     console.log('\nloading step ' + stepNum + ', maximum step is ' + data.steps.length);
     
-    //disable nextStepButton
+    // do not allow download or continuation before tutorial is set up
+    disallowDownload();
     blockNextStep();
     
     //if all steps are passed, move on to the final page, and skip rest of function
@@ -214,8 +217,8 @@ function setupEditor(data, stepNum, xmlString, requiresPrefill, prefillString) {
         start: getFilePart(xmlString,'start'),
         end: getFilePart(xmlString,'end'),
         center: getFilePart(xmlString,'center')
-    }
-    
+    };
+
     // update editor with prefill string
     if(requiresPrefill) {
         editor.setValue(prefillString);
@@ -270,6 +273,10 @@ function handleEditorChanges(data, stepNum, step, file) {
             console.log('not well-formed');
             displayWarning('Your code is not well-formed.');
             document.getElementById('rendering').innerHTML = '';
+
+            // do not allow download or continuation until file is wellformed
+            disallowDownload();
+            blockNextStep();
         } else {
             isValid = true;
             var renderAnyway = true;
@@ -321,8 +328,8 @@ function handleEditorChanges(data, stepNum, step, file) {
                 //make full file available for download
                 var downloadStr = 'data:text/xml;charset=utf-8,' + encodeURIComponent(validationString);
                 var downloadBtn = document.getElementById('fullFileDownloadBtn');
-                downloadBtn.setAttribute('href',downloadStr);
-                downloadBtn.setAttribute('download',data.steps[stepNum].xmlFile);
+                downloadBtn.setAttribute('href', downloadStr);
+                downloadBtn.setAttribute('download', data.steps[stepNum].xmlFile);
             }
         
             //decide if user may continue or not
@@ -360,7 +367,7 @@ function showFinalPage(data) {
             document.getElementById('stepLabel').style.display = 'none';
             
             // activate last bullet point
-            activateStepListItem(data,'outro')
+            activateStepListItem(data,'outro');
             
             //show acknowledgments
             var ack = document.getElementById('acknowledgments');
@@ -428,6 +435,8 @@ function renderVerovio(validationString) {
  */
 function allowNextStep() {
     document.getElementById('nextStepButton').classList.remove('disabled');
+    document.querySelector('.tutorialBox #editorBox').style.borderColor = 'green';
+    disallowHint();
 }
 
 /* 
@@ -436,6 +445,7 @@ function allowNextStep() {
  */
 function blockNextStep() {
     document.getElementById('nextStepButton').classList.add('disabled');
+    document.querySelector('.tutorialBox #editorBox').style.borderColor = 'orangered';
 }
 
 /* 
@@ -452,6 +462,22 @@ function allowDownload() {
  */
 function disallowDownload() {
     document.getElementById('btn-openFullFileModal').classList.add('disabled');
+}
+
+/*
+ * function allowHint
+ * This function enables the btn-toggleHint
+ */
+function allowHint() {
+    document.getElementById('btn-toggleHint').classList.remove('disabled');
+}
+
+/*
+ * function disallowHint
+ * This function disables the btn-toggleHint
+ */
+function disallowHint() {
+    document.getElementById('btn-toggleHint').classList.add('disabled');
 }
 
 
@@ -479,10 +505,12 @@ function cleanUpHelpers() {
 function displayWarning(text) {
     var toast = document.createElement('div');
     toast.classList.add('toast');
-    toast.classList.add('toast-warning');
+    toast.classList.add('toast-primary');
     toast.innerHTML = text;
 
     document.getElementById('hints').appendChild(toast);
+
+    allowHint();
 }
 
 
@@ -568,7 +596,7 @@ function resizeEditor(editorLines) {
     
     //the overhead of .7rem is intended to avoid flickering / scrolling
     var editorLines = (typeof editorLines !== 'undefined') ? (editorLines + .7) : 5.7;
-    document.getElementById('editorBox').style.height = editorLines + 'rem';
+    document.querySelector('.tutorialBox #editorBox').style.height = editorLines + 'rem';
     editor.resize();
 }
 
@@ -577,9 +605,9 @@ function resizeEditor(editorLines) {
  * sets listeners on the page
  */
 function setListeners() {
-    
+
+    document.getElementById('btn-toggleHint').addEventListener('click', toggleHint);
     document.getElementById('btn-openFullFileModal').addEventListener('click',openFullFileModal);
-    
     document.getElementById('fullFileModalCloseTop').addEventListener('click',closeFullFileModal);
     document.getElementById('fullFileModalCloseBottom').addEventListener('click',closeFullFileModal);
     document.getElementById('fullFileModalCloseBack').addEventListener('click',closeFullFileModal);
@@ -600,6 +628,26 @@ function openFullFileModal() {
 function closeFullFileModal() {
     document.getElementById('fullFileModal').classList.remove('active');
 }
+
+
+/*
+ * function toggleHint
+ * This function displays or hides a hint for the user
+ */
+function toggleHint() {
+
+    // read current values
+    const hintStyle = document.getElementById('hints');
+    var hintMessage = document.getElementById('btn-toggleHint').innerText;
+
+    // toggle values
+    hintStyle.style.display = hintStyle.style.display === 'none' ? 'block' : 'none';
+    hintMessage = hintMessage === 'hide hint' ? 'show hint' : 'hide hint';
+
+    // set new values
+    document.getElementById('btn-toggleHint').innerText = hintMessage;
+}
+
 
 /* 
  * function nsResolver
