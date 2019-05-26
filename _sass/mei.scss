@@ -350,6 +350,16 @@ ul.nav li.nav-item:first-child {
         font-weight: 400;
         cursor: pointer;
     }
+
+    #btn-toggleHint {
+      font-size: .65rem;
+      font-weight: 400;
+      cursor: pointer;
+    }
+
+    #btn-toggleHint:focus {
+      box-shadow: none;
+    }
     
     #editorBox {
         height: 5rem;
