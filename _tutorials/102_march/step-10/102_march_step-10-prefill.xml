@@ -7,7 +7,7 @@
             <note pname="g" oct="4" dur="8" />
         </beam>
         <note pname="f" oct="4" dur="4" dots="1" >
-            <!-- Your encoding goes here -->
+            <!-- Your encoding should replace this line -->
         </note>
         <note pname="d" oct="4" dur="8"></note>
     </layer>
@@ -22,7 +22,7 @@
             <note pname="g" oct="4" dur="8" ></note>
         </beam>
         <note pname="b" oct="4" dur="4" dots="1">
-            <!-- Your encoding goes here -->
+            <!-- Your encoding should replace this line -->
         </note>
         <note pname="g" oct="4" dur="8" ></note>
     </layer>
@@ -38,7 +38,7 @@
             <note dur="8" pname="d" oct="5"></note>
         </beam>
         <note dur="4" pname="e" oct="5">
-            <!-- Your encoding goes here -->
+            <!-- Your encoding should replace this line -->
         </note>
         <beam>
             <note dur="8" pname="d" oct="5"></note>

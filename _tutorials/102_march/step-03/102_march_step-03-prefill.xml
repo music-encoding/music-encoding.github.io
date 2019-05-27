@@ -3,4 +3,4 @@
         <staffDef n="1" lines="5" clef.shape="G" clef.line="2"></staffDef>
     </staffGrp>
 </scoreDef>
-<!-- Your encoding goes here -->
+<!-- Your encoding should replace this line -->
