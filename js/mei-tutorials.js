@@ -15,7 +15,7 @@
  * HTML. There, it will load the tutorials JSON file
  * and call setupTutorial() with that file's content.
  * 
- * written 2019 by Johannes Kepper and Stefan Münnich,
+ * written 2019 by Stefan Münnich and Johannes Kepper,
  * with input from many others from the MEI Community
  */
  
@@ -44,6 +44,8 @@ var verovioOptions = {
 // strings that identify certain positions in XML file
 var editSnippetStartString = '<?edit-start?>';
 var editSnippetEndString = '<?edit-end?>';
+
+var currentStep; //this will be used as current step object
 
 /****************************** 
  * Global preparations        *
@@ -143,6 +145,7 @@ function loadTutorialStep(data, stepNum) {
     
     //retrieve step object from data
     var step = data.steps[stepNum];
+    currentStep = step;
     
     //adds heading as provided, falls back to plain step numbers
     document.getElementById('stepLabel').innerHTML = (typeof step.label !== 'undefined' && step.label !== '') ? step.label : 'Step ' + (stepNum + 1);
@@ -281,14 +284,14 @@ function handleEditorChanges(data, stepNum, step, file) {
             isValid = true;
             var renderAnyway = true;
             
-            for (var i = 0; i < step.xpaths.length; i++) {
+            for (var i = 0; i < currentStep.xpaths.length; i++) {
         
                 var xpathResult;
         
                 try {
-                    xpathResult = xmlDoc.evaluate(step.xpaths[i].rule, xmlDoc, nsResolver, XPathResult.BOOLEAN_TYPE, null);
+                    xpathResult = xmlDoc.evaluate(currentStep.xpaths[i].rule, xmlDoc, nsResolver, XPathResult.BOOLEAN_TYPE, null);
                 } catch (error) {
-                    console.log('error resolving xpath: "' + step.xpaths[i].rule + '"' + error);
+                    console.log('error resolving xpath: "' + currentStep.xpaths[i].rule + '"' + error);
                     isValid = false;
                     break;
                 }
@@ -297,13 +300,13 @@ function handleEditorChanges(data, stepNum, step, file) {
         
                     isValid = false;
         
-                    if (!step.xpaths[i].renderanyway) {
+                    if (!currentStep.xpaths[i].renderanyway) {
                         renderAnyway = false;
                     }
         
                     // if there is no warning, let the user play without interruptions
-                    if (typeof step.xpaths[i].hint !== 'undefined' && step.xpaths[i].hint !== '') {
-                        var text = step.xpaths[i].hint;
+                    if (typeof currentStep.xpaths[i].hint !== 'undefined' && currentStep.xpaths[i].hint !== '') {
+                        var text = currentStep.xpaths[i].hint;
                         displayWarning(text);
                         text = '';
                     }
@@ -329,7 +332,7 @@ function handleEditorChanges(data, stepNum, step, file) {
                 var downloadStr = 'data:text/xml;charset=utf-8,' + encodeURIComponent(validationString);
                 var downloadBtn = document.getElementById('fullFileDownloadBtn');
                 downloadBtn.setAttribute('href', downloadStr);
-                downloadBtn.setAttribute('download', data.steps[stepNum].xmlFile);
+                downloadBtn.setAttribute('download', currentStep.xmlFile);
             }
         
             //decide if user may continue or not
@@ -341,7 +344,7 @@ function handleEditorChanges(data, stepNum, step, file) {
             }
             
             // continue to listen for changes
-            handleEditorChanges(data, stepNum, step, file);
+            handleEditorChanges(data, stepNum, currentStep, file);
         }
     });
 }
