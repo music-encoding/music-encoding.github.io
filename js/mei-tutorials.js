@@ -186,6 +186,12 @@ function loadTutorialStep(data, stepNum) {
                   var prefillString = responseArray[1];   // resolved prefillPromise (prefill || '')
                   
                   setupEditor(data, stepNum, xmlString, requiresPrefill, prefillString);
+                  try {
+                      var validationString = getFilePart(xmlString,'start').start + editor.getSession().getValue() + getFilePart(xmlString,'end').end;
+                      renderVerovio(validationString)
+                  } catch(err) {
+                      //
+                  }
                   })
             .catch(function(error) {
                    console.log('There has been a problem with the fetch operation for: ', promiseArray, error.message);
@@ -420,7 +426,7 @@ function renderVerovio(validationString) {
     
     if (error) {
         // display message
-        document.getElementById('rendering').innerHTML = 'Not possible to render.';
+        document.getElementById('rendering').innerHTML = 'please adjust encoding to enable rendering';
     } else {
         // display svg
         document.getElementById('rendering').innerHTML = svg;
