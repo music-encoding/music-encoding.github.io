@@ -1,0 +1,21 @@
+<measure n="3">
+    <staff n="1">
+        <layer>
+            <beam>
+                <!-- Add xml:id's for the following two note elements (a & b) -->
+                <note dur="8" pname="a" oct="4"></note>
+                <note dur="8" pname="b" oct="4"></note>
+                <note dur="8" pname="c" oct="5"></note>
+                <note dur="8" pname="d" oct="5"></note>
+            </beam>
+            <note dur="4" pname="e" oct="5">
+                <artic artic="acc" place="above"/>
+            </note>
+            <beam>
+                <note dur="8" pname="d" oct="5"></note>
+                <note dur="8" pname="b" oct="4"></note>
+            </beam>
+        </layer>
+    </staff>
+    <!-- Your encoding of the slur should replace this line -->
+</measure>
