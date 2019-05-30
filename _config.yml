@@ -70,9 +70,6 @@ menu:
           - id: schemas
             label: 'Schemas and Namespace'
             url: '/schemas.html'
-          - id: tutorials
-            label: 'Tutorials'
-            url: '/tutorials.html'
     - id: documentation
       label: 'Documentation'
       url: '/guidelines'
@@ -87,23 +84,23 @@ sidemenu:
           - id: about
             label: 'About'
             url: '/conference/2019/'
+          - id: green_meeting
+            label: 'Green Meeting'
+            url: '/conference/2019/green_meeting'
           - id: program
             label: 'Program'
             url: '/conference/2019/program'
-          #- id: maps
-            #label: 'Maps and Dining'
-            #url: '/conference/2019/maps'
-          #- id: travel
-            #label: 'Travel and Accommodation'
-            #url: '/conference/2019/travel'
+          - id: travel
+            label: 'Travel and Accommodation'
+            url: '/conference/2019/travel'
+          - id: maps
+            label: 'Maps'
+            url: '/conference/2019/maps'
           - id: call
             label: 'Call for proposals'
             url: '/conference/2019/call'
 
 collections:
   projects:
-    output: true
-    permalink: /:collection/:name
-  tutorials:
     output: true
     permalink: /:collection/:name
