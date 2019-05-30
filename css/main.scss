@@ -78,16 +78,38 @@ $on-laptop:        800px;
     height: 6em;
   }
 
-  .mec2019-program-row {
+  .mec2019-program-row-main {
     margin: 30px 0 30px 15px;
 
     .mec2019-program-title {
       margin: 10px 0 10px 0;
+      
+      .mec2019-presentation {
+      background-color:#d4d4d4;
+      }
+    }   
+    
+    .workshop {
+        width: 185pt;
+        height: 190pt;
     }
-
+    
+    .workshop-title {
+        width: 160pt;
+        height: 105pt;
+    }
+    
+    .poster-session {
+        width: 370pt;
+        height: 520pt;
+    }
     .mec2019-program-speakers {
       font-style: italic;
       font-size: 0.6rem;
+    }
+    
+    .unconference{
+        height: 95pt;
     }
 
     .small-card {
@@ -105,7 +127,12 @@ $on-laptop:        800px;
     }
 
   }
-
+  
+  .mec2019-abstract {
+        font-size: 20px;
+        font-weight: bold;
+        
+  }
   .mec2019-program-row-main {
     margin: 30px 0 30px 0;
     background-color: #f4f4f4;
