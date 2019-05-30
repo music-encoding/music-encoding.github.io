@@ -27,10 +27,10 @@
                                     <rest dur="4"/>
                                     <note pname="d" oct="5" dur="4"/>
                                 </layer>
-                                <layer n="2">
-                                    <?edit-start?><space dur="2" dots="1"/>
-                                    <note pname="g" oct="4" dur="4" color="blue"/><?edit-end?>
-                                </layer>
+                                <?edit-start?><layer n="2">
+                                    <space dur="2" dots="1"/>
+                                    <note pname="g" oct="4" dur="4" color="blue"/>
+                                </layer><?edit-end?>
                             </staff>
                         </measure>
                     </section>
