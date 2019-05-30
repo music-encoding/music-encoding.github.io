@@ -6,13 +6,13 @@ categories: update
 ---
 
 The MEI Community is pleased to announce the first draft version of MEI Basic, 
-a restricted profile of MEI intended to support data interchange both
+a simplified profile of MEI intended to support data interchange both
 within MEI and with other encoding formats.  
 
 MEI Basic has been discussed at several occasions over the past three years.
-It intends to reduce MEI so that every feature can only expressed in one
+It intends to simplify MEI so that every feature can only expressed in one
 specific way, and also removes all editorial or analytical possibilities, as
-well as the integration of facsimiles and recordings. What is left is a fairly
+well as the integration of facsimiles and recordings. What is left is a
 small core of MEI's features, that falls in the range of other encoding 
 formats and thus allows an easier transformation. 
 
