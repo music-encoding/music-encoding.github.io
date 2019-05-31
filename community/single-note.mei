@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mei xmlns="http://www.music-encoding.org/ns/mei" meiversion="4.0.0-alpha.1+basic">
+	<meiHead meiversion="4.0.0-alpha.1+basic">
+		<fileDesc>
+			<titleStmt>
+				<title></title>
+			</titleStmt>
+			<pubStmt></pubStmt>
+		</fileDesc>
+	</meiHead>
+	<music meiversion="4.0.0-alpha.1+basic">
+		<body>
+			<mdiv>
+				<score>
+					<scoreDef>
+						<staffGrp>
+							<staffDef n="1" lines="5" clef.line="2" clef.shape="G"></staffDef>
+						</staffGrp>
+					</scoreDef>
+					<section>
+						<measure n="1">
+							<staff n="1">
+								<layer>
+									<note pname="c" dur="4" oct="5"></note>
+								</layer>
+							</staff>
+						</measure>
+					</section>
+				</score>
+			</mdiv>
+		</body>
+	</music>
+</mei>
