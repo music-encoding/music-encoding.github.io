@@ -58,6 +58,11 @@ $on-laptop:        800px;
         "bib.scss"
 ;
 
+.sticky {
+  position: sticky;
+  top: 0.5rem;
+}
+
 /* MEC 2019 */
 .mec2019-register {
   font-weight: bold;
