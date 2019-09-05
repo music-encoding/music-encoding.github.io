@@ -9,11 +9,14 @@ Here you will find archived material, such as previous versions of MEI, document
 ## Past Music Encoding Conferences
 
 * Programs
+    * [2018](../downloads/2018ConferenceProgram.pdf)
+    * [2017](../downloads/2017ConferenceProgram.pdf)
     * [2016](../downloads/MEC2016_program.pdf)
     * [2015](../downloads/MEC2015_program.pdf)
     * [2014](../downloads/MEC2014_program.pdf)
     * [2013](../downloads/MEC2013_program.pdf)
 * Proceedings
+    * [2015-2017](https://doi.org/10.15463/music-1)
     * [2013-2014](http://langzeitarchivierung.bib-bvb.de/delivery/DeliveryManagerServlet?dps_custom_att_1=xepicur&dps_pid=IE2860815)
 
 ## Previous Versions of MEI

@@ -30,4 +30,5 @@ title: "Past Music Encoding Conferences"
 
 # Proceedings
 
+* [2015-2017](https://doi.org/10.15463/music-1)
 * [2013-2014](http://langzeitarchivierung.bib-bvb.de/delivery/DeliveryManagerServlet?dps_custom_att_1=xepicur&dps_pid=IE2860815)
