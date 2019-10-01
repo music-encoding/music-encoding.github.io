@@ -22,6 +22,7 @@ code, kbd, pre, samp {
 header.navbar {
     background-color: $dark-color;
     margin-bottom: 20px;
+    z-index: 10;
 
     a {
         font-size: $menu-font-size;
@@ -64,7 +65,7 @@ header.navbar {
         margin-right: 20px;
         height: 30px;
     }
-	
+
 	section div.guidelines-warning {
 		width: 400px;
 	}
@@ -75,7 +76,7 @@ header.navbar {
     .divider {
         margin: .2rem 0 .8rem;
     }
-    
+
     p.tile-title {
         margin: .1rem 0 -.2rem;
     }
@@ -93,7 +94,7 @@ footer {
     background-color: $dark-color;
     color: $mei-white;
     padding-bottom: 30px;
-    
+
     a {
         color: $mei-white;
         font-weight: 300;
@@ -106,22 +107,25 @@ footer {
         padding: 20px;
         & a.institutionsLink {
            img {
-               height: 80px;  
-           } 
+               height: 80px;
+           }
         }
     }
 }
 
 p.sectionToc a {
     display: block;
-    
+    margin-top: .4rem;
+    margin-left: 1rem;
+    text-indent: -1rem;
+
     &.level-3 {
-        margin-left: 1.5em;
-        
+        margin-left: 2.5em;
+
     }
-    
+
     &.level-4 {
-        margin-left: 3em;
+        margin-left: 4em;
     }
 }
 
@@ -162,79 +166,79 @@ h2:hover a.guidelines-edit, h3:hover a.guidelines-edit, h4:hover a.guidelines-ed
 }
 
 .wovenodd-col2 {
-    
+
     .table td, .table th {
         border-bottom: none;
     }
-    
+
     .table.table-striped tbody tr:nth-of-type(2n+1) {
         background: #f5f5f5;
     }
-    
+
     .schematronText {
         margin-bottom: .8rem;
     }
-    
+
     img {
         max-width: 100%;
     }
-    
+
     .code {
 
         code {
             background-color: #f5f5f5;
             border: .5px solid #cccccc;
         }
-    
+
         .indent1 .indent {
             margin-left: 1em;
         }
-        
+
         .element {
             color: #000080;
             color: #4767b1;
-            
+
             .attribute {
                 color: #008080;
                 color: #f98859;
-                
+
             }
-            
+
             .attributevalue {
                 color: #dd1144;
                 color: #a14415;
             }
         }
-        
+
         .comment {
             color: #999988;
             color: #208420;
             font-style: italic;
         }
-        
+
         /*.attribute .attributevalue {
             margin-left: -.6em;
-            
+
             a {
                 margin-left: -.6em;
             }
         }*/
     }
-    
+
 }
 
 div.tile {
-    
+
     margin-left: 1rem;
-    
+
     & + div.tile {
         margin-top: .5rem;
     }
-    
+
     & + p, + h1, + h2, + h3, + h4, + h5, + h6 {
         margin-top: 1em;
     }
-    
+
 }
 
 // * + h3 {
@@ -257,7 +261,7 @@ div.tile {
     h1, h2, h3, h4, h5, h6 {
         margin-left: unset;
     }
-    
+
     h5.tile-title {
         margin-bottom: 0;
     }
@@ -265,7 +269,7 @@ div.tile {
 
 ul.nav li.nav-item:first-child {
     margin-top: 0;
-    
+
     a {
         padding-top: 0;
     }
@@ -322,7 +326,7 @@ ul.nav li.nav-item:first-child {
 /* Tutorials Start */
 
 .tutorialBox {
-    
+
     h3 {
         font-size: 1rem;
         margin: .8rem 0 0;
@@ -360,22 +364,22 @@ ul.nav li.nav-item:first-child {
     #btn-toggleHint:focus {
       box-shadow: none;
     }
-    
+
     #editorBox {
         height: 5rem;
         margin: .5rem 0;
-        
+
         background-color: #e5e5e5;
         border: .5px solid #999999;
         border-radius: .3rem;
         padding: .3rem;
-        
+
         #editor {
             background-color: transparent;
             font-size: .9rem;
             font-family: 'Courier';
             height: 100%;
-            
+
             * {
                 font-family: 'Courier';
             }
@@ -383,63 +387,63 @@ ul.nav li.nav-item:first-child {
 
     }
     #fullFileModal {
-    
+
         a#fullFileModalCloseBack {
             background-color: #333333;
             opacity: .9;
         }
-    
+
         .modal-body {
-            
+
             height: 20rem;
-        
+
             #fullFileContent {
                 background-color: transparent;
                 font-size: .7rem;
                 font-family: 'Courier';
                 height: 100%;
-                
+
                 * {
                     font-family: 'Courier';
                 }
-            }        
+            }
         }
     }
-        
+
     #acknowledgments {
         font-size: .7rem;
         margin: 3rem 0 0;
-        
+
         h3 {
             font-size: .8rem;
         }
-        
+
         p {
-          margin-bottom: .2rem;  
+          margin-bottom: .2rem;
         }
-        
+
         #ackList {
             font-size: .7rem;
             list-style-type: none;
             margin: .5rem 0;
-            
+
             .name {
                 font-weight: 500;
             }
-            
+
             .affiliation {
                 font-weight: 300;
                 color: #666666;
-                
+
                 &:before {
-                    content: ' | ';                    
+                    content: ' | ';
                 }
             }
         }
-        
-        
+
+
     }
-    
+
     pre.codeblock {
         background-color: #f5f5f5;
         border: .5px solid #999999;
@@ -448,7 +452,7 @@ ul.nav li.nav-item:first-child {
         font-family: "SF Mono", "Segoe UI Mono", "Roboto Mono", Menlo, Courier, monospace;
         font-size: 0.7rem;
         overflow: auto;
-        
+
         & + label {
             font-size: .7rem;
             font-weight: 100;
@@ -457,27 +461,27 @@ ul.nav li.nav-item:first-child {
             left: .5rem;
         }
     }
-    
+
     #rendering {
         min-height: 4rem;
         margin: 0 .5rem .5rem;
-        
+
     }
-    
+
     #nextStepButton {
         margin: .5rem 0 2.5rem;
     }
-    
+
     #instruction h1 {
         font-size: 1rem;
         margin: .8rem 0 .2rem;
     }
-    
+
     #instruction h2 {
         font-size: .9rem;
         margin: .8rem 0 .1rem;
     }
-    
+
     #instruction h3 {
         font-size: .8rem;
         margin: .8rem 0 0;
@@ -493,7 +497,7 @@ ul.nav li.nav-item:first-child {
     background-color: #f5f5f5;
     padding: .5rem;
     border-radius: .25rem;
-    
+
     code {
         background: unset;
     }
@@ -508,14 +512,14 @@ ul.nav li.nav-item:first-child {
     }
 
     .attributeClasses {
-    
+
         font-weight: 300;
-    
+
         &:before {
             content: '(→ ';
             margin-left: 5px;
         }
-        
+
         &:after {
             content: ')';
         }
@@ -525,14 +529,14 @@ ul.nav li.nav-item:first-child {
 
 
 table.wovenodd {
-    
+
     border-collapse: collapse;
     width: 100%;
 
     & > tbody > tr > td {
         border: .5px solid #cccccc;
         padding: .3rem;
-        
+
         table thead {
             display: none;
         }
@@ -549,7 +553,7 @@ table.wovenodd {
 
 	table.wovenodd {
 		border: none;
-		
+
 		td {
 			.label {
 				border-radius: 0;
@@ -560,32 +564,32 @@ table.wovenodd {
 				font-weight: bolder;
 			}
 		}
-		
+
 		.wovenodd-col2 .attributeDef {
 			padding: .6rem .4rem;
-			
+
 			.attribute {
 				font-weight: bolder;
 			}
 		}
-		
+
 		.wovenodd-col2 .attributeDef:nth-of-type(2n+1) {
     		background: #f5f5f5;
 		}
-		
+
 		.wovenodd-col2 .specChildren .specChild {
 			margin: 0 0 .4rem 2rem;
 			text-indent: -2rem;
-			
+
 			.specChildModule {
 				font-weight: bolder;
 			}
 		}
-		
+
 	}
-	
+
 	.pre {
-			
+
     	background-color: #f5f5f5;
         border: .5px solid #cccccc;
         font-family: "SF Mono","Segoe UI Mono","Roboto Mono",Menlo,Courier,monospace;
@@ -597,119 +601,119 @@ table.wovenodd {
 		overflow-x: auto;
 		padding: 1rem;
 		width: 100%;
-        	
+
         .indent2, .indent3, .indent4, .indent5, .indent6, .indent7, .indent8 {
         	margin-left: 1em;
  	    }
-        
+
         .element {
 	        color: #000080;
     	    color: #4767b1;
-            
+
             .attribute {
                 color: #008080;
                 color: #f98859;
-                
+
             }
-            
+
             .attributevalue {
                 color: #dd1144;
                 color: #a14415;
-                	
+
                 margin-left: -.4rem;
-                	
+
                 .link_odd {
                 	margin-left: -.4rem;
                 }
             }
         }
-        
+
         .comment {
             color: #999988;
             color: #208420;
             font-style: italic;
         }
     }
-	
+
 	.textwidget {
-	
+
 		.pre {
 			margin-bottom: 1.2rem;
 		}
-		
+
 		.att:before {
 			content: '@'
 		}
-		
+
 		ul.specList {
 			list-style-type: none;
 			margin-left: 2rem;
-			
+
 			.specList-elementSpec {
 				font-weight: 700;
 				margin-right: .4rem;
 			}
 		}
-		
+
 		dl {
 			width: 100%;
 			overflow: hidden;
-			
+
 			dt {
 				float: left;
 				width: 30%;
 				box-sizing: border-box;
 				padding: .6rem .4rem;
 			}
-			
+
 			dd {
 				float: left;
 				width: 70%;
 				box-sizing: border-box;
 				padding: .6rem .4rem;
 				margin: 0;
-				
+
 				&:after {
 					content:'none';
 					color: transparent;
 				}
 			}
-			
+
 			dt:nth-of-type(2n+1), dd:nth-of-type(2n+1) {
 				background: #dbdbdb;
 			}
 		}
-		
+
 		.specDesc .att {
     		margin-right: 10px;
 		}
-		
+
 		table.specDesc td.Attribute {
     		font-weight: 700;
     		vertical-align: top;
 		}
-	}	
-	
+	}
+
 	.sortedInitials.well {
     	border: .5px solid #ccc;
     	border-radius: 5px;
     	background-color: #f5f5f5;
     	margin: 0 10px 30px;
     	padding: 0 10px 10px;
-    	
+
     	a {
     		text-decoration: none;
     		margin-right: 1rem;
     		display: inline-block;
-    		
+
     	}
 	}
-	
+
 	/* right column */
 	.panel-grid-cell + .panel-grid-cell {
 		padding-left: 1rem;
 	}
-	
+
 	.guidelinesList {
 		list-style-type: none;
 	}
@@ -723,3 +727,10 @@ table.wovenodd {
     width: 1.5em;
     vertical-align: bottom;
 }
+
+/**
+ * specs
+ */
+ .specsLayout {
+
+ }
