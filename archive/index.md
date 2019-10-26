@@ -21,15 +21,6 @@ Here you will find archived material, such as previous versions of MEI, document
 
 ## Previous Versions of MEI
 
-* MEI 3.0.0((https://github.com/music-encoding/music-encoding/releases/tag/v3.0.0)
-    * MEI 2013 Guidelines ([PDF](https://github.com/music-encoding/music-encoding/releases/download/v3.0.0/MEI_Guidelines_v3.0.0.pdf)
-    * RelaxNG schemata:
-         * [MEI All](../schema/3.0.0/mei-all.rng)
-         * [MEI All Anystart](../schema/3.0.0/mei-all_anyStart.rng)
-         * [MEI CMN](../schema/3.0.0/mei-CMN.rng)
-         * [MEI Mensural](../schema/3.0.0/mei-Mensural.rng)
-         * [MEI Neumes](../schema/3.0.0/mei-Neumes.rng)
-
 * [MEI 2013 (v. 2.1.1)](https://github.com/music-encoding/music-encoding/releases/tag/MEI2013_v2.1.1)
     * MEI 2013 Guidelines ([PDF](https://github.com/music-encoding/music-encoding/releases/download/MEI2013_v2.1.1/MEI_Guidelines_2013_v2.1.1.pdf))
     * RelaxNG schemata:
