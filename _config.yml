@@ -59,18 +59,18 @@ menu:
       label: 'Resources'
       url: '/resources'
       submenu:
-          - id: introduction
-            label: 'Introduction'
-            url: '/introduction.html'
-          - id: tools
-            label: 'Tools'
-            url: '/tools.html'
+          - id: background
+            label: 'Background'
+            url: '/background.html'
           - id: bibliography
             label: 'Bibliography'
             url: '/bibliography.html'
           - id: schemas
             label: 'Schemas and Namespace'
             url: '/schemas.html'
+          - id: tools
+            label: 'Tools'
+            url: '/tools.html'
           - id: tutorials
             label: 'Tutorials'
             url: '/tutorials.html'
