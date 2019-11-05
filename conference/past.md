@@ -4,7 +4,7 @@ title: "Past Music Encoding Conferences"
 ---
 # Past Music Encoding Conferences
 
-## MEC2019, University of Vienna, Austria
+## MEC2019, Vienna, Austria
 
 ## MEC2018, College Park, Maryland, USA
 
