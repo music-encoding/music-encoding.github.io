@@ -47,8 +47,8 @@ menu:
       url: '/conference'
       submenu:
           - id: upcoming
-            label: 'MEC 2019'
-            url: '/2019'
+            label: 'MEC 2020'
+            url: '/2020'
           - id: previous
             label: 'Past Conferences'
             url: '/past.html'
@@ -87,22 +87,19 @@ sidemenu:
       content:
           - id: about
             label: 'About'
-            url: '/conference/2019/'
-          - id: green_meeting
-            label: 'Green Meeting'
-            url: '/conference/2019/green_meeting'
+            url: '/conference/2020/'
           - id: program
             label: 'Program'
-            url: '/conference/2019/program'
+            url: '/conference/2020/program'
           - id: travel
             label: 'Travel and Accommodation'
-            url: '/conference/2019/travel'
+            url: '/conference/2020/travel'
           - id: maps
             label: 'Maps'
-            url: '/conference/2019/maps'
+            url: '/conference/2020/maps'
           - id: call
             label: 'Call for proposals'
-            url: '/conference/2019/call'
+            url: '/conference/2020/call'
 
 collections:
   projects:
