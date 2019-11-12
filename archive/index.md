@@ -9,18 +9,26 @@ Here you will find archived material, such as previous versions of MEI, document
 ## Past Music Encoding Conferences
 
 * Programs
-    * [2018](../downloads/2018ConferenceProgram.pdf)
-    * [2017](../downloads/2017ConferenceProgram.pdf)
-    * [2016](../downloads/MEC2016_program.pdf)
-    * [2015](../downloads/MEC2015_program.pdf)
-    * [2014](../downloads/MEC2014_program.pdf)
-    * [2013](../downloads/MEC2013_program.pdf)
+    * [2018](../conference/2018ConferenceProgram.pdf)
+    * [2017](../conference/2017ConferenceProgram.pdf)
+    * [2016](../conference/2016ConferenceProgram.pdf)
+    * [2015](../conference/2015ConferenceProgram.pdf)
+    * [2014](../conference/2014ConferenceProgram.pdf)
+    * [2013](../conference/2013ConferenceProgram.pdf)
 * Proceedings
     * [2015-2017](https://doi.org/10.15463/music-1)
     * [2013-2014](http://langzeitarchivierung.bib-bvb.de/delivery/DeliveryManagerServlet?dps_custom_att_1=xepicur&dps_pid=IE2860815)
 
 ## Previous Versions of MEI
 
+* [MEI (v. 3.0.0)](https://github.com/music-encoding/music-encoding/releases/tag/v3.0.0)
+    * MEI 3.0.0 Guidelines ([PDF](https://github.com/music-encoding/music-encoding/releases/download/v3.0.0/MEI_Guidelines_v3.0.0.pdf))
+    * RelaxNG schemata:
+         * [MEI All](../schema/3.0.0/mei-all.rng)
+         * [MEI All Anystart](../schema/3.0.0/mei-all_anyStart.rng)
+         * [MEI CMN](../schema/3.0.0/mei-CMN.rng)
+         * [MEI Mensural](../schema/3.0.0/mei-Mensural.rng)
+         * [MEI Neumes](../schema/3.0.0/mei-Neumes.rng)
 * [MEI 2013 (v. 2.1.1)](https://github.com/music-encoding/music-encoding/releases/tag/MEI2013_v2.1.1)
     * MEI 2013 Guidelines ([PDF](https://github.com/music-encoding/music-encoding/releases/download/MEI2013_v2.1.1/MEI_Guidelines_2013_v2.1.1.pdf))
     * RelaxNG schemata:
