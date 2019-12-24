@@ -1,9 +1,9 @@
 ---
 layout: default
-title: "2019 Board Election Candidate Statements"
+title: "2018 Board Election Candidate Statements"
 ---
 
-# 2019 Board Election Candidates
+# 2018 Board Election Candidates
 
 Candidates for the MEI Elections are invited to send along a brief CV and Candidate Statement. These are provided below, ordered alphabetically by surname.
 
