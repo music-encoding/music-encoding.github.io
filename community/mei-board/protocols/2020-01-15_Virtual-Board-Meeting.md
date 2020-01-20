@@ -40,4 +40,4 @@ To pick up the Board work on a good pace, the board will try to settle the meeti
 
 # MEI or Board resources and channels
 
-In addition to the MEI Twitter and Slack channels the MEI Board maintains a remine project management and wiki. Benjamin will create accounts for all Board members. 
+In addition to the MEI Twitter and Slack channels the MEI Board maintains a redmine project management and wiki. Benjamin will create accounts for all Board members. 
