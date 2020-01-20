@@ -26,7 +26,7 @@ The MEI Board manages the property and business of MEI. It promotes the developm
 
 * **Johannes Kepper (Technical Co-Chair)**, Musikwissenschaftliches Seminar Detmold/Paderborn 
 * **Perry Roland**, University of Virginia Library, Charlottesville (previous terms 2015–2018)
-* Martha Thomae, , McGill University, Montréal
+* **Martha Thomae**, McGill University, Montréal
 
 ### Previous Board Members
 
