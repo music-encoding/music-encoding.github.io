@@ -22,17 +22,18 @@ The MEI Board manages the property and business of MEI. It promotes the developm
 * **Laurent Pugin**, Swiss RISM Project, Bern 
 * **Kristina Richts**, Musikwissenschaftliches Seminar Detmold/Paderborn
 
-### Term 2017-2019
+### Term 2020-2022
 
-* **Andrew Hankinson (Administrative Chair)**, Bodleian Library, Oxford 
 * **Johannes Kepper (Technical Co-Chair)**, Musikwissenschaftliches Seminar Detmold/Paderborn 
-* **Eleanor Selfridge-Field**, Center for Computer-Assisted Research in the Humanities, Stanford University
+* **Perry Roland**, University of Virginia Library, Charlottesville (previous terms 2015–2018)
+* **Martha Thomae**, McGill University, Montréal
 
 ### Previous Board Members
 
-* **Perry Roland**, University of Virginia Library, Charlottesville
-* **Giuliano Di Bacco**, Jacobs School of Music, Indiana University, Bloomington, 2015-2017
-* **Axel Teich Geertinger**, Danish Centre for Music Editing, Royal Library, Copenhagen, 2015-2016
+* **Andrew Hankinson (Administrative Chair)**, Bodleian Library, Oxford (2017–2019)
+* **Eleanor Selfridge-Field**, Center for Computer-Assisted Research in the Humanities, Stanford University (2015–2019)
+* **Giuliano Di Bacco**, Jacobs School of Music, Indiana University, Bloomington, (2015-2017)
+* **Axel Teich Geertinger**, Danish Centre for Music Editing, Royal Library, Copenhagen, (2015-2016)
 
 ## Protocols of Board Meetings
 
