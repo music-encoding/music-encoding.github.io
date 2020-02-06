@@ -13,7 +13,7 @@ The MEI Board manages the property and business of MEI. It promotes the developm
 ### Term 2019-2021
 
 * **Benjamin W. Bohl (Technical Co-Chair)**, Institut für Musikwissenschaft, Goethe Universität Frankfurt, Frankfurt am Main
-* **Elsa De Luca**, Centro de Estudos de Sociologia e Estética Musical (CESEM), Universidade Nova de Lisboa, Lisboa
+* **Elsa De Luca (Administrative Chair)**, Centro de Estudos de Sociologia e Estética Musical (CESEM), Universidade Nova de Lisboa, Lisboa
 * **Ichiro Fujinaga**, McGill University, Montréal 
 
 ### Term 2018-2020
