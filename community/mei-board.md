@@ -10,23 +10,23 @@ The MEI Board manages the property and business of MEI. It promotes the developm
 
 ## Current Board Members
 
+### Term 2020-2022
+
+* **Johannes Kepper (Technical Co-Chair)**, Musikwissenschaftliches Seminar Detmold/Paderborn
+* **Perry Roland**, University of Virginia Library, Charlottesville (previous terms 2015–2018)
+* **Martha Thomae**, McGill University, Montréal
+
 ### Term 2019-2021
 
 * **Benjamin W. Bohl (Technical Co-Chair)**, Institut für Musikwissenschaft, Goethe Universität Frankfurt, Frankfurt am Main
 * **Elsa De Luca (Administrative Chair)**, Centro de Estudos de Sociologia e Estética Musical (CESEM), Universidade Nova de Lisboa, Lisboa
-* **Ichiro Fujinaga**, McGill University, Montréal 
+* **Ichiro Fujinaga**, McGill University, Montréal
 
 ### Term 2018-2020
 
-* **Norbert Dubowy**, Internationale Stiftung Mozarteum, Salzburg 
-* **Laurent Pugin**, Swiss RISM Project, Bern 
+* **Norbert Dubowy**, Internationale Stiftung Mozarteum, Salzburg
+* **Laurent Pugin**, Swiss RISM Project, Bern
 * **Kristina Richts**, Musikwissenschaftliches Seminar Detmold/Paderborn
-
-### Term 2020-2022
-
-* **Johannes Kepper (Technical Co-Chair)**, Musikwissenschaftliches Seminar Detmold/Paderborn 
-* **Perry Roland**, University of Virginia Library, Charlottesville (previous terms 2015–2018)
-* **Martha Thomae**, McGill University, Montréal
 
 ### Previous Board Members
 
