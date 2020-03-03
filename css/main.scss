@@ -58,33 +58,33 @@ $on-laptop:        800px;
         "bib.scss"
 ;
 
-/* MEC 2019 */
-.mec2019-register {
+/* MEC 2020 */
+.mec2020-register {
   font-weight: bold;
   border: 1px solid $mei-highlight;
 }
 
-.mec2019-register:hover {
+.mec2020-register:hover {
   border: none;
   border: 1px solid white;
 }
 
-.mec2019-page {
+.mec2020-page {
   h2, h3, h4, h5 {
     margin: .5em 0 .5em 0;
   }
 
-  .mec2019-logo {
+  .mec2020-logo {
     height: 6em;
   }
 
-  .mec2019-program-row-main {
+  .mec2020-program-row-main {
     margin: 30px 0 30px 15px;
 
-    .mec2019-program-title {
+    .mec2020-program-title {
       margin: 10px 0 10px 0;
       
-      .mec2019-presentation {
+      .mec2020-presentation {
       background-color:#d4d4d4;
       }
     }   
@@ -103,7 +103,7 @@ $on-laptop:        800px;
         width: 370pt;
         height: 520pt;
     }
-    .mec2019-program-speakers {
+    .mec2020-program-speakers {
       font-style: italic;
       font-size: 0.6rem;
     }
@@ -128,12 +128,12 @@ $on-laptop:        800px;
 
   }
   
-  .mec2019-abstract {
+  .mec2020-abstract {
         font-size: 20px;
         font-weight: bold;
         
   }
-  .mec2019-program-row-main {
+  .mec2020-program-row-main {
     margin: 30px 0 30px 0;
     background-color: #f4f4f4;
     padding: 20px 10px 20px 10px;
