@@ -88,15 +88,15 @@ sidemenu:
           - id: about
             label: 'About'
             url: '/conference/2020/'
+          - id: covid
+            label: 'Covid-19 Update'
+            url: '/conference/covid/'
           - id: program
             label: 'Program'
             url: '/conference/2020/program'
-          - id: travel
-            label: 'Travel and Accommodation'
-            url: '/conference/2020/travel'
-          - id: maps
-            label: 'Maps'
-            url: '/conference/2020/maps'
+          - id: technology-plan
+            label: 'Technology Plan'
+            url: '/conference/2020/technology-plan'
           - id: call
             label: 'Call for proposals'
             url: '/conference/2020/call'
