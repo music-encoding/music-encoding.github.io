@@ -90,7 +90,7 @@ sidemenu:
             url: '/conference/2020/'
           - id: covid
             label: 'Covid-19 Update'
-            url: '/conference/covid'
+            url: '/conference/2020/covid'
           - id: program
             label: 'Program'
             url: '/conference/2020/program'
