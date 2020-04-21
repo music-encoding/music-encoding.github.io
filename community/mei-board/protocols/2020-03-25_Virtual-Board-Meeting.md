@@ -40,7 +40,7 @@ Minutes: Martha E. Thomae
 
 ## MEC 2021
 
-- Stefan Münnich will be the chair for next year
+- Stefan Münnich will be the program chair for next year
 
 ## Development Meeting
 
@@ -81,7 +81,7 @@ So, Metadata Meeting can be Monday 09 – Wednesday 11 in Mainz, and then we mov
 This is for the images used in the guidelines (when they come from manuscripts):
 
 - At the beginning of the guidelines, a statement: “We consider the use of images as fair use.”
-- MEI falls into German law, 15% of copyright work that can be used. So, very small snippets are all right.
+- According to Johannes: MEI falls into German law, 15% of copyright work that can be used. So, very small snippets are all right.
 - It is also very obfuscating to add sources for each very small snippet one uses. We can add a list of sources at the end for that. (Laurent)
 - Can change a few pixels if it is just to illustrate very small things (Ichiro)
 
