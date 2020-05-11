@@ -1,14 +1,8 @@
 ---
 layout: default
-title: "Introduction to MEI"
+title: "Background"
 ---
-# Introduction to MEI
-
-The Music Encoding Initiative (MEI) is an [open-source](https://github.com/music-encoding/music-encoding) effort to define a system for encoding musical documents in a machine-readable structure. The MEI is inspired by similar efforts in the [Text Encoding Initiative](http://www.tei-c.org/index.xml) (TEI) and, while the two encoding initiatives are not formally related, they share many common characteristics and development practices.
-
-The MEI brings together specialists from various music research communities, including technologists, librarians, historians, and theorists in a common effort to discuss and define best practices for representing a broad range of musical documents and structures. The results of these discussions are formalized into the MEI schema, a core set of rules for recording physical and intellectual characteristics of music notation documents expressed as an eXtensible Markup Language (XML) schema.
-
-## Background: Notation Encoding
+## Notation Encoding
 
 Maxwell (1981) outlined three separate domains for encoding music notation in a computer: _physical_, _logical_, and _graphical_. This model was later extended by the [Standard Music Description Language](http://www.lim.di.unimi.it/IEEE/SMDL/INDEX.HTM) (SMDL), an encoding system that was expressed using the Standard General Markup Language (SGML) (SGML was a precursor to XML.) SMDL built upon the Maxwell's model and extended it to define a representation model consisting of four domains for music notation representation: _logical_, _gestural_, _visual_, and _analytical_. Although SMDL was not widely adopted, these domains remain useful for separating the functions of symbols within a music representation system.
 
@@ -16,7 +10,7 @@ In this model, the _logical_ domain includes the musical content or structure in
 
 MEI maintains these distinctions in its design. It is possible to, for example, encode the structural function of a note separate from its visual appearance on the page, or encode a performance realization separate from the written notation. Each of these domains may be encoded using elements and attributes inside a hierarchical text structure: the “encoding.” More importantly, a given encoding may be validated against a schema to ensure that it conforms to the rules of the encoding system. This process is explained in the next section.
 
-## Background: XML Representation
+## XML Representation
 
 XML is a hierarchical encoding system. An example of a very simple MEI XML hierarchy is shown in figure 1, using an XML representation. Elements are the core objects in an XML representation, and are represented using “tags.” These tags are a name enclosed in angle brackets (e.g., a note object is represented using the ```<note>``` tag).
 
@@ -39,14 +33,12 @@ Yet in some cases, including avant-garde notation, composer-specific repertoire,
 
 ## MEI Schema Customization
 
-MEI is expressed in a meta-schema language developed by the Text Encoding Initiative. The “[One Document Does-it-all](http://www.tei-c.org/Guidelines/Customization/odds.xml)” (ODD) format is designed to encode both the behaviors of the document encoding, and the human-readable documentation following a “[literate programming](http://en.wikipedia.org/wiki/Literate_programming)” technique. From a single ODD file, a formalized schema in one of the previously-mentioned XML schema languages, as well as human-readable documentation for that schema, may be derived. The MEI schemas and guideline documentation are generated from the MEI ODD file using software developed to support the TEI project.
+MEI is expressed in a meta-schema language developed by the Text Encoding Initiative. The “[One Document Does-it-all](http://www.tei-c.org/Guidelines/Customization/odds.xml)” (ODD) format is designed to encode both the behaviors of the document encoding, and the human-readable documentation following a “[literate programming](https://en.wikipedia.org/wiki/Literate_programming)” technique. From a single ODD file, a formalized schema in one of the previously-mentioned XML schema languages, as well as human-readable documentation for that schema, may be derived. The MEI schemas and guideline documentation are generated from the MEI ODD file using software developed to support the TEI project.
 
 <figure class="figure">
   <img src="/pix/romaDiagram.png" class="img-responsive" alt="" width="300"/>
   <figcaption class="figure-caption">Figure 2: MEI Customization</figcaption>
 </figure>
-
-
 
 To generate a schema and documentation, two files must be provided to the Roma processor. The first is the MEI “core” ODD file. This contains the rules and definitions of the behaviors of all elements supported by MEI, in all modules. The second is a “customization” file. This file, also written using ODD, is used to modify the encoding features supported in the generated schema, either by altering the behavior of the core MEI elements or by defining new ones. A customization file may also specify that entire modules in the MEI core are not necessary to include in the resulting schema. This provides a mechanism for generating dedicated schemas for validating only CWMN notation documents, and rejecting documents that encode, for example, neume or mensural notation, or vice-versa. These customization files may be shared with other users, allowing co-operative development of customized encoding systems for different repertoires. The customization process is shown in figure 2.
 

@@ -10,29 +10,30 @@ The MEI Board manages the property and business of MEI. It promotes the developm
 
 ## Current Board Members
 
+### Term 2020-2022
+
+* **Johannes Kepper (Technical Co-Chair)**, Musikwissenschaftliches Seminar Detmold/Paderborn
+* **Perry Roland**, University of Virginia Library, Charlottesville (previous terms 2015–2018)
+* **Martha Thomae**, McGill University, Montréal
+
 ### Term 2019-2021
 
 * **Benjamin W. Bohl (Technical Co-Chair)**, Institut für Musikwissenschaft, Goethe Universität Frankfurt, Frankfurt am Main
-* **Elsa De Luca**, Centro de Estudos de Sociologia e Estética Musical (CESEM), Universidade Nova de Lisboa, Lisboa
-* **Ichiro Fujinaga**, McGill University, Montréal 
+* **Elsa De Luca (Administrative Chair)**, Centro de Estudos de Sociologia e Estética Musical (CESEM), Universidade Nova de Lisboa, Lisboa
+* **Ichiro Fujinaga**, McGill University, Montréal
 
 ### Term 2018-2020
 
-* **Norbert Dubowy**, Internationale Stiftung Mozarteum, Salzburg 
-* **Laurent Pugin**, Swiss RISM Project, Bern 
+* **Norbert Dubowy**, Internationale Stiftung Mozarteum, Salzburg
+* **Laurent Pugin**, Swiss RISM Project, Bern
 * **Kristina Richts**, Musikwissenschaftliches Seminar Detmold/Paderborn
-
-### Term 2017-2019
-
-* **Andrew Hankinson (Administrative Chair)**, Bodleian Library, Oxford 
-* **Johannes Kepper (Technical Co-Chair)**, Musikwissenschaftliches Seminar Detmold/Paderborn 
-* **Eleanor Selfridge-Field**, Center for Computer-Assisted Research in the Humanities, Stanford University
 
 ### Previous Board Members
 
-* **Perry Roland**, University of Virginia Library, Charlottesville
-* **Giuliano Di Bacco**, Jacobs School of Music, Indiana University, Bloomington, 2015-2017
-* **Axel Teich Geertinger**, Danish Centre for Music Editing, Royal Library, Copenhagen, 2015-2016
+* **Andrew Hankinson**, Bodleian Library, Oxford (2017–2019)
+* **Eleanor Selfridge-Field**, Center for Computer-Assisted Research in the Humanities, Stanford University (2015–2019)
+* **Giuliano Di Bacco**, Jacobs School of Music, Indiana University, Bloomington, (2015-2017)
+* **Axel Teich Geertinger**, Danish Centre for Music Editing, Royal Library, Copenhagen, (2015-2016)
 
 ## Protocols of Board Meetings
 
@@ -43,6 +44,7 @@ The MEI Board manages the property and business of MEI. It promotes the developm
 * [2018-05-22, Face to Face meeting at the MEC2018 in College Park](mei-board/protocols/2018-05-22_Face-to-Face-Meeting-MEC2018-College-Park.md)
 * [2018-10-12, Virtual Board Meeting](mei-board/protocols/2018-10-12_Virtual-Board-Meeting.md)
 * [2019-01-15, Virtual Board Meeting](mei-board/protocols/2019-01-15_Virtual-Board-Meeting.md)
+* [2020-01-15, Virtual Board Meeting](mei-board/protocols/2020-01-15_Virtual-Board-Meeting.md)
 
 ## Elections
 

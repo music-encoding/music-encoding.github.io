@@ -23,6 +23,8 @@ The ideal location will be one well-connected with the rest of the country throu
 *   18-21 May 2015: Florence, Italy (hosted by IAML-Italia)
 *   17-20 May 2016: Montréal, Canada (hosted by the Schulich School of Music, McGill University)
 *   16-29 May 2017: Tours, France (hosted by the Centre d’Études Supérieures de la Renaissance, Université François-Rabelais Tours)
+*   22-25 May 2018: College Park, MD, USA (hosted by the Maryland Institute for Technology in the Humanities (MITH) and the Michelle Smith Performing Arts Library)
+*   29 May - 1 June 2019: Vienna, Austria (hosted by the Division of Musicology of the Austrian Academy of Sciences, the Mozart Institute of the Mozarteum Foundation Salzburg and the Department of Musicology of the University of Vienna)
 
 Nevertheless, hosting proposals are welcome from any location.
 
