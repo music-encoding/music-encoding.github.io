@@ -8,6 +8,7 @@ twitter_username: music-encoding
 
 # Build settings
 markdown: kramdown
+repository: "music-encoding/music-encoding.github.io"
 
 plugins:
   - jekyll-redirect-from
@@ -46,8 +47,8 @@ menu:
       url: '/conference'
       submenu:
           - id: upcoming
-            label: 'MEC 2019'
-            url: '/2019'
+            label: 'MEC 2020'
+            url: '/2020'
           - id: previous
             label: 'Past Conferences'
             url: '/past.html'
@@ -58,18 +59,21 @@ menu:
       label: 'Resources'
       url: '/resources'
       submenu:
-          - id: introduction
-            label: 'Introduction'
-            url: '/introduction.html'
-          - id: tools
-            label: 'Tools'
-            url: '/tools.html'
+          - id: background
+            label: 'Background'
+            url: '/background.html'
           - id: bibliography
             label: 'Bibliography'
             url: '/bibliography.html'
           - id: schemas
             label: 'Schemas and Namespace'
             url: '/schemas.html'
+          - id: tools
+            label: 'Tools'
+            url: '/tools.html'
+          - id: tutorials
+            label: 'Tutorials'
+            url: '/tutorials.html'
     - id: documentation
       label: 'Documentation'
       url: '/guidelines'
@@ -83,24 +87,24 @@ sidemenu:
       content:
           - id: about
             label: 'About'
-            url: '/conference/2019/'
-          - id: green_meeting
-            label: 'Green Meeting'
-            url: '/conference/2019/green_meeting'
+            url: '/conference/2020/'
           - id: program
-            label: 'Program'
-            url: '/conference/2019/program'
-          - id: travel
-            label: 'Travel and Accommodation'
-            url: '/conference/2019/travel'
-          - id: maps
-            label: 'Maps'
-            url: '/conference/2019/maps'
+            label: 'Virtual Conference Program'
+            url: '/conference/2020/program'
+          - id: technology-plan
+            label: 'Technology Plan'
+            url: '/conference/2020/technology-plan'
+          - id: covid
+            label: 'Covid-19 Update'
+            url: '/conference/2020/covid'
           - id: call
             label: 'Call for proposals'
-            url: '/conference/2019/call'
+            url: '/conference/2020/call'
 
 collections:
   projects:
+    output: true
+    permalink: /:collection/:name
+  tutorials:
     output: true
     permalink: /:collection/:name
