@@ -3,9 +3,9 @@ $label-font-weight: bold;
 
 .specPage {
     .facet {
-            
+
         padding: 1rem 0;
-        
+
         & > .label {
             float: left;
             width: 6rem;
@@ -14,277 +14,400 @@ $label-font-weight: bold;
             line-height: 1.5;
             font-weight: $label-font-weight;
         }
-        
+
         & > .statement {
             margin-left: 6rem;
-            
-            
+
+
             & > .tab {
                 margin-top: 0;
-                
+
                 .tab-item a {
                     padding-top: 0;
                 }
             }
-            
+
             p {
                 margin: 0;
-                
+
                 & + p {
                     margin: 1rem 0 0;
                 }
             }
-            
+
             .emptyStatement { //used for empty elements
                 font-size: .7rem;
                 font-weight: $regular-font-weight;
             }
-            
+
             .dtBox .ident {
                 display: inline-block;
                 padding: 0 0.5rem 0 0;
                 font-weight: $regular-font-weight;
             }
-            
+
             .dataValue.ident {
                 display: inline-block;
                 width: 6rem;
                 text-align: right;
                 padding: 0 0.8rem 0 0;
             }
-            
+
             .facetTabbedContent {
                 display: none;
-                
+
                 &.active {
                     display: block;
                 }
-                
+
                 &#attributes_tabbedContent_compact .ident {
                     font-weight: $regular-font-weight;
                 }
-                
+
                 /*&#attDisplay_compact, &#containedByDisplay_compact, &#containsDisplay_compact {
                     padding: .3rem .6rem .3rem .6rem;
-                    
+
                     .ident {
                         font-weight: 300;
                         display: inline-block;
                     }
                 }
-                
+
                 &.constraintsDisplay {
                     padding: .3rem .6rem .3rem .6rem;
                 }*/
-                
+
                 .constraint {
                     margin-bottom: 1rem;
                 }
             }
-            
+
         }
-        
+
         & + .facet {
             border-top: .5px solid #666666;
         }
-        
+
         &.letter {
             min-height: 5rem;
             .label {
                 font-size: 3rem;
                 line-height: .7;
             }
-            
+
             a.overviewLink {
                 display: inline-block;
                 padding: 0 .2rem;
-                
+
                 &.element {
                     &:before {
                         content: '<';
                     }
-                    
+
                     &:after {
                         content: '>';
                     }
                 }
-                
+
                 &.attribute {
                     padding: 0 .3rem;
                 }
             }
         }
-    } 
+    }
 
     .ident {
         font-weight: bold;
-        
+
         &.attribute:before {
             content: '@';
         }
     }
-    
+
     .chapterLinksBox {
         font-size: .75rem;
         font-weight: $regular-font-weight;
-        
+
         &:before {
             display: block;
             content: 'Referenced in Chapters:';
             margin-top: .5rem;
             font-weight: $label-font-weight;
         }
-        
+
         .chapterLink {
-            
+
             &.desc {
                 font-weight: $label-font-weight;
             }
-            
+
             & + .chapterLink {
                 padding-left: .5rem;
             }
         }
     }
-    
+
     .attributeDef {
-        
+
         padding: .3rem .6rem .3rem 1.6rem;
         border-radius: .3rem;
         text-indent: -1rem;
-        
+
         .attributeUsage {
             font-size: .7rem;
             font-weight: $regular-font-weight;
             font-style: italic;
         }
-        
+
         .attributeDesc {
             font-size: .7rem;
             font-weight: $regular-font-weight;
         }
-        
+
         .attributeValues {
             font-size: .7rem;
             font-weight: $regular-font-weight;
         }
-        
+
         &:nth-of-type(2n+1) {
             background-color: #f5f5f5;
         }
     }
-    
+
     .memberOf .groupDesc {
         padding-left: .5rem;
         font-size: .7rem;
         font-weight: $regular-font-weight;
     }
-    
+
     .classBox {
         border-left: .5px solid #999999;
         border-top: .5px solid #999999;
         padding: 0 0 0 .5rem;
         margin: .5rem 0;
         overflow: visible;
-        
+
         .classHeading {
-        
+
             background-color: #f5f5f5;
             padding: 0 0 .1rem .5rem;
             margin-left: -.5rem;
             border-bottom: .5px solid #999999;
-            
+
             .classLabel {
                 font-weight: $label-font-weight;
             }
-            
+
             .classDesc {
                 padding-left: .5rem;
                 font-size: .7rem;
                 font-weight: $label-font-weight;
-            } 
+            }
         }
-        
+
         & > .attributes.class {
             margin-left: 0;
         }
-        
+
         .attributeDef .attributeUsage {
             display: none;
         }
-        
+
         .attributeDef .attributeDesc {
             font-size: .7rem;
         }
-        
+
         .attributeDef .attributeValues {
             display: none;
         }
-        
+
         .attributeDef:nth-of-type(2n+1) {
             background-color: #ffffff;
         }
-        
+
         .elementRef {
             padding: .3rem .6rem .3rem 1.6rem;
             text-indent: -1.2rem;
             line-height: 1.2;
             margin-bottom: .5rem;
-            
+
             .link_odd_elementSpec {
                 font-weight: $label-font-weight;
             }
         }
-        
+
         .elementDesc {
             padding-left: .5rem;
             font-size: .7rem;
             font-weight: $regular-font-weight;
         }
-        
-        
+
+
         .elementDef {
             padding: .3rem .6rem .3rem 1.6rem;
             border-radius: .3rem;
             text-indent: -1rem;
         }
     }
-    
+
     /* Codeblock */
-    
+
     .code code {
         background-color: #f5f5f5;
         border: .5px solid #cccccc;
     }
-    
+
     .indent1 .indent {
         margin-left: 1em;
     }
-    
+
     .element {
         color: #000080;
         color: #4767b1;
-        
+
         .attribute {
             color: #008080;
             color: #f98859;
-            
+
         }
-        
+
         .attributevalue {
             color: #dd1144;
             color: #a14415;
         }
     }
-    
+
     .comment {
         color: #999988;
         color: #208420;
         font-style: italic;
     }
-    
+
     /* Schematron Constraints */
     .schematronText {
         margin-bottom: .5rem;
     }
+}
+
+.specsLayout {
+
+  height: 100%;
+  width: 100vw;
+
+  .top-navigation {
+    background-color: #e5e5e5;
+    border-bottom: .5px solid #999999;
+    padding: .3rem;
+    margin: -20px 0 .2rem 0;
+    height: 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 5;
+
+    .buttonbox {
+      position: absolute;
+      left: .8rem;
+    }
+
+    .searchbox {
+      position: absolute;
+      right: .8rem;
+
+      #tipue_search_input {
+        float: left;
+        width: 200px;
+        background-color: #ffffff;
+        border: none;
+        padding: .2rem .5rem .2rem .5rem;
+        height: 1.4rem;
+        border-radius: 3px;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        box-sizing: border-box;
+        border: .5px solid #213b9d;
+        outline: 0;
+        margin: 0;
+      }
+
+      .tipue_search_button {
+        position: relative;
+        float: left;
+        width: 1.7rem;
+        height: 1.4rem;
+        margin-left: -3px;
+        background-color: #2440aa;
+        border: .5px solid #213b9d;
+        border-radius: 0 3px 3px 0;
+        box-sizing: border-box;
+        cursor: pointer;
+        outline: 0;
+
+        .tipue_search_icon {
+          color: #ffffff;
+          margin: 0;
+        }
+      }
+    }
+
+
+  }
+
+  #top-navigation-content {
+    background-color: #f5f5f5;
+    padding: .5rem 1rem;
+    box-shadow: 0 0 .5rem #000000;
+    margin: -.5rem 0 1rem 0;
+    width: 100%;
+  }
+
+  .col-8 {
+    padding: .5rem 1rem;
+  }
+
+  & > .col-4 {
+    height: 100vh;
+    overflow: auto;
+    position: sticky;
+    top: 0;
+    margin-top: -20px;
+    padding: .5rem 1rem;
+    background-color: #f5f5f5;
+    border-left: .5px solid #999999;
+
+    #tipue_search_input {
+      float: left;
+      width: calc(100% - 2rem);
+      background-color: #ffffff;
+      border: none;
+      padding: .2rem .5rem .2rem .5rem;
+      height: 1.4rem;
+      border-radius: 3px;
+      -moz-appearance: none;
+      -webkit-appearance: none;
+      box-sizing: border-box;
+      border: .5px solid #213b9d;
+      outline: 0;
+      margin: 0;
+    }
+
+    .tipue_search_button {
+      position: relative;
+      float: left;
+      width: 1.7rem;
+      height: 1.4rem;
+      margin-left: -3px;
+      background-color: #2440aa;
+      border: .5px solid #213b9d;
+      border-radius: 0 3px 3px 0;
+      box-sizing: border-box;
+      cursor: pointer;
+      outline: 0;
+
+      .tipue_search_icon {
+        color: #ffffff;
+        margin: 0;
+      }
+    }
+
+  }
 }
