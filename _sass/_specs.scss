@@ -294,6 +294,11 @@ $label-font-weight: bold;
   height: 100%;
   width: 100vw;
 
+  .figure-caption {
+    font-size: smaller;
+    font-style: italic;
+  }
+  
   .top-navigation {
     background-color: #e5e5e5;
     border-bottom: .5px solid #999999;
