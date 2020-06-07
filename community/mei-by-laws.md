@@ -110,7 +110,7 @@ Each member holding Personal Membership in MEI has the right to vote in Board me
 
 ## 6 Technical Team
 
-The [Technical Team](https://music-encoding.org/community/technical-team.html) will consist of any willing community members and the two Board members appointed Technical Co-chairs (see [5 Board](#Board)). The two Technical Co-chairs of the Board act as administrative chairs of the Technical Team, e.g. call meetings and coordinate development efforts. Moreover the two co-chairs have administrative privileges for the MEI repositories. The MEI Technical Team holds regular, virtual or in-person meetings, e.g. approximately every three months. For every meeting, an agenda shall be published online prior to the meeting and minutes of the meeting shall be provided in a timely manner following the meeting.
+The [Technical Team](https://music-encoding.org/community/technical-team.html) will consist of any willing community members and the two Board members appointed Technical Co-chairs (see [5 Board](#5-board)). The two Technical Co-chairs of the Board act as administrative chairs of the Technical Team, e.g. call meetings and coordinate development efforts. Moreover the two co-chairs have administrative privileges for the MEI repositories. The MEI Technical Team holds regular, virtual or in-person meetings, e.g. approximately every three months. For every meeting, an agenda shall be published online prior to the meeting and minutes of the meeting shall be provided in a timely manner following the meeting.
 
 Technical Team members shall serve as such without remuneration.
 
