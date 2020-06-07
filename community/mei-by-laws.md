@@ -29,7 +29,7 @@ There are two types of membership in MEI: personal and institutional. Both types
 
 #### 3.1.1 Personal Membership
 
-Only private individuals may obtain personal membership in MEI. Personal membership is conferred by subscription to the MEI mailing list ([MEI-L](https://music-encoding.org/wordpress/?page_id=30)) and/or by payment of annual dues determined from time to time by the membership at the annual Board meeting. All personal members may vote, nominate members for office, stand for office, and otherwise benefit from the activities of MEI.
+Only private individuals may obtain personal membership in MEI. Personal membership is conferred by subscription to the MEI mailing list ([MEI-L](https://music-encoding.org/community/community-contacts.html)) and/or by payment of annual dues determined from time to time by the membership at the annual Board meeting. All personal members may vote, nominate members for office, stand for office, and otherwise benefit from the activities of MEI.
 
 #### 3.1.2 Institutional Membership
 
@@ -43,7 +43,7 @@ All Institutional members in good standing have the right to display the MEI log
 
 ### 3.2 Termination
 
-The [Board](https://music-encoding.org/wordpress/?page_id=16) may terminate an individual or institutional membership in MEI upon good-faith finding of (a) misconduct by such member reflecting discredit upon MEI or (b) violation of these By-laws (including but not limited to the nonpayment of dues or other required charges or assessments).
+The [Board](https://music-encoding.org/community/mei-board.html) may terminate an individual or institutional membership in MEI upon good-faith finding of (a) misconduct by such member reflecting discredit upon MEI or (b) violation of these By-laws (including but not limited to the nonpayment of dues or other required charges or assessments).
 
 ### 3.3 Resignation
 
@@ -55,7 +55,7 @@ Financial revenue of MEI  (generated through membership fees, donations, grants
 
 ## 5 Board
 
-The property and business of MEI are managed by the [Board](https://music-encoding.org/wordpress/?page_id=16). The broad role of the Board is to promote the development of MEI; oversee the activities of the [MEI Technical Team](https://music-encoding.org/wordpress/?page_id=18); guide the development of the MEI conceptual model, [Guidelines](https://music-encoding.org/wordpress/?page_id=160), and schemata; and act as a contact point for MEI-related activities.
+The property and business of MEI are managed by the [Board](https://music-encoding.org/community/mei-board.html). The broad role of the Board is to promote the development of MEI; oversee the activities of the [MEI Technical Team](https://music-encoding.org/community/technical-team.html); guide the development of the MEI conceptual model, [Guidelines](https://music-encoding.org/guidelines/v4/content/), and schemata; and act as a contact point for MEI-related activities.
 
 Board members serve as such without remuneration.
 
@@ -110,7 +110,7 @@ Each member holding Personal Membership in MEI has the right to vote in Board me
 
 ## 6 Technical Team
 
-The [Technical Team](https://music-encoding.org/wordpress/?page_id=18) will consist of any willing community members and the two Board members appointed Technical Co-chairs (see [5 Board](https://docs.google.com/document/d/1e5eyFeiW6-yscOoBLw9gotzWGA7D_7JBZHiWu5c13eA/edit#heading=h.aa7nk31zm7ry)). The two Technical Co-chairs of the Board act as administrative chairs of the Technical Team, e.g. call meetings and coordinate development efforts. Moreover the two co-chairs have administrative privileges for the MEI repositories. The MEI Technical Team holds regular, virtual or in-person meetings, e.g. approximately every three months. For every meeting, an agenda shall be published online prior to the meeting and minutes of the meeting shall be provided in a timely manner following the meeting.
+The [Technical Team](https://music-encoding.org/community/technical-team.html) will consist of any willing community members and the two Board members appointed Technical Co-chairs (see [5 Board](#Board)). The two Technical Co-chairs of the Board act as administrative chairs of the Technical Team, e.g. call meetings and coordinate development efforts. Moreover the two co-chairs have administrative privileges for the MEI repositories. The MEI Technical Team holds regular, virtual or in-person meetings, e.g. approximately every three months. For every meeting, an agenda shall be published online prior to the meeting and minutes of the meeting shall be provided in a timely manner following the meeting.
 
 Technical Team members shall serve as such without remuneration.
 
