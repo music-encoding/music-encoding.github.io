@@ -15,7 +15,7 @@ title: "Projects and users"
   </div>
   <div class="filter-body columns projects">
   {% for project in c.docs %}
-  <div class="column filter-item col-4 col-xs-12" data-tag="{% if project.archive == true %}tag-2{% else %}tag-1{% endif %}">
+  <div class="column filter-item col-4 col-sm-12 col-lg-6" data-tag="{% if project.archive == true %}tag-2{% else %}tag-1{% endif %}">
       <div class="card project">
           <div class="card-image">
               {% if project.image %}
