@@ -74,6 +74,22 @@ header.navbar {
     flex-grow: 0;
   }
 
+  #menu-accordion {
+    color: $mei-white;
+    background-color: inherit;
+
+    a {
+      color: $mei-white;
+    }
+
+    .accordion-body {
+
+      .menu {
+        background-color: inherit;
+      }
+
+    }
+  }
 }
 
 .newsMenu {
