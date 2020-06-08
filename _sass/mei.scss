@@ -280,6 +280,8 @@ ul.nav li.nav-item:first-child {
     .card {
         margin-bottom: 1rem;
         box-shadow: 0 5px 15px #00000033;
+        height: calc(100% - 1rem);
+        justify-content: space-between;
 
         .card-image {
             overflow: hidden;
