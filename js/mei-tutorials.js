@@ -151,15 +151,15 @@ function loadTutorialStep(data, stepNum) {
     currentStep = step;
     
     //adds heading as provided, falls back to plain step numbers
-    document.getElementById('stepLabel').innerHTML = (typeof step.label !== 'undefined' && step.label !== '') ? step.label : 'Step ' + (stepNum + 1);
-    document.getElementById('fullFileTitle').innerHTML = step.xmlFile;
+    document.getElementById('stepLabel').innerHTML = (typeof currentStep.label !== 'undefined' && currentStep.label !== '') ? currentStep.label : 'Step ' + (stepNum + 1);
+    document.getElementById('fullFileTitle').innerHTML = currentStep.xmlFile;
     
     //activate current item
     activateStepListItem(data, stepNum);
     
     //decide if XML editor is needed on this page, and if it needs to be prefilled
-    var requiresEditor = (typeof step.xmlFile !== 'undefined' && step.xmlFile !== '') && typeof step.xpaths !== 'undefined' && step.xpaths.length > 0;
-    var requiresPrefill = (typeof step.prefillFile !== 'undefined' && step.prefillFile !== '');
+    var requiresEditor = (typeof currentStep.xmlFile !== 'undefined' && currentStep.xmlFile !== '') && typeof currentStep.xpaths !== 'undefined' && currentStep.xpaths.length > 0;
+    var requiresPrefill = (typeof currentStep.prefillFile !== 'undefined' && currentStep.prefillFile !== '');
     
     //get relevant elements on page
     var editorContainer = document.getElementById('editorContainer');
@@ -176,9 +176,9 @@ function loadTutorialStep(data, stepNum) {
         editorContainer.style.display = 'block';
         
         //fetch XML file
-        var xmlPromise = fetchFile(step.xmlFile);
+        var xmlPromise = fetchFile(currentStep.xmlFile);
         // fetch prefill file (if existing, otherwise return promise of empty string)
-        var prefillPromise = (requiresPrefill) ? fetchFile(step.prefillFile) : new Promise(function(resolve) { resolve(''); });
+        var prefillPromise = (requiresPrefill) ? fetchFile(currentStep.prefillFile) : new Promise(function(resolve) { resolve(''); });
         // array of the promises to be resolved
         var promiseArray = [xmlPromise, prefillPromise];
         
@@ -202,13 +202,13 @@ function loadTutorialStep(data, stepNum) {
     }
     
     //gets the description of the current step
-    fetchFile(step.descFile)
+    fetchFile(currentStep.descFile)
         .then(function(descriptionFile) {
             // update instruction section
             document.getElementById('instruction').innerHTML = descriptionFile;
         })
         .catch(function(error) {
-            console.log('There has been a problem with the fetch operation for ', step.descFile, error.message);
+            console.log('There has been a problem with the fetch operation for ', currentStep.descFile, error.message);
         });
     
 }
