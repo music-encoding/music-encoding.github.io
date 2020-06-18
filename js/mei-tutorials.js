@@ -425,7 +425,7 @@ function renderVerovio(validationString) {
     
     if (error) {
         // display message
-        document.getElementById('rendering').innerHTML = 'please adjust encoding to enable rendering';
+        document.getElementById('rendering').innerHTML = 'The current encoding cannot be rendered.';
     } else {
         // display svg
         document.getElementById('rendering').innerHTML = svg;
