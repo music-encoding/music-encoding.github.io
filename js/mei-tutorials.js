@@ -111,16 +111,19 @@ function setupTutorial(data) {
         a.innerHTML = text;
         li.appendChild(a);
         stepBox.appendChild(li);
-    
+
+    //initial step
+    var stepNum = 0 ;
+
     //start with the first step of the tutorial
-    loadTutorialStep(data,0);
+    loadTutorialStep(data,stepNum);
     
     //add listener to allow going to the next step
     document.getElementById('nextStepButton').addEventListener('click',(e) => {
         var stepNum = parseInt(e.target.getAttribute('data-stepnum'));
 
         // load next step
-        loadTutorialStep(data,stepNum + 1);   
+        loadTutorialStep(data, stepNum);
     });        
 }
 
@@ -152,7 +155,7 @@ function loadTutorialStep(data, stepNum) {
     document.getElementById('fullFileTitle').innerHTML = step.xmlFile;
     
     //activate current item
-    activateStepListItem(data,stepNum);
+    activateStepListItem(data, stepNum);
     
     //decide if XML editor is needed on this page, and if it needs to be prefilled
     var requiresEditor = (typeof step.xmlFile !== 'undefined' && step.xmlFile !== '') && typeof step.xpaths !== 'undefined' && step.xpaths.length > 0;
@@ -163,7 +166,7 @@ function loadTutorialStep(data, stepNum) {
     var nextStepButton = document.getElementById('nextStepButton');
     
     //update nextStepButton to allow proceeding. listener is set in setupTutorial() 
-    nextStepButton.setAttribute('data-stepnum',stepNum);
+    nextStepButton.setAttribute('data-next-stepnum',stepNum + 1);
     
     //show editor only when needed, allow to proceed without interaction
     if(!requiresEditor) {
