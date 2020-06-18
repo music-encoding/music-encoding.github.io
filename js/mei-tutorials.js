@@ -240,123 +240,119 @@ function setupEditor(data, stepNum, xmlString, requiresPrefill, prefillString) {
     // adjust size of editor box
     resizeEditor(step.editorLines);
     
-    // check for editor changes by user input
-    handleEditorChanges(data, stepNum, step, file);
+    // watch out for editor changes by user input
+    editor.session.on('change', function changeListener(delta) {
+        // delta.start, delta.end, delta.lines, delta.action
+
+        handleEditorChanges(file);
+    });
 }
 
 /* 
  * function handleEditorChanges
  */
-function handleEditorChanges(data, stepNum, step, file) {
+function handleEditorChanges(file) {
     
     var parser = new DOMParser();
     var xmlDoc;
     
     var isValid = false;
     var wellformed = false;
+    var renderAnyway = false;
     
     var editValue = '';
     var validationString = '';
-    
-    // watch out for changes by user input
-    editor.session.on('change', function changeListener(delta) {
-        // delta.start, delta.end, delta.lines, delta.action
-        
-        // clean up hints and rendering
-        cleanUpHelpers();
-        
-        // get user input
-        editValue = editor.getSession().getValue();
-        
-        // update validation string
-        validationString = file.start + editValue + file.end;
-        
-        // try to parse validation string into xmlDoc
-        try {
-            xmlDoc = parser.parseFromString(validationString, "text/xml");
-            
-            // check if parsed xmlDoc is wellformed
-            wellformed = (xmlDoc.activeElement && xmlDoc.activeElement.localName && xmlDoc.activeElement.localName === 'parsererror') ? false : true;
-        } catch (error) {
-            console.log('parserError: ' + error);
-        }
-        
-        if (!wellformed) {
-            console.log('not well-formed');
-            displayWarning('Your code is not well-formed.');
-            document.getElementById('rendering').innerHTML = '';
 
-            // do not allow download or continuation until file is wellformed
-            disallowDownload();
-            blockNextStep();
-        } else {
-            isValid = true;
-            var renderAnyway = true;
-            
-            for (var i = 0; i < currentStep.xpaths.length; i++) {
-        
-                var xpathResult;
-        
-                try {
-                    xpathResult = xmlDoc.evaluate(currentStep.xpaths[i].rule, xmlDoc, nsResolver, XPathResult.BOOLEAN_TYPE, null);
-                } catch (error) {
-                    console.log('error resolving xpath: "' + currentStep.xpaths[i].rule + '"' + error);
-                    isValid = false;
-                    break;
+
+    // clean up hints and rendering
+    cleanUpHelpers();
+
+    // do not allow download or continuation until file is wellformed and valid
+    disallowDownload();
+    blockNextStep();
+
+    // get user input
+    editValue = editor.getSession().getValue();
+
+    // update validation string
+    validationString = file.start + editValue + file.end;
+
+    // try to parse validation string into xmlDoc
+    try {
+        xmlDoc = parser.parseFromString(validationString, "text/xml");
+
+        // check if parsed xmlDoc is wellformed
+        wellformed = (xmlDoc.activeElement && xmlDoc.activeElement.localName && xmlDoc.activeElement.localName === 'parsererror') ? false : true;
+    } catch (error) {
+        console.log('parserError: ' + error);
+    }
+
+    if (!wellformed) {
+        console.log('not well-formed');
+        displayWarning('Your code is not well-formed.');
+        document.getElementById('rendering').innerHTML = '';
+
+
+    } else {
+        isValid = true;
+        renderAnyway = true;
+
+        for (var i = 0; i < currentStep.xpaths.length; i++) {
+
+            var xpathResult;
+
+            try {
+                xpathResult = xmlDoc.evaluate(currentStep.xpaths[i].rule, xmlDoc, nsResolver, XPathResult.BOOLEAN_TYPE, null);
+            } catch (error) {
+                console.log('error resolving xpath: "' + currentStep.xpaths[i].rule + '"' + error);
+                isValid = false;
+                break;
+            }
+
+            if (!xpathResult.booleanValue) {
+
+                isValid = false;
+
+                if (!currentStep.xpaths[i].renderanyway) {
+                    renderAnyway = false;
                 }
-        
-                if (!xpathResult.booleanValue) {
-        
-                    isValid = false;
-        
-                    if (!currentStep.xpaths[i].renderanyway) {
-                        renderAnyway = false;
-                    }
-        
-                    // if there is no warning, let the user play without interruptions
-                    if (typeof currentStep.xpaths[i].hint !== 'undefined' && currentStep.xpaths[i].hint !== '') {
-                        var text = currentStep.xpaths[i].hint;
-                        displayWarning(text);
-                        text = '';
-                    }
-                    break;
+
+                // if there is no warning, let the user play without interruptions
+                if (typeof currentStep.xpaths[i].hint !== 'undefined' && currentStep.xpaths[i].hint !== '') {
+                    var text = currentStep.xpaths[i].hint;
+                    displayWarning(text);
+                    text = '';
                 }
+                break;
             }
-        
-            // stop change propagation to prevent infinite loop
-            editor.session.off('change', changeListener);
-        
-            // render if things are valid or renderable
-            if(isValid || renderAnyway) {
-                renderVerovio(validationString);
-                
-                //if it's renderable, allow to download
-                allowDownload();
-                
-                //copy current state into full-file editor
-                fullFileEditor.setValue(validationString);
-                fullFileEditor.clearSelection();
-                
-                //make full file available for download
-                var downloadStr = 'data:text/xml;charset=utf-8,' + encodeURIComponent(validationString);
-                var downloadBtn = document.getElementById('fullFileDownloadBtn');
-                downloadBtn.setAttribute('href', downloadStr);
-                downloadBtn.setAttribute('download', currentStep.xmlFile);
-            }
-        
-            //decide if user may continue or not
-            if (!isValid) {
-                blockNextStep();
-                disallowDownload();
-            } else {
-                allowNextStep();
-            }
-            
-            // continue to listen for changes
-            handleEditorChanges(data, stepNum, currentStep, file);
         }
-    });
+    }
+
+    // render if things are valid or renderable
+    if (isValid || renderAnyway) {
+        renderVerovio(validationString);
+
+        //copy current state into full-file editor
+        fullFileEditor.session.setValue(validationString);
+        fullFileEditor.clearSelection();
+
+        //make full file available for download
+        var downloadStr = 'data:text/xml;charset=utf-8,' + encodeURIComponent(validationString);
+        var downloadBtn = document.getElementById('fullFileDownloadBtn');
+        downloadBtn.setAttribute('href', downloadStr);
+        downloadBtn.setAttribute('download', currentStep.xmlFile);
+
+        //if it's renderable & everything is set up, allow to download
+        allowDownload();
+    }
+
+    //decide if user may continue or not
+    if (isValid) {
+        allowNextStep();
+    }
+
 }
+
 
 /* 
  * function showFinalPage
