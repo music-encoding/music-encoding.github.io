@@ -141,15 +141,15 @@ function loadTutorialStep(data, stepNum) {
     
     console.log('\nloading step ' + stepNum + ', maximum step is ' + data.steps.length);
     
-    // do not allow download or continuation before tutorial is set up
-    disallowDownload();
-    blockNextStep();
-    
     //if all steps are passed, move on to the final page, and skip rest of function
     if(stepNum >= data.steps.length) {
         showFinalPage(data);
         return true;
     }
+
+    // do not allow download or continuation before tutorial is set up
+    disallowDownload();
+    blockNextStep();
     
     //retrieve step object from data
     var step = data.steps[stepNum];
