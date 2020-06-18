@@ -116,13 +116,18 @@ function setupTutorial(data) {
     var stepNum = 0 ;
 
     //start with the first step of the tutorial
-    loadTutorialStep(data,stepNum);
+    loadTutorialStep(data, stepNum);
     
     //add listener to allow going to the next step
     document.getElementById('nextStepButton').addEventListener('click',(e) => {
-        var stepNum = parseInt(e.target.getAttribute('data-stepnum'));
+        stepNum = parseInt(e.target.getAttribute('data-next-stepnum'), 10);
 
-        // load next step
+        //catch any non numbers
+        if (isNaN(stepNum)) {
+            console.log('error getting next step number: ', stepNum, 'for event: ', e);
+        }
+
+        //load next step
         loadTutorialStep(data, stepNum);
     });        
 }
