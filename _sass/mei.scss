@@ -106,10 +106,19 @@ header.navbar {
 .startCarousel {
     margin: 0 0 30px;
     box-shadow: 0 3px 10px rgba(0,0,0,0.3);
-    border-radius: 5px;
+    overflow: visible;
+
+    .carousel-container {
+      border-radius: 5px;
+      overflow: hidden;
+    }
 
   .carousel-container::before {
       padding-bottom: 33.25%;
+  }
+
+  .carousel-nav {
+    bottom: -2rem;
   }
 }
 
