@@ -107,6 +107,10 @@ header.navbar {
     margin: 0 0 30px;
     box-shadow: 0 3px 10px rgba(0,0,0,0.3);
     border-radius: 5px;
+
+  .carousel-container::before {
+      padding-bottom: 33.25%;
+  }
 }
 
 footer {
