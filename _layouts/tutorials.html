@@ -2,7 +2,7 @@
 layout: default
 ---
 <div class="columns">
-    <div class="column col-8 tutorialBox">
+    <div class="column col-8 col-sm-12 tutorialBox">
 
         {% if page.type != 'tutorial' %}
 
@@ -92,7 +92,7 @@ layout: default
     </div>
 
     <!-- side menu -->
-    <div class="column col-4">
+    <div class="column col-4 col-sm-12">
         <h2>Available Tutorials</h2>
         {% assign t = site.collections | where: "label","tutorials" | first %}
         {% for tutorial in t.docs %}
