@@ -107,6 +107,7 @@ header.navbar {
     margin: 0 0 30px;
     box-shadow: 0 3px 10px rgba(0,0,0,0.3);
     overflow: visible;
+    z-index:1;
 
     .carousel-container {
       border-radius: 5px;
