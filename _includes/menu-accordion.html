@@ -1,0 +1,39 @@
+<div id="menu-accordion" class="accordion-container dropdown-toggle show-lg column col-12">
+  <div class="accordion">
+    <input id="accordion-toggle" type="checkbox" name="accordion-checkbox" hidden=""/>
+    <label class="accordion-header c-hand" for="accordion-toggle">
+      <i class="icon icon-menu"></i>
+    </label>
+
+    <div class="accordion-body">
+      <ul class="menu menu-nav">
+        {% for entry in site.menu %}
+        <li class="menu-item">
+          <div class="accordion menu">
+            <input id="accordion-{{ entry.label }}" type="checkbox" name="accordion-checkbox" hidden=""/>
+            <label class="accordion-header c-hand" for="accordion-{{ entry.label }}">
+              {% unless entry.submenu %}
+                  <a href="{{entry.url}}">
+                      {{ entry.label }}
+                  </a>
+              {% else %}
+                {{ entry.label }}
+              {% endunless %}
+            </label>
+            {% if entry.submenu %}
+            <div class="accordion-body">
+              <ul class="menu menu-nav">
+                {% for item in entry.submenu %}
+                {% if forloop.first %} <ul class="menu"> {% endif %}
+                  <li class="menu-item"><a href="{{entry.url}}{{item.url}}">{{item.label}}</a></li>
+                    {% if forloop.last %} </ul> {% endif %}
+                {% endfor %}
+            </div>
+            {% endif %}
+          </div>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</div>
