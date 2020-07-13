@@ -297,7 +297,7 @@ $label-font-weight: bold;
     font-size: smaller;
     font-style: italic;
   }
-  
+
   .top-navigation {
     background-color: #e5e5e5;
     border-bottom: .5px solid #999999;
@@ -372,6 +372,9 @@ $label-font-weight: bold;
     height: 100vh;
     overflow: auto;
     position: sticky;
+    @media screen and (-webkit-min-device-pixel-ratio:0) {
+      position: -webkit-sticky;
+    }
     top: 0;
     margin-top: -20px;
     margin-bottom: -20px;

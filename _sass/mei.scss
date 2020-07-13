@@ -20,6 +20,11 @@ code, kbd, pre, samp {
     Navbar styles
 */
 header.navbar {
+    position: sticky;
+    @media screen and (-webkit-min-device-pixel-ratio:0) {
+      position: -webkit-sticky;
+    }
+    top: 0;
     background-color: $dark-color;
     margin-bottom: 20px;
     z-index: 10;
