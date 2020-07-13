@@ -8,7 +8,7 @@ The Technical Team consists of interested developers and two Board-appointed Co-
 
 * **Andrew Hankinson (Technical Co-Chair)**, Bodleian Libraries, University of Oxford
 * **Perry Roland (Technical Co-Chair)**, Alderman Library, University of Virginia, Charlottesville
-* **Benjamin W. Bohl**, Musikwissenschaftliches Seminar Detmold/Paderborn
+* **Benjamin W. Bohl**, Institut für Musikwissenschaft, Goethe Universität Frankfurt, Frankfurt am Main and Musikwissenschaftliches Seminar Detmold/Paderborn
 * **Ichiro Fujinaga**, McGill University, Montréal
 * **Johannes Kepper**, Musikwissenschaftliches Seminar Detmold/Paderborn
 * **Laurent Pugin**, Swiss RISM Project, Bern
