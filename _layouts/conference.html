@@ -16,9 +16,9 @@ ConferenceProgram.pdf" target="_blank">Download as PDF</a></div>
       {% else %}
         <div class="dropdown col-sm-1 show-sm">
           <div class="rounded bg-gray text-center my-1">
-            <button class="btn btn-primary dropdown-toggle btn-lg" id="{{ page.tag }}-menuBtn">
+            <a href="#" class="btn btn-primary dropdown-toggle btn-lg" id="{{ page.tag }}-menuBtn">
               <i class="icon icon-menu"></i>
-            </button>
+            </a>
             <ul class="menu text-left" id="{{ page.tag }}-menu">
               {% for m in menu %}
                 <li class="menu-item {% if m.id == 'register' %} {{ page.tag }}-register {% endif %}">
