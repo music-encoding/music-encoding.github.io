@@ -5,7 +5,7 @@ title: "Past Music Encoding Conferences"
 
 # Past Music Encoding Conferences
 
-{% assign c = site.conferences | where:"role","about" %}
+{% assign c = site.conferences | where:"role","about" | sort: "date" | reverse %}
 
 <div class="columns">
   {% for conference in c %}
