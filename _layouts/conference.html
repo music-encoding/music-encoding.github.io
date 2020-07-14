@@ -11,6 +11,8 @@ layout: default
         {% endif %}
         <h2 style="font-style: italic;">{{ page.date | date_to_long_string }} to {{ page.date-end | date_to_long_string }}</h2>
         <h2 style="font-style: italic;">{{ page.venue }}</h2>
+        <div><a class="btn btn-primary" href="/conference/{{ page.date | date: "%Y" }}
+ConferenceProgram.pdf" target="_blank">Download as PDF</a></div>
       {% else %}
         <div class="dropdown col-sm-1 show-sm">
           <div class="rounded bg-gray text-center my-1">
