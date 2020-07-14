@@ -14,9 +14,13 @@ title: "Past Music Encoding Conferences"
       <div class="card project">
         <div class="card-image">
           {% if conference.image %}
-            <img class="mei-project-image img-fit-cover" src="{{ site.baseurl }}/images/{{ project.image }}"/>
+            <img class="mei-project-image img-fit-cover" src="{{ site.baseurl }}/images/{{ conference.image }}"/>
           {% else %}
-            {{ conference.tag }}
+            <div class="hero hero-lg bg-gray">
+              <div class="hero-body">
+                <h1>{{ conference.tag }}</h1>
+              </div>
+            </div>
           {% endif %}
         </div>
         <div class="card-header">
