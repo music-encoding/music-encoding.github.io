@@ -111,16 +111,24 @@ function setupTutorial(data) {
         a.innerHTML = text;
         li.appendChild(a);
         stepBox.appendChild(li);
-    
+
+    //initial step
+    var stepNum = 0 ;
+
     //start with the first step of the tutorial
-    loadTutorialStep(data,0);
+    loadTutorialStep(data, stepNum);
     
     //add listener to allow going to the next step
     document.getElementById('nextStepButton').addEventListener('click',(e) => {
-        var stepNum = parseInt(e.target.getAttribute('data-stepnum'));
+        stepNum = parseInt(e.target.getAttribute('data-next-stepnum'), 10);
 
-        // load next step
-        loadTutorialStep(data,stepNum + 1);   
+        //catch any non numbers
+        if (isNaN(stepNum)) {
+            console.log('error getting next step number: ', stepNum, 'for event: ', e);
+        }
+
+        //load next step
+        loadTutorialStep(data, stepNum);
     });        
 }
 
@@ -133,37 +141,37 @@ function loadTutorialStep(data, stepNum) {
     
     console.log('\nloading step ' + stepNum + ', maximum step is ' + data.steps.length);
     
-    // do not allow download or continuation before tutorial is set up
-    disallowDownload();
-    blockNextStep();
-    
     //if all steps are passed, move on to the final page, and skip rest of function
     if(stepNum >= data.steps.length) {
         showFinalPage(data);
         return true;
     }
+
+    // do not allow download or continuation before tutorial is set up
+    disallowDownload();
+    blockNextStep();
     
     //retrieve step object from data
     var step = data.steps[stepNum];
     currentStep = step;
     
     //adds heading as provided, falls back to plain step numbers
-    document.getElementById('stepLabel').innerHTML = (typeof step.label !== 'undefined' && step.label !== '') ? step.label : 'Step ' + (stepNum + 1);
-    document.getElementById('fullFileTitle').innerHTML = step.xmlFile;
+    document.getElementById('stepLabel').innerHTML = (typeof currentStep.label !== 'undefined' && currentStep.label !== '') ? currentStep.label : 'Step ' + (stepNum + 1);
+    document.getElementById('fullFileTitle').innerHTML = currentStep.xmlFile;
     
     //activate current item
-    activateStepListItem(data,stepNum);
+    activateStepListItem(data, stepNum);
     
     //decide if XML editor is needed on this page, and if it needs to be prefilled
-    var requiresEditor = (typeof step.xmlFile !== 'undefined' && step.xmlFile !== '') && typeof step.xpaths !== 'undefined' && step.xpaths.length > 0;
-    var requiresPrefill = (typeof step.prefillFile !== 'undefined' && step.prefillFile !== '');
+    var requiresEditor = (typeof currentStep.xmlFile !== 'undefined' && currentStep.xmlFile !== '') && typeof currentStep.xpaths !== 'undefined' && currentStep.xpaths.length > 0;
+    var requiresPrefill = (typeof currentStep.prefillFile !== 'undefined' && currentStep.prefillFile !== '');
     
     //get relevant elements on page
     var editorContainer = document.getElementById('editorContainer');
     var nextStepButton = document.getElementById('nextStepButton');
     
     //update nextStepButton to allow proceeding. listener is set in setupTutorial() 
-    nextStepButton.setAttribute('data-stepnum',stepNum);
+    nextStepButton.setAttribute('data-next-stepnum',stepNum + 1);
     
     //show editor only when needed, allow to proceed without interaction
     if(!requiresEditor) {
@@ -173,9 +181,9 @@ function loadTutorialStep(data, stepNum) {
         editorContainer.style.display = 'block';
         
         //fetch XML file
-        var xmlPromise = fetchFile(step.xmlFile);
+        var xmlPromise = fetchFile(currentStep.xmlFile);
         // fetch prefill file (if existing, otherwise return promise of empty string)
-        var prefillPromise = (requiresPrefill) ? fetchFile(step.prefillFile) : new Promise(function(resolve) { resolve(''); });
+        var prefillPromise = (requiresPrefill) ? fetchFile(currentStep.prefillFile) : new Promise(function(resolve) { resolve(''); });
         // array of the promises to be resolved
         var promiseArray = [xmlPromise, prefillPromise];
         
@@ -199,13 +207,13 @@ function loadTutorialStep(data, stepNum) {
     }
     
     //gets the description of the current step
-    fetchFile(step.descFile)
+    fetchFile(currentStep.descFile)
         .then(function(descriptionFile) {
             // update instruction section
             document.getElementById('instruction').innerHTML = descriptionFile;
         })
         .catch(function(error) {
-            console.log('There has been a problem with the fetch operation for ', step.descFile, error.message);
+            console.log('There has been a problem with the fetch operation for ', currentStep.descFile, error.message);
         });
     
 }
@@ -237,123 +245,119 @@ function setupEditor(data, stepNum, xmlString, requiresPrefill, prefillString) {
     // adjust size of editor box
     resizeEditor(step.editorLines);
     
-    // check for editor changes by user input
-    handleEditorChanges(data, stepNum, step, file);
+    // watch out for editor changes by user input
+    editor.session.on('change', function changeListener(delta) {
+        // delta.start, delta.end, delta.lines, delta.action
+
+        handleEditorChanges(file);
+    });
 }
 
 /* 
  * function handleEditorChanges
  */
-function handleEditorChanges(data, stepNum, step, file) {
+function handleEditorChanges(file) {
     
     var parser = new DOMParser();
     var xmlDoc;
     
     var isValid = false;
     var wellformed = false;
+    var renderAnyway = false;
     
     var editValue = '';
     var validationString = '';
-    
-    // watch out for changes by user input
-    editor.session.on('change', function changeListener(delta) {
-        // delta.start, delta.end, delta.lines, delta.action
-        
-        // clean up hints and rendering
-        cleanUpHelpers();
-        
-        // get user input
-        editValue = editor.getSession().getValue();
-        
-        // update validation string
-        validationString = file.start + editValue + file.end;
-        
-        // try to parse validation string into xmlDoc
-        try {
-            xmlDoc = parser.parseFromString(validationString, "text/xml");
-            
-            // check if parsed xmlDoc is wellformed
-            wellformed = (xmlDoc.activeElement && xmlDoc.activeElement.localName && xmlDoc.activeElement.localName === 'parsererror') ? false : true;
-        } catch (error) {
-            console.log('parserError: ' + error);
-        }
-        
-        if (!wellformed) {
-            console.log('not well-formed');
-            displayWarning('Your code is not well-formed.');
-            document.getElementById('rendering').innerHTML = '';
 
-            // do not allow download or continuation until file is wellformed
-            disallowDownload();
-            blockNextStep();
-        } else {
-            isValid = true;
-            var renderAnyway = true;
-            
-            for (var i = 0; i < currentStep.xpaths.length; i++) {
-        
-                var xpathResult;
-        
-                try {
-                    xpathResult = xmlDoc.evaluate(currentStep.xpaths[i].rule, xmlDoc, nsResolver, XPathResult.BOOLEAN_TYPE, null);
-                } catch (error) {
-                    console.log('error resolving xpath: "' + currentStep.xpaths[i].rule + '"' + error);
-                    isValid = false;
-                    break;
+
+    // clean up hints and rendering
+    cleanUpHelpers();
+
+    // do not allow download or continuation until file is wellformed and valid
+    disallowDownload();
+    blockNextStep();
+
+    // get user input
+    editValue = editor.getSession().getValue();
+
+    // update validation string
+    validationString = file.start + editValue + file.end;
+
+    // try to parse validation string into xmlDoc
+    try {
+        xmlDoc = parser.parseFromString(validationString, "text/xml");
+
+        // check if parsed xmlDoc is wellformed
+        wellformed = (xmlDoc.activeElement && xmlDoc.activeElement.localName && xmlDoc.activeElement.localName === 'parsererror') ? false : true;
+    } catch (error) {
+        console.log('parserError: ' + error);
+    }
+
+    if (!wellformed) {
+        console.log('not well-formed');
+        displayWarning('Your code is not well-formed.');
+        document.getElementById('rendering').innerHTML = '';
+
+
+    } else {
+        isValid = true;
+        renderAnyway = true;
+
+        for (var i = 0; i < currentStep.xpaths.length; i++) {
+
+            var xpathResult;
+
+            try {
+                xpathResult = xmlDoc.evaluate(currentStep.xpaths[i].rule, xmlDoc, nsResolver, XPathResult.BOOLEAN_TYPE, null);
+            } catch (error) {
+                console.log('error resolving xpath: "' + currentStep.xpaths[i].rule + '"' + error);
+                isValid = false;
+                break;
+            }
+
+            if (!xpathResult.booleanValue) {
+
+                isValid = false;
+
+                if (!currentStep.xpaths[i].renderanyway) {
+                    renderAnyway = false;
                 }
-        
-                if (!xpathResult.booleanValue) {
-        
-                    isValid = false;
-        
-                    if (!currentStep.xpaths[i].renderanyway) {
-                        renderAnyway = false;
-                    }
-        
-                    // if there is no warning, let the user play without interruptions
-                    if (typeof currentStep.xpaths[i].hint !== 'undefined' && currentStep.xpaths[i].hint !== '') {
-                        var text = currentStep.xpaths[i].hint;
-                        displayWarning(text);
-                        text = '';
-                    }
-                    break;
+
+                // if there is no warning, let the user play without interruptions
+                if (typeof currentStep.xpaths[i].hint !== 'undefined' && currentStep.xpaths[i].hint !== '') {
+                    var text = currentStep.xpaths[i].hint;
+                    displayWarning(text);
+                    text = '';
                 }
+                break;
             }
-        
-            // stop change propagation to prevent infinite loop
-            editor.session.off('change', changeListener);
-        
-            // render if things are valid or renderable
-            if(isValid || renderAnyway) {
-                renderVerovio(validationString);
-                
-                //if it's renderable, allow to download
-                allowDownload();
-                
-                //copy current state into full-file editor
-                fullFileEditor.setValue(validationString);
-                fullFileEditor.clearSelection();
-                
-                //make full file available for download
-                var downloadStr = 'data:text/xml;charset=utf-8,' + encodeURIComponent(validationString);
-                var downloadBtn = document.getElementById('fullFileDownloadBtn');
-                downloadBtn.setAttribute('href', downloadStr);
-                downloadBtn.setAttribute('download', currentStep.xmlFile);
-            }
-        
-            //decide if user may continue or not
-            if (!isValid) {
-                blockNextStep();
-                disallowDownload();
-            } else {
-                allowNextStep();
-            }
-            
-            // continue to listen for changes
-            handleEditorChanges(data, stepNum, currentStep, file);
         }
-    });
+    }
+
+    // render if things are valid or renderable
+    if (isValid || renderAnyway) {
+        renderVerovio(validationString);
+
+        //copy current state into full-file editor
+        fullFileEditor.session.setValue(validationString);
+        fullFileEditor.clearSelection();
+
+        //make full file available for download
+        var downloadStr = 'data:text/xml;charset=utf-8,' + encodeURIComponent(validationString);
+        var downloadBtn = document.getElementById('fullFileDownloadBtn');
+        downloadBtn.setAttribute('href', downloadStr);
+        downloadBtn.setAttribute('download', currentStep.xmlFile);
+
+        //if it's renderable & everything is set up, allow to download
+        allowDownload();
+    }
+
+    //decide if user may continue or not
+    if (isValid) {
+        allowNextStep();
+    }
+
 }
+
 
 /* 
  * function showFinalPage
@@ -426,7 +430,7 @@ function renderVerovio(validationString) {
     
     if (error) {
         // display message
-        document.getElementById('rendering').innerHTML = 'please adjust encoding to enable rendering';
+        document.getElementById('rendering').innerHTML = 'The current encoding cannot be rendered.';
     } else {
         // display svg
         document.getElementById('rendering').innerHTML = svg;
