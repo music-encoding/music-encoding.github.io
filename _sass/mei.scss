@@ -27,7 +27,7 @@ header.navbar {
     top: 0;
     background-color: $dark-color;
     margin-bottom: 20px;
-    z-index: 10;
+    z-index: 1000;
 
     a {
         font-size: $menu-font-size;
