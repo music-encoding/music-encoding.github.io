@@ -11,8 +11,12 @@ title: "Past Music Encoding Conferences"
 
     <div class="column col-4">
       <h2><a href="{{conference.permalink}}">{{ conference.tag }}</a></h2>
-      <p>{{ conference.subtitle }}
-      <br/>{{ conference.venue }}</p>
+      <p>
+        {% if conference.subtitle !="" %}
+          {{ conference.subtitle }}
+          <br/>
+        {% endif %}
+        {{ conference.venue }}</p>
     </div>
 
   {% endfor %}
