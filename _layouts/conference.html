@@ -1,0 +1,52 @@
+---
+layout: default
+---
+{% assign menu = site.conferences | where:"tag",page.tag %}
+<div class="columns">
+  <div class="column col-10 col-sm-11">
+      {% if content == "" %}
+        <h1>{{ page.title }}</h1>
+        {% if page.subtitle != "" %}
+          <h2 style="font-style: italic;">{{ page.subtitle }}</h2>
+        {% endif %}
+        <h2 style="font-style: italic;">{{ page.date | date_to_long_string }} to {{ page.date-end | date_to_long_string }}</h2>
+        <h2 style="font-style: italic;">{{ page.venue }}</h2>
+      {% else %}
+        <div class="dropdown col-sm-1 show-sm">
+          <div class="rounded bg-gray text-center my-1">
+            <button class="btn btn-primary dropdown-toggle btn-lg" id="{{ page.tag }}-menuBtn">
+              <i class="icon icon-menu"></i>
+            </button>
+            <ul class="menu text-left" id="{{ page.tag }}-menu">
+              {% for m in menu %}
+                <li class="menu-item {% if m.id == 'register' %} {{ page.tag }}-register {% endif %}">
+                          <a href="{{ m.permalink }}">{{ m.title }}</a>
+                      </li>
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+        {{ content }}
+      {% endif %}
+    </div>
+    <div class="column col-2 hide-sm">
+      <ul class="menu">
+        {% for m in menu %}
+            <li class="menu-item {% if m.id == 'register' %} {{ page.tag }}-register {% endif %}">
+              <a href="{{ m.permalink }}" {% if m.id == page.id %} class="active" {% endif %}>{{ m.title }}</a>
+            </li>
+        {% endfor %}
+      </ul>
+    </div>
+    <script>
+      // For iphones
+      document.querySelector("#{{ page.tag }}-menuBtn").addEventListener("touchstart", function() {
+        let m = document.querySelector("#{{ page.tag }}-menu")
+        if (m.style.display === 'none') {
+          m.style.display = 'block'
+        } else {
+          m.style.display = 'none'
+        }
+      })
+    </script>
+</div>
