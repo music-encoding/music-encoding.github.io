@@ -16,7 +16,7 @@ title: "Past Music Encoding Conferences"
           {% if conference.image %}
             <img class="mei-project-image img-fit-cover" src="{{ site.baseurl }}/images/{{ conference.image }}"/>
           {% else %}
-            <div class="hero hero-sm bg-gray">
+            <div class="hero hero-sm bg-primary">
               <div class="hero-body">
                 <h1>{{ conference.tag }}</h1>
               </div>
