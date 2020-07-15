@@ -2,35 +2,43 @@
 layout: default
 title: "Past Music Encoding Conferences"
 ---
+
 # Past Music Encoding Conferences
 
-## MEC2019, Vienna, Austria
+{% assign c = site.conferences | where:"role","about" | sort: "date" | reverse %}
 
-## MEC2018, College Park, Maryland, USA
+<div class="columns">
+  {% for conference in c %}
 
-[Conference program 2018](2018ConferenceProgram.pdf "Music Encoding Conference Program 2018")
-
-## MEC2017, Tours, France
-
-[Conference program 2017](2017ConferenceProgram.pdf "Music Encoding Conference Program 2017")
-
-## MEC2016, Montreal, Canada
-
-[Conference program 2016](2016ConferenceProgram.pdf "Music Encoding Conference Program 2016")
-
-## MEC2015, Florence, Italy
-
-[Conference program 2015](2015ConferenceProgram.pdf "Music Encoding Conference Program 2015")
-
-## MEC2014, Charlottesville, USA
-
-[Conference program 2014](2014ConferenceProgram.pdf "Music Encoding Conference Program 2014")
-
-## MEC2013, Mainz, Germany
-
-[Conference program 2013](2013ConferenceProgram.pdf "Music Encoding Conference Program 2013")
-
-# Proceedings
-
-* [2015-2017](https://doi.org/10.15463/music-1)
-* [2013-2014](http://langzeitarchivierung.bib-bvb.de/delivery/DeliveryManagerServlet?dps_custom_att_1=xepicur&dps_pid=IE2860815)
+    <div class="column col-4 col-sm-12 col-lg-6 conferences">
+      <div class="card project">
+        <div class="card-image">
+          {% if conference.image %}
+            <img class="mei-project-image img-fit-cover" src="{{ site.baseurl }}/images/{{ conference.image }}"/>
+          {% else %}
+            <div class="hero hero-sm bg-primary text-light">
+              <div class="hero-body">
+                <h1>{{ conference.tag }}</h1>
+              </div>
+            </div>
+          {% endif %}
+        </div>
+        <div class="card-header">
+            <div class="card-title h5">
+                {{ conference.title }}
+            </div>
+            <div class="card-subtitle text-gray">
+              {% if conference.subtitle !="" %}
+                {{ conference.subtitle }}
+                <br/>
+              {% endif %}
+              {{ conference.venue }}
+            </div>
+        </div>
+        <div class="card-footer">
+            <a class="btn float-right btn-sm" href="{{conference.permalink}}">More…</a>
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+</div>
