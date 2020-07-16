@@ -4,33 +4,32 @@ layout: default
 {% assign menu = site.conferences | where:"tag",page.tag %}
 <div class="columns">
   <div class="column col-10 col-sm-11">
-      {% if content == "" %}
-        <h1>{{ page.title }}</h1>
-        {% if page.subtitle != "" %}
-          <h2 style="font-style: italic;">{{ page.subtitle }}</h2>
-        {% endif %}
-        <h2 style="font-style: italic;">{{ page.date | date_to_long_string }} to {{ page.date-end | date_to_long_string }}</h2>
-        <h2 style="font-style: italic;">{{ page.venue }}</h2>
-        <div><a class="btn btn-primary" href="/conference/{{ page.date | date: "%Y" }}
-ConferenceProgram.pdf" target="_blank">Download as PDF</a></div>
-      {% else %}
-        <div class="dropdown col-sm-1 show-sm">
-          <div class="rounded bg-gray text-center my-1">
-            <a href="#" class="btn btn-primary dropdown-toggle btn-lg" id="{{ page.tag }}-menuBtn">
-              <i class="icon icon-menu"></i>
-            </a>
-            <ul class="menu text-left" id="{{ page.tag }}-menu">
-              {% for m in menu %}
-                <li class="menu-item {% if m.id == 'register' %} {{ page.tag }}-register {% endif %}">
-                  <a href="{{ m.permalink }}">{{ m.title }}</a>
-                </li>
-              {% endfor %}
-            </ul>
-          </div>
-        </div>
-        {{ content }}
+    {% if content == "" %}
+      <h1>{{ page.title }}</h1>
+      {% if page.subtitle != "" %}
+        <h2 style="font-style: italic;">{{ page.subtitle }}</h2>
       {% endif %}
-    </div>
+      <h2 style="font-style: italic;">{{ page.date | date_to_long_string }} to {{ page.date-end | date_to_long_string }}</h2>
+      <h2 style="font-style: italic;">{{ page.venue }}</h2>
+      <div><a class="btn btn-primary" href="/conference/{{ page.date | date: "%Y" }}
+ConferenceProgram.pdf" target="_blank">Download as PDF</a></div>
+    {% else %}
+      <div class="dropdown col-sm-1 show-sm">
+        <div class="rounded bg-gray text-center my-1">
+          <a href="#" class="btn btn-primary dropdown-toggle btn-lg" id="{{ page.tag }}-menuBtn">
+            <i class="icon icon-menu"></i>
+          </a>
+          <ul class="menu text-left" id="{{ page.tag }}-menu">
+            {% for m in menu %}
+              <li class="menu-item {% if m.id == 'register' %} {{ page.tag }}-register {% endif %}">
+                <a href="{{ m.permalink }}">{{ m.title }}</a>
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+      </div>
+      {{ content }}
+    {% endif %}
   </div>
   <div class="column col-2 hide-sm">
     <ul class="menu">
@@ -52,3 +51,4 @@ ConferenceProgram.pdf" target="_blank">Download as PDF</a></div>
       }
     })
   </script>
+</div>
