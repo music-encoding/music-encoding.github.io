@@ -31,24 +31,24 @@ ConferenceProgram.pdf" target="_blank">Download as PDF</a></div>
         {{ content }}
       {% endif %}
     </div>
-    <div class="column col-2 hide-sm">
-      <ul class="menu">
-        {% for m in menu %}
-            <li class="menu-item {% if m.id == 'register' %} {{ page.tag }}-register {% endif %}">
-              <a href="{{ m.permalink }}" {% if m.id == page.id %} class="active" {% endif %}>{{ m.title }}</a>
-            </li>
-        {% endfor %}
-      </ul>
-    </div>
-    <script>
-      // For iphones
-      document.querySelector("#{{ page.tag }}-menuBtn").addEventListener("touchstart", function() {
-        let m = document.querySelector("#{{ page.tag }}-menu")
-        if (m.style.display === 'none') {
-          m.style.display = 'block'
-        } else {
-          m.style.display = 'none'
-        }
-      })
-    </script>
-</div>
+  </div>
+  <div class="column col-2 hide-sm">
+    <ul class="menu">
+      {% for m in menu %}
+          <li class="menu-item {% if m.id == 'register' %} {{ page.tag }}-register {% endif %}">
+            <a href="{{ m.permalink }}" {% if m.id == page.id %} class="active" {% endif %}>{{ m.title }}</a>
+          </li>
+      {% endfor %}
+    </ul>
+  </div>
+  <script>
+    // For iphones
+    document.querySelector("#{{ page.tag }}-menuBtn").addEventListener("touchstart", function() {
+      let m = document.querySelector("#{{ page.tag }}-menu")
+      if (m.style.display === 'none') {
+        m.style.display = 'block'
+      } else {
+        m.style.display = 'none'
+      }
+    })
+  </script>
