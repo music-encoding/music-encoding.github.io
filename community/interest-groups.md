@@ -48,3 +48,22 @@ list: [http://lists.uni-paderborn.de/mailman/listinfo/mei-linked-data-ig](http:/
 
 **Administrative Co-Chairs: [Agnes Seipelt](mailto:aseipelt@mail.upb.de) and [Fabian Moss](mailto:fabianmoss@gmail.com)**.<br/>
 The aims of the Music Analysis Interest Group are to explore the potential of MEI for music analysis including e.g. the harmonic, melodic, and rhythmical content of pieces, as well as the metadata and comparisons between individual compositions or corpora. The IG seeks to discuss, collect and share different encoding formats, annotational languages and applications for musical analysis in many different ways, and support and enhance possible interconnections to MEI. A central goal is to improve the use of MEI for the encoding of different analytical approaches by recommending additions and modifications to future versions of the MEI schema and guidelines. The group welcomes any member of the MEI community interested in music analysis to get involved by subscribing to the mailing list [http://lists.uni-paderborn.de/mailman/listinfo/mei-analysis-ig](http://lists.uni-paderborn.de/mailman/listinfo/mei-analysis-ig) or the [MEI Slack channel](https://music-encoding.slack.com/archives/C014F0QAS59) ([join the MEI Slack here](https://join.slack.com/t/music-encoding/shared_invite/zt-4zgx6zbq-2jEjDiUT7ym3dygTaY8C0g)).
+
+## Digital Pedagogy Interest Group
+
+**Administrative Co-Chairs: [Joy H. Calico](mailto:joy.calico@Vanderbilt.Edu) and [Anna Kijas](mailto:Anna.Kijas@tufts.edu)**.<br/>
+Goals: the aim of the Interest Group is to support educators who want to incorporate music encoding and related practices into educational and cultural heritage institutions within the frames established by their accrediting bodies and other governing agencies. We are interested in
+* developing documentation with learning goals and outcomes appropriate for different levels and types of classes; 
+* identifying tools that enable such classes to support varying levels of digital literacy and computational competency
+* generating modules with easy onramps adaptable to many kinds of pedagogies, including assessment models;
+* sharing expertise, particularly in pedagogical contexts;
+* diversifying the repertoire used in instruction;
+* extending the digital community to include institutions and individuals who may otherwise lack support for making and teaching digital knowledge.  
+
+Potential publication opportunities: Journal of Music History Pedagogy, MLA Notes (special issue CFP on DH and music pedagogy), Reviews in Digital Humanities, the DMS section of Journal of the American Musicological Society.
+
+Relevant networking with professional and scholarly organizations no less than with individual scholars and teachers, in any field, musical or otherwise. Members of Pedagogy Interest Group are (by virtue of their own work) in touch with relevant committees of the American Musicological Society, the Association for Computers and the Humanities, the Music Library Association, the Digital Humanities Summer Institute, and the National Research Data Infrastructure, Deutsche Forschungsgemeinschaft (NFDI). We strongly encourage participation from others.
+
+Potential Projects: Workshops on music encoding and digital pedagogies at the annual MEC and other venues, as well as asynchronous discussion via the [Slack channel](https://music-encoding.slack.com/archives/C01574RMK88) and [MEI-L](http://lists.uni-paderborn.de/mailman/listinfo/mei-pedagogy-ig). The curation of a public knowledge base related to music encoding for music curricula.
+
+The Group will meet regularly during the MEC and through electronic means to identify specific projects that will advance the goals noted above, both in the short and long term, according to the needs and capacities of our members. The group will keep an archive of discussions that anyone may review. The group welcomes any member of the MEI community interested to get involved by subscribing to the mailing list [http://lists.uni-paderborn.de/mailman/listinfo/mei-pedagogy-ig](http://lists.uni-paderborn.de/mailman/listinfo/mei-pedagogy-ig) or the [MEI Slack channel](https://music-encoding.slack.com/archives/C01574RMK88) ([join the MEI Slack here](https://join.slack.com/t/music-encoding/shared_invite/zt-4zgx6zbq-2jEjDiUT7ym3dygTaY8C0g)).
