@@ -4,11 +4,21 @@ title: "Interest groups"
 ---
 # Interest groups
 
-An Interest Group (IG) is composed of any number of members of the MEI community with an interest in a certain music encoding topic or problem. In order to form a new IG, a proposal shall be made to the Board, containing the group’s name, goals, and a list of founding members.  
+An Interest Group (IG) is composed of any number of members of the MEI community with an interest in a certain music encoding topic or problem. Each IG is self-organized and led by one or two Administrative Chairs chosen by the members of the IG. The Administrative Chair(s) may step down any time and be replaced by another member of the same IG. The outgoing Chair will mediate the replacement and facilitate the transition period. The duties of the IG Administrative Chair(s) include – but are not limited to –
+
+- organizing the work of the IG, with particular attention to the alignment of the Guidelines and specification in the area/s covered by the IG;
+- delivery of an annual report on the IG’s activity at the Music Encoding Conference (‘MEC’) and coordination of the IG gathering that occurs during the MEC; and
+- fostering the communication and interchange between the members of the IG.
+
+The last item above is particularly important and requires strong interpersonal skills. MEI is a diverse community made up of members with different expertise and musical/technical/cultural backgrounds; therefore, it is of paramount importance to create a welcoming and friendly environment where everyone can contribute and thrive.
+
+MEI offers some channels of communication to each IG (a mailing list, dedicated channel(s) on the [MEI Slack Workspace](https://music-encoding.slack.com) and dedicated repositories in [MEI’s GitHub Organization](https://github.com/music-encoding)). The Administrative Chair(s) should supervise and coordinate these channels so that unnecessary overlap is avoided. The Administrative Chair(s) may take any initiative to update all the IG members on the current discussions and advancement of the work, especially when the communication of the IG is spread over several channels.
+
+To form a new IG, a proposal shall be made to the Board, containing the group’s name, goals, and a list of founding members (for further information please check section 8 in [MEI by-laws](https://music-encoding.org/community/mei-by-laws.html)).
 
 ## Mensural Interest Group
 
-**Administrative Chair: [Giuliano Di Bacco](mailto:gdibacco@indiana.edu)**.<br/>
+**Administrative Co-Chairs: [Giuliano Di Bacco](mailto:gdibacco@indiana.edu) and [Martha E. Thomae](mailto:martha.thomaeelias@mail.mcgill.ca)**.<br/>
 The aim of the Interest Group is to discuss the use of MEI for the encoding of musical repertories in mensural notation (late 13th century to about 1600); to recommend additions and emendations to future versions of the MEI schema and guidelines; to discuss the use, adaptation or creation of tools for editorial and analytical purposes. These goals may be extended. The group's work is conducted through a dedicated mailing list, and an annual meeting is held at the Music Encoding Conference. All members of the MEI community with an interest in mensural notation are welcome to join the IG by subscribing to the mailing list: [https://lists.uni-paderborn.de/mailman/listinfo/mei-mensural-ig](https://lists.uni-paderborn.de/mailman/listinfo/mei-mensural-ig).  
 
 ## Metadata and Cataloging Interest Group
