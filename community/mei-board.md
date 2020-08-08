@@ -46,6 +46,7 @@ The MEI Board manages the property and business of MEI. It promotes the developm
 * [2019-01-15, Virtual Board Meeting](mei-board/protocols/2019-01-15_Virtual-Board-Meeting.md)
 * [2020-01-15, Virtual Board Meeting](mei-board/protocols/2020-01-15_Virtual-Board-Meeting.md)
 * [2020-03-25, Virtual Board Meeting](mei-board/protocols/2020-03-25_Virtual-Board-Meeting.md)
+* [2020-07-23, Virtual Board Meeting](mei-board/protocols/2020-07-23_Virtual-Board-Meeting.md)
 
 
 ## Elections
