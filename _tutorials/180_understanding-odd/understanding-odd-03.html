@@ -1,44 +1,25 @@
-<div>
+<div>    
     <p>
-        The highest-level conceptual structure in ODD are <em>modules</em>. Modules allow to divide the schema 
-        into different areas, each of which defining a clearly delimited aspect. Until 2019, the structure of the
-        MEI Guidelines followed the ODD modules, but this setup has been superseded by a more instructional division.
-        Right now, the modules surface in the MEI Guidelines, at the top of the definitions of elements, attributes etc.:        
-    </p>
-    <div>
-        <img width="500" src="./beam-module.png"/>
-    </div>
-    <p>
-        This is just an easy reference to the modules. If planning to work on the MEI ODD, however, it is more important
-        to know that the MEI source code is splitted up following the modules. The file 
-        <a href="https://github.com/music-encoding/music-encoding/blob/develop/source/mei-source.xml" target="_blank">mei-source.xml</a>
-        acts as starting point into the MEI specification. The 
-        <a href="https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-schemaSpec.html" target="_blank">&lt;schemaSpec&gt;</a> 
-        element in <a href="https://github.com/music-encoding/music-encoding/blob/93d8c00cd14126af2e680d47f437042227eb2c0e/source/mei-source.xml#L83" target="_blank">line 83</a>
-        defines a new schema with the MEI namespace (<code>@ns="http://www.music-encoding.org/ns/mei"</code>). It then has a number of
-        <em>XInclude</em> child elements. <em>XInclude</em> is used to split up one larger logical XML file into smaller, more manageable files. Here, 
-        every MEI module is stored in a separate file in the 
-        <a href="https://github.com/music-encoding/music-encoding/tree/develop/source/modules" target="_blank">modules</a> subfolder.          
+        Despite it's name, the setup for working with ODD usually requires at least <u>two</u> <em>logical</em> files (though these may spread 
+        across many more files in the file system, as shown in the following step of this tutorial). The first of these files is the 
+        so-called <em>source</em>: It holds the full specification ofthe format, in this case MEI. In our repository, it is located in the
+        <a href="https://github.com/music-encoding/music-encoding/blob/develop/source/mei-source.xml" target="_blank">mei-source.xml</a> file. 
+        In addition to that file, a separate <em>customization</em> is required to specify which parts of the specification are to be used
+        in a given context. The whole purpose of ODD is to allow flexible customizations of the schema. MEI provides a set of 
+        <a href="https://music-encoding.org/guidelines/v4/content/introduction.html#meiprofiles" target="_blank">pre-defined profiles</a>,
+        which are nothing but customizations of the MEI schema. 
     </p>
     <p>
-        The MEI modules are built around different topics. There are modules which focus on specific musical repertoires 
-        (<a href="https://github.com/music-encoding/music-encoding/blob/develop/source/modules/MEI.cmn.xml" target="_blank">CMN</a>, 
-        <a href="https://github.com/music-encoding/music-encoding/blob/develop/source/modules/MEI.mensural.xml" target="_blank">Mensural</a>,
-        <a href="https://github.com/music-encoding/music-encoding/blob/develop/source/modules/MEI.neumes.xml" target="_blank">Neumes</a>, or
-        <a href="https://github.com/music-encoding/music-encoding/blob/develop/source/modules/MEI.stringtab.xml" target="_blank">String Tablature</a>), 
-        but also modules for specific perspectives on music
-        (<a href="https://github.com/music-encoding/music-encoding/blob/develop/source/modules/MEI.visual.xml" target="_blank">visual</a>, 
-        <a href="https://github.com/music-encoding/music-encoding/blob/develop/source/modules/MEI.gestural.xml" target="_blank">gestural</a>,
-        <a href="https://github.com/music-encoding/music-encoding/blob/develop/source/modules/MEI.analytical.xml" target="_blank">analytical</a>), 
-        technologies (
-        <a href="https://github.com/music-encoding/music-encoding/blob/develop/source/modules/MEI.midi.xml" target="_blank">MIDI</a>) or use cases
-        (<a href="https://github.com/music-encoding/music-encoding/blob/develop/source/modules/MEI.facsimile.xml" target="_blank">facsimiles</a>,
-        <a href="https://github.com/music-encoding/music-encoding/blob/develop/source/modules/MEI.performance.xml" target="_blank">performances</a>,
-        <a href="https://github.com/music-encoding/music-encoding/blob/develop/source/modules/MEI.edittrans.xml" target="_blank">editorial use</a>).
-        The scope of each of these modules is described in the MEI Guidelines.         
+        In order to use MEI (or any other ODD-based format), the <em>customization</em> file is used to
+        control how the <em>source</em> file shall be compiled. There are several target formats for that
+        compilation, which is explained elsewhere<!-- TODO: Add reference to second tutorial -->. The most
+        common target is a <a href="https://relaxng.org/" target="_blank">RelaxNG</a> file, which contains
+        both RelaxNG hierarchies and additional Schematron rules as defined in the ODD, and can be used for 
+        validation against both types of schema. All other possible output formats are not commonly used for 
+        MEI.
     </p>
     <p>
-        Besides the better maintainability of the MEI source code due to smaller file sizes, the splitting mainly allows to "turn off" 
-        larger parts of the MEI schema very easily. In the context of this tutorial, this is clearly the main purpose. 
+        While this tutorial is focussed on explaining the basic principles of the ODD structures as found in the MEI sources, a separate tutorial
+        on ODD will explain how to customize MEI to specific needs. 
     </p>
 </div>
