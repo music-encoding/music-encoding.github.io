@@ -58,7 +58,7 @@
         As we can see, attributes are just contained in an <em>&lt;attList&gt;</em> child inside the <em>&lt;elementSpec&gt;</em>. However, in most cases,
         an attribute is supposed to be available on more than one element. The <em>@xml:id</em> attribute introduced above is available on every MEI 
         element, so it would have to be defined several hundred times – again, that's neither maintainable nor efficient. Instead, ODD again utilizes
-        a class system, this time for <strong>attribute classes</strong>. Let's have a look into the how <em>@xml:id</em> is actually distributed into
+        a class system, this time for <strong>attribute classes</strong>. Let's have a look how <em>@xml:id</em> is actually distributed into
         MEI using the <em>att.id</em> attribute class:
     </p>
     <pre class="codeblock">&lt;classSpec ident="att.id" module="MEI.shared" type="atts"&gt;
