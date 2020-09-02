@@ -1,0 +1,99 @@
+<div>
+    <p>
+        The most obvious building blocks for the MEI specification are the definitions of elements. They are done using the TEI's
+        <a href="https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-elementSpec.html" target="_blank" rel="noopener, noreferrer">&lt;elementSpec&gt;</a> element.
+        Let's have a look at MEI's <a href="https://music-encoding.org/guidelines/v4/elements/castitem.html" target="_blank" rel="noopener, noreferrer">&lt;castItem&gt;</a>
+        element:
+    </p>
+    <pre class="codeblock">&lt;elementSpec ident="castItem" module="MEI.shared"&gt;
+    &lt;desc&gt;Contains a single entry within a cast list, describing either a single role or a list of non-speaking roles.&lt;/desc&gt;
+    &lt;classes&gt;
+        &lt;memberOf key="att.common"/&gt;
+        &lt;memberOf key="att.bibl"/&gt;
+        &lt;memberOf key="att.facsimile"/&gt;
+        &lt;memberOf key="att.lang"/&gt;
+    &lt;/classes&gt;
+    &lt;content&gt;
+        &lt;rng:oneOrMore&gt;
+            &lt;rng:choice&gt;
+                &lt;rng:text/&gt;
+                &lt;rng:ref name="role" /&gt;
+                &lt;rng:ref name="roleDesc" /&gt;
+                &lt;rng:ref name="actor" /&gt;
+                &lt;rng:ref name="perfRes" /&gt;
+            &lt;/rng:choice&gt;
+        &lt;/rng:oneOrMore&gt;
+    &lt;/content&gt;
+    &lt;remarks&gt;
+        &lt;p part="N"&gt;This element is modelled on an element in the Text Encoding Initiative (TEI) standard.&lt;/p&gt;
+    &lt;/remarks&gt;
+&lt;/elementSpec&gt;</pre>
+
+    
+    <p>
+        The <em>&lt;castItem&gt;</em> element has a very short specification, which still provides a lot of information
+        about it. First, the name of the element is specified in the <strong>@ident</strong> attribute on the 
+        &lt;elementSpec&gt; element. In addition, the module it belongs to is specified with the <strong>@module</strong>
+        attribute. The <em>MEI.shared</em> module used in this case serves as a fallback for many generic elements which do
+        not fit well into other modules or which are indispensable for using MEI. 
+    </p>
+    <p>
+        We then see a <em>&lt;desc&gt;</em> element that gives a very brief explanation of the purpose and scope of the
+        element in question. This information is often used in software as a tooltip to guide an encoder to using the proper 
+        elements. A speaking description is therefore extremely important. 
+    </p>
+    <p>
+        The next piece of information is provided with the <strong>&lt;classes&gt;</strong> element, which specifies to 
+        which <em>classes</em> the element belongs. We will cover this later in greater detail, but to give you a first 
+        understanding: This is used to define which attributes are available on the element, and where it may 
+        be used inside an MEI file. 
+    </p>
+    <p>
+        We now see the <strong>&lt;content&gt;</strong> element, which defines what can go <em>inside</em> our element. 
+        Here, the version of ODD used by MEI switches to the <em>RelaxNG namespace</em> (http://relaxng.org/ns/structure/1.0),
+        as indicated by the <em>rng:</em> prefix to the element names. The next levels of markup can be understood quite 
+        intuitively from the elements' names: The content can be <em>one or more</em> of a <em>choice</em> of either 
+        <em>textual content</em>, or the elements 
+        <a href="https://music-encoding.org/guidelines/v4/elements/role.html" target="_blank" rel="noopener, noreferrer">&lt;role&gt;</a>,
+        <a href="https://music-encoding.org/guidelines/v4/elements/roledesc.html" target="_blank" rel="noopener, noreferrer">&lt;roleDesc&gt;</a>,
+        <a href="https://music-encoding.org/guidelines/v4/elements/actor.html" target="_blank" rel="noopener, noreferrer">&lt;actor&gt;</a>, or
+        <a href="https://music-encoding.org/guidelines/v4/elements/perfres.html" target="_blank" rel="noopener, noreferrer">&lt;perfRes&gt;</a>. 
+        The nesting of <em>&lt;rng:oneOrMore&gt;</em> and <em>&lt;rng:choice&gt;</em> makes it clear that there is no 
+        particular order for those child elements, and that they may be freely intermixed with textual content. 
+    </p>
+    <p>
+        What we see here are direct references (<em>&lt;rng:ref&gt;</em>) to specific elements, as identified by their
+        respective <em>@ident</em> attributes. In the following step of this tutorial, we will see a more flexible 
+        approach using so-called <em>model classes</em>. Both approaches can be mixed as needed. 
+    </p>
+    <p>
+        The only other information provided by this <em>&lt;elementSpec&gt;</em> are <em>&lt;remarks&gt;</em>. Whereas the 
+        <em>&lt;desc&gt;</em> element provides only a very brief explanation of an element (typically about one sentence), 
+        <em>&lt;remarks&gt;</em> often provide additional explanation on the use of an element, or, as in this case, that 
+        it is derived from an existing element in a different format. 
+    </p>
+    <p>
+        In addition to the things seen here on <em>&lt;castItem&gt;</em>, ODD offers two more things than can be specified
+        on elements. Sometimes, it is easier or more appropriate to specify <strong>attributes</strong> directly on an element, instead of
+        using <em>attribute classes</em>. An example for that can be found at the 
+        <a href="https://music-encoding.org/guidelines/v4/elements/title.html" target="_blank" rel="noopener, noreferrer">&lt;title&gt;</a> element, which 
+        has both <em>@level</em> and <em>@type</em> defined locally using the
+        <a href="https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-attList.html" target="_blank" rel="noopener, noreferrer">&lt;attList&gt;</a> element inside
+        <em>&lt;elementSpec&gt;</em>.
+    </p>
+    <p>
+        The other type of information missing from <em>&lt;castItem&gt;</em> is <strong>Schematron</strong> rules, which 
+        may be provided using 
+        <a href="https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-constraintSpec.html" target="_blank" rel="noopener, noreferrer">&lt;constraintSpec&gt;</a>
+        elements. While <em>Schematron</em> is an integral part of MEI and helps to enforce certain context-dependent assertions
+        in MEI instances, a full documentation would be well beyond the scope of this tutorial. There are other tutorials available online (see
+        <a href="https://dh.obdurodon.org/schematron-intro.xhtml" target="_blank" rel="noopener, noreferrer">here</a> or
+        <a href="https://www.xml.com/pub/a/2003/11/12/schematron.html" target="_blank" rel="noopener, noreferrer">here</a>), and of course
+        one may use existing Schematron rules in MEI to better understand how it is applied. A good starting point for that is surely the
+        <a href="https://music-encoding.org/guidelines/v4/elements/staffdef.html#constraints" target="_blank" rel="noopener, noreferrer">&lt;staffDef&gt;</a> element,
+        which is controlled by a considerable number of Schematron rules.  
+    </p>
+    <p>
+        Let's move on to the <em>class concept</em> of ODD, which is crucial for the flexibility and customizability of MEI. 
+    </p>
+</div>
