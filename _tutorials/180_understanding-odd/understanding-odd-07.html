@@ -12,7 +12,7 @@
         &lt;/datatype&gt;
     &lt;/attDef&gt;</pre>
     <p>
-        Attributes are specified using the <a href="https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-attDef.html" target="_blank">&lt;attDef&gt;</a>
+        Attributes are specified using the <a href="https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-attDef.html" target="_blank" rel="noopener, noreferrer">&lt;attDef&gt;</a>
         element, and follow some conventions we've already seen on elements and model classes: Their name is provided in the <em>@ident</em> attribute, 
         and they have a <em>&lt;desc&gt;</em> element with a brief description. What is new is the <strong>@usage</strong> attribute, which specifies
         when to use the attribute specified. The value here, "<em>opt</em>", is used for optional attributes – <em>@xml:id</em> can be used on all MEI 
@@ -22,7 +22,7 @@
     <p>
         Now let's have a look for these <em>&lt;attDef&gt;</em> elements are located. Even though that's not really the preferred solution, sometimes
         attributes are defined at the element where they need to be used, as with the <em>@type</em> attribute on 
-        <a href="https://music-encoding.org/guidelines/v4/elements/meihead.html" target="_blank">&lt;meiHead&gt;</a>:
+        <a href="https://music-encoding.org/guidelines/v4/elements/meihead.html" target="_blank" rel="noopener, noreferrer">&lt;meiHead&gt;</a>:
     </p>
     <pre class="codeblock">&lt;elementSpec ident="meiHead" module="MEI.header"&gt;
     &lt;desc&gt;(MEI header) – Supplies the descriptive and declarative metadata prefixed to every
@@ -71,12 +71,12 @@
 &lt;/classSpec&gt;</pre>
     <p>
         We've already seen the <em>&lt;attDef&gt;</em>, and there is no difference between attributes defined within an element or within an attribute class. 
-        But we've also already seen the <a href="https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-classSpec.html" target="_blank">&lt;classSpec&gt;</a> element
+        But we've also already seen the <a href="https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-classSpec.html" target="_blank" rel="noopener, noreferrer">&lt;classSpec&gt;</a> element
         on <em>model classes</em>. The only difference is that attribute classes use the <strong>@type="atts"</strong> attribute, and while the names of
         model classes already start with "<em>model.</em>", attribute classes in MEI will always have a name starting with "<em>att.</em>". 
     </p>
     <p>
-        Earlier in this tutorial, we saw the definition of the <a href="https://music-encoding.org/guidelines/v4/elements/role.html" target="_blank">&lt;role&gt;</a>
+        Earlier in this tutorial, we saw the definition of the <a href="https://music-encoding.org/guidelines/v4/elements/role.html" target="_blank" rel="noopener, noreferrer">&lt;role&gt;</a>
         element. Let's have a look on it again, skipping some parts of it:
     </p>    
     <pre class="codeblock">&lt;elementSpec ident="role" module="MEI.shared"&gt;
@@ -121,7 +121,7 @@
         Compared to that, the <em>@type</em> on <em>&lt;meiHead&gt;</em> had a very strict definition. In general, MEI seeks to avoid
         using the same attribute name with multiple definitions, but that's not always possible, and at least doesn't cause 
         <em>technical</em> confusion. With the "by class" perspective on attributes (see the 
-        <a href="https://music-encoding.org/guidelines/v4/elements/meihead.html#attributes" target="_blank">&lt;meiHead&gt;</a> specs),
+        <a href="https://music-encoding.org/guidelines/v4/elements/meihead.html#attributes" target="_blank" rel="noopener, noreferrer">&lt;meiHead&gt;</a> specs),
         its possible to easily trace where any allowed attribute comes from. 
     </p>
     <p>

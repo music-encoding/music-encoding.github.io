@@ -16,18 +16,18 @@
         RelaxNG. The <em>@maxOccurs</em> and <em>@minOccurs</em> attributes define how often a value of this type may be given. An 
         example for other values can be found for the <em>@staff</em> attribute defined in <em>att.staffIdent</em>. This attribute
         is used to associate 
-        <a href="https://music-encoding.org/guidelines/v4/content/introduction.html#eventsControlevents" target="_blank">controlevents</a>
+        <a href="https://music-encoding.org/guidelines/v4/content/introduction.html#eventsControlevents" target="_blank" rel="noopener, noreferrer">controlevents</a>
         with one or more staves, and may hold one or more integers. It uses 
-        <a href="https://music-encoding.org/guidelines/v4/attribute-classes/att.staffident.html" target="_blank">the following markup</a> to achieve this:
+        <a href="https://music-encoding.org/guidelines/v4/attribute-classes/att.staffident.html" target="_blank" rel="noopener, noreferrer">the following markup</a> to achieve this:
     </p>
     <pre class="codeblock">&lt;datatype maxOccurs="unbounded" minOccurs="1"&gt;
     &lt;rng:data type="positiveInteger"/&gt;
 &lt;/datatype&gt;</pre>
     <p>
         In other cases, MEI defines its own datatypes. This is done with a
-        <a href="https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-macroSpec.html" target="_blank">&lt;macroSpec&gt;</a> element.
+        <a href="https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-macroSpec.html" target="_blank" rel="noopener, noreferrer">&lt;macroSpec&gt;</a> element.
         Let's have a look at the 
-        <em><a href="https://music-encoding.org/guidelines/v4/data-types/data.barrendition.html" target="_blank">data.BARRENDITION</a></em> 
+        <em><a href="https://music-encoding.org/guidelines/v4/data-types/data.barrendition.html" target="_blank" rel="noopener, noreferrer">data.BARRENDITION</a></em> 
         data type, which is used to define the appearance of barlines: 
     </p>
     <pre class="codeblock">&lt;macroSpec ident="data.BARRENDITION" module="MEI" type="dt"&gt;
@@ -81,7 +81,7 @@
     </p>
     <p>
         Like with <em>model</em> and <em>attribute classes</em>, data types may be nested. One example for this is the
-        <em><a href="https://music-encoding.org/guidelines/v4/data-types/data.noteheadmodifier.html" target="_blank">data.NOTEHEADMODIFIER</a></em>
+        <em><a href="https://music-encoding.org/guidelines/v4/data-types/data.noteheadmodifier.html" target="_blank" rel="noopener, noreferrer">data.NOTEHEADMODIFIER</a></em>
         data type: 
     </p>
     <pre class="codeblock">&lt;macroSpec ident="data.NOTEHEADMODIFIER" module="MEI" type="dt"&gt;
@@ -100,9 +100,9 @@
     <p>
         One last data type that we'd like to introduce is <em>data.COLORVALUES</em>, which is used by <em>data.COLOR</em>, which
         in turn is used to control the values of attributes like <em>@color</em> (through 
-        <em><a href="https://music-encoding.org/guidelines/v4/attribute-classes/att.color.html" target="_blank">att.color</a></em>) 
+        <em><a href="https://music-encoding.org/guidelines/v4/attribute-classes/att.color.html" target="_blank" rel="noopener, noreferrer">att.color</a></em>) 
         or <em>@beam.color</em> (through 
-        <em><a href="https://music-encoding.org/guidelines/v4/attribute-classes/att.beaming.vis.html" target="_blank">att.beaming.vis</a></em>).
+        <em><a href="https://music-encoding.org/guidelines/v4/attribute-classes/att.beaming.vis.html" target="_blank" rel="noopener, noreferrer">att.beaming.vis</a></em>).
         It uses a set of <em>regular expressions</em> to control different color encoding mechanisms:
     </p>
     <pre class="codeblock">&lt;macroSpec ident="data.COLORVALUES" module="MEI" type="dt"&gt;
@@ -149,7 +149,7 @@
         Explaining the semantics of <u>reg</u>ular <u>ex</u>pressions is clearly out of scope for this tutorial – in essence, it
         is a way to describe a pattern for a string, and can be used to check wether that string matches the pattern or not.
         A nice starting point into regular expressions is the <strong>Regex Crossword</strong>, available from 
-        <a href="https://regexcrossword.com/" target="_blank">https://regexcrossword.com/</a>. 
+        <a href="https://regexcrossword.com/" target="_blank" rel="noopener, noreferrer">https://regexcrossword.com/</a>. 
     </p>
     <p>
         There are many other data types that can be used, but as nesting typically isn't as deep as with <em>model</em> or

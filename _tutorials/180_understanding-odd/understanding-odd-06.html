@@ -8,9 +8,9 @@
     </p>
     <p>
         Among others, the 
-        <a href="https://music-encoding.org/guidelines/v4/elements/castitem.html" target="_blank">&lt;castItem&gt;</a>
+        <a href="https://music-encoding.org/guidelines/v4/elements/castitem.html" target="_blank" rel="noopener, noreferrer">&lt;castItem&gt;</a>
         element from the last step of this tutorial had a child element  
-        <a href="https://music-encoding.org/guidelines/v4/elements/role.html" target="_blank">&lt;role&gt;</a>. The documentation
+        <a href="https://music-encoding.org/guidelines/v4/elements/role.html" target="_blank" rel="noopener, noreferrer">&lt;role&gt;</a>. The documentation
         for <em>&lt;role&gt;</em> lists a total of 54 child elements, plus textual content:
     </p>
     <div>
@@ -53,7 +53,7 @@
 &lt;/classSpec&gt;</pre>
     <p>
         A model class is encoded with a 
-        <a href="https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-classSpec.html" target="_blank">&lt;classSpec&gt;</a> element,
+        <a href="https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-classSpec.html" target="_blank" rel="noopener, noreferrer">&lt;classSpec&gt;</a> element,
         which has the <strong>@type="model"</strong> attribute. Like elements, it's uniquely identified using the <strong>@ident</strong>
         attribute. It is assigned to one of the MEI modules with the <em>@module</em> attribute. 
         MEI follows the convention that all model class names are prefixed with the string "<em>model.</em>". They also always have 
@@ -63,7 +63,7 @@
     </p>
     <p>
         If we go to the MEI Guidelines for 
-        <a href="https://music-encoding.org/guidelines/v4/model-classes/model.textphraselike.limited.html#members" target="_blank">model.textPhraseLike.limited</a>,
+        <a href="https://music-encoding.org/guidelines/v4/model-classes/model.textphraselike.limited.html#members" target="_blank" rel="noopener, noreferrer">model.textPhraseLike.limited</a>,
         we see that six elements are direct "<em>members</em>" of this model class: <em>&lt;dedicatee&gt;</em>, <em>&lt;dimensions&gt;</em>, 
         <em>&lt;extent&gt;</em>, <em>&lt;seg&gt;</em>, <em>&lt;symbol&gt;</em>, and <em>&lt;term&gt;</em>. Let's have a look into <em>&lt;dedicatee&gt;</em>:
     </p>
@@ -103,7 +103,7 @@
     <p>
         We see the six direct children listed, but also that <em>&lt;fig&gt;</em> is listed under the <em>model.figureLike</em> label, and <em>&lt;catchwords&gt;</em>
         and <em>&lt;fingerprint&gt;</em> are coming from <em>model.msInline</em>.
-        <a href="https://music-encoding.org/guidelines/v4/elements/role.html#mayContain" target="_blank">This listing</a> continues and explains the origin of all
+        <a href="https://music-encoding.org/guidelines/v4/elements/role.html#mayContain" target="_blank" rel="noopener, noreferrer">This listing</a> continues and explains the origin of all
         54 elements. If we have a look at <em>model.figureLike</em>, we see that this class has a <em>&lt;memberOf&gt;</em>, pointing to <em>model.textPhraseLike.limited</em>:
     </p>
     <pre class="codeblock">&lt;classSpec ident="model.figureLike" module="MEI.figtable" type="model"&gt;
