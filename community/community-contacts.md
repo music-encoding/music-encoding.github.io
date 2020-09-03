@@ -17,7 +17,7 @@ Also, the archives of the list are open to the public and can be browsed online:
 
 MEI has a Slack channel that is used for discussion, questions, announcements, and collaboration, [https://music-encoding.slack.com](https://music-encoding.slack.com).
 
-To join, please fill in our [Slack Invitation Form](https://goo.gl/forms/cDWLuDgicFjXSENi2) and you will receive an invitation.
+To join, please follow [this link](https://join.slack.com/t/music-encoding/shared_invite/zt-4zgx6zbq-2jEjDiUT7ym3dygTaY8C0g).
 
 Slack has [clients](https://slack.com/) for Mac, PC, Linux, and mobile devices, and may be used via any web browser.
 
