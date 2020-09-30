@@ -47,8 +47,8 @@ menu:
       url: '/conference'
       submenu:
           - id: upcoming
-            label: 'MEC 2020'
-            url: '/2020'
+            label: 'MEC 2021'
+            url: '/2021'
           - id: previous
             label: 'Past Conferences'
             url: '/past.html'
@@ -87,19 +87,20 @@ sidemenu:
       content:
           - id: about
             label: 'About'
-            url: '/conference/2020/'
-          - id: program
-            label: 'Virtual Conference Program'
-            url: '/conference/2020/program'
-          - id: technology-plan
-            label: 'Technology Plan'
-            url: '/conference/2020/technology-plan'
-          - id: covid
-            label: 'Covid-19 Update'
-            url: '/conference/2020/covid'
+            url: '/conference/2021/'
           - id: call
             label: 'Call for proposals'
-            url: '/conference/2020/call'
+            url: '/conference/2021/call'
+          - id: program
+            label: 'Program'
+            url: '/conference/2021/program'
+          - id: travel
+            label: 'Travel & Accommodation'
+            url: '/conference/2021/travel'
+          - id: maps
+            label: 'Maps'
+            url: '/conference/2021/maps'
+
 
 collections:
   projects:
