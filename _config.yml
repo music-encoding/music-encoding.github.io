@@ -84,27 +84,6 @@ menu:
       label: 'Archive'
       url: '/archive'
 
-sidemenu:
-    - id: conference
-      label: 'Support'
-      content:
-          - id: about
-            label: 'About'
-            url: '/conference/2021/'
-          - id: call
-            label: 'Call for proposals'
-            url: '/conference/2021/call'
-          - id: program
-            label: 'Program'
-            url: '/conference/2021/program'
-          - id: travel
-            label: 'Travel & Accommodation'
-            url: '/conference/2021/travel'
-          - id: maps
-            label: 'Maps'
-            url: '/conference/2021/maps'
-
-
 collections:
   projects:
     output: true
