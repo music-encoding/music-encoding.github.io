@@ -10,9 +10,9 @@ layout: default
       {% if page.subtitle != "" %}
         <h2 style="font-style: italic;">{{ page.subtitle }}</h2>
       {% endif %}
-      <h2 style="font-style: italic;">{{ page.date | date_to_long_string }} to {{ page.date-end | date_to_long_string }}</h2>
+      <h2 style="font-style: italic;">{{ page.date-start | date_to_long_string }} to {{ page.date-end | date_to_long_string }}</h2>
       <h2 style="font-style: italic;">{{ page.venue }}</h2>
-      <div><a class="btn btn-primary" href="/conference/{{ page.date | date: "%Y" }}
+      <div><a class="btn btn-primary" href="/conference/{{ page.date-start | date: "%Y" }}
 ConferenceProgram.pdf" target="_blank">Download as PDF</a></div>
     {% else %}
       <div class="dropdown col-sm-1 show-sm">
