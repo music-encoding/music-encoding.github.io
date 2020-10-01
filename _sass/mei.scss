@@ -1,11 +1,13 @@
 @import "specs";
-/*
-    Sticky footer
-*/
+
 body {
+    /* Sticky footer */
     display: flex;
     min-height: 100vh;
     flex-direction: column;
+    /* Padding correction for bibbase */
+    padding-left:inherit;
+    padding-right:inherit
 }
 
 .content {
