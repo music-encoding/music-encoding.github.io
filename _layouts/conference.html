@@ -17,7 +17,7 @@ ConferenceProgram.pdf" target="_blank">Download as PDF</a></div>
     {% else %}
       <div class="dropdown col-sm-1 show-sm">
         <div class="rounded bg-gray text-center my-1">
-          <a href="#" class="btn btn-primary dropdown-toggle btn-lg" id="{{ page.tag }}-menuBtn">
+          <a href="#" tabindex="1" class="btn btn-primary dropdown-toggle btn-lg" id="{{ page.tag }}-menuBtn">
             <i class="icon icon-menu"></i>
           </a>
           <ul class="menu text-left" id="{{ page.tag }}-menu">
@@ -41,15 +41,4 @@ ConferenceProgram.pdf" target="_blank">Download as PDF</a></div>
       {% endfor %}
     </ul>
   </div>
-  <script>
-    // For iphones
-    document.querySelector("#{{ page.tag }}-menuBtn").addEventListener("touchstart", function() {
-      let m = document.querySelector("#{{ page.tag }}-menu")
-      if (m.style.display === 'none') {
-        m.style.display = 'block'
-      } else {
-        m.style.display = 'none'
-      }
-    })
-  </script>
 </div>
