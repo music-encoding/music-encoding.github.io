@@ -16,6 +16,7 @@ Here you will find archived material, such as previous versions of MEI, document
     * [2014](../conference/2014ConferenceProgram.pdf)
     * [2013](../conference/2013ConferenceProgram.pdf)
 * Proceedings
+    * [2020](http://dx.doi.org/10.17613/mvxw-x477)
     * [2015-2017](https://doi.org/10.15463/music-1)
     * [2013-2014](http://langzeitarchivierung.bib-bvb.de/delivery/DeliveryManagerServlet?dps_custom_att_1=xepicur&dps_pid=IE2860815)
 
