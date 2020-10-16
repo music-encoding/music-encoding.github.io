@@ -1,4 +1,4 @@
-# The MEI Website
+<h1 align="center">The MEI Website</h1>
 
 This is the MEI website, available at [https://music-encoding.org](https://music-encoding.org).
 
