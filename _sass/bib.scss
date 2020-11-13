@@ -1,4 +1,48 @@
+/* general css for bibbase generated files */
+
 #bibbase_header .nav {
-  display: block !important;
-  flex-direction: unset;
+    display: block !important;
+    flex-direction: unset;
+}
+
+/* dividers for bibliography */
+.bibliography .bibbase_group {
+    color: $dark-color;
+    font-size: 1.2rem;
+
+    &:before {
+        border-color: $dark-color;
+    }
+    &:after {
+        border-color: $dark-color;
+    }
+
+    /* display group count as index */
+    .bibbase_group_count {
+        display: inline;
+        position: relative;
+        top: -0.5em;
+        font-size: small;
+        margin-left: 2px;
+    }
+}
+
+/* margin between papers */
+.bibbase_paper {
+    margin-bottom: 15px;
+}
+
+/* bold paper titles */
+.bibbase_paper_title > a {
+    font-weight: bold;
+}
+
+/* display doi/bibtex/abstract in separate line below papers */
+br.bibbase_paper_content {
+    display: block;
+}
+
+/* remove amazon field */
+.bibbase_amazon {
+    display: none;
 }
