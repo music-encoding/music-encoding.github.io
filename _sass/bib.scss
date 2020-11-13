@@ -1,8 +1,28 @@
-/* general css for bibbase generated files */
+/* css for bibbase generated files */
 
 #bibbase_header .nav {
     display: block !important;
     flex-direction: unset;
+}
+
+/* margin between papers */
+.bibbase_paper {
+    margin-bottom: 15px;
+}
+
+/* bold paper titles */
+.bibbase_paper_title > a {
+    font-weight: bold;
+}
+
+/* display doi/bibtex/abstract in separate line below papers */
+br.bibbase_paper_content {
+    display: block;
+}
+
+/* remove amazon field */
+.bibbase_amazon {
+    display: none;
 }
 
 /* dividers for bibliography */
@@ -27,22 +47,38 @@
     }
 }
 
-/* margin between papers */
-.bibbase_paper {
-    margin-bottom: 15px;
+/* create centered section divider with lines for proceedings*/
+.mec-proceedings-section-divider {
+    color: $dark-color;
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-top: 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    line-height: 1.0em;
+
+    &:before {
+        border-top: 2px solid $dark-color;
+        content: '';
+        display: table-cell;
+        position: relative;
+        top: 0.5em;
+        flex: auto;
+        margin-right: 0;
+    }
+    &:after {
+        border-top: 2px solid $dark-color;
+        content: '';
+        display: table-cell;
+        position: relative;
+        top: 0.5em;
+        flex: auto;
+        margin-left: 0.25em;
+    }
 }
 
-/* bold paper titles */
-.bibbase_paper_title > a {
-    font-weight: bold;
-}
-
-/* display doi/bibtex/abstract in separate line below papers */
-br.bibbase_paper_content {
-    display: block;
-}
-
-/* remove amazon field */
-.bibbase_amazon {
+/* remove bibbase header (only) for proceedings */
+.mec-proceedings #bibbase_header {
     display: none;
 }
