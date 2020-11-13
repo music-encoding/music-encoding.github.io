@@ -52,6 +52,9 @@ menu:
           - id: previous
             label: 'Past Conferences'
             url: '/past.html'
+          - id: proceedings
+            label: 'Proceedings'
+            url: '/proceedings.html'
           - id: hosting
             label: 'Hosting Guidelines'
             url: '/hosting-guidelines.html'
