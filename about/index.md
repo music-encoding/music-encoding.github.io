@@ -11,7 +11,7 @@ MEI, like the [Text Encoding Initiative](http://www.tei-c.org/) (TEI), is an umb
 
 ## The goals of MEI
 
-The scholarly community devoted to the historical study of music needs a representation that meets the following requirements:
+The scholarly community devoted to the historical study of music needs an encoding system that meets the following requirements:
 
 *   represents the semantic and structural complexity of the entire diverse history of Western notation;
 *   represents the common expressive features of traditional facsimile, critical, and performance editions;
