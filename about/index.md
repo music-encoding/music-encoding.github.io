@@ -41,7 +41,7 @@ MEI and MusicXML share some similarities -- both of them encode music notation (
 
 ## What is the history of MEI?
 
-In 1999, Perry Roland created an XML schema (DTD) for the representation of music notation. Eventually, this DTD became known as MEI, drawing on the same principles that guided the creation of the [Text Encoding Initiative](http://www.tei-c.org/) (TEI). Perry presented his initial work at the first [International Society for Music Information Retrieval](http://ismir.net/conferences.html) in 2000.
+In 1999, Perry Roland created an XML schema (DTD) for the representation of music notation. Eventually, this DTD became known as MEI, drawing on the same principles that guided the creation of the [Text Encoding Initiative](http://www.tei-c.org/) (TEI). Perry presented his initial work at the first [ISMIR conference](https://ismir2000.ismir.net/) in 2000.
 
 In 2005, the [University of Virginia Library](https://www.library.virginia.edu) provided support for a 2-year pilot project to demonstrate the capability of MEI to represent a sample of music scores and to ensure that the semantic information encoded in MEI could be rendered as music notation.
 
