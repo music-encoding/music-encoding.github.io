@@ -1,0 +1,66 @@
+name: Link Checker
+
+on:
+  schedule:
+    - cron: '0 13 * * 0'  # run every Sunday at 1pm UTC https://crontab.guru/#0_13_*_*_1
+  workflow_dispatch: # trigger manually
+    inputs:
+      branch:
+        description: 'Branch to check'
+        required: true
+        default: master
+
+
+# globals
+env:
+  CHECK_WEBSITE: https://music-encoding.org
+  CHECK_BRANCH: master
+
+
+jobs:
+  website_link_check:
+    name: Check website links
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: technote-space/broken-link-checker-action@v2
+        with:
+          target: ${{ env.CHECK_WEBSITE }}
+
+
+  markdown-link-check:
+    name: Check markdown links
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Set variables
+        run: |
+          if [[ "${{ github.event.inputs.branch }}" != '' ]] ; then
+            echo "Setting branch: ${{ github.event.inputs.branch }}"
+            echo "CHECK_BRANCH=${{ github.event.inputs.branch }}" >> $GITHUB_ENV
+          fi
+
+      - name: Checkout main repo
+        uses: actions/checkout@v2
+        with:
+          ref: ${{ env.CHECK_BRANCH }}
+
+
+      - name: Run markdown link check
+        uses: gaurav-nelson/github-action-markdown-link-check@1.0.8
+        id: mlc
+        with:
+          config-file: .github/link-checker-config.json
+          use-quiet-mode: 'yes'
+          use-verbose-mode: 'yes'
+
+      - name: Create issue for broken links
+        if: failure()
+        id: create-issue
+        uses: JasonEtco/create-an-issue@v2
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          MAIN_REPO: ${{ github.repository }}
+          RUN_ID: ${{ github.run_id }}
+        with:
+          filename: .github/link-checker-issue-template.md

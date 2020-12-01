@@ -1,0 +1,15 @@
+{
+  "ignorePatterns": [
+    {
+      "pattern": "^(http|https)://localhost"
+    }
+  ],
+  "replacementPatterns": [
+    {
+      "pattern": "^/",
+      "replacement": "https://music-encoding.org/"
+    }
+  ],
+  "retryOn429": true,
+  "aliveStatusCodes": [200, 206]
+}
