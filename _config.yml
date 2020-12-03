@@ -79,7 +79,16 @@ menu:
             url: '/tutorials.html'
     - id: documentation
       label: 'Documentation'
-      url: '/guidelines'
+      submenu:
+          - id: guidelines-v4
+            label: 'MEI 4 (latest release)'
+            url: '/guidelines/v4'
+          - id: guidelines-dev
+            label: 'Development version'
+            url: '/guidelines/dev'
+          - id: guidelines-v3
+            label: 'MEI 3'
+            url: '/guidelines/v3'
     - id: archive
       label: 'Archive'
       url: '/archive'
