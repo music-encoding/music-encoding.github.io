@@ -2,12 +2,19 @@
   "ignorePatterns": [
     {
       "pattern": "^(http|https)://localhost"
+    },
+    {
+      "pattern": "mailto:{{.*}}"
     }
   ],
   "replacementPatterns": [
     {
       "pattern": "^/",
       "replacement": "https://music-encoding.org/"
+    },
+    {
+      "pattern": "^../102_march.png",
+      "replacement": "./102_march.png"
     }
   ],
   "retryOn429": true,
