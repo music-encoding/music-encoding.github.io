@@ -26,7 +26,7 @@ An [interactive version of the Guidelines](http://music-encoding.org/support/gui
 
 ## Sample encodings
 
-[![sampleEncoding](http://music-encoding.org/wp-content/uploads/2015/04/sampleEncoding-300x176.jpg)](http://music-encoding.org/wp-content/uploads/2015/04/sampleEncoding.jpg)
+[![sampleEncoding](https://web.archive.org/web/20170217074250/http://music-encoding.org/wp-content/uploads/2015/04/sampleEncoding.jpg)](https://web.archive.org/web/20170217074250/http://music-encoding.org/wp-content/uploads/2015/04/sampleEncoding.jpg)
 
 Examples of MEI encoding are available from [https://github.com/music-encoding/sample-encodings/releases/tag/v3.0.0](https://github.com/music-encoding/sample-encodings/releases/tag/v3.0.0) for both 2012 and 2013 versions of MEI). Many examples are accompanied by a PDF that the MEI is intended to represent. Because these examples were created using a combination of automated and human-centered processes, they may not be entirely accurate or represent best practices. Lacking ground-truth against which the encodings can be verified, we must rely on you to [let us know](mailto:info@music-encoding.org) when there are errors.
 
