@@ -1,4 +1,4 @@
-# Contributing
+# Contributing Guidelines
 
 If you wish to contribute changes to the MEI website, you can edit the files directly on GitHub. The text of the Guidelines is written in a dialect of [Markdown](https://kramdown.gettalong.org/quickref.html).
 
