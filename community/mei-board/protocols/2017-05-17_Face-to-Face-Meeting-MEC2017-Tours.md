@@ -36,7 +36,7 @@ The call for hosting shall be published in February 2018, with a submission dead
 
 ## Proceedings
 
-The Board discussed different models for setting up the MEC proceedings. As Perry and Johannes will serve as editors for all three pending years (2015, 2016, 2017), the Board supports them in selecting a workflow most convenient to them. Authors having difficulties with that workflow will be given as much assistance as necessary. The workflow is documented at http://music-encoding.org/proceedings. For future MECs, authors shall be required to submit their camera-ready papers at or shortly after the conference, in order to ensure a fast publication of the proceedings.
+The Board discussed different models for setting up the MEC proceedings. As Perry and Johannes will serve as editors for all three pending years (2015, 2016, 2017), the Board supports them in selecting a workflow most convenient to them. Authors having difficulties with that workflow will be given as much assistance as necessary. The workflow is documented at [http://music-encoding.org/proceedings](https://github.com/music-encoding/mec-proceedings). For future MECs, authors shall be required to submit their camera-ready papers at or shortly after the conference, in order to ensure a fast publication of the proceedings.
 
 ## Submission Procedure for MECs
 
