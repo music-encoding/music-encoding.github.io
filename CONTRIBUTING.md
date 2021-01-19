@@ -1,6 +1,6 @@
 # Contributing Guidelines
 
-If you wish to contribute changes to the MEI website, you can edit the files directly on GitHub. The website is written in [GitHub Flavored Markdown](https://github.github.com/gfm/).
+If you wish to contribute changes to the MEI website, you can edit the files directly on GitHub. The website is written in a dialect of Markdown called [kramdown](https://kramdown.gettalong.org/quickref.html).
 
 [//]: # (In the guidelines you will see links to "Edit this section". Clicking on this will open up an editor in GitHub, where you will be able to click on the 'pencil' to edit the text of the section.)
 
