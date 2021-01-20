@@ -15,7 +15,7 @@ Due to the ongoing COVID-19 pandemic, we will decide at the end of September whe
 
 **Registration:**
 
-If you would like to participate in the workshop, please register by e-mail (to [kristina.richts@uni-paderborn.de](kristina.richts@uni-paderborn.de) and/or [Margrethe.Bue@nb.no](Margrethe.Bue@nb.no)) until September 30th. Please indicate if your participation will be physical or digital.
+If you would like to participate in the workshop, please register by e-mail (to [kristina.richts@uni-paderborn.de](mailto:kristina.richts@uni-paderborn.de) and/or [Margrethe.Bue@nb.no](mailto:Margrethe.Bue@nb.no)) until September 30th. Please indicate if your participation will be physical or digital.
 
 In case you would like to suggest issues for discussion, please let us know as soon as possible. If there are any questions concerning the meeting, we will be happy to answer them.
 
