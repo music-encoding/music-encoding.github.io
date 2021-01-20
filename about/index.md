@@ -4,17 +4,14 @@ title: "What is MEI?"
 ---
 # An introduction to MEI
 
-The Music Encoding Initiative (MEI) is a 21st century community-driven [open-source](https://github.com/music-encoding/music-encoding) effort to define guidelines for encoding musical documents in a machine-readable structure. 
-
- It brings together specialists from various music research communities, including technologists, librarians, historians, and theorists in a common effort to discuss and define best practices for representing a broad range of musical documents and structures. The results of these discussions are then formalized into the MEI schema, a core set of rules for recording physical and intellectual characteristics of music notation documents expressed as an eXtensible Markup Language ([XML](https://web.archive.org/web/20191028132600/https://www.tei-c.org/release/doc/tei-p5-doc/en/html/SG.html)) schema. This schema is developed and maintained by the [MEI Technical Team](/community/technical-team.html).
-
+The Music Encoding Initiative (MEI) is a community-driven, [open-source](https://github.com/music-encoding/music-encoding) effort to define a system for encoding musical documents in a machine-readable structure. MEI brings together specialists from various music research communities, including technologists, librarians, historians, and theorists in a common effort to define best practices for representing a broad range of musical documents and structures. The results of these discussions are formalized in the [MEI schema](/resources/schemas.html), a core set of rules for recording physical and intellectual characteristics of music notation documents expressed as an eXtensible Markup Language ([XML](https://web.archive.org/web/20191028132600/https://www.tei-c.org/release/doc/tei-p5-doc/en/html/SG.html)) schema. It is complemented by the [MEI Guidelines](https://music-encoding.org/guidelines/v4/content/), which provide detailed explanations of the components of the MEI model and best practices suggestions. The schema is developed and maintained by the [MEI Technical Team](/community/technical-team.html).
 
 MEI, like the [Text Encoding Initiative](http://www.tei-c.org/) (TEI), is an umbrella term to simultaneously describe an organization, a research community, and a markup language. It closely mirrors work done by text scholars in the TEI and, while the two encoding initiatives are not formally related, they share many common characteristics and development practices.
 
 
 ## The goals of MEI
 
-The scholarly community devoted to the historical study of music needs a representation that meets the following requirements:
+The scholarly community devoted to the historical study of music needs an encoding system that meets the following requirements:
 
 *   represents the semantic and structural complexity of the entire diverse history of Western notation;
 *   represents the common expressive features of traditional facsimile, critical, and performance editions;

@@ -4,7 +4,7 @@ sidemenu: conference
 title: "Music Encoding Conference 2021"
 subtitle: ""
 venue: "Universidad de Alicante, Spain"
-image: conference/2021/MEC.jpg
+image: conference/2021/mec2021_logo.jpg
 date-start: 2021-05-25
 date-end: 2021-05-28
 redirect_from: /community/conference/
@@ -15,9 +15,15 @@ role: about
 id: about
 ---
 
-<img src="/images/conference/2021/MEC.jpg" class="img-responsive" alt="Music Encoding Conference, Universidad de Alicante, 25–28 May 2021"/>
+<img src="/images/conference/2021/mec2021_logo.jpg" class="img-responsive" alt="Music Encoding Conference, Universidad de Alicante, 25–28 May 2021"/>
 
 <div class="mec2021-page">
+
+    <h2><strong>UPDATE (18.12.2020): MEC2021 postponed to July 2021 as hybrid event</strong></h2>
+
+    <p>For more information, please consult the <a href="./call/">Call for Proposals</a>.</p>
+
+    <hr>
 
     <p>The Music Encoding Conference is the annual meeting of the Music Encoding Initiative (MEI) community and all who are interested in the digital representation of music.</p>
 
@@ -25,7 +31,7 @@ id: about
 
     <p>The conference is hosted by Universidad de Alicante. It is co-sponsored with the Instituto Superior de Enseñanzas Artísticas de la Comunidad Valenciana.</p>
 
-    <p>All attendees are expected to adhere to the conference <a href="https://music-encoding.org/conference/2021/code-of-conduct/" target="blank">Code of Conduct.</a></p>
+    <p>All attendees are expected to adhere to the conference <a href="./code-of-conduct/">Code of Conduct.</a></p>
 
     <p>Questions? Contact Organizing Committee Chair, David Rizo, or Program Committee Chair, Stefan Münnich, at conference2021 at music-encoding.org.</p>
 
@@ -52,3 +58,42 @@ id: about
 
 
 </div>
+<!-- cf. https://developers.google.com/search/docs/data-types/event?hl=de#integrate -->
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Event",
+        "name": "Music Encoding Conference 2021",
+        "description": "The Music Encoding Conference is the annual meeting of the Music Encoding Initiative (MEI) community and all who are interested in the digital representation of music.",
+        "startDate": "2021-07-19",
+        "endDate": "2021-07-22",
+        "eventAttendanceMode": "https://schema.org/MixedEventAttendanceMode",
+        "eventStatus": [
+            "https://schema.org/EventRescheduled",
+            "https://schema.org/EventMovedOnline"
+        ],
+        "previousStartDate": "2021-05-25",
+        "location": [{
+            "@type": "VirtualLocation",
+          	"url": "https://music-encoding.org/conference/2021/"
+        },
+            {
+                "@type": "Place",
+                "name": "Universidad de Alicante",
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressLocality": "Alicante",
+                    "addressCountry": "ES"
+                }
+            }],
+        "image": [
+            "https://music-encoding.org/images/conference/2021/mec2021_logo.jpg"
+        ],
+        "organizer": {
+            "@type": "Organization",
+            "name": "Music Encoding Initiative",
+            "url": "https://music-encoding.org"
+        }
+    }
+</script>
+

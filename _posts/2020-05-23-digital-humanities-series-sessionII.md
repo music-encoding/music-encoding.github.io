@@ -7,7 +7,7 @@ categories: update
 
 A free, open to the public, series of conferences and workshops focusing on the use of digital humanities in early music research will be offered online at the end of June. The Session II of the Digital Humanities in Early Music Research I series will focus on databases and encoding of early music. 
 
-Led by two members of the Music Encoding Initiative Board, Elsa de Luca (administrative chair) and Martha E. Thomae, Session II will consist of two presentations and two workshops (see the following program). **Reservation is required**, please contact the coordinator Jana Franková ([frankova@mua.cas.cz](frankova@mua.cas.cz)) and Hana Vlhová-Wörmer ([vlhova@mua.cas.cz](vlhova@mua.cas.cz)) jointly to reserve your place.
+Led by two members of the Music Encoding Initiative Board, Elsa de Luca (administrative chair) and Martha E. Thomae, Session II will consist of two presentations and two workshops (see the following program). **Reservation is required**, please contact the coordinator Jana Franková ([frankova@mua.cas.cz](mailto:frankova@mua.cas.cz)) and Hana Vlhová-Wörmer ([vlhova@mua.cas.cz](mailto:vlhova@mua.cas.cz)) jointly to reserve your place.
 
 **Presentation I: MEI for Encoding Mensural Music – A Survey**
 
