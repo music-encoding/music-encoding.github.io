@@ -28,4 +28,4 @@ The selection of Board members is an opportunity for each of you to have a voice
 Benjamin Bohl 
 MEI Elections Officer 2016 by appointment of the MEI-Board 
 
-[1] The By-laws of the Music Encoding Initiative are available online at: [http://music-encoding.org/community/mei-organization/mei-by-laws/](http://music-encoding.org/community/mei-organization/mei-by-laws/)
+[1] The By-laws of the Music Encoding Initiative are available online at: [http://music-encoding.org/community/mei-organization/mei-by-laws/](https://music-encoding.org/community/mei-by-laws.html)
