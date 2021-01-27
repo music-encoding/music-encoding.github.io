@@ -48,6 +48,20 @@ LibMEI was created by Andrew Hankinson and Alastair Porter and seeks to define
 
 LibMEI is a C++ library for reading and writing MEI files. It can be integrated in C++ software applications but it can also be used in a wide range of environment through bindings. It ships with a Python bindings using the Boost-Python framework. The source code and the documentation are available on [GitHub](https://github.com/DDMAL/libmei/ "GitHub") It is developed by the [Distributed Digital Music Archives and Libraries Lab](http://ddmal.music.mcgill.ca/) at the Schulich School of Music at McGill University, Montréal, Canada and is available under the MIT License.
 
+### meico: MEI Converter
+
+[meico](https://github.com/cemfi/meico) is a converter framework for MEI files that is developed at the Center of Music and Film Informatics, Detmold ([CEMFI](http://www.cemfi.de/)). It translates MEI data to a series of formats relevant to many other applications. It can be used as Java programming framework or standalone app. For the latter case, the meicoApp provides a commandline interface as well as an elaborate graphical user interface. Meico's feature list includes
+
+-   MEI export to MIDI, MSM, MPM, audio (WAV, MP3),
+-   MIDI to audio rendering with third party soundbanks (SF2, DLS),
+-   musical performance rendering via the official Music Performance Markup API and rendering engine,
+-   built-in MIDI and audio playback (perfect for proof-reading/listening),
+-   Verovio integration ind the graphical user interface,
+-   Chroma export,
+-   XSLT processing of all XML-based data formats, and
+-   several MEI convenience features such as XML validation against RNG schemata, expansion of abbreviations (copyof, sameas, expan).
+
+
 ### MEI to Music21 Converter
 
 With the release of version 2.0, the [music21](http://web.mit.edu/music21/) Python toolkit for musicology is now capable of importing MEI files. This release focuses on the features required for CMN scores, though it is hoped future versions will address more of MEI. To learn whether your favorite elements and attributes are supported, consult the [music21.mei module documentation](http://web.mit.edu/music21/doc/moduleReference/moduleMeiBase.html).
