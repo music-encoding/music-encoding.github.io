@@ -50,7 +50,7 @@ LibMEI is a C++ library for reading and writing MEI files. It can be integrated
 
 ### meico: MEI Converter
 
-[meico](https://github.com/cemfi/meico) is a converter framework for MEI files that is developed at the Center of Music and Film Informatics, Detmold ([CEMFI](http://www.cemfi.de/)). It translates MEI data to a series of formats relevant to many other applications. It can be used as Java programming framework or standalone app. For the latter case, the meicoApp provides a commandline interface as well as an elaborate graphical user interface. Meico's feature list includes
+[meico](https://github.com/cemfi/meico) is a converter framework for MEI files that is developed at the Center of Music and Film Informatics, Detmold ([cemfi](http://www.cemfi.de/)). It translates MEI data to a series of formats relevant to many other applications. It can be used as Java programming framework or standalone app. For the latter case, the meicoApp provides a commandline interface as well as an elaborate graphical user interface. Meico's feature list includes
 
 -   MEI export to MIDI, MSM, MPM, audio (WAV, MP3),
 -   MIDI to audio rendering with third party soundbanks (SF2, DLS),
