@@ -56,7 +56,7 @@ LibMEI is a C++ library for reading and writing MEI files. It can be integrated
 -   MIDI to audio rendering with third party soundbanks (SF2, DLS),
 -   musical performance rendering via the official Music Performance Markup API and rendering engine,
 -   built-in MIDI and audio playback (perfect for proof-reading/listening),
--   Verovio integration ind the graphical user interface,
+-   Verovio integration in the graphical user interface,
 -   Chroma export,
 -   XSLT processing of all XML-based data formats, and
 -   several MEI convenience features such as XML validation against RNG schemata, expansion of abbreviations (copyof, sameas, expan).
