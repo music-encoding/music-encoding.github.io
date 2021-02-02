@@ -8,18 +8,8 @@ Here you will find archived material, such as previous versions of MEI, document
 
 ## Past Music Encoding Conferences
 
-* Programs
-    * [2019](../conference/programs/2019ConferenceProgram.pdf)
-    * [2018](../conference/programs/2018ConferenceProgram.pdf)
-    * [2017](../conference/programs/2017ConferenceProgram.pdf)
-    * [2016](../conference/programs/2016ConferenceProgram.pdf)
-    * [2015](../conference/programs/2015ConferenceProgram.pdf)
-    * [2014](../conference/programs/2014ConferenceProgram.pdf)
-    * [2013](../conference/programs/2013ConferenceProgram.pdf)
-* Proceedings
-    * [2020](http://dx.doi.org/10.17613/mvxw-x477)
-    * [2015-2017](https://doi.org/10.15463/music-1)
-    * [2013-2014](http://langzeitarchivierung.bib-bvb.de/delivery/DeliveryManagerServlet?dps_custom_att_1=xepicur&dps_pid=IE2860815)
+* [Programs](../conference/past)
+* [Proceedings](../conference/proceedings)
 
 ## Previous Versions of MEI
 
