@@ -13,7 +13,7 @@ The MEI Board manages the property and business of MEI. It promotes the developm
 ### Term 2021-2023
 
 * **Stefan Münnich**, University of Basel
-* **Laurent Pugin**, Swiss RISM Project, Bern
+* **Laurent Pugin**, RISM Digital Center, Bern
 * **Kristina Richts-Matthaei**, Musikwissenschaftliches Seminar Detmold/Paderborn
 
 ### Term 2020-2022
