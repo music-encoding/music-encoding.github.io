@@ -10,6 +10,12 @@ The MEI Board manages the property and business of MEI. It promotes the developm
 
 ## Current Board Members
 
+### Term 2021-2023
+
+* **Stefan Münnich**, University of Basel
+* **Laurent Pugin**, Swiss RISM Project, Bern
+* **Kristina Richts-Matthaei**, Musikwissenschaftliches Seminar Detmold/Paderborn
+
 ### Term 2020-2022
 
 * **Johannes Kepper (Technical Co-Chair)**, Musikwissenschaftliches Seminar Detmold/Paderborn
@@ -22,14 +28,11 @@ The MEI Board manages the property and business of MEI. It promotes the developm
 * **Elsa De Luca (Administrative Chair)**, Centro de Estudos de Sociologia e Estética Musical (CESEM), Universidade Nova de Lisboa, Lisboa
 * **Ichiro Fujinaga**, McGill University, Montréal
 
-### Term 2018-2020
 
-* **Norbert Dubowy**, Internationale Stiftung Mozarteum, Salzburg
-* **Laurent Pugin**, Swiss RISM Project, Bern
-* **Kristina Richts**, Musikwissenschaftliches Seminar Detmold/Paderborn
 
 ### Previous Board Members
 
+* **Nobert Dubowy**, Internationale Stiftung Mozarteum, Salzburg (2018-2020)
 * **Andrew Hankinson**, Bodleian Library, Oxford (2017–2019)
 * **Eleanor Selfridge-Field**, Center for Computer-Assisted Research in the Humanities, Stanford University (2015–2019)
 * **Giuliano Di Bacco**, Jacobs School of Music, Indiana University, Bloomington, (2015-2017)
