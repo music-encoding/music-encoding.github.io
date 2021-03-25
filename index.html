@@ -108,7 +108,7 @@ layout: default
           <div class="tile-content">
             <h5 class="tile-title"><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h5>
             <p class="tile-subtitle text-gray"><small>Posted {{ post.date | date: "%b %-d, %Y" }}</small></p>
-            <p>{{ post.excerpt }}</p>
+            {{ post.excerpt }}
           </div>
         </div>
         
