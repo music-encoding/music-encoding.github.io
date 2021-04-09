@@ -1,7 +1,4 @@
----
-# Only the main Sass file needs front matter (the dashes are enough)
----
-@charset "utf-8";
+--- # Only the main Sass file needs front matter (the dashes are enough) --- @charset "utf-8";
 
 $baseurl: "{{ site.baseurl }}";
 
@@ -16,23 +13,23 @@ $dark-color: $mei-dark;
 
 // Our variables
 // $base-font-family: Helvetica, Arial, sans-serif;
-$base-font-size:   0.8rem;
-$small-font-size:  $base-font-size * 0.875;
-$menu-font-size:   0.8rem;
+$base-font-size: 0.8rem;
+$small-font-size: $base-font-size * 0.875;
+$menu-font-size: 0.8rem;
 $base-line-height: 1.5;
 
-$spacing-unit:     30px;
+$spacing-unit: 30px;
 
-$text-color:       #111;
+$text-color: #111;
 $background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
+$brand-color: #2a7ae2;
 
-$grey-color:       #828282;
+$grey-color: #828282;
 $grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
+$grey-color-dark: darken($grey-color, 25%);
 
-$on-palm:          600px;
-$on-laptop:        800px;
+$on-palm: 600px;
+$on-laptop: 800px;
 
 
 
@@ -50,95 +47,99 @@ $on-laptop:        800px;
 }
 
 // Import partials from `sass_dir` (defaults to `_sass`)
-@import
-        "spectre/spectre.scss",
-        "spectre/spectre-exp.scss",
-        "spectre/spectre-icons.scss",
-        "mei.scss",
-        "bib.scss"
+@import "spectre/spectre.scss",
+"spectre/spectre-exp.scss",
+"spectre/spectre-icons.scss",
+"mei.scss",
+"bib.scss"
 ;
 
 /* MEC 2020 */
 .mec2020-register {
-  font-weight: bold;
-  border: 1px solid $mei-highlight;
+    font-weight: bold;
+    border: 1px solid $mei-highlight;
 }
 
 .mec2020-register:hover {
-  border: none;
-  border: 1px solid white;
+    border: none;
+    border: 1px solid white;
 }
 
 .mec2020-page {
-  h2, h3, h4, h5 {
-    margin: .5em 0 .5em 0;
-  }
 
-  .mec2020-logo {
-    height: 6em;
-  }
-
-  .mec2020-program-row-main {
-    margin: 30px 0 30px 15px;
-
-    .mec2020-program-title {
-      margin: 10px 0 10px 0;
-      
-      .mec2020-presentation {
-      background-color:#d4d4d4;
-      }
-    }   
-    
-    .workshop {
-        width: 185pt;
-        height: 190pt;
-    }
-    
-    .workshop-title {
-        width: 160pt;
-        height: 105pt;
-    }
-    
-    .poster-session {
-        width: 370pt;
-        height: 520pt;
-    }
-      
-    .mec2020-program-speakers {
-      font-style: italic;
-      font-size: 0.7rem;
-    }
-    
-    .unconference{
-        height: 95pt;
+    h2,
+    h3,
+    h4,
+    h5 {
+        margin: .5em 0 .5em 0;
     }
 
-    .small-card {
-      width: 250px;
+    .mec2020-logo {
+        height: 6em;
     }
 
-    .card {
-      margin: 20px 0 20px 0;
-      box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+    .mec2020-program-row-main {
+        margin: 30px 0 30px 15px;
 
-      .card-title {
-        font-weight: bold;
-      }
+        .mec2020-program-title {
+            margin: 10px 0 10px 0;
+
+            .mec2020-presentation {
+                background-color: #d4d4d4;
+            }
+        }
+
+        .workshop {
+            width: 185pt;
+            height: 190pt;
+        }
+
+        .workshop-title {
+            width: 160pt;
+            height: 105pt;
+        }
+
+        .poster-session {
+            width: 370pt;
+            height: 520pt;
+        }
+
+        .mec2020-program-speakers {
+            font-style: italic;
+            font-size: 0.7rem;
+        }
+
+        .unconference {
+            height: 95pt;
+        }
+
+        .small-card {
+            width: 250px;
+        }
+
+        .card {
+            margin: 20px 0 20px 0;
+            box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+
+            .card-title {
+                font-weight: bold;
+            }
+
+        }
 
     }
 
-  }
-  
-  .mec2020-abstract {
+    .mec2020-abstract {
         font-size: 20px;
         font-weight: bold;
-        
-  }
-  .mec2020-program-row-main {
-    margin: 30px 0 30px 0;
-    background-color: #f4f4f4;
-    padding: 20px 10px 20px 10px;
-  }
+
+    }
+
+    .mec2020-program-row-main {
+        margin: 30px 0 30px 0;
+        background-color: #f4f4f4;
+        padding: 20px 10px 20px 10px;
+    }
 }
 
 
@@ -147,64 +148,107 @@ $on-laptop:        800px;
 
 .mec2021-page {
 
-  margin-top: 2em;
+    margin-top: 2em;
 
-  h2, h3, h4, h5 {
-    margin: 1em 0 .5em 0;
-  }
-
-  .mec2021-logo {
-    height: 6em;
-  }
-
-  .mec2021-program-row-main {
-    margin: 30px 0 30px 15px;
-
-    .mec2021-program-title {
-      margin: 10px 0 10px 0;
-
-      .mec2021-presentation {
-        background-color:#d4d4d4;
-      }
+    h2,
+    h3,
+    h4,
+    h5 {
+        margin: 1em 0 .5em 0;
     }
 
-    .workshop {
-      width: 185pt;
-      height: 190pt;
+    .mec2021-logo {
+        height: 6em;
     }
 
-    .workshop-title {
-      width: 160pt;
-      height: 105pt;
+    .mec2021-program-row-main {
+        margin: 30px 0 30px 15px;
+
+        .mec2021-program-title {
+            margin: 10px 0 10px 0;
+
+            .mec2021-presentation {
+                background-color: #d4d4d4;
+            }
+        }
+
+        .workshop {
+            width: 185pt;
+            height: 190pt;
+        }
+
+        .workshop-title {
+            width: 160pt;
+            height: 105pt;
+        }
+
+        .poster-session {
+            width: 370pt;
+            height: 520pt;
+        }
+
+        .mec2021-program-speakers {
+            font-style: italic;
+            font-size: 0.7rem;
+        }
+
+        .unconference {
+            height: 95pt;
+        }
+
+        .small-card {
+            width: 250px;
+        }
+
+        .card {
+            margin: 20px 0 20px 0;
+            box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+
+            .card-title {
+                font-weight: bold;
+            }
+
+        }
+    }
+    
+    /* 20210409 */
+    table {
+        font-family: "Arial", sans-serif;
+        font-size: 0.9em;
+        border-collapse: collapse;
+        width: 100%;
     }
 
-    .poster-session {
-      width: 370pt;
-      height: 520pt;
+    td {
+        border: 1px solid #999999;
+        padding: 8px;
+        text-align: center;
     }
 
-    .mec2021-program-speakers {
-      font-style: italic;
-      font-size: 0.7rem;
+    th {
+        background-color: #8998e0;
+        color: white;
+        border: 1px solid white;
+        padding: 8px;
+        text-align: center;
     }
 
-    .unconference{
-      height: 95pt;
+    small {
+        font-size: 0.9em;
     }
 
-    .small-card {
-      width: 250px;
-    }
+    button {
+        border: none;
+        border-radius: 8px;
+        color: white;
+        padding: 10px 25px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        background-color: #1a235b;
+    }    
 
-    .card {
-      margin: 20px 0 20px 0;
-      box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
-
-      .card-title {
-        font-weight: bold;
-      }
-
-    }
-  }
-
-  }
+}
