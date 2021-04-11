@@ -14,6 +14,7 @@ on:
 # globals
 env:
   CHECK_WEBSITE: https://music-encoding.org
+  CHECK_OWNER: music-encoding
   CHECK_BRANCH: master
 
 
@@ -21,6 +22,7 @@ jobs:
   website_link_check:
     name: Check website links
     runs-on: ubuntu-latest
+    if: ${{ github.repository_owner == 'music-encoding' }}
 
     steps:
       - uses: technote-space/broken-link-checker-action@v2
@@ -31,6 +33,7 @@ jobs:
   markdown-link-check:
     name: Check markdown links
     runs-on: ubuntu-latest
+    if: ${{ github.repository_owner == 'music-encoding' }}
 
     steps:
       - name: Set variables
