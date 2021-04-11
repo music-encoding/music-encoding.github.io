@@ -61,6 +61,6 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           MAIN_REPO: ${{ github.repository }}
-          RUN_ID: ${{ github.run_id }}
+          RUN_ID: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
         with:
           filename: .github/link-checker-issue-template.md
