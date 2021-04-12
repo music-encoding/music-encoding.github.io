@@ -1,0 +1,29 @@
+{
+  "ignorePatterns": [
+    {
+      "pattern": "^(http|https)://localhost"
+    },
+    {
+      "pattern": "mailto:{{.*}}"
+    },
+    {
+      "pattern": "^.github/"
+    }
+  ],
+  "replacementPatterns": [
+    {
+      "pattern": "^/",
+      "replacement": "https://music-encoding.org/"
+    },
+    {
+      "pattern": "^../schema/",
+      "replacement": "https://music-encoding.org/schema/"
+    },
+    {
+      "pattern": "^../102_march.png",
+      "replacement": "./102_march.png"
+    }
+  ],
+  "retryOn429": true,
+  "aliveStatusCodes": [200, 206]
+}
