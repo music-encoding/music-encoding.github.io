@@ -58,6 +58,9 @@ menu:
           - id: hosting
             label: 'Hosting Guidelines'
             url: '/hosting-guidelines.html'
+          - id: code-of-conduct
+            label: 'Code of conduct'
+            url: '/code-of-conduct.html'        
     - id: resources
       label: 'Resources'
       url: '/resources'
