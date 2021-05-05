@@ -16,4 +16,4 @@ The Technical Team consists of interested developers and two Board-appointed Co-
 * **Daniel Röwenstrunk**, Musikwissenschaftliches Seminar Detmold/Paderborn
 * **Craig Sapp**, Center for Computer-Assisted Research in the Humanities, Stanford University
 * **Raffaele Viglianti**, Maryland Institute for Technology in the Humanities
-* **Thomas Weber**, Notengrafik, Berlin
+* **Thomas Weber**, Notengrafik Berlin GmbH
