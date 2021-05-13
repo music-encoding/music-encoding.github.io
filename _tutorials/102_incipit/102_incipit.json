@@ -3,9 +3,9 @@
     {
       "label": "Score & staff definition",
       "editorLines": 7,
-      "descFile": "102_march_step-01-desc.html",
-      "prefillFile": "102_march_step-01-prefill.xml",
-      "xmlFile": "102_march_step-01.xml",
+      "descFile": "102_incipit_step-01-desc.html",
+      "prefillFile": "102_incipit_step-01-prefill.xml",
+      "xmlFile": "102_incipit_step-01.xml",
       "xpaths": [
         {"rule": "count(//mei:scoreDef) = 1", "renderanyway": false, "hint": "You need one scoreDef element."},
         {"rule": "count(//mei:scoreDef/@*) = 0", "renderanyway": false, "hint": "You do not need an attribute on the scoreDef element."},
@@ -20,9 +20,9 @@
     {
       "label": "Score & staff attributes",
       "editorLines": 7,
-      "descFile": "102_march_step-02-desc.html",
-      "prefillFile": "102_march_step-02-prefill.xml",
-      "xmlFile": "102_march_step-02.xml",
+      "descFile": "102_incipit_step-02-desc.html",
+      "prefillFile": "102_incipit_step-02-prefill.xml",
+      "xmlFile": "102_incipit_step-02.xml",
       "xpaths": [
         {"rule": "count(//mei:scoreDef) = 1", "renderanyway": false, "hint": "You need one scoreDef element."},
         {"rule": "count(//mei:staffGrp) = 1", "renderanyway": false, "hint": "You need one staffGroup element."},
@@ -43,9 +43,9 @@
     {
       "label": "Measure, staff & layer",
       "editorLines": 14,
-      "descFile": "102_march_step-03-desc.html",
-      "prefillFile": "102_march_step-03-prefill.xml",
-      "xmlFile": "102_march_step-03.xml",
+      "descFile": "102_incipit_step-03-desc.html",
+      "prefillFile": "102_incipit_step-03-prefill.xml",
+      "xmlFile": "102_incipit_step-03.xml",
       "xpaths": [
         {"rule": "count(//mei:section) = 1", "renderanyway": false, "hint": "You need one section element."},
         {"rule": "count(//mei:section/@*) = 0", "renderanyway": false, "hint": "You do not need an attribute on the section element."},
@@ -66,9 +66,9 @@
     {
       "label": "First note",
       "editorLines": 15,
-      "descFile": "102_march_step-04-desc.html",
-      "prefillFile": "102_march_step-04-prefill.xml",
-      "xmlFile": "102_march_step-04.xml",
+      "descFile": "102_incipit_step-04-desc.html",
+      "prefillFile": "102_incipit_step-04-prefill.xml",
+      "xmlFile": "102_incipit_step-04.xml",
       "xpaths": [
         {"rule": "count(//mei:note) = 1", "renderanyway": false, "hint": "You need one note element."},
         {"rule": "count(//mei:note/@*) = 3", "renderanyway": false, "hint": "You need three attributes on note (@pname, @oct a& @dur)."},
@@ -80,9 +80,9 @@
     {
       "label": "Second note",
       "editorLines": 18,
-      "descFile": "102_march_step-05-desc.html",
-      "prefillFile": "102_march_step-05-prefill.xml",
-      "xmlFile": "102_march_step-05.xml",
+      "descFile": "102_incipit_step-05-desc.html",
+      "prefillFile": "102_incipit_step-05-prefill.xml",
+      "xmlFile": "102_incipit_step-05.xml",
       "xpaths": [
         {"rule": "count(//mei:section) = 1", "renderanyway": false, "hint": "You need one section element."},
         {"rule": "count(//mei:section/@*) = 0", "renderanyway": false, "hint": "You do not need an attribute on the section element."},
@@ -118,9 +118,9 @@
     {
       "label": "Beams",
       "editorLines": 12,
-      "descFile": "102_march_step-06-desc.html",
-      "prefillFile": "102_march_step-06-prefill.xml",
-      "xmlFile": "102_march_step-06.xml",
+      "descFile": "102_incipit_step-06-desc.html",
+      "prefillFile": "102_incipit_step-06-prefill.xml",
+      "xmlFile": "102_incipit_step-06.xml",
       "xpaths": [
         {"rule": "count(//mei:measure) = 2", "renderanyway": false, "hint": "You need a measure element."},
         {"rule": "count(//mei:measure[2]/@*) = 1", "renderanyway": false, "hint": "You need one attribute on measure (@n)."},
@@ -154,9 +154,9 @@
     {
       "label": "Dotted rhythm",
       "editorLines": 14,
-      "descFile": "102_march_step-07-desc.html",
-      "prefillFile": "102_march_step-07-prefill.xml",
-      "xmlFile": "102_march_step-07.xml",
+      "descFile": "102_incipit_step-07-desc.html",
+      "prefillFile": "102_incipit_step-07-prefill.xml",
+      "xmlFile": "102_incipit_step-07.xml",
       "xpaths": [
         {"rule": "count(//mei:measure) = 2", "renderanyway": false, "hint": "You need a measure element."},
         {"rule": "count(//mei:measure[2]/@*) = 1", "renderanyway": false, "hint": "You need one attribute on the measure (@n)."},
@@ -202,9 +202,9 @@
     {
       "label": "A full measure",
       "editorLines": 14,
-      "descFile": "102_march_step-08-desc.html",
-      "prefillFile": "102_march_step-08-prefill.xml",
-      "xmlFile": "102_march_step-08.xml",
+      "descFile": "102_incipit_step-08-desc.html",
+      "prefillFile": "102_incipit_step-08-prefill.xml",
+      "xmlFile": "102_incipit_step-08.xml",
       "xpaths": [
         {"rule": "count(//mei:measure) = 3", "renderanyway": false, "hint": "You need one measure element."},
         {"rule": "count(//mei:measure[3]/@*) = 1", "renderanyway": false, "hint": "You need one attribute on measure (@n)."},
@@ -250,9 +250,9 @@
     {
       "label": "Final two measures",
       "editorLines": 14,
-      "descFile": "102_march_step-09-desc.html",
-      "prefillFile": "102_march_step-09-prefill.xml",
-      "xmlFile": "102_march_step-09.xml",
+      "descFile": "102_incipit_step-09-desc.html",
+      "prefillFile": "102_incipit_step-09-prefill.xml",
+      "xmlFile": "102_incipit_step-09.xml",
       "xpaths": [
         {"rule": "count(//mei:measure) = 5", "renderanyway": false, "hint": "You need two measure elements."},
         {"rule": "//mei:measure[4]/following-sibling::mei:measure", "renderanyway": false, "hint": "Measures have to follow each other."},
@@ -323,9 +323,9 @@
     {
       "label": "Articulations",
       "editorLines": 50,
-      "descFile": "102_march_step-10-desc.html",
-      "prefillFile": "102_march_step-10-prefill.xml",
-      "xmlFile": "102_march_step-10.xml",
+      "descFile": "102_incipit_step-10-desc.html",
+      "prefillFile": "102_incipit_step-10-prefill.xml",
+      "xmlFile": "102_incipit_step-10.xml",
       "xpaths": [
         {"rule": "count(//mei:measure) = 5", "renderanyway": false, "hint": "You need two measure elements."},
         {"rule": "//mei:measure[4]/following-sibling::mei:measure", "renderanyway": false, "hint": "Measures have to follow each other."},
@@ -406,9 +406,9 @@
     {
       "label": "Dynamics (referencing tstamps)",
       "editorLines": 10,
-      "descFile": "102_march_step-11-desc.html",
-      "prefillFile": "102_march_step-11-prefill.xml",
-      "xmlFile": "102_march_step-11.xml",
+      "descFile": "102_incipit_step-11-desc.html",
+      "prefillFile": "102_incipit_step-11-prefill.xml",
+      "xmlFile": "102_incipit_step-11.xml",
       "xpaths": [
         {"rule": "count(//mei:measure[@n=0]) = 1", "renderanyway": false, "hint": "You need one measure with n = 0."},
         {"rule": "//mei:measure[1]/mei:staff", "renderanyway": false, "hint": "You need a staff element inside the measure element."},
@@ -434,9 +434,9 @@
     {
       "label": "Slurs (referencing xml:id)",
       "editorLines": 25,
-      "descFile": "102_march_step-12-desc.html",
-      "prefillFile": "102_march_step-12-prefill.xml",
-      "xmlFile": "102_march_step-12.xml",
+      "descFile": "102_incipit_step-12-desc.html",
+      "prefillFile": "102_incipit_step-12-prefill.xml",
+      "xmlFile": "102_incipit_step-12.xml",
       "xpaths": [
         {"rule": "count(//mei:measure[@n=3]) = 1", "renderanyway": false, "hint": "You need one measure with n = 3."},
         {"rule": "//mei:measure[4]/mei:staff", "renderanyway": false, "hint": "You need a staff element inside the measure element."},
@@ -494,7 +494,7 @@
       ]
     }
   ],
-  "end": "102_march_end.html",
+  "end": "102_incipit_end.html",
   "resp": [
     {
       "name": "Margrethe S. Bue",

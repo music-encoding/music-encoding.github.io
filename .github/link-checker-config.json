@@ -20,8 +20,8 @@
       "replacement": "https://music-encoding.org/schema/"
     },
     {
-      "pattern": "^../102_march.png",
-      "replacement": "./102_march.png"
+      "pattern": "^../102_incipit.png",
+      "replacement": "./102_incipit.png"
     }
   ],
   "retryOn429": true,
