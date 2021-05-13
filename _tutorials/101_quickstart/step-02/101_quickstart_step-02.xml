@@ -21,7 +21,13 @@
                             <staff n="1">
                                 <layer>
                                     <?edit-start?>
-                                    
+                                    <note pname="e" oct="4" dur="4"/>
+                                    <note pname="d" oct="4" dur="4"/>
+                                    <note pname="c" oct="4" dur="4"/>
+                                    <note pname="d" oct="4" dur="4"/>
+                                    <note pname="e" oct="4" dur="4"/>
+                                    <note pname="e" oct="4" dur="4"/>
+                                    <note pname="e" oct="4" dur="4"/>
                                     <?edit-end?>
                                 </layer>
                             </staff>
