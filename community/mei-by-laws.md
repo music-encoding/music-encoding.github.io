@@ -12,7 +12,7 @@ The name of this organisation is ‘Music Encoding Initiative’ (hereafter abbr
 
 The purpose of MEI is to create, promote, and diffuse a semantically rich model for music notation that:
 
-* accommodates the encoding of the intellectual and physical characteristics of Western music notation documents, primarily focusing on but not being limited to Common Music Notation (CMN);
+* accommodates the encoding of the intellectual and physical characteristics of music notation documents, primarily focusing on but not being limited to Common Western Music Notation (CWMN);
 * is designed by the scholarly community for scholarly uses, but does not exclude other uses;
 * provides for the common functions of traditional facsimile, critical, and performance editions;
 * has a modular structure that permits use dependent on the goals of scholars; and
