@@ -118,7 +118,7 @@ The responsibilities of the Technical Team include, but are not limited to:
 
 * managing the MEI website,
 * managing the MEI repositories (including the granting of read and write privileges),
-* implementing the technical aspects of MEI development in consideration of the general directions laid down by the Board of Directors,
+* implementing the technical aspects of MEI development in consideration of the general directions laid down by the Board,
 * maintaining and improving the MEI technical documentation,
 * soliciting technical contributions and collaboration from other members of the community.
 
