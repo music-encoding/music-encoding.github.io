@@ -1,7 +1,7 @@
 ---
 layout: tutorials
 type: tutorial
-name: "Understanding ODD"
-fullname: "A tutorial on the internal structure of MEI"
+name: "ADVANCED: Understanding ODD"
+fullname: "An advanced tutorial on the internal structure of MEI"
 data: "understanding-odd.json"
 ---
