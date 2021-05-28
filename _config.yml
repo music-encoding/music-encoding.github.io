@@ -71,6 +71,9 @@ menu:
           - id: bibliography
             label: 'Bibliography'
             url: '/bibliography.html'
+          - id: pedagogy
+            label: 'Pedagogy & Praxis'
+            url: '/pedagogy.html'
           - id: schemas
             label: 'Schemas and Namespace'
             url: '/schemas.html'
