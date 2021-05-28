@@ -8,7 +8,7 @@ The registration to the Music Encoding Conference 2021, 19-22 July 2021 at the U
 
 Head to the conference webpage for registering and accessing information about the program, travel and accommodation.
 
-Please note that early bird registration ends on 14 April. We look forward to seeing you at the conference!
+Please note that early bird registration ends on 14 June. We look forward to seeing you at the conference!
 
 
 For more information please visit <a href="https://music-encoding.org/conference/2021/">https://music-encoding.org/conference/2021/</a>
