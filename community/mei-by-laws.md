@@ -29,7 +29,7 @@ There are two types of membership in MEI: personal and institutional. Both types
 
 #### 3.1.1 Personal Membership
 
-Only private individuals may obtain personal membership in MEI. Personal membership is conferred by subscription to the MEI mailing list ([MEI-L](https://music-encoding.org/community/community-contacts.html)) and/or by payment of annual dues determined from time to time by the membership at the annual Board meeting. All personal members may vote, nominate members for office, stand for office, and otherwise benefit from the activities of MEI.
+Only private individuals may obtain personal membership in MEI. Personal membership is conferred by subscription to the MEI mailing list ([MEI-L](https://music-encoding.org/community/community-contacts.html)). All personal members may vote, nominate members for office, stand for office, and otherwise benefit from the activities of MEI.
 
 #### 3.1.2 Institutional Membership
 
@@ -47,7 +47,11 @@ The [Board](https://music-encoding.org/community/mei-board.html) may terminate a
 
 ### 3.3 Resignation
 
-Any member may resign from MEI. Resignation of a Personal or Institutional Membership is effective upon the Board's receipt of a formal (physical or electronic) notice of resignation.
+Any member may resign from MEI. 
+
+Resignation of a Personal Membership is effective upon unsubscribing from MEI-L.
+
+Resignation of an Institutional Membership is effective upon the Board’s receipt of a formal (physical or electronic) notice of resignation.
 
 ## 4 Finances
 
