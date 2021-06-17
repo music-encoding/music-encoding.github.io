@@ -77,7 +77,7 @@ The Board is self-organizing; that is, there will be no formal regulations on ho
 
 ### 5.1 Members
 
-The Board consists of nine (9) elected members plus one (1) member designated by each Host Institution (for details see 7 Host Institutions). All members of the Board (elected and designated) have the right to participate in decision-making processes established by the Board. Any member of the Board may resign from the Board on written notification to the administrative chair (see below).
+The Board consists of nine (9) elected members plus one (1) member designated by each Host Institution (for details see 7 Host Institutions). All members of the Board (elected and designated) have the right to participate in decision-making processes established by the Board.
 
 ### 5.2 Meetings
 
@@ -98,9 +98,7 @@ The elected members of the Board each are elected for a three year term. Terms o
 
 Exception to annual elections and term lengths will be made for the initial election of the Board (see Initial election of the Board) and in case a Board member resigns.
 
-Board members may resign from their commitments at any time but are expected to give adequate notice. After accepting the resignation, the Board may decide on how to proceed concerning the newly vacant position. Options should include but are not limited to holding a special election, appointing a replacement, or leaving the position vacant.
 
-In case of a special election to fill a vacancy between regular elections the newly elected Board member will serve for the remainder of the term of the vacant position.
 
 #### 5.3.1 Eligibility
 
@@ -111,6 +109,14 @@ In order to be available for election to the Board, candidates must hold Persona
 In order to determine a range of candidates, a four-week nomination phase will precede the elections, in which self-nominations are permitted. Individuals will be informed of their nomination and asked to confirm their willingness to serve on the Board determined. Elections will be held in a timely manner after determination of a final list of candidates. A ranked voting system without minimum voter turnout will be applied.
 
 Each member holding Personal Membership in MEI has the right to vote in Board member elections.
+
+### 5.4 Resignation from the Board
+
+Any member of the Board may resign from the Board and their corresponding commitments at any time on written notification (physical or electronic) to the administrative chair or the whole Board.
+
+After accepting the resignation, the Board may decide on how to proceed concerning the newly vacant position. Options should include but are not limited to holding a special election, appointing a replacement, or leaving the position vacant.
+
+In case of a special election to fill a vacancy between regular elections, the newly elected Board member will serve for the remainder of the term of the vacant position.
 
 ## 6 Technical Team
 
