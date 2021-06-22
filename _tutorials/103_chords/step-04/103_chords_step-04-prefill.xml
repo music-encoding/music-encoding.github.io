@@ -1,0 +1,5 @@
+<chord dur="4">
+    <note pname="g" oct="4" />
+    <note pname="c" oct="5" />
+    <note pname="e" oct="5" />
+</chord>

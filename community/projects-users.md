@@ -22,7 +22,7 @@ title: "Projects and users"
       <div class="card project">
           <div class="card-image">
               {% if project.image %}
-              <img class="mei-project-image img-fit-cover" src="{{ site.baseurl }}/images/{{ project.image }}"/>
+              <img class="mei-project-image img-fit-cover" alt="{{ project.name }}" src="{{ site.baseurl }}/images/{{ project.image }}"/>
               {% endif %}
           </div>
           <div class="card-header">
