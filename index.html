@@ -62,14 +62,14 @@ layout: default
     <div class="column col-8 col-md-12">
       <h1>Music Encoding Initiative</h1>
       <p>
-        The Music Encoding Initiative (MEI) is a community-driven effort to define a system for encoding musical documents in a machine-readable structure. MEI brings together specialists from various music research communities, including technologists, librarians, historians, and theorists in a common effort to define best practices for representing a broad range of musical documents and structures. The results of these discussions are formalized in the MEI schema, a core set of rules for recording physical and intellectual characteristics of music notation documents expressed as an eXtensible Markup Language (XML) schema. It is complemented by the MEI Guidelines, which provide detailed explanations of the components of the MEI model and best practices suggestions.
+        The Music Encoding Initiative (MEI) is a community-driven, open-source effort to define a system for encoding musical documents in a machine-readable structure. MEI brings together specialists from various music research communities, including technologists, librarians, historians, and theorists in a common effort to define best practices for representing a broad range of musical documents and structures. The results of these discussions are formalized in the MEI schema, a core set of rules for recording physical and intellectual characteristics of music notation documents expressed as an eXtensible Markup Language (XML) schema. It is complemented by the MEI Guidelines, which provide detailed explanations of the components of the MEI model and best practices suggestions. <a href="{{ site.baseurl}}/about">Read more …</a>
       </p>
       <p>
         MEI is hosted by the <a href="http://www.adwmainz.de/startseite.html">Akademie der Wissenschaften und der Literatur</a>,
         Mainz.
       </p>
       <p>
-        If you want to become an active MEI member, you are invited to read more about the community and then join us on the <a href="{{ site.baseurl}}/community/mailing-list.html">MEI-L mailing list</a>.
+        If you want to become an active MEI member, you are invited to read more about the MEI community and <a href="{{ site.baseurl}}/community/community-contacts.html">how to join us</a>. You are also invited to contribute to the development of MEI on <a href="https://github.com/music-encoding">GitHub</a>, either submitting issues or making pull requests to solve these issues.
       </p>
 
       <section class="sponsors" style="margin-top: 5rem;">
@@ -108,7 +108,7 @@ layout: default
           <div class="tile-content">
             <h5 class="tile-title"><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h5>
             <p class="tile-subtitle text-gray"><small>Posted {{ post.date | date: "%b %-d, %Y" }}</small></p>
-            <p>{{ post.excerpt }}</p>
+            {{ post.excerpt }}
           </div>
         </div>
         

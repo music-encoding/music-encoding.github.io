@@ -4,9 +4,9 @@ sidemenu: conference
 title: "Music Encoding Conference 2021"
 subtitle: ""
 venue: "Universidad de Alicante, Spain"
-image: conference/2021/MEC.jpg
-date-start: 2021-05-25
-date-end: 2021-05-28
+image: conference/2021/mec2021_logo.jpg
+date-start: 2021-07-19
+date-end: 2021-07-22
 redirect_from: /community/conference/
 redirect_from: /conference/
 permalink: "/conference/2021/"
@@ -15,7 +15,7 @@ role: about
 id: about
 ---
 
-<img src="/images/conference/2021/MEC.jpg" class="img-responsive" alt="Music Encoding Conference, Universidad de Alicante, 25–28 May 2021"/>
+<img src="/images/conference/2021/mec2021_logo.jpg" class="img-responsive" alt="Music Encoding Conference, Universidad de Alicante, 25–28 May 2021"/>
 
 <div class="mec2021-page">
 
@@ -23,32 +23,79 @@ id: about
 
     <p>Music encoding is a critical component for fields and areas of study including computational or digital musicology, digital editions, symbolic music information retrieval, and digital libraries. This event brings together enthusiasts from various music research communities, including technologists, librarians, music scholars, and students and provides an opportunity for learning and engaging with and from each other.</p>
 
-    <p>The conference is hosted by Universidad de Alicante. It is co-sponsored with the Instituto Superior de Enseñanzas Artísticas de la Comunidad Valenciana.</p>
+    <p>The conference is hosted by <a href="https://www.ua.es/en/index.html" target="_blank">Universidad de Alicante</a>. It is co-sponsored with the Instituto Superior de Enseñanzas Artísticas de la Comunidad Valenciana (<a href="https://iseacv.gva.es/" target="_blank">ISEA.CV</a>), and generously supported by the Social Sciences and Humanities Research Council of the Government of Canada (<a href="https://www.sshrc-crsh.gc.ca/home-accueil-eng.aspx" target="_blank">SSHRC</a>).</p>
 
-    <p>All attendees are expected to adhere to the conference <a href="https://music-encoding.org/conference/2021/code-of-conduct/" target="blank">Code of Conduct.</a></p>
+    <p>All attendees are expected to adhere to the conference <a href="./local-code-of-conduct.html">Code of Conduct.</a></p>
 
     <p>Questions? Contact Organizing Committee Chair, David Rizo, or Program Committee Chair, Stefan Münnich, at conference2021 at music-encoding.org.</p>
 
+    <div class="container text-center" style="margin: 3em 0 3em 0;">
+        <div class="columns" style="align-items: center;">
 
-    <!-- TODO: ADJUST FOR MEC2021 -->
-    <!--
-      <div class="container text-center" style="margin: 3em 0 3em 0;">
-          <div class="columns">
-              <div class="column col-s-4">
-                  <a href="https://tischlibrary.tufts.edu/" target="blank"><img src="/images/conference/2020/Tisch-logoBlue.jpg" class="mec2020-logo" alt="Tisch Library logo"/></a>
-              </div>
-              <div class="column col-s-4">
-                  <a href="https://library.northeastern.edu/" target="blank"><img src="/images/conference/2020/NULibraryRBcrop.jpg" class="mec2020-logo" alt="Northeastern University logo"/></a>
-              </div>
-              <div class="column col-s-4">
-                  <a href="https://as.tufts.edu/music/" target="blank"><img src="/images/conference/2020/SAS_Music_vert_2.jpg" class="mec2020-logo" alt="Tufts Music and School of Arts & Sciences logo"/></a>
-              </div>
-              <div class="column col-s-4">
-                  <a href="https://digitalhumanities.mit.edu/" target="blank"><img src="/images/conference/2020/DH_MIT_Logo.jpg" class="mec2020-logo" alt="Digital Humanities at MIT logo"/></a>
-              </div>
-          </div>
-      </div>
-       -->
+            <div class="column col-xs-12">
+                <a target="_blank" href="https://web.ua.es/en/iuii/home.html">
+                    <img src="/images/conference/2021/iuii.png" alt="UII" class="img-responsive">
+                </a>
+            </div>
 
+            <div class="column col-xs-12">
+                <a target="_blank" href="https://www.ua.es/en/index.html">
+                    <img src="/images/conference/2021/ua.png" alt="UA" class="img-responsive">
+                </a>
+            </div>
 
+            <div class="column col-xs-12">
+                <a target="_blank" href="http://iseacv.gva.es/">
+                    <img src="/images/conference/2021/isea-cv.png" alt="ISEA.CV" class="img-responsive" >
+                </a>
+            </div>         
+        </div>
+        <div class="columns" style="align-items: center;">
+            <div class="column col-xs-12">
+                <a target="_blank" href="https://www.sshrc-crsh.gc.ca/home-accueil-eng.aspx">
+                    <img src="/images/conference/2021/sshrc-fip-full-color-eng.png" alt="SSHRC" class="img-responsive" style="max-height: 95%;">
+                </a>
+            </div>
+        </div>        
+    </div>
 </div>
+
+<!-- cf. https://developers.google.com/search/docs/data-types/event?hl=de#integrate -->
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Event",
+        "name": "Music Encoding Conference 2021",
+        "description": "The Music Encoding Conference is the annual meeting of the Music Encoding Initiative (MEI) community and all who are interested in the digital representation of music.",
+        "startDate": "2021-07-19",
+        "endDate": "2021-07-22",
+        "eventAttendanceMode": "https://schema.org/MixedEventAttendanceMode",
+        "eventStatus": [
+            "https://schema.org/EventRescheduled",
+            "https://schema.org/EventMovedOnline"
+        ],
+        "previousStartDate": "2021-05-25",
+        "location": [{
+            "@type": "VirtualLocation",
+          	"url": "https://music-encoding.org/conference/2021/"
+        },
+            {
+                "@type": "Place",
+                "name": "Universidad de Alicante",
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressLocality": "Alicante",
+                    "addressCountry": "ES"
+                }
+            }],
+        "image": [
+            "https://music-encoding.org/images/conference/2021/mec2021_logo.jpg"
+        ],
+        "organizer": {
+            "@type": "Organization",
+            "name": "Music Encoding Initiative",
+            "url": "https://music-encoding.org"
+        }
+    }
+</script>
+

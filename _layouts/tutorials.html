@@ -16,7 +16,9 @@ layout: default
                 {{ content }}
             {% endif %}
 
-            <h3 id="stepLabel"></h3>
+            <h3 id="stepLabel">
+                <!-- step label goes in here -->
+            </h3>
             <div id="instruction">
                 <!-- instruction texts go in here -->
             </div>
@@ -69,10 +71,10 @@ layout: default
                 </div>
             </div>
 
-            <script src="/js/ace-src-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
-            <script src="/js/verovio-toolkit.js" type="text/javascript" charset="utf-8"></script>
-            <script src="/js/mei-tutorials.js" type="text/javascript" charset="utf-8"></script>
-            <script type="text/javascript">
+            <script src="/js/ace-src-noconflict/ace.js"></script>
+            <script src="/js/verovio-toolkit.js"></script>
+            <script src="/js/mei-tutorials.js"></script>
+            <script>
 
                 try {
                     fetch("../{{page.data}}")

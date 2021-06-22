@@ -144,67 +144,114 @@ $on-laptop:        800px;
 
 /* MEC 2021 */
 /* TODO: merge into single conference layout? */
+#mec21programTable h5 {
+    font-size: 0.7rem;
+    font-weight: bold;
+}
 
 .mec2021-page {
 
-  margin-top: 2em;
+    margin-top: 2em;
 
-  h2, h3, h4, h5 {
-    margin: 1em 0 .5em 0;
-  }
-
-  .mec2021-logo {
-    height: 6em;
-  }
-
-  .mec2021-program-row-main {
-    margin: 30px 0 30px 15px;
-
-    .mec2021-program-title {
-      margin: 10px 0 10px 0;
-
-      .mec2021-presentation {
-        background-color:#d4d4d4;
-      }
+    h2,
+    h3,
+    h4,
+    h5 {
+        margin: 1em 0 .5em 0;
     }
 
-    .workshop {
-      width: 185pt;
-      height: 190pt;
+    .mec2021-logo {
+        height: 6em;
     }
 
-    .workshop-title {
-      width: 160pt;
-      height: 105pt;
+    .mec2021-program-row-main {
+        margin: 30px 0 30px 15px;
+
+        .mec2021-program-title {
+            margin: 10px 0 10px 0;
+
+            .mec2021-presentation {
+                background-color: #d4d4d4;
+            }
+        }
+
+        .workshop {
+            width: 185pt;
+            height: 190pt;
+        }
+
+        .workshop-title {
+            width: 160pt;
+            height: 105pt;
+        }
+
+        .poster-session {
+            width: 370pt;
+            height: 520pt;
+        }
+
+        .mec2021-program-speakers {
+            font-style: italic;
+            font-size: 0.7rem;
+        }
+
+        .unconference {
+            height: 95pt;
+        }
+
+        .small-card {
+            width: 250px;
+        }
+
+        .card {
+            margin: 20px 0 20px 0;
+            box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+
+            .card-title {
+                font-weight: bold;
+            }
+
+        }
+    }
+    
+    /* 20210409 */
+    table {
+        font-family: "Arial", sans-serif;
+        font-size: 0.9em;
+        border-collapse: collapse;
+        width: 100%;
     }
 
-    .poster-session {
-      width: 370pt;
-      height: 520pt;
+    td {
+        border: 1px solid #999999;
+        padding: 8px;
+        text-align: center;
     }
 
-    .mec2021-program-speakers {
-      font-style: italic;
-      font-size: 0.7rem;
+    th {
+        background-color: #8998e0;
+        color: white;
+        border: 1px solid white;
+        padding: 8px;
+        text-align: center;
     }
 
-    .unconference{
-      height: 95pt;
+    small {
+        font-size: 0.9em;
     }
 
-    .small-card {
-      width: 250px;
-    }
+    button {
+        border: none;
+        border-radius: 8px;
+        color: white;
+        padding: 10px 25px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        background-color: #1a235b;
+    }    
 
-    .card {
-      margin: 20px 0 20px 0;
-      box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
-
-      .card-title {
-        font-weight: bold;
-      }
-
-    }
-  }
-
-  }
+}
