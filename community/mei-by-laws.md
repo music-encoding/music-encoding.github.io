@@ -37,7 +37,7 @@ Institutional Membership in MEI is available for any form of organization, proje
 
 There are three levels of Institutional Membership: An institution that sponsors MEI with an annual contribution of $500, $2000, or $5000 or more will be designated a ‘regular’, ‘patron’, or ‘sustaining’ MEI Institutional Member, respectively. Other forms of in-kind commitment with the same value as the annual fees above, such as staff time or administrative support, may substitute for monetary contributions.
 
-The logos of sponsoring organizations will appear on publications by the [MEI Board](https://music-encoding.org/community/mei-board.html) (e.g. conference proceedings, guidelines) and on [http://www.music-encoding.org](http://www.music-encoding.org). While the logos of sustaining Institutional Members will appear on title pages and on the welcome page of the website, those of sustaining and regular Institutional Members will appear in a dedicated section.
+The logos of sponsoring organizations will appear on publications by the [MEI Board](https://music-encoding.org/community/mei-board.html) (e.g. conference proceedings, guidelines) and on [http://www.music-encoding.org](http://www.music-encoding.org). While the logos of sustaining Institutional Members will appear on title pages and on the welcome page of the website, those of patron and regular Institutional Members will appear in a dedicated section.
 
 All Institutional members in good standing have the right to display the MEI logo on any MEI-related publications or products they create or distribute that conform to the license under which MEI is distributed.
 
