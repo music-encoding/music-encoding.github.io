@@ -43,7 +43,7 @@ All Institutional members in good standing have the right to display the MEI log
 
 ### 3.2 Termination
 
-The [Board](https://music-encoding.org/community/mei-board.html) may terminate an individual or institutional membership in MEI upon good-faith finding of (a) misconduct by such member reflecting discredit upon MEI or (b) violation of these By-laws (including but not limited to the nonpayment of dues or other required charges or assessments).
+The [Board](https://music-encoding.org/community/mei-board.html) may terminate an individual or institutional membership in MEI upon good-faith finding of (a) misconduct by such member reflecting discredit upon MEI or (b) violation of these By-laws.
 
 ### 3.3 Resignation
 
