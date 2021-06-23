@@ -101,7 +101,7 @@ The Board holds regular, virtual or in-person meetings, e.g. approximately every
 
 The elected members of the Board each are elected for a three year term. Terms on the Board are staggered so that three positions are open for election each year. Terms of office begin January 1 at 2 pm UTC.
 
-Exception to annual elections and term lengths will be made for the initial election of the Board (see Initial election of the Board) and in case a Board member resigns.
+Exception to annual elections and term lengths will be made for the initial election of the Board and in case a Board member resigns.
 
 #### 5.3.1 Eligibility
 
