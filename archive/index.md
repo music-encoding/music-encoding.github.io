@@ -8,8 +8,8 @@ Here you will find archived material, such as previous versions of MEI, document
 
 ## Past Music Encoding Conferences
 
-* [Programs](../conference/past)
-* [Proceedings](../conference/proceedings)
+* [Programs](/conference/past.html)
+* [Proceedings](/conference/proceedings.html)
 
 ## Previous Versions of MEI
 

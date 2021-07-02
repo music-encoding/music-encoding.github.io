@@ -1,7 +1,7 @@
 ---
 layout: tutorials
 type: tutorial
-name: "Chords"
-fullname: "A short tutorial about chords"
+name: "BEGINNERS: Chords"
+fullname: "A short tutorial about chords in MEI"
 data: "103_chords.json"
 ---
