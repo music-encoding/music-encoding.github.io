@@ -254,4 +254,19 @@ $on-laptop:        800px;
         background-color: #1a235b;
     }    
 
+    .keynotesTable td {
+        text-align: left;
+        vertical-align: top;
+        border: none;
+    }
+
+    .keynotesTable img {
+        width: 230px;
+        height: auto;
+    }
+
+    .keynotesTable h5 {
+        margin-top: 0;
+    }
+
 }
