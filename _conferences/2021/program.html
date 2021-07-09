@@ -48,7 +48,7 @@ published: true
                 <h5>15:30-16:00 Opening</h5>
                 <hr>
                 <h5>16:00-17:15 Keynote #1</h5>
-                <p><a href="#keynotes">Álvaro Torrente and Ana Llorens</a></p>
+                <p><a href="#keynote1">Álvaro Torrente and Ana Llorens</a></p>
                 <p>The Musicology Lab: Teamwork and the Musicological Toolbox</p>
                 <hr>
                 <h5>17:15-17:45 Break</h5>
@@ -83,7 +83,7 @@ published: true
                 <h5>19:15-19:30 Short Break</h5>
                 <hr>
                 <h5>19:30-20:45 Keynote #2</h5>
-                <p><a href="#keynotes">Pip Willcox</a></p>
+                <p><a href="#keynote2">Pip Willcox</a></p>
                 <p>Automatic for the People: archives and the future</p>
                 <hr>
                 <h5>20:45-21:00 Closing</h5>                
@@ -92,12 +92,12 @@ published: true
             <td> <!-- thursday -->
                 <h5>14:00-15:00 Board meeting</h5>
                 <hr>
-                <h5>15:00-16:00 Community meeting</h5>
+                <h5>15:00-16:00 <a href="#community">Community meeting</a> (open to all)</h5>
                 <hr>
-                <h5>16:00-16:30 Meet the designers</h5>
+                <h5>16:00-16:30 <a href="#designers">Meet the MEC2021 design team</a></h5>
                 <hr>
                 <h5>16:30-17:30 Interest groups (<a href="https://music-encoding.org/community/interest-groups.html" target="_blank">IG</a>) meetings</h5>
-                <p>Metadata IG | Mensural IG </p>
+                <p>Metadata IG | Mensural IG </p>
                 <hr>
                 <h5>17:30-17:40 Short Break</h5>                
                 <hr>
@@ -120,7 +120,7 @@ published: true
     
     
     <h3 id="keynotes">Keynote speakers</h3>
-    <h4>The Musicology Lab: Teamwork and the Musicological Toolbox</h4>
+    <h4 id="keynote1">The Musicology Lab: Teamwork and the Musicological Toolbox</h4>
     <table class="keynotesTable">
         <tr>
             <td><img src="/images/conference/2021/atorrente.jpg" alt="Álvaro Torrente"></td>
@@ -144,14 +144,14 @@ published: true
     </table>
 
     <hr>
-    <h4>Automatic for the People: archives and the future</h4>
+    <h4 id="keynote2">Automatic for the People: archives and the future</h4>
     <table class="keynotesTable">
         <tr>
             <td><img src="/images/conference/2021/pwillcox.jpg" alt="Pip Willcox"></td>
             <td>
                 <h5><a href="https://www.nationalarchives.gov.uk/about/our-research-and-academic-collaboration/our-research-and-people/staff-profiles/pip-willcox/" target="_blank">Pip Willcox</a></h5>
                 <h6>Head of Research, The National Archives (UK)</h6>
-                <p>Pip Willcox is Head of Research at The National Archives (UK). The National Archives carries out research across several fields including applied computer science, archival theory and practice, conservation and heritage science, and into the contents of the collections. Pip’s own research is interdisciplinary, and brings together collections, technology and people.</p> 
+                <p>Pip Willcox is Head of Research at The National Archives (UK). The National Archives carries out research across several fields including applied computer science, archival theory and practice, conservation and heritage science, and the contents of the collections. Pip’s own research is interdisciplinary, and brings together collections, technology and people. She retains a personal research interest in music technologies and AI for creativity from her time on the Fusing Audio and Semantic Technologies UK research programme.</p>
                 <p>Her current projects include Engaging Crowds and Deep Discoveries, funded by the UK Arts and Humanities Research Council’s programme Towards a National Collection. In her previous role she founded the University of Oxford’s Centre for Digital Scholarship at the Bodleian Library, and directed the Digital Humanities at Oxford Summer School.</p>
             </td>            
         </tr>
@@ -162,17 +162,23 @@ published: true
     <dl>
         <dt>Workshop 1: The Verovio ecosystem</dt>
         <dd>
+            <p><em>Convenors: Laurent Pugin & Andrew Hankinson</em></p>
+
             <p><a href="https://www.verovio.org/" target="_blank">Verovio</a> is an open-source library for engraving MEI scores. It can be used in a wide range of programming environments, including as a JavaScript toolkit in webpages. Verovio output is in SVG, an XML vector graphic format that makes it possible to easily interact with the encoding of the music score. It is used in dozens of digital musicology projects, with applications in digital critical editions, genetic editions, early music, audio alignment, online editing, music addressability, visualisation, performance, andeven composition via artificial intelligence.</p>
 
             <p>The development of Verovio is conducted in close collaboration with the MEI community and is meant to be as generic as possible. Verovio itself is a C++ codebase hosted on GitHub and around which a rich development ecosystem has been put in place over the years. This ecosystem, which is continuously increased and improved, will be the focus of the workshop.</p>
         </dd>
         <dt>Workshop 2: LilyPond Workshop</dt>
         <dd>
+            <p><em>Convenors: Dennis Ried & Daniel Fütterer</em></p>
+
             <p>The course will first explain the syntax and basic functions of LilyPond using simple examples that will be implemented together with the participants. Building on this, workshop participants will be introduced to more complex examples from real projects (including splitting into multiple files, grouping settings into variables, working with (orchestral) scores and vocal excerpts, working in a team and with version management). The extension OLL with scholarLy even allows the integration of critical annotations on the spot, which is a big advantage compared to working with other notation programs (usually critical annotations have to be entered separately). An introduction with first application examples will be given in this module.</p>
             <p>The second part will be about the interfaces of LilyPond: Import from MusicXML, exportfrom MEI to LilyPond with MEILER, integration with LaTeX (glyphs and note examples in running text, larger note examples, critical report with scholarLy).</p>
         </dd>
         <dt>Workshop 3: Humdrum Workshop</dt>
         <dd>
+            <p><em>Convenor: Craig Sapp</em></p>
+
             <p>The workshop will start with a hands-on tutorial of the Humdrum data format, beginning with <a href="https://doc.verovio.humdrum.org/humdrum/getting_started">fundamentals of encoding music notation</a> in Humdrum  using the <a href="https://verovio.humdrum.viewer">Verovio Humdrum Viewer</a> (VHV). Participants will learn how to import MusicXML/MEI files into VHV and convert them into Humdrum data, as well as exporting Humdrum data to MEI and PDF files.  A survey of <a href="https://doc.verovio.humdrum.org/graphic/index.html">graphical editing capabilities</a> in VHV and equivalent direct textual changes to the Humdrum data will be compared.  Basic data processing methods such as adding lyrics and figured bass will be presented.  Encoding and working with mensural music as Humdrum data will be covered depending on the interests of the participants.</p>
 
             <p>Recent updates to VHV such as the <a href="https://doc.verovio.humdrum.org/interface/toolbar">toolbar</a> will be highlighted, including <a href="https://doc.verovio.humdrum.org/interface/toolbar/#buffer-save-toolbar">saving</a> and loading data into persistent buffers within the web browser, <a href="https://doc.verovio.humdrum.org/interface/toolbar/#search-toolbar">searching musical content</a>, and <a href="https://doc.verovio.humdrum.org/interface/toolbar/spreadsheet">linking VHV to Google Spreadsheets</a>, which increases efficiency for certain types of editing. Data processing and analysis using the <a href="https://doc.verovio.humdrum.org/filter">filter toolbar</a> will also be demonstrated.  Batch processing and analysis of Humdrum data on the command-line will be demonstrated and compared to VHV filters.</p>
@@ -183,10 +189,17 @@ published: true
     <h4 id="workshops2">19 July 2021, 18:30 - 21:00 PM (CEST)</h4>
     <dl>
         <dt>Workshop 4: Introduction to MEI</dt>
-        <dd>This workshop is designed to introduce MEI to those interested in its history, current uses, and future development. No previous experience with MEI or XML is required; however, an understanding of music notation and other markup schemes, like HTML and TEI, will be helpful. For hands-on exercises, participants are encouraged to install the oXygen XML editor, which is available for free from www.oxygenxml.com for a limited trial period, or similar software. </dd>
+
+        <dd>
+            <p><em>Convenors: Maristella Feustle & Perry Roland</em></p>
+
+            <p>This workshop is designed to introduce MEI to those interested in its history, current uses, and future development. No previous experience with MEI or XML is required; however, an understanding of music notation and other markup schemes, like HTML and TEI, will be helpful. For hands-on exercises, participants are encouraged to install the oXygen XML editor, which is available for free from www.oxygenxml.com for a limited trial period, or similar software.</p>
+        </dd>
         
         <dt>Workshop 5: ODD Tutorial</dt>
         <dd>
+            <p><em>Convenor: Johannes Kepper</em></p>
+
             <p>This advanced technical workshop is aimed at members of the music encoding community who want to contribute to the development of the MEI schema. The goal is to broaden the insight into the technical dimensions of MEI, and to increase the pool of people working on its development. Familiarity with the MEI specification and some technical experience is expected (in particular, familiarity with XML and the concepts of elements, attributes, and values).</p>
             <p>During the workshop, we will walk through the Advanced MEI Online Tutorial “Understanding ODD –A tutorial on the internal structure of MEI.” This tutorial introduces the basic concepts of the ODD (One Document Does-it-all) language in which the schema of MEI is written. We will explain the basic principles of the ODD structures found in MEI through the individual examples covered in the tutorial.</p>
         </dd>
@@ -195,6 +208,7 @@ published: true
     <h3>Paper presentations</h3>
     <h4 id="oral1">#1. 20 July 2021, 17:45-19:15 (CEST) </h4>
     <h5>Tools & Applications</h5>
+    <p><em>Session chairs: Jorge Calvo-Zaragoza & Martha E. Thomae</em></p>
     <ul>
         <li>
             <strong>Codified Spanish music heritage through Verovio: the online platforms Fondo de Música Tradicional IMF-CSIC and Books of Hispanic Polyphony IMF-CSIC</strong>
@@ -226,6 +240,7 @@ published: true
     </ul>
 
     <h4 id="panel">Panel. 21 July, 15:30-16:45 (CEST) </h4>
+    <p><em>Session chair: Andrew Hankinson</em></p>
     <ul><li><strong>Encoding Polyphony from Medieval Manuscripts Notated in Mensural Notation</strong>
     <br>Karen Desmond (1), Laurent Pugin (2), Juliette Regimbal (3), David Rizo (4), Craig Sapp (5), Martha E. Thomae (3)
     <br><em>(1) Brandeis University, United States of America 
@@ -239,6 +254,7 @@ published: true
 
     <h4 id="oral2">#2. 21 July 2021, 17:15-18:45 (CEST) </h4>
     <h5>Encoding & Edition</h5>
+    <p><em>Session chairs: Julia Flanders & Craig Sapp</em></p>
     <ul>
         <li>
             <strong>Tools and Perspectives for a Digital Critical Edition of Fourteenth-Century Polyphonic Music</strong>
@@ -260,6 +276,7 @@ published: true
     </ul>
 
     <h5>Data, metadata, linked data </h5>
+    <p><em>Session chairs: Sophia Dörner & Daniel Bangert</em></p>
     <ul>
         <li>
             <strong>METAdata and metaDATA</strong>
@@ -284,6 +301,7 @@ published: true
     </ul>
 
     <h3 id="posters">Posters. 20 July 2021, 20:00-21:00 (CEST)</h3>
+    <p><em>Session chairs: Margrethe Bue & Salome Obert</em></p>
     <ul>
         <li>
             <strong>PROFMUS Application: Development, Status, and Future Progress</strong>
@@ -341,4 +359,11 @@ published: true
             <br><em>Osnabrück University, Germany</em>
         </li>
     </ul>
+
+    <h3>Meetings</h3>
+    <h4 id="community">Community meeting. 21 July 2021, 15:00 to 16:00 PM (CEST)</h4>
+    <p>Annual meeting of the Music Encoding Initiative community (open to all). Includes community-related topics, announcement of upcoming MEC venue and much more.</p>
+
+    <h4 id="designers">Meet the designers. 21 July 2021, 16:00 to 16:30 PM (CEST)</h4>
+    <p>Meet the graphic design team from the Escola d'Art i Superior de Disseny d'Alacant (EASDA-ISEA.CV), Spain, responsible for the MEC2021 layout: Alicia Orts, Naomi Barrachina, Luis González, Aida Cabañero, Isabel Llorca, Elías Amorós, Miguel Arnau, Esther de las Heras (coord.).</p>
 </div>
