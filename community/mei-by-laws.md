@@ -91,7 +91,7 @@ The administrative chair takes responsibility for calling Board meetings. The de
 
 The two Technical Co-chairs take responsibility for organizing and chairing the Technical Team, see details below (6 Technical Team).
 
-The two Elections Officers will take care of running the yearly MEI elections. The Elections Officers are appointed by the Board from amongst the MEI community and should not be running for election themselves.
+The two Elections Officers will take care of running the yearly MEI elections. The Elections Officers are appointed by the Board from amongst the MEI community and shall not be running for election themselves.
 
 ### 5.2 Meetings
 
