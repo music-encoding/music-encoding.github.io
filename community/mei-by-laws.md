@@ -110,7 +110,7 @@ In order to be available for election to the Board, candidates must hold Persona
 #### 5.3.2 Election procedure
 
 In order to determine a range of candidates, a two-week nomination phase will precede the elections, in which self-nominations are permitted. Individuals will be informed of their nomination and asked to confirm their willingness to serve on the Board determined. Elections will be held in a timely manner after determination of a final list of candidates. Elections shall be open for at least two weeks. Elections shall close before the start of the terms of office of the elected candidates.
-A ranked voting system without minimum voter turnout will be applied.
+All open board seats shall be contested by all candidates in one election. There is no minimum voter turnout requirement. Ballots shall allow ranked voting. The winners shall be determined by a counting method suitable for electing a group of candidates, e.g. the Single Transferable Vote (STV) method.
 
 Each member holding Personal Membership in MEI has the right to vote in Board member elections.
 
