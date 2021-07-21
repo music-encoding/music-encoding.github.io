@@ -2,10 +2,9 @@
 layout: projects
 name: Rebalancing the Music Canon
 fullname: "An open-access music data project aims to make works by un(der)-represented people more discoverable, decenter the musical canon, and make data-driven music scholarship more diverse and inclusive."
-image:
+image: "projects/rebalancing-music-canon.png"
 contributors:
     - "Anna E. Kijas, Tufts University"
-    - "[Student contributors](https://rebalancing-music-canon.com/about/)"
 ---
 "[Rebalancing the Music Canon](https://rebalancing-music-canon.com/)" is an open-access music data project aims to make works by un(der)-represented people more discoverable, decenter the musical canon, and make data-driven music scholarship more diverse and inclusive. The nature of this project is iterative, because it is being used as a way to teach students about transcription and encoding.  
 
