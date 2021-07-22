@@ -155,7 +155,7 @@ In order to form a new IG, a proposal shall be made to the Board, containing the
 Each interest group must:
 
 * select an administrative chair
-* produce regular activity reports (annual reports due 1 month prior to the annual Board meeting)
+* produce regular activity reports. The report should summarize the Interest Groups activities, completed goals, as well as plans for future meetings and activities.
 
 A single person may not be administrative chair of multiple IGs. The IG’s administrative chair takes responsibility for acting as contact person for the IG, ensuring regular activity, submitting reports to the Board, and organizing the group’s work, e.g. calling for meetings and coordinating development efforts.
 
