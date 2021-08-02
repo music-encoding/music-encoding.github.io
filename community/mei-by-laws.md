@@ -83,11 +83,11 @@ The Board consists of nine (9) elected members plus one (1) member designated by
 
 The Board assigns the following roles to individuals amongst its members:
 
-* one administrative chair
+* one Administrative Chair
 * two Technical Co-chairs
 * two Elections Officers
 
-The administrative chair takes responsibility for calling Board meetings. The designated Host Institution Board members act as _liaison_ with the host organizations. Moreover, the chair of the Board is the main representative of the whole MEI Community and thus has representational functions and obligations and may act on behalf of the whole MEI community on such occasions. (N.B. the above is not to say that the chair of the Board has more influence and decision competence than any other member of the Board. The chair of the Board is simply “first among equals.”)
+The Administrative Chair takes responsibility for calling Board meetings. The designated Host Institution Board members act as _liaison_ with the host organizations. Moreover, the chair of the Board is the main representative of the whole MEI Community and thus has representational functions and obligations and may act on behalf of the whole MEI community on such occasions. (N.B. the above is not to say that the chair of the Board has more influence and decision competence than any other member of the Board. The chair of the Board is simply “first among equals.”)
 
 The two Technical Co-chairs take responsibility for organizing and chairing the Technical Team, see details below (6 Technical Team).
 
@@ -116,7 +116,7 @@ Each member holding Personal Membership in MEI has the right to vote in Board me
 
 ### 5.4 Resignation from the Board
 
-Any member of the Board may resign from the Board and their corresponding commitments at any time on written notification (physical or electronic) to the administrative chair or the whole Board.
+Any member of the Board may resign from the Board and their corresponding commitments at any time on written notification (physical or electronic) to the Administrative Chair or the whole Board.
 
 After accepting the resignation, the Board may decide on how to proceed concerning the newly vacant position. Options should include but are not limited to holding a special election, appointing a replacement, or leaving the position vacant.
 
@@ -124,7 +124,7 @@ In case of a special election to fill a vacancy between regular elections, the n
 
 ## 6 Technical Team
 
-The [Technical Team](https://music-encoding.org/community/technical-team.html) will consist of any willing community members and the two Board members appointed Technical Co-chairs (see [5 Board](#5-board)). The two Technical Co-chairs of the Board act as administrative chairs of the Technical Team, e.g. call meetings and coordinate development efforts. Moreover the two co-chairs have administrative privileges for the MEI repositories. The MEI Technical Team holds regular, virtual or in-person meetings, e.g. approximately every three months. For every meeting, an agenda shall be published online prior to the meeting and minutes of the meeting shall be provided in a timely manner following the meeting.
+The [Technical Team](https://music-encoding.org/community/technical-team.html) will consist of any willing community members and the two Board members appointed Technical Co-chairs (see [5 Board](#5-board)). The two Technical Co-chairs of the Board act as Administrative Chairs of the Technical Team, e.g. call meetings and coordinate development efforts. Moreover the two Co-chairs have administrative privileges for the MEI repositories. The MEI Technical Team holds regular, virtual or in-person meetings, e.g. approximately every three months. For every meeting, an agenda shall be published online prior to the meeting and minutes of the meeting shall be provided in a timely manner following the meeting.
 
 Technical Team members shall serve as such without remuneration.
 
@@ -154,10 +154,10 @@ In order to form a new IG, a proposal shall be made to the Board, containing the
 
 Each interest group must:
 
-* select an administrative chair
+* select an Administrative Chair
 * produce regular activity reports. The report should summarize the Interest Groups activities, completed goals, as well as plans for future meetings and activities.
 
-A single person may not be administrative chair of multiple IGs. The IG’s administrative chair takes responsibility for acting as contact person for the IG, ensuring regular activity, submitting reports to the Board, and organizing the group’s work, e.g. calling for meetings and coordinating development efforts.
+A single person may not be Administrative chair of multiple IGs. The IG’s Administrative Chair takes responsibility for acting as contact person for the IG, ensuring regular activity, submitting reports to the Board, and organizing the group’s work, e.g. calling for meetings and coordinating development efforts.
 
 Each IG will be self-organizing; that is, there will be no formal regulations on how any other responsibilities are to be divided amongst its members. In addition, the IG may establish decision-making processes as necessary; however, it should rely on consensus rather than majority rule whenever possible.
 
