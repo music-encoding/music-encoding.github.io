@@ -12,7 +12,7 @@ The name of this organisation is ‘Music Encoding Initiative’ (hereafter abbr
 
 The purpose of MEI is to create, promote, and diffuse a semantically rich model for music notation that:
 
-* accommodates the encoding of the intellectual and physical characteristics of music notation documents, primarily focusing on but not being limited to Common Western Music Notation (CWMN);
+* accommodates the encoding of the intellectual and physical characteristics of music notation documents, primarily focusing on, but not being limited to, Common Western Music Notation (CWMN);
 * is designed by the scholarly community for scholarly uses, but does not exclude other uses;
 * provides for the common functions of traditional facsimile, critical, and performance editions;
 * has a modular structure that permits use dependent on the goals of scholars; and
@@ -87,7 +87,7 @@ The Board assigns the following roles to individuals amongst its members:
 * two Technical Co-chairs
 * two Elections Officers
 
-The administrative chair takes responsibility for calling Board meetings. The designated Host Institution Board members act as _liaison_ with the host organizations. Moreover, the chair of the Board is the main representative of the whole MEI Community and thus has representational functions and obligations and may act on behalf of the whole MEI community on such occasions. (N.B. the above is not to say that the chair of the Board has more influence and decision competence than any other member of the Board. The chair of the Board is simply be “first among equals.”)
+The administrative chair takes responsibility for calling Board meetings. The designated Host Institution Board members act as _liaison_ with the host organizations. Moreover, the chair of the Board is the main representative of the whole MEI Community and thus has representational functions and obligations and may act on behalf of the whole MEI community on such occasions. (N.B. the above is not to say that the chair of the Board has more influence and decision competence than any other member of the Board. The chair of the Board is simply “first among equals.”)
 
 The two Technical Co-chairs take responsibility for organizing and chairing the Technical Team, see details below (6 Technical Team).
 
@@ -95,13 +95,13 @@ The two Elections Officers will take care of running the yearly MEI elections. T
 
 ### 5.2 Meetings
 
-The Board holds regular, virtual or in-person meetings, e.g. approximately every three months. As schedules and funding permit, the Board meets in person at least once per year. For every meeting, an agenda shall be published online prior to the meeting and minutes of the meeting shall be provided in a timely manner following the meeting. Depending on the availability of funding, the members of the Board may be refunded travel costs for this meeting.
+The Board holds regular, virtual, or in-person meetings, e.g. approximately every three months. As schedules and funding permit, the Board meets in person at least once per year. For every meeting, an agenda shall be published online prior to the meeting and minutes of the meeting shall be provided in a timely manner following the meeting. Depending on the availability of funding, the members of the Board may be refunded travel costs for this meeting.
 
 ### 5.3 Terms & Elections
 
 The elected members of the Board each are elected for a three year term. Terms on the Board are staggered so that three positions are open for election each year. Terms of office begin January 1 at 2 pm UTC.
 
-Exception to annual elections and term lengths will be made for the initial election of the Board and in case a Board member resigns.
+Exceptions to annual elections and term lengths will be made for the initial election of the Board and in case a Board member resigns.
 
 #### 5.3.1 Eligibility
 
