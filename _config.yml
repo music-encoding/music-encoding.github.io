@@ -47,8 +47,8 @@ menu:
       url: '/conference'
       submenu:
           - id: upcoming
-            label: 'MEC 2021'
-            url: '/2021'
+            label: 'MEC 2022'
+            url: '/2022'
           - id: previous
             label: 'Past Conferences'
             url: '/past.html'
