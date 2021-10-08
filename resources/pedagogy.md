@@ -18,6 +18,6 @@ If you have questions or need assistance, please reach out to the [Pedagogy Inte
 
 <div class="columns">
     <div class="column col-12 bibliography">
-        <script src="https://bibbase.org/show?bib=https%3A%2F%2Fapi.zotero.org%2Fgroups%2F4439204%2Fitems%3Fkey%3D8lnTbafaItBb4ZVOjRCEYliR%26format%3Dbibtex%26limit%3D100&jsonp=1"&theme=dividers&nocache=1&authorFirst=1></script>
+        <script src="https://bibbase.org/show?bib=https%3A%2F%2Fapi.zotero.org%2Fgroups%2F4439204%2Fitems%3Fkey%3D8lnTbafaItBb4ZVOjRCEYliR%26format%3Dbibtex%26limit%3D100&jsonp=1&theme=dividers&nocache=1&authorFirst=1"></script>
     </div>
 </div>
