@@ -8,14 +8,14 @@ on:
       branch:
         description: 'Branch to check'
         required: true
-        default: master
+        default: main
 
 
 # globals
 env:
   CHECK_WEBSITE: https://music-encoding.org
   CHECK_OWNER: music-encoding
-  CHECK_BRANCH: master
+  CHECK_BRANCH: main
 
 
 jobs:
