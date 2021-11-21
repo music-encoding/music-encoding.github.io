@@ -4,7 +4,7 @@ title:  "MEI Board: Call for candidates"
 date:   2021-11-20
 categories: update
 ---
-On 31 December 2021 the terms of three MEI Board members will come to an end. The entire Board wishes to thank Benjamin W. Bohl, Elsa De Luca, and Ichiro Fujinaga for their service and dedication to the MEI community.
+On 31 December 2021 the terms of three MEI Board members will come to an end. The entire Board wishes to thank Benjamin W. Bohl, Elsa De Luca, and Ichiro Fujinaga for their service and dedication to the MEI community. Additional gratitude is due Elsa for her leadership as Chair of the Board.
 
 In order to fill these soon-to-be-vacant positions, elections must be held. The election process will take place in accordance with the Music Encoding Initiative By-Laws. [1]
 
