@@ -8,8 +8,7 @@ On 31 December 2021 the terms of three MEI Board members will come to an end. Th
 
 In order to fill these soon-to-be-vacant positions, elections must be held. The election process will take place in accordance with the Music Encoding Initiative By-Laws. [1]
 
-To nominate candidates, please do so via this form:
-https://forms.gle/XCdSyeQ7BN6cbad27
+To nominate candidates, please do so via this [form](https://forms.gle/XCdSyeQ7BN6cbad27).
 
 The timeline of the elections will be as follows:
 
@@ -24,7 +23,7 @@ Nomination phase (20 November – 4 December, 2021 [2])
 * Candidates have to be members of the MEI-L mailing list but may register until 16 December 2021.
 
 Election phase (18 December – 31 December, 2021)
-* The election will take place using OpaVote and the Ranked Choice Voting method (https://www.opavote.com/methods/ranked-choice-voting).
+* The election will take place using OpaVote and the [Ranked Choice Voting method](https://www.opavote.com/methods/ranked-choice-voting).
 * You will be informed about the election and your individual voting tokens in a separate email.
 
 Post election phase
@@ -39,6 +38,5 @@ Peter Stadler and Laurent Pugin
 MEI election administrators 2021
 by appointment of the MEI Board
 
-[1] The By-laws of the Music Encoding Initiative are available online at: http://music-encoding.org/community/mei-by-laws.html.
-
+[1] The By-laws of the Music Encoding Initiative are available [online](https://music-encoding.org/community/mei-by-laws.html).  
 [2] All deadlines are referenced to 11:59 pm (UTC)
