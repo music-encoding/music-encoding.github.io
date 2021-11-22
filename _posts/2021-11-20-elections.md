@@ -38,5 +38,5 @@ Peter Stadler and Laurent Pugin
 MEI election administrators 2021
 by appointment of the MEI Board
 
-[1] The By-laws of the Music Encoding Initiative are available [online](http://music-encoding.org/community/mei-by-laws.html).  
+[1] The By-laws of the Music Encoding Initiative are available [online](https://music-encoding.org/community/mei-by-laws.html).  
 [2] All deadlines are referenced to 11:59 pm (UTC)
