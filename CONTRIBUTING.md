@@ -47,3 +47,4 @@ Once all of your changes have been committed and pushed to your fork, you can pr
 ### Step 7. Delete your local branch (optional)
 
 When your pull request has been accepted, it is then safe to delete the branch that you created in Step 2. This will ensure you do not have older branches around that get progressively outdated.
+
