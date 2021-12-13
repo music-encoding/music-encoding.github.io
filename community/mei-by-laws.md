@@ -37,7 +37,7 @@ Institutional Membership in MEI is available for any form of organization, proje
 
 There are three levels of Institutional Membership: An institution that sponsors MEI with an annual contribution of $500, $2000, or $5000 or more will be designated a ‘regular’, ‘patron’, or ‘sustaining’ MEI Institutional Member, respectively. Other forms of in-kind commitment with the same value as the annual fees above, such as staff time or administrative support, may substitute for monetary contributions.
 
-The logos of sponsoring organizations will appear on publications by the [MEI Board](https://music-encoding.org/community/mei-board.html) (e.g. conference proceedings, guidelines) and on [http://www.music-encoding.org](http://www.music-encoding.org). While the logos of sustaining Institutional Members will appear on title pages and on the welcome page of the website, those of patron and regular Institutional Members will appear in a dedicated section.
+The logos of sponsoring organizations will appear on publications by the [MEI Board](https://music-encoding.org/community/mei-board.html) (e.g. conference proceedings, guidelines) and on [https://www.music-encoding.org](https://www.music-encoding.org). While the logos of sustaining Institutional Members will appear on title pages and on the welcome page of the website, those of patron and regular Institutional Members will appear in a dedicated section.
 
 All Institutional members in good standing have the right to display the MEI logo on any MEI-related publications or products they create or distribute that conform to the license under which MEI is distributed.
 
@@ -144,7 +144,7 @@ Any institution interested in promoting the goals and purpose of MEI may apply t
 
 ### 7.1 Rights & Duties
 
-Host Institutions will be allowed to designate a representative of their organization as a regular member of the MEI Board. The logos of Host Institutions will appear on the first page of publications by the MEI Board (e.g. conference proceedings, guidelines) and on the welcome page of [http://www.music-encoding.org](http://www.music-encoding.org). The Host Institution will be allowed to advertise themselves as a MEI Host Institution. Other rights and duties both of MEI and a Host Institution are subject to individual agreements between the institution and the Board. These agreements shall be fixed in written form. Example agreements may include: provision of technical or administrative support of MEI through the Host Institution, installing an MEI-related working group at the Host Institution, etc.
+Host Institutions will be allowed to designate a representative of their organization as a regular member of the MEI Board. The logos of Host Institutions will appear on the first page of publications by the MEI Board (e.g. conference proceedings, guidelines) and on the welcome page of [https://www.music-encoding.org](https://www.music-encoding.org). The Host Institution will be allowed to advertise themselves as a MEI Host Institution. Other rights and duties both of MEI and a Host Institution are subject to individual agreements between the institution and the Board. These agreements shall be fixed in written form. Example agreements may include: provision of technical or administrative support of MEI through the Host Institution, installing an MEI-related working group at the Host Institution, etc.
 
 ## 8 Interest Groups
 

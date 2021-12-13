@@ -9,7 +9,6 @@ title: "Past Music Encoding Conferences"
 
 {% comment %}
 *  The following line captures the current time (at build time!) into the `now` variable. The `date: '%s'` filter captures the date as a timestamp and `plus: 0` ensures that any string values are cast to integers.
-* Cf. https://maedi.com/code/filter-by-date/ 
 {% endcomment %}
 {% capture now %}{{'now' | date: "%s" | plus: 0 }}{% endcapture %}
 
