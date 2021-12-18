@@ -8,6 +8,22 @@ title: "2021 Board Election Candidate Statements"
 Candidates for the MEI Elections are invited to send along a brief CV and Candidate Statement. 
 These are provided below, ordered alphabetically by surname.
 
+## Benjamin W. Bohl
+
+#### CV
+
+Born 1983 Benjamin finished his studies in musicology in 2008 with his M.A. thesis on “Combinatorics as method of composition. Studies on Francesco Saverio Geminiani’s ›Guida Armonica o Dizionario Armonico‹“, including a digital edition of the treatise. His affiliation to MEI started with his work at the Edirom project at Detmold in 2009 and has continued ever since in several other research context. While in 2016 Benjamin started as editor with the Bernd Alois Zimmermann-Gesamtausgabe and today he is filling the position of a Research Software Engineer for the project. The insights gained as editor help him identifying community and user needs for his tool development, e.g. the oXygen-MEI-addon or build processes of schemata and data packages for digital editions.
+
+#### Statement
+
+From the beginning of my professional career MEI has been a central aspect of my day-to-day work. Seeing it implemented as backbone of the Edirom software was only the beginning of a worthwhile engagement with both the format, and the emerging community. I was fascinated by the fact that working with MEI meant working with music professionals from all around the world. Seeing all the effort done to bring together such things as critical edition, historical notation, or music analysis in a single format on the sole basis of shared interest was the spirit that fuelled my commitment to MEI.
+
+As Board member I would love to care preserving and spreading this spirit by:
+
+1. Promoting open communication standards to foster high rate community involvement.
+1. Helping people getting involved with MEI, by supporting low level entry facilities and documentation, especially for those not coming from a technical background, i.e. by simplifying the build process of MEI schema and guidelines.
+
+Although these general issues might not promote new features in MEI’s encoding guidelines, I see them as central aspect of MEI’s success. Nevertheless I welcome technical advance and developments in the cosmos of MEI and would love to help anybody to get the most from and for the community by complying with the above aspects.
 
 ## Elsa De Luca
 
