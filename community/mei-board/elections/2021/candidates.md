@@ -31,7 +31,7 @@ Although these general issues might not promote new features in MEI’s encoding
 
 [Elsa De
 Luca](https://sites.google.com/fcsh.unl.pt/elsadeluca/home?authuser=0)
-is an early music palaeography based at
+is an early music palaeographer based at
 [CESEM ](https://cesem.fcsh.unl.pt/en/pessoa/elsa-de-luca-2/) – FCSH NOVA
 University of Lisbon since 10/2016. This appointment follows two
 previous postdoctoral fellowships at CESEM (05/2011–04/2013) and at the
