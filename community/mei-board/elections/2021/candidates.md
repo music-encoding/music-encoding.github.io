@@ -21,7 +21,7 @@ University of Lisbon since 10/2016. This appointment follows two
 previous postdoctoral fellowships at CESEM (05/2011–04/2013) and at the
 University of Bristol (05/2013–08/2016). Currently, Elsa is Coordinator
 of the *[Portuguese Early Music
-Database](http://www.google.com/url?q=http%3A%2F%2Fpemdatabase.eu%2F&sa=D&sntz=1&usg=AFQjCNGYC2yGsG4vsZWX0wW_d-rtlsxT3Q);* co-director
+Database](http://pemdatabase.eu);* co-director
 of the book series *Musicalia* *Antiquitatis &* *Medii* *Aevi*,
 published by Brepols; and she served as Administrative Chair (2020–21)
 and member of the Board of the *Music Encoding Initiative *(2019–21).
@@ -35,7 +35,7 @@ the chants for the mass and office.
 
 Elsa holds a PhD in Historical Musicology (Università del Salento, 2011)
 and a Piano Diploma (2002). Her research on notations in Iberian and
-French manuscripts (10^th^ – 16^th^ cent.) and Visigothic musical
+French manuscripts (10<sup>th</sup> – 16<sup>th</sup> cent.) and Visigothic musical
 cryptography led to publications in major journals (*Early Music
 History, Journal of Medieval Iberian Studies, MusikTheorie, Revue de
 Musicologie, CSIC Anuario de Estudios Medievales* etc.). Elsa has
@@ -91,6 +91,83 @@ discussion and working environment that the community provides. If I was to be
 elected as a Board member, I would be delighted to share my personal expertise 
 in the fields of musicology and information science to support the aims of the 
 community in any way I can.
+
+
+## Anna E. Kijas 
+
+#### CV
+
+Anna E. Kijas is the Head of Lilly Music Library at Tufts University. She is 
+responsible for managing the library, collection development, and supporting 
+the pedagogical and research needs of students and faculty in the music 
+department. Her academic training includes master's degrees in library and 
+information science from Simmons College, music with a concentration in 
+musicology from Tufts University, as well as a bachelor of arts in music 
+literature and performance from Northeastern University. 
+ 
+Through musicology and libraries she became involved with digital humanities, 
+exploring and pursuing ways in which computational methods and tools can 
+augment scholarship and publishing. Anna has a vested interest in pedagogical 
+approaches and application of digital humanities tools and methods in 
+historical research, and in the use of standards, including TEI and MEI, for 
+open access research and publishing. She is also interested in supporting 
+sustainable ways of developing digital projects through the use of minimal 
+computing. 
+ 
+Anna is the co-administrator of the MEI Pedagogy Interest Group and is 
+developing an open-access music incipit encoding project, [Rebalancing the Music 
+Canon](https://rebalancing-music-canon.com/) that focuses on making works by un(der)-represented people more 
+discoverable, decentering the musical canon, and making data-driven music 
+scholarship more diverse and inclusive.
+
+#### Statement
+
+If elected to serve on the MEI Board, I would bring a unique perspective based 
+on my experiences as both a scholar and librarian who is interested in pushing 
+the boundaries of musicology (and humanities, in general) not only through the 
+application of computational methods, but also by considering issues around 
+diversity, accessibility, and sustainability in the data we create or curate, 
+the research we do, and the projects we develop. 
+ 
+I would advocate for an inclusive and praxis-focused approach to the ongoing 
+development of MEI. Additionally, I am interested in facilitating ways in which 
+the MEI community can continue to grow and support an inclusive and diverse 
+membership, especially by fostering and supporting emerging or early-career 
+scholars and students.
+ 
+My full resume is available at https://www.annakijas.com/cv/. 
+
+## David Lewis
+
+#### CV 
+
+I am a researcher at the University of Oxford e-Research Centre and a lecturer 
+in the Department of Computing at Goldsmiths University of London. 
+Since completing my training as a historical musicologist I have worked as a 
+researcher on a range of digital musicology projects, which have included novel 
+ways of publishing musical scholarship (e.g. the Lohengrin TimeMachine), corpus 
+building (e.g. the Electronic Corpus of Lute Music), digital scholarly editions 
+of music treatises (e.g. ‘Johannes Tinctoris: Complete Theoretical Works’) and 
+works catalogues (‘Delius Catalogue of Works’, using MerMEId). MEI has become 
+an increasingly large component in all of these research strands.
+I have taught on both music and computing degree programmes, and helped design 
+and deliver the Digital Musicology workshop at the Digital Humanities at Oxford 
+Summer School. I participate in many of the MEI interest groups, and am 
+co-convener of the tablature IG.
+
+#### Statement
+
+MEI has established itself as the most effective model for scholars working 
+with music notation. As the size and diversity of our user base increases, we 
+need to ensure that we remain welcoming, flexible and approachable as a 
+community. I am encouraged by the ongoing work on improving the guidelines and 
+example encodings, gathering and sharing pedagogic practices, and looking 
+carefully at how our core model holds up to the widest possible range of 
+musics, notations and users. If elected I would look to supporting these core 
+activities to ensure sustainable and fair growth for the community. When Covid 
+threats begin to recede, I would also be keen to find ways to widen MEC's 
+recruitment, recognising its position now as both a community event and an 
+important annual recruitment and training opportunity.
 
 
 ## Anna Plaksin
