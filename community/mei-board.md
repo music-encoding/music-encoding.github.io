@@ -10,19 +10,19 @@ The MEI Board manages the property and business of MEI. It promotes the developm
 
 ## Current Board Members
 
-### Term 2022-2024
+### Term 2022–2024
 
 * **Benjamin W. Bohl**, Institut für Musikwissenschaft, Goethe Universität Frankfurt, Frankfurt am Main and Musikwissenschaftliches Seminar Detmold/Paderborn
 * **Anna E. Kijas**, Lilly Music Library, Tufts University
 * **Klaus Rettinghaus**, Enote GmbH, Berlin
 
-### Term 2021-2023
+### Term 2021–2023
 
 * **Stefan Münnich**, University of Basel
 * **Laurent Pugin**, RISM Digital Center, Bern
 * **Kristina Richts-Matthaei**, Musikwissenschaftliches Seminar Detmold/Paderborn
 
-### Term 2020-2022
+### Term 2020–2022
 
 * **Johannes Kepper (Technical Co-Chair)**, Musikwissenschaftliches Seminar Detmold/Paderborn
 * **Perry Roland**, University of Virginia Library, Charlottesville (previous terms 2015–2018)
@@ -30,11 +30,11 @@ The MEI Board manages the property and business of MEI. It promotes the developm
 
 ### Previous Board Members
 
-* **Nobert Dubowy**, Internationale Stiftung Mozarteum, Salzburg (2018-2020)
+* **Nobert Dubowy**, Internationale Stiftung Mozarteum, Salzburg ( 2018–2020)
 * **Andrew Hankinson**, Bodleian Library, Oxford (2017–2019)
 * **Eleanor Selfridge-Field**, Center for Computer-Assisted Research in the Humanities, Stanford University (2015–2019)
-* **Giuliano Di Bacco**, Jacobs School of Music, Indiana University, Bloomington, (2015-2017)
-* **Axel Teich Geertinger**, Danish Centre for Music Editing, Royal Library, Copenhagen, (2015-2016)
+* **Giuliano Di Bacco**, Jacobs School of Music, Indiana University, Bloomington, ( 2015–2017)
+* **Axel Teich Geertinger**, Danish Centre for Music Editing, Royal Library, Copenhagen, ( 2015–2016)
 * **Elsa De Luca**, Centro de Estudos de Sociologia e Estética Musical (CESEM), Universidade Nova de Lisboa, Lisboa (2019–2021)
 * **Ichiro Fujinaga**, McGill University, Montréal (2015–2021)
 
