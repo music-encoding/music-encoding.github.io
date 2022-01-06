@@ -2,7 +2,6 @@
 layout: tools
 title: "Tools"
 ---
-
 # Official tools
 
 ## MEI Schema
@@ -38,28 +37,28 @@ The MerMEId software is installed on a web server and is operated client-side us
 
 ### SibMEI
 
-SibMEI is an open source plug-in that makes it easy to export MEI from the [Sibelius](http://www.sibelius.com) notation editor.  In addition to facilitating the creation of MEI-formatted data without the burden of writing XML by hand, it also makes it possible to convert MusicXML files to MEI. The plug-in can be downloaded from [https://github.com/music-encoding/sibmei/releases](https://github.com/music-encoding/sibmei/releases "Sibelius MEI Plugin").
+SibMEI is an open source plug-in that makes it easy to export MEI from the [Sibelius](http://www.sibelius.com) notation editor. In addition to facilitating the creation of MEI-formatted data without the burden of writing XML by hand, it also makes it possible to convert MusicXML files to MEI. The plug-in can be downloaded from [https://github.com/music-encoding/sibmei/releases](https://github.com/music-encoding/sibmei/releases "Sibelius MEI Plugin").
 
 General installation instructions for Sibelius plug-ins can be found at [http://www.sibelius.com/download/plugins/index.html?help=install](http://www.sibelius.com/download/plugins/index.html?help=install "Install plug-in"). Once installed, an "Export to MEI" option will appear in the plug-in list in Sibelius.
 
 ### LibMEI
 
-LibMEI was created by Andrew Hankinson and Alastair Porter and seeks to define a common software library for interacting with files encoded in MEI. This is targeted at software developers who wish to integrate support for MEI into their software.
+LibMEI was created by Andrew Hankinson and Alastair Porter and seeks to define a common software library for interacting with files encoded in MEI. This is targeted at software developers who wish to integrate support for MEI into their software.
 
-LibMEI is a C++ library for reading and writing MEI files. It can be integrated in C++ software applications but it can also be used in a wide range of environment through bindings. It ships with a Python bindings using the Boost-Python framework. The source code and the documentation are available on [GitHub](https://github.com/DDMAL/libmei/ "GitHub") It is developed by the [Distributed Digital Music Archives and Libraries Lab](http://ddmal.music.mcgill.ca/) at the Schulich School of Music at McGill University, Montréal, Canada and is available under the MIT License.
+LibMEI is a C++ library for reading and writing MEI files. It can be integrated in C++ software applications but it can also be used in a wide range of environment through bindings. It ships with a Python bindings using the Boost-Python framework. The source code and the documentation are available on [GitHub](https://github.com/DDMAL/libmei/ "GitHub") It is developed by the [Distributed Digital Music Archives and Libraries Lab](http://ddmal.music.mcgill.ca/) at the Schulich School of Music at McGill University, Montréal, Canada and is available under the MIT License.
 
 ### meico: MEI Converter
 
 [meico](https://github.com/cemfi/meico) is a converter framework for MEI files that is developed at the Center of Music and Film Informatics, Detmold ([cemfi](http://www.cemfi.de/)). It translates MEI data to a series of formats relevant to many other applications. It can be used as Java programming framework or standalone app. For the latter case, the meicoApp provides a commandline interface as well as an elaborate graphical user interface. Meico's feature list includes
 
--   MEI export to MIDI, MSM, MPM, audio (WAV, MP3),
--   MIDI to audio rendering with third party soundbanks (SF2, DLS),
--   musical performance rendering via the official Music Performance Markup API and rendering engine,
--   built-in MIDI and audio playback (perfect for proof-reading/listening),
--   Verovio integration in the graphical user interface,
--   Chroma export,
--   XSLT processing of all XML-based data formats, and
--   several MEI convenience features such as XML validation against RNG schemata, expansion of abbreviations (copyof, sameas, expan).
+- MEI export to MIDI, MSM, MPM, audio (WAV, MP3),
+- MIDI to audio rendering with third party soundbanks (SF2, DLS),
+- musical performance rendering via the official Music Performance Markup API and rendering engine,
+- built-in MIDI and audio playback (perfect for proof-reading/listening),
+- Verovio integration in the graphical user interface,
+- Chroma export,
+- XSLT processing of all XML-based data formats, and
+- several MEI convenience features such as XML validation against RNG schemata, expansion of abbreviations (copyof, sameas, expan).
 
 
 ### MEI to Music21 Converter
@@ -68,24 +67,24 @@ With the release of version 2.0, the [music21](http://web.mit.edu/music21/) Pyth
 
 The module was primarily written by Christopher Antila with assistance from Andrew Hankinson, Ichiro Fujinaga, Myke Cuthbert, and the MEI-L mailing list. Funding for this project was provided by Canada's SSHRC as part of the [SIMSSA project](http://simssa.ca "Single Interface for Music Score Searching and Analysis Project").
 
-You may send questions, comments, bug reports, and feature requests to Christopher Antila [christopher@antila.ca](mailto:christopher@antila.ca), Andrew Hankinson [andrew.hankinson@mail.mcgill.ca](mailto:andrew.hankinson@mail.mcgill.ca), MEI-L [mei-l@lists.uni-paderborn.de](mailto:mei-l@lists.uni-paderborn.de), or the music21 list [https://groups.google.com/forum/#!forum/music21list](https://groups.google.com/forum/#!forum/music21list).
+You may send questions, comments, bug reports, and feature requests to Christopher Antila [christopher@antila.ca](mailto:christopher@antila.ca), Andrew Hankinson [andrew.hankinson@mail.mcgill.ca](mailto:andrew.hankinson@mail.mcgill.ca), MEI-L [mei-l@lists.uni-paderborn.de](mailto:mei-l@lists.uni-paderborn.de), or the music21 list [https://groups.google.com/forum/#!forum/music21list](https://groups.google.com/forum/#!forum/music21list).
 
 ## Rendering MEI
 
 ### MEILER
 
-The _MEI LilyPond Engraving Refinement_ (MEILER) is a set of XSLT stylesheets to render MEI files with help of the [LilyPond Engine](http://lilypond.org). This allows to make heavy use of the layout attributes and parameters MEI brings with it.  
+The _MEI LilyPond Engraving Refinement_ (MEILER) is a set of XSLT stylesheets to render MEI files with help of the [LilyPond Engine](http://lilypond.org). This allows to make heavy use of the layout attributes and parameters MEI brings with it.
 
-Possible LilyPond output formats are PDF, PNG and SVG. It's available on  [GitHub](https://github.com/rettinghaus/MEILER). You may have a look at some test files [here](https://github.com/rettinghaus/MEILER/tree/master/tests) and [here](https://github.com/rettinghaus/mei-test-set/), to get an impression of it's capabilites. Also there's a [poster](https://doi.org/10.13140/RG.2.2.15014.93760) available.
+Possible LilyPond output formats are PDF, PNG and SVG. It's available on [GitHub](https://github.com/rettinghaus/MEILER). You may have a look at some test files [here](https://github.com/rettinghaus/MEILER/tree/master/tests) and [here](https://github.com/rettinghaus/mei-test-set/), to get an impression of it's capabilites. Also there's a [poster](https://doi.org/10.13140/RG.2.2.15014.93760) available.
 
 <!---
 ### MEISE
 
-The _MEI Score Editor_ (MEISE) is an eclipse-based music notation editor software for viewing and editing encoded music in CWN (Common Western Notation) within MEI files. It facilitates e.g. proof reading or editing and visualization of variants and readings. MEISE is currently available in two versions. Both have been developed at the [Musicology Seminar Detmold/Paderborn](http://muwi-detmold-paderborn.de/ "Muiscology Seminar Detmold/Paderborn") as part of the German eHumanities projects [TextGrid](https://www.textgrid.de/ "TextGrid") and [DARIAH-DE](https://de.dariah.eu/ "DARIAH-DE").  
+The _MEI Score Editor_ (MEISE) is an eclipse-based music notation editor software for viewing and editing encoded music in CWN (Common Western Notation) within MEI files. It facilitates e.g. proof reading or editing and visualization of variants and readings. MEISE is currently available in two versions. Both have been developed at the [Musicology Seminar Detmold/Paderborn](http://muwi-detmold-paderborn.de/ "Muiscology Seminar Detmold/Paderborn") as part of the German eHumanities projects [TextGrid](https://www.textgrid.de/ "TextGrid") and [DARIAH-DE](https://de.dariah.eu/ "DARIAH-DE").
 
-MEISE 1.1 can be downloaded at [sourceforge.net](https://sourceforge.net/projects/meise/ "MEISE at sourceforge.net"). Important introductory information on system requirements and installation as well as a first steps guide are provided at the [wiki section](https://sourceforge.net/p/meise/wiki/Home/ "MEISE Wiki at sourceforge.net"). Furthermore, use case and workflow descriptions can be found within [MEISE's project page](https://meise.de.dariah.eu/) at the DARIAH-DE website.  
+MEISE 1.1 can be downloaded at [sourceforge.net](https://sourceforge.net/projects/meise/ "MEISE at sourceforge.net"). Important introductory information on system requirements and installation as well as a first steps guide are provided at the [wiki section](https://sourceforge.net/p/meise/wiki/Home/ "MEISE Wiki at sourceforge.net"). Furthermore, use case and workflow descriptions can be found within [MEISE's project page](https://meise.de.dariah.eu/) at the DARIAH-DE website.
 
-Currently, a completely new version of MEISE, coordinated by the Musicology Seminar Detmold/Paderborn within the project scope of DARIAH-DE is developed in cooperation with several editor and rendering approaches throughout the MEI community. Contact: Nikolaos Beer, University of Paderborn, Musicology Seminar Detmold/Paderborn, [nikolaos.beer@upb.de](mailto:nikolaos.beer@upb.de)
+Currently, a completely new version of MEISE, coordinated by the Musicology Seminar Detmold/Paderborn within the project scope of DARIAH-DE is developed in cooperation with several editor and rendering approaches throughout the MEI community. Contact: Nikolaos Beer, University of Paderborn, Musicology Seminar Detmold/Paderborn, [nikolaos.beer@upb.de](mailto:nikolaos.beer@upb.de)
 -->
 
 ### meiView
@@ -94,11 +93,11 @@ _[meiView](http://zolaemil.github.io/meiView/)_ is an experimental web applicati
 
 ### Verovio
 
-_[Verovio](https://www.verovio.org)_ is a fast, portable and lightweight library for engraving Music Encoding Initiative (MEI) music scores into SVG developed by the [Swiss RISM Office](http://rism-ch.org). It is designed as a tool usable as a one-step conversion tool and it is written in pure standard C++ with no dependencies on third-party frameworks and libraries. Verovio implements its own rendering engine, which can render SVG with all the musical symbols embedded in it and without dependency on external fonts. In addition to MEI, Verovio can also render Plain and Easy (PAE) code and DARMS code.  
+_[Verovio](https://www.verovio.org)_ is a fast, portable and lightweight library for engraving Music Encoding Initiative (MEI) music scores into SVG developed by the [Swiss RISM Office](http://rism-ch.org). It is designed as a tool usable as a one-step conversion tool and it is written in pure standard C++ with no dependencies on third-party frameworks and libraries. Verovio implements its own rendering engine, which can render SVG with all the musical symbols embedded in it and without dependency on external fonts. In addition to MEI, Verovio can also render Plain and Easy (PAE) code and DARMS code.
 
-A significant strength of Verovio is that it implements MEI’s structure internally, making it the best-suited solution for rendering features that make MEI unique. The hierarchy of the MEI is preserved in the SVG output. This feature makes it extremely easy to build interactive applications since both the structure and the unique identifiers are available in the output music notation.  
+A significant strength of Verovio is that it implements MEI’s structure internally, making it the best-suited solution for rendering features that make MEI unique. The hierarchy of the MEI is preserved in the SVG output. This feature makes it extremely easy to build interactive applications since both the structure and the unique identifiers are available in the output music notation.
 
-Since the rendering engine is defined as an abstract component, Verovio is highly modular and can be used in different contexts, such as a JavaScript or Python toolkit. Verovio follows the Standard Music Font Layout ([SMuFL](https://www.smufl.org)) specification and the font can be changed for personalizing the output. It is open-source and is available on [GitHub](https://github.com/rism-ch/verovio).
+Since the rendering engine is defined as an abstract component, Verovio is highly modular and can be used in different contexts, such as a JavaScript or Python toolkit. Verovio follows the Standard Music Font Layout ([SMuFL](https://www.smufl.org)) specification and the font can be changed for personalizing the output. It is open-source and is available on [GitHub](https://github.com/rism-ch/verovio).
 
 ### Music Sheet Viewer
 
