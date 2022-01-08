@@ -6,27 +6,26 @@ title: "What is MEI?"
 
 The Music Encoding Initiative (MEI) is a community-driven, [open-source](https://github.com/music-encoding/music-encoding) effort to define a system for encoding musical documents in a machine-readable structure. MEI brings together specialists from various music research communities, including technologists, librarians, historians, and theorists in a common effort to define best practices for representing a broad range of musical documents and structures. The results of these discussions are formalized in the [MEI schema](/resources/schemas.html), a core set of rules for recording physical and intellectual characteristics of music notation documents expressed as an eXtensible Markup Language ([XML](https://web.archive.org/web/20191028132600/https://www.tei-c.org/release/doc/tei-p5-doc/en/html/SG.html)) schema. It is complemented by the [MEI Guidelines](https://music-encoding.org/guidelines/v4/content/), which provide detailed explanations of the components of the MEI model and best practices suggestions. The schema is developed and maintained by the [MEI Technical Team](/community/technical-team.html).
 
-MEI, like the [Text Encoding Initiative](http://www.tei-c.org/) (TEI), is an umbrella term to simultaneously describe an organization, a research community, and a markup language. It closely mirrors work done by text scholars in the TEI and, while the two encoding initiatives are not formally related, they share many common characteristics and development practices.
-
+MEI, like the [Text Encoding Initiative](http://www.tei-c.org/) (TEI), is an umbrella term to simultaneously describe an organization, a research community, and a markup language. It closely mirrors work done by text scholars in the TEI and, while the two encoding initiatives are not formally related, they share many common characteristics and development practices.
 
 ## The goals of MEI
 
 The scholarly community devoted to the historical study of music needs an encoding system that meets the following requirements:
 
-*   represents the semantic and structural complexity of the entire diverse history of Western notation;
-*   represents the common expressive features of traditional facsimile, critical, and performance editions;
-*   is a public, open standard controlled by the scholarly community;
-*   is platform independent and based on open standards; and
-*   supports scholarly analysis and a variety of both digital and print rendering possibilities.
+* represents the semantic and structural complexity of the entire diverse history of Western notation;
+* represents the common expressive features of traditional facsimile, critical, and performance editions;
+* is a public, open standard controlled by the scholarly community;
+* is platform independent and based on open standards; and
+* supports scholarly analysis and a variety of both digital and print rendering possibilities.
 
 Therefore, the Music Encoding Initiative strives to create a semantically rich model for music notation that:
 
-*   accommodates the encoding of common Western music, but is not limited to common music notation;
-*   is designed by the scholarly community for scholarly uses, but does not exclude other uses;
-*   provides for the common functions of traditional facsimile, critical, and performance editions;
-*   has a modular structure that permits use dependent on the goals of scholars; and
-*   is based on open standards and is platform-independent;
-*   permits the development of comprehensive and permanent international archives of notated music as a basis for editions, analysis, performances, and other forms of research.
+* accommodates the encoding of common Western music, but is not limited to common music notation;
+* is designed by the scholarly community for scholarly uses, but does not exclude other uses;
+* provides for the common functions of traditional facsimile, critical, and performance editions;
+* has a modular structure that permits use dependent on the goals of scholars; and
+* is based on open standards and is platform-independent;
+* permits the development of comprehensive and permanent international archives of notated music as a basis for editions, analysis, performances, and other forms of research.
 
 ## Is MEI free?
 
