@@ -12,19 +12,19 @@ The MEI Board manages the property and business of MEI. It promotes the developm
 
 ### Term 2022–2024
 
-* **Benjamin W. Bohl**, Institut für Musikwissenschaft, Goethe Universität Frankfurt, Frankfurt am Main and Musikwissenschaftliches Seminar Detmold/Paderborn
-* **Anna E. Kijas**, Lilly Music Library, Tufts University
+* **Benjamin W. Bohl (Technical Co-Chair)**, Institut für Musikwissenschaft, Goethe Universität Frankfurt, Frankfurt am Main and Musikwissenschaftliches Seminar Detmold/Paderborn
+* **Anna E. Kijas (Administrative Chair)**, Lilly Music Library, Tufts University
 * **Klaus Rettinghaus**, Enote GmbH, Berlin
 
 ### Term 2021–2023
 
-* **Stefan Münnich**, University of Basel
+* **Stefan Münnich (Technical Co-Chair)**, University of Basel
 * **Laurent Pugin**, RISM Digital Center, Bern
 * **Kristina Richts-Matthaei**, Musikwissenschaftliches Seminar Detmold/Paderborn
 
 ### Term 2020–2022
 
-* **Johannes Kepper (Technical Co-Chair)**, Musikwissenschaftliches Seminar Detmold/Paderborn
+* **Johannes Kepper**, Musikwissenschaftliches Seminar Detmold/Paderborn
 * **Perry Roland**, University of Virginia Library, Charlottesville (previous terms 2015–2018)
 * **Martha Thomae**, McGill University, Montréal
 
