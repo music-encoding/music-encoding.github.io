@@ -5,7 +5,7 @@ title: "2022-01-19 Virtual MEI Board Meeting"
 
 # 2022-01-19 Virtual MEI Board Meeting
 
-Present: Johannes Kepper, Anna E. Kijas, KlausRettinghaus, Benjamin W. Bohl, Stefan Münnich, Laurent Pugin, Perry Roland, Martha E. Thomae
+Present: Benjamin W. Bohl, Johannes Kepper, Anna E. Kijas, Klaus Rettinghaus, Stefan Münnich, Laurent Pugin, Perry Roland, Martha E. Thomae
 
 Regards: Kristina Richts
 
