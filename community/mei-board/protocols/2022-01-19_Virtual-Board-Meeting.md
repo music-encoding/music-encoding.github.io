@@ -13,7 +13,7 @@ Minutes: Martha E. Thomae and Stefan Münnich
 
 ## Administrative Chair & Technical Co-Chairs
 - Anna Kijas was appointed as Administrative chair.
-- The technical co-chairs are Benjamin Bohl and Stefan Münnich.
+- The technical co-chairs are Benjamin W. Bohl and Stefan Münnich.
 - Johannes Kepper was appointed as treasurer.
 
 ## Next Board Meetings
