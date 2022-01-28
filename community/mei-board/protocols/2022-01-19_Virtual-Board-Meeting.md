@@ -17,5 +17,5 @@ Minutes: Martha E. Thomae and Stefan Münnich
 - Johannes Kepper was appointed as treasurer.
 
 ## Next Board Meetings
-- March 21st, same time (2 pm EDT | 7pm CET).
-- May 2nd, same time (2 pm EDT | 8pm CEST).
+- March 21st, same time (2pm EDT \| 7pm CET).
+- May 2nd, same time (2pm EDT \| 8pm CEST).
