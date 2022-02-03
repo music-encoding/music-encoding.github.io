@@ -13,6 +13,10 @@ body {
 .content {
     flex: 1;
 }
+.container.content {
+    padding-left: 0.7rem;
+    padding-right: 0.7rem;
+}
 
 code, kbd, pre, samp {
     font-family: 'Courier';
@@ -78,7 +82,8 @@ header.navbar {
 	}
 
   #socialLinks {
-    flex-grow: 0;
+      flex-grow: 0;
+      margin-right: -0.1rem;
   }
 
   #menu-accordion {
