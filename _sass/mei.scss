@@ -39,7 +39,7 @@ header.navbar {
         font-size: $menu-font-size;
 
         i.icon {
-            margin-top: -14px;
+            margin-top: -$layout-spacing-lg;
         }
     }
 
@@ -66,7 +66,7 @@ header.navbar {
     }
 
     .navbar-brand {
-        margin: 14px 14px 0 14px;
+        margin: $layout-spacing-lg $layout-spacing-lg 0 $layout-spacing-lg;
         img {
             height: 40px;
         }
