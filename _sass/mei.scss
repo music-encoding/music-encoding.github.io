@@ -107,12 +107,34 @@ header.navbar {
 .newsMenu {
 
     .divider {
-        margin: .2rem 0 .8rem;
+        margin: $layout-spacing-sm 0 $layout-spacing-lg;
     }
-
+    
     p.tile-title {
         margin: .1rem 0 -.2rem;
     }
+
+    h5.tile-title {
+        margin-bottom: 0;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        margin-left: unset;
+    }
+
+}
+
+.newsTitle {
+    small {
+        display: block;
+        color: #666666;
+        font-size: 70%;
+    }
+}
+
+.newsEntry {
+    margin-left: 1rem;
+    margin-bottom: 3rem;
 }
 
 .startCarousel {
@@ -308,16 +330,6 @@ div.tile {
 //     margin-left: -1rem;
 // }
 
-.newsMenu {
-    h1, h2, h3, h4, h5, h6 {
-        margin-left: unset;
-    }
-
-    h5.tile-title {
-        margin-bottom: 0;
-    }
-}
-
 ul.nav li.nav-item:first-child {
     margin-top: 0;
 
@@ -359,18 +371,6 @@ ul.nav li.nav-item:first-child {
     width: 2rem;
 }
 
-.newsTitle {
-    small {
-        display: block;
-        color: #666666;
-        font-size: 70%;
-    }
-}
-
-.newsEntry {
-    margin-left: 1rem;
-    margin-bottom: 3rem;
-}
 
 .icon {
     color: #ffffff;
