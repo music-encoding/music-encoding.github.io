@@ -14,8 +14,8 @@ body {
     flex: 1;
 }
 .container.content {
-    padding-left: 0.7rem;
-    padding-right: 0.7rem;
+    padding-left: $layout-spacing-lg;
+    padding-right: $layout-spacing-lg;
 }
 
 code, kbd, pre, samp {
@@ -83,7 +83,7 @@ header.navbar {
 
   #socialLinks {
       flex-grow: 0;
-      margin-right: -0.1rem;
+      margin-right: -$layout-spacing-sm;
   }
 
   #menu-accordion {
