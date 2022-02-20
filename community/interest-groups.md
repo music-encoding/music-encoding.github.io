@@ -26,10 +26,10 @@ The aim of the Interest Group is to discuss the use of MEI for the encoding of m
 **Administrative Co-Chairs: [Margrethe Bue](mailto:Margrethe.Bue@nb.no) and [Kristina Richts](mailto:kristina.richts@uni-paderborn.de)**.<br/>
 The aims of the Metadata and Cataloging Interest Group is to discuss the use of MEI for the encoding of musical metadata; to make recommendations regarding the development of the element; to promote the sharing of and collaboration on tools for projects concerned with MEI metadata such as cataloging projects. 'Cataloging' in this context may include a wide range of projects such as thematic catalogues ('Werkverzeichnisse'), library catalogs, and other descriptions of musical works or sources. The group is open to all members of the MEI community. Members enroll simply by subscribing to the group's mailing list: [https://lists.uni-paderborn.de/mailman/listinfo/mei-catalog-ig](https://lists.uni-paderborn.de/mailman/listinfo/mei-catalog-ig).
 
-## Neume Interest Group
+## Neumes Interest Group
 
 **Administrative Chair: [Ichiro Fujinaga](mailto:ichiro.fujinag@mcgill.ca)**.<br/>
-The aim of the Neume Interest Group is to discuss the use of MEI for the encoding of neume notation, including adiastematic and diastematic neumes. Any members of the MEI community with an interest in neume notation are welcome to join the group by subscribing to the mailing list: [https://lists.uni-paderborn.de/mailman/listinfo/mei-neumes-ig](https://lists.uni-paderborn.de/mailman/listinfo/mei-neumes-ig), where most of the discussions take place.
+The aim of the Neumes Interest Group is to discuss the use of MEI for the encoding of neume notation, including adiastematic and diastematic neumes. Any members of the MEI community with an interest in neume notation are welcome to join the group by subscribing to the mailing list: [https://lists.uni-paderborn.de/mailman/listinfo/mei-neumes-ig](https://lists.uni-paderborn.de/mailman/listinfo/mei-neumes-ig), where most of the discussions take place.
 
 ## Tablature Interest Group
 
