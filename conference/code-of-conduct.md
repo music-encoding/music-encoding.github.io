@@ -2,8 +2,8 @@
 layout: default
 title: "Code of Conduct"
 ---
-
 # Code of Conduct
+
 The Music Encoding Conference values your attendance and is dedicated to providing a positive, harassment-free conference experience for everyone. We want MEC to be welcoming and supportive and we do not tolerate harassment of conference participants in any form.
 
 All communication should be appropriate for a professional audience including people of many different backgrounds. Verbal comments that reinforce social structures of domination related to gender, gender identity and expression, sexual orientation, disability, physical appearance, national or regional origin, body size, race, age, religion, or other marginalized characteristics are inappropriate. Be kind to others. Do not insult or put down other attendees. Be careful in the words that you choose. Remember that sexist, racist, and other exclusionary jokes are not appropriate for MEC. We ask that participants use discretion with photographs of others, recordings, and publicly sharing others’ ideas.
@@ -25,11 +25,10 @@ Conference staff will keep the name and identity of any reports confidential unl
 ## Acknowledgements
 This policy is adapted from the policies of:
 
-* ACRL/NY: <a href="http://acrlny.org/about2/code-of-coduct" target="blank">http://acrlny.org/about2/code-of-coduct</a>
+* ACRL/NY: <a href="https://acrlny.org/about2/code-of-conduct" target="blank">https://acrlny.org/about2/code-of-conduct</a>
 * CritLib Unconference 2015: <a href="http://critlib2015.weebly.com/code-of-conduct.html" target="blank">http://critlib2015.weebly.com/code-of-conduct.html</a>
-* Ontario Library Association Super Conference 2018: <a href="http://www.olasuperconference.ca/about/code-of-conduct" target="blank">http://www.olasuperconference.ca/about/code-of-conduct/</a>
-* Foss4G 2017: <a href="http://2017.foss4g.org/about/Code-of-Conduct.pdf" target="blank">http://2017.foss4g.org/about/Code-of-Conduct.pdf</a>
-* Tufts Social Science Librarians Bootcamp 2020: <a href="http://sites.tufts.edu/sslbc2020/code-of-conduct" target="blank">http://sites.tufts.edu/sslbc2020/code-of-conduct</a> and <a href="https://sites.tufts.edu/sslbc2020/code-of-conduct/attendee-procedure/">https://sites.tufts.edu/sslbc2020/code-of-conduct/attendee-procedure</a>
+* Ontario Library Association Super Conference 2018: <a href="https://www.olasuperconference.ca/about/code-of-conduct" target="blank">https://www.olasuperconference.ca/about/code-of-conduct/</a>
+* Foss4G 2017: <a href="https://2017.foss4g.org/about/Code-of-Conduct.pdf" target="blank">https://2017.foss4g.org/about/Code-of-Conduct.pdf</a>
+* Tufts Social Science Librarians Bootcamp 2020: <a href="https://sites.tufts.edu/sslbc2020/code-of-conduct" target="blank">https://sites.tufts.edu/sslbc2020/code-of-conduct</a> and <a href="https://sites.tufts.edu/sslbc2020/code-of-conduct/attendee-procedure/">https://sites.tufts.edu/sslbc2020/code-of-conduct/attendee-procedure</a>
 
 This policy is licensed under the Creative Commons Zero license. It is public domain, no credit and no open licensing of your version is required. Most recent update: April 2021.
-

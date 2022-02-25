@@ -6,37 +6,37 @@ title: "MEI Board"
 
 The MEI Board manages the property and business of MEI. It promotes the development of MEI, oversees the activities of the MEI Technical Team, guides the development of the MEI conceptual model, Guidelines and schemata, and acts as a contact point for MEI-related activities. The Board consists of nine elected members and one member designated by each Host Institution. The Board will hold regular, virtual or in-person meetings. As schedules and funding permit, the Board will meet in person at least once per year.
 
-[Read the 2020 Election Candidate statements](/community/mei-board/elections/2020/candidates)
+[Read the 2021 Election Candidate statements](/community/mei-board/elections/2021/candidates)
 
 ## Current Board Members
 
-### Term 2021-2023
+### Term 2022–2024
 
-* **Stefan Münnich**, University of Basel
+* **Benjamin W. Bohl (Technical Co-Chair)**, Institut für Musikwissenschaft, Goethe Universität Frankfurt, Frankfurt am Main and Musikwissenschaftliches Seminar Detmold/Paderborn
+* **Anna E. Kijas (Administrative Chair)**, Lilly Music Library, Tufts University
+* **Klaus Rettinghaus**, Enote GmbH, Berlin
+
+### Term 2021–2023
+
+* **Stefan Münnich (Technical Co-Chair)**, University of Basel
 * **Laurent Pugin**, RISM Digital Center, Bern
 * **Kristina Richts-Matthaei**, Musikwissenschaftliches Seminar Detmold/Paderborn
 
-### Term 2020-2022
+### Term 2020–2022
 
-* **Johannes Kepper (Technical Co-Chair)**, Musikwissenschaftliches Seminar Detmold/Paderborn
+* **Johannes Kepper**, Musikwissenschaftliches Seminar Detmold/Paderborn
 * **Perry Roland**, University of Virginia Library, Charlottesville (previous terms 2015–2018)
 * **Martha Thomae**, McGill University, Montréal
 
-### Term 2019-2021
-
-* **Benjamin W. Bohl (Technical Co-Chair)**, Institut für Musikwissenschaft, Goethe Universität Frankfurt, Frankfurt am Main and Musikwissenschaftliches Seminar Detmold/Paderborn
-* **Elsa De Luca (Administrative Chair)**, Centro de Estudos de Sociologia e Estética Musical (CESEM), Universidade Nova de Lisboa, Lisboa
-* **Ichiro Fujinaga**, McGill University, Montréal
-
-
-
 ### Previous Board Members
 
-* **Nobert Dubowy**, Internationale Stiftung Mozarteum, Salzburg (2018-2020)
+* **Elsa De Luca**, Centro de Estudos de Sociologia e Estética Musical (CESEM), Universidade Nova de Lisboa, Lisboa (2019–2021)
+* **Giuliano Di Bacco**, Jacobs School of Music, Indiana University, Bloomington, (2015–2017)
+* **Nobert Dubowy**, Internationale Stiftung Mozarteum, Salzburg (2018–2020)
+* **Ichiro Fujinaga**, McGill University, Montréal (2015–2021)
+* **Axel Teich Geertinger**, Danish Centre for Music Editing, Royal Library, Copenhagen, (2015–2016)
 * **Andrew Hankinson**, Bodleian Library, Oxford (2017–2019)
 * **Eleanor Selfridge-Field**, Center for Computer-Assisted Research in the Humanities, Stanford University (2015–2019)
-* **Giuliano Di Bacco**, Jacobs School of Music, Indiana University, Bloomington, (2015-2017)
-* **Axel Teich Geertinger**, Danish Centre for Music Editing, Royal Library, Copenhagen, (2015-2016)
 
 ## Protocols of Board Meetings
 
@@ -53,7 +53,7 @@ The MEI Board manages the property and business of MEI. It promotes the developm
 * [2020-07-23, Virtual Board Meeting](mei-board/protocols/2020-07-23_Virtual-Board-Meeting.md)
 * [2020-10-07, Virtual Board Meeting](mei-board/protocols/2020-10-07_Virtual-Board-Meeting.md)
 * [2021-01-14, Virtual Board Meeting](mei-board/protocols/2021-01-14_Virtual-Board-Meeting.md)
-
+* [2022-01-19, Virtual Board Meeting](mei-board/protocols/2022-01-19_Virtual-Board-Meeting.md)
 
 ## Elections
 
