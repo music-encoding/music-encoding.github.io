@@ -12,7 +12,7 @@ We will upload your resource(s) to the [Music Encoding Initiative Humanities Com
 
 If you would like to contribute a resource that you created or collaborated on, please [complete this form](https://docs.google.com/forms/d/e/1FAIpQLScnaXFQhtxVrt2aCaKqf0F4by_XgHHsvxhyq9-cvCDPE0j9vg/viewform) where you will need to provide descriptive metadata along with your content. Contributions can be submitted on a rolling basis and you will be notified once your content is added to the repository.
 
-If you have questions or need assistance, please reach out to the [Pedagogy Interest Group Administrative Co-Chairs](https://music-encoding.org/community/interest-groups.html), Anna Kijas and Joy H. Calico.
+If you have questions or need assistance, please reach out to the [Pedagogy Interest Group Administrative Co-Chairs](https://music-encoding.org/community/interest-groups.html), Anna Kijas and Jessica Grimmer.
 
 ## Selected Bibliography
 
