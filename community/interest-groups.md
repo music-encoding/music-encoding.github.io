@@ -28,7 +28,7 @@ The aims of the Metadata and Cataloging Interest Group is to discuss the use of 
 
 ## Neumes Interest Group
 
-**Administrative Chair: [Ichiro Fujinaga](mailto:ichiro.fujinag@mcgill.ca)**.<br/>
+**Administrative Chair: [Ichiro Fujinaga](mailto:ichiro.fujinaga@mcgill.ca)**.<br/>
 The aim of the Neumes Interest Group is to discuss the use of MEI for the encoding of neume notation, including adiastematic and diastematic neumes. Any members of the MEI community with an interest in neume notation are welcome to join the group by subscribing to the mailing list: [https://lists.uni-paderborn.de/mailman/listinfo/mei-neumes-ig](https://lists.uni-paderborn.de/mailman/listinfo/mei-neumes-ig), where most of the discussions take place.
 
 ## Tablature Interest Group
