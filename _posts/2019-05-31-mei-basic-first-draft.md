@@ -20,7 +20,7 @@ There are still aspects that need discussion, including the question of how
 much metadata should be allowed or required by MEI Basic.
 
 The development of MEI Basic happens at a separate branch of the MEI repository 
-at [https://github.com/music-encoding/music-encoding/tree/basic](https://github.com/music-encoding/music-encoding/tree/basic){:target="\_blank"}. 
+at [https://github.com/music-encoding/music-encoding/tree/basic](https://github.com/music-encoding/music-encoding/commit/b50748ce537b43e1527791fb41e8c28aa1582cdb){:target="\_blank"}. 
 
 Everyone from the MEI Community and beyond is invited to have a look at the 
 [current state of the customization](/downloads/mei-basic_2019-05-31_184d45b.xml){:target="\_blank"},
