@@ -14,6 +14,14 @@ If you would like to contribute a resource that you created or collaborated on, 
 
 If you have questions or need assistance, please reach out to the [Pedagogy Interest Group Administrative Co-Chairs](https://music-encoding.org/community/interest-groups.html), Anna Kijas and Jessica Grimmer.
 
+## Recurring Pedagogical Events
+
+<div class="columns">
+   <div class="column col-12 resources">
+<script src="https://bibbase.org/show?bib=https%3A%2F%2Fapi.zotero.org%2Fusers%2F386737%2Fcollections%2F28KACEAE%2Fitems%3Fkey%3DTHpZQBGPI9JXMyHBKUSHsMyh%26format%3Dbibtex%26limit%3D100&jsonp=1&theme=dividers&nocache=1"></script>
+      </div>
+</div>
+
 ## Selected Bibliography
 
 <div class="columns">
