@@ -18,7 +18,7 @@ If you have questions or need assistance, please reach out to the [Pedagogy Inte
 
 <div class="columns">
    <div class="column col-12 resources">
-<script src="https://bibbase.org/show?bib=https%3A%2F%2Fapi.zotero.org%2Fusers%2F386737%2Fcollections%2F28KACEAE%2Fitems%3Fkey%3DTHpZQBGPI9JXMyHBKUSHsMyh%26format%3Dbibtex%26limit%3D100&jsonp=1&theme=dividers&nocache=1"></script>
+<script src="https://bibbase.org/show?bib=https%3A%2F%2Fapi.zotero.org%2Fusers%2F386737%2Fcollections%2F28KACEAE%2Fitems%3Fkey%3DTHpZQBGPI9JXMyHBKUSHsMyh%26format%3Dbibtex%26limit%3D100&jsonp=1&theme=dividers&nocache=1&group0=type"></script>
       </div>
 </div>
 
