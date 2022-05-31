@@ -13,10 +13,4 @@ If you're about to write a new MEI tutorial, we recommend to start with the [Wri
 
 ### External tutorials & related material
 
-{% comment %}
-to add an entry to this list,
-create another entry in ./resources/mei_bibliography.bib
-with "keywords = {tutorial}"
-{% endcomment %}
-
-<script src="https://bibbase.org/show?bib=https%3A%2F%2Fraw.githubusercontent.com%2Fmusic-encoding%2Fmusic-encoding.github.io%2Fmaster%2Fresources%2Fmei_bibliography.bib&authorFirst=1&nocache=1&jsonp=1&theme=side&filter=keywords:tutorial"></script>
+For community-created resources including tutorials and teaching material, see [Community-Created Pedagogy & Praxis Resources](/resources/pedagogy.html).
