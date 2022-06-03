@@ -14,13 +14,14 @@ If you would like to contribute a resource that you created or collaborated on, 
 
 If you have questions or need assistance, please reach out to the [Pedagogy Interest Group Administrative Co-Chairs](https://music-encoding.org/community/interest-groups.html), Anna Kijas and Jessica Grimmer.
 
-## Recurring Pedagogical Events
+## Recurring Events
 
-<div class="columns">
-   <div class="column col-12 resources">
-<script src="https://bibbase.org/show?bib=https%3A%2F%2Fapi.zotero.org%2Fusers%2F386737%2Fcollections%2F28KACEAE%2Fitems%3Fkey%3DTHpZQBGPI9JXMyHBKUSHsMyh%26format%3Dbibtex%26limit%3D100&jsonp=1&theme=dividers&nocache=1&group0=type"></script>
-      </div>
-</div>
+* [Edirom-Summer-School](https://ess.uni-paderborn.de/) at the University of Paderborn, Germany.
+* [European Summer University in Digital Humanities](https://esu.fdhl.info/) is hosted by the University of Leipzig.
+* [Digital Humanities Summer Institute](https://dhsi.org/)(DHSI) is an annual digital scholarship training institute that takes place at the University of Victoria.
+* [Digital Musicology, Digital Humanities at Oxford Summer School](https://digital.humanities.ox.ac.uk/digital-humanities-oxford-summer-school)
+* [Music Encoding Initiative](https://music-encoding.org/community/news-events.html) has an annual conference and offers trainings and events throughout the year.
+
 
 ## Selected Bibliography
 
