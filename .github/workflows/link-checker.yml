@@ -50,7 +50,7 @@ jobs:
 
 
       - name: Run markdown link check
-        uses: gaurav-nelson/github-action-markdown-link-check@1.0.8
+        uses: gaurav-nelson/github-action-markdown-link-check@1.0.13
         id: mlc
         with:
           config-file: .github/link-checker-config.json
