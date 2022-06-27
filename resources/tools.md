@@ -29,6 +29,17 @@ We provide an [online customization](http://custom.music-encoding.org) service t
 
 **The MEI community provides a wide range of tools for working with MEI data. They can serve a whole range of purposes, from data creation or conversion to rendering or analysis. Some of them are full software applications, but many of them are libraries, modules or stylesheets to be integrated into larger software environments. All the tools listed here are open-source and freely available.**
 
+### mei-friend
+[mei-friend](https://mei-friend.mdw.ac.at) is a friendly, zero-install, browser-based MEI editor for music encodings, with schema-based autocompletion, GitHub integration, keyboard shortcuts, an easy to use look-up interface to the MEI Guidelines, and other goodies. The tool is intended as a ‘last mile’ editor aiming to alleviate the common task of cleaning up encodings generated via optical music recognition, or via conversion from other formats. Further details are available from the tool's [GitHub page](https://github.com/signature-Sound-Vienna/mei-friend-online/), where it is also possible to [submit bug reports, feature requests, and additions to the public repertoire](https://github.com/signature-sound-vienna/mei-friend-online/issues/new/choose) available directly through the application. 
+
+mei-friend was originally implemented as a [plugin package](https://atom.io/packages/mei-friend) for the [Atom](https://atom.io/) text editor, in work conducted as part of the EU H2020-funded [TROMPA project](https://trompamusic.eu) (Grant 770376).  Development of the [mei-friend Web application](https://mei-friend.mdw.ac.at) is being pursued as part of [Signature Sound Vienna](https://iwk.mdw.ac.at/signature-sound-vienna/), funded by the Austrian Science Fund (FWF) (P 34664-G). 
+Please refer to the following publications for further details:
+* Goebl, W. & Weigl, D. M. (2022). [Alleviating the Last Mile of Encoding: The mei-friend Package for the Atom Text Editor](https://doi.org/10.17613/45ag-v044). Music Encoding Conference 2021 Proceedings. [doi:10.17613/45ag-v044](https://doi.org/10.17613/45ag-v044).
+* Goebl, W. & Weigl, D. M. (2022). The mei-friend Web Application: Editing MEI in the Browser. Music Encoding Conference 2022 Proceedings. [*in press*].
+
+
+
+
 ### MerMEId
 
 The [Metadata Editor and Repository for MEI Data](https://github.com/edirom/mermeid) (MerMEId) aims at providing tools for editing comprehensive metadata in MEI files. Originally developed by the Danish Centre for Music Editing (DCM), it is now maintained and enhanced by the MerMEId community. The MerMEId is conceived for the compilation of catalogs and thematic indexes of works, but may also complement other music editing software in adding metadata to existing MEI files or serve as a database for editors of critical editions. Apart from basic metadata, such as titles and persons involved, the MerMEId editor records information such as detailed source descriptions, lists of performances and reviews, bibliography, notes on composition history as well as structural information including movements, instrumentation, incipits, key, tempo and meter.
