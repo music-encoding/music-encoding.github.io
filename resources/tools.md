@@ -37,9 +37,6 @@ Please refer to the following publications for further details:
 * Goebl, W. & Weigl, D. M. (2022). [Alleviating the Last Mile of Encoding: The mei-friend Package for the Atom Text Editor](https://doi.org/10.17613/45ag-v044). Music Encoding Conference 2021 Proceedings. [doi:10.17613/45ag-v044](https://doi.org/10.17613/45ag-v044).
 * Goebl, W. & Weigl, D. M. (2022). The mei-friend Web Application: Editing MEI in the Browser. Music Encoding Conference 2022 Proceedings. [*in press*].
 
-
-
-
 ### MerMEId
 
 The [Metadata Editor and Repository for MEI Data](https://github.com/edirom/mermeid) (MerMEId) aims at providing tools for editing comprehensive metadata in MEI files. Originally developed by the Danish Centre for Music Editing (DCM), it is now maintained and enhanced by the MerMEId community. The MerMEId is conceived for the compilation of catalogs and thematic indexes of works, but may also complement other music editing software in adding metadata to existing MEI files or serve as a database for editors of critical editions. Apart from basic metadata, such as titles and persons involved, the MerMEId editor records information such as detailed source descriptions, lists of performances and reviews, bibliography, notes on composition history as well as structural information including movements, instrumentation, incipits, key, tempo and meter.
