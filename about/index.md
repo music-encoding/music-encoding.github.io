@@ -29,7 +29,7 @@ Therefore, the Music Encoding Initiative strives to create a semantically rich m
 
 ## Is MEI free?
 
-Yes! MEI is distributed under the Educational Community License Version 2.0, a modified form of the Apache 2.0 license. Under this license, you are granted a "perpetual, worldwide, non-exclusive, no-charge, royalty-free, irrevocable copyright license to reproduce, prepare derivative works of, publicly display, publicly perform, sublicense, and distribute MEI and any derivative" version you create. For the legal details, [see the license](http://opensource.org/licenses/ECL-2.0 "Educational Community License"). Because MEI provides a flexible and extensible framework as well as the opportunity to participate in its development, it is free, not just in the sense of "free beer", but also in the sense of giving its users the freedom to use it as they desire.
+Yes! MEI is distributed under the Educational Community License Version 2.0, a modified form of the Apache 2.0 license. Under this license, you are granted a "perpetual, worldwide, non-exclusive, no-charge, royalty-free, irrevocable copyright license to reproduce, prepare derivative works of, publicly display, publicly perform, sublicense, and distribute MEI and any derivative" version you create. For the legal details, [see the license](https://opensource.org/licenses/ECL-2.0 "Educational Community License"). Because MEI provides a flexible and extensible framework as well as the opportunity to participate in its development, it is free, not just in the sense of "free beer", but also in the sense of giving its users the freedom to use it as they desire.
 
 ## How is MEI different from MusicXML?
 
