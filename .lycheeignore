@@ -1,6 +1,6 @@
-^(http|https)://localhost
 file://*
 http://music-encoding.org/*
 https://music-encoding.org/*
-https://github.com
+https://github.com/*
+https://web.archive.org/*
 .+@.+
