@@ -1,5 +1,7 @@
 # The MEI Website
 
+[![Check Links](https://github.com/rettinghaus/music-encoding.github.io/actions/workflows/link-checker.yml/badge.svg)](https://github.com/rettinghaus/music-encoding.github.io/actions/workflows/link-checker.yml)
+
 This is the MEI website, available at [https://music-encoding.org](https://music-encoding.org).
 
 ## Contributing
@@ -10,4 +12,4 @@ For information about contributing and developing the website locally, please re
 
 ### Spectre.css
 
-The MEI website uses [Spectre.css](https://picturepan2.github.io/spectre/) as published at https://github.com/picturepan2/spectre under the terms of the MIT-license.
+The MEI website uses [Spectre.css](https://picturepan2.github.io/spectre/) as published at <https://github.com/picturepan2/spectre> under the terms of the MIT-license.
