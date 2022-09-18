@@ -1,4 +1,5 @@
 ^(http|https)://localhost
 file://*
-mailto:.*
+.+@music-encoding.org
+https://music-encoding.org/*
 ^.github/
