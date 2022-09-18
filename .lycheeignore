@@ -1,5 +1,6 @@
 ^(http|https)://localhost
 file://*
-.+@music-encoding.org
+http://music-encoding.org/*
 https://music-encoding.org/*
-^.github/
+https://github.com
+.+@.+
