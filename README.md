@@ -1,6 +1,6 @@
 # The MEI Website
 
-[![Check Links](https://github.com/rettinghaus/music-encoding.github.io/actions/workflows/link-checker.yml/badge.svg)](https://github.com/rettinghaus/music-encoding.github.io/actions/workflows/link-checker.yml)
+[![Check Links](https://github.com/music-encoding/music-encoding.github.io/actions/workflows/link-checker.yml/badge.svg)](https://github.com/music-encoding/music-encoding.github.io/actions/workflows/link-checker.yml)
 
 This is the MEI website, available at [https://music-encoding.org](https://music-encoding.org).
 
