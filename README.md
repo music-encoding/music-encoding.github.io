@@ -2,6 +2,10 @@
 
 This is the MEI website, available at [https://music-encoding.org](https://music-encoding.org).
 
+## License
+
+This repo is released under the [ECL-2.0](LICENSE.md), and original creations contributed to this repo are accepted under the same license.
+
 ## Contributing
 
 For information about contributing and developing the website locally, please refer to the [Contributing Guidelines](CONTRIBUTING.md)
