@@ -2,6 +2,8 @@
 layout: default
 title: "Music Encoding Conference Awards"
 ---
+# MEC Awards
+
 Awards are given in recognition of a single or multi-authored paper or poster presented at the annual Music Encoding Conference. The table below lists awards given since 2019.
 
 
