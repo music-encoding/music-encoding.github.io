@@ -55,6 +55,9 @@ menu:
           - id: proceedings
             label: 'Proceedings'
             url: '/proceedings.html'
+          - id: awards
+            label: 'MEC Awards'
+            url: '/awards.html'
           - id: hosting
             label: 'Hosting Guidelines'
             url: '/hosting-guidelines.html'
