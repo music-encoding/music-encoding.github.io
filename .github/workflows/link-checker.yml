@@ -17,6 +17,16 @@ env:
   CHECK_BRANCH: main
 
 jobs:
+  website_link_check:
+    name: Check website links
+    runs-on: ubuntu-latest
+    if: ${{ github.repository_owner == 'music-encoding' }}
+
+    steps:
+      - uses: technote-space/broken-link-checker-action@v2
+        with:
+          target: ${{ env.CHECK_WEBSITE }}
+
   linkChecker:
     runs-on: ubuntu-latest
     steps:
@@ -35,7 +45,7 @@ jobs:
         id: lychee
         uses: lycheeverse/lychee-action@v1.5.1
         with:
-          args: './**/*.md'
+          args: "./**/*.md"
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
 
