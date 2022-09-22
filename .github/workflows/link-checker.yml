@@ -20,7 +20,16 @@ jobs:
   linkChecker:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - name: Set variables
+        run: |
+          if [[ "${{ github.event.inputs.branch }}" != '' ]] ; then
+            echo "Setting branch: ${{ github.event.inputs.branch }}"
+            echo "CHECK_BRANCH=${{ github.event.inputs.branch }}" >> $GITHUB_ENV
+          fi
+       - name: Checkout main repo
+         uses: actions/checkout@v3
+         with:
+           ref: ${{ env.CHECK_BRANCH }}
 
       - name: Link Checker
         id: lychee
