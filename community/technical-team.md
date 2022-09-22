@@ -40,7 +40,7 @@ The schedule for these developer workshops is the _last Friday of every odd mont
 **2022**
 * November 25, 2022 [2pm UTC](https://www.timeanddate.com/worldclock/converter.html?iso=20221125T140000&p1=1440) ODD Friday
 * October 27, 2022 [1pm UTC](https://www.timeanddate.com/worldclock/converter.html?iso=20221027T130000&p1=1440) ODD Thursday
-* September 30, 2022 [1pm UTC](https://www.timeanddate.com/worldclock/converter.html?iso=20220930T130000&p1=1440) ODD Friday
+* September 23, 2022 [1pm UTC](https://www.timeanddate.com/worldclock/converter.html?iso=20220923T130000&p1=1440) ODD Friday
 * August: Summer break
 * July 29, 2022 [1pm UTC](https://www.timeanddate.com/worldclock/converter.html?iso=20220729T130000&p1=1440), ODD Friday
 * June 30, 2022 [1pm UTC](https://www.timeanddate.com/worldclock/converter.html?iso=20220630T130000&p1=1440) ODD Thursday
