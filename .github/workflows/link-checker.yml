@@ -2,21 +2,19 @@ name: Link Checker
 
 on:
   schedule:
-    - cron: '0 13 * * 0'  # run every Sunday at 1pm UTC https://crontab.guru/#0_13_*_*_1
+    - cron: "0 13 * * 0" # run every Sunday at 1pm UTC https://crontab.guru/#0_13_*_*_1
   workflow_dispatch: # trigger manually
     inputs:
       branch:
-        description: 'Branch to check'
+        description: "Branch to check"
         required: true
         default: main
-
 
 # globals
 env:
   CHECK_WEBSITE: https://music-encoding.org
   CHECK_OWNER: music-encoding
   CHECK_BRANCH: main
-
 
 jobs:
   website_link_check:
@@ -29,9 +27,7 @@ jobs:
         with:
           target: ${{ env.CHECK_WEBSITE }}
 
-
-  markdown-link-check:
-    name: Check markdown links
+  linkChecker:
     runs-on: ubuntu-latest
     if: ${{ github.repository_owner == 'music-encoding' }}
 
@@ -42,28 +38,23 @@ jobs:
             echo "Setting branch: ${{ github.event.inputs.branch }}"
             echo "CHECK_BRANCH=${{ github.event.inputs.branch }}" >> $GITHUB_ENV
           fi
-
       - name: Checkout main repo
         uses: actions/checkout@v3
         with:
           ref: ${{ env.CHECK_BRANCH }}
 
-
-      - name: Run markdown link check
-        uses: gaurav-nelson/github-action-markdown-link-check@v1
-        id: mlc
+      - name: Link Checker
+        id: lychee
+        uses: lycheeverse/lychee-action@v1.5.1
         with:
-          config-file: .github/link-checker-config.json
-          use-quiet-mode: 'yes'
-          use-verbose-mode: 'yes'
-
-      - name: Create issue for broken links
-        if: failure()
-        id: create-issue
-        uses: JasonEtco/create-an-issue@v2
+          args: "./**/*.md"
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          MAIN_REPO: ${{ github.repository }}
-          RUN_ID: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+
+      - name: Create Issue From File
+        if: steps.lychee.outputs.exit_code != 0
+        uses: peter-evans/create-issue-from-file@v4
         with:
-          filename: .github/link-checker-issue-template.md
+          title: Link Checker Report
+          content-filepath: ./lychee/out.md
+          labels: bug, documentation
