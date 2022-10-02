@@ -1,3 +1,9 @@
 source 'https://rubygems.org'
-gem 'github-pages', group: :jekyll_plugins
-gem "webrick", "~> 1.7"
+
+gem 'jekyll', '~> 4.2', '>= 4.2.2'
+gem 'jekyll-sass-converter', '~> 2.2'
+gem 'jekyll-redirect-from', '~> 0.16.0'
+
+group :jekyll_plugins do
+    gem "webrick", "~> 1.7"
+end
