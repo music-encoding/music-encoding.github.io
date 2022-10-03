@@ -1,4 +1,4 @@
-name: Testing the GitHub Pages publication
+name: Build website with Jekyll
 
 on:
   workflow_dispatch:
