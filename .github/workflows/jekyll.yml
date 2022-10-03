@@ -1,7 +1,6 @@
 name: Build website with Jekyll
 
 on:
-  workflow_dispatch:
   push:
 
 jobs:
