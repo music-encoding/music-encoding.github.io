@@ -18,7 +18,7 @@ jobs:
         restore-keys: |
           ${{ runner.os }}-gems-
 
-    # Specify the target branch (optional)
+    # Build Jekyll to the specified target branch
     - uses: helaili/jekyll-action@v2
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
