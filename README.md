@@ -1,6 +1,8 @@
 # The MEI Website
 
 [![Check Links](https://github.com/music-encoding/music-encoding.github.io/actions/workflows/link-checker.yml/badge.svg)](https://github.com/music-encoding/music-encoding.github.io/actions/workflows/link-checker.yml)
+[![Jekyll Build](https://github.com/music-encoding/music-encoding.github.io/actions/workflows/jekyll.yml/badge.svg)](https://github.com/music-encoding/music-encoding.github.io/actions/workflows/jekyll.yml)
+[![License](https://img.shields.io/github/license/music-encoding/music-encoding.github.io)](https://github.com/music-encoding/music-encoding.github.io/blob/main/LICENSE)
 
 This is the MEI website, available at [https://music-encoding.org](https://music-encoding.org).
 
