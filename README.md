@@ -22,4 +22,4 @@ The MEI website uses [Spectre.css](https://picturepan2.github.io/spectre/) as pu
 
 ## Continuous integration and deployment
 
-This website is being built automatially whenever a commit is pushed to the main branch. The build is being executed through our custom GitHub Action instead of `github-pages`. This decision was made due to the limitations github-pages poses in terms of available jekyll plugins (gems). Nevertheless, the technology for the website is basically the same as when using github-pages, which is still being used for deploying the website.
+This website is being built automatically whenever a commit is pushed to the main branch. 
