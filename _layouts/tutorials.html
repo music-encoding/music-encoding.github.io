@@ -77,7 +77,7 @@ layout: default
             <script>
 
                 try {
-                    fetch("../{{page.data}}")
+                    fetch("./{{page.data}}")
                         .then(function(response) {
                             if (response.ok) {
                                 return response.json()

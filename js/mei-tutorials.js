@@ -559,7 +559,7 @@ function activateStepListItem(data,stepNum) {
  * This function loads files, relative from the tutorial's folder
  */
 function fetchFile(file) {
-    return fetch('../' + file)
+    return fetch('./' + file)
         .then(function(response) {
             if(response.ok) {
                 return response.text();
