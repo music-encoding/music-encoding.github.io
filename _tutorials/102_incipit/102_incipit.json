@@ -327,7 +327,7 @@
       "prefillFile": "102_incipit_step-10-prefill.xml",
       "xmlFile": "102_incipit_step-10.xml",
       "xpaths": [
-        {"rule": "count(//mei:measure) = 5", "renderanyway": false, "hint": "You need two measure elements."},
+        {"rule": "count(//mei:measure) = 5", "renderanyway": false, "hint": "You need three measure elements."},
         {"rule": "//mei:measure[4]/following-sibling::mei:measure", "renderanyway": false, "hint": "Measures have to follow each other."},
         {"rule": "count(//mei:measure[4]/@*) = 1", "renderanyway": false, "hint": "You need one attribute on the first measure element (@n)."},
         {"rule": "//mei:measure[4]/@n = 3", "renderanyway": false, "hint": "You need a @n attribute with a value of 3 on the first measure element."},
