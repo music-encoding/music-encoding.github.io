@@ -1,11 +1,9 @@
 ---
 layout: post
-title:  "MEI Board: Call for nominations 2022"
-date:   2022-11-07 15:00:00 +0100
+title:  "MEI Board Call for nominations 2022"
+date:   2022-11-07 15:30:00 +0000
 categories: update
 ---
-# MEI Board: Call for nominations 2022
-
 On 31 December 2022, the terms of three MEI Board members will end. In the name of the entire MEI community, the MEI Board expresses its gratitude to Johannes Kepper, Perry Roland, and Martha Thomae for their service and dedication to MEI.
 
 In the 2022 MEI Board elections, the MEI community will determine three MEI Board members for the term 2023–2025. The election process will take place in accordance with the [Music Encoding Initiative By-Laws](http://music-encoding.org/community/mei-by-laws.html).
@@ -51,4 +49,3 @@ Notes
 
 * The By-laws of the Music Encoding Initiative are available online at: [http://music-encoding.org/community/mei-by-laws.html](http://music-encoding.org/community/mei-by-laws.html)
 *  All deadlines are 11:59 pm (UTC)
-
