@@ -25,7 +25,7 @@ The timeline of the elections will be as follows:
   - Candidates who have been nominated but have not confirmed their willingness by 23 November 2022 will not be included on the ballot.
   - Candidates must be members of the MEI-L mailing list and may register until 23 November 2022.
 
-- **Election phase** (28 November – 12 December 2022)
+- **Election phase** (28 November – 18 December 2022)
   - The election will take place using OpaVote and the [Scottish STV Ranked Choice Voting](https://www.opavote.com/methods/single-transferable-vote#scottish-stv) method.
   - We will inform you in separate emails about the start of the election and your individual voting tokens.
 
