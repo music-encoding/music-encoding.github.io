@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "MEI Board: Call for nominations 2022"
-date:   2022-11-06
+date:   2022-11-07
 categories: update
 ---
 # MEI Board: Call for nominations 2022
