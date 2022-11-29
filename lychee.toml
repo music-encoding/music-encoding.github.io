@@ -1,3 +1,12 @@
+#############################  Disclaimer  #############################
+
+# Configuration file for lychee link checker.
+#
+# Further information and explanation of possible options can be found
+# at https://github.com/lycheeverse/lychee/.
+#
+# Adapted from example config file: https://github.com/lycheeverse/lychee/blob/master/lychee.example.toml
+
 #############################  Display  #############################
 
 # Verbose program output
