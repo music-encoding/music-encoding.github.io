@@ -16,9 +16,10 @@ accept = [200, 429]
 # Remap URI matching pattern to different URI.
 remap = [
     'file:///home/runner/work/music-encoding.github.io/music-encoding.github.io/_tutorials https://github.com/music-encoding/music-encoding.github.io/tree/gh-pages/tutorials/',
-    'http://music-encoding.org/community/mei-organization/mei-by-laws/ https://music-encoding.org/community/mei-by-laws.html',
     'https://github.com/music-encoding/music-encoding/tree/basic https://github.com/music-encoding/music-encoding/commit/b50748ce537b43e1527791fb41e8c28aa1582cdb',
     'http://music-encoding.org/community/conference/tours17/program/ https://web.archive.org/web/20170511140944/http://music-encoding.org/community/conference/tours17/program',
+    'http://music-encoding.org/community/mei-organization/mei-by-laws/ https://music-encoding.org/community/mei-by-laws.html',
+    'http://music-encoding.org/proceedings https://github.com/music-encoding/mec-proceedings',
 ]
 
 #############################  Exclusions  ##########################
