@@ -28,13 +28,13 @@ Create a new branch for your changes on your local Git repository. You should ma
 
 ### Step 3: Install Jekyll
 
-Run `bundle install` in the root directory of your local Git repository directory. This will install all of the requirements for running the site locally. 
+Run `bundle install` in the root directory of your local clone of this repository. This will install all of the requirements for running the site locally.
 
 Windows user should check out this step-by-step guide to setting up Jekyll on Windows: [https://jekyll-windows.juthilo.com/](https://jekyll-windows.juthilo.com/)
 
 ### Step 4. Run the Jekyll server
 
-You can run the Jekyll service locally with `bundle exec jekyll serve --baseurl=""`. This will compile the site and start serving the content locally. Since compiling can take a while, you can add the option `-V` to get a more verbose output and information about the running compilation steps. Once it's ready, you can open your browser and visit `http://localhost:4000` to see your local version of the site.
+You can run the Jekyll service locally with `bundle exec jekyll serve --baseurl=""`. This will compile the site and start serving the content locally. Since compiling can take a while, you can add the option `-V` to get a more verbose output and information about the running compilation steps. Once it's ready, you can open your browser and visit `http://localhost:4000` to see your local version of the website.
 
 ### Step 5. Make your changes and commit
 
