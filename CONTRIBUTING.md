@@ -49,7 +49,7 @@ To install and run Jekyll natively on your machine, please follow these steps:
 
 #### Step 3b: Run Jekyll in a Docker container
 
-To avoid installing Jekyll natively and to assure it comes with all the necessary dependencies, you can run it in a preconfigured container image. The publishers of Jekyll do offer a corresponding Docker image for such purposes. To run it, please follow theses instructions:
+To avoid installing Jekyll natively and to assure it comes with all the necessary dependencies, you can run it in a preconfigured container image. The publishers of Jekyll offer a corresponding Docker image for such purposes. To run it, please follow these instructions:
 
   1. Install Docker
 
