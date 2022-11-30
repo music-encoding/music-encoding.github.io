@@ -39,6 +39,10 @@ function animateCarousel(carousel, milliseconds) {
          milliseconds);
 }
 
+/*
+ * stops a carousels animation
+ * @param {Object} carousel - HTMLElement.
+ */
 function stopCarouselAnimation(carousel) {
     "use strict";
     const id = carousel.id;
