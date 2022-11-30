@@ -60,7 +60,7 @@ To avoid installing Jekyll natively and to assure it comes with all the necessar
   Make sure to start docker before running the following command in the root directory of your local clone of this repository:
 
   ```bash
-docker run --rm --volume="$PWD:/srv/jekyll:Z" --publish 4000:4000 jekyll/jekyll jekyll serve
+docker run --rm --it --volume="$PWD:/srv/jekyll:Z" --publish 4000:4000 jekyll/jekyll jekyll serve
 ```
 
 ### Step 5. Make your changes and commit
