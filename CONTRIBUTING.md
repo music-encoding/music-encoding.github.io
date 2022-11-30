@@ -75,7 +75,7 @@ docker run --rm --it --volume="$PWD:/srv/jekyll:Z" --publish 4000:4000 jekyll/je
   | jekyll serve     | execute jekyll to serve the website                                                      |
 
 
-This will compile the site and start serving the content locally. Information on the compilation process will be output to the command shell. Once it's ready, you can open your browser and visit `http://localhost:4000` to see your local version of the website.
+  This will compile the site and start serving the content locally. Information on the compilation process will be output to the command shell. Once it's ready, you can open your browser and visit `http://localhost:4000` to see your local version of the website.
 
 ### Step 5. Make your changes and commit
 
