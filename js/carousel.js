@@ -13,20 +13,18 @@
  * permissions and limitations under the License.
  */
 
-/*jslint browser:true*/
-
-var intervals = [];
+let intervals = [];
 
 /*
  * sets an interval timer for a submitted carousel
- * @param {item} carousel - HTMLcolleciton item.
+ * @param {Object} carousel - HTMLElement.
  * @param {integer} milliseconds  – the time per slide.
  */
 function animateCarousel(carousel, milliseconds) {
     "use strict";
-    var slides = carousel.getElementsByClassName("carousel-locator"),
-        slideIndex = 0,
-        id = carousel.id;
+    const slides = carousel.getElementsByClassName("carousel-locator");
+    const id = carousel.id;
+    var slideIndex = 0;
     // iterate over slides
     intervals['i' + id] = setInterval(function () {
         // make slide at slideIndex visible
@@ -43,6 +41,6 @@ function animateCarousel(carousel, milliseconds) {
 
 function stopCarouselAnimation(carousel) {
     "use strict";
-    var id = carousel.id;
+    const id = carousel.id;
     clearInterval(intervals['i' + id]);
 }
