@@ -26,15 +26,42 @@ In order to work with the repo offline you neet to clone the code to your local 
 
 Create a new branch for your changes on your local Git repository. You should make it a descriptive name, like ‘feature_new-project’, ‘fix_broken-links’ or similar.
 
-### Step 3: Install Jekyll
+### Step 3: Build and serve the website locally
 
-Run `bundle install` in the root directory of your local clone of this repository. This will install all of the requirements for running the site locally.
+For properly reviewing any changes made to your local copy of the MEI website in your browser, you need Jekyll to build and serve the page on your local machine. There are two recommended options for doing this:
 
-Windows user should check out this step-by-step guide to setting up Jekyll on Windows: [https://jekyll-windows.juthilo.com/](https://jekyll-windows.juthilo.com/)
+a. Run Jekyll on your machine natively
+b. Run Jekyll in a Docker container
 
-### Step 4. Run the Jekyll server
+#### Step 3a: Run Jekyll on your machine natively
 
-You can run the Jekyll service locally with `bundle exec jekyll serve --baseurl=""`. This will compile the site and start serving the content locally. Since compiling can take a while, you can add the option `-V` to get a more verbose output and information about the running compilation steps. Once it's ready, you can open your browser and visit `http://localhost:4000` to see your local version of the website.
+To install and run Jekyll natively o your machine, please follow these steps:
+
+  1. Install Jekyll
+
+  Run `bundle install` in the root directory of your local clone of this repository. This will install all of the requirements for running the site locally.
+
+  Windows user should check out this step-by-step guide to setting up Jekyll on Windows: [https://jekyll-windows.juthilo.com/](https://jekyll-windows.juthilo.com/)
+
+  2. Run the Jekyll server
+
+  You can run the Jekyll service locally with `bundle exec jekyll serve --baseurl=""`. This will compile the site and start serving the content locally. Since compiling can take a while, you can add the option `-V` to get a more verbose output and information about the running compilation steps. Once it's ready, you can open your browser and visit `http://localhost:4000` to see your local version of the website.
+
+#### Step 3b: Run Jekyll in a Docker container
+
+To avoid installing Jekyll natively and to assure it comes with all the necessary dependencies, you can run it in a preconfigured container image. The publishers of Jekyll do offer a corresponding Docker image for such purposes. To run it, please follow theses instructions:
+
+  1. Install Docker
+
+  If not already installed on your machine, download and install Docker from [https://www.docker.com/](https://www.docker.com/).
+
+  2. Run Jekyll with Docker
+
+  Make sure to start docker before running the following command in the root directory of your local clone of this repository:
+
+  ```bash
+docker run --rm --volume="$PWD:/srv/jekyll:Z" --publish 4000:4000 jekyll/jekyll jekyll serve
+```
 
 ### Step 5. Make your changes and commit
 
