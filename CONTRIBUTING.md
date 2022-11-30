@@ -41,7 +41,7 @@ To install and run Jekyll natively on your machine, please follow these steps:
 
   Run `bundle install` in the root directory of your local clone of this repository. This will install all of the requirements for running the site locally.
 
-  Windows user should check out this step-by-step guide to setting up Jekyll on Windows: [https://jekyll-windows.juthilo.com/](https://jekyll-windows.juthilo.com/)
+  Windows users should check out this step-by-step guide to setting up Jekyll on Windows: [https://jekyll-windows.juthilo.com/](https://jekyll-windows.juthilo.com/)
 
   2. Run the Jekyll server
 
