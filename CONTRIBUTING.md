@@ -63,6 +63,20 @@ To avoid installing Jekyll natively and to assure it comes with all the necessar
 docker run --rm --it --volume="$PWD:/srv/jekyll:Z" --publish 4000:4000 jekyll/jekyll jekyll serve
 ```
 
+  Detailed explanations of this command can be found in the [Docker Command-line reference](https://docs.docker.com/engine/reference/run/) but here’s a concise explanation:
+  
+  | Command Particle | Description                                                                              |
+  |:-----------------|:-----------------------------------------------------------------------------------------|
+  | --rm             | automatically clean up the container and remove the file system when the container exits |
+  | --it             | keeps the shell open                                                                     |
+  | --volume         | mount a folder from the host as volume in container                                      |
+  | --publish        | specifies the ports the container publishes                                              |
+  | jekyll/jekyll    | the name of the Dockerimage                                                              |
+  | jekyll serve     | execute jekyll to serve the website                                                      |
+
+
+This will compile the site and start serving the content locally. Information on the compilation process will be output to the command shell. Once it's ready, you can open your browser and visit `http://localhost:4000` to see your local version of the website.
+
 ### Step 5. Make your changes and commit
 
 You should now be able to make your changes. Try to keep your commits as ‘atomic’ as possible; that is, commit only the changes necessary for a given set of functionality. Avoid large commits that change a lot of things, as this makes it harder to review your changes for unintended side effects and potential problems.
