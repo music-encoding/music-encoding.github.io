@@ -37,45 +37,45 @@ b. Run Jekyll in a Docker container
 
 To install and run Jekyll natively on your machine, please follow these steps:
 
-  1. Install Jekyll
+1. Install Jekyll
 
-  Run `bundle install` in the root directory of your local clone of this repository. This will install all of the requirements for running the site locally.
+    Run `bundle install` in the root directory of your local clone of this repository. This will install all of the requirements for running the site locally.
 
-  Windows users should check out this step-by-step guide to setting up Jekyll on Windows: [https://jekyll-windows.juthilo.com/](https://jekyll-windows.juthilo.com/)
+    Windows users should check out this step-by-step guide to setting up Jekyll on Windows: [https://jekyll-windows.juthilo.com/](https://jekyll-windows.juthilo.com/)
 
-  2. Run the Jekyll server
+2. Run the Jekyll server
 
-  You can run the Jekyll service locally with `bundle exec jekyll serve --baseurl=""`. This will compile the site and start serving the content locally. Since compiling can take a while, you can add the option `-V` to get a more verbose output and information about the running compilation steps. Once it's ready, you can open your browser and visit `http://localhost:4000` to see your local version of the website.
+    You can run the Jekyll service locally with `bundle exec jekyll serve --baseurl=""`. This will compile the site and start serving the content locally. Since compiling can take a while, you can add the option `-V` to get a more verbose output and information about the running compilation steps. Once it's ready, you can open your browser and visit `http://localhost:4000` to see your local version of the website.
 
 #### Step 3b: Run Jekyll in a Docker container
 
 To avoid installing Jekyll natively and to assure it comes with all the necessary dependencies, you can run it in a preconfigured container image. The publishers of Jekyll offer a corresponding Docker image for such purposes. To run it, please follow these instructions:
 
-  1. Install Docker
+1. Install Docker
 
-  If not already installed on your machine, download and install Docker from [https://www.docker.com/](https://www.docker.com/).
+    If not already installed on your machine, download and install Docker from [https://www.docker.com/](https://www.docker.com/).
 
-  2. Run Jekyll with Docker
+2. Run Jekyll with Docker
 
-  Make sure to start docker before running the following command in the root directory of your local clone of this repository:
+    Make sure to start docker before running the following command in the root directory of your local clone of this repository:
 
-  ```bash
-docker run --rm --it --volume="$PWD:/srv/jekyll:Z" --publish 4000:4000 jekyll/jekyll jekyll serve
-```
+    ```bash
+    docker run --rm --it --volume="$PWD:/srv/jekyll:Z" --publish 4000:4000 jekyll/jekyll jekyll serve
+    ```
 
-  Detailed explanations of this command can be found in the [Docker Command-line reference](https://docs.docker.com/engine/reference/run/) but here’s a concise explanation:
+    Detailed explanations of this command can be found in the [Docker Command-line reference](https://docs.docker.com/engine/reference/run/) but here’s a concise explanation:
   
-  | Command Particle | Description                                                                              |
-  |:-----------------|:-----------------------------------------------------------------------------------------|
-  | --rm             | automatically clean up the container and remove the file system when the container exits |
-  | --it             | keeps the shell open                                                                     |
-  | --volume         | mount a folder from the host as volume in container                                      |
-  | --publish        | specifies the ports the container publishes                                              |
-  | jekyll/jekyll    | the name of the Dockerimage                                                              |
-  | jekyll serve     | execute jekyll to serve the website                                                      |
+    | Command Particle | Description                                                                              |
+    |:-----------------|:-----------------------------------------------------------------------------------------|
+    | --rm             | automatically clean up the container and remove the file system when the container exits |
+    | --it             | keeps the shell open                                                                     |
+    | --volume         | mount a folder from the host as volume in container                                      |
+    | --publish        | specifies the ports the container publishes                                              |
+    | jekyll/jekyll    | the name of the Dockerimage                                                              |
+    | jekyll serve     | execute jekyll to serve the website                                                      |
 
 
-  This will compile the site and start serving the content locally. Information on the compilation process will be output to the command shell. Once it's ready, you can open your browser and visit `http://localhost:4000` to see your local version of the website.
+    This will compile the site and start serving the content locally. Information on the compilation process will be output to the command shell. Once it's ready, you can open your browser and visit `http://localhost:4000` to see your local version of the website.
 
 ### Step 5. Make your changes and commit
 
