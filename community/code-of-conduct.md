@@ -21,15 +21,10 @@ If you see someone who is making an extra effort to ensure our community is welc
 The following behaviors are expected and requested of all community members:
 
 * Participate in an authentic and active way. In doing so, you contribute to the health and longevity of this community.
-
 * Exercise consideration and respect in your speech and actions.
-
 * Attempt collaboration before conflict.
-
 * Refrain from demeaning, discriminatory, or harassing behavior and speech.
-
 * Be mindful of your surroundings and of your fellow participants. Alert community leaders if you notice a dangerous situation, someone in distress, or violations of this Code of Conduct, even if they seem inconsequential.
-
 * Remember that community event venues may be shared with members of the public; please be respectful to all patrons of these locations.
 
 ## **4. Unacceptable Behavior**
