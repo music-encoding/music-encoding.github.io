@@ -42,6 +42,9 @@ menu:
           - id: meibylaws
             label: 'MEI By-laws'
             url: '/mei-by-laws.html'
+          - id: code
+            label: 'Code of Conduct'
+            url: '/code-of-conduct.html'
     - id: conference
       label: 'Conference'
       url: '/conference'
