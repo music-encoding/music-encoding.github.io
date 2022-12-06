@@ -22,6 +22,7 @@ let intervals = [];
  */
 function animateCarousel(carousel, milliseconds) {
     "use strict";
+    if (carousel === null) return;
     const slides = carousel.getElementsByClassName("carousel-locator");
     const id = carousel.id;
     var slideIndex = 0;
