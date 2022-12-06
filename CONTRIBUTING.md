@@ -69,7 +69,7 @@ To avoid installing Jekyll natively and to assure it comes with all the necessar
     |:-----------------|:-----------------------------------------------------------------------------------------|
     | --rm             | automatically clean up the container and remove the file system when the container exits |
     | --it             | keeps the shell open                                                                     |
-    | --volume         | mount a folder from the host as volume in container                                      |
+    | --volume         | mount a folder from the host as volume in container, here the current working directory (`$PWD`) gets mounted into `/srv/jekyll` in the docker container |
     | --publish        | specifies the ports the container publishes                                              |
     | jekyll/jekyll    | the name of the Dockerimage                                                              |
     | jekyll serve     | execute jekyll to serve the website                                                      |
