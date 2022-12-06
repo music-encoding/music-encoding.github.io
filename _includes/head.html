@@ -12,7 +12,10 @@
     <script type="text/javascript" src="/js/carousel.js"></script>
     <script type="text/javascript">
       document.addEventListener("DOMContentLoaded", event => {
-        animateCarousel(document.getElementById("index-carousel"), 3000);
+        const indexCarousel = document.getElementById("index-carousel");
+        if (indexCarousel !== null) {
+          animateCarousel(indexCarousel, 3000);
+        }
       });
     </script>
 </head>
