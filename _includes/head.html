@@ -15,6 +15,12 @@
         const indexCarousel = document.getElementById("index-carousel");
         if (indexCarousel !== null) {
           animateCarousel(indexCarousel, 3000);
+          indexCarousel.addEventListener("mouseover", event => {
+            stopCarouselAnimation(indexCarousel);
+          });
+          indexCarousel.addEventListener("mouseout", event => {
+            animateCarousel(indexCarousel, 3000);
+          });
         }
       });
     </script>
