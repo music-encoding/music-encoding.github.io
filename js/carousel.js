@@ -25,7 +25,7 @@ function animateCarousel(carousel, milliseconds) {
     if (carousel === null) return;
     const slides = carousel.getElementsByClassName("carousel-locator");
     const id = carousel.id;
-    var slideIndex = 0;
+    let slideIndex = 0;
     // iterate over slides
     intervals['i' + id] = setInterval(function () {
         // make slide at slideIndex visible
