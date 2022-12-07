@@ -9,4 +9,19 @@
     <link rel="stylesheet" href="{{site.style_baseurl}}/css/main.css">
     <!-- syntax highlighting CSS -->
     <link rel="stylesheet" href="{{ site.style_baseurl }}/css/syntax.css" />
+    <script type="text/javascript" src="/js/carousel.js"></script>
+    <script type="text/javascript">
+      document.addEventListener("DOMContentLoaded", event => {
+        const indexCarousel = document.getElementById("index-carousel");
+        if (indexCarousel !== null) {
+          animateCarousel(indexCarousel, 3000);
+          indexCarousel.addEventListener("mouseover", event => {
+            stopCarouselAnimation(indexCarousel);
+          });
+          indexCarousel.addEventListener("mouseout", event => {
+            animateCarousel(indexCarousel, 3000);
+          });
+        }
+      });
+    </script>
 </head>
