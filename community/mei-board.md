@@ -10,6 +10,12 @@ The MEI Board manages the property and business of MEI. It promotes the developm
 
 ## Current Board Members
 
+### Term 2023–2025
+
+* **Johannes Kepper**, Musikwissenschaftliches Seminar Detmold/Paderborn
+* **Anna Plaksin**, Institut für Kunstgeschichte und Musikwissenschaft (IKM), Abteilung Musikwissenschaft, Johannes Gutenberg-Universität Mainz
+* **David M. Weigl**, Universität für Musik und darstellende Kunst Wien, Institut für musikalische Akustik – Wiener Klangstil
+
 ### Term 2022–2024
 
 * **Benjamin W. Bohl (Technical Co-Chair)**, Institut für Musikwissenschaft, Goethe Universität Frankfurt, Frankfurt am Main and Musikwissenschaftliches Seminar Detmold/Paderborn
@@ -22,14 +28,10 @@ The MEI Board manages the property and business of MEI. It promotes the developm
 * **Laurent Pugin**, RISM Digital Center, Bern
 * **Kristina Richts-Matthaei**, Musikwissenschaftliches Seminar Detmold/Paderborn
 
-### Term 2020–2022
-
-* **Johannes Kepper**, Musikwissenschaftliches Seminar Detmold/Paderborn
-* **Perry Roland**, University of Virginia Library, Charlottesville (previous terms 2015–2018)
-* **Martha Thomae**, McGill University, Montréal
-
 ### Previous Board Members
 
+* **Martha Thomae**, McGill University, Montréal (2020–2022)
+* **Perry Roland**, University of Virginia Library, Charlottesville (2015–2018, 2020–2022)
 * **Elsa De Luca**, Centro de Estudos de Sociologia e Estética Musical (CESEM), Universidade Nova de Lisboa, Lisboa (2019–2021)
 * **Giuliano Di Bacco**, Jacobs School of Music, Indiana University, Bloomington, (2015–2017)
 * **Nobert Dubowy**, Internationale Stiftung Mozarteum, Salzburg (2018–2020)
