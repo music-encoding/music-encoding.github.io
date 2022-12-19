@@ -14,7 +14,7 @@ The MEI Board manages the property and business of MEI. It promotes the developm
 
 * **Johannes Kepper**, Musikwissenschaftliches Seminar Detmold/Paderborn
 * **Anna Plaksin**, Institut für Kunstgeschichte und Musikwissenschaft (IKM), Abteilung Musikwissenschaft, Johannes Gutenberg-Universität Mainz
-* **David M. Weigl**, Universität für Musik und darstellende Kunst Wien, Institut für musikalische Akustik – Wiener Klangstil
+* **David M. Weigl**, Institut für musikalische Akustik – Wiener Klangstil, mdw – Universität für Musik und darstellende Kunst Wien
 
 ### Term 2022–2024
 
