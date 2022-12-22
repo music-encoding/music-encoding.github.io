@@ -14,7 +14,7 @@ If a participant engages in harassing behavior, the MEC organizing committee may
 
 Conference staff will keep the name and identity of any reports confidential unless explicitly discussed with the person reporting.
 
-1. Contact a member of conference staff, who can be identified by their badges.  All of our conference staff members are informed of the code of conduct policy and guide for handling harassment at the conference.
+1. Contact a member of conference staff, who can be identified by their badges. All of our conference staff members are informed of the code of conduct policy and guide for handling harassment at the conference.
 2. When reporting the event to staff, try to gather as much information as available, but do not interview people about the incident. Conference staff will assist you in writing report/collecting information. The important information consists of:
     * Identifying information (name) of the participant doing the harassing
     * The behavior that was in violation of the code of conduct
@@ -25,10 +25,10 @@ Conference staff will keep the name and identity of any reports confidential unl
 ## Acknowledgements
 This policy is adapted from the policies of:
 
-* ACRL/NY: <a href="https://acrlny.org/about2/code-of-conduct" target="blank">https://acrlny.org/about2/code-of-conduct</a>
-* CritLib Unconference 2015: <a href="http://critlib2015.weebly.com/code-of-conduct.html" target="blank">http://critlib2015.weebly.com/code-of-conduct.html</a>
-* Ontario Library Association Super Conference 2018: <a href="https://www.olasuperconference.ca/about/code-of-conduct" target="blank">https://www.olasuperconference.ca/about/code-of-conduct/</a>
-* Foss4G 2017: <a href="https://2017.foss4g.org/about/Code-of-Conduct.pdf" target="blank">https://2017.foss4g.org/about/Code-of-Conduct.pdf</a>
-* Tufts Social Science Librarians Bootcamp 2020: <a href="https://sites.tufts.edu/sslbc2020/code-of-conduct" target="blank">https://sites.tufts.edu/sslbc2020/code-of-conduct</a> and <a href="https://sites.tufts.edu/sslbc2020/code-of-conduct/attendee-procedure/">https://sites.tufts.edu/sslbc2020/code-of-conduct/attendee-procedure</a>
+- ACRL/NY: <a href="https://acrlny.org/about2/code-of-conduct" target="blank">https://acrlny.org/about2/code-of-conduct</a>
+- CritLib Unconference 2015: <a href="https://pdxscholar.library.pdx.edu/critlib/2015/Conference/18/" target="blank">https://pdxscholar.library.pdx.edu/critlib/2015/Conference/18/</a>
+- Ontario Library Association Super Conference 2018: <a href="https://www.olasuperconference.ca/about/code-of-conduct" target="blank">https://www.olasuperconference.ca/about/code-of-conduct/</a>
+- Foss4G 2017: <a href="https://2017.foss4g.org/about/Code-of-Conduct.pdf" target="blank">https://2017.foss4g.org/about/Code-of-Conduct.pdf</a>
+- Tufts Social Science Librarians Bootcamp 2019: <a href="https://sites.tufts.edu/sslbc2019/code-of-conduct" target="blank">https://sites.tufts.edu/sslbc2019/code-of-conduct</a> and <a href="https://sites.tufts.edu/sslbc2019/code-of-conduct/attendee-procedure/">https://sites.tufts.edu/sslbc2019/code-of-conduct/attendee-procedure</a>
 
 This policy is licensed under the Creative Commons Zero license. It is public domain, no credit and no open licensing of your version is required. Most recent update: April 2021.
