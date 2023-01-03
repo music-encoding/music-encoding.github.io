@@ -10,6 +10,12 @@ The MEI Board manages the property and business of MEI. It promotes the developm
 
 ## Current Board Members
 
+### Term 2023-2025
+
+* **Johannes Kepper**, Musikwissenschaftliches Seminar Detmold/Paderborn (previous terms 2020-2022)
+* **Anna Plaksin**, Johannes Gutenberg-Universität Mainz
+* **David Weigl**,  MDW – University of Music and Performing Arts Vienna
+
 ### Term 2022–2024
 
 * **Benjamin W. Bohl (Technical Co-Chair)**, Institut für Musikwissenschaft, Goethe Universität Frankfurt, Frankfurt am Main and Musikwissenschaftliches Seminar Detmold/Paderborn
@@ -24,9 +30,6 @@ The MEI Board manages the property and business of MEI. It promotes the developm
 
 ### Term 2020–2022
 
-* **Johannes Kepper**, Musikwissenschaftliches Seminar Detmold/Paderborn
-* **Perry Roland**, University of Virginia Library, Charlottesville (previous terms 2015–2018)
-* **Martha Thomae**, McGill University, Montréal
 
 ### Previous Board Members
 
@@ -36,7 +39,9 @@ The MEI Board manages the property and business of MEI. It promotes the developm
 * **Ichiro Fujinaga**, McGill University, Montréal (2015–2021)
 * **Axel Teich Geertinger**, Danish Centre for Music Editing, Royal Library, Copenhagen, (2015–2016)
 * **Andrew Hankinson**, Bodleian Library, Oxford (2017–2019)
+* **Perry Roland**, University of Virginia Library, Charlottesville (previous terms 2015–2018, 2020-2022)
 * **Eleanor Selfridge-Field**, Center for Computer-Assisted Research in the Humanities, Stanford University (2015–2019)
+* **Martha Thomae**, McGill University, Montréal (2020-2022)
 
 ## Protocols of Board Meetings
 
