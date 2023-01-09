@@ -30,15 +30,15 @@ The MEI Board manages the property and business of MEI. It promotes the developm
 
 ### Previous Board Members
 
-* **Martha Thomae**, McGill University, Montréal (2020–2022)
-* **Perry Roland**, University of Virginia Library, Charlottesville (2015–2018, 2020–2022)
 * **Elsa De Luca**, Centro de Estudos de Sociologia e Estética Musical (CESEM), Universidade Nova de Lisboa, Lisboa (2019–2021)
 * **Giuliano Di Bacco**, Jacobs School of Music, Indiana University, Bloomington, (2015–2017)
 * **Nobert Dubowy**, Internationale Stiftung Mozarteum, Salzburg (2018–2020)
 * **Ichiro Fujinaga**, McGill University, Montréal (2015–2021)
 * **Axel Teich Geertinger**, Danish Centre for Music Editing, Royal Library, Copenhagen, (2015–2016)
 * **Andrew Hankinson**, Bodleian Library, Oxford (2017–2019)
+* **Perry Roland**, University of Virginia Library, Charlottesville (2015–2018, 2020–2022)
 * **Eleanor Selfridge-Field**, Center for Computer-Assisted Research in the Humanities, Stanford University (2015–2019)
+* **Martha Thomae**, McGill University, Montréal (2020–2022)
 
 ## Protocols of Board Meetings
 
