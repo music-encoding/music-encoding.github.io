@@ -151,7 +151,7 @@ the MEI community can continue to grow and support an inclusive and diverse
 membership, especially by fostering and supporting emerging or early-career 
 scholars and students.
  
-My full resume is available at https://www.annakijas.com/cv/. 
+My full resume is available at https://www.annakijas.com/assets/pdf/2022-Kijas_CV.pdf. 
 
 ## David Lewis
 
