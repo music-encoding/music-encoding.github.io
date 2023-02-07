@@ -14,4 +14,6 @@ The digital edition of _Atalanta fugiens_ is compiled from transcriptions of the
 
 The music notation was created with Sibelius and exported to [MEI (Music Encoding Initiative)](https://music-encoding.org/), an XML schema for representing the physical and intellectual characteristics of musical documents, using the [Sibelius-to-MEI](https://github.com/music-encoding/sibmei) plugin. Because MEI is a format that is easily manipulated, it was possible to use the Verovio music notation engraving library to generate a web-ready vector notation in SVG and to extract the timing information needed to align audio with the interactive music display.
 
-A list of the musical encodings included in the digital edition can be found at [https://furnaceandfugue.org/essays/bianchi/#noble-science](https://furnaceandfugue.org/essays/bianchi/#noble-science) (Table 1).
+A list of the musical encodings included in the digital edition can be found at [https://furnaceandfugue.org/essays/bianchi/#noble-science](https://furnaceandfugue.org/essays/bianchi/#noble-science) (Table 1). 
+
+To learn more about the technical process and project view the team’s poster, "[Multimedia from the 17th-Century Book to the 21st-Century Web](http://dx.doi.org/10.17613/ggym-sc21)" presented at MEC 2020.
