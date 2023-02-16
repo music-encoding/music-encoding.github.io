@@ -1,38 +1,39 @@
 <div>
     <p>
-        As soon as you have created a custom restricted version of MEI with the 
-        <a href="https://meigarage.edirom.de/profiler" target="_blank" rel="noopener, noreferrer">MEI ProfileDrafter</a>, the next step
-        is to prepare your first <em>MEI Customization</em> for validation – you need to compile it into a RelaxNG file. Whiel the
-        ProfileDrafter will offer such a compiled version for direct download at some point, we will focus on a different compilation
-        method which allows to make further manual changes the ODD customization file. In a professional project setup, you will also 
-        want to version and document your ODD customization properly – both of which is out of scope for the MEI ProfileDrafter. 
+        En cuanto haya creado una versión restringida personalizada de MEI con la función 
+        <a href="https://meigarage.edirom.de/profiler" target="_blank" rel="noopener, noreferrer">MEI ProfileDrafter</a>, el siguiente paso
+        es preparar tu primera <em>personalización de MEI</em> para validación – debes compilarlo en un archivo RelaxNG. Aunque
+        ProfileDrafter ofrecerá una versión compilada para descarga directa en algún momento, nos centraremos en una compilación diferente
+        que permite realizar más cambios manuales en el archivo de personalización ODD.  
+      En la configuración de un proyecto profesional, también querrás versionar y documentar su personalización ODD adecuadamente - ambas cosas están fuera del alcance de MEI ProfileDrafter. 
     </p>
     <p>
-        Please hit the <em>Download ODD</em>-button in the left column of the ProfileDrafter and save the offered file to any 
-        convenient location. Now direct a new browser window to the 
+        Por favor, pulsa el botón <em>Download ODD</em>- en la columna izquierda del ProfileDrafter y guarde el archivo ofrecido en cualquier 
+        ubicación conveniente. Ahora dirígete a una nueva ventana del navegador 
         <a href="https://meigarage.edirom.de/customization" target="_blank" rel="noopener, noreferrer">MEI Customization Service</a>
-        that is part of the MEI Garage. Here, you need to select the MEI Source file your customization is based on. As the 
-        ProfileDrafter is currently restricted to MEI v4.0.1, you can keep the default option in the Customization Service. The next 
-        step is to select and upload your <em>Local Customization</em> file in the center column. Then, you need to keep the <em>Output</em>
-        option set to <em>RelaxNG</em>. You can now hit the large <em>Process</em>-button in blue. After some server-side processing, 
-        the label of that button will change to <em>Download</em>. As soon as that happens, you can click again to download the
-        resulting <strong>RelaxNG</strong> file. Please make sure to rename the downloaded file to something meaningful and use
-        the <code>.rng</code> extension. You now have a proper RelaxNG file compiled from your ODD Customization. This file may 
-        be used to validate XML files against your custom profile of MEI. Congratulations – you have already made significant 
-        progress in how to use MEI. A version specifically tailored for your needs is always preferable over a generic one-size-fits-all
-        profile – which is obviously meant as starting point for more specific adjustments tailored around your needs. 
+        que forma parte del MEI Garage. HAquí debe seleccionar el archivo fuente MEI en el que se basa su personalización. Como el 
+        ProfileDrafter está actualmente restringido a MEI v4.0.1, puedes mantener la opción por defecto en el Servicio de Personalización. El siguiente 
+        paso es seleccionar y subir tu fichero de <em>Personalización Local</em> en la columna central. 
+        A continuación, debes mantener la opción <em>Output</em>
+        establecida a <em>RelaxNG</em>. Ahora puedes pulsar el botón azul grande <em>Process</em>. Después de algún procesamiento del lado del servidor 
+        la etiqueta de ese botón cambiará a <em>Download</em>. En cuanto eso ocurra, puedes hacer clic de nuevo para descargar el
+        fichero <strong>RelaxNG</strong> resultante. Asegúrate de cambiar el nombre del archivo descargado por otro que tenga sentido y utiliza
+        la extensión <code>.rng</code>. Ahora tienes un archivo RelaxNG adecuado compilado a partir de su personalización ODD. Este archivo puede 
+        utilizar para validar archivos XML con su perfil personalizado de MEI. Enhorabuena, ya ha realizado un 
+        progreso en el uso de MEI. Una versión específicamente adaptada a sus necesidades es siempre preferible a un perfil genérico de talla única.
+        que, obviamente, sirve como punto de partida para ajustes más específicos adaptados a tus necesidades. 
     </p>
     <p>
-        This tutorial could safely stop here. The real challenge is to <strong>identify your needs</strong> and to 
-        <strong>model them accordingly</strong> anyway, but this is nothing that could be taught by an online tutorial. While getting
-        the necessary experience for this will depend on time and interchange, you already have the technical skills to approach
-        good models. 
+        Este tutorial podría detenerse aquí. El verdadero reto es <strong>identificar tus necesidades</strong> y
+        <strong>modelarlas en consecuencia</strong> en cualquier caso, pero esto no es nada que pueda enseñarse con un tutorial en línea. Aunque adquirir
+        la experiencia necesaria para ello dependerá del tiempo, ya tienes las habilidades técnicas para acercarte a
+        buenos modelos. 
     </p>
     <p>
-        However, with some additional adjustments to the ODD Customization, it is possible to exersize even better control over the 
-        resulting schema, giving you very tight control over validation and thus helping to prevent data errors as much as possible. 
-        Such adjustments are out of scope for the ProfileDrafter, and will therefore require manual adjustments to the ODD Customization.
-        In the next step, we will analyze the structures that the ProfileDrafter uses to remove individual <em>modules</em>, <em>elements</em>,
-        and <em>attribute classes</em> from MEI. 
+        Sin embargo, con algunos ajustes adicionales a la Personalización ODD, es posible ejercer un control aún mejor sobre el 
+        resultante, dándole un control muy estricto sobre la validación y ayudando así a prevenir errores en los datos tanto como sea posible. 
+        Tales ajustes están fuera del alcance de ProfileDrafter, y por lo tanto requerirán ajustes manuales en la Personalización ODD.
+        En el siguiente paso, analizaremos las estructuras que utiliza ProfileDrafter para eliminar los <em>módulos</em>, <em>elementos</em>,
+        y <em>atributos</em> individuales de MEI. 
     </p>
 </div>

@@ -1,7 +1,7 @@
 ---
-layout: tutorials
-type: tutorial
-name: "ADVANCED: Customizing MEI (WIP)"
-fullname: "Creating custom MEI profiles"
+layout: tutorials-ES
+type: tutorial-ES
+name: "AVANZADO: Personalización de MEI (WIP)"
+fullname: "Creación de perfiles MEI personalizados"
 data: "customizing-odd.json"
 ---

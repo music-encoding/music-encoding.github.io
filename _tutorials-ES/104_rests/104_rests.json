@@ -1,7 +1,7 @@
 {
   "steps": [
     {
-        "label":"Bienvenido",
+        "label":"Bienvenido/a",
         "descFile": "104_rests_step-00-desc.html",
         "xmlFile": "104_rests_step-00.xml",
         "editorLines":1,

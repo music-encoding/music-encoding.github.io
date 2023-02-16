@@ -1,7 +1,7 @@
 {
   "steps": [
     {
-        "label":"Welcome",
+        "label":"Bienvenida",
         "descFile": "customizing-odd-01.html"
     },
     {
@@ -9,19 +9,19 @@
         "descFile": "customizing-odd-02.html"
     },
     {
-        "label":"Compiling ODD",
+        "label":"Compilando ODD",
         "descFile": "customizing-odd-03.html"
     },
     {
-        "label":"Review simple Customizations",
+        "label":"Revisar personalizaciones sencillas",
         "descFile": "customizing-odd-04.html"
     },
     {
-        "label":"Understanding Modes",
+        "label":"Conocer los modos",
         "descFile": "customizing-odd-05.html"
     },
     {
-        "label":"Changing Roots",
+        "label":"Cambio de raíces",
         "descFile": "customizing-odd-06.html"
     }
   ],

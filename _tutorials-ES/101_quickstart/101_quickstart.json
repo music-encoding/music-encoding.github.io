@@ -1,7 +1,7 @@
 {
   "steps": [
     {
-      "label":"Bienvenido a MEI",
+      "label":"Bienvenido/a a MEI",
       "descFile": "101_quickstart_step-00-desc.html"
     },
     {
