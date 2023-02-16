@@ -5,7 +5,7 @@ name: "AVANZADO: codificación de íncipit"
 fullname: "Un tutorial avanzado sobre cómo codificar íncipits en MEII"
 data: "102_incipit.json"
 ---
-¡Bienvenido! En este tutorial aprenderás cómo codificar un íncipit (secuencia inicial de notas en una composición musical) en MEI con el siguiente ejemplo:
+¡Bienvenido/a! En este tutorial aprenderás cómo codificar un íncipit (secuencia inicial de notas en una composición musical) en MEI con el siguiente ejemplo:
 
 ![Hallingdal Bataljons Marsch](./102_incipit.png)
 

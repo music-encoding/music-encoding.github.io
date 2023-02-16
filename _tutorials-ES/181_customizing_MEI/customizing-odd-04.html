@@ -1,53 +1,53 @@
 <div>
     <p>
-        You have already learned how to use the 
+        Ya has aprendido a utilizar el
         <a href="https://meigarage.edirom.de/profiler" target="_blank" rel="noopener, noreferrer">MEI ProfileDrafter</a>, 
-        and you have used the 
+        y has utilizado el
         <a href="https://meigarage.edirom.de/customization" target="_blank" rel="noopener, noreferrer">MEI Customization Service</a>
-        to compile your own customization. You have downloaded an <code>.odd</code> file with that customization. We're assuming your customization 
-        takes out some modules, elements, and attribute classes. Let's review how this manifests in the ODD customization
-        file now. Please open it with any convenient XML Editor.
+        para compilar tu propia personalización.Has descargado un fichero <code>.odd</code>  con esa personalización. Suponemos que tu personalización 
+        elimina algunos módulos, elementos y clases de atributos. Revisemos cómo se manifiesta esto en el archivo de personalización ODD
+        ODD. Por favor, ábrelo con cualquier editor XML adecuado.
     </p>
     <p>
-        You will find a regular TEI file, with some disclaimers
-        on top, and a <code>&lt;teiHeader&gt;</code> element that may serve as a starting point for providing proper documentation
-        for your customization. You will certainly want to adjust the <code>&lt;respStmt&gt;</code> (responsibility statement) that is 
-        usually somewhere around line 27 to claim responsibility. The interesting content starts at line 54 (the exact number may vary). 
-        There, we have the <a href="https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-schemaSpec.html" target="_blank" rel="noopener, noreferrer">&lt;schemaSpec&gt;</a>
-        element, which starts our customization. Let's put aside the attributes specified here, and let's also ignore the
-        <code>&lt;constraintSpec&gt;</code> element for now. 
+        Encontrarás un archivo TEI normal, con algunas cláusulas de exención de responsabilidad
+        en la parte superior, y un elemento <code>&lt;teiHeader&gt;</code>  que puede servir como punto de partida para proporcionar la documentación adecuada
+        para tu personalización. Seguramente querrás ajustar el <code>&lt;respStmt&gt;</code> (declaración de responsabilidad) que está 
+        por lo general en algún lugar alrededor de la línea 27 para reclamar la responsabilidad. El contenido interesante comienza en la línea 54 (el número exacto puede variar). 
+        Ahí tenemos el elemento <a href="https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-schemaSpec.html" target="_blank" rel="noopener, noreferrer">&lt;schemaSpec&gt;</a>
+        , que inicia nuestra personalización. Dejemos a un lado los atributos especificados aquí, e ignoremos también el
+        elemento <code>&lt;constraintSpec&gt;</code> por ahora. 
     </p>
     <p>
-        What we see then is a list of <code>&lt;moduleRef&gt;</code> 
-        (<a href="https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-moduleRef.html" target="_blank" rel="noopener, noreferrer">module reference</a>)
-        elements, each of which refering to an MEI module with it's <code>@key</code> attribute. Only those attributes that you haven't excluded 
-        from the schema are listed here. Accordingly, it is very simple to exclude an MEI module from a customization manually: You just need to 
-        delete the reference to it in you customization file. 
+        Lo que vemos entonces es una lista de elementos de referencia (<a href="https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-moduleRef.html" target="_blank" rel="noopener, noreferrer">module reference</a>)<code>&lt;moduleRef&gt;</code>,
+        cada uno de los cuales se refiere a un módulo MEI con su atributo <code>@key</code>. 
+        Aquí sólo aparecen los atributos que no ha excluido del esquema. En consecuencia, es muy sencillo excluir manualmente un módulo MEI de una personalización: basta con 
+        eliminar la referencia a él en el archivo de personalización. 
     </p>
     <p>
-        On one or more <code>&lt;moduleRef&gt;</code>s, you should see an additional attribute <code>@except</code>. This attribute holds a 
-        <em>list of elements</em> from the specified module, which are to be <em>excluded</em> from the customization. Basically, here you can selectively 
-        take out individual elements, while keeping all others from the current module in your customization. ODD also supports the reverse approach of
-        explicitly allowing elements from a module through the <code>@include</code> attribute. It is not allowed to combine both approaches, and 
-        according to the TEI Guidelines, ODD processors are requested to raise an error message. The MEI ProfileDrafter will understand both approaches when
-        uploading existing customizations, but will prefer <em>@except</em> over <em>@include</em> when exporting data. 
+        Uno o más <code>&lt;moduleRef&gt;</code>s, deberías ver un atributo adicional <code>@except</code>. Este atributo contiene una 
+        <em>lista de elementos</em> del módulo especificado, que deben <em>excluirse</em> de la personalización. Básicamente, aquí puedes 
+        eliminar elementos individuales, manteniendo todos los demás del módulo actual en su personalización. ODD también soporta el enfoque inverso de
+        permitir explícitamente elementos de un módulo a través del atributo <code>@include</code>. 
+        No está permitido combinar ambos enfoques, y 
+        de acuerdo con las Directrices TEI, se pide a los procesadores ODD que emitan un mensaje de error. MEI ProfileDrafter entenderá ambos enfoques cuando
+        deba cargar personalizaciones existentes, prefiriendo <em>@except</em> sobre <em>@include</em> al exportar datos. 
     </p>
     <p>
-        Finally, at the end of your ODD file there will be a list of <code>&lt;classSpec&gt;</code>
-        (<a href="https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-classSpec.html" target="_blank" rel="noopener, noreferrer">class specification</a>)
-        elements with <code>@type="atts"</code>. They also use the <code>@ident</code> attribute to identify individual attribute classes. Please note that
-        this element holds no reference to the module this attribute is defined in. Instead, and more importantly, it uses the <code>@mode</code> attribute 
-        to specify what should be done to the original MEI sources, which are supposed to be modified by your customization. Here, the only value used will
-        be <code>@mode="delete"</code> – the corresponding attribute classes will be deleted from your customization, making them unavailable in the resulting
-        schema. Again, it is very simple to make such exclusions manually.  
+        Por último, al final de su archivo ODD habrá una lista de elementos (<a href="https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-classSpec.html" target="_blank" rel="noopener, noreferrer">de especificación de clases</a>) <code>&lt;classSpec&gt;</code>        
+        con <code>@type="atts"</code>. También utilizan el atributo <code>@ident</code>  para identificar clases de atributos individuales. Tenga en cuenta que
+        este elemento no contiene ninguna referencia al módulo en el que se define este atributo. En su lugar, y lo que es más importante, usa el atributo <code>@mode</code>
+        para especificar qué se debe hacer con las fuentes MEI originales, que se supone serán modificadas por tu personalización. 
+        Aquí, el único valor utilizado será
+        será <code>@mode="delete"</code> – las clases de atributos correspondientes se eliminarán de su personalización, por lo que no estarán disponibles en el
+        resultante. De nuevo, es muy sencillo realizar estas exclusiones manualmente.  
     </p>
     <p>
-        As you can see, there is very little that the MEI ProfileDrafter is actually doing in ODD – it is mostly a convenient user interface that 
-        helps to illustrate the consequences of removing various components from the schema. For instance, it shows very clearly which attributes on 
-        the <code>&lt;note&gt;</code> element will be unavailable when the <em>MEI.gestural</em> module is turned off. Technically, however, it is 
-        doing only very simple things one could implement manually equally well. 
+        Como se puede ver, hay muy poco que el MEI ProfileDrafter está haciendo realmente en ODD – es sobre todo una interfaz de usuario práctica que 
+        ayuda a ilustrar las consecuencias de eliminar varios componentes del esquema. Por ejemplo, muestra muy claramente qué atributos del elemento <code>&lt;note&gt;</code> 
+        no estará disponible cuando el módulo <em>MEI.gestural</em> esté deshabilitado. Sin embargo, técnicamente 
+        haciendo sólo cosas muy simples que uno podría implementar manualmente igualmente bien. 
     </p>
     <p>
-        In the following step, we will introduce some more concepts for ODD customizations, paving the path for even more specific ODD customizations.
+        En el siguiente paso, introduciremos algunos conceptos más para las personalizaciones ODD, allanando el camino para personalizaciones ODD aún más específicas.
     </p>
 </div>

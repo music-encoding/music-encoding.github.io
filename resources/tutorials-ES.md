@@ -19,4 +19,4 @@ Vuelve a la [versión en inglés de los tutoriales](/resources/tutorials.html).
 
 
 ----
-*Traducción de los tutoriales realizada por Alba Bedmar Osma y adaptada para MEI por David Rizo de la Universidad de Alicante e ISEA.CV en junio de 2022*
+*Traducción de los tutoriales realizada por Alba Bedmar Osma y adaptada para MEI y actualizada por David Rizo de la [Universidad de Alicante](https://www.ua.es) y [EASD.A](https://www.easda.es)/[ISEA.CV](https://iseacv.gva.es/es/) desde febrero de 2023*

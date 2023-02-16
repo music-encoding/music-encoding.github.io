@@ -1,25 +1,26 @@
 <div>
     <p>
-        In the last step, we learned that a <code>&lt;classSpec type="atts" ident="att.basic" mode="delete"/&gt;</code> can be used to delete
-        the <em>att.basic</em> attribute class (like any other) from an MEI customization. The <code>@mode</code> attribute is what determines
-        this behavior here. The TEI Guidelines for the 
+        En el último paso, aprendimos que <code>&lt;classSpec type="atts" ident="att.basic" mode="delete"/&gt;</code> se puede utilizar para eliminar
+        el atributo <em>att.basic</em> (como cualquier otro) de una personalización MEI. 
+        El atributo <code>@mode</code> es lo que determina
+        este comportamiento aquí. Las directrices TEI para la clase de atributo 
         <a href="https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-att.combinable.html" target="_blank" rel="noopener, noreferrer">att.combinable</a>
-        attribute class provide additional documentation about allowed values. It reads that "<em>an ODD processor should handle the values for @mode as follows</em>":        
+        proporcionan documentación adicional sobre los valores permitidos. It reads that "<em>un procesador ODD debe tratar los valores de @mode de la siguiente manera</em>":
     </p>
     <dl>
         <dt>add</dt>
-        <dd>the object should be created (processing any children in add mode); raise an error if an object with the same identifier already exists</dd>
+        <dd>el objeto debe crearse (procesando cualquier hijo en modo añadir); genera un error si ya existe un objeto con el mismo identificador</dd>
         <dt>replace</dt>
-        <dd>use this object in preference to any existing object with the same identifier, and ignore any children of that object; process any new children in 'replace' mode</dd>
+        <dd>utilizar este objeto con preferencia a cualquier objeto existente con el mismo identificador, e ignorar cualquier hijo de ese objeto; procesar cualquier nuevo hijo en modo "reemplazar".</dd>
         <dt>delete</dt>
-        <dd>do not process this object or any existing object with the same identifier; raise an error if any new children supplied</dd>
+        <dd>no procesa este objeto ni ningún objeto existente con el mismo identificador; genera un error si se suministra algún hijo nuevo</dd>
         <dt>change</dt>
-        <dd>process this object, and process its children, and those of any existing object with the same identifier, in 'change' mode</dd>
+        <dd>procesar este objeto, y procesar sus hijos, y los de cualquier objeto existente con el mismo identificador, en modo "modificar".</dd>
     </dl>
     <p>
-        With this, it is possible to not only <em>delete</em> attribute classes through a customization, but also to modify it. For instance, in the 
-        <a href="/guidelines/dev/content/introduction.html#meiprofiles" target="_blank" rel="noopener, noreferrer">MEI Basic customization</a>, the
-        <code>@xml:base</code> attribute is removed from the schema. In the MEI sources, this is defined in the <code>att.basic</code> attribute class:
+        Con ello, es posible no sólo <em>borrar</em> clases de atributos mediante una personalización, sino también para modificarlo. Por ejemplo, en el 
+        <a href="/guidelines/dev/content/introduction.html#meiprofiles" target="_blank" rel="noopener, noreferrer">MEI Personalización básica</a>, el atributo
+        <code>@xml:base</code>  se elimina del esquema. En las fuentes MEI, esto se define en la sección de clase de atributo <code>att.basic</code>:
     </p>
     <pre class="codeblock">&lt;classSpec ident="att.basic" module="MEI.shared" type="atts"&gt;
     &lt;desc&gt;Attributes that form the basis of the att.common class.&lt;/desc&gt;
@@ -36,11 +37,12 @@
     &lt;/attList&gt;
 &lt;/classSpec&gt;</pre>
     <p>
-        As you can see, the <code>att.basic</code> class is a member of the <code>att.id</code> class – which is responsible for making the 
-        <code>@xml:id</code> attribute available on every element. So, deleting <code>att.basic</code> from the schema would also disallow the use
-        of <code>@xml:id</code>s anywhere in files conforming to the resulting customization – certainly not a good idea in any practical use case. 
-        Instead, the flexibility offered through different <code>@mode</code>s can be used to make more fine-grained statements here. The following example 
-        shows what has been done to customize <code>att.basic</code> for the MEI Basic profile:
+        Como se puede ver, la clase <code>att.basic</code> es miembro de la clase <code>att.id</code>  – que se encarga de hacer que el 
+        attribute <code>@xml:id</code> esté disponible para cada elemento. 
+        Así, borrando <code>att.basic</code> del esquema también desautorizaría el uso
+        de <code>@xml:id</code>s en cualquier lugar de los archivos conforme a la personalización resultante – ciertamente no es una buena idea en ningún caso de uso práctico. 
+        En cambio, la flexibilidad que ofrecen los distintos <code>@mode</code>s para hacer declaraciones más precisas. 
+        El siguiente ejemplo muestra lo que se ha hecho para personalizar <code>att.basic</code> para el perfil MEI Basic:
     </p>
     <pre class="codeblock">&lt;classSpec ident="att.basic" module="MEI.shared" type="atts" mode="replace"&gt;
     &lt;desc&gt;Attributes that form the basis of the att.common class.&lt;/desc&gt;
@@ -49,10 +51,10 @@
     &lt;/classes&gt;
 &lt;/classSpec&gt;</pre>
     <p>
-        Instead of <code>mode="delete"</code>, it uses <code>mode="replace"</code> to give a new definition for the attribute class. This attribute class
-        then just lacks the attribute definition for <code>@xml:base</code>. Alternatively, it would have been possible to use <code>@mode="change"</code>
-        on the attribute class, leave out the child classes (as a value of <em>change</em> will trigger processing of the original classes as well, see above), 
-        and give an additional <code>mode="delete"</code> on the attribute definition, as seen in the following example:
+        En lugar de <code>mode="delete"</code>, usa <code>mode="replace"</code> para dar una nueva definición a la clase de atributo. Esta clase de atributo
+        carece de la definición de atributo para <code>@xml:base</code>. Otra posibilidad habría sido utilizar <code>@mode="change"</code>
+        en la clase atributo, omitir las clases hijas (como valor de <em>change</em> activará también el tratamiento de las clases originales, véase más arriba), 
+        y dará un <code>mode="delete"</code> en la definición del atributo, como se ve en el siguiente ejemplo:
     </p>
     <pre class="codeblock">&lt;classSpec ident="att.basic" module="MEI.shared" type="atts" mode="change"&gt;
     &lt;attList&gt;
@@ -60,20 +62,20 @@
     &lt;/attList&gt;
 &lt;/classSpec&gt;</pre>
     <p>
-        Both approaches yield the same results, so it is mostly a matter of preference to select a solution. Usually, it is a good approach to copy an 
-        existing definition (which is always accessible through the MEI Guidelines) into your customization, and then adjust it by carefully inserting
-        processing <code>@mode</code>s to the object itself and its children. <code>@mode</code> can be used on a number of different elements in an ODD
-        customization: <strong>&lt;elementSpec&gt;</strong>s, <strong>&lt;remarks&gt;</strong>, <strong>&lt;classSpec&gt;</strong>s, 
+        Ambos enfoques dan los mismos resultados, por lo que la elección de una solución depende sobre todo de las preferencias. Por lo general, es un buen enfoque copiar una 
+        definición existente (siempre accesible a través de las Directrices MEI) en su personalización y, a continuación, ajústala insertando cuidadosamente
+        procesamiento <code>@mode</code>s al propio objeto y a sus hijos. <code>@mode</code> puede utilizarse en distintos elementos de una personalización ODD
+        : <strong>&lt;elementSpec&gt;</strong>s, <strong>&lt;remarks&gt;</strong>, <strong>&lt;classSpec&gt;</strong>s, 
         <strong>&lt;memberOf&gt;</strong>s,
         <strong>&lt;constraintSpec&gt;</strong>s, <strong>&lt;macroSpec&gt;</strong>s, <strong>&lt;attDef&gt;</strong>s, <strong>&lt;valList&gt;</strong>s, 
-        and <strong>&lt;valItem&gt;</strong>s. For instance, the accidental values defined in
+        and <strong>&lt;valItem&gt;</strong>s. Por ejemplo, los valores de alteraciones definidos en
         <a href="/guidelines/dev/data-types/data.ACCIDENTAL.WRITTEN.basic.html" target="_blank" rel="noopener, noreferrer">data.ACCIDENTAL.WRITTEN.basic</a>
-        contain not only values like <em>s</em> (sharp) and <em>f</em> (flat), but also <em>tf</em> (for triple flats). In projects working on material
-        that is lacking such accidentals, it might be a good idea to remove them from the schema altogether, so that no one can enter them without triggering
-        a validation error. 
+        no sólo contienen valores como <em>s</em> (sostenido) and <em>f</em> (bemol), sino también <em>tf</em> (para bemoles triple). 
+        En los proyectos en los que se trabaja con material que carece de este tipo de accidentes, puede ser una buena idea eliminarlos por completo del esquema, para que nadie pueda introducirlos sin provocar
+        un error de validación. 
     </p>
     <p>
-        There is one last type of modification that this tutorial is going to cover. You will find it in the next step. 
+        Hay un último tipo de modificación que este tutorial va a cubrir. Lo encontrarás en el siguiente paso. 
     </p>
     
 </div>
