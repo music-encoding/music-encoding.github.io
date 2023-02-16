@@ -112,6 +112,9 @@ collections:
   tutorials:
     output: true
     permalink: /:collection/:name
+  tutorials-ES:
+    output: true
+    permalink: /:collection/:name
   conferences:
     output: true
     permalink: /:collection/:name

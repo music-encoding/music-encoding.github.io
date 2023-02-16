@@ -1,0 +1,21 @@
+<measure n="3">
+    <staff n="1">
+        <layer>
+            <beam>
+                <!-- Añade xml:id's para los dos elementos nota (a y b) -->
+                <note dur="8" pname="a" oct="4"></note>
+                <note dur="8" pname="b" oct="4"></note>
+                <note dur="8" pname="c" oct="5"></note>
+                <note dur="8" pname="d" oct="5"></note>
+            </beam>
+            <note dur="4" pname="e" oct="5">
+                <artic artic="acc" place="above"/>
+            </note>
+            <beam>
+                <note dur="8" pname="d" oct="5"></note>
+                <note dur="8" pname="b" oct="4"></note>
+            </beam>
+        </layer>
+    </staff>
+    <!-- Tu codificación para la ligadura debe reemplazar esta línea -->
+</measure>
