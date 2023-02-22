@@ -38,13 +38,12 @@ id: about
         "endDate": "2023-09-08",
         "eventAttendanceMode": "https://schema.org/MixedEventAttendanceMode",
         "eventStatus": [
-            "https://schema.org/EventScheduled",
-            "https://schema.org/EventMovedOnline"
+            "https://schema.org/EventScheduled"
         ],
         "location": [{
-            "@type": "VirtualLocation",
-          	"url": "https://music-encoding.org/conference/2023/"
-        },
+                "@type": "VirtualLocation",
+                "url": "https://music-encoding.org/conference/2023/"
+            },
             {
                 "@type": "Place",
                 "name": "Padeborn University",
@@ -55,12 +54,17 @@ id: about
                 }
             }],
         "image": [
+            "https://teimec2023.uni-paderborn.de/assets/img/logo-full-encoding-cultures.png"
         ],
-        "organizer": {
+        "organizer": [{
             "@type": "Organization",
             "name": "Music Encoding Initiative",
             "url": "https://music-encoding.org"
-        }
+        },{
+          "@type": "Organization",
+            "name": "Text Encoding Initiative",
+            "url": "https://tei-c.org/"
+        }]
     }
 </script>
 
