@@ -15,4 +15,4 @@ If you're about to write a new MEI tutorial, we recommend to start with the [Wri
 
 For community-created resources including tutorials and teaching material, see [Community-Created Pedagogy & Praxis Resources](/resources/pedagogy.html).
 
-For a Spanish translation of the tutorials, see [Tutoriales en español](/resources/tutorials-ES.html)
+For a Spanish translation of the tutorials, see [Tutoriales en español](/resources/tutorials-ES.html).
