@@ -37,7 +37,7 @@
         {"rule": "count(\/\/*[local-name()='meiHead']) = 1", "renderanyway": false, "hint": "Necesitas un elemento meiHead."},
         {"rule": "\/\/*[local-name()='mei']\/*[local-name()='meiHead']", "renderanyway": false, "hint": "meiHead tiene que ser hijo del elemento mei."},
         {"rule": "count(\/\/*[local-name()='music']) = 1", "renderanyway": false, "hint": "Necesitas un elemento music."},
-        {"rule": "\/\/*[local-name()='mei']\/*[local-name()='music']", "renderanyway": false, "hint": "music tiene que ser hijo del elemento mei.music has to a be child of the mei element."},
+        {"rule": "\/\/*[local-name()='mei']\/*[local-name()='music']", "renderanyway": false, "hint": "music tiene que ser hijo del elemento mei.music"},
         {"rule": "\/\/*[local-name()='mei']\/*[local-name()='meiHead']\/following-sibling::*[local-name()='music']", "renderanyway": false, "hint": "music tiene que seguir al elemento meiHead."}
       ]
     },
