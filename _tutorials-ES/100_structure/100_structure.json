@@ -37,7 +37,7 @@
         {"rule": "count(\/\/*[local-name()='meiHead']) = 1", "renderanyway": false, "hint": "Necesitas un elemento meiHead."},
         {"rule": "\/\/*[local-name()='mei']\/*[local-name()='meiHead']", "renderanyway": false, "hint": "meiHead tiene que ser hijo del elemento mei."},
         {"rule": "count(\/\/*[local-name()='music']) = 1", "renderanyway": false, "hint": "Necesitas un elemento music."},
-        {"rule": "\/\/*[local-name()='mei']\/*[local-name()='music']", "renderanyway": false, "hint": "music tiene que ser hijo del elemento mei.music has to a be child of the mei element."},
+        {"rule": "\/\/*[local-name()='mei']\/*[local-name()='music']", "renderanyway": false, "hint": "music tiene que ser hijo del elemento mei.music"},
         {"rule": "\/\/*[local-name()='mei']\/*[local-name()='meiHead']\/following-sibling::*[local-name()='music']", "renderanyway": false, "hint": "music tiene que seguir al elemento meiHead."}
       ]
     },
@@ -51,9 +51,9 @@
         {"rule": "count(\/\/*[local-name()='mei']) = 1", "renderanyway": false, "hint": "Necesitas un elemento mei."},
         {"rule": "*[local-name()='mei' and namespace-uri()='http:\/\/www.music-encoding.org\/ns\/mei']", "renderanyway": true, "hint": "Necesitas una declaración @xmlns con el espacio de nombres mei 'http:\/\/www.music-encoding.org\/ns\/mei' en el elemento mei."},
         {"rule": "count(\/\/*[local-name()='meiHead']) = 1", "renderanyway": false, "hint": "Necesitas un elemento meiHead."},
-        {"rule": "\/\/*[local-name()='mei']\/*[local-name()='meiHead']", "renderanyway": false, "hint": "meiHead has to be a child of the mei element."},
+        {"rule": "\/\/*[local-name()='mei']\/*[local-name()='meiHead']", "renderanyway": false, "hint": "meiHead debe ser hijo de un elemento mei."},
         {"rule": "count(\/\/*[local-name()='music']) = 1", "renderanyway": false, "hint": "Necesitas un elemento music."},
-        {"rule": "\/\/*[local-name()='mei']\/*[local-name()='music']", "renderanyway": false, "hint": "music has to be a child of the mei element."},
+        {"rule": "\/\/*[local-name()='mei']\/*[local-name()='music']", "renderanyway": false, "hint": "music debe ser hijo de un elemento mei."},
         {"rule": "\/\/*[local-name()='mei']\/*[local-name()='meiHead']\/following-sibling::*[local-name()='music']", "renderanyway": false, "hint": "music tiene que seguir al elemento meiHead."},
         {"rule": "count(\/\/*[local-name()='fileDesc']) = 1", "renderanyway": false, "hint": "Necesitas un elemento fileDesc."},
         {"rule": "\/\/*[local-name()='meiHead']\/*[local-name()='fileDesc']", "renderanyway": false, "hint": "fileDesc tiene que ser hijo del elemento meiHead."},
