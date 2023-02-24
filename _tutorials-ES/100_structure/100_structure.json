@@ -9,7 +9,7 @@
       "editorLines": 1,
       "descFile": "100_structure_step-01-desc.html",
       "prefillFile": "100_structure_step-01-prefill.xml",
-      "xmlFile": "100_structure_step-01.xml",
+      "xmlFile": "../tutorials/100_structure_step-01.xml",
       "xpaths": [
         {"rule": "count(\/\/mei) = 1", "renderanyway": true, "hint": "Necesitas un elemento mei."}
       ]
@@ -19,7 +19,7 @@
       "editorLines": 1,
       "descFile": "100_structure_step-02-desc.html",
       "prefillFile": "100_structure_step-02-prefill.xml",
-      "xmlFile": "100_structure_step-02.xml",
+      "xmlFile": "../tutorials/100_structure_step-02.xml",
       "xpaths": [
         {"rule": "count(*[local-name()='mei']) = 1", "renderanyway": true, "hint": "Necesitas un elemento mei."},
         {"rule": "*[local-name()='mei' and namespace-uri()='http:\/\/www.music-encoding.org\/ns\/mei']", "renderanyway": true, "hint": "Necesitas una declaración @xmlns con el espacio de nombres mei 'http:\/\/www.music-encoding.org\/ns\/mei'."}
@@ -30,7 +30,7 @@
       "editorLines": 4,
       "descFile": "100_structure_step-03-desc.html",
       "prefillFile": "100_structure_step-03-prefill.xml",
-      "xmlFile": "100_structure_step-03.xml",
+      "xmlFile": "../tutorials/100_structure_step-03.xml",
       "xpaths": [
         {"rule": "count(\/\/*[local-name()='mei']) = 1", "renderanyway": false, "hint": "Necesitas un elemento mei."},
         {"rule": "*[local-name()='mei' and namespace-uri()='http:\/\/www.music-encoding.org\/ns\/mei']", "renderanyway": true, "hint": "Necesitas una declaración @xmlns con el espacio de nombres mei 'http:\/\/www.music-encoding.org\/ns\/mei' en el elemento mei."},
@@ -46,7 +46,7 @@
       "editorLines": 11,
       "descFile": "100_structure_step-04-desc.html",
       "prefillFile": "100_structure_step-04-prefill.xml",
-      "xmlFile": "100_structure_step-04.xml",
+      "xmlFile": "../tutorials/100_structure_step-04.xml",
       "xpaths": [
         {"rule": "count(\/\/*[local-name()='mei']) = 1", "renderanyway": false, "hint": "Necesitas un elemento mei."},
         {"rule": "*[local-name()='mei' and namespace-uri()='http:\/\/www.music-encoding.org\/ns\/mei']", "renderanyway": true, "hint": "Necesitas una declaración @xmlns con el espacio de nombres mei 'http:\/\/www.music-encoding.org\/ns\/mei' en el elemento mei."},

@@ -1,7 +1,7 @@
 <div>
     <p>
         Cuando la música se presenta con varios instrumentos/voces que comparten pentagrama, a veces es necesario "empujar" a algunos elementos como las notas a una posición posterior en el compás, sin significar que se están haciendo silencios. Esto suele ocurrir cuando el documento que se pretende codificar cambia de la notación basada en acordes a las plicas separadas dentro de un compás (consultar la figura de abajo). A medida que MEI utiliza el elemento <a href="/guidelines/v4/elements/layer.html" target="_blank" rel="noopener, noreferrer">&lt;layer&gt;</a> para ordenar varios instrumentos (y en estas situaciones un instrumento cambia entre esas capas a mitad de compás), los "huecos" en esos compases necesitan rellenarse. Para esto es para lo que sirve el elemento <code>&lt;space&gt;</code>. 
-        <img style="display: block; margin: .5rem auto; width: 240px;" src="./104_rests-spaces.png" alt="Una situación que necesita elementos espaciales"/>
+        <img style="display: block; margin: .5rem auto; width: 240px;" src="../tutorials/104_rests-spaces.png" alt="Una situación que necesita elementos espaciales"/>
     </p>
     <p>
         Obviamente, un espacio no es en realidad un silencio. SIn embargo, los silencios (invisibles) se (ab)usan para tales fines en otros formatos de codificación o editores de partituras. El elemento <code>&lt;space&gt;</code> de MEI tiene el beneficio de que no tiene ningún significado semántico, simplemente va empujando ortos elementos. Esto hace que el hecho de realmente procesar una codificación y extraer voces individualmente para ello sea mucho más sencillo, ya que no se introduce falsamente ningún elemento portador de información inexistente solo para una mejor coordinación. 
@@ -9,7 +9,7 @@
     <p>
         Sin embargo, se puede aplicar cierta duración al elemento <code>&lt;space&gt;</code> al utilizar el atributo <code>@dur</code>. Incluso se puede utilizar <code>@dots</code> para extender esa duración a la mitad de su valor. La duración que se aplica con <code>&lt;space&gt;</code> es el número de pulsaciones que algunos elementos, como una <code>&lt;note&gt;</code>, seguidos de <code>&lt;space&gt;</code> se desplazan hacia la derecha.
     </p>
-    <p class="taskES">
+    <p class="task-ES">
         En el editor de abajo, se ve la codificación pre-rellenada de una nota Sol4 (posicionada en el primer tiempo de la segunda capa). Por favor, empuja esta nota hasta el final del compás, de manera que se sitúe en el último tiempo bajo el Re5, como en la imagen de arriba. Para esto, utiliza el elemento <code>&lt;space&gt;</code> y aplica la duración adecuada (en total deben ser 3 tiempos). De hecho hay varias maneras de codificarlo:</p>
     <ul>
         <li>con tres <code>&lt;space&gt;</code> que utilicen el mismo valor para <code>@dur</code>,</li>
