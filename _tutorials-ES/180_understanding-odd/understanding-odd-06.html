@@ -6,7 +6,7 @@
         Entre otros, el elemento <a href="https://music-encoding.org/guidelines/v4/elements/castitem.html" target="_blank" rel="noopener, noreferrer">&lt;castItem&gt;</a> del último paso de este tutorial tenía un elemento hijo <a href="https://music-encoding.org/guidelines/v4/elements/role.html" target="_blank" rel="noopener, noreferrer">&lt;role&gt;</a>. La documentación de <em>&lt;role&gt;</em> enumera un total de 54 elementos hijos, además del contenido textual:
     </p>
     <div>
-        <img style="width: 100%;" src="./role-children.png"/>
+        <img style="width: 100%;" src="../tutorials/role-children.png"/>
     </div>
     <p>
         Sin embargo, mirando <em>&lt;elementSpec&gt;</em> no hay tal listado:
@@ -70,7 +70,7 @@
         Sin embargo, en MEI común sólo seis elementos son miembros directos de <em>model.textPhraseLike.limited</em>, pero vimos que al referenciar esta clase de modelo, se añaden un total de 54 elementos como contenido permitido (= elementos hijos). ¿De dónde proceden los 48 elementos restantes? Hay que reconocer que la presentación actual de las Directrices no presenta bien de dónde vienen esos elementos adicionales. La respuesta son las <strong>clases de modelo anidadas</strong>. Una clase de modelo puede ser miembro de otra clase de modelo, como hemos visto en el <em>&lt;classSpec&gt;</em> anterior. Volvamos a los hijos permitidos del elemento <em>&lt;role&gt;</em>, pero en la perspectiva <em>por clase</em>:
     </p>
     <div>
-        <img style="width: 100%;" src="./role-children-byclass.png"/>
+        <img style="width: 100%;" src="../tutorials/role-children-byclass.png"/>
     </div>
     <p>
         Vemos los seis hijos directos listados, pero también que <em>&lt;fig&gt;</em> aparece bajo la etiqueta <em>model.figureLike</em>, y <em>&lt;catchwords&gt;</em> y <em>&lt;fingerprint&gt;</em> provienen de <em>model.msInline</em>. <a href="https://music-encoding.org/guidelines/v4/elements/role.html#mayContain" target="_blank" rel="noopener, noreferrer">Este listado</a> continúa y explica el origen de los 54 elementos. Si echamos un vistazo a <em>model.figureLike</em>, vemos que esta clase tiene un <em>&lt;memberOf&gt;</em>, que apunta a <em>model.textPhraseLike.limited</em>:
