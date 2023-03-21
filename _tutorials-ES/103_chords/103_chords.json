@@ -111,7 +111,7 @@
             "label":"Extended Chord Progression",
             "editorLines":35,
             "descFile": "103_chords_step-04-desc.html",
-            "prefillFile": "103_chords_step-04-prefill.xml",
+            "prefillFile": "../tutorials/103_chords_step-04-prefill.xml",
             "xmlFile": "../tutorials/103_chords_step-04.xml",
             "xpaths": [
                 {"rule":"count(\/\/mei:chord) = 7", "renderanyway": true, "hint":  "You need seven elementos chord."},
