@@ -15,7 +15,7 @@
         "label":"Different durations",
         "editorLines":5,
         "descFile": "104_rests_step-01-desc.html",
-        "xmlFile": "../tutorials/104_rests_step-00.xml",
+        "xmlFile": "../tutorials/104_rests_step-01.xml",
         "xpaths": [
             {"rule":"count(\/\/mei:rest) = 5", "renderanyway": true, "hint":"Necesitas codificar cinco elementos rest."},
             {"rule":"\/\/mei:rest[1]\/@dur and \/\/mei:rest[1]\/@dur = '1'", "renderanyway": true},
@@ -30,7 +30,7 @@
         "editorLines":1,
         "descFile": "104_rests_step-02-desc.html",
         "xmlFile": "../tutorials/104_rests_step-02.xml",
-        "prefillFile": "104_rests_step-02-prefill.xml",
+        "prefillFile": "../tutorials/104_rests_step-02-prefill.xml",
         "xpaths": [
             {"rule":"count(\/\/mei:mRest) = 1", "renderanyway": true, "hint":"Necesitas un elemento mRest."},
             {"rule":"count(\/\/mei:mRest\/@*) = 0", "renderanyway": true,"hint":"El elemento mRest element no necesita atributos."},
@@ -41,7 +41,7 @@
         "label":"Multi-measure rests",
         "editorLines":1,
         "descFile": "104_rests_step-03-desc.html",
-        "xmlFile": "../tutorials/104_rests_step-02.xml",
+        "xmlFile": "../tutorials/104_rests_step-03.xml",
         "xpaths": [
             {"rule":"count(\/\/mei:multiRest) = 1", "renderanyway": true, "hint":"Necesitas un elemento multiRest."},
             {"rule":"count(\/\/mei:layer\/mei:*) = 1","renderanyway":true,"hint":"Debes codificar un elemento mRest sólo."},

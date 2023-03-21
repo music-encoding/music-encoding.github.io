@@ -26,7 +26,7 @@
       "editorLines":8,
       "descFile": "101_quickstart_step-02-desc.html",
       "xmlFile": "../tutorials/101_quickstart_step-02.xml",
-      "prefillFile": "101_quickstart_step-02-prefill.xml",
+      "prefillFile": "../tutorials/101_quickstart_step-02-prefill.xml",
       "xpaths": [
         {"rule":"count(\/\/mei:note) = 7", "renderanyway": true},
         {"rule":"\/\/mei:note[1]\/@pname = 'e'", "renderanyway": true},
@@ -57,7 +57,7 @@
       "editorLines":8,
       "descFile": "101_quickstart_step-03-desc.html",
       "xmlFile": "../tutorials/101_quickstart_step-03.xml",
-      "prefillFile": "101_quickstart_step-03-prefill.xml",
+      "prefillFile": "../tutorials/101_quickstart_step-03-prefill.xml",
       "xpaths": [
         {"rule":"count(\/\/mei:note) = 7", "renderanyway": true},
         {"rule":"\/\/mei:note[1]\/@pname = 'e'", "renderanyway": true},
