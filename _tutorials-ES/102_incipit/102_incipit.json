@@ -404,7 +404,7 @@
       ]
     },
     {
-      "label": "Dynamics (referencing tstamps)",
+      "label": "Dinámica (referenciando tstamps)",
       "editorLines": 10,
       "descFile": "102_incipit_step-11-desc.html",
       "prefillFile": "102_incipit_step-11-prefill.xml",
@@ -438,7 +438,7 @@
       "prefillFile": "102_incipit_step-12-prefill.xml",
       "xmlFile": "../tutorials/102_incipit_step-12.xml",
       "xpaths": [
-        {"rule": "count(\/\/mei:measure[@n=3]) = 1", "renderanyway": false, "hint": "Necesitas un elemento measurecon n = 3."},
+        {"rule": "count(\/\/mei:measure[@n=3]) = 1", "renderanyway": false, "hint": "Necesitas un elemento measure con n = 3."},
         {"rule": "\/\/mei:measure[4]\/mei:staff", "renderanyway": false, "hint": "Necesitas un elemento staff dentro del elemento measure."},
         {"rule": "count(\/\/mei:measure[4]\/mei:staff\/@*) = 1", "renderanyway": false, "hint": "Necesitas un atributo en staff (@n)."},
         {"rule": "\/\/mei:measure[4]\/mei:staff\/@n = 1", "renderanyway": false, "hint": "Necesitas un atributo @n con un valor 1 en staff."},

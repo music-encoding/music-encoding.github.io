@@ -5,7 +5,7 @@
             "descFile": "103_chords_step-00-desc.html"
         },
         {
-            "label":"Preparation",
+            "label":"Preparación",
             "editorLines":3,
             "descFile": "103_chords_step-01-desc.html",
             "prefillFile": "103_chords_step-01-prefill.xml",
@@ -30,7 +30,7 @@
             ]
         },
         {
-            "label":"First Chord",
+            "label":"Primer acorde",
             "editorLines":5,
             "descFile": "103_chords_step-02-desc.html",
             "prefillFile": "103_chords_step-02-prefill.xml",
@@ -56,10 +56,10 @@
             ]
         },
         {
-            "label":"Simple Chord Progression",
+            "label":"Progresión simple de acordes",
             "editorLines":20,
             "descFile": "103_chords_step-03-desc.html",
-            "prefillFile": "103_chords_step-03-prefill.xml",
+            "prefillFile": "../tutorials/103_chords_step-03-prefill.xml",
             "xmlFile": "../tutorials/103_chords_step-03.xml",
             "xpaths": [
                 {"rule":"count(\/\/mei:chord) = 4", "renderanyway": true, "hint":  "Necesitas cuatro elementos chord."},
@@ -108,13 +108,13 @@
             ]
         },
         {
-            "label":"Extended Chord Progression",
+            "label":"Progresión extendida de acordes",
             "editorLines":35,
             "descFile": "103_chords_step-04-desc.html",
             "prefillFile": "../tutorials/103_chords_step-04-prefill.xml",
             "xmlFile": "../tutorials/103_chords_step-04.xml",
             "xpaths": [
-                {"rule":"count(\/\/mei:chord) = 7", "renderanyway": true, "hint":  "You need seven elementos chord."},
+                {"rule":"count(\/\/mei:chord) = 7", "renderanyway": true, "hint":  "Necesitas siete elementos chord."},
                 {"rule":"count(\/\/mei:chord[1]\/@*) = 2 and \/\/mei:chord[1]\/@dur and \/\/mei:chord[1]\/@dots", "renderanyway": true, "hint": "Necesitas dos atributos en el primer acorde (@dur, @dots)."},
                 {"rule":"\/\/mei:chord[1]\/@dur = '4'", "renderanyway": true, "hint": "Necesitas un atributo @dur con un valor 4 en el primer elemento chord."},
                 {"rule":"\/\/mei:chord[1]\/@dots = '1'", "renderanyway": true, "hint": "Necesitas un atributo @dots con un valor 1 en el primer elemento chord."},
