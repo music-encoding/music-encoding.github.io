@@ -64,6 +64,7 @@ exclude_path = [
     '_conferences/2019',
     '_conferences/2020',
     '_conferences/2021',
+    '_conferences/2022',
 ]
 
 # Exclude loopback IP address range and localhost from checking.
