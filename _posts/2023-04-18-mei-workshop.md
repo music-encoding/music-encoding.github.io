@@ -19,4 +19,4 @@ La Music Encoding Initiative (MEI) es un sistema y un lenguaje de marcado para c
 
 Trabajaremos con la plataforma de codificación online MEI friend: https://mei-friend.mdw.ac.at/
 
-Únete desde aquí: https://mcgill.zoom.us/j/7736120524
+Más información: https://aahd.net.ar/codificacion-y-publicacion-de-musica-un-taller-sobre-music-encoding-initiative/
