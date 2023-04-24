@@ -1,7 +1,7 @@
 ---
 layout: tutorials-ES
 type: tutorial-ES
-name: "AVANZADO: codificación de íncipit"
+name: "AVANZADO: Codificación de íncipit"
 fullname: "Un tutorial avanzado sobre cómo codificar íncipits en MEII"
 data: "102_incipit.json"
 ---
