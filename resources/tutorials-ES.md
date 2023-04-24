@@ -4,11 +4,11 @@ title: "Tutoriales MEI"
 ---
 # Tutoriales sobre MEI
 
-En esta página, encontrarás una serie de pequeños tutoriales para MEI, cada uno de ellos introduciendo una característica específica.
+En esta página, encontrarás una serie de pequeños tutoriales para MEI, cada uno de los cuales presentará una característica específica.
 
-Si estás a punto de empezar a aprender MEI, te recomendamos que empieces con el tutorial [inicio rápido en 5 minutos](/tutorials-ES/101-quickstart), que te permitirá codificar una melodía muy sencilla con MEI.
+Si estás por empezar a aprender MEI, te recomendamos que comiences con el tutorial [Iniciación rápida](/tutorials-ES/101-quickstart), el cual te permitirá codificar una melodía sencilla con MEI.
 
-Si estás a punto de escribir un nuevo tutorial MEI, te recomendamos que empieces por el tutorial [Escribiendo tutoriales](/tutorials-ES/tutorials), que te proporcionará información sobre los pasos necesarios. Echa también un vistazo a nuestra lista de tutoriales que faltan en [Github](https://github.com/music-encoding/music-encoding.github.io/issues/88).
+Si estás por escribir un nuevo tutorial sobre MEI, te recomendamos que comiences por el tutorial [Escribir tutoriales](/tutorials-ES/tutorials), el cual te proporcionará información sobre los pasos necesarios. Echa también un vistazo a nuestra lista de tutoriales faltantes en [Github](https://github.com/music-encoding/music-encoding.github.io/issues/88) con los cuales podrías contribuir al proyecto.
 
 ### Tutoriales externos y material relacionado
 
