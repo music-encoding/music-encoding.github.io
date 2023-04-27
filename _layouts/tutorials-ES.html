@@ -1,0 +1,119 @@
+---
+layout: default
+---
+<div class="columns">
+    <div class="column col-8 col-sm-12 tutorialBox">
+
+        {% if page.type != 'tutorial-ES' %}
+
+            {{ content }}
+
+        {% else %}
+
+            <h2>{{ page.fullname }}</h2>
+
+            {% if content %}
+                {{ content }}
+            {% endif %}
+
+            <h3 id="stepLabel">
+                <!-- step label goes in here -->
+            </h3>
+            <div id="instruction">
+                <!-- instruction texts go in here -->
+            </div>
+            <div id="editorContainer" style="display: none;">
+                <h3>Editor MEI
+                    <button id="btn-openFullFileModal" class="btn btn-link float-right disabled" title="sólo permitido cuando sea válido">mostrar codificación completa</button>
+                    <button id="btn-toggleHint" class="btn btn-link float-right disabled" title="engaño o trampa">mostrar pista</button>
+                </h3>
+                <div id="editorBox">
+                    <div id="editor">
+                        <!-- editor content goes in here -->
+                    </div>
+                </div>
+
+                <div id="hints" style="display: none;">
+                    <!-- validation hints go in here -->
+                </div>
+
+                <h3>Renderización</h3>
+                <div id="rendering">
+                    <!-- verovio rendering goes in here -->
+                </div>
+            </div>
+            <button id="nextStepButton" class="btn btn-primary btn-sm float-right">Continúa <i class="icon icon-forward"></i></button>
+            
+            <div id="acknowledgments" style="display: none;">
+                <h3>Agradecimientos</h3>
+                <p>Este tutorial ha sido creado por:</p>
+                <ul id="ackList"></ul>
+                <p>y traducido en la Universida de Alicante por Alba Bedbar y David Rizo</p>
+            </div>
+            
+            <ul id="stepBox" class="step">
+                <!-- tutorial step list goes in here -->
+            </ul>
+        
+            <div class="modal modal-lg" id="fullFileModal"><a id="fullFileModalCloseBack" class="modal-overlay" href="#modals-sizes" aria-label="Close"></a>
+                <div class="modal-container" role="document">
+                    <div class="modal-header"><a id="fullFileModalCloseTop" class="btn btn-clear float-right" href="#modals-sizes" aria-label="Close"></a>
+                        <div id="fullFileTitle" class="modal-title h5"></div>
+                    </div>
+                    <div class="modal-body">
+                        <div id="fullFileContent" class="content">
+                            
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <a id="fullFileDownloadBtn" class="btn btn-primary"><i class="icon icon-download"></i> Descargar</a>
+                        <a id="fullFileModalCloseBottom" class="btn btn-link" href="#modals-sizes">Cerrar</a>
+                    </div>
+                </div>
+            </div>
+
+            <script src="/js/ace-src-noconflict/ace.js"></script>
+            <script src="/js/verovio-toolkit.js"></script>
+            <script src="/js/mei-tutorials.js"></script>
+            <script>
+
+                try {
+                    fetch("./{{page.data}}")
+                        .then(function(response) {
+                            if (response.ok) {
+                                return response.json()
+                            }
+                            throw new Error('Error de red al intentar recuperar  ', page.data);
+                        })
+                        .then(function(data) {
+                            setupTutorial(data);
+                        });
+                } catch(err) {
+                    console.log('No se pueden solicitar datos: ' + err)
+                }
+
+            </script>
+        {% endif %}
+    </div>
+
+    <!-- side menu -->
+    <div class="column col-4 col-sm-12">
+        <h2>Tutoriales disponibles</h2>
+        {% assign t = site.collections | where: "label","tutorials-ES" | first %}
+        {% for tutorial in t.docs %}
+        {% if tutorial.name != page.name %}
+        <div class="tile">
+            <div class="tile-icon">
+                <div class="arrow-tile-icon">
+                    <a href="{{ tutorial.url }}.html" class="icon icon-message centered"></a>
+                </div>
+            </div>
+            <div class="tile-content">
+                <div class="tile-title"><a href="{{ tutorial.url }}.html">{{ tutorial.name }}</a></div>
+                <div class="tile-subtitle text-gray">{{tutorial.fullname}}</div>
+            </div>
+        </div>
+        {% endif %}
+        {% endfor %}
+    </div>
+</div>

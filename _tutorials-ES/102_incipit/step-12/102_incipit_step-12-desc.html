@@ -1,0 +1,23 @@
+<div>
+    <p class="tutorialGoal-ES">Paso doce: añadir el último detalle que falta en el ejemplo, la ligadura en el tercer compás.</p>
+
+    <p>Hay dos formas diferentes de codificar una ligadura en MEI:</p>
+    <ol>
+        <li>el atributo <code>@slur</code> en <code>&lt;note&gt;</code> o <code>&lt;chord&gt;</code> con un valor de <code>i=initial</code>, <code>m=medial</code> o <code>t=terminal</code>.</li>
+        <li>Un elemento separado <code>&lt;slur&gt;</code>.</li>
+    </ol>
+
+    <p>En este último paso, se utilizará el segundo enfoque: Al igual que las dinámicas, los elementos <code>&lt;slur&gt;</code> son eventos de control. No se codifican como elementos hijos de los eventos correspondientes que deben controlar, sino que se colocan en la mayoría de los casos fuera de los elementos <code>staff</code>.</p>
+
+    <p>Para indicar el punto inicial y el punto final de la ligadura, es posible aplicar una referencia al correspondiente <code>@xml:id</code> de un elemento <code>&lt;note&gt;</code> o <code>&lt;chord&gt;</code>. Los <code>@xml:id</code>s son identificadores con una secuencia de caracteres arbitraria pero única que regulariza la denominación de un elemento a lo largo de un documento y facilita así la construcción de enlaces entre elementos y otros recursos. En el caso de <code>&lt;slur&gt;</code>, la referencia al <code>@xml:id</code> de un elemento puede darse a través de los atributos <code>@startid</code> y <code>@endid</code>.</p>
+
+    <p>Junto con <code>@startid</code> y <code>@endid</code>, se deben utilizar los siguientes atributos en este paso:</p>
+    <ul>
+        <li><code>@staff</code> - el número de identificación del pentagrama al que se aplica un elemento, por ejemplo, <code>"1"</code> en este caso,</li>
+        <li><code>@curvedir</code> (dirección de la curva) - describe una curva con un término genérico que indica la dirección de la curvatura: <code>”above"</code>, <code>"below"</code> o <code>"mixed"</code>,</li>
+        <li><code>@startid</code> - referencia al <code>xml:id</code> de la nota de inicio de la ligadura, de la forma: <code>#xml:id</code> (nótese el signo <code>#</code>),</li>
+        <li><code>@endid</code> - referencia al <code>xml:id</code> de la nota final de la ligadura, de la forma: <code>#xml:id</code> (nótese el signo <code>#</code>).</li>
+    </ul>
+
+    <p class="task-ES">Identifica la primera y la última nota a la que se une la ligadura (dentro del primer elemento <code>&lt;beam&gt;</code> del compás 3) y añade <code>@xml:id</code>s a ambos elementos <code>&lt;note&gt;</code>. Establece un valor único para cada <code>@xml:id</code>, para este ejemplo puedes utilizar los valores: <code>“d1e4614”</code>, <code>“d1e4615”</code>. Añade un elemento de control <code>&lt;slur&gt;</code> después de la etiqueta de cierre del elemento <code>&lt;staff&gt;</code> y aplica los atributos correspondientes.</p>
+</div>

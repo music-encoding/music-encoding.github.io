@@ -1,0 +1,16 @@
+<div>
+    <p class="tutorialGoal-ES">
+        Segundo paso: conocer la aplicación y el uso de los espacios de nombres.
+    </p>
+    <p>
+        ¡Muy bien! En un documento XML, el nombre del elemento raíz es arbitrario y no tiene significado en el procesamiento automático de aquel. Para dejar claro en qué contexto se define un elemento y evitar conflictos de nombre, XML hace uso de los llamados <a href="https://es.wikipedia.org/wiki/Espacio_de_nombres_XML" target="_blank" rel="noopener, noreferrer">espacios de nombres</a>. Los espacios de nombres pueden declararse añadiendo una declaración de espacio de nombres <code>@xmlns</code> al elemento raíz.
+    </p>
+    <p>
+        Por ejemplo, el espacio de nombres MEI es <code>http://www.music-encoding.org/ns/mei</code> y puede declararse de la siguiente manera: <code>xmlns="http://www.music-encoding.org/ns/mei"</code>
+    </p>
+    <p>
+        Siempre que veas una entidad con un signo <code>@</code> antepuesto en el texto (como <code>@xmlns</code> arriba) significa que nos referimos a un atributo XML. (Este tipo de referencia es una práctica común y tiene su origen en el lenguaje <a href="https://es.wikipedia.org/wiki/XPath" target="_blank" rel="noopener, noreferrer">XPath</a>.) Los atributos contienen información específica (llamada valores de atributos) que está relacionada con los elementos. Sin embargo, a diferencia de los elementos, los atributos XML no tienen sus propios corchetes de apertura o cierre, sino que se colocan únicamente dentro de la etiqueta de apertura de un elemento, junto al nombre del mismo. Los atributos se definen utilizando el nombre del atributo, seguido de un signo igual, seguido por el valor del atributo, el cual siempre debe ir entrecomillado (con comillas simples o dobles). Los diferentes atributos de un elemento están separados por espacios en blanco. Ten en cuenta que el signo <code>@</code> solo se utiliza en las descripciones textuales y no en la propia codificación.
+    </p>
+
+    <p class="task-ES">En el editor de abajo, añade una declaración de espacio de nombres MEI al elemento raíz <code>MEI</code>.</p>
+</div>

@@ -1,0 +1,13 @@
+<div>
+    <p class="tutorialGoal-ES">Décimo paso: añadir los signos de articulación a tu codificación del ejemplo.</p>
+
+    <p>¡Increíble! Has codificado toda la línea melódica del ejemplo. Ahora, consideremos los elementos adicionales que faltan, como la dinámica, las ligaduras o los acentos, poco a poco.</p>
+
+    <p>Las articulaciones, es decir, las indicaciones de cómo tocar una nota o un acorde, pueden codificarse con elementos <code>&lt;artic&gt;</code> que se aplican como hijos a los elementos <code>&lt;note&gt;</code>. Los siguientes atributos en <code>&lt;artic&gt;</code> deben utilizarse en este paso del tutorial:</p>
+    <ul>
+        <li><code>@articulación</code> (tipo de articulación) - el tipo de marca de articulación, por ejemplo: acento <code>"acc"</code>, staccato <code>"stacc"</code>, tenuto <code>"ten"</code>, utiliza aquí <code>"acc"</code>,</li>
+        <li><code>@place</code> - posición del signo de articulación, <code>”above"</code> o <code>”below"</code> del pentagrama, utilice aquí <code>”above"</code>.</li>
+    </ul>
+
+    <p class="task-ES">Encuentra en el ejemplo los elementos <code>&lt;note&gt;</code> a los que se asignan las articulaciones (hay acentos musicales en las negras con puntillo del compás 1 y 2, así como en la negra del compás 3). Añade un elemento hijo <code>&lt;artic&gt;</code> a estos elementos <code>&lt;note&gt;</code> y aplica los atributos correspondientes (<code>@artic</code>, <code>@place</code>).</p>
+</div>

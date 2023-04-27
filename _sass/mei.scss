@@ -393,9 +393,19 @@ ul.nav li.nav-item:first-child {
         content: "Goal: "
     }
 
+    .tutorialGoal-ES:before {
+        font-weight: bold;
+        content: "Objetivo: "
+    }
+
     .task:before {
         font-weight: bold;
         content: "Task: "
+    }
+
+    .task-ES:before {
+        font-weight: bold;
+        content: "Tarea: "
     }
 
     #stepBox {
