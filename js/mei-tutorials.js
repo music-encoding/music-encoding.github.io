@@ -46,6 +46,29 @@ var editSnippetStartString = '<?edit-start?>';
 var editSnippetEndString = '<?edit-end?>';
 
 var currentStep; //this will be used as current step object
+var LANG; //this will be used to store the current language
+
+var tutorialStrings = {
+    'EN': {
+        'codeNotWellformed': 'Your code is not well-formed.',
+        'fetchOperationProblem': 'There has been a problem with the fetch operation for:',
+        'finish': 'Finish',
+        'hideHint': 'hide hint',
+        'networkError': 'Network response was not ok while trying to fetch:',
+        'renderingError': 'The current encoding cannot be rendered.',
+        'showHint': 'show hint',
+    },
+    'ES': {
+        'codeNotWellformed': 'Su código no está bien formado.',
+        'fetchOperationProblem': 'Ha habido un problema con la operación fetch para:',
+        'finish': 'Terminar',
+        'hideHint': 'ocultar pista',
+        'networkError': 'La respuesta de la red no fue correcta al intentar buscar:',
+        'renderingError': 'La codificación actual no se puede representar.',
+        'showHint': 'mostrar pista',
+    }
+};
+
 
 /****************************** 
  * Global preparations        *
@@ -83,7 +106,9 @@ setListeners();
  * @param data: The content of a tutorial's JSON file
  * This function initializes a tutorial
  */
-function setupTutorial(data) {
+function setupTutorial(data, language) {
+
+    LANG = language || 'EN';
 
     var stepCount = data.steps.length;
     var stepBox = document.getElementById('stepBox');
@@ -107,7 +132,7 @@ function setupTutorial(data) {
         li.classList.add('step-item');
         li.setAttribute('data-step-n','outro');
         var a = document.createElement('a');
-        var text = 'Finish';
+        var text = tutorialStrings[LANG]['finish'];
         a.innerHTML = text;
         li.appendChild(a);
         stepBox.appendChild(li);
@@ -202,7 +227,7 @@ function loadTutorialStep(data, stepNum) {
                   }
                   })
             .catch(function(error) {
-                   console.log('There has been a problem with the fetch operation for: ', promiseArray, error.message);
+                   console.error(tutorialStrings[LANG]['fetchOperationProblem'], promiseArray, error.message);
                    });
     }
     
@@ -213,7 +238,7 @@ function loadTutorialStep(data, stepNum) {
             document.getElementById('instruction').innerHTML = descriptionFile;
         })
         .catch(function(error) {
-            console.log('There has been a problem with the fetch operation for ', currentStep.descFile, error.message);
+            console.error(tutorialStrings[LANG]['fetchOperationProblem'], currentStep.descFile, error.message);
         });
     
 }
@@ -289,12 +314,12 @@ function handleEditorChanges(file) {
         // check if parsed xmlDoc is wellformed
         wellformed = (xmlDoc.activeElement && xmlDoc.activeElement.localName && xmlDoc.activeElement.localName === 'parsererror') ? false : true;
     } catch (error) {
-        console.log('parserError: ' + error);
+        console.error('parserError: ' + error);
     }
 
     if (!wellformed) {
-        console.log('not well-formed');
-        displayWarning('Your code is not well-formed.');
+        console.warn(tutorialStrings[LANG]['codeNotWellformed']);
+        displayWarning(tutorialStrings[LANG]['codeNotWellformed']);
         document.getElementById('rendering').innerHTML = '';
 
 
@@ -309,7 +334,7 @@ function handleEditorChanges(file) {
             try {
                 xpathResult = xmlDoc.evaluate(currentStep.xpaths[i].rule, xmlDoc, nsResolver, XPathResult.BOOLEAN_TYPE, null);
             } catch (error) {
-                console.log('error resolving xpath: "' + currentStep.xpaths[i].rule + '"' + error);
+                console.error('error resolving xpath: "' + currentStep.xpaths[i].rule + '"' + error);
                 isValid = false;
                 break;
             }
@@ -400,7 +425,7 @@ function showFinalPage(data) {
             
         })
         .catch(function(error) {
-            console.log('There has been a problem to load finale page: ' + error.message);
+            console.error(tutorialStrings[LANG]['fetchOperationProblem'], data.end, error.message);
         });
     
 }
@@ -425,12 +450,12 @@ function renderVerovio(validationString) {
         svg = vrvToolkit.renderData(validationString, {});
         error = false;
     } catch (error) {
-        console.log('error rendering verovio: ' + error);
+        console.error('error rendering verovio: ' + error);
     }
     
     if (error) {
         // display message
-        document.getElementById('rendering').innerHTML = 'The current encoding cannot be rendered.';
+        document.getElementById('rendering').innerHTML = tutorialStrings[LANG]['renderingError'];
     } else {
         // display svg
         document.getElementById('rendering').innerHTML = svg;
@@ -541,7 +566,7 @@ function activateStepListItem(data,stepNum) {
             oldStep.classList.remove('active');
         }
     } catch(err) {
-        console.log('No active step so far: ' + err);
+        console.error('No active step so far: ' + err);
     }
     
     //highlight current step bullet as active
@@ -549,7 +574,7 @@ function activateStepListItem(data,stepNum) {
         var stepLi = document.querySelector('li.step-item[data-step-n="' + stepNum + '"]');
         stepLi.classList.add('active');   
     } catch(err) {
-        console.log('something went wrong: ' + err)
+        console.error('Something went wrong: ' + err)
     }
 }
 
@@ -564,7 +589,7 @@ function fetchFile(file) {
             if(response.ok) {
                 return response.text();
             }
-            throw new Error('Network response was not ok while trying to fetch ', file);
+            throw new Error(tutorialStrings[LANG]['networkError'], file);
         })
 }
 
@@ -652,10 +677,12 @@ function toggleHint() {
     // read current values
     const hintStyle = document.getElementById('hints');
     var hintMessage = document.getElementById('btn-toggleHint').innerText;
+    var hideHint = tutorialStrings[LANG]['hideHint'];
+    var showHint = tutorialStrings[LANG]['showHint'];
 
     // toggle values
     hintStyle.style.display = hintStyle.style.display === 'none' ? 'block' : 'none';
-    hintMessage = hintMessage === 'hide hint' ? 'show hint' : 'hide hint';
+    hintMessage = hintMessage === hideHint ? showHint : hideHint;
 
     // set new values
     document.getElementById('btn-toggleHint').innerText = hintMessage;

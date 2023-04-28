@@ -86,7 +86,7 @@ layout: default
                             throw new Error('Error de red al intentar recuperar  ', page.data);
                         })
                         .then(function(data) {
-                            setupTutorial(data);
+                            setupTutorial(data, "ES");
                         });
                 } catch(err) {
                     console.log('No se pueden solicitar datos: ' + err)
