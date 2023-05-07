@@ -20,7 +20,7 @@ jobs:
           ${{ runner.os }}-gems-
 
     # Build Jekyll to the specified target branch
-    - uses: helaili/jekyll-action@v2
+    - uses: helaili/jekyll-action@c1527523361ec3ecc54b2371ddef44826e28c0f5 # ratchet:helaili/jekyll-action@v2
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
         target_branch: 'gh-pages'
