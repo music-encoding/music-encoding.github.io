@@ -144,18 +144,13 @@ function setupTutorial(data, language) {
     loadTutorialStep(data, stepNum);
     
     //add listener to allow going to the next step
-    document.getElementById('nextStepButton').addEventListener('click',(e) => {
-        stepNum = parseInt(e.target.getAttribute('data-next-stepnum'), 10);
-
-        //catch any non numbers
-        if (isNaN(stepNum)) {
-            console.log('error getting next step number: ', stepNum, 'for event: ', e);
-        }
-
-        //load next step
-        loadTutorialStep(data, stepNum);
-    });        
+    addStepListener(data, 'next');
+    
+    //add listener to allow going to the previous step
+    addStepListener(data, 'previous');
 }
+
+
 
 /* 
  * function loadTutorialStep
@@ -166,20 +161,33 @@ function loadTutorialStep(data, stepNum) {
     
     console.log('\nloading step ' + stepNum + ', maximum step is ' + data.steps.length);
     
+    //get relevant elements on page
+    var editorContainer = document.getElementById('editorContainer');
+    var nextStepButton = document.getElementById('nextStepButton')
+    var previousStepButton = document.getElementById('previousStepButton');
+
     //if all steps are passed, move on to the final page, and skip rest of function
     if(stepNum >= data.steps.length) {
         showFinalPage(data);
+        previousStepButton.setAttribute('data-previous-stepnum',stepNum - 1);
         return true;
     }
 
-    // do not allow download or continuation before tutorial is set up
-    disallowDownload();
-    blockNextStep();
-    
+    //update navigation buttons to allow proceeding. listeners are set in setupTutorial() 
+    nextStepButton.setAttribute('data-next-stepnum',stepNum + 1);
+    previousStepButton.setAttribute('data-previous-stepnum',stepNum - 1);
+
     //retrieve step object from data
     var step = data.steps[stepNum];
     currentStep = step;
     
+    //do not allow going back if it is the first step
+    currentStep === data.steps[0] ? blockPreviousStep() : allowPreviousStep();
+
+    //do not allow download or continuation before tutorial is set up
+    disallowDownload();
+    blockNextStep();
+        
     //adds heading as provided, falls back to plain step numbers
     document.getElementById('stepLabel').innerHTML = (typeof currentStep.label !== 'undefined' && currentStep.label !== '') ? currentStep.label : 'Step ' + (stepNum + 1);
     document.getElementById('fullFileTitle').innerHTML = currentStep.xmlFile;
@@ -190,13 +198,6 @@ function loadTutorialStep(data, stepNum) {
     //decide if XML editor is needed on this page, and if it needs to be prefilled
     var requiresEditor = (typeof currentStep.xmlFile !== 'undefined' && currentStep.xmlFile !== '') && typeof currentStep.xpaths !== 'undefined' && currentStep.xpaths.length > 0;
     var requiresPrefill = (typeof currentStep.prefillFile !== 'undefined' && currentStep.prefillFile !== '');
-    
-    //get relevant elements on page
-    var editorContainer = document.getElementById('editorContainer');
-    var nextStepButton = document.getElementById('nextStepButton');
-    
-    //update nextStepButton to allow proceeding. listener is set in setupTutorial() 
-    nextStepButton.setAttribute('data-next-stepnum',stepNum + 1);
     
     //show editor only when needed, allow to proceed without interaction
     if(!requiresEditor) {
@@ -236,6 +237,9 @@ function loadTutorialStep(data, stepNum) {
         .then(function(descriptionFile) {
             // update instruction section
             document.getElementById('instruction').innerHTML = descriptionFile;
+            nextStepButton.style.display = 'inline-block';
+            previousStepButton.style.display = 'inline-block';
+            document.getElementById('acknowledgments').style.display = 'none';
         })
         .catch(function(error) {
             console.error(tutorialStrings[LANG]['fetchOperationProblem'], currentStep.descFile, error.message);
@@ -478,12 +482,28 @@ function allowNextStep() {
 }
 
 /* 
+ * function allowPreviousStep
+ * This function enables the previousStepButton
+ */
+function allowPreviousStep() {
+    document.getElementById('previousStepButton').classList.remove('disabled');
+}
+
+/* 
  * function blockNextStep
  * This function disables the nextStepButton
  */
 function blockNextStep() {
     document.getElementById('nextStepButton').classList.add('disabled');
     document.querySelector('.tutorialBox #editorBox').style.borderColor = 'orangered';
+}
+
+/*
+ * function blockPreviousStep
+ * This function disables the previousStepButton
+ */
+function blockPreviousStep() {
+    document.getElementById('previousStepButton').classList.add('disabled');
 }
 
 /* 
@@ -576,6 +596,29 @@ function activateStepListItem(data,stepNum) {
     } catch(err) {
         console.error('Something went wrong: ' + err)
     }
+}
+
+
+/*
+ * function addStepListener
+ * @param data: The content of a tutorial's JSON file
+ * @param direction: (string) either 'next' or 'previous'
+ * Adds a click listener to the next/previous step button
+ * and loads the next/previous step
+ */
+function addStepListener(data, direction) {
+    document.getElementById(direction + 'StepButton').addEventListener('click',(e) => {
+        var dataAttr = 'data-' + direction + '-stepnum';
+        stepNum = parseInt(e.target.getAttribute(dataAttr), 10);
+
+        //catch any non numbers
+        if (isNaN(stepNum)) {
+            console.error(`error getting ${direction} step number: ${stepNum} for event: ${e}`);
+        } else {
+            //load next step
+            loadTutorialStep(data, stepNum);
+        }
+    }); 
 }
 
 /* 

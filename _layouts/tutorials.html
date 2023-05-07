@@ -42,14 +42,18 @@ layout: default
                     <!-- verovio rendering goes in here -->
                 </div>
             </div>
-            <button id="nextStepButton" class="btn btn-primary btn-sm float-right">Continue <i class="icon icon-forward"></i></button>
-            
+                        
             <div id="acknowledgments" style="display: none;">
                 <h3>Acknowledgments</h3>
                 <p>This tutorial was brought to you by:</p>
                 <ul id="ackList"></ul>
             </div>
-            
+
+            <div id="navigationButtons" style="width: 100%;">
+                <button id="previousStepButton" style="display: none;" class="btn btn-primary btn-sm float-left" ><i class="icon icon-back"></i> Back</button>
+                <button id="nextStepButton" style="display: none;" class="btn btn-primary btn-sm float-right">Continue <i class="icon icon-forward"></i></button>
+            </div>  
+  
             <ul id="stepBox" class="step">
                 <!-- tutorial step list goes in here -->
             </ul>
