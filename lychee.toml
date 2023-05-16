@@ -39,6 +39,9 @@ exclude = [
     # custom User files
     'file:///Users/*',
 
+    # former Conftool pages
+    'https://www.conftool.net/music-encoding2022/index.php?page=participate',
+
     # these DOIs are not correctly resolved (probably too many redirects)
     'https://doi.org/10.13140/RG.2.2.15014.93760',
     'https://doi.org/10.15463/music-1',
