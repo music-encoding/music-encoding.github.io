@@ -23,7 +23,7 @@ jobs:
     if: ${{ github.repository_owner == 'music-encoding' }}
 
     steps:
-      - uses: technote-space/broken-link-checker-action@7820497a025fb09ff736ee11bb8bb12ca715b4fe # ratchet:technote-space/broken-link-checker-action@v2
+      - uses: technote-space/broken-link-checker-action@b8332d945b97f8b52eb8d7d889a1e0e37106c1a9 # ratchet:technote-space/broken-link-checker-action@v2
         with:
           target: ${{ env.CHECK_WEBSITE }}
 
