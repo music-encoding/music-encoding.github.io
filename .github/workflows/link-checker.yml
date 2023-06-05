@@ -45,7 +45,7 @@ jobs:
 
       - name: Link Checker
         id: lychee
-        uses: lycheeverse/lychee-action@97189f2c0a3c8b0cb0e704fd4e878af6e5e2b2c5 # ratchet:lycheeverse/lychee-action@v1.7.0
+        uses: lycheeverse/lychee-action@ec3ed119d4f44ad2673a7232460dc7dff59d2421 # ratchet:lycheeverse/lychee-action@v1.8.0
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
 
