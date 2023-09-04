@@ -39,7 +39,7 @@ jobs:
             echo "CHECK_BRANCH=${{ github.event.inputs.branch }}" >> $GITHUB_ENV
           fi
       - name: Checkout main repo
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           ref: ${{ env.CHECK_BRANCH }}
 

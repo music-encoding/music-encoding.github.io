@@ -9,7 +9,7 @@ jobs:
     if: github.repository_owner == 'music-encoding'
 
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       # Use GitHub Actions' cache to shorten build times and decrease load on servers
       - uses: actions/cache@v3
