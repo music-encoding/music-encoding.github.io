@@ -30,7 +30,7 @@ A detailed overview of the changes for the MEI 5.0 schema is available here: [ht
 # Previous Versions of MEI
 
 - [MEI (v. 4.0.1)](https://github.com/music-encoding/music-encoding/releases/tag/v4.0.1)
-  - MEI 4.0.1 Guidelines ([PDF]) - not available
+  - MEI 4.0.1 Guidelines (PDF) - not available
   - RelaxNG schemata:
     - [MEI All](https://music-encoding.org/schema/4.0.1/mei-all.rng)
     - [MEI All Anystart](https://music-encoding.org/schema/4.0.1/mei-all_anyStart.rng)
