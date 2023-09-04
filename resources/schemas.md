@@ -8,6 +8,10 @@ The MEI Namespace is `http://www.music-encoding.org/ns/mei`
 
 # MEI 5.0 Schemas
 
+New customization: MEI Basic. It provides a simplified subset of the MEI framework that reflects the capabilities of most popular "Common Western Music Notation" score-writing applications currently in use. For more details on MEI Basic [see the corresponding section ion the guidelines](https://music-encoding.org/guidelines/v5/content/introduction.html#meiBasic).
+
+- MEI Basic: [https://music-encoding.org/schema/5.0/mei-basic.rng](https://music-encoding.org/schema/5.0/mei-basic.rng)
+  
 The MEI Schemas (specific for CMN, mensural, or neumes notation) are available at the following URLs:
 
 - MEI CMN: [https://music-encoding.org/schema/5.0/mei-CMN.rng](https://music-encoding.org/schema/5.0/mei-CMN.rng)
