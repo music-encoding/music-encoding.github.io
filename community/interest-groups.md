@@ -56,7 +56,7 @@ list: [https://lists.uni-paderborn.de/mailman/listinfo/mei-linked-data-ig](https
 
 ## Analysis Interest Group
 
-**Administrative Co-Chairs: [Agnes Seipelt](mailto:aseipelt@mail.upb.de) and [Fabian Moss](mailto:fabianmoss@gmail.com)**.<br/>
+**Administrative Co-Chairs: [Fabian Moss](mailto:fabianmoss@gmail.com) and [Mark Saccomano](mark.saccomano@uni-paderborn.de)**.<br/>
 The aims of the Music Analysis Interest Group are to explore the potential of MEI for music analysis including e.g. the harmonic, melodic, and rhythmical content of pieces, as well as the metadata and comparisons between individual compositions or corpora. The IG seeks to discuss, collect and share different encoding formats, annotational languages and applications for musical analysis in many different ways, and support and enhance possible interconnections to MEI. A central goal is to improve the use of MEI for the encoding of different analytical approaches by recommending additions and modifications to future versions of the MEI schema and guidelines. The group welcomes any member of the MEI community interested in music analysis to get involved by subscribing to the mailing list [https://lists.uni-paderborn.de/mailman/listinfo/mei-analysis-ig](https://lists.uni-paderborn.de/mailman/listinfo/mei-analysis-ig) or the [MEI Slack channel](https://music-encoding.slack.com/archives/C014F0QAS59) ([join the MEI Slack here](https://join.slack.com/t/music-encoding/shared_invite/zt-4zgx6zbq-2jEjDiUT7ym3dygTaY8C0g)).
 
 ## Digital Pedagogy Interest Group
