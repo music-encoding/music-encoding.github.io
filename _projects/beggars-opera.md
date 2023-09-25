@@ -13,4 +13,4 @@ _The Beggar’s Opera:  A Site for Scholars, Performers, Teachers and Students_ 
 
 This site aims to help others who seek to make works combining music and text accessible in a digital format, including ways to combine the two standard languages for the scholarly presentation of text and music, the Text Encoding Initiative Extensive Markup Language (TEI-XML, or TEI for short) and the Music Encoding Initiative Extensive Markup Language (MEI-XML, or MEI for short). These languages, which provide a rich lexicon for noting the features of texts and music, from speakers to locations to musical tempi, have rarely been brought together in a single project.
 
-Explore the text and score of _The Beggar's Opera_ at [https://beggarsopera.rowhouse.live/text/](https://beggarsopera.rowhouse.live/text/).
+Explore the text and score of _The Beggar's Opera_ at [https://beggarsopera.net/text/](https://beggarsopera.net/text/).
