@@ -50,8 +50,8 @@ menu:
       url: '/conference'
       submenu:
           - id: upcoming
-            label: 'MEC/TEI 2023'
-            url: '/2023'
+            label: 'MEC 2024'
+            url: '/2024'
           - id: previous
             label: 'Past Conferences'
             url: '/past.html'
