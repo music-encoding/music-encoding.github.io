@@ -39,7 +39,7 @@ The schedule for these developer workshops is the _last Friday of every odd mont
 
 * November 24, 2023 [4pm UTC](https://www.timeanddate.com/worldclock/converter.html?iso=20231124T150000&p1=1440) ODD Friday
 * October 26, 2023 [3pm UTC](https://www.timeanddate.com/worldclock/converter.html?iso=20231026T150000&p1=1440) ODD Thursday
-* September 29, 2023 [3pm UTC](https://www.timeanddate.com/worldclock/converter.html?iso=20230929T150000&p1=1440) ODD Friday
+* September 28, 2023 [2pm UTC](https://www.timeanddate.com/worldclock/converter.html?iso=20230929T150000&p1=1440) ODD Friday
 * September 4–8, 2023: TEI/MEC conference
 * August: summer break
 * July 28, 2023 [3pm UTC](https://www.timeanddate.com/worldclock/converter.html?iso=20230728T150000&p1=1440) ODD Friday
