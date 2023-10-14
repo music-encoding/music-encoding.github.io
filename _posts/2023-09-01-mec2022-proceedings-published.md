@@ -5,7 +5,7 @@ date:   2023-09-01 12:00:00
 categories: update
 ---
 
-We are pleased to announce the publication of the 2022 Music Encoding Conference Proceedings. All contributions submitted for inclusion are now available with individual DOIs from the Music Encoding Initiative’s Humanities Commons group at [https://hcommons.org/groups/music-encoding-initiative/deposits/](https://hcommons.org/groups/music-encoding-initiative/deposits/). The full volume is available via [https://doi.org/10.17613/sn48-8932](https://doi.org/10.17613/sn48-8932).
+We are pleased to announce the publication of the 2022 Music Encoding Conference Proceedings. All contributions submitted for inclusion are now available with individual DOIs from the Music Encoding Initiative’s Humanities Commons group at <https://hcommons.org/groups/music-encoding-initiative/deposits/>. The full volume is available via <https://doi.org/10.17613/sn48-8932>.
 
 We thank you for your patience and hope you agree that the wait was worthwhile, as the Proceedings showcase the impressive variety of scholarship undertaken by our extended community.
 
