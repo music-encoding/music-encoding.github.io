@@ -13,6 +13,9 @@ repository: "music-encoding/music-encoding.github.io"
 plugins:
   - jekyll-redirect-from
 
+gems:
+  - public_suffix: 5.0.0
+
 menu:
     - id: about
       label: 'About'
