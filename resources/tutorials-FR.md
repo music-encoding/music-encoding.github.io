@@ -19,4 +19,4 @@ Retour aux [tutoriels en anglais](/resources/tutorials.html).
 
 ---
 
-_Traductions réalisées par Aurelien Balland-Chatignon et Félix Poullet-Pagès pour la Music Encoding Initiative, ingénieurs d'études à [l'Institut de recherche en musicologie](http://iremus.cnrs.fr) et membres du consortium [MUSICA2](https://musica.hypotheses.org)_
+_Traductions réalisées par Aurelien Balland Chatignon et Félix Poullet-Pagès pour la Music Encoding Initiative, ingénieurs d'études à [l'Institut de recherche en musicologie](http://iremus.cnrs.fr) et membres du consortium [MUSICA2](https://musica.hypotheses.org)_
