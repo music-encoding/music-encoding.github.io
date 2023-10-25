@@ -23,7 +23,7 @@ The aim of the Interest Group is to discuss the use of MEI for the encoding of m
 
 ## Metadata and Cataloging Interest Group
 
-**Administrative Co-Chairs: [Sophia Dörner](mailto:sophia.doerner@slub-dresden.de) and [Dennis Ried](mailto:dennis.ried@uni-paderborn.de)**.<br/>
+**Administrative Co-Chairs: [Sophia Dörner](mailto:doerners@posteo.de) and [Dennis Ried](mailto:dennis.ried@uni-paderborn.de)**.<br/>
 The aim of the Metadata and Cataloging Interest Group is to discuss the use of MEI for the encoding of musical metadata; to make recommendations regarding the development of metadata-specific elements; to promote the sharing of and collaboration on tools for projects concerned with MEI metadata such as cataloging projects. 'Cataloging' in this context may include a wide range of projects such as thematic catalogs ('Werkverzeichnisse'), library catalogs, and other descriptions of musical works or sources. The group is open to all members of the MEI community. Members enroll simply by subscribing to the group's mailing list: [https://lists.uni-paderborn.de/mailman/listinfo/mei-catalog-ig](https://lists.uni-paderborn.de/mailman/listinfo/mei-catalog-ig).
 
 ## Neumes Interest Group
