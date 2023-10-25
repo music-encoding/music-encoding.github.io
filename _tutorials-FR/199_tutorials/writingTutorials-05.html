@@ -1,0 +1,51 @@
+<div>
+  <p>
+    Cela va sans dire, la validation correcte de la saisie est importante pour
+    un apprentissage efficace et durable. Cependant, parce que notre site web
+    est basé sur Jekyll, nous devons compter sur la validation côté client (se
+    fier uniquement à un service externe pour la validation n'est probablement
+    pas fiable, c'est pourquoi nous avons opté pour cette approche). À ce jour,
+    la validation côté client (c'est-à-dire, en utilisant JavaScript) ne prend
+    pas en charge correctement le
+    <a href="https://en.wikipedia.org/wiki/RelaxNG" target="_blank">RelaxNG</a>,
+    le langage de schéma utilisé en bout de chaine pour valider les instances
+    MEI dans de vrais projets. Pour cette raison, nous devons utiliser
+    l'approche basée sur XPath mentionnée précédemment.
+  </p>
+  <p>
+    La propriété <code>"xpaths"</code> de l'étape actuelle contient un tableau
+    de règles auxquelles la saisie de l'utilisateur doit se conformer pour
+    accomplir cette étape. Ces règles sont spécifiées sous la forme d'objets
+    JSON avec trois propriétés :
+  </p>
+  <pre class="codeblock">
+{
+    "rule":"//mei:note/@pname = 'g'",
+    "renderanyway":true,
+    "hint":"Vous avez besoin d'un attribut @pname, avec une valeur de g."
+}</pre
+  >
+  <p>
+    La propriété <code>"rule"</code> contient une expression
+    <a href="https://en.wikipedia.org/wiki/XPath" target="_blank">XPath 1</a>,
+    qui doit se résoudre en une déclaration booléenne : elle doit être soit
+    <i>true</i> soit <i>false</i>. La propriété <code>"renderanyway"</code> est
+    utilisée pour décider si l'éditeur actuel peut être rendu par Verovio même
+    si le XPath n'est pas respecté. Le contenu de la propriété
+    <code>"hint"</code> est censé aider l'utilisateur à réussir son encodage.
+    Seule la première règle XPath qui échoue est affichée, guidant l'utilisateur
+    pas à pas à travers les différentes erreurs. Cependant, toutes les étapes
+    n'ont pas besoin d'une aide – parfois, il est préférable de laisser
+    l'utilisateur explorer un peu par lui-même.
+  </p>
+  <p>
+    Pour la validation, la saisie de l'utilisateur sera insérée entre les
+    marqueurs <code>&lt;?snippet-start?&gt;</code> et
+    <code>&lt;?snippet-end?&gt;</code> dans le fichier XML actuel, puis les
+    règles XPath seront vérifiées par rapport à ce fichier complet. Dès qu'une
+    de ces règles échoue (c'est-à-dire, renvoie <i>false</i>), l'astuce
+    correspondante sera affichée. Lorsque toutes les règles renvoient
+    <i>true</i>, le bouton "continuer" sera activé et l'utilisateur pourra
+    passer à l'étape suivante.
+  </p>
+</div>
