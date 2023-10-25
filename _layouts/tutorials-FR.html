@@ -24,8 +24,8 @@ layout: default
             </div>
             <div id="editorContainer" style="display: none;">
                 <h3>Editeur MEI
-                    <button id="btn-openFullFileModal" class="btn btn-link float-right disabled" title="sólo permitido cuando sea válido">mostrar codificación completa</button>
-                    <button id="btn-toggleHint" class="btn btn-link float-right disabled" title="engaño o trampa">mostrar pista</button>
+                    <button id="btn-openFullFileModal" class="btn btn-link float-right disabled" title="uniquement permis lors au moment de la validation">afficher le code complet</button>
+                    <button id="btn-toggleHint" class="btn btn-link float-right disabled" title="tromperie ou ruse">afficher l'indice</button>
                 </h3>
                 <div id="editorBox">
                     <div id="editor">
@@ -86,7 +86,7 @@ layout: default
                             throw new Error('Erreur réseau en essayant de réccupérer  ', page.data);
                         })
                         .then(function(data) {
-                            setupTutorial(data);
+                            setupTutorial(data, "FR");
                         });
                 } catch(err) {
                     console.log('Erreur lors de la réccupération des données : ' + err)

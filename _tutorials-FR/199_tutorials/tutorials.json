@@ -1,23 +1,23 @@
 {
   "steps": [
     {
-        "label":"Bienvenido/a",
+        "label":"Bienvenue",
         "descFile": "writingTutorials-01.html"
     },
     {
-        "label":"Configuración del sitio web",
+        "label":"Mise en route",
         "descFile": "writingTutorials-02.html"
     },
     {
-        "label":"El archivo JSON",
+        "label":"Le fichier JSON",
         "descFile": "writingTutorials-03.html"
     },
     {
-        "label":"El editor",
+        "label":"L'éditeur",
         "descFile": "writingTutorials-04.html"
     },
     {
-        "label":"Validación",
+        "label":"Validation",
         "descFile": "writingTutorials-05.html"
     }
   ],
@@ -25,7 +25,7 @@
   "resp":[
     {
         "name":"Johannes Kepper",
-        "affiliation":"Beethovens Werkstatt | Universidad de Paderborn"
+        "affiliation":"Beethovens Werkstatt | Universität Paderborn"
     }
   ]
 }
