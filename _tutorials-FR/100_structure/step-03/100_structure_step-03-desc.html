@@ -1,28 +1,29 @@
 <div>
     <p class="tutorialGoal">
-        Step three: learn about the main child elements of the <code>&lt;mei&gt;</code> root element: <code>&lt;meiHead&gt;</code>
+        Troisème étape : Découvrir les élements enfant de l'élément racine <code>&lt;mei&gt;</code> : <code>&lt;meiHead&gt;</code>
         and <code>&lt;music&gt;</code>.
     </p>
     <p>
-        Well done! Now, that we have declared a namespace within our root element, all other elements nested in the root
-        element can be resolved according to the MEI namespace by machine-processing.
+        Bon travail! Maintenant que nous avons déclaré un espace de noms dans notre élément racine, tous les autres éléments 
+        imbriqués dedans peuvent être résolus conformément à l'espace de noms MEI par un traitement automatique.
     </p>
-        As already mentioned, you can think of an XML document like a tree that branches from one (outer) root element
-        to nested (inner) child elements. A MEI-encoded file contains at least two structures within the
-        <code>&lt;mei&gt;</code> root element:
+        Comme nous l'avions vu, vous pouvez imaginer un document XML comme un arbre qui se ramifie à partir d'un élément racine (l'exterieur)
+        vers des éléments enfants (à l'intérieur) imbriqués. Un fichier encodé en MEI contient au moins deux structures à l'intérieur de
+        de l'élément racine <code>&lt;mei&gt;</code> :
     </p>
     <ul>
         <li>
-            <code>&lt;meiHead&gt;</code> - contains a set of elements that supply metadata related to the MEI encoding, including
-            bibliographic information, responsibility statements, encoding standards, or provenance.
+            <code>&lt;meiHead&gt;</code> - contient un ensemble d'éléments qui fournissent des métadonnées liées au fichier encodé en MEI,
+            comme des informations bibliographiques, des déclarations de responsabilité, des normes d'encodage ou une provenance.
         </li>
         <li>
-            <code>&lt;music&gt;</code> - contains a set of elements that provide for the encoding of the actual musical content.
-            Beside others, it may comprise structural elements to describe the form of a musical piece (sections,
-            movements, document groups), or notational elements, like e.g. notes, rest, articluations, or dynamics.
+            <code>&lt;music&gt;</code> - contient un ensemble d'éléments permettant l'encodage du contenu musical réel.
+            Entre autres, il peut comprendre des éléments structurels pour décrire la forme d'une pièce musicale (sections,
+            mouvements, groupes de documents), ou des éléments de notation, tels que des notes, des silences, des articulations ou des dynamiques.
         </li>
     </ul>
 
-    <p class="task">In the editor below, add a <code>&lt;meiHead&gt;</code> and a <code>&lt;music&gt;</code> element inside the
-        <code>&lt;mei&gt;</code> root element.</p>
+    <p class="task">Dans l'éditeur ci-dessous, ajoutez un élément <code>&lt;meiHead&gt;</code> et un élément <code>&lt;music&gt;</code> à l'intérieur
+        l'élment racine <code>&lt;mei&gt;</code>.
+    </p>
 </div>
