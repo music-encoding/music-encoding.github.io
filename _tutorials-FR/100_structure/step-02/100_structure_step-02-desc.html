@@ -1,29 +1,31 @@
 <div>
     <p class="tutorialGoal">
-        Step two: learn about the application and use of namespaces.
+        Deuxième étape: Apprendre le fonctionnement et l'uttilisation des espaces de noms.
     </p>
     <p>
-        Fine! As mentioned in the previous step, the name of the root element of an XML document is basically an arbitrary
-        name that provides no meaning in itself for machine-processing. To make clear in which context an element is
-        defined and to avoid name conflicts with elements, XML makes use of so called
-        <a href="https://en.wikipedia.org/wiki/XML_namespace" target="_blank" rel="noopener, noreferrer">namespaces</a>.
-        Namespaces can be declared by adding an <code>@xmlns</code> namespace declaration to the root element.
+        Bien! Comme nous l'avions mentionés dans l'étape précédante, le nom de l'élément racine d'un document XML est 
+        un nom arbitraire qui ne possède aucune signification durant son traitement par la machine. 
+        Afin de clarifier le contexte d'un élément et d'éviter les conflits, le XML uttilise ce qu'on appelle les 
+        <a href="https://fr.wikipedia.org/wiki/Espace_de_noms_XML" target="_blank" rel="noopener, noreferrer">espaces de noms</a>.
+        Ces espaces de noms peuvent être déclaré en ajoutant <code>@xmlns</code> dans l'élément racine.
     </p>
     <p>
-        For example, the MEI namespace is <code>http://www.music-encoding.org/ns/mei</code> and can be declared
-        as follows: <code>xmlns="http://www.music-encoding.org/ns/mei"</code>
+        Par exemple, l'espace de nom MEI est <code>http://www.music-encoding.org/ns/mei</code> et peut être déclaré ainsi : 
+        <code>xmlns="http://www.music-encoding.org/ns/mei"</code>
     </p>
     <p>
-        Whenever you see an entity with a prepended <code>@</code>-sign in the text (like <code>@xmlns</code> above),
-        this means we refer to an XML attribute. (This kind of reference is common practice and originates in the
-        <a href="https://en.wikipedia.org/wiki/XPath" target="_blank" rel="noopener, noreferrer">XPath</a> language.)
-        Attributes contain specified information (attribute values) that are related to elements. However, unlike
-        elements, XML attributes do not have their own opening or closing brackets, but are placed solely inside the
-        opening tag of an element, next to the element's name. They consist of the plain attribute's name connected by
-        an equal sign to an attribute's value which must always be quoted (with single or double quotes). Multiple
-        attributes are separated by blank spaces. Be aware that the <code>@</code>-sign is only prepended in textual
-        descriptions, not in the encoding itself.
+        Les éléments précédés du signe <code>@</code> comme le prédédant exemple <code>@xmlns</code> se réfèrent à des attribut XML.
+        (Ces références sont une pratique courante provenant de le langage de requête 
+        <a href="https:/fr.wikipedia.org/wiki/XPath" target="_blank" rel="noopener, noreferrer">XPath</a>.)
+        Les attributs contiennent des informations specifique (des valeurs attributs) qui s'attachent aux éléments. Contrairement aux éléments,
+        les attributs XML n'ont pas de balise ouvrante ou fermante. Ils se placent à l'intérieur de la balise ouvrante d'un élément, à côté de son nom.
+        Ils se composent du nom de l'attribut, du signe <code>=</code> et de la valeur de l'attribut, qui doit toujours être mise entre
+        guillemets (simple ou doubles). Plusieurs attributs sont séparés par des espaces. Notez que le signe <code>@</code> avant le nom d'un
+        attribut n'apparaît pas dans le code MEI. Il s'agit uniquement d'une convention d'écriture afin de bien distinguer les attributs quand
+        on s'y réfère dans un contexte autre que le code MEI, comme dans un tutoriel par exemple !
     </p>
 
-    <p class="task">In the editor below, add a MEI namespace declaration to the <code>MEI</code> root element.</p>
+    <p class="task">Dans l'éditeur ci-dessous, ajoutez une déclaration d'espace de nom MEI <code>MEI</code> root element.</p>
 </div>
+
+
