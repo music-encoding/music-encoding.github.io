@@ -1,7 +1,7 @@
 ---
 layout: tutorials-FR
 type: tutorial-FR
-name: "BEGINNERS: XML basics and minimal MEI structure"
-fullname: "A short tutorial about the basics of XML & MEI"
+name: "Débutant: Les bases de XML et la structure minimal de MEI"
+fullname: "Un court tutorizl sur les bases de XML et MEI"
 data: "100_structure.json"
 ---
