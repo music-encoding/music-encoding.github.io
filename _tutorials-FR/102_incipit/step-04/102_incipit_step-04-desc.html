@@ -1,0 +1,41 @@
+<div>
+    <p class="tutorialGoal">
+        Quatrième étape: Encoder la première note de cet exemple.
+    </p>
+
+    <p>
+        Après avoir préparé la structure de la mesure de départ dans l'étape précédante,
+        vous êtes maintenant prêt à encoder la première note de l'exemple. En MEI, les notes décrivent des événements de hauteur unique qui 
+        sont encodés dans, *roulement de tambour*, des éléments <code>&lt;note&gt;</code>, lesquels peuvent être des enfants de 
+        l'élément <code>&lt;layer&gt;</code>. Vous pouvez définir les principales caractéristiques de la note, telles que la hauteur et la durée, 
+        en utilisant les attributs suivants sur l'élément <code>&lt;note&gt;</code>:
+    </p>
+
+    <ul>
+        <li>
+            <code>@pname</code> (nom de la hauteur) – lettres minuscules de <code>“a”</code> à <code>“g”</code>, utilisez <code>“b”</code> ici.
+        </li>
+        <li>
+            <code>@oct</code> (octave) – valeur de l'octave de la hauteur en entiers de <code>“0”</code> à <code>”9”</code>, C4 étant la hauteur 
+            spécifiée par la clé de do, utilisez <code>“3”</code>
+        </li>
+        <li>
+            <code>@dur</code> (durée) – par exemple, <code>“1”</code> pour la ronde, <code>“2”</code> pour la blanche, <code>“4”</code> pour la 
+            noire, <code>“8”</code> pour la croche, <code>“16”</code> pour la double croche, … <code>“2048”</code> pour la deux mille 
+            quarante-huitième, utilisez <code>“4”</code>
+        </li>
+   </ul>
+
+    <p>
+        Voici un exemple de la manière d'encoder une ronde C4 : <code>&lt;note pname="c" oct="4" dur="1"&gt;&lt;/note&gt;</code>.
+    </p>
+
+    <p class="task">
+        Dans l'éditeur ci-dessous, saisissez l'encodage de la première note de l'exemple à l'intérieur de l'élément <code>&lt;layer&gt;</code>.
+    </p>
+
+    <p>
+        PS : Si vous êtes intéressé par un tutoriel uniquement sur les éléments <code>&lt;note&gt;</code>, consultez notre 
+        <a href="./101-quickstart.html">tutoriel de démarrage rapide</a>.
+    </p>
+</div>
