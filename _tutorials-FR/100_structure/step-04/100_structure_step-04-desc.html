@@ -1,26 +1,28 @@
-<div>
-    <p class="tutorialGoal">
-        Step four: provide the minimum necessary information for the MEI header.
-    </p>
-    <p>
-        Perfect! You are now pretty close to a valid basic MEI file structure. What is missing yet, are two mandatory
-        elements of the MEI header:
+<p class="tutorialGoal">
+    Étape quatre : fournir les informations minimales nécessaires pour l'en-tête MEI.
+</p>
+<p>
+    Parfait ! Vous êtes maintenant très proche de disposer d'une structure de fichier MEI de base valide. Ce qui manque encore, 
+    ce sont deux éléments incontournable de l'en-tête MEI :
     <ul>
         <li>
-            <code>&lt;titleStmt&gt;</code> - a container element for title and responsibility meta-data. The title of a
-            bibliographic entity is given via its mandatory sub-element <code>&lt;title&gt;</code>;
+            <code>&lt;titleStmt&gt;</code> - un élément conteneur pour le titre et les métadonnées de responsabilité. 
+            Le titre d'une entité bibliographique est donné via son sous-élément obligatoire <code>&lt;title&gt;</code>;
         </li>
         <li>
-            <code>&lt;pubStmt&gt;</code> - a container element for information regarding the publication or distribution of a
-            bibliographic item, including the publisher's name and address, the date of publication, and other relevant
-            details.
+            <code>&lt;pubStmt&gt;</code> - un élément conteneur pour les informations concernant la publication ou 
+            la distribution d'un élément bibliographique, y compris le nom et l'adresse de l'éditeur, la date de 
+            publication et d'autres détails pertinents.
         </li>
     </ul>
     <p>
-        Both these elements are part of the file description (<code>&lt;fileDesc&gt;</code>), which is a direct child element
-        of <code>&lt;meiHead&gt;</code> and provides for a full bibliographic description of a MEI file.</p>
-
-    <p class="task">In the editor below, add a <code>&lt;fileDesc&gt;</code> element inside the given <code>&lt;meiHead&gt;</code>.
-        Then add the mandatory <code>&lt;titleStmt&gt;</code> and <code>&lt;pubStmt&gt;</code> elements to
-        <code>&lt;fileDesc&gt;</code> and a <code>&lt;title&gt;</code> element to <code>&lt;titleStmt&gt;</code>.</p>
+        Ces deux éléments font partie de la description du fichier (<code>&lt;fileDesc&gt;</code>), qui est un élément 
+        enfant direct de <code>&lt;meiHead&gt;</code> et permet une description bibliographique complète d'un fichier MEI.
+    </p>
+    <p class="task">Dans l'éditeur ci-dessous, ajoutez un élément <code>&lt;fileDesc&gt;</code> à l'intérieur de 
+        <code>&lt;meiHead&gt;</code> donné. Ensuite, ajoutez les éléments obligatoires <code>&lt;titleStmt&gt;</code> 
+        et <code>&lt;pubStmt&gt;</code> à <code>&lt;fileDesc&gt;</code> et un élément <code>&lt;title&gt;</code> à 
+        <code>&lt;titleStmt&gt;</code>.
+    </p>
 </div>
+
