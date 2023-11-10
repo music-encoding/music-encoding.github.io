@@ -1,0 +1,16 @@
+<div>
+    <p>
+        Très souvent, un silence est censé remplir une mesure complète, indépendamment de la mesure.
+        Bien sûr, il est possible d'utiliser des éléments <code>&lt;rest&gt;</code> réguliers avec la ou les durées appropriées pour cela –
+        dans le cas d'une mesure de 4/4, cela serait simplement un
+        <code>&lt;rest dur="1"/&gt;</code>. Cependant, dans d'autres mesures, cela peut nécessiter plus de balisage.
+        Pour cette raison, MEI a un élément spécial appelé <code>&lt;mRest/&gt;</code> – un
+        <i>silence de mesure</i>. Cet élément n'a pas besoin d'un attribut <code>@dur</code> (même s'il est
+        techniquement autorisé pour faciliter le traitement analytique) et remplira toujours une
+        mesure complète, indépendamment de la mesure. Par conséquent, vous ne devriez pas le combiner avec
+        d'autres événements dans la même mesure.
+    </p>
+    <p class="task">
+        Transformez le silence entier (qui ne correspond pas à la mesure) en un <code>&lt;mRest/&gt;</code>.
+    </p>
+</div>
