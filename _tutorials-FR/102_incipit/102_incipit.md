@@ -1,12 +1,13 @@
 ---
 layout: tutorials
 type: tutorial
-name: "ADVANCED: Incipit encoding"
-fullname: "An advanced tutorial on how to encode incipits in MEI"
+name: "AVANCÉ: Encodez les incipits"
+fullname: "Un tutoriel avancé sur l'encodage des incipits en MEI"
 data: "102_incipit.json"
 ---
-Welcome! In this tutorial you will learn how to encode an incipit (initial sequence of notes of a musical piece) in MEI, using the following example:
+Bienvenue! Dans ce tutoriel vous apprendez à encoder un incipit (La séquence de notes initial d'une œuvre musicales) en MEI, en partant de l'exemple suivant :
 
 ![Hallingdal Bataljons Marsch](./102_incipit.png)
 
-By the way: this is the beginning of _Hallingdal Bataljons Marsch_, the Opus 1 of the Norwegian composer  [Johan Halvorsen](https://en.wikipedia.org/wiki/Johan_Halvorsen) (1864–1935).
+Au fait : il s'agit du début de _Hallingdal Bataljons Marsch_, l'Opus 1 du compositeur norvégien [Johan Halvorsen](https://fr.wikipedia.org/wiki/Johan_Halvorsen) (1864–1935).
+
