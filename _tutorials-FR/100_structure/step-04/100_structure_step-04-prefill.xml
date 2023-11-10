@@ -1,6 +1,6 @@
 <mei xmlns="http://www.music-encoding.org/ns/mei">
     <meiHead>
-        <!-- Your encoding should replace this line -->
+        <!-- Votre code doit remplacer cette ligne -->
     </meiHead>
     <music></music>
 </mei>
