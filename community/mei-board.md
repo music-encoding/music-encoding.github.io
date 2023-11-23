@@ -6,7 +6,7 @@ title: "MEI Board"
 
 The MEI Board manages the property and business of MEI. It promotes the development of MEI, oversees the activities of the MEI Technical Team, guides the development of the MEI conceptual model, Guidelines and schemata, and acts as a contact point for MEI-related activities. The Board consists of nine elected members and one member designated by each Host Institution. The Board will hold regular, virtual or in-person meetings. As schedules and funding permit, the Board will meet in person at least once per year.
 
-[Read the 2022 Election Candidate statements](/community/mei-board/elections/2022/candidates)
+[Read the 2023 Election Candidate statements](/community/mei-board/elections/2023/candidates)
 
 ## Current Board Members
 
