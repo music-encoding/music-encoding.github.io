@@ -79,6 +79,7 @@ Each member holding Personal Membership in MEI has the right to vote in Board me
 
 ### Previous elections
 
+* [Read the 2022 Election Candidate statements](/community/mei-board/elections/2022/candidates)
 * [Read the 2021 Election Candidate statements](/community/mei-board/elections/2021/candidates)
 * [Read the 2020 Election Candidate statements](/community/mei-board/elections/2020/candidates)
 * [Read the 2019 Election Candidate statements](/community/mei-board/elections/2019/candidates)
