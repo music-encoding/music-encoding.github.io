@@ -13,6 +13,8 @@ The list is open to anyone for subscription, and everyone is welcome to join MEI
 
 Also, the archives of the list are open to the public and can be browsed online: [https://lists.uni-paderborn.de/pipermail/mei-l/](https://lists.uni-paderborn.de/pipermail/mei-l/).
 
+Please note that inactive or disabled e-mail addresses subscribed to MEI-L are automatically detected (based on bouncing e-mails). Such e-mail addresses will receive deactivation warnings for a number of weeks before being automatically unsubscribed from the list if no action is taken by the subscriber.
+
 # Slack channel
 
 MEI has a Slack channel that is used for discussion, questions, announcements, and collaboration, [https://music-encoding.slack.com](https://music-encoding.slack.com).
