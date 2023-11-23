@@ -9,7 +9,7 @@ Candidates for the MEI Elections are invited to send along a brief CV and Candid
 
 * [Maristella Feustle](#maristella-feustle)
 * [David Lewis](#david-lewis)
-* [Stefan Münnich](#stefan-muennich)
+* [Stefan Münnich](#stefan-münnich)
 * [Laurent Pugin](#laurent-pugin)
 * [Perry Roland](#perry-roland)
 * [Vivian Teresa Tompkins](#vivian-teresa-tompkins)
