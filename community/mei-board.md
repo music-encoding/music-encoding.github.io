@@ -13,7 +13,7 @@ The MEI Board manages the property and business of MEI. It promotes the developm
 ### Term 2023–2025
 
 * **Johannes Kepper**, Musikwissenschaftliches Seminar Detmold/Paderborn
-* **Anna Plaksin**, Institut für Kunstgeschichte und Musikwissenschaft (IKM), Abteilung Musikwissenschaft, Johannes Gutenberg-Universität Mainz
+* **Anna Plaksin**, Musikwissenschaftliches Seminar Detmold/Paderborn, KreativInstitut.OWL
 * **David M. Weigl**, Institut für musikalische Akustik – Wiener Klangstil, mdw – Universität für Musik und darstellende Kunst Wien
 
 ### Term 2022–2024
