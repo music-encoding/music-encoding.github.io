@@ -2,19 +2,19 @@
     <p>
         Lorsque la musique est disposée avec plusieurs instruments / voix partageant une portée, il est parfois nécessaire de "déplacer" 
         des événements tels que des notes vers une position ultérieure dans la mesure, sans dire qu'il s'agit de silence. C'est généralement 
-        le cas lorsque le document encodé bascule entre une notation en accords et une représentation en notes séparées au sein d'une mesure 
+        le cas lorsque le document encodé alterne entre une notation en accords et une représentation en notes séparées au sein d'une mesure 
         (cf. figure ci-dessous). Comme la MEI utilise l'élément 
         <a href="/guidelines/v4/elements/layer.html" target="_blank" rel="noopener, noreferrer">&lt;layer&gt;</a> pour disposer plusieurs 
         instruments, 
-        et dans ces situations où un instrument bascule entre ces couches en cours de mesure, les "trous" dans ces mesures doivent être comblées. 
+        et que, dans ces situations, un instrument bascule d'une couche à l'autre au milieu d'une mesure, les "trous" dans ces mesures doivent être comblées. 
         C'est là que l'élément <code>&lt;space&gt;</code> intervient.
         <img style="display: block; margin: .5rem auto; width: 240px;" src="./104_rests-spaces.png" alt="Une situation nécessitant des éléments d'espace"/>
     </p>
     <p>
         Bien sûr, un espace n'est pas vraiment un silence. Cependant, les silences (invisibles) sont souvent utilisés à ces fins dans d'autres formats d'encodage 
         ou éditeurs de partitions. L'avantage de l'élément <code>&lt;space&gt;</code> de la MEI est qu'il n'a aucune signification sémantique - il pousse simplement 
-        d'autres événements autour. Cela facilite beaucoup le traitement réel d'un encodage et l'extraction de voix individuelles, car aucun élément porteur 
-        d'informations inexistant n'est introduit à tort pour une meilleure coordination.
+        d'autres événements autour. Cela facilite l'encodage et l'extraction de voix individuelles, car aucun élément porteur 
+        d'informations inexistantes n'est introduit à tort pour une meilleure coordination.
     </p>
     <p>
         Cependant, vous pouvez appliquer une certaine durée à l'élément <code>&lt;space&gt;</code> en utilisant l'attribut <code>@dur</code>. 
