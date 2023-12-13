@@ -1,11 +1,15 @@
 <div>
-    <p>
-        Macros are the last part of ODD that is needed to fully understand the specifications of MEI, and they are clearly the
-        least important aspect. Macros are placeholders for elements which can be added to the <em>&lt;content&gt;</em>
-        of an element in one go. The most-used macro is probably <em>macro.struc-unstrucContent</em>, which is defined as follows:
-    </p>
-    <pre class="codeblock">&lt;macroSpec ident="macro.struc-unstrucContent" module="MEI.shared" type="pe"&gt;
-        &lt;desc&gt;Provides a choice between structured and unstructured/mixed content.&lt;/desc&gt;
+  <p>
+    Les macros sont la dernière partie de l'ODD nécessaire pour comprendre
+    pleinement les spécifications de MEI, et elles sont clairement l'aspect le
+    moins important. Les macros sont des espaces réservés pour des éléments qui
+    peuvent être ajoutés au <em>&lt;content&gt;</em> d'un élément en une seule
+    fois. La macro la plus utilisée est probablement
+    <em>macro.struc-unstrucContent</em>, qui est définie comme suit :
+  </p>
+  <pre class="codeblock">
+&lt;macroSpec ident="macro.struc-unstrucContent" module="MEI.shared" type="pe"&gt;
+        &lt;desc&gt;Fournit un choix entre un contenu structuré et un contenu non structuré/mixte.&lt;/desc&gt;
         &lt;content&gt;
             &lt;rng:choice&gt;
                 &lt;rng:group&gt;
@@ -24,35 +28,55 @@
                 &lt;/rng:zeroOrMore&gt;
             &lt;/rng:choice&gt;
         &lt;/content&gt;
-    &lt;/macroSpec&gt;</pre>
-    <p>
-        Macros again use the <a href="https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-macroSpec.html" target="_blank" rel="noopener, noreferrer"><em>&lt;macroSpec&gt;</em></a>
-        element, but this time with a <em>@type</em> with value "<em>pe</em>". The names, which are again stored in <em>@ident</em>,
-        are prefixed with a "<em>macro.</em>", and of course we have a <em>&lt;desc&gt;</em> again. The main difference to <em>model
-        classes</em> is that <em>macro</em>s do not substitute for elements alone, but also for more complex rules about combinations
-        of elements. Here, <em>macro.struc-unstrucContent</em> provides a good example. It forces the <em>user</em> to decide between 
-        a structured encoding model (using a dedicated <em>&lt;head&gt;</em> element, followed by a series of paragraphs), or an 
-        unstructured model (where textual content is directly inserted and may be marked up with a variety of elements). It can be used 
-        inside elements like <em>&lt;watermark&gt;</em>, and is helpful to avoid having to redefine the same combination of elements in
-        numerous places.
-    </p>    
-    <pre class="codeblock">&lt;elementSpec ident="watermark" module="MEI.header"&gt;
-    &lt;desc&gt;Contains a description of a watermark or similar device.&lt;/desc&gt;
+    &lt;/macroSpec&gt;</pre
+  >
+  <p>
+    Les macros utilisent à nouveau l'élément
+    <a
+      href="https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-macroSpec.html"
+      target="_blank"
+      rel="noopener, noreferrer"
+      ><em>&lt;macroSpec&gt;</em></a
+    >, mais cette fois avec un <em>@type</em> ayant la valeur "<em>pe</em>". Les
+    noms, qui sont à nouveau stockés dans <em>@ident</em>, sont préfixés par
+    "<em>macro.</em>", et bien sûr, nous avons à nouveau une balise
+    <em>&lt;desc&gt;</em>. La principale différence par rapport aux
+    <em>classes de modèle</em> est que les <em>macros</em> ne substituent pas
+    seulement des éléments, mais aussi des règles plus complexes sur les
+    combinaisons d'éléments. Ici, <em>macro.struc-unstrucContent</em> fournit un
+    bon exemple. Elle force l'<em>utilisateur</em> à choisir entre un modèle
+    d'encodage structuré (utilisant un élément <em>&lt;head&gt;</em> dédié,
+    suivi d'une série de paragraphes) ou un modèle non structuré (où le contenu
+    textuel est inséré directement et peut être balisé avec divers éléments).
+    Elle peut être utilisée à l'intérieur d'éléments tels que
+    <em>&lt;watermark&gt;</em>, et elle est utile pour éviter de devoir
+    redéfinir la même combinaison d'éléments à de nombreux endroits.
+  </p>
+  <pre class="codeblock">
+&lt;elementSpec ident="watermark" module="MEI.header"&gt;
+    &lt;desc&gt;Contient une description d'un filigrane ou d'un dispositif similaire.&lt;/desc&gt;
     &lt;classes&gt;
-        &lt;!-- memberships skipped for brevity --&gt;
+        &lt;!-- adhésions omises pour des raisons de brièveté --&gt;
     &lt;/classes&gt;
     &lt;content&gt;
         &lt;rng:ref name="macro.struc-unstrucContent" /&gt;
     &lt;/content&gt;
-    &lt;!-- remarks skipped for brevity --&gt;
-&lt;/elementSpec&gt;</pre>
-    <p>
-        In essence, the <em>&lt;rng:ref&gt;</em> inside the <em>&lt;elementSpec&gt;</em> is just replaced with the child elements of
-        the <em>&lt;macroSpec&gt;</em>'s <em>&lt;content&gt;</em>, so that it's possible to combine a <em>macro</em> with other contents. <em>Macros</em>
-        therefore serve as predefined, re-usable spec blocks.
-    </p>
-    <p>
-        Like I mentioned earlier, <em>macros</em> are not the most important aspect of ODD from an MEI perspective, and so you should have 
-        been able to get all that's necessary already. That means you're done with this final step – let's <strong>continue</strong> for some closing remarks…
-    </p>
+    &lt;!-- remarques omises pour des raisons de brièveté --&gt;
+&lt;/elementSpec&gt;</pre
+  >
+  <p>
+    En essence, le <em>&lt;rng:ref&gt;</em> à l'intérieur du
+    <em>&lt;elementSpec&gt;</em> est simplement remplacé par les éléments
+    enfants du <em>&lt;content&gt;</em> de <em>&lt;macroSpec&gt;</em>, de sorte
+    qu'il est possible de combiner une <em>macro</em> avec d'autres contenus.
+    Les <em>macros</em> servent donc de blocs de spécifications prédéfinis et
+    réutilisables.
+  </p>
+  <p>
+    Comme je l'ai mentionné plus tôt, les <em>macros</em> ne sont pas l'aspect
+    le plus important de l'ODD du point de vue de MEI, et vous devriez donc
+    avoir pu obtenir tout ce qui est nécessaire. Cela signifie que vous avez
+    terminé cette dernière étape. Continuons pour quelques remarques de
+    clôture...
+  </p>
 </div>

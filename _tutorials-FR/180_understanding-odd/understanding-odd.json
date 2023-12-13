@@ -5,7 +5,7 @@
         "descFile": "understanding-odd-01.html"
     },
     {
-        "label":"Background",
+        "label":"Avant-propos",
         "descFile": "understanding-odd-02.html"
     },
     {
@@ -17,19 +17,19 @@
         "descFile": "understanding-odd-04.html"
     },
     {
-        "label":"Elements",
+        "label":"Éléments",
         "descFile": "understanding-odd-05.html"
     },
     {
-        "label":"Models",
+        "label":"Modèles",
         "descFile": "understanding-odd-06.html"
     },
     {
-        "label":"Attributes",
+        "label":"Attributs",
         "descFile": "understanding-odd-07.html"
     },
     {
-        "label":"Datatypes",
+        "label":"Types de données",
         "descFile": "understanding-odd-08.html"
     },
     {
