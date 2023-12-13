@@ -1,7 +1,7 @@
 {
   "steps": [
     {
-      "label": "Score & staff definition",
+      "label": "Définition de la partition et des portées",
       "editorLines": 7,
       "descFile": "102_incipit_step-01-desc.html",
       "prefillFile": "102_incipit_step-01-prefill.xml",
@@ -18,7 +18,7 @@
       ]
     },
     {
-      "label": "Score & staff attributes",
+      "label": "Attributs de la partition et des portées",
       "editorLines": 7,
       "descFile": "102_incipit_step-02-desc.html",
       "prefillFile": "102_incipit_step-02-prefill.xml",
@@ -41,7 +41,7 @@
       ]
     },
     {
-      "label": "Measure, staff & layer",
+      "label": "Mesure, portée et couche",
       "editorLines": 14,
       "descFile": "102_incipit_step-03-desc.html",
       "prefillFile": "102_incipit_step-03-prefill.xml",
@@ -64,7 +64,7 @@
       ]
     },
     {
-      "label": "First note",
+      "label": "La première note",
       "editorLines": 15,
       "descFile": "102_incipit_step-04-desc.html",
       "prefillFile": "102_incipit_step-04-prefill.xml",
@@ -78,7 +78,7 @@
       ]
     },
     {
-      "label": "Second note",
+      "label": "La seconde note",
       "editorLines": 18,
       "descFile": "102_incipit_step-05-desc.html",
       "prefillFile": "102_incipit_step-05-prefill.xml",
@@ -116,7 +116,7 @@
       ]
     },
     {
-      "label": "Beams",
+      "label": "Ligatures",
       "editorLines": 12,
       "descFile": "102_incipit_step-06-desc.html",
       "prefillFile": "102_incipit_step-06-prefill.xml",
@@ -152,7 +152,7 @@
       ]
     },
     {
-      "label": "Dotted rhythm",
+      "label": "Rythme pointé",
       "editorLines": 14,
       "descFile": "102_incipit_step-07-desc.html",
       "prefillFile": "102_incipit_step-07-prefill.xml",
@@ -200,7 +200,7 @@
       ]
     },
     {
-      "label": "A full measure",
+      "label": "La mesure pleine",
       "editorLines": 14,
       "descFile": "102_incipit_step-08-desc.html",
       "prefillFile": "102_incipit_step-08-prefill.xml",
@@ -248,7 +248,7 @@
       ]
     },
     {
-      "label": "Final two measures",
+      "label": "Les deux dernières mesures",
       "editorLines": 14,
       "descFile": "102_incipit_step-09-desc.html",
       "prefillFile": "102_incipit_step-09-prefill.xml",
@@ -404,7 +404,7 @@
       ]
     },
     {
-      "label": "Dynamics (referencing tstamps)",
+      "label": "Dynamiques (en référence aux indications de temps)",
       "editorLines": 10,
       "descFile": "102_incipit_step-11-desc.html",
       "prefillFile": "102_incipit_step-11-prefill.xml",
@@ -432,7 +432,7 @@
       ]
     },
     {
-      "label": "Slurs (referencing xml:id)",
+      "label": "Ligatures de liaison (en référence aux identifiants XML)",
       "editorLines": 25,
       "descFile": "102_incipit_step-12-desc.html",
       "prefillFile": "102_incipit_step-12-prefill.xml",

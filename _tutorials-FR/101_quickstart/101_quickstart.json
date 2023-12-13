@@ -1,7 +1,7 @@
 {
   "steps": [
     {
-      "label":"Welcome to MEI",
+      "label":"Bienvenue dans la MEI",
       "descFile": "101_quickstart_step-00-desc.html"
     },
     {
@@ -22,7 +22,7 @@
       ]
     },
     {
-      "label":"Multiple notes",
+      "label":"Notes multiples",
       "editorLines":8,
       "descFile": "101_quickstart_step-02-desc.html",
       "xmlFile": "101_quickstart_step-02.xml",
@@ -53,7 +53,7 @@
       ]
     },
     {
-      "label":"A Simple Melody",
+      "label":"Une mélodie simple",
       "editorLines":8,
       "descFile": "101_quickstart_step-03-desc.html",
       "xmlFile": "101_quickstart_step-03.xml",

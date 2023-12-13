@@ -26,7 +26,7 @@
         ]
     },
     {
-        "label":"Full-measure rests",
+        "label":"La pause (mesure pleine)",
         "editorLines":1,
         "descFile": "104_rests_step-02-desc.html",
         "xmlFile": "104_rests_step-02.xml",
@@ -38,7 +38,7 @@
         ]
     },
     {
-        "label":"Multi-measure rests",
+        "label":"Silences sur mesure multiple",
         "editorLines":1,
         "descFile": "104_rests_step-03-desc.html",
         "xmlFile": "104_rests_step-02.xml",

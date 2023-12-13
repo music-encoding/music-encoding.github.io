@@ -1,11 +1,11 @@
 {
   "steps": [
     {
-      "label":"Welcome to MEI",
+      "label":"Bienvenue dans la MEI",
       "descFile": "100_structure_step-00-desc.html"
     },
     {
-      "label": "The MEI root element",
+      "label": "L'élément racine de la MEI",
       "editorLines": 1,
       "descFile": "100_structure_step-01-desc.html",
       "prefillFile": "100_structure_step-01-prefill.xml",
@@ -15,7 +15,7 @@
       ]
     },
     {
-      "label": "The MEI namespace",
+      "label": "Le namespace MEI",
       "editorLines": 1,
       "descFile": "100_structure_step-02-desc.html",
       "prefillFile": "100_structure_step-02-prefill.xml",
@@ -26,7 +26,7 @@
       ]
     },
     {
-      "label": "Two basic child elements",
+      "label": "Les deux éléments enfants de base",
       "editorLines": 4,
       "descFile": "100_structure_step-03-desc.html",
       "prefillFile": "100_structure_step-03-prefill.xml",
@@ -42,7 +42,7 @@
       ]
     },
     {
-      "label": "The minimum MEI header",
+      "label": "L'en-tête MEI minimal",
       "editorLines": 11,
       "descFile": "100_structure_step-04-desc.html",
       "prefillFile": "100_structure_step-04-prefill.xml",

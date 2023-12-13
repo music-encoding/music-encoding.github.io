@@ -1,7 +1,7 @@
 ---
-layout: tutorials
-type: tutorial
+layout: tutorials-FR
+type: tutorial-FR
 name: "BEGINNERS: Quickstart"
-fullname: "A 5-minute Quickstart tutorial for MEI"
+fullname: "Tutoriel éclair : La MEI en 5 minutes !"
 data: "101_quickstart.json"
 ---

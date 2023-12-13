@@ -1,6 +1,6 @@
 ---
-layout: tutorials
-type: tutorial
+layout: tutorials-FR
+type: tutorial-FR
 name: "AVANCÉ: Encodez les incipits"
 fullname: "Un tutoriel avancé sur l'encodage des incipits en MEI"
 data: "102_incipit.json"

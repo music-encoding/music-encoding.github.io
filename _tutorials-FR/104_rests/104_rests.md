@@ -1,7 +1,7 @@
 ---
-layout: tutorials
-type: tutorial
+layout: tutorials-FR
+type: tutorial-FR
 name: "DÉBUTANT : Silences"
-fullname: "Un rapide tutoriel sur les silences en MEI"
+fullname: "Un court tutoriel sur les silences en MEI"
 data: "104_rests.json"
 ---

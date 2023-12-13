@@ -1,11 +1,11 @@
 {
     "steps": [
         {
-            "label":"Welcome to MEI",
+            "label":"Bienvenue",
             "descFile": "103_chords_step-00-desc.html"
         },
         {
-            "label":"Preparation",
+            "label":"Préparation",
             "editorLines":3,
             "descFile": "103_chords_step-01-desc.html",
             "prefillFile": "103_chords_step-01-prefill.xml",
@@ -30,7 +30,7 @@
             ]
         },
         {
-            "label":"First Chord",
+            "label":"Premier accord",
             "editorLines":5,
             "descFile": "103_chords_step-02-desc.html",
             "prefillFile": "103_chords_step-02-prefill.xml",
@@ -56,7 +56,7 @@
             ]
         },
         {
-            "label":"Simple Chord Progression",
+            "label":"Progression d'accords simple",
             "editorLines":20,
             "descFile": "103_chords_step-03-desc.html",
             "prefillFile": "103_chords_step-03-prefill.xml",
@@ -108,7 +108,7 @@
             ]
         },
         {
-            "label":"Extended Chord Progression",
+            "label":"Progression d'accord étendue",
             "editorLines":35,
             "descFile": "103_chords_step-04-desc.html",
             "prefillFile": "103_chords_step-04-prefill.xml",
