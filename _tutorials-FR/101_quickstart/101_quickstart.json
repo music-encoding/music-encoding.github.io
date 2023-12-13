@@ -5,7 +5,7 @@
       "descFile": "101_quickstart_step-00-desc.html"
     },
     {
-      "label":"First Note",
+      "label":"La première note",
       "editorLines":1,
       "descFile": "101_quickstart_step-01-desc.html",
       "xmlFile": "101_quickstart_step-01.xml",

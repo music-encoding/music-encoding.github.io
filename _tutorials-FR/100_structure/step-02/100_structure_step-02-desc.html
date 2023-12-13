@@ -1,31 +1,52 @@
 <div>
-    <p class="tutorialGoal">
-        Deuxième étape: Apprendre le fonctionnement et l'uttilisation des espaces de noms.
-    </p>
-    <p>
-        Bien! Comme nous l'avions mentionés dans l'étape précédente, le nom de l'élément racine d'un document XML est 
-        un nom arbitraire qui ne possède aucune signification durant son traitement par la machine. 
-        Afin de clarifier le contexte d'un élément et d'éviter les conflits, le XML uttilise ce qu'on appelle les 
-        <a href="https://fr.wikipedia.org/wiki/Espace_de_noms_XML" target="_blank" rel="noopener, noreferrer">espaces de noms</a>.
-        Ces espaces de noms peuvent être déclaré en ajoutant <code>@xmlns</code> dans l'élément racine.
-    </p>
-    <p>
-        Par exemple, l'espace de nom MEI est <code>http://www.music-encoding.org/ns/mei</code> et peut être déclaré ainsi : 
-        <code>xmlns="http://www.music-encoding.org/ns/mei"</code>
-    </p>
-    <p>
-        Les éléments précédés du signe <code>@</code> comme le prédédant exemple <code>@xmlns</code> se réfèrent à des attribut XML.
-        (Ces références sont une pratique courante provenant de le langage de requête 
-        <a href="https:/fr.wikipedia.org/wiki/XPath" target="_blank" rel="noopener, noreferrer">XPath</a>.)
-        Les attributs contiennent des informations specifique (des valeurs attributs) qui s'attachent aux éléments. Contrairement aux éléments,
-        les attributs XML n'ont pas de balise ouvrante ou fermante. Ils se placent à l'intérieur de la balise ouvrante d'un élément, à côté de son nom.
-        Ils se composent du nom de l'attribut, du signe <code>=</code> et de la valeur de l'attribut, qui doit toujours être mise entre
-        guillemets (simple ou doubles). Plusieurs attributs sont séparés par des espaces. Notez que le signe <code>@</code> avant le nom d'un
-        attribut n'apparaît pas dans le code MEI. Il s'agit uniquement d'une convention d'écriture afin de bien distinguer les attributs quand
-        on s'y réfère dans un contexte autre que le code MEI, comme dans un tutoriel par exemple !
-    </p>
+  <p class="tutorialGoal">
+    Deuxième étape : Apprendre le fonctionnement et l'utilisation des espaces de
+    noms.
+  </p>
+  <p>
+    Comme nous l'avions mentionés dans l'étape précédente, le nom de l'élément
+    racine d'un document XML est un nom arbitraire qui ne possède aucune
+    signification lors de son traitement par la machine. Afin de clarifier le
+    contexte d'un élément et d'éviter les conflits, le XML uttilise ce qu'on
+    appelle les
+    <a
+      href="https://fr.wikipedia.org/wiki/Espace_de_noms_XML"
+      target="_blank"
+      rel="noopener, noreferrer"
+      >espaces de noms</a
+    >. Ces espaces de noms peuvent être déclarés en ajoutant
+    <code>@xmlns</code> dans l'élément racine.
+  </p>
+  <p>
+    Par exemple, l'espace de nom MEI est
+    <code>http://www.music-encoding.org/ns/mei</code> et peut être déclaré ainsi
+    :
+    <code>xmlns="http://www.music-encoding.org/ns/mei"</code>
+  </p>
+  <p>
+    Les éléments précédés du signe <code>@</code> comme le précédant exemple
+    <code>@xmlns</code> se réfèrent à des attribut XML. (Ces références sont une
+    pratique courante provenant de le langage de requête
+    <a
+      href="https:/fr.wikipedia.org/wiki/XPath"
+      target="_blank"
+      rel="noopener, noreferrer"
+      >XPath</a
+    >.) Les attributs contiennent des informations specifique (des valeurs
+    attributs) qui s'attachent aux éléments. Contrairement aux éléments, les
+    attributs XML n'ont pas de balise ouvrante ou fermante. Ils se placent à
+    l'intérieur de la balise ouvrante d'un élément, à côté de son nom. Ils se
+    composent du nom de l'attribut, du signe <code>=</code> et de la valeur de
+    l'attribut, qui doit toujours être mise entre guillemets (simple ou
+    doubles). Plusieurs attributs sont séparés par des espaces. Notez que le
+    signe <code>@</code> avant le nom d'un attribut n'apparaît pas dans le code
+    MEI. Il s'agit uniquement d'une convention d'écriture afin de bien
+    distinguer les attributs quand on s'y réfère dans un contexte autre que le
+    code MEI, comme dans un tutoriel par exemple !
+  </p>
 
-    <p class="task">Dans l'éditeur ci-dessous, ajoutez une déclaration d'espace de nom MEI <code>MEI</code> root element.</p>
+  <p class="task">
+    Dans l'éditeur ci-dessous, ajoutez une déclaration d'espace de nom MEI
+    <code>MEI</code> root element.
+  </p>
 </div>
-
-

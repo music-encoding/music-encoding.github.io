@@ -1,28 +1,57 @@
 <div>
-    <p class="tutorialGoal">
-        Première étape: S'habituer à la structure XML et découvrir l'élement racine de la MEI.
-    </p>
-    <p>
-        MEI utilise le <a href="https://fr.wikipedia.org/wiki/XML" target="_blank" rel="noopener, noreferrer">XML</a> pour representer la notation musicale. 
-        Le XML est un système d'encodage hierarchisé centré sur les éléments. Ils sont représentés par des balises. la plupart du temps, ces balises se composent
-        d'une "balise ouvrante" (Il s'agit d'un nom entouré de chevrons comme <code>&lt;element&gt;</code>) et de sa balise fermante correspondante 
-        (<code>&lt;/element&gt;</code>), mais s'il n'y a aucun contenu entre ces deux balises (comme du texte ou un autre élément) l'élément peut être raccourci
-        dans une balise autofermante sous la forme <code>&lt;element /&gt;</code>. Quoiqu'il en soit, chaque balise ouverte doit être refermé.
-    </p>
-    <p>
-        Vous pouvez voir un document XML comme un arbre dont les branches se ramifie depuis un élément racine vers des 
-        éléments enfants imbriqués.
-        L'élément racine est le parent de tous les autres éléments. Dans les documents MEI, cet élément racine est appelé évidemment
-        <code><mei></code>, mais il aurait pu avoir n'importe quel nom arbitraire.
-    </p>
+  <p class="tutorialGoal">
+    Première étape : familiarisez-vous avec quelques bases très simples d'XML et
+    apprenez à connaître l'élément racine de MEI.
+  </p>
+  <p>
+    MEI utilise
+    <a
+      href="https://fr.wikipedia.org/wiki/XML"
+      target="_blank"
+      rel="noopener, noreferrer"
+      >XML</a
+    >
+    pour représenter la notation musicale. XML est un système d'encodage
+    hiérarchique dans lequel les éléments sont les objets centraux. Ils sont
+    représentés à l'aide de ce qu'on appelle des "balises". La plupart du temps,
+    ces balises consistent en une balise d'ouverture (c'est-à-dire un nom
+    compris entre des crochets angulaires comme <code>&lt;element&gt;</code>) et
+    sa balise de fermeture correspondante (<code>&lt;/element&gt;</code>). S'il
+    n'y a aucun contenu entre ces deux balises (comme du texte ou d'autres
+    éléments), l'élément peut être raccourci en une balise autofermante de la
+    forme <code>&lt;element /&gt;</code>. Dans tous les cas, chaque balise
+    ouverte doit être fermée plus tard.
+  </p>
+  <p>
+    Vous pouvez penser à un document XML comme à un arbre qui se ramifie d'un
+    élément racine (extérieur) vers des éléments enfants (intérieurs) imbriqués.
+    L'élément racine est le parent de tous les autres éléments. Dans les
+    documents MEI, cet élément racine est appelé - pour des raisons évidentes -
+    <code>&lt;mei&gt;</code>, mais il aurait pu avoir n'importe quel nom
+    arbitraire.
+  </p>
 
-    <p class="task">Entrez un élément racine <code>&lt;mei&gt;</code> dans l'éditeur ci-dessous.
-        N'oubliez de refermer la balise ouvrante avec une balise fermante.</p>
+  <p class="task">
+    Entrez un élément racine <code>&lt;mei&gt;</code> dans l'éditeur ci-dessous.
+    N'oubliez pas de fermer la balise d'ouverture par une balise de fermeture
+    correspondante.
+  </p>
 
-    <p>
-        PS: Dans les prochaines étapes, nous aborderons d'autres principes de base du langage XML. Pour de plus amples renseignements, n'hésitez pas à consulter 
-        les ressources disponible en ligne comme <a href="https://www.tei-c.org/release/doc/tei-p5-doc/en/html/SG.html" target="_blank" rel="noopener, noreferrer">
-            Gentle Introduction to XML</a> (<i>Petite introduction  XML</i>) de la Text Encoding Initative (<a href="https://tei-c.org/" target="_blank" rel="noopener, noreferrer">TEI</a>).
-    </p>
-
+  <p>
+    PS : Nous aborderons quelques principes XML de base supplémentaires dans les
+    prochaines étapes. Pour des informations plus détaillées, envisagez de
+    consulter les nombreuses ressources disponibles sur le web, par exemple la
+    <a
+      href="https://www.tei-c.org/release/doc/tei-p5-doc/en/html/SG.html"
+      target="_blank"
+      rel="noopener, noreferrer"
+      >Introduction détaillée à XML</a
+    >
+    de l'Initiative d'encodage de texte (<a
+      href="https://tei-c.org/"
+      target="_blank"
+      rel="noopener, noreferrer"
+      >TEI</a
+    >).
+  </p>
 </div>
