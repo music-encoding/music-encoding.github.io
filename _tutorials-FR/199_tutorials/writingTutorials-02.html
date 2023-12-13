@@ -1,0 +1,60 @@
+<div>
+  <p>
+    Comme le reste de notre site web, tous les tutoriels sont directement
+    publiés à partir d'un
+    <a
+      href="https://github.com/music-encoding/music-encoding.github.io"
+      target="_blank"
+      >dépôt GitHub</a
+    >. Cela offre à la fois des avantages et des inconvénients. Un énorme
+    avantage est que la création d'un nouveau tutoriel est aussi simple que de
+    commit un dossier dans le dépôt (nous expliquerons cela plus tard, pas
+    d'inquiétude). Les inconvénients majeurs sont que l'interaction requise pour
+    un tutoriel n'est pas très bien prise en charge par cette configuration
+    technique, et que nous ne pouvons pas systématiquement valider
+    automatiquement le schéma MEI fourni par l'utilisateur. Ces deux aspects ont
+    été pris en compte, et nous espérons que nos solutions équilibrent le besoin 
+    d'orientation de l'utilisateur et l'effort nécessaire
+    pour préparer un tutoriel. Nous y reviendrons plus tard également.
+  </p>
+  <p>
+    Maintenant, <b>commençons</b>. Nos pages sont construites et générées par
+    <a href="https://jekyllrb.com/" target="_blank">Jekyll</a>. Pour nos
+    tutoriels, cela signifie que nous avons besoin d'un fichier
+    <a href="https://en.wikipedia.org/wiki/Markdown" target="_blank"
+      >Markdown</a
+    >
+    avec les détails sur notre tutoriel que le site web environnant doit
+    connaître pour l'intégrer correctement. Jetons un coup d'œil au fichier
+    Markdown de ce tutoriel :
+  </p>
+  <pre class="codeblock">
+---
+---
+layout: tutorials-FR
+type: tutorial-FR
+name: "Écrire des tutoriels"
+fullname: "Une introduction à l'écriture des tutoriels sur la MEI"
+data: "tutorials.json"
+---</pre
+  >
+  <label>tutorials.md (Fichier Markdown)</label>
+  <p>
+    Alors que les deux premières lignes, <code>layout: tutorials-FR</code> et
+    <code>type: tutorial-FR</code> doivent toujours rester de cette manière pour
+    les tutoriels en français, les deux lignes suivantes peuvent changer. Ce que
+    vous écrivez ici est affiché dans la liste des tutoriels, par exemple. Notez
+    que la toute première et la dernière ligne, chacune contenant trois tirets,
+    doivent rester de cette manière pour que le tutoriel fonctionne
+    correctement.
+  </p>
+  <p>
+    Comme cela a été mentionné précédemment, nous devons travailler dans une
+    certaine mesure autour des limitations de notre configuration technique.
+    Pour cette raison, nous faisons référence à un fichier appelé
+    <code>tutorials.json</code>, qui se trouve dans le même dossier. Le nom du
+    fichier n'a pas d'importance, tant qu'il peut être trouvé dans le même
+    dossier que le fichier Markdown. Passons maintenant au contenu de ce fichier
+    JSON.
+  </p>
+</div>

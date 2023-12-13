@@ -66,6 +66,15 @@ var tutorialStrings = {
         'networkError': 'La respuesta de la red no fue correcta al intentar buscar:',
         'renderingError': 'La codificación actual no se puede representar.',
         'showHint': 'mostrar pista',
+    },
+    'FR': {
+        'codeNotWellformed': 'Le code n\'est pas correctement formaté.',
+        'fetchOperationProblem': 'Il y a eu un problème lors de la réccupération des données pour :',
+        'finish': 'Terminer',
+        'hideHint': 'masquer l\'indice',
+        'networkError': 'La réponse côté serveur est incorrecte :',
+        'renderingError': 'L\'encodage fourni ne peut pas être rendu correctement.',
+        'showHint': 'afficher l\'indice',
     }
 };
 

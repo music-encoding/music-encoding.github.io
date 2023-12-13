@@ -1,0 +1,29 @@
+<div>
+    <p class="tutorialGoal">
+        Troisième étape : Découvrir les élements enfant de l'élément racine <code>&lt;mei&gt;</code> : <code>&lt;meiHead&gt;</code>
+        and <code>&lt;music&gt;</code>.
+    </p>
+    <p>
+        Bon travail! Maintenant que nous avons déclaré un espace de noms dans notre élément racine, tous les autres éléments 
+        imbriqués dedans peuvent être résolus conformément à l'espace de noms MEI par un traitement automatique.
+    </p>
+        Comme nous l'avions vu, vous pouvez imaginer un document XML comme un arbre qui se ramifie à partir d'un élément racine
+        vers des éléments enfants imbriqués. Un fichier encodé en MEI contient au moins deux structures à l'intérieur de
+        de l'élément racine <code>&lt;mei&gt;</code> :
+    </p>
+    <ul>
+        <li>
+            <code>&lt;meiHead&gt;</code> - contient un ensemble d'éléments qui fournissent des métadonnées liées au fichier encodé en MEI,
+            comme des informations bibliographiques, des déclarations de responsabilité, des normes d'encodage ou une provenance.
+        </li>
+        <li>
+            <code>&lt;music&gt;</code> - contient un ensemble d'éléments permettant l'encodage du contenu musical réel.
+            Entre autres, il peut comprendre des éléments structurels pour décrire la forme d'une pièce musicale (sections,
+            mouvements, groupes de documents), ou des éléments de notation, tels que des notes, des silences, des articulations ou des dynamiques.
+        </li>
+    </ul>
+
+    <p class="task">Dans l'éditeur ci-dessous, ajoutez un élément <code>&lt;meiHead&gt;</code> et un élément <code>&lt;music&gt;</code> à l'intérieur
+        l'élément racine <code>&lt;mei&gt;</code>.
+    </p>
+</div>

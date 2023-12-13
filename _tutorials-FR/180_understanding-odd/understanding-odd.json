@@ -1,0 +1,47 @@
+{
+  "steps": [
+    {
+        "label":"Introduction",
+        "descFile": "understanding-odd-01.html"
+    },
+    {
+        "label":"Avant-propos",
+        "descFile": "understanding-odd-02.html"
+    },
+    {
+        "label":"ODD",
+        "descFile": "understanding-odd-03.html"
+    },
+    {
+        "label":"Modules",
+        "descFile": "understanding-odd-04.html"
+    },
+    {
+        "label":"Éléments",
+        "descFile": "understanding-odd-05.html"
+    },
+    {
+        "label":"Modèles",
+        "descFile": "understanding-odd-06.html"
+    },
+    {
+        "label":"Attributs",
+        "descFile": "understanding-odd-07.html"
+    },
+    {
+        "label":"Types de données",
+        "descFile": "understanding-odd-08.html"
+    },
+    {
+        "label":"Macros",
+        "descFile": "understanding-odd-09.html"
+    }
+  ],
+  "end":"understanding-odd-10.html",
+  "resp":[
+    {
+        "name":"Johannes Kepper",
+        "affiliation":"Beethovens Werkstatt | Universität Paderborn"
+    }
+  ]
+}
