@@ -86,7 +86,7 @@ layout: default
                             throw new Error('Erreur réseau en essayant de réccupérer  ', page.data);
                         })
                         .then(function(data) {
-                            setupTutorial(data);
+                            setupTutorial(data, "FR");
                         });
                 } catch(err) {
                     console.log('Erreur lors de la réccupération des données : ' + err)

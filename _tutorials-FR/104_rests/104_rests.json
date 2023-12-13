@@ -50,7 +50,7 @@
         ]
     },
     {
-        "label":"Espaces / Silences invisible",
+        "label":"Espaces et silences invisibles",
         "editorLines":6,
         "descFile": "104_rests_step-04-desc.html",
         "xmlFile": "104_rests_step-04.xml",
