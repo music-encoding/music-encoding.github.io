@@ -10,6 +10,12 @@ The MEI Board manages the property and business of MEI. It promotes the developm
 
 ## Current Board Members
 
+### Term 2024-2026
+
+* **Maristella Feustle**, Music Library, University of North Texas
+* **Stefan Münnich (Technical Co-Chair)**, University of Basel
+* **Laurent Pugin**, RISM Digital Center, Bern
+
 ### Term 2023–2025
 
 * **Johannes Kepper**, Musikwissenschaftliches Seminar Detmold/Paderborn
