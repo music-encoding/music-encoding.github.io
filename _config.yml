@@ -112,6 +112,9 @@ collections:
   projects:
     output: true
     permalink: /:collection/:name
+  tools:
+    output: true
+    permalink: /:collection/:name
   tutorials:
     output: true
     permalink: /:collection/:name

@@ -2,7 +2,7 @@
 layout: tools
 name: "mei-friend"
 fullname: "Browser-based music editor"
-tags: [editor, rendering, viewer, utility, getting started, browser-based, sonification]
+tags: [editor, rendering, viewer, utility, getting-started, browser-based, sonification]
 
 ---
 
