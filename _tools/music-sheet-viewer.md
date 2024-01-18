@@ -2,6 +2,7 @@
 layout: tools
 name: "Music Sheet Viewer"
 fullname: "Wordpress plug-in for music rendering"
+link: http://www.partitionnumerique.com/music-sheet-viewer-wordpress-plugin/
 tags: [browser-based, plug-in, rendering, getting-started, developers, sonification]
 
 ---

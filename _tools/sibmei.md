@@ -2,6 +2,7 @@
 layout: tools
 name: "SibMEI"
 fullname: "MEI Plug-in for Sibelius"
+link: https://github.com/music-encoding/sibmei/releases
 tags: [conversion, plugin]
 ---
 

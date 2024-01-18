@@ -2,6 +2,7 @@
 layout: tools
 name: "mei-friend"
 fullname: "Browser-based music editor"
+link: https://mei-friend.mdw.ac.at
 tags: [editor, rendering, viewer, utility, getting-started, browser-based, sonification]
 
 ---

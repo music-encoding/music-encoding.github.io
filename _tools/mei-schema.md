@@ -2,6 +2,7 @@
 layout: tools
 name: "MEI Schema"
 fullname: "Specification and Documentation"
+link: https://github.com/music-encoding/music-encoding
 tags: [developers, validation, documentation]
 
 ---

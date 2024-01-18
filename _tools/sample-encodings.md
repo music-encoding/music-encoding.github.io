@@ -2,6 +2,7 @@
 layout: tools
 name: "Sample encodings"
 fullname: "Collection of MEI-encoded music file."
+link: https://github.com/music-encoding/sample-encodings
 tags: [documentation, getting-started]
 
 ---

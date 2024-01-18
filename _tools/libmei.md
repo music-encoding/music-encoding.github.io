@@ -2,6 +2,7 @@
 layout: tools
 name: "LibMEI"
 fullname: "C++ library for MEI"
+link: https://github.com/DDMAL/libmei
 tags: [developers, library]
 
 ---
