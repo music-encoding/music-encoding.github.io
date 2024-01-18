@@ -2,6 +2,7 @@
 layout: tools
 name: "Verovio"
 fullname: "Javascript and C++ score rendering"
+link: https://www.verovio.org
 tags: [rendering, browser-based, developers, library, sonification]
 
 ---

@@ -2,6 +2,7 @@
 layout: tools
 name: "MerMEId"
 fullname: "Metadata editor and repository for MEI data"
+link: https://github.com/edirom/mermeid
 tags: [cataloguing, editor, viewer, repository, metadata, getting-started]
 ---
 

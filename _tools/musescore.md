@@ -2,6 +2,7 @@
 layout: tools
 name: "MuseScore"
 fullname: "Music engraving software"
+link: https://musescore.org/
 tags: [rendering, conversion, score-editing, getting-started]
 ---
 

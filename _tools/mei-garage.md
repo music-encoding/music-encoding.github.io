@@ -2,6 +2,7 @@
 layout: tools
 name: "MEI Garage"
 fullname: "Schema customization service"
+link: http://custom.music-encoding.org
 tags: [developers, validation, documentation]
 
 ---

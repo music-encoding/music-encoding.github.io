@@ -2,6 +2,7 @@
 layout: tools
 name: "MEILER"
 fullname: "MEI LilyPond Engraving Refinement"
+link: https://github.com/rettinghaus/MEILER
 tags: [rendering, xslt]
 ---
 
