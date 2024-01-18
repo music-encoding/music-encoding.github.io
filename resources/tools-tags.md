@@ -45,66 +45,83 @@ title: "Tools"
 </style>
 {% assign c = site.collections | where: "label","tools" | first %}
 <div class="filter columns">
-  <input type="radio" id="all" class="filter-tag" name="filter-radio" hidden checked>
-  <input type="radio" id="browser-based" class="filter-tag" name="filter-radio" hidden>
-  <input type="radio" id="cataloguing" class="filter-tag" name="filter-radio" hidden>
-  <input type="radio" id="conversion" class="filter-tag" name="filter-radio" hidden>
-  <input type="radio" id="developers" class="filter-tag" name="filter-radio" hidden>
-  <input type="radio" id="documentation" class="filter-tag" name="filter-radio" hidden>
-  <input type="radio" id="editor" class="filter-tag" name="filter-radio" hidden>
-  <input type="radio" id="getting-started" class="filter-tag" name="filter-radio" hidden>
-  <input type="radio" id="library" class="filter-tag" name="filter-radio" hidden>
-  <input type="radio" id="metadata" class="filter-tag" name="filter-radio" hidden>
-  <input type="radio" id="plug-in" class="filter-tag" name="filter-radio" hidden>
-  <input type="radio" id="rendering" class="filter-tag" name="filter-radio" hidden>
-  <input type="radio" id="repository" class="filter-tag" name="filter-radio" hidden>
-  <input type="radio" id="score-editing" class="filter-tag" name="filter-radio" hidden>
-  <input type="radio" id="sonification" class="filter-tag" name="filter-radio" hidden>
-  <input type="radio" id="validation" class="filter-tag" name="filter-radio" hidden>
-  <input type="radio" id="xslt" class="filter-tag" name="filter-radio" hidden>
+    <input type="radio" id="all" class="filter-tag" name="filter-radio" hidden checked>
+    <input type="radio" id="browser-based" class="filter-tag" name="filter-radio" hidden>
+    <input type="radio" id="cataloguing" class="filter-tag" name="filter-radio" hidden>
+    <input type="radio" id="conversion" class="filter-tag" name="filter-radio" hidden>
+    <input type="radio" id="developers" class="filter-tag" name="filter-radio" hidden>
+    <input type="radio" id="documentation" class="filter-tag" name="filter-radio" hidden>
+    <input type="radio" id="editor" class="filter-tag" name="filter-radio" hidden>
+    <input type="radio" id="getting-started" class="filter-tag" name="filter-radio" hidden>
+    <input type="radio" id="library" class="filter-tag" name="filter-radio" hidden>
+    <input type="radio" id="metadata" class="filter-tag" name="filter-radio" hidden>
+    <input type="radio" id="plug-in" class="filter-tag" name="filter-radio" hidden>
+    <input type="radio" id="rendering" class="filter-tag" name="filter-radio" hidden>
+    <input type="radio" id="repository" class="filter-tag" name="filter-radio" hidden>
+    <input type="radio" id="score-editing" class="filter-tag" name="filter-radio" hidden>
+    <input type="radio" id="sonification" class="filter-tag" name="filter-radio" hidden>
+    <input type="radio" id="validation" class="filter-tag" name="filter-radio" hidden>
+    <input type="radio" id="xslt" class="filter-tag" name="filter-radio" hidden>
   
-  <div class="filter-nav column col-8 col-md-12 my-2">
-    <label class="chip" for="all">all</label>
-    <label class="chip" for="browser-based">browser-based</label>
-    <label class="chip" for="cataloguing">cataloguing</label>
-    <label class="chip" for="conversion">conversion</label>
-    <label class="chip" for="developers">developers</label>
-    <label class="chip" for="documentation">documentation</label>
-    <label class="chip" for="editor">editor</label>
-    <label class="chip" for="getting-started">getting-started</label>
-    <label class="chip" for="library">library</label>
-    <label class="chip" for="metadata">metadata</label>
-    <label class="chip" for="plug-in">plug-in</label>
-    <label class="chip" for="rendering">rendering</label>
-    <label class="chip" for="repository">repository</label>
-    <label class="chip" for="score-editing">score-editing</label>
-    <label class="chip" for="sonification">sonification</label>
-    <label class="chip" for="validation">validation</label>
-    <label class="chip" for="xslt">xslt</label>
-  </div>
-  <div class="column col-md-12 my-2">
-    <span class="show-md">If you'd like to see your tool added here, <a href="mailto:info@music-encoding.org">contact us</a>.</span>
-    <span class="float-right hide-md">If you'd like to see your tool added here, <a href="mailto:info@music-encoding.org">contact us</a>.</span></div>
-  <div class="filter-body projects column col-12">
-  {% for project in c.docs %}
-  <div class="filter-item" style="width: 100%;" data-tag="{{ project.tags | join: ' ' }}">
-      <div class="card project">
-          <div class="card-image">
-              {% if project.image %}
-              <img class="mei-project-image img-fit-cover" alt="{{ project.name }}" src="{{ site.baseurl }}/images/{{ project.image }}"/>
-              {% endif %}
-          </div>
-          <div class="card-header">
-              <div class="card-title h5">
-                  {{ project.name }}
-              </div>
-              <div class="card-subtitle text-gray">
-                  {{ project.fullname }}
-              </div>
-              <div class="card-body">{{ project.content | markdownify }}</div>
-          </div>
-      </div>
-  </div>
-  {% endfor %}
-  </div>
+    <div class="columns">
+        <div class="filter-nav column col-9 col-md-12 my-2">
+            <label class="chip" for="all">all</label>
+            <label class="chip" for="browser-based">browser-based</label>
+            <label class="chip" for="cataloguing">cataloguing</label>
+            <label class="chip" for="conversion">conversion</label>
+            <label class="chip" for="developers">developers</label>
+            <label class="chip" for="documentation">documentation</label>
+            <label class="chip" for="editor">editor</label>
+            <label class="chip" for="getting-started">getting-started</label>
+            <label class="chip" for="library">library</label>
+            <label class="chip" for="metadata">metadata</label>
+            <label class="chip" for="plug-in">plug-in</label>
+            <label class="chip" for="rendering">rendering</label>
+            <label class="chip" for="repository">repository</label>
+            <label class="chip" for="score-editing">score-editing</label>
+            <label class="chip" for="sonification">sonification</label>
+            <label class="chip" for="validation">validation</label>
+            <label class="chip" for="xslt">xslt</label>
+        </div>
+        <div class="column col-md-12 my-2">
+            <span class="show-md">If you'd like to see your tool added here, <a href="mailto:info@music-encoding.org">contact us</a>.</span>
+            <span class="float-right hide-md">If you'd like to see your tool added here, <a href="mailto:info@music-encoding.org">contact us</a>.</span>
+        </div>
+    </div>
+    <div class="columns">
+        <div class="sticky-top col-2 col-md-hide">
+            <ul class="nav">
+            {% for project in c.docs %}
+                <li class="nav-item"><a href="#{{ project.url | split: "/" | last }}">{{ project.name }}</a></li>
+            {% endfor %}
+            </ul>
+        </div>
+        <div class="filter-body projects column col-9 col-md-12">
+        {% for project in c.docs %}
+            <div id="{{ project.url | split: "/" | last }}" class="filter-item" style="width: 100%;" data-tag="{{ project.tags | join: ' ' }}">
+                <div class="card project">
+                    <div class="card-image">
+                        {% if project.image %}
+                        <img class="mei-project-image img-fit-cover" alt="{{ project.name }}" src="{{ site.baseurl }}/images/{{ project.image }}"/>
+                        {% endif %}
+                    </div>
+                    <div class="card-header">
+                        <div class="card-title h5">
+                            {{ project.name }}
+                        </div>
+                        <div class="card-subtitle text-gray">
+                            {{ project.fullname }}
+                        </div>
+                        <div class="card-body">{{ project.content | markdownify }}</div>
+                    </div>
+                    <div class="card-footer">
+                    {% for tag in project.tags %}
+                        <span class="chip">{{ tag }}</span>
+                    {% endfor %}
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+        </div>
+    </div>
 </div>
