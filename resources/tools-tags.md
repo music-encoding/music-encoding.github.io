@@ -54,6 +54,9 @@ title: "Tools"
                     <div class="card-title h5">
                         {{ project.name }}
                     </div>
+                    <div class="card-subtitle">
+                        <a href="{{ project.link }}" target="_blank">{{ project.link }}</a>
+                    </div>
                     <div class="card-subtitle text-gray">
                         {{ project.fullname }}
                     </div>
