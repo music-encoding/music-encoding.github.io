@@ -84,8 +84,6 @@ title: "Tools"
             <label class="chip" for="xslt">xslt</label>
         </div>
         <div class="column col-md-12 my-2">
-            <span class="show-md">If you'd like to see your tool added here, <a href="mailto:info@music-encoding.org">contact us</a>.</span>
-            <span class="float-right hide-md">If you'd like to see your tool added here, <a href="mailto:info@music-encoding.org">contact us</a>.</span>
         </div>
     </div>
     <div class="filter-body col-2 col-md-12">
@@ -96,6 +94,7 @@ title: "Tools"
         </ul>
     </div>
     <div class="filter-body projects column col-9 col-md-12">
+        <p>If you'd like to see your tool added here, feel free to <a href="mailto:info@music-encoding.org">contact us</a>.</p>
     {% for project in c.docs %}
         <div id="{{ project.url | split: "/" | last }}" class="filter-item" style="width: 100%;" data-tag="{{ project.tags | join: ' ' | downcase }}">
             <div class="card project">
@@ -122,5 +121,4 @@ title: "Tools"
         </div>
     {% endfor %}
     </div>
-
 </div>
