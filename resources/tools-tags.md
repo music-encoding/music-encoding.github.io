@@ -2,6 +2,7 @@
 layout: default
 title: "Tools"
 ---
+{% comment %} nice-to-have: make navigation links on the left sticky (visible when scrolling) {% endcomment %}
 {% assign c = site.collections | where: "label","tools" | first %}
 {% assign allTags = c.docs | map: "tags" | uniq | sort %}
 
