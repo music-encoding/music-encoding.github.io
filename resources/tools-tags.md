@@ -37,14 +37,14 @@ title: "Tools"
     <div class="filter-body col-2 col-md-12">
         <ul class="nav">
         {% for project in c.docs %}
-            <li class="nav-item filter-item" data-tag="{{ project.tags | join: ' ' | downcase }}"><a href="#{{ project.url | split: "/" | last }}">{{ project.name }}</a></li>
+            <li class="nav-item filter-item" data-tag="{{ project.tags | join: ' ' }}"><a href="#{{ project.url | split: "/" | last }}">{{ project.name }}</a></li>
         {% endfor %}
         </ul>
     </div>
     <div class="filter-body projects column col-9 col-md-12">
         <p>If you'd like to see your tool added here, feel free to <a href="mailto:info@music-encoding.org">contact us</a>.</p>
     {% for project in c.docs %}
-        <div id="{{ project.url | split: "/" | last }}" class="filter-item" style="width: 100%;" data-tag="{{ project.tags | join: ' ' | downcase }}">
+        <div id="{{ project.url | split: "/" | last }}" class="filter-item" style="width: 100%;" data-tag="{{ project.tags | join: ' ' }}">
             <div class="card project">
                 <div class="card-image">
                     {% if project.image %}
