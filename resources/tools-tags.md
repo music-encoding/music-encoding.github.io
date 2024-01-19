@@ -6,6 +6,7 @@ title: "Tools"
 {% assign c = site.collections | where: "label","tools" | first %}
 {% assign allTags = c.docs | map: "tags" | uniq | sort %}
 
+{% comment %} note that the ~ css combinator means "subsequent sibling" {% endcomment %}
 <style>
 {% for tag in allTags %}
 .filter .filter-tag#{{ tag }}:checked ~ .filter-body .filter-item:not([data-tag~="{{ tag }}"]){% if forloop.last %} {% raw %}{{% endraw %}{% else %},{% endif %}{% endfor %}
