@@ -3,7 +3,7 @@ layout: tools
 name: "meico"
 fullname: "Converter framework for MEI files"
 link: https://github.com/cemfi/meico
-tags: [conversion, XSLT, sonification]
+tags: [conversion, xslt, sonification]
 
 ---
 
