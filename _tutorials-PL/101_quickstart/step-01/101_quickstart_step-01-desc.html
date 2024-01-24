@@ -1,0 +1,12 @@
+<div>
+    <p>Aby zakodować nutę, wszystkie odpowiednie informacje muszą zostać zapisane w formie nadającej się do odczytu maszynowego. W zależności od potrzeb projektu, wybór tego, co jest istotne, a co nie, może się różnić, ale na potrzeby tego wprowadzenia, uzgodnijmy najbardziej podstawową informacje o nucie: Jest to zapisana wysokość dźwięku i czas trwania. Aby wyrazić wysokość dźwięku, MEI używa
+        <a href="https://en.wikipedia.org/wiki/Scientific_pitch_notation" target="_blank" rel="noopener, noreferrer">Naukowa notacja wysokości dźwięków</a>, w której tak zwane środkowe C jest wyrażone jako "C4". Jednak dzieli to na dwie oddzielne informacje: Nazwę wysokości dźwięku (w MEI nazwane <code>@pname</code>) oraz oktawę (<code>@oct</code>). Rozdzielenie to ma różne przyczyny, które nie mają tutaj znaczenia. Ważne jest również, aby pamiętać, że nazwy wysokości dźwięku są podawane w MEI małymi literami.
+</p>
+    <p>Inną ważną informacją jest oczywiście czas trwania (<code>@dur</code>). Tutaj używane są proste liczby całkowite do wskazania czasu trwania nuty. Pełna nuta otrzymuje wartość <code>1</code>, półnuta potrzebuje <code>2</code>, ćwierćnuta wymaga <code>4</code> i tak dalej.</p>
+    <p class="task">Poprosimy o wpisanie następującego kodu w okienku edytora:
+        <code>&lt;note pname="e" oct="4" dur="4"/&gt;</code>. Powinieneś wtedy zobaczyć renderowaną nutę. Możesz pobawić się trochę wartościami atrybutów, aby zobaczyć, jak wpływają one na renderowanie. Zobaczysz również wskazówki, jak napisać poprawny kod.Gdy będziesz gotowa, upewnij się, że masz poprawny kod w edytorze, a następnie naciśnij przycisk "Kontynuuj" w prawym dolnym rogu. </p>
+    <p>
+        PS: Jeśli nie jesteś za bardzo zaznajomiony z XML: Kiedykolwiek odnosimy się do atrybutów, poprzedzamy ich nazwę znakiem @.
+        Jest to powszechna praktyka i pochodzi z języka <a href="https://en.wikipedia.org/wiki/XPath" target="_blank" rel="noopener, noreferrer">XPath</a>. Pisząc je w XML, nie wolno dołączać znaku @, a jedynie nazwę atrybutu. Zapraszamy do zapoznania się z naszym <a href="/tutorials/100-structure.html" target="_blank" rel="noopener, noreferrer">tutorialem na temat podstaw XML</a>.
+    </p>
+</div>
