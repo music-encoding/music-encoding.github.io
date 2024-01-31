@@ -1,6 +1,6 @@
 ---
 layout: tools
-name: "Encoding tool"
+name: "Encoding tools"
 fullname: "Converters and linters"
 link: https://github.com/music-encoding/encoding-tools
 tags: [conversion, xslt, developers]
