@@ -3,7 +3,7 @@ layout: tools
 name: "SibMEI"
 fullname: "MEI Plug-in for Sibelius"
 link: https://github.com/music-encoding/sibmei/releases
-tags: [conversion, plugin]
+tags: [conversion, plug-in]
 ---
 
 [SibMEI](https://github.com/music-encoding/sibmei/releases "Sibelius MEI Plugin") is an open source plug-in that makes it easy to export MEI from the [Sibelius](http://www.sibelius.com) notation editor. In addition to facilitating the creation of MEI-formatted data without the burden of writing XML by hand, it also makes it possible to convert MusicXML files to MEI.
