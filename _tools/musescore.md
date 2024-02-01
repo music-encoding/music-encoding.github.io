@@ -1,8 +1,10 @@
 ---
 layout: tools
-name: "MuseScore"
-fullname: "Music engraving software"
-link: https://musescore.org/
+title: "MuseScore"
+subtitle: "Music engraving software"
+image: https://github.com/musescore/MuseScore/raw/master/share/icons/musescore_logo_full.png
+website: https://musescore.org/
+repository: https://github.com/musescore/MuseScore
 tags: [rendering, conversion, score-editing, getting-started]
 ---
 

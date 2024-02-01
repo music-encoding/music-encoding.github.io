@@ -1,8 +1,10 @@
 ---
 layout: tools
-name: "SibMEI"
-fullname: "MEI Plug-in for Sibelius"
-link: https://github.com/music-encoding/sibmei/releases
+title: "SibMEI"
+subtitle: "MEI Plug-in for Sibelius"
+image:
+website:
+repository: https://github.com/music-encoding/sibmei/releases
 tags: [conversion, plug-in]
 ---
 
