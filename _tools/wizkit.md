@@ -1,7 +1,7 @@
 ---
 layout: tools
 name: "WizKit"
-fullname: "Environment for editing MEI metdata in oXygen XML Editor"
+fullname: "Environment for editing MEI metadata in oXygen XML Editor"
 tags: [cataloguing, editor, viewer, repository, metadata,getting-started]
 
 ---
