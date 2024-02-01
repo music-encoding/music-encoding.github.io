@@ -29,6 +29,6 @@ This policy is adapted from the policies of:
 - CritLib Unconference 2015: <a href="https://pdxscholar.library.pdx.edu/critlib/2015/Conference/18/" target="blank">https://pdxscholar.library.pdx.edu/critlib/2015/Conference/18/</a>
 - Ontario Library Association Super Conference 2018: <a href="https://www.olasuperconference.ca/about/code-of-conduct" target="blank">https://www.olasuperconference.ca/about/code-of-conduct/</a>
 - Foss4G 2017: <a href="https://2017.foss4g.org/about/Code-of-Conduct.pdf" target="blank">https://2017.foss4g.org/about/Code-of-Conduct.pdf</a>
-- Tufts Social Science Librarians Bootcamp 2019: <a href="https://sites.tufts.edu/sslbc2019/code-of-conduct" target="blank">https://sites.tufts.edu/sslbc2019/code-of-conduct</a> and <a href="https://sites.tufts.edu/sslbc2019/code-of-conduct/attendee-procedure/">https://sites.tufts.edu/sslbc2019/code-of-conduct/attendee-procedure</a>
+- Tufts Social Science Librarians Bootcamp 2019: <a href="https://web.archive.org/web/20191209194534/http://sites.tufts.edu/sslbc2019/code-of-conduct/" target="blank">https://sites.tufts.edu/sslbc2019/code-of-conduct</a> and <a href="https://web.archive.org/web/20230131171139/https://sites.tufts.edu/sslbc2019/code-of-conduct/attendee-procedure/">https://sites.tufts.edu/sslbc2019/code-of-conduct/attendee-procedure</a>
 
 This policy is licensed under the Creative Commons Zero license. It is public domain, no credit and no open licensing of your version is required. Most recent update: April 2021.
