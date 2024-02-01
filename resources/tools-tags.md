@@ -26,7 +26,7 @@ title: "Tools"
 {% for tag in allTags %}
     <input type="radio" id="{{ tag }}" class="filter-tag" name="filter-radio" hidden>
 {% endfor %}
-  
+
     <div class="columns filter-nav">
         <div class="column col-9 col-md-12 my-2">
             <label class="chip" for="all">all</label>
@@ -54,13 +54,13 @@ title: "Tools"
                 </div>
                 <div class="card-header">
                     <div class="card-title h5">
-                        {{ project.name }}
+                        {{ project.title }}
                     </div>
                     <div class="card-subtitle">
-                        <a href="{{ project.link }}" target="_blank">{{ project.link }}</a>
+                        <a href="{{ project.website }}" target="_blank">{{ project.website }}</a>
                     </div>
                     <div class="card-subtitle text-gray">
-                        {{ project.fullname }}
+                        {{ project.subtitle }}
                     </div>
                     <div class="card-body">{{ project.content | markdownify }}</div>
                 </div>
