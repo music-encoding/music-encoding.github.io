@@ -5,7 +5,7 @@ layout: default
     <div class="column col-8">
       <header>
         <h1>{{ page.title }}</h1>
-        <p class="subtitle">{{ page.fullname }}</p>
+        <p class="subtitle">{{ page.subtitle }}</p>
       </header>
       <div class="divider"></div>
       {{ content }}
@@ -31,7 +31,7 @@ layout: default
               {% endfor %}
             </dd>
             <dt>Website</dt>
-            <dd><a href="{{ page.link }}" target="{{ page.link }}">{{ page.link }}</a></dd>
+            <dd><a href="{{ page.website }}" target="{{ page.website }}">{{ page.website }}</a></dd>
             <dt>Repository</dt>
             <dd><a href="{{ page.repository }}" target="{{ page.repository }}">{{ page.repository }}</a></dd>
           </dl>
