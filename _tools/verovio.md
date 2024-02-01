@@ -1,10 +1,11 @@
 ---
 layout: tools
-name: "Verovio"
-fullname: "Javascript and C++ score rendering"
-link: https://www.verovio.org
+title: "Verovio"
+subtitle: "Javascript and C++ score rendering"
+image: https://www.verovio.org/assets/images/verovio-fadded-50.png
+website: https://www.verovio.org
+repository: https://github.com/rism-digital/verovio
 tags: [rendering, browser-based, developers, library, sonification]
-
 ---
 
 [Verovio](https://www.verovio.org) is a fast, portable and lightweight library for engraving Music Encoding Initiative (MEI) music scores into SVG developed by the [Swiss RISM Office](http://rism-ch.org). It is designed as a one-step conversion tool and is written in pure standard C++ with no dependencies on third-party frameworks and libraries. Verovio implements its own rendering engine, which can render SVG with all the musical symbols embedded in it and without dependency on external fonts. In addition to MEI, Verovio can also render Plain and Easy (PAE) code and DARMS code.

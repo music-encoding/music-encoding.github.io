@@ -1,8 +1,10 @@
 ---
 layout: tools
-name: "MEILER"
-fullname: "MEI LilyPond Engraving Refinement"
-link: https://github.com/rettinghaus/MEILER
+title: "MEILER"
+subtitle: "MEI LilyPond Engraving Refinement"
+image:
+website:
+repository: https://github.com/rettinghaus/MEILER
 tags: [rendering, xslt]
 ---
 
