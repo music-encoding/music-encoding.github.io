@@ -2,7 +2,7 @@
 layout: tools
 title: "mei-friend"
 subtitle: "Browser-based music editor"
-image:
+image: https://raw.githubusercontent.com/mei-friend/mei-friend/main/app/static/owl/menu-logo.svg
 website: https://mei-friend.mdw.ac.at
 repository: https://github.com/mei-friend/mei-friend
 tags: [editor, rendering, viewer, utility, getting-started, browser-based, sonification]
