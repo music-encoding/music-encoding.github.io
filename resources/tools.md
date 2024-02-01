@@ -36,13 +36,13 @@ title: "Tools"
                 {% if item.image %}
                     {% assign imageUriStartsWith = item.image | slice: 0, 4 %}
                     {% if imageUriStartsWith == 'http' %}
-                        <img class="mei-project-image img-fit-cover" alt="{{ item.name }} logo" src="{{ item.image }}" />
+                        <img class="mei-project-image img-fit-contain p-2" alt="{{ item.name }} logo" src="{{ item.image }}" />
                     {% else %}
-                        <img class="mei-project-image img-fit-cover" alt="{{ item.name }} logo"  src="{{ site.baseurl }}/tools/{{ item.image }}" />
+                        <img class="mei-project-image img-fit-contain p-2" alt="{{ item.name }} logo"  src="{{ site.baseurl }}/tools/{{ item.image }}" />
                     {% endif %}
                 {% else %}
                     <div class="hero hero-sm bg-primary text-light">
-                        <div class="hero-body">
+                        <div class="hero-body px-2">
                         <h1>{{ item.title }}</h1>
                         </div>
                     </div>
