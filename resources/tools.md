@@ -43,18 +43,18 @@ title: "Tools"
                 {% else %}
                     <div class="hero hero-sm bg-primary text-light">
                         <div class="hero-body">
-                        <h1>{{ item.name }}</h1>
+                        <h1>{{ item.title }}</h1>
                         </div>
                     </div>
                 {% endif %}
                 </div>
                 <div class="card-header">
                     <div class="card-title h5">
-                        {{ item.name }}
+                        {{ item.title }}
                     </div>
                     <div class="card-subtitle text-gray">
-                        {% if item.fullname !="" %}
-                        {{ item.fullname }}
+                        {% if item.subtitle !="" %}
+                        {{ item.subtitle }}
                         <br/>
                         {% endif %}
                     </div>
