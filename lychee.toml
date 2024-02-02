@@ -47,7 +47,10 @@ exclude = [
     'https://doi.org/10.15463/music-1',
 
     # page outdated, but used in candidate statements
-    'https://arsmusicae.org',    
+    'https://arsmusicae.org',
+
+    # X is always failing because it’s only available to logged in users
+    'https://twitter.com/MusicEncoding',
 ]
 
 # Exclude these filesystem paths from getting checked.
