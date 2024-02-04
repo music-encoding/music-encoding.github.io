@@ -25,6 +25,9 @@ accept = [200, 429]
 
 # Remap URI matching pattern to different URI.
 remap = [
+    # Comparison pages
+    'file:///home/runner/work/music-encoding.github.io/music-encoding.github.io/archive/comparison-(.+).html https://github.com/music-encoding/music-encoding.github.io/tree/gh-pages/archive/comparison-$1.html',
+
     # Tutorial pages (HTML & PNG)
     'file:///home/runner/work/music-encoding.github.io/music-encoding.github.io/_tutorials/(.*/)?(.+).(html|png) https://github.com/music-encoding/music-encoding.github.io/tree/gh-pages/tutorials/$2.$3',
 
