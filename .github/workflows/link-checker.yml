@@ -25,7 +25,9 @@ jobs:
     steps:
       - uses: technote-space/broken-link-checker-action@b8332d945b97f8b52eb8d7d889a1e0e37106c1a9 # ratchet:technote-space/broken-link-checker-action@v2
         with:
-          target: ${{ env.CHECK_WEBSITE }}
+          TARGET: ${{ env.CHECK_WEBSITE }}
+          EXCLUDED_KEYWORDS: |
+            twitter.com
 
   linkChecker:
     runs-on: ubuntu-latest
