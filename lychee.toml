@@ -40,14 +40,17 @@ remap = [
     # MEI Basic
     'https://github.com/music-encoding/music-encoding/tree/basic https://github.com/music-encoding/music-encoding/commit/b50748ce537b43e1527791fb41e8c28aa1582cdb',
 
-    # Conference program 2017
-    'http://music-encoding.org/community/conference/tours17/program/ https://web.archive.org/web/20170511140944/http://music-encoding.org/community/conference/tours17/program',
-
     # By-laws
     'http://music-encoding.org/community/mei-organization/mei-by-laws/ https://music-encoding.org/community/mei-by-laws.html',
 
     # Proceedings repo
     'http://music-encoding.org/proceedings https://github.com/music-encoding/mec-proceedings',
+
+    # Web archived pages
+    '^http://music-encoding.org/community/conference/tours17/program/$ https://web.archive.org/web/20170511140944/http://music-encoding.org/community/conference/tours17/program',
+    '^https://sites.tufts.edu/sslbc2019/code-of-conduct/$ https://web.archive.org/web/20191209194534/http://sites.tufts.edu/sslbc2019/code-of-conduct/',
+    '^https://sites.tufts.edu/sslbc2019/code-of-conduct/attendee-procedure/$ https://web.archive.org/web/20230131171139/https://sites.tufts.edu/sslbc2019/code-of-conduct/attendee-procedure/',
+    '^https://www.annakijas.com/assets/pdf/2022-Kijas_CV.pdf$ https://web.archive.org/web/20230205005718/https://www.annakijas.com/assets/pdf/2022-Kijas_CV.pdf',
 ]
 
 #############################  Exclusions  ##########################
