@@ -97,3 +97,6 @@ exclude_path = [
 
 # Exclude loopback IP address range and localhost from checking.
 exclude_loopback = true
+
+# Do not check mail addresses
+include_mail = false
