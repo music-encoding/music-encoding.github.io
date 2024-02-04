@@ -29,7 +29,6 @@ jobs:
 
   linkChecker:
     runs-on: ubuntu-latest
-    if: ${{ github.repository_owner == 'music-encoding' }}
 
     steps:
       - name: Set variables
