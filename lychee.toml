@@ -64,6 +64,7 @@ exclude = [
     'https://www.conftool.net/music-encoding2022/*',
 
     # these DOIs are not correctly resolved (probably too many redirects)
+    'https://doi.org/10.1080/01411896.2023.2231837',
     'https://doi.org/10.13140/RG.2.2.15014.93760',
     'https://doi.org/10.15463/music-1',
 
