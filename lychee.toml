@@ -34,7 +34,7 @@ remap = [
     # Spanish tutorial pages (HTML)
     'file:///home/runner/work/music-encoding.github.io/music-encoding.github.io/_tutorials-ES/(.*/)?(.+).html https://github.com/music-encoding/music-encoding.github.io/tree/gh-pages/tutorials-ES/$2.html',
 
-    # Spanisch tutorial page (PNG) -> reuses images from english version
+    # Spanish tutorial pages (PNG) -> reuses images from english version
     'file:///home/runner/work/music-encoding.github.io/music-encoding.github.io/_tutorials-ES/(.*/)?(.+).png https://github.com/music-encoding/music-encoding.github.io/tree/gh-pages/tutorials/$2.png',
 
     # MEI Basic
