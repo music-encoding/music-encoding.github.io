@@ -16,4 +16,4 @@ The music notation was created with Sibelius and exported to [MEI (Music Encodin
 
 A list of the musical encodings included in the digital edition can be found at [https://furnaceandfugue.org/essays/bianchi/#noble-science](https://furnaceandfugue.org/essays/bianchi/#noble-science) (Table 1). 
 
-To learn more about the technical process and project view the team’s poster, "[Multimedia from the 17th-Century Book to the 21st-Century Web](http://dx.doi.org/10.17613/ggym-sc21)" presented at MEC 2020.
+To learn more about the technical process and project view the team’s poster, "[Multimedia from the 17th-Century Book to the 21st-Century Web](https://doi.org/10.17613/ggym-sc21)" presented at MEC 2020.
