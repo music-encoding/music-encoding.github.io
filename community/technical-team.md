@@ -35,20 +35,39 @@ We aim to organize, schedule, and document these meetings with the help of a Git
 
 The schedule for these developer workshops is the _last Friday of every odd month_, and _last Thursday of every even month_, at 3pm UTC (in summer) resp. 4pm UTC (in winter). Calls are scheduled for:
 
-**2023**
+**2024**
 
-* November 24, 2023 [4pm UTC](https://www.timeanddate.com/worldclock/converter.html?iso=20231124T150000&p1=1440) ODD Friday
-* October 26, 2023 [3pm UTC](https://www.timeanddate.com/worldclock/converter.html?iso=20231026T150000&p1=1440) ODD Thursday
-* September 28, 2023 [2pm UTC](https://www.timeanddate.com/worldclock/converter.html?iso=20230929T150000&p1=1440) ODD Friday
-* September 4–8, 2023: TEI/MEC conference
+* November 29, 2024 [4pm UTC](https://www.timeanddate.com/worldclock/converter.html?iso=20241129T160000&p1=1440&p2=994&p3=43) ODD Friday
+* October 31, 2024 [4pm UTC](https://www.timeanddate.com/worldclock/converter.html?iso=20241031T160000&p1=1440&p2=994&p3=43) ODD Thursday
+* September 27, 2024 [3pm UTC](https://www.timeanddate.com/worldclock/converter.html?iso=20240927T150000&p1=1440&p2=994&p3=43) ODD Friday
 * August: summer break
-* July 28, 2023 [3pm UTC](https://www.timeanddate.com/worldclock/converter.html?iso=20230728T150000&p1=1440) ODD Friday
-* June 29, 2023 [3pm UTC](https://www.timeanddate.com/worldclock/converter.html?iso=20230629T150000&p1=1440) ODD Thursday
-* May 26, 2023 [3pm UTC](https://www.timeanddate.com/worldclock/converter.html?iso=20230526T150000&p1=1440) ODD Friday
-* Apr 27, 2023 [3pm UTC](https://www.timeanddate.com/worldclock/converter.html?iso=20230427T150000&p1=1440) ODD Thursday
-* March 31, 2023 [3pm UTC](https://www.timeanddate.com/worldclock/converter.html?iso=20230331T150000&p1=1440) ODD Friday
-* February 23, 2023 [4pm UTC](https://www.timeanddate.com/worldclock/converter.html?iso=20230223T160000&p1=1440) ODD Thursday
-* January 27, 2023 [4pm UTC](https://www.timeanddate.com/worldclock/converter.html?iso=20230127T160000&p1=1440) ODD Friday
+* July 26, 2024 [3pm UTC](https://www.timeanddate.com/worldclock/converter.html?iso=20240726T150000&p1=1440&p2=994&p3=43) ODD Friday
+* June 27, 2024 [3pm UTC](https://www.timeanddate.com/worldclock/converter.html?iso=20240627T150000&p1=1440&p2=994&p3=43) ODD Thursday
+* May 31, 2024 [3pm UTC](https://www.timeanddate.com/worldclock/converter.html?iso=20240531T150000&p1=1440&p2=994&p3=43) ODD Friday
+* May 20–23, 2024: MEC conference
+* Apr 25, 2024 [3pm UTC](https://www.timeanddate.com/worldclock/converter.html?iso=20240425T150000&p1=1440&p2=994&p3=43) ODD Thursday
+* March 22, 2024 [4pm UTC](https://www.timeanddate.com/worldclock/converter.html?iso=20240322T160000&p1=1440&p2=994&p3=43) ODD Friday
+* February 29, 2024 [4pm UTC](https://www.timeanddate.com/worldclock/converter.html?iso=20240229T160000&p1=1440&p2=994&p3=43) ODD Thursday
+* January 26, 2024 [4pm UTC](https://www.timeanddate.com/worldclock/converter.html?iso=20240126T160000&p1=1440&p2=994&p3=43) ODD Friday
+* January 18–20, 2024: Developer workshop, Vienna
+
+
+<details>
+  <summary>ODD meetings in 2023</summary>
+
+* November 24, 2023 <a href="https://www.timeanddate.com/worldclock/converter.html?iso=20231124T150000&p1=1440">4pm UTC</a> ODD Friday <br/>
+* October 26, 2023 <a href="https://www.timeanddate.com/worldclock/converter.html?iso=20231026T150000&p1=1440">3pm UTC</a> ODD Thursday <br/>
+* September 28, 2023 <a href="https://www.timeanddate.com/worldclock/converter.html?iso=20230929T150000&p1=1440">2pm UTC</a> ODD Friday <br/>
+* September 4–8, 2023: TEI/MEC conference <br/>
+* August: summer break <br/>
+* July 28, 2023 <a href="https://www.timeanddate.com/worldclock/converter.html?iso=20230728T150000&p1=1440">3pm UTC</a> ODD Friday <br/>
+* June 29, 2023 <a href="https://www.timeanddate.com/worldclock/converter.html?iso=20230629T150000&p1=1440">3pm UTC</a> ODD Thursday <br/>
+* May 26, 2023 <a href="https://www.timeanddate.com/worldclock/converter.html?iso=20230526T150000&p1=1440">3pm UTC</a> ODD Friday <br/>
+* Apr 27, 2023 <a href="https://www.timeanddate.com/worldclock/converter.html?iso=20230427T150000&p1=1440">3pm UTC</a> ODD Thursday <br/>
+* March 31, 2023 <a href="https://www.timeanddate.com/worldclock/converter.html?iso=20230331T150000&p1=1440">3pm UTC</a> ODD Friday <br/>
+* February 23, 2023 <a href="https://www.timeanddate.com/worldclock/converter.html?iso=20230223T160000&p1=1440">4pm UTC</a> ODD Thursday <br/>
+* January 27, 2023 <a href="https://www.timeanddate.com/worldclock/converter.html?iso=20230127T160000&p1=1440">4pm UTC</a> ODD Friday <br/>
+</details>
 
 <details>
   <summary>ODD meetings in 2022</summary>
