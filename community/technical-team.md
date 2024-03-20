@@ -31,7 +31,7 @@ MEI ODD Fridays and ODD Thursdays are a monthly video conference call with anyon
 
 If a proposal doesn't match these two criteria, it will be postponed and should be revised for the next ODD meeting.
 
-We aim to organize, schedule, and document these meetings with the help of a GitHub dashboard: https://github.com/orgs/music-encoding/projects/2. We also plan to send out timely reminders in advance of these meetings. The intention is to increase both comprehensibility and transparency of the MEI development workflow, and make it more accessible and inviting to newcomers.
+We aim to organize, schedule, and document these meetings with the help of a GitHub dashboard: [https://github.com/orgs/music-encoding/projects/9](https://github.com/orgs/music-encoding/projects/9). We also plan to send out timely reminders in advance of these meetings. The intention is to increase both comprehensibility and transparency of the MEI development workflow, and make it more accessible and inviting to newcomers.
 
 The schedule for these developer workshops is the _last Friday of every odd month_, and _last Thursday of every even month_, at 3pm UTC (in summer) resp. 4pm UTC (in winter). Calls are scheduled for:
 
