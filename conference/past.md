@@ -27,7 +27,8 @@ title: "Past Music Encoding Conferences"
                   src="{% if conference.image contains '://' %}
                   {{ conference.image }}
                   {% else %}
-                  {{ site.baseurl }}/images/{{ conference.image }}"/>
+                  {{ site.baseurl }}/images/{{ conference.image }}
+                  {%  endif %}"/>
               {% else %}
                 <div class="hero hero-sm bg-primary text-light">
                   <div class="hero-body">
