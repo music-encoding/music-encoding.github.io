@@ -5,7 +5,7 @@ subtitle: "Converter framework for MEI files"
 image: https://github.com/cemfi/meico/raw/master/figures/meico_title_small.png
 website: http://www.cemfi.de/
 repository: https://github.com/cemfi/meico
-tags: [conversion, xslt, sonification]
+tags: [conversion, sonification, xslt]
 ---
 
 [meico](https://github.com/cemfi/meico) is a converter framework for MEI files that is being developed at the Center of Music and Film Informatics, Detmold ([cemfi](http://www.cemfi.de/)). It translates MEI data into a series of formats relevant to many other applications. It can be used as a Java programming framework or standalone app. For the latter case, the meicoApp provides a command line interface as well as an elaborate graphical user interface. Meico's feature list includes
