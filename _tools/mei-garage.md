@@ -5,7 +5,7 @@ subtitle: "Schema customization service"
 image: "https://custom.music-encoding.org/img/meigarage.logo.166c7942.png"
 website: https://custom.music-encoding.org
 repository: https://github.com/Edirom/MEIGarage
-tags: [developers, validation, documentation]
+tags: [conversion, developers, documentation, validation]
 ---
 
 [MEI Garage](http://custom.music-encoding.org) is an online service that makes it easy to generate a schema (or other output formats) from an MEI source file and a customization file.
