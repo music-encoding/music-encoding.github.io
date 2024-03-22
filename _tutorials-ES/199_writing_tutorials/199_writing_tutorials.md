@@ -1,7 +1,7 @@
 ---
 layout: tutorials-ES
 type: tutorial-ES
-name: "Escribir tutoriales"
+name: "META: Escribir tutoriales"
 fullname: "Una introducción a la escritura de tutoriales MEI"
-data: "tutorials.json"
+data: "199_writing_tutorials.json"
 ---
