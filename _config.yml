@@ -66,7 +66,7 @@ menu:
             url: '/hosting-guidelines.html'
           - id: code-of-conduct
             label: 'Code of conduct'
-            url: '/code-of-conduct.html'        
+            url: '/code-of-conduct.html'
     - id: resources
       label: 'Resources'
       url: '/resources'
@@ -110,6 +110,9 @@ menu:
 
 collections:
   projects:
+    output: true
+    permalink: /:collection/:name
+  tools:
     output: true
     permalink: /:collection/:name
   tutorials:
