@@ -32,7 +32,7 @@ title: "Past Music Encoding Conferences"
               {% else %}
                 <div class="hero hero-sm bg-primary text-light">
                   <div class="hero-body">
-                    <h1>{{ conference.tag }}</h1>
+                    <h3>{{ conference.tag }}</h3>
                   </div>
                 </div>
               {% endif %}
