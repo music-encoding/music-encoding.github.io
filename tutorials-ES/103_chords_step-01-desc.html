@@ -1,0 +1,22 @@
+<div>
+    <p class="tutorialGoal-ES">
+        Primer paso: proporcionar algunas notas para un acorde.
+    </p>
+    <p>
+        En MEI, el concepto de acorde significa que "dos o más notas suenan simultáneamente en la misma capa con la misma duración (véase <a href="https://music-encoding.org/guidelines/v4/elements/chord.html" target="_blank" rel="noopener, noreferrer">Especificación de los elementos</a>). Por lo tanto, un acorde se forma a partir de dos o más notas que perteneces a la misma voz (capa) y tienen una estructura rítmica idéntica (duración). (Hay casos donde las notas de un acorde no tienen la misma duración; sin embargo, estos casos no son cubiertos por este tutorial básico.)
+    </p>
+    <p>
+        Para poder codificar ese "sonido simultáneo" en MEI, se utiliza el elemento <code>&lt;chord&gt;</code>. El uso es bastante claro: muchos elementos <code>&lt;note&gt;</code> dentro de la misma capa se cierran con un elemento <code>&lt;chord&gt;</code> y el atributo de duración (@dur) pasa del elemento <code>&lt;note&gt;</code> al elemento <code>&lt;chord&gt;</code> (puesto que la duración es la misma para todas las notas).
+    </p>
+    <p class="task-ES">
+        En el editor de abajo, por favor introduce los siguientes tres elementos <code>&lt;note&gt;</code>:</p>
+        <ul>
+            <li><code>&lt;note pname="e" oct="4" dur="4"/&gt;</code></li>
+            <li><code>&lt;note pname="g" oct="4" dur="4"/&gt;</code></li>
+            <li><code>&lt;note pname="c" oct="5" dur="4"/&gt;</code></li>
+        </ul>
+
+    <p>
+        A continuación verás tres notas renderizadas secuencialmente. Esto aún no parece un acorde; pero no te desanimes, que nos ocuparemos de esto en el siguiente paso. Por ahora, quizás quieras divertirte un rato cambiando los valores de los atributos para ver cómo influyen con el renderizado. También puedes ver consejos en el editor sobre cómo escribir el código correcto (pulsa en "mostrar pista"). Cuando quieras, asegúrate de ingresar el código correcto en el editor y después pulsa el botón de "continuar" en la parte de abajo a la derecha.
+    </p>
+</div>

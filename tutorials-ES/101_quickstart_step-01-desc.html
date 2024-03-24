@@ -1,0 +1,11 @@
+<div>
+    <p>Para codificar una nota, es necesario registrar toda la información relevante de forma que sea legible para un ordenador. Dependiendo de las necesidades de un proyecto, dicha información relevante puede variar; pero, para el propósito de esta introducción, vamos a establecer la información más básica de una nota: su tono y duración. Para expresar el tono, el MEI utiliza el <a href="https://es.wikipedia.org/wiki/%C3%8Dndice_ac%C3%BAstico_cient%C3%ADfico" target="_blank" rel="noopener, noreferrer">índice acústico científico</a>, en el que el do central se expresa como "C4". Sin embargo, MEI separa el tono en dos datos distintos: El nombre del tono (que en MEI se llama <code>@pname</code>) y la octava (<code>@oct</code>). Esta separación se debe a varias razones que no son relevantes en este momento. Es importante tener en cuenta que los nombres de los tonos se escriben exclusivamente en minúsculas en MEI.</p>
+
+    <p>El otro dato importante es, por supuesto, el de la duración (<code>@dur</code>). Aquí se utilizan números enteros para indicar la duración de una nota. A una redonda se le asigna un valor de <code>1</code>, una blanca <code>2</code>, una negra <code>4</code> y así sucesivamente.</p>
+
+    <p class="task-ES">Introduce el siguiente código en el cuadro del editor: <code>&lt;note pname="e" oct="4" dur="4"/&gt;</code>. A continuación, deberías ver la nota renderizada. Puedes jugar un poco con los valores de los atributos para ver cómo influyen en la renderización. También verás consejos sobre cómo escribir el código correcto. Cuando quieras, asegúrate de ingresar el código correcto en el editor y después pulsa el botón de "continuar" en la parte de abajo a la derecha.</p>
+
+    <p>
+        P.D.: Si no estás muy familiarizado con XML, siempre que nos referimos a los atributos, anteponemos su nombre con el signo @. Se trata de una práctica habitual y tiene su origen en el lenguaje <a href="https://es.wikipedia.org/wiki/XPath" target="_blank" rel="noopener, noreferrer">XPath</a>. Cuando los escribas en XML, no debes incluir el signo @, sino escribir sólo el nombre del atributo. No dudes en echar un vistazo a nuestro <a href="/tutorials-ES/100-structure.html" target="_blank" rel="noopener, noreferrer">tutorial sobre los fundamentos de XML</a>.
+    </p>
+</div>

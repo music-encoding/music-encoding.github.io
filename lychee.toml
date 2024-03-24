@@ -1,0 +1,102 @@
+#############################  Disclaimer  #############################
+
+# Configuration file for lychee link checker.
+#
+# Further information and explanation of possible options can be found
+# at https://github.com/lycheeverse/lychee/.
+#
+# Adapted from example config file: https://github.com/lycheeverse/lychee/blob/master/lychee.example.toml
+
+#############################  Display  #############################
+
+# Verbose program output
+# Accepts log level: "error", "warn", "info", "debug", "trace"
+verbose = "info"
+
+#############################  Runtime  #############################
+
+# Maximum number of concurrent link checks.
+max_concurrency = 4
+
+#############################  Requests  ############################
+
+# Comma-separated list of accepted status codes for valid links.
+accept = [200, 429]
+
+# Remap URI matching pattern to different URI.
+remap = [
+    # Comparison pages
+    'file:///home/runner/work/music-encoding.github.io/music-encoding.github.io/archive/comparison-(.+).html https://github.com/music-encoding/music-encoding.github.io/tree/gh-pages/archive/comparison-$1.html',
+
+    # Tutorial pages (HTML & PNG)
+    'file:///home/runner/work/music-encoding.github.io/music-encoding.github.io/_tutorials/(.*/)?(.+).(html|png) https://github.com/music-encoding/music-encoding.github.io/tree/gh-pages/tutorials/$2.$3',
+
+    # Spanish tutorial pages (HTML)
+    'file:///home/runner/work/music-encoding.github.io/music-encoding.github.io/_tutorials-ES/(.*/)?(.+).html https://github.com/music-encoding/music-encoding.github.io/tree/gh-pages/tutorials-ES/$2.html',
+
+    # Spanish tutorial pages (PNG) -> reuses images from english version
+    'file:///home/runner/work/music-encoding.github.io/music-encoding.github.io/_tutorials-ES/(.*/)?(.+).png https://github.com/music-encoding/music-encoding.github.io/tree/gh-pages/tutorials/$2.png',
+
+    # MEI Basic
+    'https://github.com/music-encoding/music-encoding/tree/basic https://github.com/music-encoding/music-encoding/commit/b50748ce537b43e1527791fb41e8c28aa1582cdb',
+
+    # By-laws
+    'http://music-encoding.org/community/mei-organization/mei-by-laws/ https://music-encoding.org/community/mei-by-laws.html',
+
+    # Proceedings repo
+    'http://music-encoding.org/proceedings https://github.com/music-encoding/mec-proceedings',
+
+    # Web archived pages
+    '^http://music-encoding.org/community/conference/tours17/program/$ https://web.archive.org/web/20170511140944/http://music-encoding.org/community/conference/tours17/program',
+    '^https://sites.tufts.edu/sslbc2019/code-of-conduct/$ https://web.archive.org/web/20191209194534/http://sites.tufts.edu/sslbc2019/code-of-conduct/',
+    '^https://sites.tufts.edu/sslbc2019/code-of-conduct/attendee-procedure/$ https://web.archive.org/web/20230131171139/https://sites.tufts.edu/sslbc2019/code-of-conduct/attendee-procedure/',
+    '^https://www.annakijas.com/assets/pdf/2022-Kijas_CV.pdf$ https://web.archive.org/web/20230205005718/https://www.annakijas.com/assets/pdf/2022-Kijas_CV.pdf',
+]
+
+#############################  Exclusions  ##########################
+
+# Exclude these URLs from checking (supports regex).
+exclude = [ 
+    # custom User files
+    'file:///Users/*',
+
+    # former Conftool pages
+    'https://www.conftool.net/music-encoding2022/*',
+
+    # these DOIs are not correctly resolved (probably too many redirects)
+    'https://doi.org/10.1080/01411896.2023.2231837',
+    'https://doi.org/10.13140/RG.2.2.15014.93760',
+    'https://doi.org/10.15463/music-1',
+
+    # page outdated, but used in candidate statements
+    'https://arsmusicae.org',
+
+    # X is always failing because it’s only available to logged in users
+    'https://twitter.com/MusicEncoding',
+]
+
+# Exclude these filesystem paths from getting checked.
+exclude_path = [
+    # folders and pages with Jekyll liquids
+    '_includes',
+    '_layouts',
+    'index.html',
+    'community/projects-users.md',
+    'conference/past.md',
+
+    # Jekyll's site folder
+    '_site',
+    
+    # past conferences may contain outdated links
+    '_conferences/2018',
+    '_conferences/2019',
+    '_conferences/2020',
+    '_conferences/2021',
+    '_conferences/2022',
+]
+
+# Exclude loopback IP address range and localhost from checking.
+exclude_loopback = true
+
+# Do not check mail addresses
+include_mail = false

@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Lost Voices</title>
+    <meta name="description" content="">
+
+    <link rel="stylesheet" href="/css/main.css">
+    <!-- syntax highlighting CSS -->
+    <link rel="stylesheet" href="/css/syntax.css" />
+    <script type="text/javascript" src="/js/carousel.js"></script>
+    <script type="text/javascript">
+      document.addEventListener("DOMContentLoaded", event => {
+        const indexCarousel = document.getElementById("index-carousel");
+        if (indexCarousel !== null) {
+          animateCarousel(indexCarousel, 3000);
+          indexCarousel.addEventListener("mouseover", event => {
+            stopCarouselAnimation(indexCarousel);
+          });
+          indexCarousel.addEventListener("mouseout", event => {
+            animateCarousel(indexCarousel, 3000);
+          });
+        }
+      });
+    </script>
+</head>
+
+
+  <body>
+
+    <!-- Make sure to mirror changes in the guidelines repository in _include/header.html when necessary -->
+<header class="navbar">
+  <div class="navbar-section">
+    <a class="navbar-brand" href="https://music-encoding.org">
+      <img src="/pix/meilogo-inverted.png" alt="MEI logo"/>
+    </a>
+    <div class="hide-lg">
+      
+    <div class="dropdown dropdownCustomMenuToggle">
+        
+            <a href="/about" class="btn btn-link top-menu-link" tabindex="0">
+                About
+            </a>
+        
+    </div>
+
+    <div class="dropdown dropdownCustomMenuToggle">
+        
+            <a href="#" class="btn btn-link dropdown-toggle top-menu-link" tabindex="1">
+                Community <i class="icon icon-caret"></i>
+            </a>
+
+            
+             <ul class="menu"> 
+                <li class="menu-item">
+                    <a href="/community/projects-users.html" class="btn btn-link text-left menu-link">
+                        Projects / Users
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/community/news-events.html" class="btn btn-link text-left menu-link">
+                        News / Events
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/community/community-contacts.html" class="btn btn-link text-left menu-link">
+                        Community Contacts
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/community/interest-groups.html" class="btn btn-link text-left menu-link">
+                        Interest Groups
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/community/technical-team.html" class="btn btn-link text-left menu-link">
+                        Technical Team
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/community/mei-board.html" class="btn btn-link text-left menu-link">
+                        MEI Board
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/community/mei-by-laws.html" class="btn btn-link text-left menu-link">
+                        MEI By-laws
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/community/code-of-conduct.html" class="btn btn-link text-left menu-link">
+                        Code of Conduct
+                    </a>
+                </li>
+                 </ul> 
+            
+
+        
+    </div>
+
+    <div class="dropdown dropdownCustomMenuToggle">
+        
+            <a href="#" class="btn btn-link dropdown-toggle top-menu-link" tabindex="2">
+                Conference <i class="icon icon-caret"></i>
+            </a>
+
+            
+             <ul class="menu"> 
+                <li class="menu-item">
+                    <a href="/conference/2024" class="btn btn-link text-left menu-link">
+                        MEC 2024
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/conference/past.html" class="btn btn-link text-left menu-link">
+                        Past Conferences
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/conference/proceedings.html" class="btn btn-link text-left menu-link">
+                        Proceedings
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/conference/awards.html" class="btn btn-link text-left menu-link">
+                        MEC Awards
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/conference/hosting-guidelines.html" class="btn btn-link text-left menu-link">
+                        Hosting Guidelines
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/conference/code-of-conduct.html" class="btn btn-link text-left menu-link">
+                        Code of conduct
+                    </a>
+                </li>
+                 </ul> 
+            
+
+        
+    </div>
+
+    <div class="dropdown dropdownCustomMenuToggle">
+        
+            <a href="#" class="btn btn-link dropdown-toggle top-menu-link" tabindex="3">
+                Resources <i class="icon icon-caret"></i>
+            </a>
+
+            
+             <ul class="menu"> 
+                <li class="menu-item">
+                    <a href="/resources/background.html" class="btn btn-link text-left menu-link">
+                        Background
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/resources/bibliography.html" class="btn btn-link text-left menu-link">
+                        Bibliography
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/resources/pedagogy.html" class="btn btn-link text-left menu-link">
+                        Pedagogy & Praxis
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/resources/schemas.html" class="btn btn-link text-left menu-link">
+                        Schemas and Namespace
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/resources/tools.html" class="btn btn-link text-left menu-link">
+                        Tools
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/resources/tutorials.html" class="btn btn-link text-left menu-link">
+                        Tutorials
+                    </a>
+                </li>
+                 </ul> 
+            
+
+        
+    </div>
+
+    <div class="dropdown dropdownCustomMenuToggle">
+        
+            <a href="#" class="btn btn-link dropdown-toggle top-menu-link" tabindex="4">
+                Documentation <i class="icon icon-caret"></i>
+            </a>
+
+            
+             <ul class="menu"> 
+                <li class="menu-item">
+                    <a href="/guidelines/v5" class="btn btn-link text-left menu-link">
+                        MEI 5 (latest release)
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/guidelines/dev" class="btn btn-link text-left menu-link">
+                        Development version
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/guidelines/v4" class="btn btn-link text-left menu-link">
+                        MEI 4
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/guidelines/v3" class="btn btn-link text-left menu-link">
+                        MEI 3
+                    </a>
+                </li>
+                 </ul> 
+            
+
+        
+    </div>
+
+    <div class="dropdown dropdownCustomMenuToggle">
+        
+            <a href="/archive" class="btn btn-link top-menu-link" tabindex="5">
+                Archive
+            </a>
+        
+    </div>
+
+
+    </div>
+  </div>
+  <div class="navbar-section" id="socialLinks">
+    <a class="twitterLink" target="_blank" href="https://twitter.com/MusicEncoding">
+      <img src="/pix/twitter.png" alt="Twitter" class="logo"/>
+    </a>
+    <a class="githubLink" target="_blank" href="https://github.com/music-encoding">
+      <img src="/pix/github.png" alt="GitHub" class="logo"/>
+    </a>
+    <a class="slackLink" target="_blank" href="https://music-encoding.slack.com/">
+      <img src="/pix/slack.png" alt="Slack" class="logo"/>
+    </a>
+  </div>
+    <div id="menu-accordion" class="accordion-container dropdown-toggle show-lg column col-12">
+  <div class="accordion">
+    <input id="accordion-toggle" type="checkbox" name="accordion-checkbox" hidden=""/>
+    <label class="accordion-header c-hand" for="accordion-toggle">
+      <i class="icon icon-menu"></i>
+    </label>
+
+    <div class="accordion-body">
+      <ul class="menu menu-nav">
+        
+        <li class="menu-item">
+          <div class="accordion menu">
+            <input id="accordion-About" type="checkbox" name="accordion-checkbox" hidden=""/>
+            <label class="accordion-header c-hand" for="accordion-About">
+              
+                  <a href="/about">
+                      About
+                  </a>
+              
+            </label>
+            
+          </div>
+        </li>
+        
+        <li class="menu-item">
+          <div class="accordion menu">
+            <input id="accordion-Community" type="checkbox" name="accordion-checkbox" hidden=""/>
+            <label class="accordion-header c-hand" for="accordion-Community">
+              
+                Community
+              
+            </label>
+            
+            <div class="accordion-body">
+              <ul class="menu menu-nav">
+                
+                   <li><ul class="menu"> 
+                  <li class="menu-item"><a href="/community/projects-users.html">Projects / Users</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/community/news-events.html">News / Events</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/community/community-contacts.html">Community Contacts</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/community/interest-groups.html">Interest Groups</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/community/technical-team.html">Technical Team</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/community/mei-board.html">MEI Board</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/community/mei-by-laws.html">MEI By-laws</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/community/code-of-conduct.html">Code of Conduct</a></li>
+                   </ul></li> 
+                
+              </ul>
+            </div>
+            
+          </div>
+        </li>
+        
+        <li class="menu-item">
+          <div class="accordion menu">
+            <input id="accordion-Conference" type="checkbox" name="accordion-checkbox" hidden=""/>
+            <label class="accordion-header c-hand" for="accordion-Conference">
+              
+                Conference
+              
+            </label>
+            
+            <div class="accordion-body">
+              <ul class="menu menu-nav">
+                
+                   <li><ul class="menu"> 
+                  <li class="menu-item"><a href="/conference/2024">MEC 2024</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/conference/past.html">Past Conferences</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/conference/proceedings.html">Proceedings</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/conference/awards.html">MEC Awards</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/conference/hosting-guidelines.html">Hosting Guidelines</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/conference/code-of-conduct.html">Code of conduct</a></li>
+                   </ul></li> 
+                
+              </ul>
+            </div>
+            
+          </div>
+        </li>
+        
+        <li class="menu-item">
+          <div class="accordion menu">
+            <input id="accordion-Resources" type="checkbox" name="accordion-checkbox" hidden=""/>
+            <label class="accordion-header c-hand" for="accordion-Resources">
+              
+                Resources
+              
+            </label>
+            
+            <div class="accordion-body">
+              <ul class="menu menu-nav">
+                
+                   <li><ul class="menu"> 
+                  <li class="menu-item"><a href="/resources/background.html">Background</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/resources/bibliography.html">Bibliography</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/resources/pedagogy.html">Pedagogy & Praxis</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/resources/schemas.html">Schemas and Namespace</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/resources/tools.html">Tools</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/resources/tutorials.html">Tutorials</a></li>
+                   </ul></li> 
+                
+              </ul>
+            </div>
+            
+          </div>
+        </li>
+        
+        <li class="menu-item">
+          <div class="accordion menu">
+            <input id="accordion-Documentation" type="checkbox" name="accordion-checkbox" hidden=""/>
+            <label class="accordion-header c-hand" for="accordion-Documentation">
+              
+                Documentation
+              
+            </label>
+            
+            <div class="accordion-body">
+              <ul class="menu menu-nav">
+                
+                   <li><ul class="menu"> 
+                  <li class="menu-item"><a href="/guidelines/v5">MEI 5 (latest release)</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/guidelines/dev">Development version</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/guidelines/v4">MEI 4</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/guidelines/v3">MEI 3</a></li>
+                   </ul></li> 
+                
+              </ul>
+            </div>
+            
+          </div>
+        </li>
+        
+        <li class="menu-item">
+          <div class="accordion menu">
+            <input id="accordion-Archive" type="checkbox" name="accordion-checkbox" hidden=""/>
+            <label class="accordion-header c-hand" for="accordion-Archive">
+              
+                  <a href="/archive">
+                      Archive
+                  </a>
+              
+            </label>
+            
+          </div>
+        </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+
+</header>
+
+
+    <div class="container grid-xl content">
+        <div class="columns">
+    <div class="column col-8">
+        <h2>The Lost Voices Project</h2>
+        <h4 style="font-style: italic;">The Lost Voices Project: A Digital Domain for Renaissance Music</h4>
+        <ul style="list-style-type: disclosure-closed; margin-left: 0;">
+        
+            <li><strong>Richard Freedman, Haverford College</strong></li>
+        
+            <li><strong>Philippe Vendrix, Centre d'Études Supérieures de la Renaissance (CESR), Tours</strong></li>
+        
+        </ul>
+
+        
+            <img src="/images/projects/lost-voices.png" alt="The Lost Voices Project" style="float: right; margin-left: 10px; margin-bottom: 5px; width: 300px;">
+        
+        <p>The <a href="http://digitalduchemin.org/">Lost Voices project</a> explores a little-studied repertory of sixteen sets of French polyphonic songs published in Paris by Nicolas Du Chemin between 1549 and 1568. Digital technologies are put to work in the service of these books in ways that will engender a broader discussion about style and structure in the sixteenth-century chanson.</p>
+
+<p>This project features digital facsimiles of the set, freely available for display and download; complete modern editions of all the chansons, engraved as high quality PDF files; essays about the books, the music, and their historical context; and a searchable database of analytic observations about the music.</p>
+
+<p>The project also allows users to contribute reconstructions of incomplete chansons (over 100 of them, to date). These are also available for dynamic display and comparison. All of these materials are combined in an innovative browser-based interface that permits users to search through the repertory, viewing (and collecting) musical excerpts of interest.</p>
+
+<p>The MEI standard is a central resource for the project, serving as a medium of exchange between our original transcriptions (in Sibelius) and our dynamic editions (in any browser, using VexFlow). In addition, MEI is used to keep track of variant readings, emendations, and reconstructed voice parts contributed by different authors and editors. Various workflows and software tools have been developed that allow one to move back and forth among the transcriptions, MEI files, and dynamic renderings using Django (CMS), SOLR, and related technologies. All work is open-source, and available for re-use.</p>
+
+    </div>
+    <div class="column col-4">
+        <h2>Other projects</h2>
+        
+        
+        
+        <div class="tile">
+          <div class="tile-icon">
+            <div class="arrow-tile-icon">
+              <a href="/projects/aruspix.html" class="icon icon-forward centered" title="Aruspix"></a>
+            </div>
+          </div>
+          <div class="tile-content">
+            <p class="tile-title"><a href="/projects/aruspix.html" title="Aruspix">Aruspix</a></p>
+          </div>
+        </div>
+        
+        
+        
+        <div class="tile">
+          <div class="tile-icon">
+            <div class="arrow-tile-icon">
+              <a href="/projects/baz-ga.html" class="icon icon-forward centered" title="Bernd Alois Zimmermann-Complete Edition"></a>
+            </div>
+          </div>
+          <div class="tile-content">
+            <p class="tile-title"><a href="/projects/baz-ga.html" title="Bernd Alois Zimmermann-Complete Edition">Bernd Alois Zimmermann-Complete Edition</a></p>
+          </div>
+        </div>
+        
+        
+        
+        <div class="tile">
+          <div class="tile-icon">
+            <div class="arrow-tile-icon">
+              <a href="/projects/beethoven.html" class="icon icon-forward centered" title="Beethovens Werkstatt"></a>
+            </div>
+          </div>
+          <div class="tile-content">
+            <p class="tile-title"><a href="/projects/beethoven.html" title="Beethovens Werkstatt">Beethovens Werkstatt</a></p>
+          </div>
+        </div>
+        
+        
+        
+        <div class="tile">
+          <div class="tile-icon">
+            <div class="arrow-tile-icon">
+              <a href="/projects/beggars-opera.html" class="icon icon-forward centered" title="The Beggar’s Opera:  A Site for Scholars, Performers, Teachers and Students"></a>
+            </div>
+          </div>
+          <div class="tile-content">
+            <p class="tile-title"><a href="/projects/beggars-opera.html" title="The Beggar’s Opera:  A Site for Scholars, Performers, Teachers and Students">The Beggar’s Opera:  A Site for Scholars, Performers, Teachers and Students</a></p>
+          </div>
+        </div>
+        
+        
+        
+        <div class="tile">
+          <div class="tile-icon">
+            <div class="arrow-tile-icon">
+              <a href="/projects/cmo.html" class="icon icon-forward centered" title="Corpus Musicae Ottomanicae"></a>
+            </div>
+          </div>
+          <div class="tile-content">
+            <p class="tile-title"><a href="/projects/cmo.html" title="Corpus Musicae Ottomanicae">Corpus Musicae Ottomanicae</a></p>
+          </div>
+        </div>
+        
+        
+        
+        <div class="tile">
+          <div class="tile-icon">
+            <div class="arrow-tile-icon">
+              <a href="/projects/cnw.html" class="icon icon-forward centered" title="Carl Nielsen's Works"></a>
+            </div>
+          </div>
+          <div class="tile-content">
+            <p class="tile-title"><a href="/projects/cnw.html" title="Carl Nielsen's Works">Carl Nielsen's Works</a></p>
+          </div>
+        </div>
+        
+        
+        
+        <div class="tile">
+          <div class="tile-icon">
+            <div class="arrow-tile-icon">
+              <a href="/projects/corpus-monodicum.html" class="icon icon-forward centered" title="Corpus monodicum"></a>
+            </div>
+          </div>
+          <div class="tile-content">
+            <p class="tile-title"><a href="/projects/corpus-monodicum.html" title="Corpus monodicum">Corpus monodicum</a></p>
+          </div>
+        </div>
+        
+        
+        
+        <div class="tile">
+          <div class="tile-icon">
+            <div class="arrow-tile-icon">
+              <a href="/projects/crimproject.html" class="icon icon-forward centered" title="CRIM (Citations: The Renaissance Imitation Mass)"></a>
+            </div>
+          </div>
+          <div class="tile-content">
+            <p class="tile-title"><a href="/projects/crimproject.html" title="CRIM (Citations: The Renaissance Imitation Mass)">CRIM (Citations: The Renaissance Imitation Mass)</a></p>
+          </div>
+        </div>
+        
+        
+        
+        <div class="tile">
+          <div class="tile-icon">
+            <div class="arrow-tile-icon">
+              <a href="/projects/delius.html" class="icon icon-forward centered" title="Catalogue of the Works of Frederick Delius"></a>
+            </div>
+          </div>
+          <div class="tile-content">
+            <p class="tile-title"><a href="/projects/delius.html" title="Catalogue of the Works of Frederick Delius">Catalogue of the Works of Frederick Delius</a></p>
+          </div>
+        </div>
+        
+        
+        
+        <div class="tile">
+          <div class="tile-icon">
+            <div class="arrow-tile-icon">
+              <a href="/projects/detmold-theatre.html" class="icon icon-forward centered" title="Detmold Court Theatre"></a>
+            </div>
+          </div>
+          <div class="tile-content">
+            <p class="tile-title"><a href="/projects/detmold-theatre.html" title="Detmold Court Theatre">Detmold Court Theatre</a></p>
+          </div>
+        </div>
+        
+        
+        
+        <div class="tile">
+          <div class="tile-icon">
+            <div class="arrow-tile-icon">
+              <a href="/projects/digital-interaktive-mozart-edition.html" class="icon icon-forward centered" title="Digital-interaktive Mozart-Edition (DIME)"></a>
+            </div>
+          </div>
+          <div class="tile-content">
+            <p class="tile-title"><a href="/projects/digital-interaktive-mozart-edition.html" title="Digital-interaktive Mozart-Edition (DIME)">Digital-interaktive Mozart-Edition (DIME)</a></p>
+          </div>
+        </div>
+        
+        
+        
+        <div class="tile">
+          <div class="tile-icon">
+            <div class="arrow-tile-icon">
+              <a href="/projects/edirom.html" class="icon icon-forward centered" title="Edirom"></a>
+            </div>
+          </div>
+          <div class="tile-content">
+            <p class="tile-title"><a href="/projects/edirom.html" title="Edirom">Edirom</a></p>
+          </div>
+        </div>
+        
+        
+        
+        <div class="tile">
+          <div class="tile-icon">
+            <div class="arrow-tile-icon">
+              <a href="/projects/ema.html" class="icon icon-forward centered" title="Enhancing Music Notation Addressability"></a>
+            </div>
+          </div>
+          <div class="tile-content">
+            <p class="tile-title"><a href="/projects/ema.html" title="Enhancing Music Notation Addressability">Enhancing Music Notation Addressability</a></p>
+          </div>
+        </div>
+        
+        
+        
+        <div class="tile">
+          <div class="tile-icon">
+            <div class="arrow-tile-icon">
+              <a href="/projects/furnace-and-fugue.html" class="icon icon-forward centered" title="Furnace and Fugue"></a>
+            </div>
+          </div>
+          <div class="tile-content">
+            <p class="tile-title"><a href="/projects/furnace-and-fugue.html" title="Furnace and Fugue">Furnace and Fugue</a></p>
+          </div>
+        </div>
+        
+        
+        
+        <div class="tile">
+          <div class="tile-icon">
+            <div class="arrow-tile-icon">
+              <a href="/projects/gesualdo.html" class="icon icon-forward centered" title="Gesualdo Online Project"></a>
+            </div>
+          </div>
+          <div class="tile-content">
+            <p class="tile-title"><a href="/projects/gesualdo.html" title="Gesualdo Online Project">Gesualdo Online Project</a></p>
+          </div>
+        </div>
+        
+        
+        
+        <div class="tile">
+          <div class="tile-icon">
+            <div class="arrow-tile-icon">
+              <a href="/projects/haydn-by-hand.html" class="icon icon-forward centered" title="Haydn by Hand"></a>
+            </div>
+          </div>
+          <div class="tile-content">
+            <p class="tile-title"><a href="/projects/haydn-by-hand.html" title="Haydn by Hand">Haydn by Hand</a></p>
+          </div>
+        </div>
+        
+        
+        
+        <div class="tile">
+          <div class="tile-icon">
+            <div class="arrow-tile-icon">
+              <a href="/projects/hispamus.html" class="icon icon-forward centered" title="HISPAMUS"></a>
+            </div>
+          </div>
+          <div class="tile-content">
+            <p class="tile-title"><a href="/projects/hispamus.html" title="HISPAMUS">HISPAMUS</a></p>
+          </div>
+        </div>
+        
+        
+        
+        
+        
+        <div class="tile">
+          <div class="tile-icon">
+            <div class="arrow-tile-icon">
+              <a href="/projects/measuring-polyphony.html" class="icon icon-forward centered" title="Measuring Polyphony"></a>
+            </div>
+          </div>
+          <div class="tile-content">
+            <p class="tile-title"><a href="/projects/measuring-polyphony.html" title="Measuring Polyphony">Measuring Polyphony</a></p>
+          </div>
+        </div>
+        
+        
+        
+        <div class="tile">
+          <div class="tile-icon">
+            <div class="arrow-tile-icon">
+              <a href="/projects/mei-view.html" class="icon icon-forward centered" title="MEI View"></a>
+            </div>
+          </div>
+          <div class="tile-content">
+            <p class="tile-title"><a href="/projects/mei-view.html" title="MEI View">MEI View</a></p>
+          </div>
+        </div>
+        
+        
+        
+        <div class="tile">
+          <div class="tile-icon">
+            <div class="arrow-tile-icon">
+              <a href="/projects/meld.html" class="icon icon-forward centered" title="Music Encoding and Linked Data (MELD)"></a>
+            </div>
+          </div>
+          <div class="tile-content">
+            <p class="tile-title"><a href="/projects/meld.html" title="Music Encoding and Linked Data (MELD)">Music Encoding and Linked Data (MELD)</a></p>
+          </div>
+        </div>
+        
+        
+        
+        <div class="tile">
+          <div class="tile-icon">
+            <div class="arrow-tile-icon">
+              <a href="/projects/omr-plainchant.html" class="icon icon-forward centered" title="OMR for Plainchant"></a>
+            </div>
+          </div>
+          <div class="tile-content">
+            <p class="tile-title"><a href="/projects/omr-plainchant.html" title="OMR for Plainchant">OMR for Plainchant</a></p>
+          </div>
+        </div>
+        
+        
+        
+        <div class="tile">
+          <div class="tile-icon">
+            <div class="arrow-tile-icon">
+              <a href="/projects/rebalancing-music-canon.html" class="icon icon-forward centered" title="Rebalancing the Music Canon"></a>
+            </div>
+          </div>
+          <div class="tile-content">
+            <p class="tile-title"><a href="/projects/rebalancing-music-canon.html" title="Rebalancing the Music Canon">Rebalancing the Music Canon</a></p>
+          </div>
+        </div>
+        
+        
+        
+        <div class="tile">
+          <div class="tile-icon">
+            <div class="arrow-tile-icon">
+              <a href="/projects/sarti.html" class="icon icon-forward centered" title="Sarti Edition"></a>
+            </div>
+          </div>
+          <div class="tile-content">
+            <p class="tile-title"><a href="/projects/sarti.html" title="Sarti Edition">Sarti Edition</a></p>
+          </div>
+        </div>
+        
+        
+        
+        <div class="tile">
+          <div class="tile-icon">
+            <div class="arrow-tile-icon">
+              <a href="/projects/simssa.html" class="icon icon-forward centered" title="SIMSSA"></a>
+            </div>
+          </div>
+          <div class="tile-content">
+            <p class="tile-title"><a href="/projects/simssa.html" title="SIMSSA">SIMSSA</a></p>
+          </div>
+        </div>
+        
+        
+        
+        <div class="tile">
+          <div class="tile-icon">
+            <div class="arrow-tile-icon">
+              <a href="/projects/sounding-tennyson.html" class="icon icon-forward centered" title="Sounding Tennyson"></a>
+            </div>
+          </div>
+          <div class="tile-content">
+            <p class="tile-title"><a href="/projects/sounding-tennyson.html" title="Sounding Tennyson">Sounding Tennyson</a></p>
+          </div>
+        </div>
+        
+        
+        
+        <div class="tile">
+          <div class="tile-icon">
+            <div class="arrow-tile-icon">
+              <a href="/projects/syrinx.html" class="icon icon-forward centered" title="Debussy's Syrinx"></a>
+            </div>
+          </div>
+          <div class="tile-content">
+            <p class="tile-title"><a href="/projects/syrinx.html" title="Debussy's Syrinx">Debussy's Syrinx</a></p>
+          </div>
+        </div>
+        
+        
+    </div>
+</div>
+
+    </div>
+
+    <!-- Make sure to mirror changes in the guidelines repository in _include/footer.html when necessary -->
+<footer>
+  <div class="container">
+    <div class="columns institutions">
+      <div class="column col-12 text-center">
+        <a class="institutionsLink" target="_blank" href="https://www.adwmainz.de">
+          <img src="/pix/akademie-small.png" alt="Akademie der Wissenschaften | Mainz" />
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="text-center">
+    <a class="footerLinks" href="/">Home</a> | <a class="footerLinks" href="/community/community-contacts.html">Contact</a><br/>
+    <small>© Music Encoding Initiative 2024</small>
+  </div>
+</footer>
+
+
+  </body>
+
+</html>

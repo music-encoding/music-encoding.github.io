@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Tools</title>
+    <meta name="description" content="">
+
+    <link rel="stylesheet" href="/css/main.css">
+    <!-- syntax highlighting CSS -->
+    <link rel="stylesheet" href="/css/syntax.css" />
+    <script type="text/javascript" src="/js/carousel.js"></script>
+    <script type="text/javascript">
+      document.addEventListener("DOMContentLoaded", event => {
+        const indexCarousel = document.getElementById("index-carousel");
+        if (indexCarousel !== null) {
+          animateCarousel(indexCarousel, 3000);
+          indexCarousel.addEventListener("mouseover", event => {
+            stopCarouselAnimation(indexCarousel);
+          });
+          indexCarousel.addEventListener("mouseout", event => {
+            animateCarousel(indexCarousel, 3000);
+          });
+        }
+      });
+    </script>
+</head>
+
+
+  <body>
+
+    <!-- Make sure to mirror changes in the guidelines repository in _include/header.html when necessary -->
+<header class="navbar">
+  <div class="navbar-section">
+    <a class="navbar-brand" href="https://music-encoding.org">
+      <img src="/pix/meilogo-inverted.png" alt="MEI logo"/>
+    </a>
+    <div class="hide-lg">
+      
+    <div class="dropdown dropdownCustomMenuToggle">
+        
+            <a href="/about" class="btn btn-link top-menu-link" tabindex="0">
+                About
+            </a>
+        
+    </div>
+
+    <div class="dropdown dropdownCustomMenuToggle">
+        
+            <a href="#" class="btn btn-link dropdown-toggle top-menu-link" tabindex="1">
+                Community <i class="icon icon-caret"></i>
+            </a>
+
+            
+             <ul class="menu"> 
+                <li class="menu-item">
+                    <a href="/community/projects-users.html" class="btn btn-link text-left menu-link">
+                        Projects / Users
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/community/news-events.html" class="btn btn-link text-left menu-link">
+                        News / Events
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/community/community-contacts.html" class="btn btn-link text-left menu-link">
+                        Community Contacts
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/community/interest-groups.html" class="btn btn-link text-left menu-link">
+                        Interest Groups
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/community/technical-team.html" class="btn btn-link text-left menu-link">
+                        Technical Team
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/community/mei-board.html" class="btn btn-link text-left menu-link">
+                        MEI Board
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/community/mei-by-laws.html" class="btn btn-link text-left menu-link">
+                        MEI By-laws
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/community/code-of-conduct.html" class="btn btn-link text-left menu-link">
+                        Code of Conduct
+                    </a>
+                </li>
+                 </ul> 
+            
+
+        
+    </div>
+
+    <div class="dropdown dropdownCustomMenuToggle">
+        
+            <a href="#" class="btn btn-link dropdown-toggle top-menu-link" tabindex="2">
+                Conference <i class="icon icon-caret"></i>
+            </a>
+
+            
+             <ul class="menu"> 
+                <li class="menu-item">
+                    <a href="/conference/2024" class="btn btn-link text-left menu-link">
+                        MEC 2024
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/conference/past.html" class="btn btn-link text-left menu-link">
+                        Past Conferences
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/conference/proceedings.html" class="btn btn-link text-left menu-link">
+                        Proceedings
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/conference/awards.html" class="btn btn-link text-left menu-link">
+                        MEC Awards
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/conference/hosting-guidelines.html" class="btn btn-link text-left menu-link">
+                        Hosting Guidelines
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/conference/code-of-conduct.html" class="btn btn-link text-left menu-link">
+                        Code of conduct
+                    </a>
+                </li>
+                 </ul> 
+            
+
+        
+    </div>
+
+    <div class="dropdown dropdownCustomMenuToggle">
+        
+            <a href="#" class="btn btn-link dropdown-toggle top-menu-link" tabindex="3">
+                Resources <i class="icon icon-caret"></i>
+            </a>
+
+            
+             <ul class="menu"> 
+                <li class="menu-item">
+                    <a href="/resources/background.html" class="btn btn-link text-left menu-link">
+                        Background
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/resources/bibliography.html" class="btn btn-link text-left menu-link">
+                        Bibliography
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/resources/pedagogy.html" class="btn btn-link text-left menu-link">
+                        Pedagogy & Praxis
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/resources/schemas.html" class="btn btn-link text-left menu-link">
+                        Schemas and Namespace
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/resources/tools.html" class="btn btn-link text-left menu-link">
+                        Tools
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/resources/tutorials.html" class="btn btn-link text-left menu-link">
+                        Tutorials
+                    </a>
+                </li>
+                 </ul> 
+            
+
+        
+    </div>
+
+    <div class="dropdown dropdownCustomMenuToggle">
+        
+            <a href="#" class="btn btn-link dropdown-toggle top-menu-link" tabindex="4">
+                Documentation <i class="icon icon-caret"></i>
+            </a>
+
+            
+             <ul class="menu"> 
+                <li class="menu-item">
+                    <a href="/guidelines/v5" class="btn btn-link text-left menu-link">
+                        MEI 5 (latest release)
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/guidelines/dev" class="btn btn-link text-left menu-link">
+                        Development version
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/guidelines/v4" class="btn btn-link text-left menu-link">
+                        MEI 4
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/guidelines/v3" class="btn btn-link text-left menu-link">
+                        MEI 3
+                    </a>
+                </li>
+                 </ul> 
+            
+
+        
+    </div>
+
+    <div class="dropdown dropdownCustomMenuToggle">
+        
+            <a href="/archive" class="btn btn-link top-menu-link" tabindex="5">
+                Archive
+            </a>
+        
+    </div>
+
+
+    </div>
+  </div>
+  <div class="navbar-section" id="socialLinks">
+    <a class="twitterLink" target="_blank" href="https://twitter.com/MusicEncoding">
+      <img src="/pix/twitter.png" alt="Twitter" class="logo"/>
+    </a>
+    <a class="githubLink" target="_blank" href="https://github.com/music-encoding">
+      <img src="/pix/github.png" alt="GitHub" class="logo"/>
+    </a>
+    <a class="slackLink" target="_blank" href="https://music-encoding.slack.com/">
+      <img src="/pix/slack.png" alt="Slack" class="logo"/>
+    </a>
+  </div>
+    <div id="menu-accordion" class="accordion-container dropdown-toggle show-lg column col-12">
+  <div class="accordion">
+    <input id="accordion-toggle" type="checkbox" name="accordion-checkbox" hidden=""/>
+    <label class="accordion-header c-hand" for="accordion-toggle">
+      <i class="icon icon-menu"></i>
+    </label>
+
+    <div class="accordion-body">
+      <ul class="menu menu-nav">
+        
+        <li class="menu-item">
+          <div class="accordion menu">
+            <input id="accordion-About" type="checkbox" name="accordion-checkbox" hidden=""/>
+            <label class="accordion-header c-hand" for="accordion-About">
+              
+                  <a href="/about">
+                      About
+                  </a>
+              
+            </label>
+            
+          </div>
+        </li>
+        
+        <li class="menu-item">
+          <div class="accordion menu">
+            <input id="accordion-Community" type="checkbox" name="accordion-checkbox" hidden=""/>
+            <label class="accordion-header c-hand" for="accordion-Community">
+              
+                Community
+              
+            </label>
+            
+            <div class="accordion-body">
+              <ul class="menu menu-nav">
+                
+                   <li><ul class="menu"> 
+                  <li class="menu-item"><a href="/community/projects-users.html">Projects / Users</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/community/news-events.html">News / Events</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/community/community-contacts.html">Community Contacts</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/community/interest-groups.html">Interest Groups</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/community/technical-team.html">Technical Team</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/community/mei-board.html">MEI Board</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/community/mei-by-laws.html">MEI By-laws</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/community/code-of-conduct.html">Code of Conduct</a></li>
+                   </ul></li> 
+                
+              </ul>
+            </div>
+            
+          </div>
+        </li>
+        
+        <li class="menu-item">
+          <div class="accordion menu">
+            <input id="accordion-Conference" type="checkbox" name="accordion-checkbox" hidden=""/>
+            <label class="accordion-header c-hand" for="accordion-Conference">
+              
+                Conference
+              
+            </label>
+            
+            <div class="accordion-body">
+              <ul class="menu menu-nav">
+                
+                   <li><ul class="menu"> 
+                  <li class="menu-item"><a href="/conference/2024">MEC 2024</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/conference/past.html">Past Conferences</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/conference/proceedings.html">Proceedings</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/conference/awards.html">MEC Awards</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/conference/hosting-guidelines.html">Hosting Guidelines</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/conference/code-of-conduct.html">Code of conduct</a></li>
+                   </ul></li> 
+                
+              </ul>
+            </div>
+            
+          </div>
+        </li>
+        
+        <li class="menu-item">
+          <div class="accordion menu">
+            <input id="accordion-Resources" type="checkbox" name="accordion-checkbox" hidden=""/>
+            <label class="accordion-header c-hand" for="accordion-Resources">
+              
+                Resources
+              
+            </label>
+            
+            <div class="accordion-body">
+              <ul class="menu menu-nav">
+                
+                   <li><ul class="menu"> 
+                  <li class="menu-item"><a href="/resources/background.html">Background</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/resources/bibliography.html">Bibliography</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/resources/pedagogy.html">Pedagogy & Praxis</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/resources/schemas.html">Schemas and Namespace</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/resources/tools.html">Tools</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/resources/tutorials.html">Tutorials</a></li>
+                   </ul></li> 
+                
+              </ul>
+            </div>
+            
+          </div>
+        </li>
+        
+        <li class="menu-item">
+          <div class="accordion menu">
+            <input id="accordion-Documentation" type="checkbox" name="accordion-checkbox" hidden=""/>
+            <label class="accordion-header c-hand" for="accordion-Documentation">
+              
+                Documentation
+              
+            </label>
+            
+            <div class="accordion-body">
+              <ul class="menu menu-nav">
+                
+                   <li><ul class="menu"> 
+                  <li class="menu-item"><a href="/guidelines/v5">MEI 5 (latest release)</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/guidelines/dev">Development version</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/guidelines/v4">MEI 4</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/guidelines/v3">MEI 3</a></li>
+                   </ul></li> 
+                
+              </ul>
+            </div>
+            
+          </div>
+        </li>
+        
+        <li class="menu-item">
+          <div class="accordion menu">
+            <input id="accordion-Archive" type="checkbox" name="accordion-checkbox" hidden=""/>
+            <label class="accordion-header c-hand" for="accordion-Archive">
+              
+                  <a href="/archive">
+                      Archive
+                  </a>
+              
+            </label>
+            
+          </div>
+        </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+
+</header>
+
+
+    <div class="container grid-xl content">
+        <div class="columns">
+    <div class="column col-8">
+
+        <h1 id="official-tools">Official tools</h1>
+
+<h2 id="mei-schema">MEI Schema</h2>
+
+<p>This <a href="https://github.com/music-encoding/music-encoding">MEI repository</a> contains all the source code of the core MEI Schema.</p>
+
+<h2 id="sample-encodings">Sample encodings</h2>
+
+<p>The <a href="https://github.com/music-encoding/sample-encodings">MEI Sample Encodings repository</a> contain a wide range of MEI-encoded music files. The intent is to demonstrate the use of MEI in real-world contexts.</p>
+
+<h2 id="encoding-tools">Encoding tools</h2>
+
+<p>The <a href="https://github.com/music-encoding/encoding-tools">MEI Encoding Tools repository</a> contains a number of tools for working with MEI-encoded files.</p>
+
+<h2 id="customization-service">Customization service</h2>
+
+<p>The MEI schema can be customized for various needs. A customization can be used to disable existing features of MEI in order to obtain a schema validating only a subset of the original schema, for example, a customization for validating MEI documents containing only common Western music notation (CWMN). This customization will disable all the functionality contained in MEI for representing other types of notation (tablature, mensural, or neume).</p>
+
+<p>On the other hand, a customization can also be useful for extending the schema in order to include features not already available in MEI. This can be desirable when doing developments or experiments with the schema but in can also be used in “production” for projects that have very specific needs for features that are not expected to be included in “out-of-the-box” MEI.</p>
+
+<p>We provide an <a href="http://custom.music-encoding.org">online customization</a> service that makes it easy to generate a schema (or other output formats) from an MEI source file and a customization file. The source code for the customization service itself is available on <a href="https://github.com/music-encoding/customeization">GitHub</a></p>
+
+<hr />
+<h1 id="community-tools">Community tools</h1>
+
+<p><strong>The MEI community provides a wide range of tools for working with MEI data. They can serve a whole range of purposes, from data creation or conversion to rendering or analysis. Some of them are full software applications, but many of them are libraries, modules or stylesheets to be integrated into larger software environments. All the tools listed here are open-source and freely available.</strong></p>
+
+<h3 id="mei-friend">mei-friend</h3>
+<p><a href="https://mei-friend.mdw.ac.at">mei-friend</a> is a friendly, zero-install, browser-based MEI editor for music encodings, with schema-based autocompletion, GitHub integration, keyboard shortcuts, an easy to use look-up interface to the MEI Guidelines, and other goodies. The tool is intended as a ‘last mile’ editor aiming to alleviate the common task of cleaning up encodings generated via optical music recognition, or via conversion from other formats. Further details are available from the tool’s <a href="https://github.com/signature-Sound-Vienna/mei-friend-online/">GitHub page</a>, where it is also possible to <a href="https://github.com/signature-sound-vienna/mei-friend-online/issues/new/choose">submit bug reports, feature requests, and additions to the public repertoire</a> available directly through the application.</p>
+
+<p>mei-friend was originally implemented as a <a href="https://web.archive.org/web/20220610074623/https://atom.io/packages/mei-friend">plugin package</a> for the (since-discontinued) <a href="https://web.archive.org/web/20221130005115/https://atom.io/">Atom</a> text editor, in work conducted as part of the EU H2020-funded <a href="https://trompamusic.eu">TROMPA project</a> (Grant 770376).  Development of the <a href="https://mei-friend.mdw.ac.at">mei-friend Web application</a> is being pursued as part of <a href="https://iwk.mdw.ac.at/signature-sound-vienna/">Signature Sound Vienna</a>, funded by the Austrian Science Fund (FWF) (P 34664-G). 
+Please refer to the following publications for further details:</p>
+<ul>
+  <li>Goebl, W. &amp; Weigl, D. M. (2022). <a href="https://doi.org/10.17613/45ag-v044">Alleviating the Last Mile of Encoding: The mei-friend Package for the Atom Text Editor</a>. Music Encoding Conference 2021 Proceedings. <a href="https://doi.org/10.17613/45ag-v044">doi:10.17613/45ag-v044</a>.</li>
+  <li>Goebl, W. &amp; Weigl, D. M. (2022). The mei-friend Web Application: Editing MEI in the Browser. Music Encoding Conference 2022 Proceedings. [<em>in press</em>].</li>
+</ul>
+
+<h3 id="mermeid">MerMEId</h3>
+
+<p>The <a href="https://github.com/edirom/mermeid">Metadata Editor and Repository for MEI Data</a> (MerMEId) aims at providing tools for editing comprehensive metadata in MEI files. Originally developed by the Danish Centre for Music Editing (DCM), it is now maintained and enhanced by the MerMEId community. The MerMEId is conceived for the compilation of catalogs and thematic indexes of works, but may also complement other music editing software in adding metadata to existing MEI files or serve as a database for editors of critical editions. Apart from basic metadata, such as titles and persons involved, the MerMEId editor records information such as detailed source descriptions, lists of performances and reviews, bibliography, notes on composition history as well as structural information including movements, instrumentation, incipits, key, tempo and meter.</p>
+
+<p>The MerMEId software is installed on a web server and is operated client-side using a standard web browser capable of handling XHTML and Javascript. Several indexes of works have been created using MerMEId, among them the <a href="https://www.kb.dk/dcm/cnw.html">Catalogue of Carl Nielsen’s Works</a> (CNW), the <a href="https://delius.music.ox.ac.uk/catalogue/welcome.html">Catalogue of the Works of Frederick Delius</a> and the <a href="http://www.bruckner-online.at/?page_id=1674">Werkverzeichnis Anton Bruckner (WAB)</a>.</p>
+
+<h3 id="sibmei">SibMEI</h3>
+
+<p>SibMEI is an open source plug-in that makes it easy to export MEI from the <a href="http://www.sibelius.com">Sibelius</a> notation editor. In addition to facilitating the creation of MEI-formatted data without the burden of writing XML by hand, it also makes it possible to convert MusicXML files to MEI. The plug-in can be downloaded from <a href="https://github.com/music-encoding/sibmei/releases" title="Sibelius MEI Plugin">https://github.com/music-encoding/sibmei/releases</a>.</p>
+
+<p>General installation instructions for Sibelius plug-ins can be found at <a href="http://www.sibelius.com/download/plugins/index.html?help=install" title="Install plug-in">http://www.sibelius.com/download/plugins/index.html?help=install</a>. Once installed, an “Export to MEI” option will appear in the plug-in list in Sibelius.</p>
+
+<h3 id="libmei">LibMEI</h3>
+
+<p>LibMEI was created by Andrew Hankinson and Alastair Porter and seeks to define a common software library for interacting with files encoded in MEI. This is targeted at software developers who wish to integrate support for MEI into their software.</p>
+
+<p>LibMEI is a C++ library for reading and writing MEI files. It can be integrated in C++ software applications but it can also be used in a wide range of environment through bindings. It ships with a Python bindings using the Boost-Python framework. The source code and the documentation are available on <a href="https://github.com/DDMAL/libmei/" title="GitHub">GitHub</a> It is developed by the <a href="http://ddmal.music.mcgill.ca/">Distributed Digital Music Archives and Libraries Lab</a> at the Schulich School of Music at McGill University, Montréal, Canada and is available under the MIT License.</p>
+
+<h3 id="meico-mei-converter">meico: MEI Converter</h3>
+
+<p><a href="https://github.com/cemfi/meico">meico</a> is a converter framework for MEI files that is developed at the Center of Music and Film Informatics, Detmold (<a href="http://www.cemfi.de/">cemfi</a>). It translates MEI data to a series of formats relevant to many other applications. It can be used as Java programming framework or standalone app. For the latter case, the meicoApp provides a commandline interface as well as an elaborate graphical user interface. Meico’s feature list includes</p>
+
+<ul>
+  <li>MEI export to MIDI, MSM, MPM, audio (WAV, MP3),</li>
+  <li>MIDI to audio rendering with third party soundbanks (SF2, DLS),</li>
+  <li>musical performance rendering via the official Music Performance Markup API and rendering engine,</li>
+  <li>built-in MIDI and audio playback (perfect for proof-reading/listening),</li>
+  <li>Verovio integration in the graphical user interface,</li>
+  <li>Chroma export,</li>
+  <li>XSLT processing of all XML-based data formats, and</li>
+  <li>several MEI convenience features such as XML validation against RNG schemata, expansion of abbreviations (copyof, sameas, expan).</li>
+</ul>
+
+<h3 id="mei-to-music21-converter">MEI to Music21 Converter</h3>
+
+<p>With the release of version 2.0, the <a href="http://web.mit.edu/music21/">music21</a> Python toolkit for musicology is now capable of importing MEI files. This release focuses on the features required for CMN scores, though it is hoped future versions will address more of MEI. To learn whether your favorite elements and attributes are supported, consult the <a href="http://web.mit.edu/music21/doc/moduleReference/moduleMeiBase.html">music21.mei module documentation</a>.</p>
+
+<p>The module was primarily written by Christopher Antila with assistance from Andrew Hankinson, Ichiro Fujinaga, Myke Cuthbert, and the MEI-L mailing list. Funding for this project was provided by Canada’s SSHRC as part of the <a href="http://simssa.ca" title="Single Interface for Music Score Searching and Analysis Project">SIMSSA project</a>.</p>
+
+<p>You may send questions, comments, bug reports, and feature requests to Christopher Antila <a href="mailto:christopher@antila.ca">christopher@antila.ca</a>, Andrew Hankinson <a href="mailto:andrew.hankinson@mail.mcgill.ca">andrew.hankinson@mail.mcgill.ca</a>, MEI-L <a href="mailto:mei-l@lists.uni-paderborn.de">mei-l@lists.uni-paderborn.de</a>, or the music21 list <a href="https://groups.google.com/forum/#!forum/music21list">https://groups.google.com/forum/#!forum/music21list</a>.</p>
+
+<h2 id="rendering-mei">Rendering MEI</h2>
+
+<h3 id="meiler">MEILER</h3>
+
+<p>The <em>MEI LilyPond Engraving Refinement</em> (MEILER) is a set of XSLT stylesheets to render MEI files with help of the <a href="http://lilypond.org">LilyPond Engine</a>. This allows to make heavy use of the layout attributes and parameters MEI brings with it.</p>
+
+<p>Possible LilyPond output formats are PDF, PNG and SVG. It’s available on <a href="https://github.com/rettinghaus/MEILER">GitHub</a>. You may have a look at some test files <a href="https://github.com/rettinghaus/MEILER/tree/master/tests">here</a> and <a href="https://github.com/rettinghaus/mei-test-set/">here</a>, to get an impression of it’s capabilites. Also there’s a <a href="https://doi.org/10.13140/RG.2.2.15014.93760">poster</a> available.</p>
+
+<!---
+### MEISE
+
+The _MEI Score Editor_ (MEISE) is an eclipse-based music notation editor software for viewing and editing encoded music in CWN (Common Western Notation) within MEI files. It facilitates e.g. proof reading or editing and visualization of variants and readings. MEISE is currently available in two versions. Both have been developed at the [Musicology Seminar Detmold/Paderborn](http://muwi-detmold-paderborn.de/ "Muiscology Seminar Detmold/Paderborn") as part of the German eHumanities projects [TextGrid](https://www.textgrid.de/ "TextGrid") and [DARIAH-DE](https://de.dariah.eu/ "DARIAH-DE").
+
+MEISE 1.1 can be downloaded at [sourceforge.net](https://sourceforge.net/projects/meise/ "MEISE at sourceforge.net"). Important introductory information on system requirements and installation as well as a first steps guide are provided at the [wiki section](https://sourceforge.net/p/meise/wiki/Home/ "MEISE Wiki at sourceforge.net"). Furthermore, use case and workflow descriptions can be found within [MEISE's project page](https://meise.de.dariah.eu/) at the DARIAH-DE website.
+
+Currently, a completely new version of MEISE, coordinated by the Musicology Seminar Detmold/Paderborn within the project scope of DARIAH-DE is developed in cooperation with several editor and rendering approaches throughout the MEI community. Contact: Nikolaos Beer, University of Paderborn, Musicology Seminar Detmold/Paderborn, [nikolaos.beer@upb.de](mailto:nikolaos.beer@upb.de)
+-->
+
+<h3 id="meiview">meiView</h3>
+
+<p><em><a href="http://zolaemil.github.io/meiView/">meiView</a></em> is an experimental web application designed to display 15–16th century music and provide a dynamic mechanism for the user to select which variant they want to see.</p>
+
+<h3 id="verovio">Verovio</h3>
+
+<p><em><a href="https://www.verovio.org">Verovio</a></em> is a fast, portable and lightweight library for engraving Music Encoding Initiative (MEI) music scores into SVG developed by the <a href="http://rism-ch.org">Swiss RISM Office</a>. It is designed as a tool usable as a one-step conversion tool and it is written in pure standard C++ with no dependencies on third-party frameworks and libraries. Verovio implements its own rendering engine, which can render SVG with all the musical symbols embedded in it and without dependency on external fonts. In addition to MEI, Verovio can also render Plain and Easy (PAE) code and DARMS code.</p>
+
+<p>A significant strength of Verovio is that it implements MEI’s structure internally, making it the best-suited solution for rendering features that make MEI unique. The hierarchy of the MEI is preserved in the SVG output. This feature makes it extremely easy to build interactive applications since both the structure and the unique identifiers are available in the output music notation.</p>
+
+<p>Since the rendering engine is defined as an abstract component, Verovio is highly modular and can be used in different contexts, such as a JavaScript or Python toolkit. Verovio follows the Standard Music Font Layout (<a href="https://www.smufl.org">SMuFL</a>) specification and the font can be changed for personalizing the output. It is open-source and is available on <a href="https://github.com/rism-ch/verovio">GitHub</a>.</p>
+
+<h3 id="music-sheet-viewer">Music Sheet Viewer</h3>
+
+<p><em><a href="http://www.partitionnumerique.com/music-sheet-viewer-wordpress-plugin/">Music Sheet Viewer</a></em> is an open source WordPress plugin that allows to display one ore more music sheet fragments of full scores written in MEI, MusicXML, ABC or PAE (<a href="http://rism-ch.org">RISM</a> notation), in a post or page of a WordPress site.</p>
+
+<p>The code is entered using a WordPress shortcode tag or a dedicated Block, and the resulting score is displayed as if it had been natively supported by the browser.</p>
+
+<p>It is powered by <a href="https://www.verovio.org">Verovio</a> and basically, it provides many Verovio features without having to write one single line of code : all the JavaScript code is generated in the page.</p>
+
+<p>The main features are : automatic resize so as to fit to the available content, display in any <a href="https://www.smufl.org">SMuFL</a> font, code entered either inline or from a file, score playback and notes highlighting thanks to an enhancement of the <a href="https://github.com/rism-ch/midi-player">RISM MIDI Player</a>, automatic page turn when played, responsive code.</p>
+
+
+    </div>
+    <div class="column col-4">
+      <span class="divider"></span>
+      <h4>Official tools</h4>
+      <ul class="nav">
+        <li class="nav-item"><a href="#mei-schema">MEI Schema</a></li>
+        <li class="nav-item"><a href="#sample-encodings">Sample encodings</a></li>
+        <li class="nav-item"><a href="#encoding-tools">Encoding tools</a></li>
+        <li class="nav-item"><a href="#customization-service">Customization service</a></li>
+      </ul>
+      <span class="divider"></span>
+      <h4>Community tools</h4>
+      <ul class="nav">
+        <li class="nav-item"><a href="#mei-friend">mei-friend</a></li>
+        <li class="nav-item"><a href="#mermeid">MerMEId</a></li>
+        <li class="nav-item"><a href="#sibmei">SibMEI</a></li>
+        <li class="nav-item"><a href="#libmei">LibMEI</a></li>
+        <li class="nav-item"><a href="#meico-mei-converter">meico: MEI Converter</a></li>
+        <li class="nav-item"><a href="#mei-to-music21-converter">MEI to Music21 Converter</a></li>
+        <li class="nav-item"><a href="#meiler">MEILER</a></li>
+        <!-- <li class="nav-item"><a href="#meise">MEISE</a></li> -->
+        <li class="nav-item"><a href="#meiview">meiView</a></li>
+        <li class="nav-item"><a href="#verovio">Verovio</a></li>
+        <li class="nav-item"><a href="#music-sheet-viewer">Music Sheet Viewer</a></li>
+      </ul>
+      <span class="divider"></span>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Make sure to mirror changes in the guidelines repository in _include/footer.html when necessary -->
+<footer>
+  <div class="container">
+    <div class="columns institutions">
+      <div class="column col-12 text-center">
+        <a class="institutionsLink" target="_blank" href="https://www.adwmainz.de">
+          <img src="/pix/akademie-small.png" alt="Akademie der Wissenschaften | Mainz" />
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="text-center">
+    <a class="footerLinks" href="/">Home</a> | <a class="footerLinks" href="/community/community-contacts.html">Contact</a><br/>
+    <small>© Music Encoding Initiative 2024</small>
+  </div>
+</footer>
+
+
+  </body>
+
+</html>

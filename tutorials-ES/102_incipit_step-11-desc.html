@@ -1,0 +1,25 @@
+<div>
+    <p class="tutorialGoal-ES">Paso once: añadir el marcado dinámico a la codificación del ejemplo.</p>
+
+    <p>Las dinámicas se definen con un elemento <code>&lt;dynam&gt;</code>. El elemento <code>&lt;dynam&gt;</code> puede utilizarse para dinámicas textuales instantáneas o continuas, por ejemplo, <code>"p"</code>, <code>"mf"</code>, o <code>"cresc. poco a poco"</code>. Se colocan como texto plano entre la etiqueta de apertura y cierre del elemento <code>&lt;dynam&gt;</code>, como <code>&lt;dynam&gt;pp&lt;/dynam&gt;</code>.</p>
+
+    <p>A diferencia de los signos de articulación, el elemento <code>&lt;dynam&gt;</code> es un <code>evento de control</code> que agrupa elementos (como matices, ligaduras, marcas de frase, marcas de pedal, etc.), que dependen de otros eventos, como notas o silencios, para su validez. En general, los <code>eventos de control</code> no se codifican como elementos hijos de los correspondientes eventos que deben controlar. En la práctica, significa que se colocan fuera de los elementos <code>staff</code> en la mayoría de los casos.</p>
+
+    <p>Existen diferentes opciones para indicar la referencia de un evento <code>&lt;note&gt;</code> o <code>&lt;rest&gt;</code> (o cualquier otro evento) desde un <code>evento de control</code> como <code>&lt;dynam&gt;</code>:
+
+    <ul>
+        <li>Al principio, el elemento <code>&lt;staff&gt;</code> al que se aplicará el <code>evento de control</code>, puede ser referenciado por un atributo <code>@staff</code>.</li>
+        <li>Además, el punto de inicio de un marcado dinámico debe indicarse mediante un atributo <code>startid</code>, <code>tstamp</code>, <code>tstamp.ges</code> o <code>tstamp.real</code>. El punto final puede indicarse mediante un atributo <code>dur</code>, <code>dur.ges</code>, <code>endid</code> o <code>tstamp2</code>. Es un error semántico no especificar un atributo de punto de partida.</li>
+    </ul>
+
+    <p>En este ejemplo, el atributo <code>@tstamp</code> se utiliza para indicar la posición inicial del marcado dinámico. <code>@tstamp</code> puede utilizarse para codificar el tiempo de inicio en términos de tiempo musical, es decir, el tiempo como se expresa en el compás escrito.</p>
+
+    <p>Los siguientes atributos son los que se utilizarán aquí dentro de <code>&lt;dynam&gt;</code>:</p>
+    <ul>
+        <li><code>@staff</code> - el número de identificación del pentagrama al que se aplica un elemento, por ejemplo, <code>"1"</code> en este caso</li>
+        <li><code>@tstamp</code> (marca de tiempo) - el tiempo de inicio en términos de tiempo musical, es decir, el compás, por ejemplo, <code>"1"</code>, <code>"2,5"</code>.
+        </li><li><code>@place</code> - posición de la marca dinámica, <code>"encima"</code> o <code>"debajo"</code> del pentagrama.</li>
+    </ul>
+
+    <p class="task-ES">Por favor, encuentre en el ejemplo los elementos <code>&lt;note&gt;</code> a los que se asigna una dinámica. Añade un elemento hermano <code>&lt;dynam&gt;</code> al elemento correspondiente <code>&lt;staff&gt;</code> y aplicar los atributos en cuestión (<code>@staff</code>, <code>@tstamp</code>, <code>@place</code>). No olvides incluir el signo <code>ff</code> entre la etiqueta de apertura y cierre de <code>&lt;dynam&gt;</code>.</p>
+</div>

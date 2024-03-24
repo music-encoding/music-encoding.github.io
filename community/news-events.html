@@ -1,0 +1,1512 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>News and events</title>
+    <meta name="description" content="">
+
+    <link rel="stylesheet" href="/css/main.css">
+    <!-- syntax highlighting CSS -->
+    <link rel="stylesheet" href="/css/syntax.css" />
+    <script type="text/javascript" src="/js/carousel.js"></script>
+    <script type="text/javascript">
+      document.addEventListener("DOMContentLoaded", event => {
+        const indexCarousel = document.getElementById("index-carousel");
+        if (indexCarousel !== null) {
+          animateCarousel(indexCarousel, 3000);
+          indexCarousel.addEventListener("mouseover", event => {
+            stopCarouselAnimation(indexCarousel);
+          });
+          indexCarousel.addEventListener("mouseout", event => {
+            animateCarousel(indexCarousel, 3000);
+          });
+        }
+      });
+    </script>
+</head>
+
+
+  <body>
+
+    <!-- Make sure to mirror changes in the guidelines repository in _include/header.html when necessary -->
+<header class="navbar">
+  <div class="navbar-section">
+    <a class="navbar-brand" href="https://music-encoding.org">
+      <img src="/pix/meilogo-inverted.png" alt="MEI logo"/>
+    </a>
+    <div class="hide-lg">
+      
+    <div class="dropdown dropdownCustomMenuToggle">
+        
+            <a href="/about" class="btn btn-link top-menu-link" tabindex="0">
+                About
+            </a>
+        
+    </div>
+
+    <div class="dropdown dropdownCustomMenuToggle">
+        
+            <a href="#" class="btn btn-link dropdown-toggle top-menu-link" tabindex="1">
+                Community <i class="icon icon-caret"></i>
+            </a>
+
+            
+             <ul class="menu"> 
+                <li class="menu-item">
+                    <a href="/community/projects-users.html" class="btn btn-link text-left menu-link">
+                        Projects / Users
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/community/news-events.html" class="btn btn-link text-left menu-link">
+                        News / Events
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/community/community-contacts.html" class="btn btn-link text-left menu-link">
+                        Community Contacts
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/community/interest-groups.html" class="btn btn-link text-left menu-link">
+                        Interest Groups
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/community/technical-team.html" class="btn btn-link text-left menu-link">
+                        Technical Team
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/community/mei-board.html" class="btn btn-link text-left menu-link">
+                        MEI Board
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/community/mei-by-laws.html" class="btn btn-link text-left menu-link">
+                        MEI By-laws
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/community/code-of-conduct.html" class="btn btn-link text-left menu-link">
+                        Code of Conduct
+                    </a>
+                </li>
+                 </ul> 
+            
+
+        
+    </div>
+
+    <div class="dropdown dropdownCustomMenuToggle">
+        
+            <a href="#" class="btn btn-link dropdown-toggle top-menu-link" tabindex="2">
+                Conference <i class="icon icon-caret"></i>
+            </a>
+
+            
+             <ul class="menu"> 
+                <li class="menu-item">
+                    <a href="/conference/2024" class="btn btn-link text-left menu-link">
+                        MEC 2024
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/conference/past.html" class="btn btn-link text-left menu-link">
+                        Past Conferences
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/conference/proceedings.html" class="btn btn-link text-left menu-link">
+                        Proceedings
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/conference/awards.html" class="btn btn-link text-left menu-link">
+                        MEC Awards
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/conference/hosting-guidelines.html" class="btn btn-link text-left menu-link">
+                        Hosting Guidelines
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/conference/code-of-conduct.html" class="btn btn-link text-left menu-link">
+                        Code of conduct
+                    </a>
+                </li>
+                 </ul> 
+            
+
+        
+    </div>
+
+    <div class="dropdown dropdownCustomMenuToggle">
+        
+            <a href="#" class="btn btn-link dropdown-toggle top-menu-link" tabindex="3">
+                Resources <i class="icon icon-caret"></i>
+            </a>
+
+            
+             <ul class="menu"> 
+                <li class="menu-item">
+                    <a href="/resources/background.html" class="btn btn-link text-left menu-link">
+                        Background
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/resources/bibliography.html" class="btn btn-link text-left menu-link">
+                        Bibliography
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/resources/pedagogy.html" class="btn btn-link text-left menu-link">
+                        Pedagogy & Praxis
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/resources/schemas.html" class="btn btn-link text-left menu-link">
+                        Schemas and Namespace
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/resources/tools.html" class="btn btn-link text-left menu-link">
+                        Tools
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/resources/tutorials.html" class="btn btn-link text-left menu-link">
+                        Tutorials
+                    </a>
+                </li>
+                 </ul> 
+            
+
+        
+    </div>
+
+    <div class="dropdown dropdownCustomMenuToggle">
+        
+            <a href="#" class="btn btn-link dropdown-toggle top-menu-link" tabindex="4">
+                Documentation <i class="icon icon-caret"></i>
+            </a>
+
+            
+             <ul class="menu"> 
+                <li class="menu-item">
+                    <a href="/guidelines/v5" class="btn btn-link text-left menu-link">
+                        MEI 5 (latest release)
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/guidelines/dev" class="btn btn-link text-left menu-link">
+                        Development version
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/guidelines/v4" class="btn btn-link text-left menu-link">
+                        MEI 4
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/guidelines/v3" class="btn btn-link text-left menu-link">
+                        MEI 3
+                    </a>
+                </li>
+                 </ul> 
+            
+
+        
+    </div>
+
+    <div class="dropdown dropdownCustomMenuToggle">
+        
+            <a href="/archive" class="btn btn-link top-menu-link" tabindex="5">
+                Archive
+            </a>
+        
+    </div>
+
+
+    </div>
+  </div>
+  <div class="navbar-section" id="socialLinks">
+    <a class="twitterLink" target="_blank" href="https://twitter.com/MusicEncoding">
+      <img src="/pix/twitter.png" alt="Twitter" class="logo"/>
+    </a>
+    <a class="githubLink" target="_blank" href="https://github.com/music-encoding">
+      <img src="/pix/github.png" alt="GitHub" class="logo"/>
+    </a>
+    <a class="slackLink" target="_blank" href="https://music-encoding.slack.com/">
+      <img src="/pix/slack.png" alt="Slack" class="logo"/>
+    </a>
+  </div>
+    <div id="menu-accordion" class="accordion-container dropdown-toggle show-lg column col-12">
+  <div class="accordion">
+    <input id="accordion-toggle" type="checkbox" name="accordion-checkbox" hidden=""/>
+    <label class="accordion-header c-hand" for="accordion-toggle">
+      <i class="icon icon-menu"></i>
+    </label>
+
+    <div class="accordion-body">
+      <ul class="menu menu-nav">
+        
+        <li class="menu-item">
+          <div class="accordion menu">
+            <input id="accordion-About" type="checkbox" name="accordion-checkbox" hidden=""/>
+            <label class="accordion-header c-hand" for="accordion-About">
+              
+                  <a href="/about">
+                      About
+                  </a>
+              
+            </label>
+            
+          </div>
+        </li>
+        
+        <li class="menu-item">
+          <div class="accordion menu">
+            <input id="accordion-Community" type="checkbox" name="accordion-checkbox" hidden=""/>
+            <label class="accordion-header c-hand" for="accordion-Community">
+              
+                Community
+              
+            </label>
+            
+            <div class="accordion-body">
+              <ul class="menu menu-nav">
+                
+                   <li><ul class="menu"> 
+                  <li class="menu-item"><a href="/community/projects-users.html">Projects / Users</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/community/news-events.html">News / Events</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/community/community-contacts.html">Community Contacts</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/community/interest-groups.html">Interest Groups</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/community/technical-team.html">Technical Team</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/community/mei-board.html">MEI Board</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/community/mei-by-laws.html">MEI By-laws</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/community/code-of-conduct.html">Code of Conduct</a></li>
+                   </ul></li> 
+                
+              </ul>
+            </div>
+            
+          </div>
+        </li>
+        
+        <li class="menu-item">
+          <div class="accordion menu">
+            <input id="accordion-Conference" type="checkbox" name="accordion-checkbox" hidden=""/>
+            <label class="accordion-header c-hand" for="accordion-Conference">
+              
+                Conference
+              
+            </label>
+            
+            <div class="accordion-body">
+              <ul class="menu menu-nav">
+                
+                   <li><ul class="menu"> 
+                  <li class="menu-item"><a href="/conference/2024">MEC 2024</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/conference/past.html">Past Conferences</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/conference/proceedings.html">Proceedings</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/conference/awards.html">MEC Awards</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/conference/hosting-guidelines.html">Hosting Guidelines</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/conference/code-of-conduct.html">Code of conduct</a></li>
+                   </ul></li> 
+                
+              </ul>
+            </div>
+            
+          </div>
+        </li>
+        
+        <li class="menu-item">
+          <div class="accordion menu">
+            <input id="accordion-Resources" type="checkbox" name="accordion-checkbox" hidden=""/>
+            <label class="accordion-header c-hand" for="accordion-Resources">
+              
+                Resources
+              
+            </label>
+            
+            <div class="accordion-body">
+              <ul class="menu menu-nav">
+                
+                   <li><ul class="menu"> 
+                  <li class="menu-item"><a href="/resources/background.html">Background</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/resources/bibliography.html">Bibliography</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/resources/pedagogy.html">Pedagogy & Praxis</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/resources/schemas.html">Schemas and Namespace</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/resources/tools.html">Tools</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/resources/tutorials.html">Tutorials</a></li>
+                   </ul></li> 
+                
+              </ul>
+            </div>
+            
+          </div>
+        </li>
+        
+        <li class="menu-item">
+          <div class="accordion menu">
+            <input id="accordion-Documentation" type="checkbox" name="accordion-checkbox" hidden=""/>
+            <label class="accordion-header c-hand" for="accordion-Documentation">
+              
+                Documentation
+              
+            </label>
+            
+            <div class="accordion-body">
+              <ul class="menu menu-nav">
+                
+                   <li><ul class="menu"> 
+                  <li class="menu-item"><a href="/guidelines/v5">MEI 5 (latest release)</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/guidelines/dev">Development version</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/guidelines/v4">MEI 4</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/guidelines/v3">MEI 3</a></li>
+                   </ul></li> 
+                
+              </ul>
+            </div>
+            
+          </div>
+        </li>
+        
+        <li class="menu-item">
+          <div class="accordion menu">
+            <input id="accordion-Archive" type="checkbox" name="accordion-checkbox" hidden=""/>
+            <label class="accordion-header c-hand" for="accordion-Archive">
+              
+                  <a href="/archive">
+                      Archive
+                  </a>
+              
+            </label>
+            
+          </div>
+        </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+
+</header>
+
+
+    <div class="container grid-xl content">
+        <h1>News and events</h1>
+
+
+<h3 class="newsTitle">MEI Board: Election Results 2023<small>2023-12-11 00:00:00 +0000</small></h3>
+<div class="newsEntry"><p>It is our pleasure to announce the results of the MEI Board elections (for the term 2024–2026). Elected by the MEI community are:</p>
+
+<ul>
+  <li>Maristella Feustle,</li>
+  <li>Stefan Münnich, and</li>
+  <li>Laurent Pugin</li>
+</ul>
+
+<p>Congratulations to our new and returning Board members, and many thanks to <em>all</em> our excellent candidates!</p>
+
+<p><a href="https://www.opavote.com/results/5436825245057024">Detailed results</a> of the election are available from the OpaVote website.</p>
+
+</div>
+  
+
+<h3 class="newsTitle">MEI Board: Candidate statements 2023<small>2023-11-23 00:00:00 +0000</small></h3>
+<div class="newsEntry"><p>We are pleased to announce the candidates for the 2023 MEI Board elections. For details, please see their <a href="/community/mei-board/elections/2023/candidates.html">CVs and candidate statements</a>.</p>
+</div>
+  
+
+<h3 class="newsTitle">Call for nominations 2023<small>2023-10-30 16:25:00 +0000</small></h3>
+<div class="newsEntry"><p>On 31 December 2023, the terms of three MEI Board members will end. In the name of the entire MEI community, the MEI Board expresses its gratitude to Stefan Münnich, Laurent Pugin, and Kristina Richts-Matthaei for their service and dedication to MEI.</p>
+
+<p>In the 2023 MEI Board elections, the MEI community will determine three MEI Board members for the term 2024–2026. The election process will take place in accordance with the <a href="http://music-encoding.org/community/mei-by-laws.html">Music Encoding Initiative By-Laws</a>.</p>
+
+<p>The timeline of the elections will be as follows:</p>
+
+<p><strong>Nomination phase</strong> (30 October – 13 November 2023 [2])</p>
+<ul>
+  <li>You can submit nominations by filling in the form linked above.</li>
+  <li>Any person who today is a subscriber of the MEI-L mailing list has the right to nominate candidates.</li>
+  <li>Any individual is eligible for nomination, including those who have previously served on the MEI Board. Candidates in the election must be members of the MEI-L mailing list but may register until 16 November 2023.</li>
+  <li>Self-nominations are welcome.</li>
+  <li>Individuals will be informed of their nomination when received and asked to confirm their willingness to serve on the MEI Board.</li>
+  <li>Acceptance of a nomination requires submission of a short CV and a personal statement of interest in MEI (a maximum of 200 words each) to elections@music-encoding.org by 16 November 2023.</li>
+  <li>Candidates who have been nominated but have not confirmed their willingness by 16 November 2023 will not be included on the ballot.</li>
+</ul>
+
+<p><strong>Election phase</strong> (23 November – 10 December 2023)</p>
+<ul>
+  <li>The election will take place using OpaVote and the Scottish STV Ranked Choice Voting method (https://www.opavote.com/methods/single-transferable-vote#scottish-stv).</li>
+  <li>We will inform you in separate emails about the start of the election and your individual voting tokens.</li>
+</ul>
+
+<p><strong>Post-election phase</strong></p>
+<ul>
+  <li>Election results will be announced after the elections have closed.</li>
+  <li>The term of the elected candidates starts on 1 January 2024.</li>
+  <li>The first meeting of the new MEI Board will be held on Monday, 15 January 2024, 5:00 pm UTC</li>
+</ul>
+
+<p>The election of Board members is an opportunity for each of you to have a voice in determining the future of MEI.</p>
+
+<p>Thank you for your support,
+David M. Weigl and Benjamin W. Bohl
+MEI election administrators 2023
+by appointment of the MEI Board</p>
+
+<p>===</p>
+
+<p>Notes</p>
+
+<ul>
+  <li>The By-laws of the Music Encoding Initiative are available online at: http://music-encoding.org/community/mei-by-laws.html</li>
+  <li>All deadlines are 11:59 pm (UTC)</li>
+</ul>
+</div>
+  
+
+<h3 class="newsTitle">Publication: Digital Pedagogy IG Roundtable<small>2023-10-06 12:00:00 +0000</small></h3>
+<div class="newsEntry"><p>The roundtable “Pedagogical Approaches to Music Encoding” of the Digital Pedagogy IG has been published in Journal of Musicological Research! Read at <a href="https://doi.org/10.1080/01411896.2023.2231837">https://doi.org/10.1080/01411896.2023.2231837</a>.</p>
+
+<p>Congrats to the contributors: Anna Kijas, Joy Calico, Jake Schaub, Anna Plaksin, Jessica Grimmer, Javier F. Merchán Sánchez-Jara, &amp; Sara González Gutiérrez!</p>
+</div>
+  
+
+<h3 class="newsTitle">MEC 2024 Conference<small>2023-09-26 10:12:00 +0000</small></h3>
+<div class="newsEntry"><p>The webpage for the Music Encoding Conference 2024 is now available at <a href="http://music-encoding.org/conference/2024">www.music-encoding.org/conference/2024</a>.</p>
+
+<p>MEC 2024 will take place Monday, 20 May – Thursday, 23 May 2024, at the University of North Texas in Denton, Texas. The Call for Papers is available at <a href="https://music-encoding.org/conference/2024/call/">https://music-encoding.org/conference/2024/call/</a>.</p>
+
+<p>Additional details will be posted on the conference web pages.</p>
+</div>
+  
+
+<h3 class="newsTitle">MEI 5.0 Released<small>2023-09-07 12:00:00 +0000</small></h3>
+<div class="newsEntry"><p>The Music Encoding Initiative community and contributors are pleased to announce the release of MEI 5, the latest stable version of the MEI Notation Encoding specification.</p>
+
+<p>This release brings with it the introduction of MEI Basic, a new customization to help drive MEI adoption in mainstream applications. As a smaller subset of MEI, it will help application developers provide support for MEI in their software, while also providing users with a path towards the “full” MEI capabilities should they be needed. With this, we hope to improve application adoption, data sharing between MEI projects, and conversion between MEI and other data formats.</p>
+
+<p>Along with MEI Basic, significant improvements have been made to the guidelines, development infrastructure, and encoding consistency, with only limited compatibility changes to the specifications. This release also brings the availability of an auto-generated PDF version of the guidelines. (see the guidelines and release notes for more details).</p>
+
+<p>To support projects using MEI, we have also updated the Encoding Tools (https://github.com/music-encoding/encoding-tools) and Sample Encodings (https://github.com/music-encoding/sample-encodings) repositories. Notably, an XSLT is available to help projects upgrade their encodings from MEI 4 to MEI 5 (https://github.com/music-encoding/encoding-tools/blob/main/mei40To50/mei40To50.xsl).</p>
+
+<p>The documentation for Version 5 is available on the MEI Website: https://music-encoding.org/guidelines/v5/content/index.html</p>
+
+<p>We want to thank the community, and especially the members of the technical team and ODD meetings, for their continued support and engagement! In total, we had over 40 contributors actively involved in the preparation of this release of MEI. Many of them are early-career researchers, investing significant time and effort into the MEI Framework. Since this work often happens alongside conferences, workshops, and other meetings, there is a danger that their contributions are not recognized properly because of relatively informal, but no less significant, settings. We have included in the Guidelines and in the Release Notes a list of our contributors so that we recognize them by name. Without the joint effort of all those involved, an undertaking like MEI would not be possible.</p>
+
+<p>Cheers,
+Stefan Münnich
+Benjamin W. Bohl</p>
+
+<p>Technical Co-Chairs,
+Music Encoding Initiative</p>
+
+<p>PS: If you have not yet heard, our community is also working towards MEI 5 Basic support in <a href="https://musescore.org/en">MuseScore</a>, a popular notation editor! More news on this will follow later this year.</p>
+</div>
+  
+
+<h3 class="newsTitle">MEC Proceedings 2022 published<small>2023-09-01 12:00:00 +0000</small></h3>
+<div class="newsEntry"><p>We are pleased to announce the publication of the 2022 Music Encoding Conference Proceedings. All contributions submitted for inclusion are now available with individual DOIs from the Music Encoding Initiative’s Humanities Commons group at <a href="https://hcommons.org/groups/music-encoding-initiative/deposits/">https://hcommons.org/groups/music-encoding-initiative/deposits/</a>. The full volume is available via <a href="https://doi.org/10.17613/sn48-8932">https://doi.org/10.17613/sn48-8932</a>.</p>
+
+<p>We thank you for your patience and hope you agree that the wait was worthwhile, as the Proceedings showcase the impressive variety of scholarship undertaken by our extended community.</p>
+
+<p>Video recordings of the excellent keynote presentations by Gimena del Rio Riande and Ichiro Fujinaga will be made available in the near future.</p>
+
+<p>With deep gratitude for your wonderful contributions at MEC ’22 in Halifax, and great excitement at the prospect of TEI-MEC 2023 in Paderborn next week,</p>
+
+<p>Ailynn Ang, Jennifer Bain, and David M. Weigl (Editors)</p>
+</div>
+  
+
+<h3 class="newsTitle">Workshop: Intro to MEI (conducted in Spanish)<small>2023-04-18 09:17:00 +0000</small></h3>
+<div class="newsEntry"><p>Como parte de las actividades por los diez años de la AAHD organizamos este taller en el marco de la semanaHD 2023! / As part of the 10th anniversary celebration of the Asociación Argentina de Humanidades Digitales (AAHD) this event will take place during the week of Digital Humanities 2023.</p>
+
+<p><strong>Fecha/Date</strong>: 12/05/2023 (May 12, 2023)</p>
+
+<p><strong>Hora/Time</strong>: 2pm Ciudad de México (México)/3pm Bogotá (Colombia)/5pm Buenos Aires (Argentina)</p>
+
+<p>Chequea tu hora aquí: https://www.worldtimebuddy.com/</p>
+
+<p><strong>Profesora/Instructor</strong>: Dra. Martha Thomae (McGill University / MEI)</p>
+
+<p>La Music Encoding Initiative (MEI) es un sistema y un lenguaje de marcado para codificar documentos con música en una estructura legible por máquina. Al igual que la Text Encoding Initiative (TEI), la MEI se ha transformado en un estándar de marcado de textos con música en muchos proyectos de Humanidades Digitales y ha venido trabajando en herramientas open source y materiales educativos desarrollados por su propia comunidad. En este taller introductorio te invitamos a que conozcas esta iniciativa y realices un breve ejercicio de codificación de una canción popular. No es necesario tener conocimientos sobre música, sobre la MEI o TEI para sumarse al taller.</p>
+
+<p>Trabajaremos con la plataforma de codificación online MEI friend: https://mei-friend.mdw.ac.at/</p>
+
+<p>Más información: https://aahd.net.ar/codificacion-y-publicacion-de-musica-un-taller-sobre-music-encoding-initiative/</p>
+</div>
+  
+
+<h3 class="newsTitle">Call for Pedagogical Resources<small>2023-03-15 09:00:00 +0000</small></h3>
+<div class="newsEntry"><p>The Digital Pedagogy Interest Group of the Music Encoding Initiative invites the submission of pedagogical resources to encourage the use of music encoding. Pedagogical resources may include tutorial videos, sample lesson plans, slide decks, exercises, assignments, sample encodings that demonstrate various concepts, introduction of useful tools, and crowdsourcing projects. We invite these materials to cover a broad array of topics, including but not limited to hand-encoding, optical music recognition (OMR), metadata creation, encoding for analysis, corpus study, digital collections, digital humanities projects, and incipit creation. We encourage submissions in English and other languages.</p>
+
+<p>These materials will be presented in <a href="https://hcommons.org/deposits/?tag=mei-pedagogy-praxis">Humanities Commons</a> and available as open scholarship. You can find examples of recent contributions on the <a href="https://music-encoding.org/resources/pedagogy.html">Pedagogy &amp; Praxis Resources page</a>.</p>
+
+<p>To submit your materials, <a href="https://forms.gle/CujWRBMmyciE5M7FA">please fill out this form</a> by May 15th, 2023 for review. Complete materials only, no abstracts please.</p>
+
+<p>If you have any questions, please reach out to the Pedagogy IG administrative co-chairs: Jessica Grimmer (jessica.grimmer at umd.edu) and Anna Kijas (anna.kijas at tufts.edu).</p>
+</div>
+  
+
+<h3 class="newsTitle">MEC and TEI 2023<small>2023-02-22 10:09:00 +0000</small></h3>
+<div class="newsEntry"><p>The next Music Encoding Conference will be held jointly with the TEI Conference on Monday 4th - Friday 8th September, 2023, at Universität Paderborn in Paderborn, Germany. The Call for Proposals is now open and can be viewed on <a href="https://teimec2023.uni-paderborn.de/cfp.html">this webpage</a>.</p>
+
+<p>The conference theme invites us to think about the need to encode different cultural realms — not only written musical and literary cultures, but also oral cultures, the cultures of underrepresented communities, and even cultural practices beyond language and music, such as dance, theater, and film. In coming together to identify and discuss the commonalities and differences between our two coding communities, we aim to discover new methods and new approaches to encoding culture in all its forms.</p>
+
+<p>Visit <a href="https://teimec2023.uni-paderborn.de/">this website</a> for full conference details.</p>
+</div>
+  
+
+<h3 class="newsTitle">MEI Board: results of 2022 elections<small>2022-12-19 00:00:00 +0000</small></h3>
+<div class="newsEntry"><p>It is our pleasure to announce the results of the MEI Board elections (for the term 2023–2025). Elected by the MEI community are:</p>
+
+<ul>
+  <li>Johannes Kepper</li>
+  <li>Anna Plaksin</li>
+  <li>David M. Weigl</li>
+</ul>
+
+<p>Congratulations to our new Board members, and many thanks to <em>all</em> our excellent candidates!</p>
+
+<p>Detailed results are available from OpaVote at:
+<a href="https://www.opavote.com/results/5158308313825280" target="_blank">https://www.opavote.com/results/5158308313825280</a></p>
+</div>
+  
+
+<h3 class="newsTitle">MEI Board: Candidate statements 2022<small>2022-11-28 00:00:00 +0000</small></h3>
+<div class="newsEntry"><p>We are pleased to announce the candidates for the 2022 MEI Board elections. For details, please see their <a href="/community/mei-board/elections/2022/candidates.html">CVs and candidate statements</a>.</p>
+</div>
+  
+
+<h3 class="newsTitle">MEC 2023<small>2022-11-13 12:00:00 +0000</small></h3>
+<div class="newsEntry"><p>The next Music Encoding Conference will be held jointly with the TEI Conference on Monday 4th - Friday 8th September, 2023, at Universität Paderborn in Paderborn, Germany.</p>
+
+<p>Please keep an eye on the conference website for further details as they become available.</p>
+</div>
+  
+
+<h3 class="newsTitle">MEI Board Call for nominations 2022<small>2022-11-07 15:30:00 +0000</small></h3>
+<div class="newsEntry"><p>On 31 December 2022, the terms of three MEI Board members will end. In the name of the entire MEI community, the MEI Board expresses its gratitude to Johannes Kepper, Perry Roland, and Martha Thomae for their service and dedication to MEI.</p>
+
+<p>In the 2022 MEI Board elections, the MEI community will determine three MEI Board members for the term 2023–2025. The election process will take place in accordance with the <a href="http://music-encoding.org/community/mei-by-laws.html">Music Encoding Initiative By-Laws</a>.</p>
+
+<p>To nominate candidates, please do so via this form:
+<a href="https://forms.gle/oAB1HaBya3BAyzJZ7">https://forms.gle/oAB1HaBya3BAyzJZ7</a></p>
+
+<p>The timeline of the elections will be as follows:</p>
+
+<ul>
+  <li><strong>Nomination phase</strong> (7 November – 21 November 2022)
+    <ul>
+      <li>You can submit nominations by filling in the form linked above.</li>
+      <li>Any person who today is a subscriber of the MEI-L mailing list has the right to nominate candidates.</li>
+      <li>Any individual is eligible for nomination, including those who have previously served on the MEI Board. Candidates in the election must be members of the MEI-L mailing list but may register until 23 November 2022.</li>
+      <li>Self-nominations are welcome.</li>
+      <li>Individuals will be informed of their nomination when received and asked to confirm their willingness to serve on the MEI Board.</li>
+      <li>Acceptance of a nomination requires submission of a short CV and a personal statement of interest in MEI (a maximum of 200 words each) to elections@music-encoding.org by 23 November 2022.</li>
+      <li>Candidates who have been nominated but have not confirmed their willingness by 23 November 2022 will not be included on the ballot.</li>
+      <li>Candidates must be members of the MEI-L mailing list and may register until 23 November 2022.</li>
+    </ul>
+  </li>
+  <li><strong>Election phase</strong> (28 November – 18 December 2022)
+    <ul>
+      <li>The election will take place using OpaVote and the <a href="https://www.opavote.com/methods/single-transferable-vote#scottish-stv">Scottish STV Ranked Choice Voting</a> method.</li>
+      <li>We will inform you in separate emails about the start of the election and your individual voting tokens.</li>
+    </ul>
+  </li>
+  <li><strong>Post-election phase</strong>
+    <ul>
+      <li>Election results will be announced after the elections have closed.</li>
+      <li>The term of the elected candidates starts on 1 January 2023.</li>
+      <li>The <strong>first meeting of the new MEI Board will be held on
+Monday, 16 January 2023, 7:00 pm UTC</strong></li>
+    </ul>
+  </li>
+</ul>
+
+<p>The election of Board members is an opportunity for each of you to have a voice in determining the future of MEI.</p>
+
+<p>Thank you for your support,</p>
+
+<p>Peter Stadler and Benjamin W. Bohl</p>
+
+<p>MEI election administrators 2022</p>
+
+<p>by appointment of the MEI Board</p>
+
+<p>====</p>
+
+<p>Notes</p>
+
+<ul>
+  <li>The By-laws of the Music Encoding Initiative are available online at: <a href="http://music-encoding.org/community/mei-by-laws.html">http://music-encoding.org/community/mei-by-laws.html</a></li>
+  <li>All deadlines are 11:59 pm (UTC)</li>
+</ul>
+</div>
+  
+
+<h3 class="newsTitle">MEI Developer Workshop<small>2022-06-06 12:00:01 +0000</small></h3>
+<div class="newsEntry"><p>We’re happy to announce that Enote in Berlin (Germany) will host the next MEI Developer Meeting (local organization: Klaus Rettinghaus).</p>
+
+<p>The meeting is scheduled for October 1–3, 2022, and, at least at this point, we assume that it can be held as an in-person event.</p>
+
+<p>The main objective of this working meeting is to discuss and work on various topics and ideas related to the technical development of MEI.</p>
+
+<p>For more information about the venue, accomodations, and a link to the registration form, please see the announcements on Slack or MEI-L.</p>
+
+<p>Looking forward to meeting you in Berlin,
+Klaus Rettinghaus, Benjamin W. Bohl &amp; Stefan Münnich</p>
+</div>
+  
+
+<h3 class="newsTitle">Event: Music encoding related panel at Teaching Music History Conference 2022<small>2022-06-06 12:00:00 +0000</small></h3>
+<div class="newsEntry"><p>The 2022 Teaching Music History Conference, organized by the Pedagogy Study Group of the American Musicological Society, will take place June 10-11 (Friday–Saturday) at the University of Missouri – Kansas City. You may view the program at <a href="https://www.teachingmusichistory.com/events/tmhc2022/schedule/">https://www.teachingmusichistory.com/events/tmhc2022/schedule/</a>, registration links and further information can be found here: <a href="https://www.teachingmusichistory.com/events/tmhc2022/">https://www.teachingmusichistory.com/events/tmhc2022/</a>. The conference will also be livestreamed for registrants who cannot attend in-person.</p>
+
+<p>There is a panel related to music encoding organized by members of the MEI community and Digital Pegadogy IG (Maristella Feustle, Anna Kijas, Jessica H. Grimmer, Timothy Duguid) on Saturday, June 11 (11:00 – 12:00): “The X[ML]-Files: Pedagogies to Interrogate and Expand Music History”.</p>
+
+</div>
+  
+
+<h3 class="newsTitle">MEC Proceedings 2021 published<small>2022-05-19 12:00:00 +0000</small></h3>
+<div class="newsEntry"><p>It is our great pleasure to announce the upload of the MEC 2021 Proceedings to Humanities Commons: <a href="https://doi.org/10.17613/fc1c-mx52">https://doi.org/10.17613/fc1c-mx52</a>.</p>
+
+<p>You find an overview of all published items, including individual contributions, bibtex metadata and abstracts, here: <a href="https://music-encoding.org/conference/proceedings.html">https://music-encoding.org/conference/proceedings.html</a>.</p>
+
+<p>A huge collective effort and teamwork made it possible to get this volume with 24 contributions, 57 distinct authors and with a magical 222 (+2) pages ready for publication, just in time before MEC 2022. Many thanks to everyone involved!</p>
+
+<p>We wish you an exciting read,
+David Rizo and Stefan Münnich</p>
+</div>
+  
+
+<h3 class="newsTitle">Registration open for MEC 2022<small>2022-03-03 12:00:00 +0000</small></h3>
+<div class="newsEntry"><p>I’m pleased to announce that registration for the Music Encoding Conference ‘22 is now open via the conference ConfTool page:</p>
+
+<p><a href="https://www.conftool.net/music-encoding2022/index.php?page=participate">https://www.conftool.net/music-encoding2022/index.php?page=participate</a></p>
+
+<p>Please make use of the reduced-fee early registration rates (up to March 20, 2022) if possible. Your early registration will help us enormously with planning this complex hybrid conference!</p>
+
+<p>The conference webpage has been updated with a wealth of information about MEC ‘22. Please have a look:</p>
+
+<p><a href="https://music-encoding.org/conference/2022/">https://music-encoding.org/conference/2022/</a></p>
+
+<p>BURSARIES FOR STUDENT PRESENTERS of approximately $800 CAD per successful applicant are available. Please see the following page for information on the simple application process, and note the urgent deadline of March 10, 2022!</p>
+
+<p><a href="https://music-encoding.org/conference/2022/bursaries/">https://music-encoding.org/conference/2022/bursaries/</a></p>
+
+<p>CHILDCARE BURSARIES of $50 CAD per day (up to a maximum of $200 CAD per person) are also available. Please see the following page, noting the same urgent deadline!</p>
+
+<p><a href="https://music-encoding.org/conference/2022/childcare/">https://music-encoding.org/conference/2022/childcare/</a></p>
+
+<p>We hope to see many of you (in-person at Dalhousie University, or virtually) at the Music Encoding Conference ‘22!</p>
+
+<p>On behalf of the conference organizers,
+David M. Weigl</p>
+</div>
+  
+
+<h3 class="newsTitle">MEI Board: Candidates statements 2021<small>2021-12-17 00:00:00 +0000</small></h3>
+<div class="newsEntry"><p>We are very pleased to have received the <a href="/community/mei-board/elections/2021/candidates.html">following statements</a> for the candidates running for election for the MEI board.</p>
+</div>
+  
+
+<h3 class="newsTitle">MEI Board: Call for candidates<small>2021-11-20 00:00:00 +0000</small></h3>
+<div class="newsEntry"><p>On 31 December 2021 the terms of three MEI Board members will come to an end. The entire Board wishes to thank Benjamin W. Bohl, Elsa De Luca, and Ichiro Fujinaga for their service and dedication to the MEI community. Additional gratitude is due Elsa for her leadership as Chair of the Board.</p>
+
+<p>In order to fill these soon-to-be-vacant positions, elections must be held. The election process will take place in accordance with the Music Encoding Initiative By-Laws. [1]</p>
+
+<p>To nominate candidates, please do so via this <a href="https://forms.gle/XCdSyeQ7BN6cbad27">form</a>.</p>
+
+<p>The timeline of the elections will be as follows:</p>
+
+<p>Nomination phase (20 November – 4 December, 2021 [2])</p>
+<ul>
+  <li>Nominations can be sent by filling in the nomination form.</li>
+  <li>Any person who today is a subscriber of MEI-L has the right to nominate candidates.</li>
+  <li>Individuals who have previously served on the Board are eligible for nomination and re-appointment.</li>
+  <li>Self nominations are welcome.</li>
+  <li>Individuals will be informed of their nomination when received and asked to confirm their willingness to serve on the Board.</li>
+  <li>Acceptance of a nomination requires submission of a short CV and a personal statement of interest in MEI (a maximum of 200 words each) to elections@music-encoding.org by December, 17 2021.</li>
+  <li>Candidates who have been nominated but who have not confirmed their willingness will not be included on the ballot.</li>
+  <li>Candidates have to be members of the MEI-L mailing list but may register until 16 December 2021.</li>
+</ul>
+
+<p>Election phase (18 December – 31 December, 2021)</p>
+<ul>
+  <li>The election will take place using OpaVote and the <a href="https://www.opavote.com/methods/ranked-choice-voting">Ranked Choice Voting method</a>.</li>
+  <li>You will be informed about the election and your individual voting tokens in a separate email.</li>
+</ul>
+
+<p>Post election phase</p>
+<ul>
+  <li>Election results will be announced after the elections have closed.</li>
+  <li>The term of the elected candidates starts on 1 January 2022.</li>
+</ul>
+
+<p>The election of Board members is an opportunity for each of you to have a voice in determining the future of MEI.</p>
+
+<p>Thank you for your support,
+Peter Stadler and Laurent Pugin
+MEI election administrators 2021
+by appointment of the MEI Board</p>
+
+<p>[1] The By-laws of the Music Encoding Initiative are available <a href="https://music-encoding.org/community/mei-by-laws.html">online</a>.<br />
+[2] All deadlines are referenced to 11:59 pm (UTC)</p>
+</div>
+  
+
+<h3 class="newsTitle">MEC 2022 Website launched!<small>2021-09-30 12:00:00 +0000</small></h3>
+<div class="newsEntry"><p>The webpage for the Music Encoding Conference 2022 has been launched at <a href="http://music-encoding.org/conference/2022">www.music-encoding.org/conference/2022</a>.</p>
+
+<p>MEC 2022 will take place Thursday 19th – Sunday 22nd May, 2022, at Dalhousie University, Nova Scotia, Canada. As in the previous two years, this year’s Conference will again allow remote attendance where travel plans are affected by the ongoing pandemic. However, we look forward to welcoming as many of you in person as possible!</p>
+
+<p>A Call for Contributions will be circulated soon. In the meantime, please keep an eye on the conference website for further details as they become available.</p>
+</div>
+  
+
+<h3 class="newsTitle">Proposed changes to MEI By-laws<small>2021-07-16 18:00:00 +0000</small></h3>
+<div class="newsEntry"><p>Dear MEI community members,</p>
+
+<p>The “request for community comments” period regarding the proposed changes to the MEI By-laws will be extended until Thursday, July 22th, 14.00 CEST, i.e. the begin of the Board meeting at MEC2021. Any comments before that date will be considered for final discussion within the Board at the MEC Board meeting. The agreed upon version of the amended By-laws will be put to vote over a minimum 7-day period. Voting phase will be announced and started at the Community Meeting at MEC2021.</p>
+
+<p>For options to review the proposed changes see https://github.com/music-encoding/music-encoding.github.io/pull/234.</p>
+
+<p>Thank you!</p>
+</div>
+  
+
+<h3 class="newsTitle">Event: Music Encoding Use-cases in U.S. Libraries: Aims, Pedagogy, and Workflows<small>2021-06-27 14:00:00 +0000</small></h3>
+<div class="newsEntry"><p>There is a session of interest to the MEI community on Tuesday, July 27 during the International Association of Music Libraries, Archives and Documentation Centres Congress (IAML) and Digital Libraries for Musicology Conference.</p>
+
+<p><strong>Music Encoding Use-cases in U.S. Libraries: Aims, Pedagogy, and Workflows</strong></p>
+
+<p>July 27, 2021, 19-20.30 UTC</p>
+
+<p>Presented by the Forum of Sections <br />
+Chair: Anna E. Kijas <br />
+Speakers: Anna E. Kijas (Tufts University), Maristella Feustle (University of North Texas), Jacob Schaub (Vanderbilt University), and David Day (Brigham Young University, Provo, UT)</p>
+
+<p>How are library professionals engaging with music encoding and why? What workflows have been developed to aid in teaching students or staff to transcribe and encode music? By “music encoding” we mean representing music notation in a standardized, machine-readable format. Librarians from four public and private U.S. academic institutions will present music encoding use cases that highlight particular aspects of their collections with a focus on pedagogical approaches, workflows, and choices of technology.</p>
+
+<p>At Tufts University, Lilly Music Library students are working on a music incipits project that aims to make compositions by un(der)-represented composers visible and discoverable. They are developing expertise in transcription and editing, and expanding their knowledge of a diverse music repertoire. Project aims, workflows, and pedagogical value of this work will be discussed.</p>
+
+<p>At Brigham Young University, students are involved in a harp music incipits project that aims to explore how incipits can be used 1) to provide enhanced metadata in online catalogs and/or the planned online harp repertory guide, 2) for analysis of the adaptation of popular songs and operatic arias in harp music arrangements, 3) to create online thematic catalogs for composers who wrote primarily for the harp, and 4)  potentially in RISM. The idea of encoding themes from Pierre Adolphe Capelle’s La clé du claveau will also be explored.</p>
+
+<p>The University of North Texas Music Library is pursuing multiple, complementary benefits through the encoding of early editions of operas and ballets by Jean-Baptise Lully and his sons. Encoding is the first step in unlocking possibilities for discovery, performance, study, and data analysis. A pilot project with one librarian and two graduate students at UNT has focused on encoding the scarcely performed opera Zéphire et Flore by Louis and Jean-Louis Lully, refining workflows and training materials for future plans to encode UNT’s extensive Lully collection.</p>
+
+<p>The Wilson Music Library at Vanderbilt University is exploring areas of MEI pedagogy as well as the potential and challenges of MEI application to contemporary musical manuscripts. In Spring 2020, a student library fellows seminar at Vanderbilt co-led by a music librarian and a musicology faculty member focused on equipping students with the basics of MEI as well as utilizing these tools toward the ongoing encoding of a 1994 working draft of Alfred Schnittke’s Sinfonisches Vorspiel held in Vanderbilt University Special Collections.</p>
+
+<p>These four use-cases will demonstrate the ways in which librarians are engaging with music encoding in ways that highlight aspects of their collections, generate music data for further analysis or research, and create an environment of praxis for students, staff, and faculty.</p>
+</div>
+  
+
+<h3 class="newsTitle">Proposed changes to MEI By-laws<small>2021-06-24 12:00:00 +0000</small></h3>
+<div class="newsEntry"><p>The MEI Board has agreed to propose some changes to the MEI By-laws. Focal changes are the explicit accomodation of any type of music notation, not only Western, in section 2 (“Purpose”), the clarification of Personal and Institutional membership in section 3 (“Membership”), and the explicit integration of appointed offices of the Board and a fine-tuning of the election procedure. Other changes concern minor corrections to wording.</p>
+
+<p>Options to view the proposed changes include:</p>
+
+<p>1) a compiled overview of the changes in a GoogleDoc (https://docs.google.com/document/d/1cHVVA8gkRI-gFDLo4YbtHgslP9K37IbOxX1ctSd_HeA/edit?usp=sharing)</p>
+
+<p>2) a “diff” in the dedicated Pull Request on Github (https://github.com/music-encoding/music-encoding.github.io/pull/234/files)</p>
+
+<p>According to the By-Laws, any proposed amendments must be approved by the MEI community, following this procedure:</p>
+
+<p>“Changes to these by-laws become proposed amendments with a simple majority of the complete Board membership. Proposed amendments will be published on the MEI mailing list (MEI-L) and the MEI website. After a minimum 10-day comment period, the Board will discuss comments on the proposed amendments received from the MEI membership and incorporate changes agreed to by a simple majority of the Board. The agreed upon version of the amended by-laws will be presented to the MEI membership for voting over a minimum 7-day period. The amended version of the by-laws must pass with a two-thirds (2/3) majority of votes in order to become effective.”</p>
+
+<p>The Board invites you to provide any additional comments you have to the GoogleDoc or the Pull Request above.</p>
+
+<p>Any comments before July 5th (23:59:59, UTC-11: https://www.timeanddate.com/worldclock/converter.html?iso=20210705T105900&amp;p1=3925&amp;p2=137&amp;p3=213&amp;p4=43&amp;p5=136&amp;p6=1976&amp;p7=107&amp;p8=33&amp;p9=248&amp;p10=240) will be considered for final discussion within the Board. The agreed upon version of the amended By-laws will be put to vote over a minimum 7-day period before MEC2021. The voting results will be presented during the Community Meeting at MEC2021.</p>
+</div>
+  
+
+<h3 class="newsTitle">Conference program uploaded for MEC 2021<small>2021-06-15 15:00:00 +0000</small></h3>
+<div class="newsEntry"><p>The conference program for the Music Encoding Conference 2021, 19-22 July 2021 at the University of Alicante / Online has been uploaded to <a href="https://music-encoding.org/conference/2021/program/">https://music-encoding.org/conference/2021/program/</a>.</p>
+
+<p>Please also note that early bird registration has been extended to June 21st (<a href="https://music-encoding.org/conference/2021/register/">https://music-encoding.org/conference/2021/register/</a>).</p>
+
+<p>For current travel procedures visit <a href="https://music-encoding.org/conference/2021/travel/">https://music-encoding.org/conference/2021/travel/</a>. For information about COVID-19 protection measures in Alicante, please check <a href="https://music-encoding.org/conference/2021/covid-19/">https://music-encoding.org/conference/2021/covid-19/</a>.</p>
+
+<p>Looking forward to seeing you either online or physically.</p>
+</div>
+  
+
+<h3 class="newsTitle">Event: Music encoding related session at Teaching Music History Conference 2021<small>2021-06-15 14:00:00 +0000</small></h3>
+<div class="newsEntry"><p>The 2021 Teaching Music History Conference, organized by the Pedagogy Study Group of the American Musicological Society, will be held virtually from June 14-18 and June 21-25. All presentations are scheduled for 4:00-5:30 PM (EST). You may view the program at https://tinyurl.com/tmhc2021. There is a session of interest to the MEI community on Tuesday, June 15.</p>
+
+<p>The conference is free to attend! Please register at https://tinyurl.com/TMHC2021reg to stay informed and receive the Zoom link.</p>
+
+<p><strong>Teaching Music History Conference 2021</strong></p>
+
+<p><em>Session: Using New Technologies to Enhance Teaching</em></p>
+
+<p>Tuesday, June 15 (4:00 – 5:30 PM)</p>
+
+<p>Session Chair: Timothy Cochran (Eastern Connecticut State University)</p>
+
+<p><strong>4:00 PM (EDT) – The Song’s Opening – Mark Gotham (Universität des Saarlandes &amp; fourscoreandmore.org)</strong></p>
+
+<p>One defining development of the digital age is increased accessibility – more content is available to more people than ever. This session presents new digital resources for increased diversity and accessibility in music teaching, starting with the OpenScore Lieder Corpus, a collection of over 1,000 songs encoded by an academic-community collaboration and released under a licence that enables all use-cases including playback, transposition, and ‘music-minus-one’ directly in the webpage. This collection is powerfully inclusive. First, the additional functionality (beyond print or PDF) makes it easier for anyone who is not an expert score reader to engage with these songs. Re-doubling the significance of that accessibility is the greater diversity of repertoire presented, including many songs that have never been published or recorded. This aids the historical discussion of nineteenth century musical practice, framing the scope in terms of a genre particularly open to all; less dependent on centralised, professional routes such as publication.</p>
+
+<p>Building on this corpus to more specific pedagogical ends are: the ‘Working in Harmony’ app (offering automatic feedback on users’ Roman numeral analyses), and an associated Harmony Anthology I have produced for the Open Music Theory Textbook v2. This new kind of anthology harnesses computational methods to present a much larger collection of examples (deliberately including edge-cases), feature the work of many analysts, and provide links to full scores for all entries. This enables a freer exploration of historical harmonic languages and how they vary from composer to composer and over time.</p>
+
+<p><strong>4:30 PM (EDT) – Encoding Schnittke: A Co-Curricular Experiment in MEI – Joy Calico (Vanderbilt University), Jake Schaub (Anne Potter Wilson Music Library, Vanderbilt University)</strong></p>
+
+<p>In S2020 a music librarian and a musicology faculty member led a co-curricular seminar that taught four undergraduates to encode an Alfred Schnittke MS, recently acquired by their institution’s Special Collections, using the Music Encoding Initiative (MEI). Our intention was to use this seminar as the first step in a long-term project to develop a linked open data resource for research on Schnittke, and provide subsequent cohorts of students with an opportunity to learn music encoding skills while contributing to that project and fulfilling co-curricular research requirements.  This paper (1) describes the process whereby we developed the program using both institutional and external resources; (2) assesses our successes and failures, both pedagogical and programmatic; and (3) shares teaching materials that others could use to teach MEI in different classroom contexts.</p>
+</div>
+  
+
+<h3 class="newsTitle">Registration open for MEC 2021<small>2021-05-28 11:40:00 +0000</small></h3>
+<div class="newsEntry"><p>The registration to the Music Encoding Conference 2021, 19-22 July 2021 at the University of Alicante / Online is now open!</p>
+
+<p>Head to the conference webpage for registering and accessing information about the program, travel and accommodation.</p>
+
+<p>Please note that early bird registration ends on 14 June. We look forward to seeing you at the conference!</p>
+
+<p>For more information please visit <a href="https://music-encoding.org/conference/2021/">https://music-encoding.org/conference/2021/</a></p>
+</div>
+  
+
+<h3 class="newsTitle">Digital Humanities in Early Music Research, 2021/1:  OMR-capable chant editors<small>2021-03-14 12:00:00 +0000</small></h3>
+<div class="newsEntry"><p>The Digital Humanities in Early Music Research series of the <a href="http://www.smnf.cz/en/">Old Myths New Facts project</a> (Masaryk Institute and Archives of the Czech Academy of Sciences) presents its first workshop in 2021. The aim of this workshop is to teach participants how to use current software tools capable of optical music recognition (OMR) for processing plainchant manuscripts. Hands-on work is planned!</p>
+
+<p>The workshop will consist of three sessions, two of them led by members of the Music Encoding Initiative Board, Ichiro Fujinaga and Martha E. Thomae (see the following program). <strong>Reservation is required</strong>, so if you wish to participate, please register here: <a href="http://www.smnf.cz/en/news/Digital-Humanities-in-Early-Music-Research-2021-1-OMR-capable-chant-editors/">http://www.smnf.cz/en/news/Digital-Humanities-in-Early-Music-Research-2021-1-OMR-capable-chant-editors/</a>.</p>
+
+<p><strong>Session 1 (Talk): Large-scale OMR for neumes with Rodan</strong><br />
+(Ichiro Fujinaga, McGill University)</p>
+
+<p><em>March 17th (Wednesday), 4 PM – 5 PM CET</em></p>
+
+<p>The overall goal of the Single Interface for Music Score Searching and Analysis (SIMSSA) project is to develop a workflow for creating an infrastructure for a musical data discovery system. Here, we describe an online system for large-scale processing of neume music notation called “Rodan.” The system converts the images of music manuscripts to a computer-readable format using optical music recognition (OMR) technologies.</p>
+
+<p><strong>Session 2 (Workshop): Making Rodan work for you</strong><br />
+(Martha Thomae, McGill University)</p>
+
+<p><em>March 18th (Thursday), 4 PM – 5:15 PM CET</em></p>
+
+<p>In this second session about SIMSSA (Single Interface for Music Score Searching and Analysis), we will explore in more detail the technologies presented during the first session. We will see each of the OMR-related “jobs” available in “Rodan,” getting to know their settings, and how to interconnect these jobs to generate an MEI file which encodes the contents of a music manuscript. The goal of this workshop is for the audience to learn how to use these technologies for their own purposes.</p>
+
+<p><strong>Session 3 (Workshop): Collaborative digital editions with OMMR4All</strong><br />
+(Alexander Hartelt, Würzburg University, accompanied by Jan Hajič, Czech Academy of Sciences)</p>
+
+<p><em>March 19th (Friday), 4 PM – 6 PM CET</em></p>
+
+<p>OMMR4all is a web app for collaboratively creating digital facsimile editions of chant manuscripts in staff notation, with optical music recognition available as a part of the workflow. This workshop session is a hands-on tutorial that aims to teach participants how to efficiently use OMMR4all. We will walk through both manual and automated data entry workflows, show possibilities for collaboration, and demonstrate edition presentation features.</p>
+</div>
+  
+
+<h3 class="newsTitle">MEC2021 postponed to July 2021<small>2020-12-18 12:00:00 +0000</small></h3>
+<div class="newsEntry"><p>Dear MEI community,</p>
+
+<p>With the COVID-19 pandemic still not under control, it currently remains uncertain whether travelling in May would be safe enough for everyone. The various vaccines, among other factors, give reason to believe that the situation will improve in later months. Thus, the MEI Board, the Organizing Committee and Program Committee of the Music Encoding Conference 2021 in Alicante have decided to postpone the event by two months. The conference is now scheduled to take place from <strong>Monday 19 to Thursday 22 July 2021</strong> and is additionally being prepared to be held in <strong>hybrid mode</strong> to allow either physical or virtual participation.</p>
+
+<p>For latest infos and schedules, please consult the <a href="http://music-encoding.org/conference/2021/call">Call for Proposals</a></p>
+</div>
+  
+
+<h3 class="newsTitle">2020 MEI Board Elections<small>2020-11-27 11:00:00 +0000</small></h3>
+<div class="newsEntry"><p>Dear Community,</p>
+
+<p><strong>TLTR:</strong></p>
+
+<p>The 2020 MEI Board elections have started, if you are a registered member of MEI you should receive your voting tokens via email shortly. Before voting please see the <a href="/community/mei-board/elections/2020/candidates">2020 MEI Board Election candidate statements</a></p>
+
+<p><strong>More info:</strong></p>
+
+<p>The Music Encoding Initiative (MEI) is an open-source effort to define a system for encoding musical documents in a machine-readable structure. MEI brings together specialists from various music research communities, including technologists, librarians, historians, and theorists in a common effort to define best practices for representing a broad range of musical documents and structures.</p>
+
+<p>The MEI Board manages the property and business of MEI. It promotes the development of MEI, oversees the activities of the MEI Technical Team, guides the development of the MEI conceptual model, Guidelines and schemata, and acts as a contact point for MEI-related activities. The Board consists of nine elected members and one member designated by each Host Institution. The Board will hold regular, virtual or in-person meetings. As schedules and funding permit, the Board will meet in person at least once per year.</p>
+
+<p>We have a great set of 5 candidates to fill the 3 vacant positions on the MEI Board. You’ll find the candidate statements at: https://music-encoding.org/community/mei-board/elections/2020/candidates</p>
+</div>
+  
+
+<h3 class="newsTitle">MEI Developer Workshop<small>2020-10-18 12:00:00 +0000</small></h3>
+<div class="newsEntry"><p>Dear MEI Community,</p>
+
+<p>due to the rising number of COVID-19 cases in Germany and all over the world, we decided that the upcoming MEI Developer Workshop will be held online only.</p>
+
+<p>The workshop will be held in a combination of Zoom and Slack. We set up a <a href="https://music-encoding.slack.com/archives/C01CNDCP3CM">#workshops-dev2020 channel</a> on Slack already, which you might want to join to receive further information.</p>
+
+<p>We would also like to have a family-friendly workshop, so we are moving it forward by one day.
+Kick off will be on Wednesday November 11 at 3 pm CET with our first Zoom meeting. Saturday should remain free, unless we need more time.</p>
+
+<p>The main objective of this meeting will be to bring the MEI schema and guidelines back together again in one repo and to prepare a new release.</p>
+
+<p>Hope to see many of you. 
+Stay healthy!
+Klaus Rettinghaus</p>
+</div>
+  
+
+<h3 class="newsTitle">MEI Metadata Working Meeting Update<small>2020-10-07 12:00:00 +0000</small></h3>
+<div class="newsEntry"><p>Dear friends of MEI metadata,</p>
+
+<p>We would like to inform you that due to the ongoing COVID-19 situation we have decided to hold the working meeting on the topic of MEI metadata, which will take place from November 2 to 4, 2020, <strong>only virtually</strong>.</p>
+
+<p>We have extended the registration deadline until 15 October 2020.</p>
+
+<p>Further information on the schedule, topics and used technologies will follow soon.</p>
+
+<p>Best wishes</p>
+
+<p>Margrethe Støkken Bue and Kristina Richts<br />
+<em>Co-Chairs of the MEI Metadata and Cataloging Interest Group</em></p>
+</div>
+  
+
+<h3 class="newsTitle">Call for proposals for MEC 2021<small>2020-10-01 12:00:00 +0000</small></h3>
+<div class="newsEntry"><p>The call for the Music Encoding Conference 2021 is now online! Submissions for papers, posters, panels, and workshops concerning development or application of music encodings in work and research are highly welcomed.</p>
+
+<p>For more information please visit <a href="http://music-encoding.org/conference/2021">www.music-encoding.org/conference/2021</a>.</p>
+</div>
+  
+
+<h3 class="newsTitle">MEI Metadata Working Meeting Invitation<small>2020-05-23 23:15:00 +0000</small></h3>
+<div class="newsEntry"><p>Dear friends of MEI metadata,</p>
+
+<p>We hereby cordially invite you to the next MEI Metadata working meeting, which will take place from <strong>2nd to 4th November 2020</strong> at the <strong>Academy of Sciences and Literature in Mainz</strong>.</p>
+
+<p>With this working meeting we will take up current metadata topics around MEI and plan to continue working on best practice recommendations for specific application scenarios of MEI metadata, such as work catalogues, source descriptions, etc. Since the meeting serves as an opportunity for professional exchange according MEI metadata, participants are welcome to suggest issues that should be discussed during the meeting.</p>
+
+<p>Due to the ongoing COVID-19 pandemic, we will decide at the end of September whether the meeting can take place physically or whether we switch to a virtual format or even to a hybrid meeting just in case of travel restrictions in the context of COVID-19.</p>
+
+<p><strong>Registration:</strong></p>
+
+<p>If you would like to participate in the workshop, please register by e-mail (to <a href="mailto:kristina.richts@uni-paderborn.de">kristina.richts@uni-paderborn.de</a> and/or <a href="mailto:Margrethe.Bue@nb.no">Margrethe.Bue@nb.no</a>) until September 30th. Please indicate if your participation will be physical or digital.</p>
+
+<p>In case you would like to suggest issues for discussion, please let us know as soon as possible. If there are any questions concerning the meeting, we will be happy to answer them.</p>
+
+<p>Best wishes and stay healthy,</p>
+
+<p>Margrethe Støkken Bue and Kristina Richts<br />
+<em>Co-Chairs of the MEI Metadata and Cataloging Interest Group</em></p>
+</div>
+  
+
+<h3 class="newsTitle">Digital Humanities in Early Music Research I - Session II: Early Music Databases and Encoding<small>2020-05-23 22:45:00 +0000</small></h3>
+<div class="newsEntry"><p>A free, open to the public, series of conferences and workshops focusing on the use of digital humanities in early music research will be offered online at the end of June. The Session II of the Digital Humanities in Early Music Research I series will focus on databases and encoding of early music.</p>
+
+<p>Led by two members of the Music Encoding Initiative Board, Elsa de Luca (administrative chair) and Martha E. Thomae, Session II will consist of two presentations and two workshops (see the following program). <strong>Reservation is required</strong>, please contact the coordinator Jana Franková (<a href="mailto:frankova@mua.cas.cz">frankova@mua.cas.cz</a>) and Hana Vlhová-Wörmer (<a href="mailto:vlhova@mua.cas.cz">vlhova@mua.cas.cz</a>) jointly to reserve your place.</p>
+
+<p><strong>Presentation I: MEI for Encoding Mensural Music – A Survey</strong></p>
+
+<p><em>Monday, June 22nd, 16–17h (GMT+2)</em></p>
+
+<p>A peculiarity of mensural notation is the context-dependent nature of the duration of the notes. Mensural pieces are commonly written in separate parts, a layout that does not allow us to visualize the vertical sonorities and appreciate the polyphonic texture of the piece. Although many mensural pieces are encoded in symbolic formats (e.g., MusicXML and MIDI), these files tend to encode the modern transcription of the piece rather than its original (mensural) values. MEI, instead, allows encoding mensural music in the original notation through its Mensural Module. This presentation showcases some projects that have worked on encoding mensural music in MEI. The common goal of these projects is to present the mensural pieces as scores in the original notation. The MEI representation allows visualizing the vertical sonorities (which are hindered by the separate-parts layout of the original sources) while still maintaining the notation of the sources, thus avoiding to lose some important details of the notation in modern transcriptions.</p>
+
+<p><strong>Workshop I: Introduction to MEI</strong></p>
+
+<p><em>Wednesday, June 24th, 16–19h15 (GMT+2)</em></p>
+
+<p>General introduction to MEI (Music Encoding Initiative) and the elements and attributes of the Neumes and Mensural modules.</p>
+
+<p><strong>Presentation II: The Portuguese Early Music Database</strong></p>
+
+<p><em>Monday, June 29th, 16–17h (GMT+2)</em></p>
+
+<p>This presentation introduces a large project on Digital Humanities started about ten years ago by Manuel Pedro Ferreira at the NOVA University of Lisbon. The <a href="http://pemdatabase.eu/">Portuguese Early Music Database</a> is a digital library of Iberian (mainly Portuguese) manuscripts with musical notation written before c. 1650. In PEM, every manuscript is given in full-color reproduction accompanied by a codicological description. Additionally, the musical contents of all fragments—and a selection of codices with monophonic or polyphonic music as well—are fully indexed. Crucially, plainchant in PEM is indexed following the <a href="http://cantusindex.org/">Cantus Index</a> system and, as such, the PEM Database is connected to other international medieval music databases by means of unique Cantus ID numbers. I will discuss the search capabilities of PEM, its contents, and all the challenges related to the development and implementation of such a unique project in early music.</p>
+
+<p><strong>Workshop II: Hands-on MEI Encoding</strong></p>
+
+<p><em>Tuesday, June 30th, 16–19h15 (GMT+2)</em></p>
+
+<p>Presentation of MEI encoding for chant and mensural notations from different areas of Western Europe. Followed by an open discussion of coding examples of the Jistebnický kancionál manuscript.</p>
+</div>
+  
+
+<h3 class="newsTitle">Registration for Music Encoding workshop in October in Nashville, TN<small>2019-09-03 12:00:00 +0000</small></h3>
+<div class="newsEntry"><p>Registration for the MEI workshop and hackathon at Vanderbilt University is now open! Register (free) at <a href="http://bit.ly/vandy-mei">bit.ly/vandy-mei</a> by 17 October 2019. The tentative schedule is listed below.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th> </th>
+      <th>2019 Music Encoding Workshop</th>
+      <th> </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Date</td>
+      <td>Event</td>
+      <td>Location</td>
+    </tr>
+    <tr>
+      <td>Thursday, October 24</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>1:30 p.m. to 4:30 p.m.</td>
+      <td>Introduction to the MEI, Part I — Johannes Kepper</td>
+      <td>Cohen Hall 203</td>
+    </tr>
+    <tr>
+      <td>5:00 p.m. to 7:00 p.m.</td>
+      <td>Reception</td>
+      <td>Cohen Hall Foyer</td>
+    </tr>
+    <tr>
+      <td>Friday, October 25</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>9:00 a.m. to 12:00 p.m</td>
+      <td>Introduction to the MEI, Part II - Johannes Kepper</td>
+      <td>Cohen Hall 203</td>
+    </tr>
+    <tr>
+      <td>12:00 p.m. to 1:30 p.m.</td>
+      <td>Lunch</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>1:30 p.m. to 3:30 p.m.</td>
+      <td>Hackathon, Part I</td>
+      <td>Cohen Hall 203</td>
+    </tr>
+    <tr>
+      <td>3:30 p.m. to 4:30 p.m.</td>
+      <td>Digital Cultural Heritage at Vanderbilt</td>
+      <td>Cohen Hall 203</td>
+    </tr>
+    <tr>
+      <td>Saturday, October 26</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>9:00 a.m. to 12:00 p.m.</td>
+      <td>Hackathon, Part II</td>
+      <td>Cohen Hall 203</td>
+    </tr>
+    <tr>
+      <td>12:00 p.m. to 1:30 p.m.</td>
+      <td>Lunch</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>1:30 p.m. to 4:30 p.m.</td>
+      <td>Hackathon, Part III</td>
+      <td>Cohen Hall 203</td>
+    </tr>
+    <tr>
+      <td>Sunday, October 27</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>9:00 a.m. to 12:00 p.m.</td>
+      <td>Hackathon, Part IV</td>
+      <td>Cohen Hall 204</td>
+    </tr>
+    <tr>
+      <td>12:00 p.m. to 1:30 p.m.</td>
+      <td>Lunch</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Watch for updates at the Music Encoding Initiative <a href="https://music-encoding.org/">website</a>. Please address questions to <a href="mailto:workshop2019@music-encoding.org">workshop2019@music-encoding.org</a>.</p>
+</div>
+  
+
+<h3 class="newsTitle">Music Encoding workshop in October in Nashville, TN<small>2019-08-09 01:00:00 +0000</small></h3>
+<div class="newsEntry"><p>Save the date! Vanderbilt University will hold a Music
+Encoding workshop &amp; hackathon in Nashville, TN on 24-27 October 2019.</p>
+
+<p>The workshop will introduce MEI to newcomers and offer workshops for advanced
+users. Register (free) by October 17. The workshop will be led by members
+of the Music Encoding Initiative Board and Technical Team.</p>
+
+<p>Those new to MEI will learn how to use the Music Encoding Initiative for
+research, teaching, electronic publishing, and management of digital
+collections. Major topics will include: basic XML; MEI history and design
+principles; tools for creating and editing MEI data and metadata; MEI-based
+workflows; using Verovio.</p>
+
+<p>Each day will include lectures, hands-on encoding practice, and
+opportunities to address participant specific issues. Attendees are
+encouraged to bring example material they would like to encode. No previous
+experience with MEI or XML is required for this track, but an understanding
+of music notation and other markup schemes, such as TEI and HTML, will be
+helpful.</p>
+
+<p>For software developers and advanced users interested in creating software
+and documentation for authoring, editing, converting, querying, and
+rendering encoded music data, the workshop will offer opportunities to
+share ideas and tools with members of the Technical Team and other members
+of the community.</p>
+
+<p>Please address questions to <a href="mailto:info at music-encoding.org">info at music-encoding.org</a>.</p>
+
+<p>We look forward to seeing you there!</p>
+</div>
+  
+
+<h3 class="newsTitle">MEC Proceedings 2015 to 2017 published<small>2019-08-08 07:00:00 +0000</small></h3>
+<div class="newsEntry"><p>We are pleased to announced that the Music Encoding Conference Proceedings for the years 2015 (Tours), 2016 (Montreal) and 2017 (Tours) are published now.</p>
+
+<p>The proceedings hold a total of nineteen contributions from Serafina Beck, Axel Berndt, Benjamin W. Bohl, David Burn, Xuanli Chen, Jim DeLaHunt, Giuliano Di Bacco, Norbert Dubowy, Ichiro Fujinaga, Andrew Hankinson, Jane Harrison, Andrew Horwitz, Yu-Hui Huang, Johannes Kepper, Farhan Khalid, Reiner Krämer, Debra Lewis Lacoste, David Lewis, 
+Jacob Olley, Kevin Page, Anna Plaksin, Perry Roland, Nico Schüler, Agnes Seipelt, Rebecca A. Shaw, John A. Stinson, Jason Stoessel, Barbara Swanson, Richard Sänger, Radu Timofte, Luc Van Gool, Raffaele Viglianti, and Jan-Peter Voigt, plus a foreword by Giuliano Di Bacco. They are available from <a href="https://doi.org/10.15463/music-1">https://doi.org/10.15463/music-1</a>.</p>
+
+<p>We would like to thank the authors for their wonderful and very diverse contributions to the field of music encoding. We also thank the Bavarian State Library in Munich for their assistance and for taking care of the long-term preservation of the publication. Finally, we thank everyone else involved in the preparation of this volume.</p>
+
+<p>The editors<br />
+Giuliano Di Bacco, Perry Roland and Johannes Kepper</p>
+</div>
+  
+
+<h3 class="newsTitle">First Draft of MEI Basic<small>2019-05-31 07:30:00 +0000</small></h3>
+<div class="newsEntry"><p>The MEI Community is pleased to announce the first draft version of MEI Basic, 
+a simplified profile of MEI intended to support data interchange both
+within MEI and with other encoding formats.</p>
+
+<p>MEI Basic has been discussed at several occasions over the past three years.
+It intends to simplify MEI so that every feature can only be expressed in one
+specific way, and also removes all editorial or analytical possibilities, as
+well as the integration of facsimiles and recordings. What is left is a
+small core of MEI’s features, that falls in the range of other encoding 
+formats and thus allows an easier transformation.</p>
+
+<p>There are still aspects that need discussion, including the question of how
+much metadata should be allowed or required by MEI Basic.</p>
+
+<p>The development of MEI Basic happens at a separate branch of the MEI repository 
+at <a href="https://github.com/music-encoding/music-encoding/commit/b50748ce537b43e1527791fb41e8c28aa1582cdb" target="\_blank">https://github.com/music-encoding/music-encoding/tree/basic</a>.</p>
+
+<p>Everyone from the MEI Community and beyond is invited to have a look at the 
+<a href="/downloads/mei-basic_2019-05-31_184d45b.xml" target="\_blank">current state of the customization</a>,
+the derived <a href="/downloads/mei-basic_2019-05-31_184d45b.rng" target="\_blank">RelaxNG schema</a>,
+a <a href="/downloads/Chopin_Etude_op.10_no.9_basic.mei" target="\_blank">sample encoding</a>, and participate in the 
+<a href="https://github.com/music-encoding/music-encoding/labels/Component%3A%20MEI%20Basic" target="\_blank">discussions</a> 
+necessary to finalize MEI Basic.</p>
+</div>
+  
+
+<h3 class="newsTitle">Registration open for MEC 2019<small>2019-03-01 08:30:00 +0000</small></h3>
+<div class="newsEntry"><p>The registration to the Music Encoding Conference 2019, 29 May to 1 June 2019 at the University of Vienna is now open!</p>
+
+<p>Head to the conference webpage for registering and accessing information about the program, travel and accommodation.</p>
+
+<p>Please note that early bird registration ends on 1 April. We look forward to seeing you at the conference!</p>
+
+<p>For more information please visit <a href="https://music-encoding.org/conference/2019/">https://music-encoding.org/conference/2019/</a></p>
+</div>
+  
+
+<h3 class="newsTitle">Extended deadline for CfP MEC 2019<small>2018-12-06 08:30:00 +0000</small></h3>
+<div class="newsEntry"><p>The Music Encoding Conference 2019 calls for paper, poster, panel, and workshop proposals to be submitted by the extended deadline of 16 December 2018.</p>
+
+<p>For more information please visit <a href="https://music-encoding.org/conference/2019/">https://music-encoding.org/conference/2019/</a></p>
+</div>
+  
+
+<h3 class="newsTitle">MEI 4.0 Schema Released<small>2018-11-01 12:00:00 +0000</small></h3>
+<div class="newsEntry"><p>The Board of the Music Encoding Initiative (MEI) is pleased to announce the availability of the MEI 4.0 Schema. The MEI is an international collaborative effort to capture the semantics of music notation documents as machine-readable data. For more information about MEI, please visit https://music-encoding.org.</p>
+
+<p>This release comes after two years of extensive community consultation and development, and we thank all of the contributors in the community who have provided valuable input, feedback, critique, and development.</p>
+
+<p>These conversations have resulted in the most collaborative music notation schema in history. Although there have been many music notation formats, few have achieved broad consultation and feedback, and even fewer have been co-developed in consultation with such a broad spectrum of stakeholders, from industry partners to librarians, publishers to researchers, and computer scientists to digital humanists. It is our sincere hope that we are able to grow and maintain these collaborations into the future.</p>
+
+<p>Although we are releasing the schema today, there is still work to be done. Along with this release, we are seeking help from the community in updating the guidelines, documentation, tools, and tutorials.</p>
+
+<p>The release of the schema represents the beginning of a transition period, where we will be asking contributors to help us write and expand our documentation, and make MEI more broadly accessible to newcomers and specialists. Over the next few months the technical team will be organizing documentation development “sprints” where we hope members of the community will help contribute content updated to the new specification.</p>
+
+<p>The dates for these sprints will be announced on the MEI-L, and members of the technical team will be available on the MEI Slack channel for consultation and discussion during the sprints. It is our goal to present MEI 4.0, both schema and documentation, to the community at the 2019 Music Encoding Conference in Vienna.</p>
+
+<p>For an overview of the changes in MEI 4.0, please see the Release Notes available on GitHub:</p>
+
+<p><a href="https://github.com/music-encoding/music-encoding/releases/tag/v4.0.0">https://github.com/music-encoding/music-encoding/releases/tag/v4.0.0</a></p>
+
+<p>A detailed overview of the changes in the schema are available here:</p>
+
+<p><a href="https://music-encoding.org/archive/comparison-4.0.html">https://music-encoding.org/archive/comparison-4.0.html</a></p>
+</div>
+  
+
+<h3 class="newsTitle">Call for proposals for MEC 2019<small>2018-10-29 12:00:00 +0000</small></h3>
+<div class="newsEntry"><p>The call for the Music Encoding Conference 2019 is now online! Submissions for papers, posters, panels, and workshops 
+concerning development or application of music encodings in work and research are highly welcomed.</p>
+
+<p>For more information please visit <a href="http://music-encoding.org/conference/2019/">www.music-encoding.org/conference/2019/</a></p>
+</div>
+  
+
+<h3 class="newsTitle">Call for organization for MEC 2020<small>2018-04-16 12:00:00 +0000</small></h3>
+<div class="newsEntry"><p>The MEI Board invites proposals for the organization of the 8th edition of the annual Music Encoding Conference, to be held in 2020.</p>
+
+<p>You will find more information about the hosting guidelines at <a href="http://music-encoding.org/conference/hosting-guidelines.html">http://music-encoding.org/conference/hosting-guidelines.html</a>. Proposals have to be sent by August 1st 2018.</p>
+</div>
+  
+
+<h3 class="newsTitle">Registration open for MEC 2018<small>2018-03-08 12:08:18 +0000</small></h3>
+<div class="newsEntry"><p>The registration to the Music Encoding Conference 2018, 22-25 May 2018 at the University of Maryland is now open!</p>
+
+<p>Head to the conference <a href="http://music-encoding.org/conference/2018/">webpage</a> for registering and accessing information about the program, travel and accommodation.</p>
+
+<p>Please note that early bird registration ends on April 22nd. We look forward to seeing you at the conference!</p>
+</div>
+  
+
+<h3 class="newsTitle">Music Encoding Conference (MEC) venues 2018 and 2019<small>2017-08-04 12:08:18 +0000</small></h3>
+<div class="newsEntry"><p>The venues and dates of the two forthcoming Music Encoding Conferences (MEC) have been announced.</p>
+
+<p><strong>2018: 22 May to 25 May 2018, University of Maryland, College Park, USA</strong></p>
+
+<p>The Michelle Smith Performing Arts Library (MSPAL) and the Maryland Institute for Technology in the Humanities (MITH) will host the Music Encoding Conference, May 22 - 25, 2018, at the University of Maryland in College Park, Maryland, USA. The University of Maryland’s profile as a top-ranked public research institution, its vibrant music and performing arts culture, and its geographical proximity to Washington DC, make UMD an excellent venue for MEC.</p>
+
+<p><strong>2019: 29 May to 1 June 2019, University of Vienna, Vienna, Austria</strong></p>
+
+<p>The Austrian Academy of Sciences, the Mozart Institute of the Mozarteum Foundation Salzburg and the Department of Musicology at the University of Vienna will jointly sponsor the 2019 conference, which will be held at the University of Vienna, in Vienna, Austria, May 29 - June 1, 2019. As the “world capital of music”, a leading center of research, and a university city, Vienna is an ideal location for the conference.</p>
+
+<p>Additional information about deadlines for submitting proposals, the organization of the conferences, etc. will be published early. Everyone interested in music encoding and related fields of work is welcome!</p>
+</div>
+  
+
+<h3 class="newsTitle">MEI Workshop Announcement<small>2017-07-21 12:08:18 +0000</small></h3>
+<div class="newsEntry"><p>A free, three-day, hands-on MEI workshop will be offered Monday, October 2nd 2017 at the University of Virginia Library in Charlottesville, Virginia.</p>
+
+<p>Led by members of the Music Encoding Initiative Board and Technical Team, the workshop will consist of two parallel tracks – “Introduction to MEI” and “Advanced MEI”.</p>
+
+<p><strong>“Introduction to MEI”</strong> In this track, those new to MEI will learn how to use the Music Encoding Initiative for research, teaching, electronic publishing, and management of digital collections. Major topics include</p>
+
+<ul>
+  <li>basic XML;</li>
+  <li>MEI history and design principles;</li>
+  <li>tools for creating and editing MEI data and metadata;</li>
+  <li>MEI-based workflows;</li>
+  <li>and Verovio (www.verovio.org).</li>
+</ul>
+
+<p>Each day will include lectures, hands-on encoding practice, and opportunities to address participant specific issues. Attendees are encouraged to bring example material they would like to encode. No previous experience with MEI or XML is required for this track, but an understanding of music notation and other markup schemes, such as TEI and HTML, will be helpful.</p>
+
+<p><strong>“Advanced MEI”</strong> The intended audience for this track is software developers interested in creating software for authoring, editing, converting, querying, and rendering encoded music data. Topics to be covered include</p>
+
+<ul>
+  <li>the MEI specification and customizations;</li>
+  <li>conversion between MEI and other formats;</li>
+  <li>validation of MEI instances;</li>
+  <li>and MEI-specific libraries, such as lib-mei and Verovio.</li>
+</ul>
+
+<p>Proficiency in one or more programming languages as well as significant experience with music notation and XML development are required for participation in the advanced track. Due to the generous support of the Gladys Krieble Delmas Foundation, there is no cost for attending the workshop. However, each participant must bear his/her own travel, housing, and food costs.</p>
+
+<p>Light refreshments will be provided. To register, visit <a href="https://goo.gl/forms/spXfAkzI7Qe1XaKx1">https://goo.gl/forms/spXfAkzI7Qe1XaKx1</a> (for the introductory track) or <a href="https://goo.gl/forms/xaM0P4Ge5zOKrWKA2">https://goo.gl/forms/xaM0P4Ge5zOKrWKA2</a> (for the advanced track) before September 1, 2017. The number of participants is limited, so register early! Please address questions to <a href="mailto:info@music-encoding.org">info@music-encoding.org</a>.</p>
+</div>
+  
+
+<h3 class="newsTitle">Program of the Music Encoding Conference 2017<small>2017-03-14 12:08:18 +0000</small></h3>
+<div class="newsEntry"><p>The program of the conference is now available. See <a href="https://web.archive.org/web/20170511140944/http://music-encoding.org/community/conference/tours17/program">http://music-encoding.org/community/conference/tours17/program/</a>.</p>
+</div>
+  
+
+<h3 class="newsTitle">MEI Board: Call for candidates<small>2016-11-21 12:08:18 +0000</small></h3>
+<div class="newsEntry"><p>On December 31, 2016, the terms of three MEI board members will come to an end. The entire Board wishes to thank Axel Teich Geertinger, Eleanor Selfridge-Field, and Johannes Kepper for their dedication to the MEI community.</p>
+
+<p>Additional gratitude is due Johannes for his leadership as Chair of the Board. In order to fill these soon-to-be-vacant positions, elections must be held. The election process will take place in accordance with the Music Encoding Initiative By-Laws.[1]</p>
+
+<p>Nominations</p>
+
+<ul>
+  <li>Nominations can be sent to <a href="mailto:elections@music-encoding.org">elections@music-encoding.org</a> between November 21 - December 19, 2016.</li>
+  <li>Individuals who have previously served on the Board are eligible for re-appointment.</li>
+  <li>Any person who subscribes to MEI-L has the right to nominate candidates and/or be a candidate.</li>
+  <li>Self nominations are welcome.</li>
+  <li>Individuals will be informed of their nomination and asked to confirm their willingness to serve on the Board.</li>
+  <li>Acceptance of a nomination requires submission of a short CV and a personal statement of interest in MEI (a maximum of 200 words each) to <a href="mailto:elections@music-encoding.org">elections@music-encoding.org</a> by January 1, 2017.</li>
+</ul>
+
+<p>Election</p>
+
+<ul>
+  <li>The voting period will be open from January 1 - January 15, 2017.</li>
+  <li>The election will take place using OpaVote and the Ranked Choice Voting method (<a href="https://www.opavote.com/methods/ranked-choice-voting">https://www.opavote.com/methods/ranked-choice-voting</a>).</li>
+  <li>You will be informed about the election and your individual voting tokens in a separate e-mail.</li>
+</ul>
+
+<p>The selection of Board members is an opportunity for each of you to have a voice in determining the future of MEI. Keep MEI open!</p>
+
+<p>Benjamin Bohl 
+MEI Elections Officer 2016 by appointment of the MEI-Board</p>
+
+<p>[1] The By-laws of the Music Encoding Initiative are available online at: <a href="https://music-encoding.org/community/mei-by-laws.html">http://music-encoding.org/community/mei-organization/mei-by-laws/</a></p>
+</div>
+  
+
+<h3 class="newsTitle">MEC 2017 Call for Proposals Published<small>2016-10-14 12:08:18 +0000</small></h3>
+<div class="newsEntry"><p>The <a href="https://web.archive.org/web/20161020120633/http://music-encoding.org/community/conference/call-for-proposals/">call for proposals</a> for the Music Encoding Conference 2017 is now live! Proposals for papers, posters, panel discussions, and pre-conference workshops are encouraged.</p>
+</div>
+  
+
+<h3 class="newsTitle">Save the date: MEC 2017<small>2016-05-26 12:08:18 +0000</small></h3>
+<div class="newsEntry"><p>Now it is official: The Music Encoding Conference 2017 will take place from May 16th-19th, 2017 at the <a href="http://cesr.univ-tours.fr">Centre d’Études Supérieures de la Renaissance (CESR)</a> based at the <a href="http://www.univ-tours.fr">Université François-Rabelais Tours</a>.</p>
+</div>
+  
+
+<h3 class="newsTitle">MEC 2016 Call for Proposals Published<small>2015-07-21 12:08:18 +0000</small></h3>
+<div class="newsEntry"><p>The <a href="https://web.archive.org/web/20160505023112/http://music-encoding.org/community/conference/call-for-proposals/">call for proposals</a> for the Music Encoding Conference 2016 is now live! </p>
+
+<p>Proposals for papers, posters, panel discussions, and pre-conference workshops are encouraged. As well, we’ve updated the important dates for the conference: <strong>31 October 2015</strong>: Deadline for abstract submissions <strong>15 December 2015</strong>: Notification of acceptance of submissions <strong>17 May 2016</strong>: Pre-conference workshops <strong>18-19 May 2016</strong>: Conference <strong>20 May 2016</strong>: Un-conference Day Watch <a href="https://web.archive.org/web/20150710210430/http://music-encoding.org/community/conference/">the Conference webpage</a> for more information as it comes available.</p>
+</div>
+  
+
+<h3 class="newsTitle">Save the date: Music Encoding Conference 2016<small>2015-06-17 12:08:18 +0000</small></h3>
+<div class="newsEntry"><p>The Music Encoding Conference 2016 (17-20 May 2016) is being held at the Schulich School of Music of McGill University in Montréal, Canada. Information about the conference program, venues, and accommodations will be posted to the official <a href="https://web.archive.org/web/20150710210430/http://music-encoding.org/community/conference/">conference website</a>.</p>
+</div>
+  
+
+    </div>
+
+    <!-- Make sure to mirror changes in the guidelines repository in _include/footer.html when necessary -->
+<footer>
+  <div class="container">
+    <div class="columns institutions">
+      <div class="column col-12 text-center">
+        <a class="institutionsLink" target="_blank" href="https://www.adwmainz.de">
+          <img src="/pix/akademie-small.png" alt="Akademie der Wissenschaften | Mainz" />
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="text-center">
+    <a class="footerLinks" href="/">Home</a> | <a class="footerLinks" href="/community/community-contacts.html">Contact</a><br/>
+    <small>© Music Encoding Initiative 2024</small>
+  </div>
+</footer>
+
+
+  </body>
+
+</html>

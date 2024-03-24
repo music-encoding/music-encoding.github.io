@@ -1,0 +1,56 @@
+<div>
+    <p>
+        Para los pasos siguientes, debes abrir el archivo 
+        <a href="https://meigarage.edirom.de/profiler" target="_blank" rel="noopener, noreferrer">MEI ProfileDrafter</a>
+        en otra ventana (o pestaña) del navegador para seguir estas instrucciones. 
+    </p>
+    <!--<div>
+        <img style="width: 100%;" src="../tutorials/profileDrafter_overview.png"/>
+    </div>-->
+    <p>
+        Cuando abra ProfileDrafter, verá una lista de todos los Módulos MEI en la columna central. Para cada uno 
+        se indica el número de elementos y clases de atributos de ese módulo. Los módulos individuales pueden desactivarse
+        desmarcando la casilla situada junto a su nombre. Desactive algunos módulos MEI desmarcándolos.  
+    </p>
+    <p>
+        Es bastante sencillo deseleccionar los módulos MEI, ¿verdad? Sin embargo, al utilizar sólo esta casilla de verificación, se obtiene muy poca información sobre las consecuencias de sus elecciones.
+        muy poca información sobre las consecuencias de sus elecciones. 
+        del esquema con estas selecciones. Sin embargo, cada módulo tiene un botón de <em>personalización</em> en la esquina superior derecha. 
+        Al pulsar este botón, la lista de módulos de la columna central se sustituye por una lista de todos los elementos y clases de atributos
+        que forman parte del módulo actual. Tenga en cuenta que esto sólo es posible para los módulos que no haya excluido del esquema.
+    </p>
+    <p>    
+        Si pulsa para personalizar el módulo <em>MEI.cmnOrnaments</em>, verás una lista con
+        los elementos &lt;mordent&gt;, &lt;trill&gt;, y &lt;turn&gt;, y los atributos <em>att.mordent.log</em>, <em>att.ornamentAccid</em>,
+        <em>att.ornamPresent</em>, <em>att.trill.log</em>, y <em>att.turn.log</em>. De nuevo, puede deseleccionar cualquiera 
+        de ellos, dependiendo de sus necesidades específicas. Mientras que en la última pantalla has podido desactivar módulos en su totalidad, aquí puedes 
+        puedes hacer elecciones selectivas, reduciendo MEI a tus necesidades. Si, por la razón que sea, necesitas una versión de MEI que te permita
+        codificar &lt;trill&gt;s, pero no soporta &lt;mordent&gt;s y &lt;turn&gt;s, puedes desactivar fácilmente esos dos elementos,
+        pero mantener el módulo <em>MEI.cmnOrnaments</em> como tal. Si nos fijamos en módulos "más grandes" como <em>MEI.cmn</em>, <em>MEI.header</em>, o
+        <em>MEI.edittrans</em>, es fácil imaginar más casos prácticos para esta exclusión selectiva de elementos. 
+    </p>
+    <p>
+        Al igual que con los elementos, es posible <strong>no permitir clases de atributos</strong> en esta descripción general del módulo. 
+        Sin embargo, esto requiere una buena comprensión de las clases disponibles y su anidamiento. Para la mayoría de los usuarios (y casos de uso), 
+        será más práctico 
+        hacerlo desde una perspectiva ligeramente diferente. En cada elemento, hay un botón <em>establecer atributos</em>.
+        Si pulsa ese botón
+        el contenido de la columna principal se sustituye de nuevo por otro diferente. Esta vez, encontrará una lista de todos los atributos 
+        disponibles en ese elemento. La disposición de este listado sigue las clases de atributos a las que pertenece este elemento.
+        Cada clase de atributo tiene una casilla de verificación que puede utilizarse para desactivarla. Si deselecciona una clase de atributo, no sólo
+        eliminará los atributos definidos dentro de esa clase, sino que también suprimirá todas las demás clases de atributos heredadas a través de la jerarquía de clases
+        jerarquía – incluidos todos los atributos definidos por ellos. Por ejemplo, si desmarcas la casilla del atributo de clase <em>att.basic</em> (que
+        está disponible en todos los elementos de MEI a través de la clase <em>att.common</em> ), esto no sólo eliminará el atributo <em>@xml:base</em> 
+    , sino también la clase <em>att.id</em>, y a través de ella el atributo <em>@xml:id</em>. Después de hacer esto en cualquier elemento
+    de su elección, debe navegar a otro elemento. Allí verá que la misma clase de atributo ya está desactivada 
+    desactivada: Todas esas opciones están correctamente coordinadas. Esto incluye las clases de atributos listadas a nivel de módulos individuales.   
+    </p>
+    <p>
+        Con las opciones para desactivar <strong>módulos</strong>, <strong>elementos</strong> individuales, y <strong>clases de atributo</strong> específicos, 
+        es posible restringir considerablemente el esquema MEI, adaptándolo mejor a las necesidades
+        necesidades específicas de cualquier proyecto, y ayudar a ese proyecto a evitar incoherencias y otros problemas de codificación. Como MEI ProfileDrafter 
+        permite partir de múltiples personalizaciones oficiales de MEI, es bastante sencillo generar una versión personalizada de MEI que restrinja aún más el perfil CMN de MEI. 
+        restringe aún más el perfil MEI CMN (o cualquier otra personalización). En el siguiente Tono de este tutorial, veremos cómo hacer uso de
+        esta personalización.
+    </p>    
+</div>

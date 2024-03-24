@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>MEI By-laws</title>
+    <meta name="description" content="">
+
+    <link rel="stylesheet" href="/css/main.css">
+    <!-- syntax highlighting CSS -->
+    <link rel="stylesheet" href="/css/syntax.css" />
+    <script type="text/javascript" src="/js/carousel.js"></script>
+    <script type="text/javascript">
+      document.addEventListener("DOMContentLoaded", event => {
+        const indexCarousel = document.getElementById("index-carousel");
+        if (indexCarousel !== null) {
+          animateCarousel(indexCarousel, 3000);
+          indexCarousel.addEventListener("mouseover", event => {
+            stopCarouselAnimation(indexCarousel);
+          });
+          indexCarousel.addEventListener("mouseout", event => {
+            animateCarousel(indexCarousel, 3000);
+          });
+        }
+      });
+    </script>
+</head>
+
+
+  <body>
+
+    <!-- Make sure to mirror changes in the guidelines repository in _include/header.html when necessary -->
+<header class="navbar">
+  <div class="navbar-section">
+    <a class="navbar-brand" href="https://music-encoding.org">
+      <img src="/pix/meilogo-inverted.png" alt="MEI logo"/>
+    </a>
+    <div class="hide-lg">
+      
+    <div class="dropdown dropdownCustomMenuToggle">
+        
+            <a href="/about" class="btn btn-link top-menu-link" tabindex="0">
+                About
+            </a>
+        
+    </div>
+
+    <div class="dropdown dropdownCustomMenuToggle">
+        
+            <a href="#" class="btn btn-link dropdown-toggle top-menu-link" tabindex="1">
+                Community <i class="icon icon-caret"></i>
+            </a>
+
+            
+             <ul class="menu"> 
+                <li class="menu-item">
+                    <a href="/community/projects-users.html" class="btn btn-link text-left menu-link">
+                        Projects / Users
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/community/news-events.html" class="btn btn-link text-left menu-link">
+                        News / Events
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/community/community-contacts.html" class="btn btn-link text-left menu-link">
+                        Community Contacts
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/community/interest-groups.html" class="btn btn-link text-left menu-link">
+                        Interest Groups
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/community/technical-team.html" class="btn btn-link text-left menu-link">
+                        Technical Team
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/community/mei-board.html" class="btn btn-link text-left menu-link">
+                        MEI Board
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/community/mei-by-laws.html" class="btn btn-link text-left menu-link">
+                        MEI By-laws
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/community/code-of-conduct.html" class="btn btn-link text-left menu-link">
+                        Code of Conduct
+                    </a>
+                </li>
+                 </ul> 
+            
+
+        
+    </div>
+
+    <div class="dropdown dropdownCustomMenuToggle">
+        
+            <a href="#" class="btn btn-link dropdown-toggle top-menu-link" tabindex="2">
+                Conference <i class="icon icon-caret"></i>
+            </a>
+
+            
+             <ul class="menu"> 
+                <li class="menu-item">
+                    <a href="/conference/2024" class="btn btn-link text-left menu-link">
+                        MEC 2024
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/conference/past.html" class="btn btn-link text-left menu-link">
+                        Past Conferences
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/conference/proceedings.html" class="btn btn-link text-left menu-link">
+                        Proceedings
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/conference/awards.html" class="btn btn-link text-left menu-link">
+                        MEC Awards
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/conference/hosting-guidelines.html" class="btn btn-link text-left menu-link">
+                        Hosting Guidelines
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/conference/code-of-conduct.html" class="btn btn-link text-left menu-link">
+                        Code of conduct
+                    </a>
+                </li>
+                 </ul> 
+            
+
+        
+    </div>
+
+    <div class="dropdown dropdownCustomMenuToggle">
+        
+            <a href="#" class="btn btn-link dropdown-toggle top-menu-link" tabindex="3">
+                Resources <i class="icon icon-caret"></i>
+            </a>
+
+            
+             <ul class="menu"> 
+                <li class="menu-item">
+                    <a href="/resources/background.html" class="btn btn-link text-left menu-link">
+                        Background
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/resources/bibliography.html" class="btn btn-link text-left menu-link">
+                        Bibliography
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/resources/pedagogy.html" class="btn btn-link text-left menu-link">
+                        Pedagogy & Praxis
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/resources/schemas.html" class="btn btn-link text-left menu-link">
+                        Schemas and Namespace
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/resources/tools.html" class="btn btn-link text-left menu-link">
+                        Tools
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/resources/tutorials.html" class="btn btn-link text-left menu-link">
+                        Tutorials
+                    </a>
+                </li>
+                 </ul> 
+            
+
+        
+    </div>
+
+    <div class="dropdown dropdownCustomMenuToggle">
+        
+            <a href="#" class="btn btn-link dropdown-toggle top-menu-link" tabindex="4">
+                Documentation <i class="icon icon-caret"></i>
+            </a>
+
+            
+             <ul class="menu"> 
+                <li class="menu-item">
+                    <a href="/guidelines/v5" class="btn btn-link text-left menu-link">
+                        MEI 5 (latest release)
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/guidelines/dev" class="btn btn-link text-left menu-link">
+                        Development version
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/guidelines/v4" class="btn btn-link text-left menu-link">
+                        MEI 4
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/guidelines/v3" class="btn btn-link text-left menu-link">
+                        MEI 3
+                    </a>
+                </li>
+                 </ul> 
+            
+
+        
+    </div>
+
+    <div class="dropdown dropdownCustomMenuToggle">
+        
+            <a href="/archive" class="btn btn-link top-menu-link" tabindex="5">
+                Archive
+            </a>
+        
+    </div>
+
+
+    </div>
+  </div>
+  <div class="navbar-section" id="socialLinks">
+    <a class="twitterLink" target="_blank" href="https://twitter.com/MusicEncoding">
+      <img src="/pix/twitter.png" alt="Twitter" class="logo"/>
+    </a>
+    <a class="githubLink" target="_blank" href="https://github.com/music-encoding">
+      <img src="/pix/github.png" alt="GitHub" class="logo"/>
+    </a>
+    <a class="slackLink" target="_blank" href="https://music-encoding.slack.com/">
+      <img src="/pix/slack.png" alt="Slack" class="logo"/>
+    </a>
+  </div>
+    <div id="menu-accordion" class="accordion-container dropdown-toggle show-lg column col-12">
+  <div class="accordion">
+    <input id="accordion-toggle" type="checkbox" name="accordion-checkbox" hidden=""/>
+    <label class="accordion-header c-hand" for="accordion-toggle">
+      <i class="icon icon-menu"></i>
+    </label>
+
+    <div class="accordion-body">
+      <ul class="menu menu-nav">
+        
+        <li class="menu-item">
+          <div class="accordion menu">
+            <input id="accordion-About" type="checkbox" name="accordion-checkbox" hidden=""/>
+            <label class="accordion-header c-hand" for="accordion-About">
+              
+                  <a href="/about">
+                      About
+                  </a>
+              
+            </label>
+            
+          </div>
+        </li>
+        
+        <li class="menu-item">
+          <div class="accordion menu">
+            <input id="accordion-Community" type="checkbox" name="accordion-checkbox" hidden=""/>
+            <label class="accordion-header c-hand" for="accordion-Community">
+              
+                Community
+              
+            </label>
+            
+            <div class="accordion-body">
+              <ul class="menu menu-nav">
+                
+                   <li><ul class="menu"> 
+                  <li class="menu-item"><a href="/community/projects-users.html">Projects / Users</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/community/news-events.html">News / Events</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/community/community-contacts.html">Community Contacts</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/community/interest-groups.html">Interest Groups</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/community/technical-team.html">Technical Team</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/community/mei-board.html">MEI Board</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/community/mei-by-laws.html">MEI By-laws</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/community/code-of-conduct.html">Code of Conduct</a></li>
+                   </ul></li> 
+                
+              </ul>
+            </div>
+            
+          </div>
+        </li>
+        
+        <li class="menu-item">
+          <div class="accordion menu">
+            <input id="accordion-Conference" type="checkbox" name="accordion-checkbox" hidden=""/>
+            <label class="accordion-header c-hand" for="accordion-Conference">
+              
+                Conference
+              
+            </label>
+            
+            <div class="accordion-body">
+              <ul class="menu menu-nav">
+                
+                   <li><ul class="menu"> 
+                  <li class="menu-item"><a href="/conference/2024">MEC 2024</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/conference/past.html">Past Conferences</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/conference/proceedings.html">Proceedings</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/conference/awards.html">MEC Awards</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/conference/hosting-guidelines.html">Hosting Guidelines</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/conference/code-of-conduct.html">Code of conduct</a></li>
+                   </ul></li> 
+                
+              </ul>
+            </div>
+            
+          </div>
+        </li>
+        
+        <li class="menu-item">
+          <div class="accordion menu">
+            <input id="accordion-Resources" type="checkbox" name="accordion-checkbox" hidden=""/>
+            <label class="accordion-header c-hand" for="accordion-Resources">
+              
+                Resources
+              
+            </label>
+            
+            <div class="accordion-body">
+              <ul class="menu menu-nav">
+                
+                   <li><ul class="menu"> 
+                  <li class="menu-item"><a href="/resources/background.html">Background</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/resources/bibliography.html">Bibliography</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/resources/pedagogy.html">Pedagogy & Praxis</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/resources/schemas.html">Schemas and Namespace</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/resources/tools.html">Tools</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/resources/tutorials.html">Tutorials</a></li>
+                   </ul></li> 
+                
+              </ul>
+            </div>
+            
+          </div>
+        </li>
+        
+        <li class="menu-item">
+          <div class="accordion menu">
+            <input id="accordion-Documentation" type="checkbox" name="accordion-checkbox" hidden=""/>
+            <label class="accordion-header c-hand" for="accordion-Documentation">
+              
+                Documentation
+              
+            </label>
+            
+            <div class="accordion-body">
+              <ul class="menu menu-nav">
+                
+                   <li><ul class="menu"> 
+                  <li class="menu-item"><a href="/guidelines/v5">MEI 5 (latest release)</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/guidelines/dev">Development version</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/guidelines/v4">MEI 4</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/guidelines/v3">MEI 3</a></li>
+                   </ul></li> 
+                
+              </ul>
+            </div>
+            
+          </div>
+        </li>
+        
+        <li class="menu-item">
+          <div class="accordion menu">
+            <input id="accordion-Archive" type="checkbox" name="accordion-checkbox" hidden=""/>
+            <label class="accordion-header c-hand" for="accordion-Archive">
+              
+                  <a href="/archive">
+                      Archive
+                  </a>
+              
+            </label>
+            
+          </div>
+        </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+
+</header>
+
+
+    <div class="container grid-xl content">
+        <h1 id="mei-by-laws">MEI By-laws</h1>
+
+<h2 id="1-preamble">1 Preamble</h2>
+
+<p>The name of this organisation is ‘Music Encoding Initiative’ (hereafter abbreviated ‘MEI’).</p>
+
+<h2 id="2-purpose">2 Purpose</h2>
+
+<p>The purpose of MEI is to create, promote, and diffuse a semantically rich model for music notation that:</p>
+
+<ul>
+  <li>accommodates the encoding of the intellectual and physical characteristics of music notation documents, primarily focusing on, but not being limited to, Common Western Music Notation (CWMN);</li>
+  <li>is designed by the scholarly community for scholarly uses, but does not exclude other uses;</li>
+  <li>provides for the common functions of traditional facsimile, critical, and performance editions;</li>
+  <li>has a modular structure that permits use dependent on the goals of scholars; and</li>
+  <li>is based on open standards and is platform-independent;</li>
+  <li>permits the development of comprehensive and permanent international archives of notated music as a basis for editions, analysis, performances, and other forms of research.</li>
+</ul>
+
+<h2 id="3-community-membership">3 Community Membership</h2>
+
+<p>Membership in MEI is open to anyone with an interest in supporting the goals and purpose of MEI.</p>
+
+<h3 id="31-types-of-membership">3.1 Types of Membership</h3>
+
+<p>There are two types of membership in MEI: personal and institutional. Both types of members are equally eligible for such membership benefits as the Board may determine from time to time. No member is entitled to a refund of any dues or other charges or assessments upon resignation or termination of membership.</p>
+
+<h4 id="311-personal-membership">3.1.1 Personal Membership</h4>
+
+<p>Only private individuals may obtain personal membership in MEI. Personal membership is conferred by subscription to the MEI mailing list (<a href="https://music-encoding.org/community/community-contacts.html">MEI-L</a>). All personal members may vote, nominate members for office, stand for office, and otherwise benefit from the activities of MEI.</p>
+
+<h4 id="312-institutional-membership">3.1.2 Institutional Membership</h4>
+
+<p>Institutional Membership in MEI is available for any form of organization, project or company. Any of the above wishing to become an Institutional Member of MEI may apply by submitting an application, in a form prescribed by the Board, to any elected member of the Board.</p>
+
+<p>There are three levels of Institutional Membership: An institution that sponsors MEI with an annual contribution of $500, $2000, or $5000 or more will be designated a ‘regular’, ‘patron’, or ‘sustaining’ MEI Institutional Member, respectively. Other forms of in-kind commitment with the same value as the annual fees above, such as staff time or administrative support, may substitute for monetary contributions.</p>
+
+<p>The logos of sponsoring organizations will appear on publications by the <a href="https://music-encoding.org/community/mei-board.html">MEI Board</a> (e.g. conference proceedings, guidelines) and on <a href="https://www.music-encoding.org">https://www.music-encoding.org</a>. While the logos of sustaining Institutional Members will appear on title pages and on the welcome page of the website, those of patron and regular Institutional Members will appear in a dedicated section.</p>
+
+<p>All Institutional members in good standing have the right to display the MEI logo on any MEI-related publications or products they create or distribute that conform to the license under which MEI is distributed.</p>
+
+<h3 id="32-termination">3.2 Termination</h3>
+
+<p>The <a href="https://music-encoding.org/community/mei-board.html">Board</a> may terminate an individual or institutional membership in MEI upon good-faith finding of (a) misconduct by such member reflecting discredit upon MEI or (b) violation of these By-laws.</p>
+
+<h3 id="33-resignation">3.3 Resignation</h3>
+
+<p>Any member may resign from MEI.</p>
+
+<p>Resignation of a Personal Membership is effective upon unsubscribing from MEI-L.</p>
+
+<p>Resignation of an Institutional Membership is effective upon the Board’s receipt of a formal (physical or electronic) notice of resignation.</p>
+
+<h2 id="4-finances">4 Finances</h2>
+
+<p>Financial revenue of MEI  (generated through membership fees, donations, grants, or other means) will be administered by the Board.</p>
+
+<h2 id="5-board">5 Board</h2>
+
+<p>The property and business of MEI are managed by the <a href="https://music-encoding.org/community/mei-board.html">Board</a>. The broad role of the Board is to promote the development of MEI; oversee the activities of the <a href="https://music-encoding.org/community/technical-team.html">MEI Technical Team</a>; guide the development of the MEI conceptual model, <a href="https://music-encoding.org/guidelines/v4/content/">Guidelines</a>, and schemata; and act as a contact point for MEI-related activities.</p>
+
+<p>Board members serve as such without remuneration.</p>
+
+<p>The responsibilities of the Board include, but are not limited to:</p>
+
+<ul>
+  <li>implementing the by-laws and policies of MEI,</li>
+  <li>promoting and publicizing MEI,</li>
+  <li>managing MEI property and finances, including the collection and disbursement of funds,</li>
+  <li>encouraging the MEI community to formulate proposals and recommendations for consideration in the Board or the Technical Team,</li>
+  <li>coordinating, preparing and publishing MEI releases (the authority of the Board will issue official releases of the MEI code with full credit to the whole Technical Team),</li>
+  <li>preparing and running Board elections (see 5.3 Terms &amp; Elections),</li>
+  <li>selecting a venue and helping organize annual MEI conferences (see 9 Conference &amp; Members Meeting).</li>
+</ul>
+
+<p>The Board is self-organizing; that is, there will be no formal regulations on how the responsibilities above are to be divided amongst its members. In addition, the Board may establish decision-making processes as necessary; however, it should rely on consensus rather than majority rule whenever possible.</p>
+
+<h3 id="51-members">5.1 Members</h3>
+
+<p>The Board consists of nine (9) elected members plus one (1) member designated by each Host Institution (for details see 7 Host Institutions). All members of the Board (elected and designated) have the right to participate in decision-making processes established by the Board.</p>
+
+<h4 id="511-appointed-offices">5.1.1 Appointed offices</h4>
+
+<p>The Board assigns the following roles to individuals amongst its members:</p>
+
+<ul>
+  <li>one Administrative Chair</li>
+  <li>two Technical Co-chairs</li>
+  <li>two Elections Officers</li>
+</ul>
+
+<p>The Administrative Chair takes responsibility for calling Board meetings. The designated Host Institution Board members act as <em>liaison</em> with the host organizations. Moreover, the chair of the Board is the main representative of the whole MEI Community and thus has representational functions and obligations and may act on behalf of the whole MEI community on such occasions. (N.B. the above is not to say that the chair of the Board has more influence and decision competence than any other member of the Board. The chair of the Board is simply “first among equals.”)</p>
+
+<p>The two Technical Co-chairs take responsibility for organizing and chairing the Technical Team, see details below (6 Technical Team).</p>
+
+<p>The two Elections Officers will take care of running the yearly MEI elections. The Elections Officers are appointed by the Board from amongst the MEI community and shall not be running for election themselves.</p>
+
+<h3 id="52-meetings">5.2 Meetings</h3>
+
+<p>The Board holds regular, virtual, or in-person meetings, e.g. approximately every three months. As schedules and funding permit, the Board meets in person at least once per year. For every meeting, an agenda shall be published online prior to the meeting and minutes of the meeting shall be provided in a timely manner following the meeting. Depending on the availability of funding, the members of the Board may be refunded travel costs for this meeting.</p>
+
+<h3 id="53-terms--elections">5.3 Terms &amp; Elections</h3>
+
+<p>The elected members of the Board each are elected for a three year term. Terms on the Board are staggered so that three positions are open for election each year. Terms of office begin January 1 at 2 pm UTC.</p>
+
+<p>Exceptions to annual elections and term lengths will be made for the initial election of the Board and in case a Board member resigns.</p>
+
+<h4 id="531-eligibility">5.3.1 Eligibility</h4>
+
+<p>In order to be available for election to the Board, candidates must hold Personal Membership in MEI. Individuals who have previously served on the Board will be eligible for re-appointment.</p>
+
+<h4 id="532-election-procedure">5.3.2 Election procedure</h4>
+
+<p>In order to determine a range of candidates, a two-week nomination phase will precede the elections, in which self-nominations are permitted. Individuals will be informed of their nomination and asked to confirm their willingness to serve on the Board determined. Elections will be held in a timely manner after determination of a final list of candidates. Elections shall be open for at least two weeks. Elections shall close before the start of the terms of office of the elected candidates.
+All open board seats shall be contested by all candidates in one election. There is no minimum voter turnout requirement. Ballots shall allow ranked voting. The winners shall be determined by a counting method suitable for electing a group of candidates, e.g. the Single Transferable Vote (STV) method. The election rules, including the voting method, shall be chosen and publicly declared prior to the start of the nomination phase.</p>
+
+<p>Each member holding Personal Membership in MEI has the right to vote in Board member elections.</p>
+
+<h3 id="54-resignation-from-the-board">5.4 Resignation from the Board</h3>
+
+<p>Any member of the Board may resign from the Board and their corresponding commitments at any time on written notification (physical or electronic) to the Administrative Chair or the whole Board.</p>
+
+<p>After accepting the resignation, the Board may decide on how to proceed concerning the newly vacant position. Options should include but are not limited to holding a special election, appointing a replacement, or leaving the position vacant.</p>
+
+<p>In case of a special election to fill a vacancy between regular elections, the newly elected Board member will serve for the remainder of the term of the vacant position.</p>
+
+<h2 id="6-technical-team">6 Technical Team</h2>
+
+<p>The <a href="https://music-encoding.org/community/technical-team.html">Technical Team</a> will consist of any willing community members and the two Board members appointed Technical Co-chairs (see <a href="#5-board">5 Board</a>). The two Technical Co-chairs of the Board act as Administrative Chairs of the Technical Team, e.g. call meetings and coordinate development efforts. Moreover the two Co-chairs have administrative privileges for the MEI repositories. The MEI Technical Team holds regular, virtual or in-person meetings, e.g. approximately every three months. For every meeting, an agenda shall be published online prior to the meeting and minutes of the meeting shall be provided in a timely manner following the meeting.</p>
+
+<p>Technical Team members shall serve as such without remuneration.</p>
+
+<p>The responsibilities of the Technical Team include, but are not limited to:</p>
+
+<ul>
+  <li>managing the MEI website,</li>
+  <li>managing the MEI repositories (including the granting of read and write privileges),</li>
+  <li>implementing the technical aspects of MEI development in consideration of the general directions laid down by the Board,</li>
+  <li>maintaining and improving the MEI technical documentation,</li>
+  <li>soliciting technical contributions and collaboration from other members of the community.</li>
+</ul>
+
+<p>The Technical Team will be self-organizing; that is, there will be no formal regulations on how the responsibilities above are to be divided amongst its members. In addition, the Technical Team may establish decision-making processes as necessary; however, it should rely on consensus rather than majority rule whenever possible.</p>
+
+<h2 id="7-host-institutions">7 Host Institutions</h2>
+
+<p>Any institution interested in promoting the goals and purpose of MEI may apply to the Board to become a Host Institution of MEI. The form of the application will be set by the Board. The Board is responsible for reviewing the application in a timely fashion and granting or withholding official recognition of the host institution.</p>
+
+<h3 id="71-rights--duties">7.1 Rights &amp; Duties</h3>
+
+<p>Host Institutions will be allowed to designate a representative of their organization as a regular member of the MEI Board. The logos of Host Institutions will appear on the first page of publications by the MEI Board (e.g. conference proceedings, guidelines) and on the welcome page of <a href="https://www.music-encoding.org">https://www.music-encoding.org</a>. The Host Institution will be allowed to advertise themselves as a MEI Host Institution. Other rights and duties both of MEI and a Host Institution are subject to individual agreements between the institution and the Board. These agreements shall be fixed in written form. Example agreements may include: provision of technical or administrative support of MEI through the Host Institution, installing an MEI-related working group at the Host Institution, etc.</p>
+
+<h2 id="8-interest-groups">8 Interest Groups</h2>
+
+<p>An Interest Group (henceforth ‘IG’) is composed of any number of members of the MEI community with an interest in a certain music encoding topic or problem. The topic of interest should be reflected in the group’s name. Individual membership in multiple groups is allowed.</p>
+
+<p>In order to form a new IG, a proposal shall be made to the Board, containing the group’s name, goals, and a list of founding members. The Board is responsible for reviewing the application in a timely fashion and granting or withholding official recognition to the new group.</p>
+
+<p>Each interest group must:</p>
+
+<ul>
+  <li>select an Administrative Chair</li>
+  <li>produce regular activity reports. The report should summarize the Interest Groups activities, completed goals, as well as plans for future meetings and activities.</li>
+</ul>
+
+<p>A single person may not be Administrative chair of multiple IGs. The IG’s Administrative Chair takes responsibility for acting as contact person for the IG, ensuring regular activity, submitting reports to the Board, and organizing the group’s work, e.g. calling for meetings and coordinating development efforts.</p>
+
+<p>Each IG will be self-organizing; that is, there will be no formal regulations on how any other responsibilities are to be divided amongst its members. In addition, the IG may establish decision-making processes as necessary; however, it should rely on consensus rather than majority rule whenever possible.</p>
+
+<h3 id="81-interest-group-privileges">8.1 Interest Group privileges</h3>
+
+<p>All Interest Groups will be listed on the MEI-website and are eligible to other benefits as the Board may determine from time to time.</p>
+
+<h2 id="9-conference--members-meeting">9 Conference &amp; Members Meeting</h2>
+
+<p>A regular conference is deemed essential for building and maintaining relationships within the MEI community. For the time being, this conference will also host an official MEI Members Meeting. The location of conferences will be decided by the Board in a timely manner before the event. The Board will call for conference host applications prior to the decision. Questions regarding the application as conference organizer, program submissions, the choice of the program committee of the conference, etc. should be made as transparent as possible for potential conference organizers.</p>
+
+<h2 id="10-amendments">10 Amendments</h2>
+
+<p>Changes to these by-laws become proposed amendments with a simple majority of the complete Board membership. Proposed amendments will be published on the MEI mailing list (MEI-L) and the MEI website. After a minimum 10-day comment period, the Board will discuss comments on the proposed amendments received from the MEI membership and incorporate changes agreed to by a simple majority of the Board. The agreed upon version of the amended by-laws will be presented to the MEI membership for voting over a minimum 7-day period. The amended version of the by-laws must pass with a two-thirds (2/3) majority of votes in order to become effective.</p>
+
+    </div>
+
+    <!-- Make sure to mirror changes in the guidelines repository in _include/footer.html when necessary -->
+<footer>
+  <div class="container">
+    <div class="columns institutions">
+      <div class="column col-12 text-center">
+        <a class="institutionsLink" target="_blank" href="https://www.adwmainz.de">
+          <img src="/pix/akademie-small.png" alt="Akademie der Wissenschaften | Mainz" />
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="text-center">
+    <a class="footerLinks" href="/">Home</a> | <a class="footerLinks" href="/community/community-contacts.html">Contact</a><br/>
+    <small>© Music Encoding Initiative 2024</small>
+  </div>
+</footer>
+
+
+  </body>
+
+</html>

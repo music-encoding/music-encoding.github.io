@@ -1,0 +1,19 @@
+<div>
+    <p>
+        Obviamente, una validación adecuada de las entradas es crucial para un éxito eficaz y sustentado del aprendizaje. Sin embargo, debido a que nuestro sitio web está basado en Jekyll, tenemos que confiar en la validación del lado del cliente (confiar en un servicio externo sólo para la validación no es probablemente lo suficientemente fiable, por lo que decidimos no adoptar ese enfoque). Hasta la fecha, la validación del lado del cliente (= Javascript) no ofrece un soporte adecuado para <a href="https://en.wikipedia.org/wiki/RelaxNG" target="_blank">RelaxNG</a>, el lenguaje de esquemas que se utiliza finalmente para validar las instancias MEI en proyectos reales. Por esta razón, necesitamos utilizar el enfoque basado en XPath mencionado anteriormente.  
+    </p>
+    <p>
+        La propiedad <code>"xpaths"</code> del paso actual contiene una matriz de reglas a las que la codificación del usuario debe ajustarse para completar ese paso. Estas reglas se especifican como objetos JSON con tres propiedades:   
+    </p>
+    <pre class="codeblock">{
+    "rule":"//mei:note/@pname = 'g'",
+    "renderanyway":true,
+    "hint": "Necesitas un atributo @pname, con un valor de g."
+}</pre>
+    <p>
+        La propiedad <code>”rule"</code> contiene una expresión <a href="https://en.wikipedia.org/wiki/XPath" target="_blank">XPath 1</a>, que debe resolverse en una declaración booleana: tiene que ser <i>true</i> o <i>false</i>. El <code>"renderanyway"</code> se utiliza para decidir si el editor actual puede ser renderizado por Verovio incluso si el XPath no coincide. El contenido de <code>"hint"</code> se supone que ayuda al usuario a alcanzar la codificación correcta. Solo se mostrará el primer XPath fallido a la vez, guiando al usuario paso a paso a través de los diferentes requisitos. Sin embargo, no todos los pasos necesitan una pista (hint); a veces es mejor dejar que el usuario explore un poco por su cuenta.
+    </p>
+    <p>
+        Para la validación, la entrada actual del usuario se insertará entre los marcadores <code><?snippet-start?></code> y <code><?snippet-end?></code> en el archivo XML actual, y luego las reglas XPath se comprobarán con ese archivo completo. En cuanto una de estas reglas falle (es decir, devuelva <i>false</i>), se mostrará la correspondiente <code>"pista"</code>. Cuando todas las reglas devuelvan <i>true</i>, se habilitará el botón "continuar" y el usuario podrá pasar al siguiente paso.
+    </p>
+</div>

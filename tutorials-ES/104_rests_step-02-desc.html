@@ -1,0 +1,8 @@
+<div>
+    <p>
+        Es común encontrar silencios que ocupan un compás completo, independientemente del tipo de compás. Por supuesto, es posible utilizar elementos <code>&lt;rest&gt;</code> normales con la(s) duración(es) adecuada(s) para codificar dichos silencios - en el caso de un compás de 4/4, se podría utilizar <code>&lt;rest dur="1"/&gt;</code>. Sin embargo, en otros compases esto puede requerir un mayor marcado. Por esa razón, MEI tiene un elemento especial llamado <code>&lt;mRest/&gt;</code> - un <i>measure rest</i> o <i>silencio de compás</i>. Este elemento no necesita ningún atributo <code>@dur</code> (aunque está técnicamente permitido para facilitar el procesamiento analítico) y siempre llenará un compás completo, independientemente del tipo de compás. Por esto último, dicho elemento no debe combinarse con otros eventos en el mismo compás. 
+    </p>
+    <p class="task-ES">
+        Convierte el silencio de redonda (que no cabe en el compás) en un <code>&lt;mRest/&gt;</code>.
+    </p>
+</div>

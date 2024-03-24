@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Program</title>
+    <meta name="description" content="">
+
+    <link rel="stylesheet" href="/css/main.css">
+    <!-- syntax highlighting CSS -->
+    <link rel="stylesheet" href="/css/syntax.css" />
+    <script type="text/javascript" src="/js/carousel.js"></script>
+    <script type="text/javascript">
+      document.addEventListener("DOMContentLoaded", event => {
+        const indexCarousel = document.getElementById("index-carousel");
+        if (indexCarousel !== null) {
+          animateCarousel(indexCarousel, 3000);
+          indexCarousel.addEventListener("mouseover", event => {
+            stopCarouselAnimation(indexCarousel);
+          });
+          indexCarousel.addEventListener("mouseout", event => {
+            animateCarousel(indexCarousel, 3000);
+          });
+        }
+      });
+    </script>
+</head>
+
+
+  <body>
+
+    <!-- Make sure to mirror changes in the guidelines repository in _include/header.html when necessary -->
+<header class="navbar">
+  <div class="navbar-section">
+    <a class="navbar-brand" href="https://music-encoding.org">
+      <img src="/pix/meilogo-inverted.png" alt="MEI logo"/>
+    </a>
+    <div class="hide-lg">
+      
+    <div class="dropdown dropdownCustomMenuToggle">
+        
+            <a href="/about" class="btn btn-link top-menu-link" tabindex="0">
+                About
+            </a>
+        
+    </div>
+
+    <div class="dropdown dropdownCustomMenuToggle">
+        
+            <a href="#" class="btn btn-link dropdown-toggle top-menu-link" tabindex="1">
+                Community <i class="icon icon-caret"></i>
+            </a>
+
+            
+             <ul class="menu"> 
+                <li class="menu-item">
+                    <a href="/community/projects-users.html" class="btn btn-link text-left menu-link">
+                        Projects / Users
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/community/news-events.html" class="btn btn-link text-left menu-link">
+                        News / Events
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/community/community-contacts.html" class="btn btn-link text-left menu-link">
+                        Community Contacts
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/community/interest-groups.html" class="btn btn-link text-left menu-link">
+                        Interest Groups
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/community/technical-team.html" class="btn btn-link text-left menu-link">
+                        Technical Team
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/community/mei-board.html" class="btn btn-link text-left menu-link">
+                        MEI Board
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/community/mei-by-laws.html" class="btn btn-link text-left menu-link">
+                        MEI By-laws
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/community/code-of-conduct.html" class="btn btn-link text-left menu-link">
+                        Code of Conduct
+                    </a>
+                </li>
+                 </ul> 
+            
+
+        
+    </div>
+
+    <div class="dropdown dropdownCustomMenuToggle">
+        
+            <a href="#" class="btn btn-link dropdown-toggle top-menu-link" tabindex="2">
+                Conference <i class="icon icon-caret"></i>
+            </a>
+
+            
+             <ul class="menu"> 
+                <li class="menu-item">
+                    <a href="/conference/2024" class="btn btn-link text-left menu-link">
+                        MEC 2024
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/conference/past.html" class="btn btn-link text-left menu-link">
+                        Past Conferences
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/conference/proceedings.html" class="btn btn-link text-left menu-link">
+                        Proceedings
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/conference/awards.html" class="btn btn-link text-left menu-link">
+                        MEC Awards
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/conference/hosting-guidelines.html" class="btn btn-link text-left menu-link">
+                        Hosting Guidelines
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/conference/code-of-conduct.html" class="btn btn-link text-left menu-link">
+                        Code of conduct
+                    </a>
+                </li>
+                 </ul> 
+            
+
+        
+    </div>
+
+    <div class="dropdown dropdownCustomMenuToggle">
+        
+            <a href="#" class="btn btn-link dropdown-toggle top-menu-link" tabindex="3">
+                Resources <i class="icon icon-caret"></i>
+            </a>
+
+            
+             <ul class="menu"> 
+                <li class="menu-item">
+                    <a href="/resources/background.html" class="btn btn-link text-left menu-link">
+                        Background
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/resources/bibliography.html" class="btn btn-link text-left menu-link">
+                        Bibliography
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/resources/pedagogy.html" class="btn btn-link text-left menu-link">
+                        Pedagogy & Praxis
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/resources/schemas.html" class="btn btn-link text-left menu-link">
+                        Schemas and Namespace
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/resources/tools.html" class="btn btn-link text-left menu-link">
+                        Tools
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/resources/tutorials.html" class="btn btn-link text-left menu-link">
+                        Tutorials
+                    </a>
+                </li>
+                 </ul> 
+            
+
+        
+    </div>
+
+    <div class="dropdown dropdownCustomMenuToggle">
+        
+            <a href="#" class="btn btn-link dropdown-toggle top-menu-link" tabindex="4">
+                Documentation <i class="icon icon-caret"></i>
+            </a>
+
+            
+             <ul class="menu"> 
+                <li class="menu-item">
+                    <a href="/guidelines/v5" class="btn btn-link text-left menu-link">
+                        MEI 5 (latest release)
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/guidelines/dev" class="btn btn-link text-left menu-link">
+                        Development version
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/guidelines/v4" class="btn btn-link text-left menu-link">
+                        MEI 4
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/guidelines/v3" class="btn btn-link text-left menu-link">
+                        MEI 3
+                    </a>
+                </li>
+                 </ul> 
+            
+
+        
+    </div>
+
+    <div class="dropdown dropdownCustomMenuToggle">
+        
+            <a href="/archive" class="btn btn-link top-menu-link" tabindex="5">
+                Archive
+            </a>
+        
+    </div>
+
+
+    </div>
+  </div>
+  <div class="navbar-section" id="socialLinks">
+    <a class="twitterLink" target="_blank" href="https://twitter.com/MusicEncoding">
+      <img src="/pix/twitter.png" alt="Twitter" class="logo"/>
+    </a>
+    <a class="githubLink" target="_blank" href="https://github.com/music-encoding">
+      <img src="/pix/github.png" alt="GitHub" class="logo"/>
+    </a>
+    <a class="slackLink" target="_blank" href="https://music-encoding.slack.com/">
+      <img src="/pix/slack.png" alt="Slack" class="logo"/>
+    </a>
+  </div>
+    <div id="menu-accordion" class="accordion-container dropdown-toggle show-lg column col-12">
+  <div class="accordion">
+    <input id="accordion-toggle" type="checkbox" name="accordion-checkbox" hidden=""/>
+    <label class="accordion-header c-hand" for="accordion-toggle">
+      <i class="icon icon-menu"></i>
+    </label>
+
+    <div class="accordion-body">
+      <ul class="menu menu-nav">
+        
+        <li class="menu-item">
+          <div class="accordion menu">
+            <input id="accordion-About" type="checkbox" name="accordion-checkbox" hidden=""/>
+            <label class="accordion-header c-hand" for="accordion-About">
+              
+                  <a href="/about">
+                      About
+                  </a>
+              
+            </label>
+            
+          </div>
+        </li>
+        
+        <li class="menu-item">
+          <div class="accordion menu">
+            <input id="accordion-Community" type="checkbox" name="accordion-checkbox" hidden=""/>
+            <label class="accordion-header c-hand" for="accordion-Community">
+              
+                Community
+              
+            </label>
+            
+            <div class="accordion-body">
+              <ul class="menu menu-nav">
+                
+                   <li><ul class="menu"> 
+                  <li class="menu-item"><a href="/community/projects-users.html">Projects / Users</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/community/news-events.html">News / Events</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/community/community-contacts.html">Community Contacts</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/community/interest-groups.html">Interest Groups</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/community/technical-team.html">Technical Team</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/community/mei-board.html">MEI Board</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/community/mei-by-laws.html">MEI By-laws</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/community/code-of-conduct.html">Code of Conduct</a></li>
+                   </ul></li> 
+                
+              </ul>
+            </div>
+            
+          </div>
+        </li>
+        
+        <li class="menu-item">
+          <div class="accordion menu">
+            <input id="accordion-Conference" type="checkbox" name="accordion-checkbox" hidden=""/>
+            <label class="accordion-header c-hand" for="accordion-Conference">
+              
+                Conference
+              
+            </label>
+            
+            <div class="accordion-body">
+              <ul class="menu menu-nav">
+                
+                   <li><ul class="menu"> 
+                  <li class="menu-item"><a href="/conference/2024">MEC 2024</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/conference/past.html">Past Conferences</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/conference/proceedings.html">Proceedings</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/conference/awards.html">MEC Awards</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/conference/hosting-guidelines.html">Hosting Guidelines</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/conference/code-of-conduct.html">Code of conduct</a></li>
+                   </ul></li> 
+                
+              </ul>
+            </div>
+            
+          </div>
+        </li>
+        
+        <li class="menu-item">
+          <div class="accordion menu">
+            <input id="accordion-Resources" type="checkbox" name="accordion-checkbox" hidden=""/>
+            <label class="accordion-header c-hand" for="accordion-Resources">
+              
+                Resources
+              
+            </label>
+            
+            <div class="accordion-body">
+              <ul class="menu menu-nav">
+                
+                   <li><ul class="menu"> 
+                  <li class="menu-item"><a href="/resources/background.html">Background</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/resources/bibliography.html">Bibliography</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/resources/pedagogy.html">Pedagogy & Praxis</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/resources/schemas.html">Schemas and Namespace</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/resources/tools.html">Tools</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/resources/tutorials.html">Tutorials</a></li>
+                   </ul></li> 
+                
+              </ul>
+            </div>
+            
+          </div>
+        </li>
+        
+        <li class="menu-item">
+          <div class="accordion menu">
+            <input id="accordion-Documentation" type="checkbox" name="accordion-checkbox" hidden=""/>
+            <label class="accordion-header c-hand" for="accordion-Documentation">
+              
+                Documentation
+              
+            </label>
+            
+            <div class="accordion-body">
+              <ul class="menu menu-nav">
+                
+                   <li><ul class="menu"> 
+                  <li class="menu-item"><a href="/guidelines/v5">MEI 5 (latest release)</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/guidelines/dev">Development version</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/guidelines/v4">MEI 4</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/guidelines/v3">MEI 3</a></li>
+                   </ul></li> 
+                
+              </ul>
+            </div>
+            
+          </div>
+        </li>
+        
+        <li class="menu-item">
+          <div class="accordion menu">
+            <input id="accordion-Archive" type="checkbox" name="accordion-checkbox" hidden=""/>
+            <label class="accordion-header c-hand" for="accordion-Archive">
+              
+                  <a href="/archive">
+                      Archive
+                  </a>
+              
+            </label>
+            
+          </div>
+        </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+
+</header>
+
+
+    <div class="container grid-xl content">
+        
+<div class="columns">
+  <div class="column col-10 col-sm-12">
+    
+      <div class="dropdown col-sm-1 show-sm">
+        <div class="rounded bg-gray text-center my-1">
+          <a href="#" tabindex="1" class="btn btn-primary dropdown-toggle btn-lg" id="MEC2018-menuBtn">
+            <i class="icon icon-menu"></i>
+          </a>
+          <ul class="menu text-left" id="MEC2018-menu">
+            
+              <li class="menu-item ">
+                <a href="/conference/2018/call/">Call for proposals</a>
+              </li>
+            
+              <li class="menu-item ">
+                <a href="/conference/2018/">Music Encoding Conference 2018</a>
+              </li>
+            
+              <li class="menu-item ">
+                <a href="/conference/2018/maps/">Maps and Dining</a>
+              </li>
+            
+              <li class="menu-item ">
+                <a href="/conference/2018/people/">Personnel</a>
+              </li>
+            
+              <li class="menu-item ">
+                <a href="/conference/2018/program/">Program</a>
+              </li>
+            
+              <li class="menu-item ">
+                <a href="/conference/2018/travel/">Travel and Accommodation</a>
+              </li>
+            
+          </ul>
+        </div>
+      </div>
+      <div class="mec2018-page">
+  <img src="/images/conference/2018/mec2018logo.jpg" class="img-responsive" alt="MEC 2018"/>
+
+  <h2>Program</h2>
+
+  <div><a class="btn btn-primary" href="/conference/programs/2018ConferenceProgram.pdf" target="_blank">Download program (PDF)</a></div>
+
+  <div class="mec2018-program-row">
+    <h4>Tuesday 22 May 2018</h4>
+    <span class="chip">McKeldin Library, 6<sup>th</sup> floor</span>
+    <div class="card rounded">
+      <div class="card-header">
+        <div class="card-title">8:15 - 9:00</div>
+        <div class="card-subtitle">
+          <div class="mec2018-program-title">Registration</div>
+        </div>
+      </div>
+    </div>
+    <div class="columns">
+      <div class="column">
+        <span class="chip">Room 6101</span>
+        <div class="card rounded">
+          <div class="card-header">
+            <div class="card-title">9:00 - 12:30</div>
+            <div class="card-subtitle">
+              <div class="mec2018-program-title">Workshop: Introduction to MEI (part I)</div>
+              <div class="mec2018-program-speakers">Perry Roland</div>
+              <button onclick="toggleDescription('mec2018-intromei1')">Description</button>
+              <div id="mec2018-intromei1" style="display:none;">
+                <p>This workshop is designed to introduce MEI to those interested in its history, current uses, and future
+                development. No previous experience with MEI or XML is required; however, an understanding of music
+                notation and other markup schemes, like HTML and TEI, will be helpful. For hands-on exercises,
+                participants are encouraged to bring laptop computers with the oXygen XML editor, which is available
+                gratis from <a href="http://www.oxygenxml.com">www.oxygenxml.com</a> for a limited trial period, or similar software.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <span class="chip">Room 6103</span>
+        <div class="card rounded">
+          <div class="card-header">
+            <div class="card-title">9:00 - 12:30</div>
+            <div class="card-subtitle">
+              <div class="mec2018-program-title">Workshop: Using Verovio</div>
+              <div class="mec2018-program-speakers">Laurent Pugin</div>
+              <div class="mec2018-program-detail">
+                <button onclick="toggleDescription('mec2018-verovioDesc')">Description</button>
+                <div id="mec2018-verovioDesc" style="display:none;">
+                  <p>Verovio (<a href="http://www.verovio.org">www.verovio.org</a>) is an open-source library for engraving MEI scores. It can be used in a wide range of programming environments, including as a JavaScript toolkit in web-pages. Verovio output is in SVG, an XML vector graphic format that makes it possible to easily interact with the encoding of the music score.</p>
+
+                  <p>In this workshop, you will have an overview of the Verovio project and its philosophy. You will learn about the current development status and about the latest additions. You will follow a step-by-step introduction on how to integrate Verovio in a web environment, from the most basic use case to more advanced, interactive and project specific ones.</p>
+
+                  <p>Attendees are encouraged to bring example material / encoding they would like to render with Verovio. MEI and basic JavaScript / HTML knowledge is desirable but not require.</p>
+                </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="divider text-center" data-content="LUNCH (not provided)"></div>
+
+    <div class="columns">
+      <div class="column">
+        <div class="card rounded">
+          <div class="card-header">
+            <div class="card-title">14:00 - 17:00</div>
+            <div class="card-subtitle">
+              <div class="mec2018-program-title">Workshop: Introduction to MEI (part II)</div>
+              <div class="mec2018-program-speakers">Perry Roland</div>
+              <button onclick="toggleDescription('mec2018-intromei2')">Description</button>
+              <div id="mec2018-intromei2" style="display:none;">
+                <p>This workshop is designed to introduce MEI to those interested in its history, current uses, and future
+                development. No previous experience with MEI or XML is required; however, an understanding of music
+                notation and other markup schemes, like HTML and TEI, will be helpful. For hands-on exercises,
+                participants are encouraged to bring laptop computers with the oXygen XML editor, which is available
+                gratis from <a href="http://www.oxygenxml.com">www.oxygenxml.com</a> for a limited trial period, or similar software.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card rounded">
+          <div class="card-header">
+            <div class="card-title">14:00 - 17:00</div>
+            <div class="card-subtitle">
+              <div class="mec2018-program-title">Workshop: Contributing to the MEI Guidelines</div>
+              <div class="mec2018-program-speakers">Johannes Kepper and Laurent Pugin</div>
+              <div class="mec2018-program-detail">
+                <button onclick="toggleDescription('mec2018-contribDesc')">Description</button>
+                <div id="mec2018-contribDesc" style="display:none;">
+                  Learn about contributing to the MEI Guidelines on GitHub.
+                </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="mec2018-program-row mec2018-program-row-main">
+      <h4>Wednesday 23 May 2018</h4>
+      <span class="chip">The Clarice: Grand Pavilion</span>
+      <div class="card rounded">
+        <div class="card-header">
+          <div class="card-title">8:15 - 9:00</div>
+          <div class="card-subtitle">
+            <div class="mec2018-program-title">Registration and coffee</div>
+          </div>
+        </div>
+      </div>
+      <span class="chip">The Clarice: Gildenhorn Recital Hall</span>
+      <div class="card rounded">
+        <div class="card-header">
+          <div class="card-title">9:00 - 10:30</div>
+          <div class="card-subtitle">
+            <div class="mec2018-program-title">Keynote: (Not) Beyond the Score: Decoding Musical Performance</div>
+            <div class="mec2018-program-speakers">John Rink</div>
+          </div>
+        </div>
+      </div>
+      <div class="divider text-center" data-content="BREAK"></div>
+      <div class="card rounded">
+        <div class="card-header">
+          <div class="card-title">11:00 - 12:30</div>
+          <div class="card-subtitle">
+            <div class="mec2018-program-title">Encoding Indeterminacy</div>
+            <div class="mec2018-program-speakers">Philip Thomas and Christopher Melen</div>
+            <div class="mec2018-program-title">Encoding of a dynamic composition and its performance</div>
+            <div class="mec2018-program-speakers">David M. Weigl; Steve Benford; Chris Greenhalgh; Adrian Hazzard; Maria Kallionpää; Kevin R. Page</div>
+            <div class="mec2018-program-title">“Fortitude flanked with melody”: setting Emily Dickinson’s poetic fragments to music via a digital dynamic score</div>
+            <div class="mec2018-program-speakers">Joseph Arkfeld and Raffaele Viglianti</div>
+          </div>
+        </div>
+      </div>
+      <div class="divider text-center" data-content="LUNCH (provided)"></div>
+      <div class="card rounded">
+        <div class="card-header">
+          <div class="card-title">13:30 - 15:00</div>
+          <div class="card-subtitle">
+            <div class="mec2018-program-title">Interpretation of Performance Instructions in Piano Performances</div>
+            <div class="mec2018-program-speakers">Daniel Wolff; Zoltan Komives; Cyril Silverman; Brad Cohen</div>
+            <div class="mec2018-program-title">Automatic Scoring up of Music in Mensural Notation</div>
+            <div class="mec2018-program-speakers">Thomae Elias; Martha Eladia; Julie Cumming; Ichiro Fujinaga</div>
+            <div class="mec2018-program-title">The Digital Work Catalog Anton Bruckner and the MerMEId Editor</div>
+            <div class="mec2018-program-speakers">Desiree Mayer and Clemens Gubsch</div>
+          </div>
+        </div>
+      </div>
+      <div class="divider text-center" data-content="BREAK"></div>
+      <span class="chip">The Clarice: Grand Pavilion</span>
+      <div class="card rounded">
+        <div class="card-header">
+          <div class="card-title">15:30 - 17:00</div>
+          <div class="card-subtitle">
+            <div class="mec2018-program-title"><em>Poster session</em></div>
+            <div class="mec2018-program-title">Updates to Verovio Humdrum Viewer</div>
+            <div class="mec2018-program-speakers">Craig Stuart Sapp</div>
+            <div class="mec2018-program-title">Seeing is believing – The VideApp from Beethovens Werkstatt</div>
+            <div class="mec2018-program-speakers">Johannes Kepper</div>
+            <div class="mec2018-program-title">Zimmermann as a proof of concept for an MEI work catalogue</div>
+            <div class="mec2018-program-speakers">Kristin Herold</div>
+            <div class="mec2018-program-title">Digital Music Edition through the example of the Clarinet Concerto by W. A. Mozart</div>
+            <div class="mec2018-program-speakers">Oleksii Sapov</div>
+            <div class="mec2018-program-title">The music theory miscellany Ms. 216 from the Biblioteca Città di Arezzo. A digital edition</div>
+            <div class="mec2018-program-speakers">Giuseppe Conti</div>
+            <div class="mec2018-program-title">Taking hand in it. An oXygen MEI framework</div>
+            <div class="mec2018-program-speakers">Benjamin W. Bohl</div>
+            <div class="mec2018-program-title">GioQoSo, an On-line Quality Evaluation Tool for MEI Scores</div>
+            <div class="mec2018-program-speakers">Vincent Besson; David Fiala; Philippe Rigaux; Virginie Thion</div>
+          </div>
+        </div>
+      </div>
+      <div class="card rounded">
+        <div class="card-header">
+          <div class="card-title">17:15 - 18:30</div>
+          <div class="card-subtitle">
+            <div class="mec2018-program-title">Reception and demo</div>
+            <div class="mec2018-program-speakers">sponsored by <a href="https://tido-music.com/">Tido</a></div>
+          </div>
+        </div>
+      </div>
+    <div class="divider-vert hide-sm"></div>
+      <h4>Thursday 24 May 2018</h4>
+      <span class="chip">The Clarice: Grand Pavilion</span>
+      <div class="card rounded">
+        <div class="card-header">
+          <div class="card-title">8:15 - 9:00</div>
+          <div class="card-subtitle">
+            <div class="mec2018-program-title">Registration and coffee</div>
+          </div>
+        </div>
+      </div>
+      <span class="chip">The Clarice: Gildenhorn Recital Hall</span>
+      <div class="card rounded">
+        <div class="card-header">
+          <div class="card-title">9:00 - 10:30</div>
+          <div class="card-subtitle">
+            <div class="mec2018-program-title">The LMLO goes MEI: an exercise in melodic encoding translation</div>
+            <div class="mec2018-program-speakers">Katherine Eve Helsen and Yaolong Ju</div>
+            <div class="mec2018-program-title">White mensural manual encoding: from **kern to MEI</div>
+            <div class="mec2018-program-speakers">David Rizo; Nieves Pascual; Craig Sapp</div>
+            <div class="mec2018-program-title">Human-aided Automatic Music Document Analysis</div>
+            <div class="mec2018-program-speakers">Jorge Calvo-Zaragoza; Ké Zhang; Zeyad Saleh; Gabriel Vigliensoni; Ichiro Fujinaga</div>
+          </div>
+        </div>
+      </div>
+      <div class="divider text-center" data-content="BREAK"></div>
+      <div class="card rounded">
+        <div class="card-header">
+          <div class="card-title">11:00 - 12:30</div>
+          <div class="card-subtitle">
+            <div class="mec2018-program-title">Encoding playability: how hard can it be?</div>
+            <div class="mec2018-program-speakers">Joanna Bullivant; Tim Crawford; Jamie Forth; David Lewis; Kevin Page</div>
+            <div class="mec2018-program-title">The Citations Project and Open Annotation for MEI</div>
+            <div class="mec2018-program-speakers">Richard Freedman</div>
+            <div class="mec2018-program-title">An approach to MEI metadata in the light of interoperability and interchangeability</div>
+            <div class="mec2018-program-speakers">Benjamin W. Bohl and Kristina Richts</div>
+          </div>
+        </div>
+      </div>
+      <div class="divider text-center" data-content="LUNCH (provided)"></div>
+      <div class="card rounded">
+        <div class="card-header">
+          <div class="card-title">13:30 - 15:00</div>
+          <div class="card-subtitle">
+            <div class="mec2018-program-title">Early Modern Songscapes</div>
+            <div class="mec2018-program-speakers">Scott Trudell; Sarah Williams; Raffaele Viglianti</div>
+            <div class="mec2018-program-title">Digital musical analysis with MEI on the ‘Kitzler Studienbuch’ by Anton Bruckner</div>
+            <div class="mec2018-program-speakers">Agnes Seipelt; Paul Gulewycz</div>
+            <div class="mec2018-program-title">Flawed workflows? – MEI as single entity for digital and analog editions</div>
+            <div class="mec2018-program-speakers">Klaus Rettinghaus</div>
+          </div>
+        </div>
+      </div>
+      <div class="divider text-center" data-content="BREAK"></div>
+      <div class="card rounded">
+        <div class="card-header">
+          <div class="card-title">15:30 - 17:00</div>
+          <div class="card-subtitle">
+            <div class="mec2018-program-title">Keynote: What does the data tell us?: Representation, Canon, and Music Encoding</div>
+            <div class="mec2018-program-speakers">Anna Kijas</div>
+          </div>
+        </div>
+      </div>
+      <div class="divider text-center" data-content=""></div>
+      <span class="chip">MilkBoy ArtHouse<a href="https://www.google.com/maps/place/MilkBoy+ArtHouse/@38.9814575,-76.9403626,17z/data=!4m5!3m4!1s0x0:0xec7c9e5502ff146c!8m2!3d38.9814529!4d-76.9381738">(7416 Baltimore Ave)</a></span>
+      <div class="card rounded">
+        <div class="card-header">
+          <div class="card-title">19:00</div>
+          <div class="card-subtitle">
+            <div class="mec2018-program-title">Banquet</div>
+            <div class="mec2018-program-speakers">
+              We will honor our student bursary winners:<br/>
+              Benjamin Bohl; Giuseppe Conti; Oleksii Sapov; Agnes Seipelt; Martha Eliada Thomae
+              Elias.
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+
+  <div class="mec2018-program-row">
+    <h4>Friday 25 May 2018</h4>
+    <span class="chip">MITH - Hornbake Library, lower ground floor</span>
+    <br/>
+    <span class="chip">Seminar Room</span>
+    <div class="card rounded">
+      <div class="card-header">
+        <div class="card-title">9:00 - 10:30</div>
+        <div class="card-subtitle">MEI Members Meeting (with coffee and snacks)</div>
+      </div>
+    </div>
+    <div class="card rounded">
+      <div class="card-header">
+        <div class="card-title">10:30 - 12:30</div>
+        <div class="card-subtitle">Unconference / Breaking groups</div>
+      </div>
+    </div>
+    <div class="divider text-center" data-content="LUNCH (not provided)"></div>
+    <div class="columns">
+      <div class="column">
+        <span class="chip">Seminar Room</span>
+          <div class="card rounded">
+            <div class="card-header">
+              <div class="card-title">14:00 - 15:00</div>
+              <div class="card-subtitle">Unconference / Breaking groups</div>
+            </div>
+          </div>
+          <div class="card rounded">
+            <div class="card-header">
+              <div class="card-title">15:00 - 16:00</div>
+              <div class="card-subtitle">Unconference / Breaking groups</div>
+            </div>
+          </div>
+      </div>
+      <div class="column">
+        <span class="chip">Ada Room (0301B)</span>
+          <div class="card rounded">
+            <div class="card-header">
+              <div class="card-title">14:00 - 15:00</div>
+              <div class="card-subtitle">Interest Group: Mensural Notation</div>
+            </div>
+          </div>
+          <div class="card rounded">
+            <div class="card-header">
+              <div class="card-title">15:00 - 16:00</div>
+              <div class="card-subtitle">Interest Group: Neumes</div>
+            </div>
+          </div>
+      </div>
+    </div>
+    <span class="chip">Seminar Room</span>
+    <div class="card rounded">
+      <div class="card-header">
+        <div class="card-title">16:00 - 16:15</div>
+        <div class="card-subtitle">Closing remarks</div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function toggleDescription(ref) {
+      var x = document.getElementById(ref);
+      if (x.style.display === "none") {
+          x.style.display = "block";
+      } else {
+          x.style.display = "none";
+      }
+    }
+  </script>
+
+</div>
+
+    
+  </div>
+  <div class="column col-2 hide-sm">
+    <ul class="menu">
+      
+          <li class="menu-item ">
+            <a href="/conference/2018/call/" >Call for proposals</a>
+          </li>
+      
+          <li class="menu-item ">
+            <a href="/conference/2018/" >Music Encoding Conference 2018</a>
+          </li>
+      
+          <li class="menu-item ">
+            <a href="/conference/2018/maps/" >Maps and Dining</a>
+          </li>
+      
+          <li class="menu-item ">
+            <a href="/conference/2018/people/" >Personnel</a>
+          </li>
+      
+          <li class="menu-item ">
+            <a href="/conference/2018/program/"  class="active" >Program</a>
+          </li>
+      
+          <li class="menu-item ">
+            <a href="/conference/2018/travel/" >Travel and Accommodation</a>
+          </li>
+      
+    </ul>
+  </div>
+</div>
+
+    </div>
+
+    <!-- Make sure to mirror changes in the guidelines repository in _include/footer.html when necessary -->
+<footer>
+  <div class="container">
+    <div class="columns institutions">
+      <div class="column col-12 text-center">
+        <a class="institutionsLink" target="_blank" href="https://www.adwmainz.de">
+          <img src="/pix/akademie-small.png" alt="Akademie der Wissenschaften | Mainz" />
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="text-center">
+    <a class="footerLinks" href="/">Home</a> | <a class="footerLinks" href="/community/community-contacts.html">Contact</a><br/>
+    <small>© Music Encoding Initiative 2024</small>
+  </div>
+</footer>
+
+
+  </body>
+
+</html>

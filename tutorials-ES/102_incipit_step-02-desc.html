@@ -1,0 +1,23 @@
+<div>
+    <p class="tutorialGoal-ES">Segundo paso: añadir algunos atributos al esqueleto estructural que has creado en el paso anterior. Estos atributos porporcionan información básica sobre el pentagrama, clave y tonalidad del ejemplo.</p>
+
+    <p>En el paso anterior has aprendido que el elemento <code>&lt;scoreDef&gt;</code> se usa para especificar los parámetros comunes de una partitura, y <code>&lt;staffDef&gt;</code> contiene todos los metadatos relacionados con un pentagrama individual. Por supuesto, solo hay un pentagrama en este íncipit del ejemplo, así que se puede especificar la armadura (3 bemoles) y el tiempo (alla breve) en<code>&lt;staffDef&gt;</code>. Pasemos esta información a <code>&lt;scoreDef&gt;</code>, asumiendo que la armadura y tiempo son los mismos para todos los instrumentos o partes de toda la partitura del Opus 1 de Halvorsen. Para especificar una cierta armadura o tiempo, se necesita usar los siguientes atributos de<code>&lt;scoreDef&gt;</code> y añadirlos al elemento <code>&lt;scoreDef&gt;</code>:</p>
+    <ul>
+        <li><code>@key.sig</code> (armadura) – el número de sostenidos/bemoles escritos en la armadura, utiliza <code>“3f”</code> para 3 bemoles.</li>
+        <li><code>@meter.sym</code> (tiemp) – utiliza <code>“cut”</code> para alla breve (C/).
+
+        </li>
+    </ul>
+
+    <p>Sin embargo, la clave se describe en el elemento <code>&lt;staffDef&gt;</code>, porque está relacionada con el pentagrama individual (otros instrumentos pueden tener otras claves). Tienes que utilizar los siguientes atributos de <code>&lt;staffDef&gt;</code>:</p>
+    <ul>
+        <li><code>@n</code> (número ordinal) – la posición del pentagrama respecto al conjunto <code>&lt;staffGrp&gt;</code>, utiliza <code>”1”</code> para el primer (y único) pentagrama</li>
+        <li><code>@lines</code> – utiliza <code>“5”</code> para un pentagrama de cinco líneas</li>
+        <li><code>@clef.shape</code> – el valor para la clave <code>“G”</code> para la clave de sol.</li>
+        <li><code>@clef.line</code> – la línea del pentagrama donde se sitúa la clave (contando desde abajo), utiliza <code>“2”</code>.</li>
+    </ul>
+
+    <p class="task-ES">Añade los atributos descritos anteriormente y sus respectivos valores a <code>&lt;scoreDef&gt;</code> y <code>&lt;staffDef&gt;</code> en el editor de abajo. (Todavía hace falta algo de información para ejecutarlo. ¡Vamos!)</p>
+
+    <p>P.D.: Aunque en el texto nos refiramos a los atributos con el signo @ antepuesto, no es necesario (ni siquiera está permitido) en la codificación.</p>
+</div>

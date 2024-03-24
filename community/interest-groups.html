@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Interest groups</title>
+    <meta name="description" content="">
+
+    <link rel="stylesheet" href="/css/main.css">
+    <!-- syntax highlighting CSS -->
+    <link rel="stylesheet" href="/css/syntax.css" />
+    <script type="text/javascript" src="/js/carousel.js"></script>
+    <script type="text/javascript">
+      document.addEventListener("DOMContentLoaded", event => {
+        const indexCarousel = document.getElementById("index-carousel");
+        if (indexCarousel !== null) {
+          animateCarousel(indexCarousel, 3000);
+          indexCarousel.addEventListener("mouseover", event => {
+            stopCarouselAnimation(indexCarousel);
+          });
+          indexCarousel.addEventListener("mouseout", event => {
+            animateCarousel(indexCarousel, 3000);
+          });
+        }
+      });
+    </script>
+</head>
+
+
+  <body>
+
+    <!-- Make sure to mirror changes in the guidelines repository in _include/header.html when necessary -->
+<header class="navbar">
+  <div class="navbar-section">
+    <a class="navbar-brand" href="https://music-encoding.org">
+      <img src="/pix/meilogo-inverted.png" alt="MEI logo"/>
+    </a>
+    <div class="hide-lg">
+      
+    <div class="dropdown dropdownCustomMenuToggle">
+        
+            <a href="/about" class="btn btn-link top-menu-link" tabindex="0">
+                About
+            </a>
+        
+    </div>
+
+    <div class="dropdown dropdownCustomMenuToggle">
+        
+            <a href="#" class="btn btn-link dropdown-toggle top-menu-link" tabindex="1">
+                Community <i class="icon icon-caret"></i>
+            </a>
+
+            
+             <ul class="menu"> 
+                <li class="menu-item">
+                    <a href="/community/projects-users.html" class="btn btn-link text-left menu-link">
+                        Projects / Users
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/community/news-events.html" class="btn btn-link text-left menu-link">
+                        News / Events
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/community/community-contacts.html" class="btn btn-link text-left menu-link">
+                        Community Contacts
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/community/interest-groups.html" class="btn btn-link text-left menu-link">
+                        Interest Groups
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/community/technical-team.html" class="btn btn-link text-left menu-link">
+                        Technical Team
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/community/mei-board.html" class="btn btn-link text-left menu-link">
+                        MEI Board
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/community/mei-by-laws.html" class="btn btn-link text-left menu-link">
+                        MEI By-laws
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/community/code-of-conduct.html" class="btn btn-link text-left menu-link">
+                        Code of Conduct
+                    </a>
+                </li>
+                 </ul> 
+            
+
+        
+    </div>
+
+    <div class="dropdown dropdownCustomMenuToggle">
+        
+            <a href="#" class="btn btn-link dropdown-toggle top-menu-link" tabindex="2">
+                Conference <i class="icon icon-caret"></i>
+            </a>
+
+            
+             <ul class="menu"> 
+                <li class="menu-item">
+                    <a href="/conference/2024" class="btn btn-link text-left menu-link">
+                        MEC 2024
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/conference/past.html" class="btn btn-link text-left menu-link">
+                        Past Conferences
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/conference/proceedings.html" class="btn btn-link text-left menu-link">
+                        Proceedings
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/conference/awards.html" class="btn btn-link text-left menu-link">
+                        MEC Awards
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/conference/hosting-guidelines.html" class="btn btn-link text-left menu-link">
+                        Hosting Guidelines
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/conference/code-of-conduct.html" class="btn btn-link text-left menu-link">
+                        Code of conduct
+                    </a>
+                </li>
+                 </ul> 
+            
+
+        
+    </div>
+
+    <div class="dropdown dropdownCustomMenuToggle">
+        
+            <a href="#" class="btn btn-link dropdown-toggle top-menu-link" tabindex="3">
+                Resources <i class="icon icon-caret"></i>
+            </a>
+
+            
+             <ul class="menu"> 
+                <li class="menu-item">
+                    <a href="/resources/background.html" class="btn btn-link text-left menu-link">
+                        Background
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/resources/bibliography.html" class="btn btn-link text-left menu-link">
+                        Bibliography
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/resources/pedagogy.html" class="btn btn-link text-left menu-link">
+                        Pedagogy & Praxis
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/resources/schemas.html" class="btn btn-link text-left menu-link">
+                        Schemas and Namespace
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/resources/tools.html" class="btn btn-link text-left menu-link">
+                        Tools
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/resources/tutorials.html" class="btn btn-link text-left menu-link">
+                        Tutorials
+                    </a>
+                </li>
+                 </ul> 
+            
+
+        
+    </div>
+
+    <div class="dropdown dropdownCustomMenuToggle">
+        
+            <a href="#" class="btn btn-link dropdown-toggle top-menu-link" tabindex="4">
+                Documentation <i class="icon icon-caret"></i>
+            </a>
+
+            
+             <ul class="menu"> 
+                <li class="menu-item">
+                    <a href="/guidelines/v5" class="btn btn-link text-left menu-link">
+                        MEI 5 (latest release)
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/guidelines/dev" class="btn btn-link text-left menu-link">
+                        Development version
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/guidelines/v4" class="btn btn-link text-left menu-link">
+                        MEI 4
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/guidelines/v3" class="btn btn-link text-left menu-link">
+                        MEI 3
+                    </a>
+                </li>
+                 </ul> 
+            
+
+        
+    </div>
+
+    <div class="dropdown dropdownCustomMenuToggle">
+        
+            <a href="/archive" class="btn btn-link top-menu-link" tabindex="5">
+                Archive
+            </a>
+        
+    </div>
+
+
+    </div>
+  </div>
+  <div class="navbar-section" id="socialLinks">
+    <a class="twitterLink" target="_blank" href="https://twitter.com/MusicEncoding">
+      <img src="/pix/twitter.png" alt="Twitter" class="logo"/>
+    </a>
+    <a class="githubLink" target="_blank" href="https://github.com/music-encoding">
+      <img src="/pix/github.png" alt="GitHub" class="logo"/>
+    </a>
+    <a class="slackLink" target="_blank" href="https://music-encoding.slack.com/">
+      <img src="/pix/slack.png" alt="Slack" class="logo"/>
+    </a>
+  </div>
+    <div id="menu-accordion" class="accordion-container dropdown-toggle show-lg column col-12">
+  <div class="accordion">
+    <input id="accordion-toggle" type="checkbox" name="accordion-checkbox" hidden=""/>
+    <label class="accordion-header c-hand" for="accordion-toggle">
+      <i class="icon icon-menu"></i>
+    </label>
+
+    <div class="accordion-body">
+      <ul class="menu menu-nav">
+        
+        <li class="menu-item">
+          <div class="accordion menu">
+            <input id="accordion-About" type="checkbox" name="accordion-checkbox" hidden=""/>
+            <label class="accordion-header c-hand" for="accordion-About">
+              
+                  <a href="/about">
+                      About
+                  </a>
+              
+            </label>
+            
+          </div>
+        </li>
+        
+        <li class="menu-item">
+          <div class="accordion menu">
+            <input id="accordion-Community" type="checkbox" name="accordion-checkbox" hidden=""/>
+            <label class="accordion-header c-hand" for="accordion-Community">
+              
+                Community
+              
+            </label>
+            
+            <div class="accordion-body">
+              <ul class="menu menu-nav">
+                
+                   <li><ul class="menu"> 
+                  <li class="menu-item"><a href="/community/projects-users.html">Projects / Users</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/community/news-events.html">News / Events</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/community/community-contacts.html">Community Contacts</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/community/interest-groups.html">Interest Groups</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/community/technical-team.html">Technical Team</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/community/mei-board.html">MEI Board</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/community/mei-by-laws.html">MEI By-laws</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/community/code-of-conduct.html">Code of Conduct</a></li>
+                   </ul></li> 
+                
+              </ul>
+            </div>
+            
+          </div>
+        </li>
+        
+        <li class="menu-item">
+          <div class="accordion menu">
+            <input id="accordion-Conference" type="checkbox" name="accordion-checkbox" hidden=""/>
+            <label class="accordion-header c-hand" for="accordion-Conference">
+              
+                Conference
+              
+            </label>
+            
+            <div class="accordion-body">
+              <ul class="menu menu-nav">
+                
+                   <li><ul class="menu"> 
+                  <li class="menu-item"><a href="/conference/2024">MEC 2024</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/conference/past.html">Past Conferences</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/conference/proceedings.html">Proceedings</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/conference/awards.html">MEC Awards</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/conference/hosting-guidelines.html">Hosting Guidelines</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/conference/code-of-conduct.html">Code of conduct</a></li>
+                   </ul></li> 
+                
+              </ul>
+            </div>
+            
+          </div>
+        </li>
+        
+        <li class="menu-item">
+          <div class="accordion menu">
+            <input id="accordion-Resources" type="checkbox" name="accordion-checkbox" hidden=""/>
+            <label class="accordion-header c-hand" for="accordion-Resources">
+              
+                Resources
+              
+            </label>
+            
+            <div class="accordion-body">
+              <ul class="menu menu-nav">
+                
+                   <li><ul class="menu"> 
+                  <li class="menu-item"><a href="/resources/background.html">Background</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/resources/bibliography.html">Bibliography</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/resources/pedagogy.html">Pedagogy & Praxis</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/resources/schemas.html">Schemas and Namespace</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/resources/tools.html">Tools</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/resources/tutorials.html">Tutorials</a></li>
+                   </ul></li> 
+                
+              </ul>
+            </div>
+            
+          </div>
+        </li>
+        
+        <li class="menu-item">
+          <div class="accordion menu">
+            <input id="accordion-Documentation" type="checkbox" name="accordion-checkbox" hidden=""/>
+            <label class="accordion-header c-hand" for="accordion-Documentation">
+              
+                Documentation
+              
+            </label>
+            
+            <div class="accordion-body">
+              <ul class="menu menu-nav">
+                
+                   <li><ul class="menu"> 
+                  <li class="menu-item"><a href="/guidelines/v5">MEI 5 (latest release)</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/guidelines/dev">Development version</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/guidelines/v4">MEI 4</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/guidelines/v3">MEI 3</a></li>
+                   </ul></li> 
+                
+              </ul>
+            </div>
+            
+          </div>
+        </li>
+        
+        <li class="menu-item">
+          <div class="accordion menu">
+            <input id="accordion-Archive" type="checkbox" name="accordion-checkbox" hidden=""/>
+            <label class="accordion-header c-hand" for="accordion-Archive">
+              
+                  <a href="/archive">
+                      Archive
+                  </a>
+              
+            </label>
+            
+          </div>
+        </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+
+</header>
+
+
+    <div class="container grid-xl content">
+        <h1 id="interest-groups">Interest groups</h1>
+
+<p>An Interest Group (IG) is composed of any number of members of the MEI community with an interest in a certain music encoding topic or problem. Each IG is self-organized and led by one or two Administrative Chairs chosen by the members of the IG. The Administrative Chair(s) may step down any time and be replaced by another member of the same IG. The outgoing Chair will mediate the replacement and facilitate the transition period. The duties of the IG Administrative Chair(s) include – but are not limited to –</p>
+
+<ul>
+  <li>organizing the work of the IG, with particular attention to the alignment of the Guidelines and specification in the area/s covered by the IG;</li>
+  <li>delivery of an annual report on the IG’s activity at the Music Encoding Conference (‘MEC’) and coordination of the IG gathering that occurs during the MEC; and</li>
+  <li>fostering the communication and interchange between the members of the IG.</li>
+</ul>
+
+<p>The last item above is particularly important and requires strong interpersonal skills. MEI is a diverse community made up of members with different expertise and musical/technical/cultural backgrounds; therefore, it is of paramount importance to create a welcoming and friendly environment where everyone can contribute and thrive.</p>
+
+<p>MEI offers some channels of communication to each IG (a mailing list, dedicated channel(s) on the <a href="https://music-encoding.slack.com">MEI Slack Workspace</a> and dedicated repositories in <a href="https://github.com/music-encoding">MEI’s GitHub Organization</a>). The Administrative Chair(s) should supervise and coordinate these channels so that unnecessary overlap is avoided. The Administrative Chair(s) may take any initiative to update all the IG members on the current discussions and advancement of the work, especially when the communication of the IG is spread over several channels.</p>
+
+<p>To form a new IG, a proposal shall be made to the Board, containing the group’s name, goals, and a list of founding members (for further information please check section 8 in <a href="https://music-encoding.org/community/mei-by-laws.html">MEI by-laws</a>).</p>
+
+<h2 id="mensural-interest-group">Mensural Interest Group</h2>
+
+<p><strong>Administrative Co-Chairs: <a href="mailto:gdibacco@indiana.edu">Giuliano Di Bacco</a> and <a href="mailto:annplaksin@gmx.net">Anna Plaksin</a></strong>.<br />
+The aim of the Interest Group is to discuss the use of MEI for the encoding of musical repertories in mensural notation (late 13th century to about 1600); to recommend additions and emendations to future versions of the MEI schema and guidelines; to discuss the use, adaptation or creation of tools for editorial and analytical purposes. These goals may be extended. The group’s work is conducted through a dedicated mailing list, and an annual meeting is held at the Music Encoding Conference. All members of the MEI community with an interest in mensural notation are welcome to join the IG by subscribing to the mailing list: <a href="https://lists.uni-paderborn.de/mailman/listinfo/mei-mensural-ig">https://lists.uni-paderborn.de/mailman/listinfo/mei-mensural-ig</a>.</p>
+
+<h2 id="metadata-and-cataloging-interest-group">Metadata and Cataloging Interest Group</h2>
+
+<p><strong>Administrative Co-Chairs: <a href="mailto:doerners@posteo.de">Sophia Dörner</a> and <a href="mailto:dennis.ried@uni-paderborn.de">Dennis Ried</a></strong>.<br />
+The aim of the Metadata and Cataloging Interest Group is to discuss the use of MEI for the encoding of musical metadata; to make recommendations regarding the development of metadata-specific elements; to promote the sharing of and collaboration on tools for projects concerned with MEI metadata such as cataloging projects. ‘Cataloging’ in this context may include a wide range of projects such as thematic catalogs (‘Werkverzeichnisse’), library catalogs, and other descriptions of musical works or sources. The group is open to all members of the MEI community. Members enroll simply by subscribing to the group’s mailing list: <a href="https://lists.uni-paderborn.de/mailman/listinfo/mei-catalog-ig">https://lists.uni-paderborn.de/mailman/listinfo/mei-catalog-ig</a>.</p>
+
+<h2 id="neumes-interest-group">Neumes Interest Group</h2>
+
+<p><strong>Administrative Chair: <a href="mailto:ichiro.fujinaga@mcgill.ca">Ichiro Fujinaga</a></strong>.<br />
+The aim of the Neumes Interest Group is to discuss the use of MEI for the encoding of neume notation, including adiastematic and diastematic neumes. Any members of the MEI community with an interest in neume notation are welcome to join the group by subscribing to the mailing list: <a href="https://lists.uni-paderborn.de/mailman/listinfo/mei-neumes-ig">https://lists.uni-paderborn.de/mailman/listinfo/mei-neumes-ig</a>, where most of the discussions take place.</p>
+
+<h2 id="tablature-interest-group">Tablature Interest Group</h2>
+
+<p><strong>Administrative Co-Chairs: <a href="mailto:reinierdevalk@gmail.com">Reinier de Valk</a> and <a href="mailto:D.Lewis@gold.ac.uk">David Lewis</a></strong>.<br />
+The aim of the Interest Group is to develop MEI for the encoding of repertories that use tablature notations. This involves making recommendations for extension, addition and amendment to future versions of the MEI schema and guidelines, and supporting the development of software tools to process and visualise MEI containing tablature. We ultimately aim to include as many tablature forms as possible, but are initially focussing on those for the guitar and lute family of instruments. An annual meeting is held at the Music Encoding Conference. All members of the MEI community with an interest in tablature are welcome to join the IG by subscribing to the group’s mailing list: <a href="https://lists.uni-paderborn.de/mailman/listinfo/mei-tablature-ig">https://lists.uni-paderborn.de/mailman/listinfo/mei-tablature-ig</a>.</p>
+
+<h2 id="linked-data-interest-group">Linked Data Interest Group</h2>
+
+<p><strong>Administrative Co-Chairs: <a href="mailto:weigl@mdw.ac.at">David M. Weigl</a> and <a href="mailto:stefan.muennich@unibas.ch">Stefan Münnich</a></strong>.<br />
+The aim of the Interest Group is to discuss applications of Linked
+Data to interconnect the rich music and music-related information
+resources available on the Web with MEI encodings. We will focus on
+establishing and documenting best practices through community
+discussion, working on the MEI guidelines for this topic, and, on
+proposing useful changes to the MEI schema to enhance or facilitate
+such connections to and from MEI encodings. The group seeks to provide
+reference points, both for newcomers, and those with more advanced
+experience in the topic. Finally, the group intends to work to raise
+awareness of Linked Data practices within the MEI community, and of
+music-specific approaches within the Semantic Web and Web science
+communities. The IG is open to all members of the MEI community with an
+interest in Linked Data and can be joined by subscribing to the mailing
+list: <a href="https://lists.uni-paderborn.de/mailman/listinfo/mei-linked-data-ig">https://lists.uni-paderborn.de/mailman/listinfo/mei-linked-data-ig</a>.</p>
+
+<h2 id="analysis-interest-group">Analysis Interest Group</h2>
+
+<p><strong>Administrative Co-Chairs: <a href="mailto:fabianmoss@gmail.com">Fabian Moss</a> and <a href="mark.saccomano@uni-paderborn.de">Mark Saccomano</a></strong>.<br />
+The aims of the Music Analysis Interest Group are to explore the potential of MEI for music analysis including e.g. the harmonic, melodic, and rhythmical content of pieces, as well as the metadata and comparisons between individual compositions or corpora. The IG seeks to discuss, collect and share different encoding formats, annotational languages and applications for musical analysis in many different ways, and support and enhance possible interconnections to MEI. A central goal is to improve the use of MEI for the encoding of different analytical approaches by recommending additions and modifications to future versions of the MEI schema and guidelines. The group welcomes any member of the MEI community interested in music analysis to get involved by subscribing to the mailing list <a href="https://lists.uni-paderborn.de/mailman/listinfo/mei-analysis-ig">https://lists.uni-paderborn.de/mailman/listinfo/mei-analysis-ig</a> or the <a href="https://music-encoding.slack.com/archives/C014F0QAS59">MEI Slack channel</a> (<a href="https://join.slack.com/t/music-encoding/shared_invite/zt-4zgx6zbq-2jEjDiUT7ym3dygTaY8C0g">join the MEI Slack here</a>).</p>
+
+<h2 id="digital-pedagogy-interest-group">Digital Pedagogy Interest Group</h2>
+
+<p><strong>Administrative Co-Chairs: <a href="mailto:jgrimmer@umd.Edu">Jessica Grimmer</a> and <a href="mailto:Joshua.Neumann@adwmainz.de">Joshua Neumann</a></strong>.<br />
+The aim of the Interest Group is to support educators who want to incorporate music encoding and related practices into educational and cultural heritage institutions within the frames established by their accrediting bodies and other governing agencies. We are interested in developing documentation with learning goals and outcomes appropriate for different levels and types of classes; identifying tools that enable such classes to support varying levels of digital literacy and computational competency generating modules with easy on ramps adaptable to many kinds of pedagogies, including assessment models; sharing expertise, particularly in pedagogical contexts; diversifying the repertoire used in instruction; and extending the digital community to include institutions and individuals who may otherwise lack support for making and teaching digital knowledge.</p>
+
+<p>The Group will meet regularly during the MEC and through electronic means to identify specific projects that will advance the goals noted above, both in the short and long term, according to the needs and capacities of our members. The group will keep an archive of discussions that anyone may review. The group welcomes any member of the MEI community interested to get involved by subscribing to the mailing list <a href="https://lists.uni-paderborn.de/mailman/listinfo/mei-pedagogy-ig">https://lists.uni-paderborn.de/mailman/listinfo/mei-pedagogy-ig</a> or the <a href="https://music-encoding.slack.com/archives/C01574RMK88">MEI Slack channel</a> (<a href="https://join.slack.com/t/music-encoding/shared_invite/zt-4zgx6zbq-2jEjDiUT7ym3dygTaY8C0g">join the MEI Slack here</a>).</p>
+
+    </div>
+
+    <!-- Make sure to mirror changes in the guidelines repository in _include/footer.html when necessary -->
+<footer>
+  <div class="container">
+    <div class="columns institutions">
+      <div class="column col-12 text-center">
+        <a class="institutionsLink" target="_blank" href="https://www.adwmainz.de">
+          <img src="/pix/akademie-small.png" alt="Akademie der Wissenschaften | Mainz" />
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="text-center">
+    <a class="footerLinks" href="/">Home</a> | <a class="footerLinks" href="/community/community-contacts.html">Contact</a><br/>
+    <small>© Music Encoding Initiative 2024</small>
+  </div>
+</footer>
+
+
+  </body>
+
+</html>
