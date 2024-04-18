@@ -5,8 +5,8 @@ title: "Tools"
 
 <h1>{{ page.title }}</h1>
 
-{% assign c = site.tools %}
-{% assign tags_tools =  c | map: 'tags' | join: ',' | join: ',' | split: ',' | uniq | sort %}
+{% assign tools = site.tools %}
+{% assign tags_tools =  tools | map: 'tags' | join: ',' | join: ',' | split: ',' | uniq | sort %}
 {% assign tags_tools_string = tags_tools | join: ", " %}
 {% comment %}
 *  <!--| where:"role","about" | sort: "date" | reverse-->
