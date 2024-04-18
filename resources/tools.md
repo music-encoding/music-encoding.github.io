@@ -28,7 +28,7 @@ title: "Tools"
     {% endfor %}
   </div>
   <div class="columns filter-body projects">
-    {% for item in c %}
+    {% for item in tools %}
         <div class="column col-4 col-sm-12 col-lg-6 filter-item" data-tag="{% for tag in tags_tools %}{% if item.tags contains tag %}tag-{{ forloop.index }} {% endif %}{% endfor %}">
             <div class="card project">
                 <div class="card-image">
