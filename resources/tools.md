@@ -10,10 +10,7 @@ title: "Tools"
 {% comment %}
 *  <!--| where:"role","about" | sort: "date" | reverse-->
 {% endcomment %}
-{% comment %}
-*  The following line captures the current time (at build time!) into the `now` variable. The `date: '%s'` filter captures the date as a timestamp and `plus: 0` ensures that any string values are cast to integers.
-{% endcomment %}
-{% capture now %}{{'now' | date: "%s" | plus: 0 }}{% endcapture %}
+
 <p>This is a collection of tools for working with MEI files. If you are missing any tool, or see room for improvement please submit your ideas in our <a href="{{site.github.repository_url}}">repository</a>.</p>
 <p>The tools have been tagged with the below tags. Click any of the tags to filter the displayed tools.</p>
 <div class="columns filter my-2">
