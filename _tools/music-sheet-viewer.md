@@ -5,7 +5,7 @@ subtitle: "Wordpress plug-in for music rendering"
 image:
 website: https://www.partitionnumerique.com/music-sheet-viewer-wordpress-plugin/
 repository:
-tags: [browser-based, plug-in, rendering, getting-started, developers, sonification]
+tags: [browser-based, developers, getting-started, plug-in, rendering, sonification]
 ---
 
 [Music Sheet Viewer](http://www.partitionnumerique.com/music-sheet-viewer-wordpress-plugin/) is an open-source WordPress plugin that allows the display of one or more music sheet fragments of full scores written in MEI, MusicXML, ABC or PAE ([RISM](http://rism-ch.org) notation), in a post or page of a WordPress site. The code is entered using a WordPress shortcode tag or a dedicated Block, and the resulting score is displayed as if it had been natively supported by the browser. It is powered by [Verovio](https://www.verovio.org), and provides many Verovio features without having to write one single line of code: all the JavaScript code is generated on the page.
