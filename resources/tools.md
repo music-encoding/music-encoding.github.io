@@ -39,7 +39,7 @@ title: "Tools"
                 {% else %}
                     <div class="hero hero-sm bg-primary text-light">
                         <div class="hero-body px-2">
-                        <h1>{{ item.title }}</h1>
+                        <h3>{{ item.title }}<h3>
                         </div>
                     </div>
                 {% endif %}
