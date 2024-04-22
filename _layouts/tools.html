@@ -41,7 +41,13 @@ layout: default
               {% endif %}
             </dd>
             <dt>Repository</dt>
-            <dd><a href="{{ page.repository }}" target="{{ page.repository }}">{{ page.repository }}</a></dd>
+            <dd>
+              {% if page.repository %}
+              <a href="{{ page.repository }}" target="{{ page.repository }}">{{ page.repository }}</a>
+              {% else %}
+                <span>---</span>
+              {% endif %}
+            </dd>
           </dl>
         </div>
       </div>
