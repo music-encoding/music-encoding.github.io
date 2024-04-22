@@ -5,7 +5,7 @@ subtitle: "music21: a toolkit for computer-aided musicology"
 image: https://web.mit.edu/music21/bg_top_left.jpg
 website: https://web.mit.edu/music21/
 repository: https://github.com/cuthbertLab/music21
-tags: [developers, library, conversion, sonification]
+tags: [conversion, developers, library, sonification]
 ---
 
 [music21](https://web.mit.edu/music21/) is a simple set of tools for computer-aided music analysis.
