@@ -33,7 +33,13 @@ layout: default
               {% endfor %}
             </dd>
             <dt>Website</dt>
-            <dd><a href="{{ page.website }}" target="{{ page.website }}">{{ page.website }}</a></dd>
+            <dd>
+              {% if page.website %}
+                <a href="{{ page.website }}" target="{{ page.website }}">{{ page.website }}</a>
+              {% else %}
+                <span>---</span>
+              {% endif %}
+            </dd>
             <dt>Repository</dt>
             <dd><a href="{{ page.repository }}" target="{{ page.repository }}">{{ page.repository }}</a></dd>
           </dl>
