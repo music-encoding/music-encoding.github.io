@@ -2,26 +2,26 @@
   "steps": [
     {
         "label":"Welcome",
-        "descFile": "writingTutorials-01.html"
+        "descFile": "199_writing_tutorials-01.html"
     },
     {
         "label":"Website Setup",
-        "descFile": "writingTutorials-02.html"
+        "descFile": "199_writing_tutorials-02.html"
     },
     {
         "label":"The JSON file",
-        "descFile": "writingTutorials-03.html"
+        "descFile": "199_writing_tutorials-03.html"
     },
     {
         "label":"The Editor",
-        "descFile": "writingTutorials-04.html"
+        "descFile": "199_writing_tutorials-04.html"
     },
     {
         "label":"Validation",
-        "descFile": "writingTutorials-05.html"
+        "descFile": "199_writing_tutorials-05.html"
     }
   ],
-  "end":"writingTutorials-06.html",
+  "end":"199_writing_tutorials-end.html",
   "resp":[
     {
         "name":"Johannes Kepper",
