@@ -11,7 +11,7 @@ title: "Tools"
 *  <!--| where:"role","about" | sort: "date" | reverse-->
 {% endcomment %}
 
-<p>This is a collection of tools for working with MEI files. If you are missing any tool, or see room for improvement please submit your ideas in our <a href="{{site.github.repository_url}}">repository</a>.</p>
+<p>This is a collection of tools for working with MEI files. If you are missing any tool, or see room for improvement please submit your ideas in our <a href="https://github.com/music-encoding/music-encoding.github.io">repository</a>.</p>
 <p>The tools have been tagged with the below tags. Click any of the tags to filter the displayed tools.</p>
 <div class="columns filter my-2">
   {% for tag in tags_tools %}
