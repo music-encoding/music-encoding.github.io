@@ -1,0 +1,26 @@
+<div>    
+    <p>
+        Despite it's name, the setup for working with ODD usually requires at least <u>two</u> <em>logical</em> files (though these may spread 
+        across many more files in the file system, as shown in the following step of this tutorial). The first of these files is the 
+        so-called <em>source</em>: It holds the full specification of the format, in this case MEI. In our repository, it is located in the
+        <a href="https://github.com/music-encoding/music-encoding/blob/develop/source/mei-source.xml" target="_blank" rel="noopener, noreferrer">mei-source.xml</a> file. 
+        In addition to that file, a separate <em>customization</em> is required to specify which parts of the specification are to be used
+        in a given context. The whole purpose of ODD is to allow flexible customizations of the schema. MEI provides a set of 
+        <a href="https://music-encoding.org/guidelines/v4/content/introduction.html#meiprofiles" target="_blank" rel="noopener, noreferrer">pre-defined profiles</a>,
+        which are nothing but customizations of the MEI schema. 
+    </p>
+    <p>
+        In order to use MEI (or any other ODD-based format), the <em>customization</em> file is used to
+        control how the <em>source</em> file shall be compiled. There are several target formats for that
+        compilation, which is explained elsewhere<!-- TODO: Add reference to second tutorial -->. The most
+        common target is a <a href="https://relaxng.org/" target="_blank" rel="noopener, noreferrer">RelaxNG</a> file, which contains
+        both RelaxNG hierarchies and additional Schematron rules as defined in the ODD, and can be used for 
+        validation against both types of schema. All other possible output formats are not commonly used for 
+        MEI. (Side note: we'll come back to a brief explanation of Schematron later in this tutorial.) 
+    </p>
+    <p>
+        While this tutorial is focussed on explaining the basic principles of the ODD structures as found in the MEI sources, a separate tutorial
+        on ODD will explain how to customize MEI to specific needs. The following steps will introduce the mechanisms of the main ODD structures in MEI: 
+        modules, elements, models, attributes, datatypes and macros. Let's <strong>continue</strong> in order to start with a closer look at <em>modules</em>…
+    </p>
+</div>

@@ -1,0 +1,66 @@
+<div>
+    <p>
+        En el archivo <a href="https://en.wikipedia.org/wiki/JSON" target="_blank">JSON</a> se coordina el contenido de un tutorial. Tiene un objeto con una serie de propiedades. Echemos un vistazo a (una versión simplificada de) este tutorial actual:
+    </p>
+    <pre class="codeblock">{
+  "steps": [
+    {
+        "label":"Bienvenido/a",
+        "descFile": "writingTutorials-01.html"
+    },
+    {
+        "label":"Configuración del sitio web",
+        "descFile": "writingTutorials-02.html"
+    },
+    
+    <span class="text-gray"><i>... más pasos a añadir aquí ...</i></span>
+    
+  ],
+  "end":"writingTutorials-end.html",
+  "resp":[
+    {
+        "name":"Johannes Kepper",
+        "affiliation":"Beethovens Werkstatt | Universität Paderborn"
+    }
+  ]
+}</pre>
+    <label>tutorials.json</label>
+    <p>
+        Aquí hay tres propiedades importantes. El primero, <code>”steps"</code> se utiliza para describir los diferentes pasos de un tutorial. Volveremos a ello en un segundo. El siguiente, <code>”end"</code>, especifica un archivo en el que se proporciona la página final de un tutorial. Por último, está <code>"resp"</code>. En esta matriz, se supone que debes poner tu nombre y tu afiliación. De este modo, no sólo tratamos de identificar a una persona de contacto en caso de que surjan preguntas, sino también de darle algún reconocimiento público por el trabajo que está haciendo en MEI. En el caso de que hayas trabajado en un tutorial con un grupo de personas, puedes, por supuesto, introducirlas a todas. ¿Por qué no pedir a algunos de tus alumnos que trabajen en estos tutoriales?
+    </p>
+    <h1>Pasos</h1>
+    <p>
+        Volviendo a la propiedad de los pasos. Se trata de una matriz de objetos, cada uno de los cuales describe un paso de un tutorial. La única propiedad que se requiere definitivamente es <code>"descFile"</code>. Aquí necesitas proporcionar el nombre de un archivo HTML que contenga las instrucciones para este paso. Básicamente, es lo que estás leyendo en este momento. Ese archivo no es un archivo HTML completo; debe comenzar con un elemento raíz <code>&lt;div&gt;</code> y contiene HTML simple. La siguiente propiedad, <code>”label"</code>, es opcional. Si no lo proporcionas, el paso se etiquetará según su posición (es decir, "Paso 3" o similar).
+    </p>
+    <p>
+        Obviamente, un tutorial no debe ser sólo texto (eso no justificaría todo este montaje...). A veces, puedes querer que el usuario codifique las cosas. Veamos la definición de dicho "paso":
+    </p>
+    <pre class="codeblock">{
+    <span class="text-gray">"label":"Un paso de muestra",</span>
+    <span class="text-gray">"descFile": "step-instructions.html",</span>
+    "xmlFile": "encoding.xml",
+    "xpaths": [
+        {
+            "rule":"count(//mei:note) = 1",
+            "renderanyway":false
+        },
+        {
+            "rule":"//mei:note/@pname = 'g'",
+            "renderanyway":true,
+            "hint": "Necesitas un atributo @pname, con un valor de g".
+        }
+    ],
+    "editorLines":3,
+    "prefillFile":"prefill.xml"
+}</pre>
+    <label>Definición de un paso del tutorial que incluye un componente del editor, que se insertará en la matriz "steps" de tutorials.json </label>
+    <p>
+        Las dos propiedades que ya conocemos están en gris, no necesitamos volver a ellas. Si un paso contiene tanto una propiedad <code>"xmlFile"</code> como una <code>"xpaths"</code>, se mostrará un editor. Al mismo tiempo, el botón "Continuar" de la parte inferior derecha desaparecerá. Para continuar, el usuario tiene que seguir tus instrucciones e introducir el código MEI en el editor. Para decidir si el usuario ha tenido éxito o no, necesita proporcionar una serie de reglas <a href="https://en.wikipedia.org/wiki/XPath" target="_blank">XPath</a>. El propio XPath se almacena en una propiedad <code>”rule"</code>. Tiene que devolver un valor booleano, es decir, <i>true</i> o <i>false</i>. Si quieres guiar al usuario, puedes proporcionar una propiedad <code>"hint"</code>. Si el contenido del editor no coincide con una regla XPath, su sugerencia se mostrará como un cuadro de advertencia debajo del editor. Las reglas XPath se comprueban en orden, y la comprobación posterior se detiene en cada regla falsa. Si todas las reglas coinciden, el tutorial continuará automáticamente con el siguiente paso. 
+    </p>
+    <p>
+        La propiedad <code>"renderanyway"</code> de una regla XPath es útil cuando se quiere que el usuario "juegue" con la codificación. Normalmente, la entrada de los usuarios se renderiza sólo cuando se cumplen todas las reglas XPath. Sin embargo, puedes pedirle al usuario que pruebe diferentes tonos, diciendo que el recorrido continúa cuando se introduce un tono específico. Entonces, puedes poner <code>"renderanyway"</code> en <code>true</code>, y Verovio hará lo posible por renderizar la entrada actual del usuario. Este comportamiento se implementa en la segunda regla XPath indicada anteriormente.
+    </p>
+    <p>
+        La propiedad <code>"xmlfile"</code> especifica un archivo que sirve de contexto para el editor. En el siguiente paso de este tutorial, lo explicaremos con más detalle. Hay dos propiedades más que pueden ser útiles. Con la propiedad <code>"editorLines"</code> se puede especificar la altura de la ventana del editor. Si no la proporcionas, se asumirá una altura por defecto de <i>5</i> líneas. Por último, puedes rellenar previamente el editor al principio de un paso con el contenido de un archivo que especifiques con la propiedad <code>"prefillFile"</code>. Si no lo proporcionas, el editor mantendrá la entrada que el usuario haya introducido en el paso anterior (o estará vacío en el primero).
+    </p>
+</div>

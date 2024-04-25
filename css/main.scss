@@ -83,32 +83,32 @@ $on-laptop:        800px;
 
     .mec2020-program-title {
       margin: 10px 0 10px 0;
-      
+
       .mec2020-presentation {
       background-color:#d4d4d4;
       }
-    }   
-    
+    }
+
     .workshop {
         width: 185pt;
         height: 190pt;
     }
-    
+
     .workshop-title {
         width: 160pt;
         height: 105pt;
     }
-    
+
     .poster-session {
         width: 370pt;
         height: 520pt;
     }
-      
+
     .mec2020-program-speakers {
       font-style: italic;
       font-size: 0.7rem;
     }
-    
+
     .unconference{
         height: 95pt;
     }
@@ -128,11 +128,11 @@ $on-laptop:        800px;
     }
 
   }
-  
+
   .mec2020-abstract {
         font-size: 20px;
         font-weight: bold;
-        
+
   }
   .mec2020-program-row-main {
     margin: 30px 0 30px 0;
@@ -213,7 +213,7 @@ $on-laptop:        800px;
 
         }
     }
-    
+
     /* 20210409 */
     table {
         font-family: "Arial", sans-serif;
@@ -252,7 +252,7 @@ $on-laptop:        800px;
         margin: 4px 2px;
         cursor: pointer;
         background-color: #1a235b;
-    }    
+    }
 
     .keynotesTable td {
         text-align: left;
@@ -269,4 +269,8 @@ $on-laptop:        800px;
         margin-top: 0;
     }
 
+}
+
+.filter-body {
+    width: 100%;
 }

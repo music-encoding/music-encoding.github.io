@@ -25,12 +25,14 @@ jobs:
     steps:
       - uses: technote-space/broken-link-checker-action@b8332d945b97f8b52eb8d7d889a1e0e37106c1a9 # ratchet:technote-space/broken-link-checker-action@v2
         with:
-          target: ${{ env.CHECK_WEBSITE }}
+          TARGET: ${{ env.CHECK_WEBSITE }}
+          EXCLUDED_KEYWORDS: |
+            twitter.com
 
   linkChecker:
     runs-on: ubuntu-latest
     if: ${{ github.repository_owner == 'music-encoding' }}
-
+    
     steps:
       - name: Set variables
         run: |
@@ -45,11 +47,11 @@ jobs:
 
       - name: Link Checker
         id: lychee
-        uses: lycheeverse/lychee-action@c3089c702fbb949e3f7a8122be0c33c017904f9b # ratchet:lycheeverse/lychee-action@v1.9.1
+        uses: lycheeverse/lychee-action@c053181aa0c3d17606addfe97a9075a32723548a # ratchet:lycheeverse/lychee-action@v1.9.3
 
       - name: Create Issue From File
         if: env.lychee_exit_code != 0
-        uses: peter-evans/create-issue-from-file@433e51abf769039ee20ba1293a088ca19d573b7f # ratchet:peter-evans/create-issue-from-file@v4
+        uses: peter-evans/create-issue-from-file@24452a72d85239eacf1468b0f1982a9f3fec4c94 # ratchet:peter-evans/create-issue-from-file@v4
         with:
           title: Link Checker Report
           content-filepath: ./lychee/out.md
