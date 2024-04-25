@@ -1,0 +1,56 @@
+<div>
+    <p>
+        When doing a tutorial by yourself, you may have wondered how Verovio is able to render the user's MEI, 
+        even though not a complete MEI file is entered by the user. This is achieved by the <code>"xmlFile"</code>
+        property of a tutorial step introduced on the last page. This property references a complete MEI file,
+        which provides the context that needs to go "around" the user's input for correct rendering. Let's look at
+        a simple example: 
+    </p>
+    <pre class="codeblock">&lt;mei xmlns="http://www.music-encoding.org/ns/mei"&gt;
+    &lt;meiHead&gt;
+        &lt;fileDesc&gt;
+            &lt;titleStmt&gt;
+                &lt;title/&gt;
+            &lt;/titleStmt&gt;
+            &lt;pubStmt/&gt;
+        &lt;/fileDesc&gt;
+    &lt;/meiHead&gt;
+    &lt;music&gt;
+        &lt;body&gt;
+            &lt;mdiv&gt;
+                &lt;score&gt;
+                    &lt;scoreDef&gt;
+                        &lt;staffGrp&gt;
+                            &lt;staffDef clef.shape="G" clef.line="2" n="1" lines="5"/&gt;
+                        &lt;/staffGrp&gt;
+                    &lt;/scoreDef&gt;
+                    &lt;section&gt;
+                        &lt;measure&gt;
+                            &lt;staff n="1"&gt;
+                                &lt;layer&gt;
+                                    <span class="text-error">&lt;?snippet-start?&gt;</span>
+                                    &lt;note pname="c" oct="4" dur="4"/&gt;
+                                    <span class="text-error">&lt;?snippet-end?&gt;</span>
+                                &lt;/layer&gt;
+                            &lt;/staff&gt;
+                        &lt;/measure&gt;
+                    &lt;/section&gt;
+                &lt;/score&gt;
+            &lt;/mdiv&gt;
+        &lt;/body&gt;
+    &lt;/music&gt;
+&lt;/mei&gt;</pre>
+    <label>A simple MEI file, to be used as context for the user input.</label>
+    <p>
+        This is just a regular MEI file, but it contains two important <i>processing instructions</i>
+        (marked in red). The content of this file is read into memory. Whenever the user input in the editor
+        is well-formed XML, it is inserted <i>between</i> the two processing instructions, and the complete
+        file (now including the user input) is validated and (if applicable) sent to Verovio for rendering. 
+    </p>
+    <p>
+        What is stored between the two <i>processing instructions</i> is intended to serve as sample solution. 
+        That functionality isn't implemented yet, but will be added soon. It is already possible to download 
+        the complete file (including the context), so that users may use them for future reference or as model 
+        for their own work. 
+    </p>
+</div>

@@ -1,0 +1,35 @@
+{
+  "steps": [
+    {
+        "label":"Welcome",
+        "descFile": "customizing-odd-01.html"
+    },
+    {
+        "label":"ProfileDrafter",
+        "descFile": "customizing-odd-02.html"
+    },
+    {
+        "label":"Compiling ODD",
+        "descFile": "customizing-odd-03.html"
+    },
+    {
+        "label":"Review simple Customizations",
+        "descFile": "customizing-odd-04.html"
+    },
+    {
+        "label":"Understanding Modes",
+        "descFile": "customizing-odd-05.html"
+    },
+    {
+        "label":"Changing Roots",
+        "descFile": "customizing-odd-06.html"
+    }
+  ],
+  "end":"customizing-odd-end.html",
+  "resp":[
+    {
+        "name":"Johannes Kepper",
+        "affiliation":"Beethovens Werkstatt | Universität Paderborn"
+    }
+  ]
+}
