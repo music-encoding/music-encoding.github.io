@@ -1,0 +1,27 @@
+<div>
+    <p>
+        El MEI normal permite <strong>elementos de documento</strong>: <code>&lt;mei&gt;</code>, <code>&lt;meiHead&gt;</code>,
+        <code>&lt;music&gt;</code>, y <code>&lt;meiCorpus&gt;</code>. Esto significa que estos elementos pueden servir como elementos más externos
+        en un archivo MEI. Sin embargo, un proyecto puede idear una estructura de datos que requiera otros elementos iniciales o adicionales. 
+        Por ejemplo, un proyecto puede decidir mantener todas las anotaciones editoriales como archivos separados, cada uno con su propio <code>&lt;annot&gt;</code>
+        elemento. La personalización oficial <a href="/guidelines/dev/content/introduction.html#meiprofiles" target="_blank" rel="noopener, noreferrer">mei-all_anyStart</a>
+        permite utilizar cualquier elemento del espacio de nombres MEI como elemento inicial, pero esto es sobre todo con fines didácticos y no es 
+        recomendable para un uso práctico. En su lugar, ODD ofrece un mecanismo sencillo para definir los elementos de inicio permitidos, usando el
+        elemento inicial <code>&lt;schemaSpec&gt;</code>. 
+    </p>
+    <pre class="codeblock">&lt;schemaSpec ident="mei" 
+    ns="http://www.music-encoding.org/ns/mei" 
+    prefix="mei_" 
+    start="mei meiHead meiCorpus music"&gt;</pre>
+    <p>
+        Como puedes ver, el atributo <code>@start</code> se utiliza como una lista separada por espacios de todos los elementos de inicio. Si el proyecto mencionado decidiera 
+        permitir <code>&lt;mei&gt;</code> and <code>&lt;annot&gt;</code>, pero desautorizar todos los demás elementos de inicio, esto podría modificarse así:
+    </p>
+    <pre class="codeblock">&lt;schemaSpec ident="mei" 
+    ns="http://www.music-encoding.org/ns/mei" 
+    prefix="mei_" 
+    start="mei annot"&gt;</pre>
+    <p>
+        Como puedes ver, ajustar los elementos de inicio es bastante fácil. Terminemos con lo que hemos aprendido sobre la personalización de ODD.  
+    </p>
+</div>
