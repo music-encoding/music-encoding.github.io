@@ -53,19 +53,23 @@ var tutorialStrings = {
         'codeNotWellformed': 'Your code is not well-formed.',
         'fetchOperationProblem': 'There has been a problem with the fetch operation for:',
         'finish': 'Finish',
+        'goal': 'Goal',
         'hideHint': 'hide hint',
         'networkError': 'Network response was not ok while trying to fetch:',
         'renderingError': 'The current encoding cannot be rendered.',
         'showHint': 'show hint',
+        'task': 'Task',
     },
     'ES': {
         'codeNotWellformed': 'Su código no está bien formado.',
         'fetchOperationProblem': 'Ha habido un problema con la operación fetch para:',
         'finish': 'Terminar',
+        'goal': 'Objetivo',
         'hideHint': 'ocultar pista',
         'networkError': 'La respuesta de la red no fue correcta al intentar buscar:',
         'renderingError': 'La codificación actual no se puede representar.',
         'showHint': 'mostrar pista',
+        'task': 'Tarea',
     }
 };
 
@@ -237,8 +241,16 @@ function loadTutorialStep(data, stepNum) {
         .then(function(descriptionFile) {
             // update instruction section
             document.getElementById('instruction').innerHTML = descriptionFile;
+
+            // insert task and goal elements
+            prependTextToElementWithClass('tutorialTask', tutorialStrings[LANG]['task']);
+            prependTextToElementWithClass('tutorialGoal', tutorialStrings[LANG]['goal']);
+
+            // show buttons
             nextStepButton.style.display = 'inline-block';
             previousStepButton.style.display = 'inline-block';
+
+            // hide acknowledgments
             document.getElementById('acknowledgments').style.display = 'none';
         })
         .catch(function(error) {
@@ -666,6 +678,21 @@ function getFilePart(xmlString, position) {
     }
     
     return str;    
+}
+
+/*
+* function prependTextToElementWithClass
+* @param className: the class name of the element to which the text should be prepended
+* @param text: the text to be prepended
+* Prepends text to an element with a given class name.
+*/
+function prependTextToElementWithClass(className, text) {
+    var elements = document.getElementsByClassName(className);
+    if (elements && elements.length > 0) {
+        var newElement = document.createElement('span');
+        newElement.textContent = text + ': ';
+        elements[0].insertBefore(newElement, elements[0].firstChild);
+    }
 }
 
 /* 
