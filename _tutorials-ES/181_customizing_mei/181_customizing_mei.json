@@ -1,0 +1,35 @@
+{
+  "steps": [
+    {
+        "label":"Bienvenida",
+        "descFile": "181_customizing_mei-01.html"
+    },
+    {
+        "label":"ProfileDrafter",
+        "descFile": "181_customizing_mei-02.html"
+    },
+    {
+        "label":"Compilando ODD",
+        "descFile": "181_customizing_mei-03.html"
+    },
+    {
+        "label":"Revisar personalizaciones sencillas",
+        "descFile": "181_customizing_mei-04.html"
+    },
+    {
+        "label":"Conocer los modos",
+        "descFile": "181_customizing_mei-05.html"
+    },
+    {
+        "label":"Cambio de fundamentales",
+        "descFile": "181_customizing_mei-06.html"
+    }
+  ],
+  "end":"181_customizing_mei-end.html",
+  "resp":[
+    {
+        "name":"Johannes Kepper",
+        "affiliation":"Beethovens Werkstatt | Universität Paderborn"
+    }
+  ]
+}
