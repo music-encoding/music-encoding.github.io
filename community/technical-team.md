@@ -8,7 +8,7 @@ The Technical Team consists of interested developers and two Board-appointed Co-
 
 * **Benjamin W. Bohl (Technical Co-Chair)**, Institut für Musikwissenschaft, Goethe Universität Frankfurt, Frankfurt am Main and Musikwissenschaftliches Seminar Detmold/Paderborn
 * **Stefan Münnich (Technical Co-Chair)**, Anton Webern Gesamtausgabe, University of Basel
-* **Sophia Dörner**, Humboldt-Universität zu Berlin
+* **Sophia Dörner**, Technische Hochschule Köln
 * **Ichiro Fujinaga**, McGill University, Montréal
 * **Andrew Hankinson**, RISM Digital Center, Bern
 * **Johannes Kepper**, Musikwissenschaftliches Seminar Detmold/Paderborn
