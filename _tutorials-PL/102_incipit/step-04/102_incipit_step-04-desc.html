@@ -1,0 +1,19 @@
+<!--in progress-->
+
+<div>
+    <p class="tutorialGoal">Krok czwarty: kodowanie pierwszej nuty tego przykładu.</p>
+    
+    <p>Po przygotowaniu struktury taktu w poprzednim kroku, jesteś teraz gotowa do zakodowania pierwszej nuty przykładu. W MEI nuty opisują pojedyncze zdarzenia dźwiękowe, które są kodowane za pomocą elementów <code>&lt;note&gt;</code>, przy czym elementy <code>&lt;note&gt;</code> mogą być potomkami elementu <code>&lt;layer&gt;</code>. Możesz zdefiniować główne cechy nuty, takie jak dźwięk i długość, korzystając z następujących atrybutów na elemencie <code>&lt;note&gt;</code>:</p>
+    
+    <ul>
+        <li><code>@pname</code> (nazwa dźwięku) – małe litery od <code>„a”</code> do <code>„g”</code>, tutaj użyj <code>„b”</code>.</li>
+            <li><code>@oct</code> (oktawa) – wartość oktawy dźwięku jako liczby całkowite od <code>„0”</code> do <code>”9”</code>, C4 to dźwięk określony przez klucz C, użyj <code>„3”</code></li>
+            <li><code>@dur</code> (długość) – np. <code>“1”</code> dla całej nuty, <code>“2”</code> dla półnuty, <code>“4”</code> dla ćwierćnuty, <code>“8”</code> dla ósemki, <code>“16”</code> dla szesnastki, … <code>“2048”</code> dla 2048-nuty, użyj <code>“4”</code></li>
+        </ul>
+    
+        <p>Oto przykład, jak zakodować całą nutę C4: <code>&lt;note pname="c" oct="4" dur="1"&gt;&lt;/note&gt;</code>.</p>
+    
+        <p class="task">W edytorze poniżej wpisz kodowanie pierwszej nuty przykładu wewnątrz elementu <code>&lt;layer&gt;</code>.</p>
+    
+        <p>PS: Jeśli interesuje Cię samouczek tylko na temat elementów <code>&lt;note&gt;</code>, zobacz nasz samouczek <a href="./101-quickstart.html">Quickstart</a>.</p>
+    </div>
