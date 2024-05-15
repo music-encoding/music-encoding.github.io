@@ -49,27 +49,41 @@ var currentStep; //this will be used as current step object
 var LANG; //this will be used to store the current language
 
 var tutorialStrings = {
-    'EN': {
-        'codeNotWellformed': 'Your code is not well-formed.',
-        'fetchOperationProblem': 'There has been a problem with the fetch operation for:',
-        'finish': 'Finish',
-        'goal': 'Goal',
-        'hideHint': 'hide hint',
-        'networkError': 'Network response was not ok while trying to fetch:',
-        'renderingError': 'The current encoding cannot be rendered.',
-        'showHint': 'show hint',
-        'task': 'Task',
+    'codeNotWellformed': {
+        'EN': 'Your code is not well-formed.',
+        'ES': 'Su código no está bien formado.'
     },
-    'ES': {
-        'codeNotWellformed': 'Su código no está bien formado.',
-        'fetchOperationProblem': 'Ha habido un problema con la operación fetch para:',
-        'finish': 'Terminar',
-        'goal': 'Objetivo',
-        'hideHint': 'ocultar pista',
-        'networkError': 'La respuesta de la red no fue correcta al intentar buscar:',
-        'renderingError': 'La codificación actual no se puede representar.',
-        'showHint': 'mostrar pista',
-        'task': 'Tarea',
+    'fetchOperationProblem': {
+        'EN': 'There has been a problem with the fetch operation for:',
+        'ES': 'Ha habido un problema con la operación fetch para:'
+    },
+    'finish': {
+        'EN': 'Finish',
+        'ES': 'Terminar'
+    },
+    'goal': {
+        'EN': 'Goal',
+        'ES': 'Objetivo'
+    },
+    'hideHint': {
+        'EN': 'hide hint',
+        'ES': 'ocultar pista'
+    },
+    'networkError': {
+        'EN': 'Network response was not ok while trying to fetch:',
+        'ES': 'La respuesta de la red no fue correcta al intentar buscar:'
+    },
+    'renderingError': {
+        'EN': 'The current encoding cannot be rendered.',
+        'ES': 'La codificación actual no se puede representar.'
+    },
+    'showHint': {
+        'EN': 'show hint',
+        'ES': 'mostrar pista'
+    },
+    'task': {
+        'EN': 'Task',
+        'ES': 'Tarea'
     }
 };
 
@@ -136,7 +150,7 @@ function setupTutorial(data, language) {
         li.classList.add('step-item');
         li.setAttribute('data-step-n','outro');
         var a = document.createElement('a');
-        var text = tutorialStrings[LANG]['finish'];
+        var text = tutorialStrings['finish'][LANG];
         a.innerHTML = text;
         li.appendChild(a);
         stepBox.appendChild(li);
@@ -232,7 +246,7 @@ function loadTutorialStep(data, stepNum) {
                   }
                   })
             .catch(function(error) {
-                   console.error(tutorialStrings[LANG]['fetchOperationProblem'], promiseArray, error.message);
+                   console.error(tutorialStrings['fetchOperationProblem'][LANG], promiseArray, error.message);
                    });
     }
     
@@ -243,8 +257,8 @@ function loadTutorialStep(data, stepNum) {
             document.getElementById('instruction').innerHTML = descriptionFile;
 
             // insert task and goal elements
-            prependTextToElementWithClass('tutorialTask', tutorialStrings[LANG]['task']);
-            prependTextToElementWithClass('tutorialGoal', tutorialStrings[LANG]['goal']);
+            prependTextToElementWithClass('tutorialTask', tutorialStrings['task'][LANG]);
+            prependTextToElementWithClass('tutorialGoal', tutorialStrings['goal'][LANG]);
 
             // show buttons
             nextStepButton.style.display = 'inline-block';
@@ -254,7 +268,7 @@ function loadTutorialStep(data, stepNum) {
             document.getElementById('acknowledgments').style.display = 'none';
         })
         .catch(function(error) {
-            console.error(tutorialStrings[LANG]['fetchOperationProblem'], currentStep.descFile, error.message);
+            console.error(tutorialStrings['fetchOperationProblem'][LANG], currentStep.descFile, error.message);
         });
     
 }
@@ -334,8 +348,8 @@ function handleEditorChanges(file) {
     }
 
     if (!wellformed) {
-        console.warn(tutorialStrings[LANG]['codeNotWellformed']);
-        displayWarning(tutorialStrings[LANG]['codeNotWellformed']);
+        console.warn(tutorialStrings['codeNotWellformed'][LANG]);
+        displayWarning(tutorialStrings['codeNotWellformed'][LANG]);
         document.getElementById('rendering').innerHTML = '';
 
 
@@ -441,7 +455,7 @@ function showFinalPage(data) {
             
         })
         .catch(function(error) {
-            console.error(tutorialStrings[LANG]['fetchOperationProblem'], data.end, error.message);
+            console.error(tutorialStrings['fetchOperationProblem'][LANG], data.end, error.message);
         });
     
 }
@@ -471,7 +485,7 @@ function renderVerovio(validationString) {
     
     if (error) {
         // display message
-        document.getElementById('rendering').innerHTML = tutorialStrings[LANG]['renderingError'];
+        document.getElementById('rendering').innerHTML = tutorialStrings['renderingError'][LANG];
     } else {
         // display svg
         document.getElementById('rendering').innerHTML = svg;
@@ -644,7 +658,7 @@ function fetchFile(file) {
             if(response.ok) {
                 return response.text();
             }
-            throw new Error(tutorialStrings[LANG]['networkError'], file);
+            throw new Error(tutorialStrings['networkError'][LANG], file);
         })
 }
 
@@ -747,8 +761,8 @@ function toggleHint() {
     // read current values
     const hintStyle = document.getElementById('hints');
     var hintMessage = document.getElementById('btn-toggleHint').innerText;
-    var hideHint = tutorialStrings[LANG]['hideHint'];
-    var showHint = tutorialStrings[LANG]['showHint'];
+    var hideHint = tutorialStrings['hideHint'][LANG];
+    var showHint = tutorialStrings['showHint'][LANG];
 
     // toggle values
     hintStyle.style.display = hintStyle.style.display === 'none' ? 'block' : 'none';
