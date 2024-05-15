@@ -5,5 +5,5 @@ gem 'jekyll-sass-converter', '~> 2.2'
 gem 'jekyll-redirect-from', '~> 0.16.0'
 
 group :jekyll_plugins do
-    gem "webrick", "~> 1.7"
+    gem "webrick", "~> 1.8"
 end

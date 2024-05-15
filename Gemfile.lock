@@ -62,7 +62,7 @@ GEM
     terminal-table (2.0.0)
       unicode-display_width (~> 1.1, >= 1.1.1)
     unicode-display_width (1.8.0)
-    webrick (1.7.0)
+    webrick (1.8.1)
 
 PLATFORMS
   arm64-darwin-21
@@ -74,7 +74,7 @@ DEPENDENCIES
   jekyll (~> 4.2, >= 4.2.2)
   jekyll-redirect-from (~> 0.16.0)
   jekyll-sass-converter (~> 2.2)
-  webrick (~> 1.7)
+  webrick (~> 1.8)
 
 BUNDLED WITH
    2.3.22
