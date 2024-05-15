@@ -10,6 +10,9 @@ on:
         required: true
         default: main
 
+permissions:
+  contents: read
+
 # globals
 env:
   CHECK_WEBSITE: https://music-encoding.org
@@ -23,7 +26,7 @@ jobs:
     if: ${{ github.repository_owner == 'music-encoding' }}
 
     steps:
-      - uses: technote-space/broken-link-checker-action@b8332d945b97f8b52eb8d7d889a1e0e37106c1a9 # ratchet:technote-space/broken-link-checker-action@v2
+      - uses: technote-space/broken-link-checker-action@7820497a025fb09ff736ee11bb8bb12ca715b4fe # v2.3.1
         with:
           TARGET: ${{ env.CHECK_WEBSITE }}
           EXCLUDED_KEYWORDS: |
@@ -33,6 +36,10 @@ jobs:
     runs-on: ubuntu-latest
     if: ${{ github.repository_owner == 'music-encoding' }}
     
+    permissions:
+      contents: read
+      issues: write
+
     steps:
       - name: Set variables
         run: |
@@ -41,17 +48,17 @@ jobs:
             echo "CHECK_BRANCH=${{ github.event.inputs.branch }}" >> $GITHUB_ENV
           fi
       - name: Checkout main repo
-        uses: actions/checkout@v4
+        uses: actions/checkout@0ad4b8fadaa221de15dcec353f45205ec38ea70b # v4.1.4
         with:
           ref: ${{ env.CHECK_BRANCH }}
 
       - name: Link Checker
         id: lychee
-        uses: lycheeverse/lychee-action@2b973e86fc7b1f6b36a93795fe2c9c6ae1118621 # ratchet:lycheeverse/lychee-action@v1.10.0
+        uses: lycheeverse/lychee-action@2b973e86fc7b1f6b36a93795fe2c9c6ae1118621 # v1.10.0
 
       - name: Create Issue From File
         if: env.lychee_exit_code != 0
-        uses: peter-evans/create-issue-from-file@24452a72d85239eacf1468b0f1982a9f3fec4c94 # ratchet:peter-evans/create-issue-from-file@v4
+        uses: peter-evans/create-issue-from-file@24452a72d85239eacf1468b0f1982a9f3fec4c94 # v5.0.0
         with:
           title: Link Checker Report
           content-filepath: ./lychee/out.md
