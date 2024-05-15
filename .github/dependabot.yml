@@ -7,3 +7,11 @@ updates:
       interval: 'daily'
     labels:
       - 'gh actions dependencies'
+
+  # Maintain dependencies for Ruby
+  - package-ecosystem: bundler
+    directory: /
+    schedule:
+      interval: daily
+    labels:
+      - 'dependencies'
