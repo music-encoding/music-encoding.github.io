@@ -10,6 +10,9 @@ on:
         required: true
         default: main
 
+permissions:
+  contents: read
+
 # globals
 env:
   CHECK_WEBSITE: https://music-encoding.org
@@ -33,6 +36,10 @@ jobs:
     runs-on: ubuntu-latest
     if: ${{ github.repository_owner == 'music-encoding' }}
     
+    permissions:
+      contents: read
+      issues: write
+
     steps:
       - name: Set variables
         run: |
