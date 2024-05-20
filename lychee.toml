@@ -67,6 +67,8 @@ exclude = [
     'https://doi.org/10.1080/01411896.2023.2231837',
     'https://doi.org/10.13140/RG.2.2.15014.93760',
     'https://doi.org/10.15463/music-1',
+    'https://doi.org/10.17613/fc1c-mx52',
+    'https://doi.org/10.17613/ggym-sc21',
 
     # page outdated, but used in candidate statements
     'https://arsmusicae.org',
@@ -83,6 +85,7 @@ exclude_path = [
     'index.html',
     'community/projects-users.md',
     'conference/past.md',
+    'resources/tools.md',
 
     # Jekyll's site folder
     '_site',
@@ -93,6 +96,8 @@ exclude_path = [
     '_conferences/2020',
     '_conferences/2021',
     '_conferences/2022',
+    '_conferences/2023',
+    '_conferences/2024',
 ]
 
 # Exclude loopback IP address range and localhost from checking.
