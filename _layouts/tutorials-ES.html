@@ -10,6 +10,8 @@ layout: default
 
         {% else %}
 
+            <h1><a href="{{ site.baseurl }}/resources/tutorials-ES.html" title="Volver a la página principal de tutoriales">←</a> Tutoriales sobre MEI</h1>
+
             <h2>{{ page.fullname }}</h2>
 
             {% if content %}
@@ -19,9 +21,11 @@ layout: default
             <h3 id="stepLabel">
                 <!-- step label goes in here -->
             </h3>
+
             <div id="instruction">
                 <!-- instruction texts go in here -->
             </div>
+            
             <div id="editorContainer" style="display: none;">
                 <h3>Editor MEI
                     <button id="btn-openFullFileModal" class="btn btn-link float-right disabled" title="sólo permitido cuando sea válido">mostrar codificación completa</button>
