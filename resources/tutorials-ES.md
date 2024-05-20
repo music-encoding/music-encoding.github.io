@@ -8,7 +8,7 @@ En esta página, encontrarás una serie de pequeños tutoriales para MEI, cada u
 
 Si estás por empezar a aprender MEI, te recomendamos que comiences con el tutorial [Iniciación rápida](/tutorials-ES/101-quickstart), el cual te permitirá codificar una melodía sencilla con MEI.
 
-Si estás por escribir un nuevo tutorial sobre MEI, te recomendamos que comiences por el tutorial [Escribir tutoriales](/tutorials-ES/tutorials), el cual te proporcionará información sobre los pasos necesarios. Echa también un vistazo a nuestra lista de tutoriales faltantes en [Github](https://github.com/music-encoding/music-encoding.github.io/issues/88) con los cuales podrías contribuir al proyecto.
+Si estás por escribir un nuevo tutorial sobre MEI, te recomendamos que comiences por el tutorial [Escribir tutoriales](/tutorials-ES/199-writing-tutorials), el cual te proporcionará información sobre los pasos necesarios. Echa también un vistazo a nuestra lista de tutoriales faltantes en [Github](https://github.com/music-encoding/music-encoding.github.io/issues/88) con los cuales podrías contribuir al proyecto.
 
 ### Tutoriales externos y material relacionado
 
