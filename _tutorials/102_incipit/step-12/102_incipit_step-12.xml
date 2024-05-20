@@ -60,8 +60,8 @@
                             <staff n="1">
                                 <layer>
                                     <beam>
-                                        <note dur="8" pname="a" oct="4" xml:id="d1e4614"></note>
-                                        <note dur="8" pname="b" oct="4" xml:id="d1e4615"></note>
+                                        <note dur="8" pname="a" oct="4" xml:id="d4567"></note>
+                                        <note dur="8" pname="b" oct="4" xml:id="d4568"></note>
                                         <note dur="8" pname="c" oct="5"></note>
                                         <note dur="8" pname="d" oct="5"></note>
                                     </beam>
@@ -74,7 +74,7 @@
                                     </beam>
                                 </layer>
                             </staff>
-                            <slur staff="1" startid="#d1e4614" endid="#d1e4615" curvedir="above" />
+                            <slur staff="1" startid="#d4567" endid="#d4568" curvedir="above" />
                         </measure>
                         <?edit-end?>
                         <measure n="4">

@@ -481,16 +481,16 @@
         {"rule": "\/\/mei:measure[4]\/mei:staff\/mei:layer\/mei:note\/mei:artic\/@artic = 'acc'", "renderanyway": false, "hint": "Compás n=3: necesitas un atributo @artic con un valor acc en el elemento artic."},
         {"rule": "\/\/mei:measure[4]\/mei:staff\/mei:layer\/mei:note\/mei:artic\/@place = 'above'", "renderanyway": false, "hint": "Compás n=3: necesitas un atributo @place con un valor above en el elemento artic."},
         {"rule": "count(\/\/mei:measure[4]\/mei:staff\/mei:layer\/mei:beam[1]\/mei:note[1]\/@*) = 4", "renderanyway": false, "hint": "Necesitas cuatro atributos en la primera nota barrada (@pname, @oct, @dur & @xml:id) del primer elemento beam."},
-        {"rule": "\/\/mei:measure[4]\/mei:staff\/mei:layer\/mei:beam[1]\/mei:note[1]\/@*[name()='xml:id'] = 'd1e4614'", "renderanyway": false, "hint": "Necesitas a @xml:id attribute con un valor `d1e4614` en la primera nota barrada del primer elemento beam."},
+        {"rule": "\/\/mei:measure[4]\/mei:staff\/mei:layer\/mei:beam[1]\/mei:note[1]\/@*[name()='xml:id'] = 'd4567'", "renderanyway": false, "hint": "Necesitas a @xml:id attribute con un valor `d4567` en la primera nota barrada del primer elemento beam."},
         {"rule": "count(\/\/mei:measure[4]\/mei:staff\/mei:layer\/mei:beam[1]\/mei:note[2]\/@*) = 4", "renderanyway": false, "hint": "Necesitas cuatro atributos en la segunda nota barrada (@pname, @oct, @dur & @xml:id) del primer elemento beam."},
-        {"rule": "\/\/mei:measure[4]\/mei:staff\/mei:layer\/mei:beam[1]\/mei:note[2]\/@*[name()='xml:id'] = 'd1e4615'", "renderanyway": false, "hint": "Necesitas a @xml:id attribute con un valor `d1e4615` en la segunda nota barrada del primer elemento beam."},
+        {"rule": "\/\/mei:measure[4]\/mei:staff\/mei:layer\/mei:beam[1]\/mei:note[2]\/@*[name()='xml:id'] = 'd4568'", "renderanyway": false, "hint": "Necesitas a @xml:id attribute con un valor `d4568` en la segunda nota barrada del primer elemento beam."},
         {"rule": "count(\/\/mei:measure[4]\/mei:slur) = '1'", "renderanyway": false, "hint": "Necesitas un elemento slur como hijo de measure."},
         {"rule": "\/\/mei:measure[4]\/mei:staff\/following-sibling::mei:slur", "renderanyway": false, "hint": "el elemento slur tiene que seguir el elemento staff."},
         {"rule": "count(\/\/mei:measure[4]\/mei:slur\/@*) = 4", "renderanyway": false, "hint": "Necesitas cuatro atributos en el elemento slur (@staff, @curvedir, @startid & @endid)."},
         {"rule": "\/\/mei:measure[4]\/mei:slur\/@staff = '1'", "renderanyway": false, "hint": "Necesitas a @staff attribute con un valor 1 en slur."},
         {"rule": "\/\/mei:measure[4]\/mei:slur\/@curvedir = 'above'", "renderanyway": false, "hint": "Necesitas a @curvedir attribute con un valor above en slur."},
-        {"rule": "\/\/mei:measure[4]\/mei:slur\/@startid = '#d1e4614'", "renderanyway": false, "hint": "Necesitas a @startid attribute con un valor #d1e4614 en slur."},
-        {"rule": "\/\/mei:measure[4]\/mei:slur\/@endid = '#d1e4615'", "renderanyway": false, "hint": "Necesitas an @endid attribute con un valor #d1e4615 en slur."}
+        {"rule": "\/\/mei:measure[4]\/mei:slur\/@startid = '#d4567'", "renderanyway": false, "hint": "Necesitas a @startid attribute con un valor #d4567 en slur."},
+        {"rule": "\/\/mei:measure[4]\/mei:slur\/@endid = '#d4568'", "renderanyway": false, "hint": "Necesitas an @endid attribute con un valor #d4568 en slur."}
       ]
     }
   ],
