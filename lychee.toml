@@ -85,6 +85,7 @@ exclude_path = [
     'index.html',
     'community/projects-users.md',
     'conference/past.md',
+    'resources/tools.md',
 
     # Jekyll's site folder
     '_site',
