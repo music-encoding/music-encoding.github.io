@@ -20,7 +20,7 @@ You should fork the website into your own account using the “Fork” button on
 
 ### Step 2: Clone to local machine
 
-In order to work with the repo offline you neet to clone the code to your local machine, e.g. by clicking the green “Code” button at the top and following one of the corresponding instructions.
+In order to work with the repo offline you need to clone the code to your local machine, e.g. by clicking the green “Code” button at the top and following one of the corresponding instructions.
 
 ### Step 2: Create a new branch
 
@@ -73,7 +73,6 @@ To avoid installing Jekyll natively and to assure it comes with all the necessar
     | --publish        | specifies the ports the container publishes                                              |
     | jekyll/jekyll    | the name of the Dockerimage                                                              |
     | jekyll serve     | execute jekyll to serve the website                                                      |
-
 
     This will compile the site and start serving the content locally. Information on the compilation process will be output to the command shell. Once it's ready, you can open your browser and visit `http://localhost:4000` to see your local version of the website.
 
