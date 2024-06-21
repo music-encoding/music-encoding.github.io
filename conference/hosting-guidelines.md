@@ -25,6 +25,11 @@ The ideal location will be one well-connected with the rest of the country throu
 * 16-29 May 2017: Tours, France (hosted by the Centre d’Études Supérieures de la Renaissance, Université François-Rabelais Tours)
 * 22-25 May 2018: College Park, MD, USA (hosted by the Maryland Institute for Technology in the Humanities (MITH) and the Michelle Smith Performing Arts Library)
 * 29 May - 1 June 2019: Vienna, Austria (hosted by the Division of Musicology of the Austrian Academy of Sciences, the Mozart Institute of the Mozarteum Foundation Salzburg and the Department of Musicology of the University of Vienna)
+* 26-29 May 2020: Virtual-Tufts University, MA, USA (hosted by Tisch Library, Tufts University)
+* 19-22 July 2021: Alicante, Spain (hosted by Instituto Universitario Investigación Informática, Universidad de Alicante)
+* 19-22 May 2022: Halifax, Canada (hosted by Dalhousie University)
+* 4-9 September 2023: Paderborn, Germany (Joint conference for TEI and MEC, hosted by Universität Paderborn)
+* 20-23 May 2024: Denton, Texas (hosted by University Libraries, University of North Texas)
 
 Nevertheless, hosting proposals are welcome from any location.
 
