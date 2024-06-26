@@ -1,0 +1,1123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Program</title>
+    <meta name="description" content="">
+
+    <link rel="stylesheet" href="/css/main.css">
+    <!-- syntax highlighting CSS -->
+    <link rel="stylesheet" href="/css/syntax.css" />
+    <script type="text/javascript" src="/js/carousel.js"></script>
+    <script type="text/javascript">
+      document.addEventListener("DOMContentLoaded", event => {
+        const indexCarousel = document.getElementById("index-carousel");
+        if (indexCarousel !== null) {
+          animateCarousel(indexCarousel, 3000);
+          indexCarousel.addEventListener("mouseover", event => {
+            stopCarouselAnimation(indexCarousel);
+          });
+          indexCarousel.addEventListener("mouseout", event => {
+            animateCarousel(indexCarousel, 3000);
+          });
+        }
+      });
+    </script>
+</head>
+
+
+  <body>
+
+    <!-- Make sure to mirror changes in the guidelines repository in _include/header.html when necessary -->
+<header class="navbar">
+  <div class="navbar-section">
+    <a class="navbar-brand" href="https://music-encoding.org">
+      <img src="/pix/meilogo-inverted.png" alt="MEI logo"/>
+    </a>
+    <div class="hide-lg">
+      
+    <div class="dropdown dropdownCustomMenuToggle">
+        
+            <a href="/about" class="btn btn-link top-menu-link" tabindex="0">
+                About
+            </a>
+        
+    </div>
+
+    <div class="dropdown dropdownCustomMenuToggle">
+        
+            <a href="#" class="btn btn-link dropdown-toggle top-menu-link" tabindex="1">
+                Community <i class="icon icon-caret"></i>
+            </a>
+
+            
+             <ul class="menu"> 
+                <li class="menu-item">
+                    <a href="/community/projects-users.html" class="btn btn-link text-left menu-link">
+                        Projects / Users
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/community/news-events.html" class="btn btn-link text-left menu-link">
+                        News / Events
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/community/community-contacts.html" class="btn btn-link text-left menu-link">
+                        Community Contacts
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/community/interest-groups.html" class="btn btn-link text-left menu-link">
+                        Interest Groups
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/community/technical-team.html" class="btn btn-link text-left menu-link">
+                        Technical Team
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/community/mei-board.html" class="btn btn-link text-left menu-link">
+                        MEI Board
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/community/mei-by-laws.html" class="btn btn-link text-left menu-link">
+                        MEI By-laws
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/community/code-of-conduct.html" class="btn btn-link text-left menu-link">
+                        Code of Conduct
+                    </a>
+                </li>
+                 </ul> 
+            
+
+        
+    </div>
+
+    <div class="dropdown dropdownCustomMenuToggle">
+        
+            <a href="#" class="btn btn-link dropdown-toggle top-menu-link" tabindex="2">
+                Conference <i class="icon icon-caret"></i>
+            </a>
+
+            
+             <ul class="menu"> 
+                <li class="menu-item">
+                    <a href="/conference/2024" class="btn btn-link text-left menu-link">
+                        MEC 2024
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/conference/past.html" class="btn btn-link text-left menu-link">
+                        Past Conferences
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/conference/proceedings.html" class="btn btn-link text-left menu-link">
+                        Proceedings
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/conference/awards.html" class="btn btn-link text-left menu-link">
+                        MEC Awards
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/conference/hosting-guidelines.html" class="btn btn-link text-left menu-link">
+                        Hosting Guidelines
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/conference/code-of-conduct.html" class="btn btn-link text-left menu-link">
+                        Code of conduct
+                    </a>
+                </li>
+                 </ul> 
+            
+
+        
+    </div>
+
+    <div class="dropdown dropdownCustomMenuToggle">
+        
+            <a href="#" class="btn btn-link dropdown-toggle top-menu-link" tabindex="3">
+                Resources <i class="icon icon-caret"></i>
+            </a>
+
+            
+             <ul class="menu"> 
+                <li class="menu-item">
+                    <a href="/resources/background.html" class="btn btn-link text-left menu-link">
+                        Background
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/resources/bibliography.html" class="btn btn-link text-left menu-link">
+                        Bibliography
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/resources/pedagogy.html" class="btn btn-link text-left menu-link">
+                        Pedagogy & Praxis
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/resources/schemas.html" class="btn btn-link text-left menu-link">
+                        Schemas and Namespace
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/resources/tools.html" class="btn btn-link text-left menu-link">
+                        Tools
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/resources/tutorials.html" class="btn btn-link text-left menu-link">
+                        Tutorials
+                    </a>
+                </li>
+                 </ul> 
+            
+
+        
+    </div>
+
+    <div class="dropdown dropdownCustomMenuToggle">
+        
+            <a href="#" class="btn btn-link dropdown-toggle top-menu-link" tabindex="4">
+                Documentation <i class="icon icon-caret"></i>
+            </a>
+
+            
+             <ul class="menu"> 
+                <li class="menu-item">
+                    <a href="/guidelines/v5" class="btn btn-link text-left menu-link">
+                        MEI 5 (latest release)
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/guidelines/dev" class="btn btn-link text-left menu-link">
+                        Development version
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/guidelines/v4" class="btn btn-link text-left menu-link">
+                        MEI 4
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/guidelines/v3" class="btn btn-link text-left menu-link">
+                        MEI 3
+                    </a>
+                </li>
+                 </ul> 
+            
+
+        
+    </div>
+
+    <div class="dropdown dropdownCustomMenuToggle">
+        
+            <a href="/archive" class="btn btn-link top-menu-link" tabindex="5">
+                Archive
+            </a>
+        
+    </div>
+
+
+    </div>
+  </div>
+  <div class="navbar-section" id="socialLinks">
+    <a class="twitterLink" target="_blank" href="https://twitter.com/MusicEncoding">
+      <img src="/pix/twitter.png" alt="Twitter" class="logo"/>
+    </a>
+    <a class="githubLink" target="_blank" href="https://github.com/music-encoding">
+      <img src="/pix/github.png" alt="GitHub" class="logo"/>
+    </a>
+    <a class="slackLink" target="_blank" href="https://music-encoding.slack.com/">
+      <img src="/pix/slack.png" alt="Slack" class="logo"/>
+    </a>
+  </div>
+    <div id="menu-accordion" class="accordion-container dropdown-toggle show-lg column col-12">
+  <div class="accordion">
+    <input id="accordion-toggle" type="checkbox" name="accordion-checkbox" hidden=""/>
+    <label class="accordion-header c-hand" for="accordion-toggle">
+      <i class="icon icon-menu"></i>
+    </label>
+
+    <div class="accordion-body">
+      <ul class="menu menu-nav">
+        
+        <li class="menu-item">
+          <div class="accordion menu">
+            <input id="accordion-About" type="checkbox" name="accordion-checkbox" hidden=""/>
+            <label class="accordion-header c-hand" for="accordion-About">
+              
+                  <a href="/about">
+                      About
+                  </a>
+              
+            </label>
+            
+          </div>
+        </li>
+        
+        <li class="menu-item">
+          <div class="accordion menu">
+            <input id="accordion-Community" type="checkbox" name="accordion-checkbox" hidden=""/>
+            <label class="accordion-header c-hand" for="accordion-Community">
+              
+                Community
+              
+            </label>
+            
+            <div class="accordion-body">
+              <ul class="menu menu-nav">
+                
+                   <li><ul class="menu"> 
+                  <li class="menu-item"><a href="/community/projects-users.html">Projects / Users</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/community/news-events.html">News / Events</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/community/community-contacts.html">Community Contacts</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/community/interest-groups.html">Interest Groups</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/community/technical-team.html">Technical Team</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/community/mei-board.html">MEI Board</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/community/mei-by-laws.html">MEI By-laws</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/community/code-of-conduct.html">Code of Conduct</a></li>
+                   </ul></li> 
+                
+              </ul>
+            </div>
+            
+          </div>
+        </li>
+        
+        <li class="menu-item">
+          <div class="accordion menu">
+            <input id="accordion-Conference" type="checkbox" name="accordion-checkbox" hidden=""/>
+            <label class="accordion-header c-hand" for="accordion-Conference">
+              
+                Conference
+              
+            </label>
+            
+            <div class="accordion-body">
+              <ul class="menu menu-nav">
+                
+                   <li><ul class="menu"> 
+                  <li class="menu-item"><a href="/conference/2024">MEC 2024</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/conference/past.html">Past Conferences</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/conference/proceedings.html">Proceedings</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/conference/awards.html">MEC Awards</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/conference/hosting-guidelines.html">Hosting Guidelines</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/conference/code-of-conduct.html">Code of conduct</a></li>
+                   </ul></li> 
+                
+              </ul>
+            </div>
+            
+          </div>
+        </li>
+        
+        <li class="menu-item">
+          <div class="accordion menu">
+            <input id="accordion-Resources" type="checkbox" name="accordion-checkbox" hidden=""/>
+            <label class="accordion-header c-hand" for="accordion-Resources">
+              
+                Resources
+              
+            </label>
+            
+            <div class="accordion-body">
+              <ul class="menu menu-nav">
+                
+                   <li><ul class="menu"> 
+                  <li class="menu-item"><a href="/resources/background.html">Background</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/resources/bibliography.html">Bibliography</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/resources/pedagogy.html">Pedagogy & Praxis</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/resources/schemas.html">Schemas and Namespace</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/resources/tools.html">Tools</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/resources/tutorials.html">Tutorials</a></li>
+                   </ul></li> 
+                
+              </ul>
+            </div>
+            
+          </div>
+        </li>
+        
+        <li class="menu-item">
+          <div class="accordion menu">
+            <input id="accordion-Documentation" type="checkbox" name="accordion-checkbox" hidden=""/>
+            <label class="accordion-header c-hand" for="accordion-Documentation">
+              
+                Documentation
+              
+            </label>
+            
+            <div class="accordion-body">
+              <ul class="menu menu-nav">
+                
+                   <li><ul class="menu"> 
+                  <li class="menu-item"><a href="/guidelines/v5">MEI 5 (latest release)</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/guidelines/dev">Development version</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/guidelines/v4">MEI 4</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/guidelines/v3">MEI 3</a></li>
+                   </ul></li> 
+                
+              </ul>
+            </div>
+            
+          </div>
+        </li>
+        
+        <li class="menu-item">
+          <div class="accordion menu">
+            <input id="accordion-Archive" type="checkbox" name="accordion-checkbox" hidden=""/>
+            <label class="accordion-header c-hand" for="accordion-Archive">
+              
+                  <a href="/archive">
+                      Archive
+                  </a>
+              
+            </label>
+            
+          </div>
+        </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+
+</header>
+
+
+    <div class="container grid-xl content">
+        
+<div class="columns">
+  <div class="column col-10 col-sm-12">
+    
+      <div class="dropdown col-sm-1 show-sm">
+        <div class="rounded bg-gray text-center my-1">
+          <a href="#" tabindex="1" class="btn btn-primary dropdown-toggle btn-lg" id="MEC2019-menuBtn">
+            <i class="icon icon-menu"></i>
+          </a>
+          <ul class="menu text-left" id="MEC2019-menu">
+            
+              <li class="menu-item ">
+                <a href="/conference/2019/call/">Call for proposals</a>
+              </li>
+            
+              <li class="menu-item ">
+                <a href="/conference/2019/green_meeting/">Green Meeting</a>
+              </li>
+            
+              <li class="menu-item ">
+                <a href="/conference/2019/">Music Encoding Conference 2019</a>
+              </li>
+            
+              <li class="menu-item ">
+                <a href="/conference/2019/maps/">Maps</a>
+              </li>
+            
+              <li class="menu-item ">
+                <a href="/conference/2019/people/">Personnel</a>
+              </li>
+            
+              <li class="menu-item ">
+                <a href="/conference/2019/program/">Program</a>
+              </li>
+            
+              <li class="menu-item ">
+                <a href="/conference/2019/travel/">Travel and Accommodation</a>
+              </li>
+            
+          </ul>
+        </div>
+      </div>
+      <div class="mec2019-page">
+  <img src="/images/conference/2019/mec2019dates.jpg" class="img-responsive" alt="MEC 2019"/>
+
+  <h2>Program</h2>
+
+  <div><a class="btn btn-primary" href="/conference/programs/2019ConferenceProgram.pdf" target="_blank">Download program (PDF)</a></div>
+
+  <div class="mec2019-program-row-main">
+    <h4>Wednesday, 29 May 2019</h4>
+    <span class="chip">Institute of Musicology</span>
+    <div class="columns">
+      <div class="column">
+        <span class="chip">Seminarraum 2</span>
+        <div class="card rounded workshop">
+          <div class="card-header">
+            <div class="card-title">09:00 - 13:00</div>
+            <div class="card-subtitle workshop-title">
+              <div class="mec2019-program-title">Let’s Formalize Music Notation for OMR - Part I</div>
+              <div class="mec2019-program-speakers">Zaragoza, Jorge Calvo; Hajič Jr., Jan; Pacha, Alexander</div>
+              <div><strong>fully booked</strong></div>
+            </div>
+            <button class="description" onclick="window.open('/conference/abstracts/abstracts_mec2019/MEC2019_WS_Lets_formalize_music.pdf')">Description</button>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <span class="chip">Seminarraum 1</span>
+        <div class="card rounded workshop">
+          <div class="card-header">
+            <div class="card-title">09:00 - 13:00</div>
+            <div class="card-subtitle workshop-title">
+              <div class="mec2019-program-title">Tutorial on Linked Data and Music Encodings - Part I</div>
+              <div class="mec2019-program-speakers">Weigl, David M.; Muennich, Stefan; Pugin, Laurent; Lewis, David; Crawford, Tim</div>
+              <div><strong>fully booked</strong></div>
+              </div>
+            <button class="description" onclick="window.open('/conference/abstracts/abstracts_mec2019/MEC2019_WS_Tutorial_on_Linked_Data_and_Music_Encodings.pdf')">Description</button>
+          </div>
+        </div>
+
+      </div>
+      <div class="column">
+        <span class="chip">Library</span>
+        <div class="card rounded workshop">
+          <div class="card-header">
+            <div class="card-title">09:00 - 13:00</div>
+            <div class="card-subtitle workshop-title">
+              <div class="mec2019-program-title">A Showcase of New MEI Tools</div>
+              <div class="mec2019-program-speakers">Waloschek, Simon; Berndt, Axel; Hadjakos, Aristotelis; Pacha, Alexander</div>
+              <div><strong>fully booked</strong></div>
+              </div>
+            <button class="description" onclick="window.open('/conference/abstracts/abstracts_mec2019/MEC2019_WS_Showcase_MEI_Tools.pdf')">Description</button>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+
+      </div>
+    </div>
+
+    <div class="divider text-center" data-content="Lunch Break (1 hour)"></div>
+
+    <div class="columns">
+      <div class="column">
+        <span class="chip">Seminarraum 2</span>
+        <div class="card rounded workshop">
+          <div class="card-header">
+            <div class="card-title">14:00 - 18:00</div>
+            <div class="card-subtitle workshop-title">
+              <div class="mec2019-program-title">Let’s Formalize Music Notation for OMR - Part II</div>
+              <div class="mec2019-program-speakers">Zaragoza, Jorge Calvo; Hajič Jr., Jan; Pacha, Alexander</div>
+              <div><strong>fully booked</strong></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <span class="chip">Seminarraum 1</span>
+        <div class="card rounded workshop">
+          <div class="card-header">
+            <div class="card-title">14:00 - 18:00</div>
+            <div class="card-subtitle workshop-title">
+              <div class="mec2019-program-title">Tutorial on Linked Data and Music Encodings - Part II</div>
+              <div class="mec2019-program-speakers">Weigl, David M.; Muennich, Stefan; Pugin, Laurent; Lewis, David; Crawford, Tim</div>
+              <div><strong>fully booked</strong></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <span class="chip">Library</span>
+        <div class="card rounded workshop">
+          <div class="card-header">
+            <div class="card-title">14:00 - 18:00</div>
+            <div class="card-subtitle workshop-title">
+              <div class="mec2019-program-title">The Quotable Musical Text in a Digital Age: Modeling Complexity in the Renaissance and Today</div>
+              <div class="mec2019-program-speakers">Freedman, Richard; Viglianti, Raffaele; Fiala, David; Besson, Vincent</div>
+              <!--<div><strong>fully booked</strong></div>-->
+            <button onclick="window.open('/conference/abstracts/abstracts_mec2019/MEC2019_WS_Crim.pdf')">Description</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <span class="chip">Pausenraum</span>
+        <div class="card rounded workshop">
+          <div class="card-header">
+            <div class="card-title">14:00 - 18:00</div>
+            <div class="card-subtitle workshop-title">
+              <div class="mec2019-program-title">Verovio Humdrum Viewer and its applications</div>
+              <div class="mec2019-program-speakers">Sapp, Craig Stuart; Konik, Marcin; Iwaszko, Jacek</div>
+              <div><strong>fully booked</strong></div>
+              </div>
+            <button onclick="window.open('/conference/abstracts/abstracts_mec2019/MEC2019_WS_Verovio_Humdrum_Viewer.pdf')">Description</button>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <!--<span class="chip">University of Vienna</span>-->
+        <div class="card rounded workshop">
+          <div class="card-header">
+            <div class="card-title">16:00 - 18:00</div>
+            <div class="card-subtitle workshop-title">
+              <div class="mec2019-program-title">Guided tour: Austrian National Library (State Hall and Music Collections)</div>
+              <div class="mec2019-program-title"><strong><u>Meeting point:</u></strong> Michaelerplatz, main entrance to the Hofburg.</div>
+              <div><strong>fully booked</strong></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="columns">
+        <div class="column">
+          <span class="chip">Festsaal, Austrian Academy of Sciences</span>
+          <div class="card rounded">
+            <div class="card-header">
+              <div class="card-title">19:00</div>
+              <div class="card-subtitle">
+                <div class="mec2019-program-title">Conference opening, followed by reception</div>
+              </div>
+              <div class="card-title">Opening keynote</div>
+              <div class="mec2019-program-title">Encoding and its Logics - On the relationship between XML Encoding and Others</div>
+              <div class="mec2019-program-speakers">Georg Vogeler</div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+
+
+  <div class="mec2019-program-row-main">
+    <h4>Thursday, 30 May 2019</h4>
+    <span class="chip">Hörsaal 1, Institute of Musicology</span>
+    <div class="card rounded">
+      <div class="card-header">
+        <div class="card-title">09:00 - 10:30</div>
+        <div class="card-title">Paper Session 1: Connected Collections</div>
+        <div class="card-subtitle">Session chair: Raffaele Viglianti
+          <div class="mec2019-program-title">
+            <span class="mec2019-presentation">Viennese Ballets: Connecting Music-Image-Dance</span>
+            <a class="mec2019-abstract" href="/conference/abstracts/abstracts_mec2019/VienneseBallet.pdf" target="_blank"> &#10515;</a>
+          </div>
+          <div class="mec2019-program-speakers">Grund, Vera; Drewes, Henner</div>
+          <div class="mec2019-program-title">
+            <span class="mec2019-presentation">Enabling Music Search and Analysis: A Database for Symbolic Music Files</span>
+            <a class="mec2019-abstract" href="/conference/abstracts/abstracts_mec2019/MEC%20SIMSSA%20DB.pdf" target="_blank"> &#10515;</a>
+          </div>
+          <div class="mec2019-program-speakers">Ju, Yaolong; Pedro, Gustavo Polins; McKay, Cory; Hopkins, Emily Ann; Cumming, Julie; Fujinaga, Ichiro</div>
+          <div class="mec2019-program-title">
+            <span class="mec2019-presentation">Towards Richer Online Music Public-domain Archives: Providing enriched access to classical music encodings</span>
+            <a class="mec2019-abstract" href="/conference/abstracts/abstracts_mec2019/WEIGL-MEC-TROMPA.pdf" target="_blank"> &#10515;</a>
+          </div>
+          <div class="mec2019-program-speakers">Weigl, David M.; Liem, Cynthia; Gómez, Emilia; Crawford, Tim; Ahmed, Ryaan; Klerkx, Wim; Goebl, Werner</div>
+        </div>
+      </div>
+    </div>
+    <div class="divider text-center" data-content="Coffee Break (30 minutes)"></div>
+    <div class="card rounded">
+      <div class="card-header">
+        <div class="card-title">11:00 - 12:30</div>
+        <div class="card-title">Paper Session 2: Encoding in Practice: Motivations and Requirements</div>
+        <div class="card-subtitle">Session chair: Klaus Rettinghaus
+          <div class="mec2019-program-title">
+            <span class="mec2019-presentation">The León Antiphoner: MEI and Manual Encoding</span>
+            <a class="mec2019-abstract" href="/conference/abstracts/abstracts_mec2019/MEI-MED.pdf" target="_blank"> &#10515;</a>
+          </div>
+          <div class="mec2019-program-speakers">Maessen, Geert</div>
+          <div class="mec2019-program-title">
+            <span class="mec2019-presentation">A Digital Encoding and Notation Analysis Framework for Indian Music</span>
+            <a class="mec2019-abstract" href="/conference/abstracts/abstracts_mec2019/Roy_Indranil_Paper_MEC2019.pdf" target="_blank"> &#10515;</a>
+          </div>
+          <div class="mec2019-program-speakers">Roy, Indranil</div>
+          <div class="mec2019-program-title">
+            <span class="mec2019-presentation">Perspectives in Voice Leading: Extending the General Chord Type and Directional Interval Class Representations</span>
+            <a class="mec2019-abstract" href="/conference/abstracts/abstracts_mec2019/Giannos_Konstantinos_Poster_MEC2019.pdf" target="_blank"> &#10515;</a>
+          </div>
+          <div class="mec2019-program-speakers">Giannos, Konstantinos; Cambouropoulos, Emilios; Kaliakatsos-Papakostas, Maximos</div>
+        </div>
+      </div>
+    </div>
+    <div class="divider text-center" data-content="Lunch (1 1/2 hour)"></div>
+    <div class="card rounded">
+      <div class="card-header">
+        <div class="card-title">14:00 - 15:00</div>
+        <div class="card-title">Paper Session 3: Advancing MEI</div>
+        <div class="card-subtitle">Session chair: Agnes Seipelt
+          <!--<div class="mec2019-program-title">
+            <span class="mec2019-presentation">Linked Data in the Source Description – Requirements of the Detmold Court Theatre Project</span>
+            <a class="mec2019-abstract" href="../abstracts_mec2019/Capelle_Irmlind_Paper_MEC2019.pdf" target="_blank"> &#10515;</a>
+          </div>
+          <div class="mec2019-program-speakers">Capelle, Irmlind</div>-->
+          <div class="mec2019-program-title">
+            <span class="mec2019-presentation">Cantus Ultimus' MEI Neume Module and its Interoperability Across Chant Notations</span>
+            <a class="mec2019-abstract" href="/conference/abstracts/abstracts_mec2019/MEI%202019_De%20Luca%20et%20alii.pdf" target="_blank"> &#10515;</a>
+          </div>
+          <div class="mec2019-program-speakers">De Luca, Elsa; Bain, Jennifer; Behrendt, Inga; Fujinaga, Ichiro; Helsen, Kate; Ignesti, Alessandra; Lacoste, Debra; Long, Sarah Ann</div>
+          <div class="mec2019-program-title">
+            <span class="mec2019-presentation">Hundreds of Thousands of Pieces in MEI: Encoding Tablatures at Scale</span>
+            <a class="mec2019-abstract" href="/conference/abstracts/abstracts_mec2019/Ahmed_Ryaan_Paper_MEC2019.pdf" target="_blank"> &#10515;</a>
+          </div>
+          <div class="mec2019-program-speakers">de Valk, Reinier; Ahmed, Ryaan; Crawford, Tim; Lewis, David</div>
+        </div>
+      </div>
+    </div>
+    <div class="divider text-center" data-content="Coffee Break (30 minutes)"></div>
+    <div class="card rounded">
+      <div class="card-header">
+        <div class="card-title">15:30 - 17:00</div>
+        <div class="card-title">Poster Session</div>
+        <div class="columns">
+          <div class="column">
+            <div class="card rounded poster-session">
+              <div class="card-header">
+                <div class="card-subtitle">
+                  <div class="mec2019-program-title">
+                    <span class="mec2019-presentation">Verovio in Geschichte, Gegenwart … und Zukunft</span>
+                    <a class="mec2019-abstract" href="/conference/abstracts/abstracts_mec2019/Pugin_VerovioPastPresFuture.pdf" target="_blank"> &#10515;</a>
+                  </div>
+                  <div class="mec2019-program-speakers">Pugin, Laurent</div>
+                  <div class="mec2019-program-title">
+                    <span class="mec2019-presentation">Creating, transforming and representing data at Baumann-Digital and Joachim-Raff-Archiv</span>
+                    <a class="mec2019-abstract" href="/conference/abstracts/abstracts_mec2019/Ried_Dennis_Poster_MEC2019.pdf" target="_blank"> &#10515;</a>
+                  </div>
+                  <div class="mec2019-program-speakers">Ried, Dennis</div>
+                  <div class="mec2019-program-title">
+                    <span class="mec2019-presentation">The Baudelaire Song Project: Database and Digital Analysis</span>
+                    <a class="mec2019-abstract" href="/conference/abstracts/abstracts_mec2019/Poster%20Baudelaire%20Song%20Project.pdf" target="_blank"> &#10515;</a>
+                  </div>
+                  <div class="mec2019-program-speakers">Rolland, Nina; Abbott, Helen</div>
+                  <div class="mec2019-program-title">
+                    <span class="mec2019-presentation">Digital Edition and Harmonic Analysis Tool of Bruckner’s Studybook</span>
+                    <a class="mec2019-abstract" href="/conference/abstracts/abstracts_mec2019/Gulewycz_Paul_Poster_MEC2019.pdf" target="_blank"> &#10515;</a>
+                  </div>
+                  <div class="mec2019-program-speakers">Gulewycz, Paul; Provaznik, Peter; Seipelt, Agnes</div>
+                  <div class="mec2019-program-title">
+                    <span class="mec2019-presentation">Catalogs of works as part of multimedia composer platforms - using the example of Anton Bruckner</span>
+                    <a class="mec2019-abstract" href="/conference/abstracts/abstracts_mec2019/Gubsch_Clemens_Poster_MEC2019.pdf" target="_blank"> &#10515;</a>
+                  </div>
+                  <div class="mec2019-program-speakers">Gubsch, Clemens</div>
+                  <div class="mec2019-program-title">
+                    <span class="mec2019-presentation">MEI based tools for score comparison and analysis</span>
+                    <a class="mec2019-abstract" href="/conference/abstracts/abstracts_mec2019/Cox_Susanne_Poster_MEC2019.pdf" target="_blank"> &#10515;</a>
+                  </div>
+                  <div class="mec2019-program-speakers">Cox, Susanne; Sänger, Richard</div>
+                  <div class="mec2019-program-title">
+                    <span class="mec2019-presentation">Chord-Class Detection and Tonal-Key Determination for Analyses of Folk, Classical (Art) or Popular-Music Songs in MIDI Format</span>
+                    <a class="mec2019-abstract" href="/conference/abstracts/abstracts_mec2019/Ferkova_Chord-ClassDetection.pdf" target="_blank"> &#10515;</a>
+                  </div>
+                  <div class="mec2019-program-speakers">Ferkova, Eva; Urbancova, Hana; Adamova, Silvia; Sukola, Michal</div>
+                  <div class="mec2019-program-title">
+                    <span class="mec2019-presentation">The Diff Concept of the Digital Interactive Mozart Edition</span>
+                    <a class="mec2019-abstract" href="/conference/abstracts/abstracts_mec2019/diff-DIME_sapov_posterMEC2019.pdf" target="_blank"> &#10515;</a>
+                  </div>
+                  <div class="mec2019-program-speakers">Sapov, Oleksii</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="column">
+            <div class="card rounded poster-session">
+              <div class="card-header">
+                <div class="card-subtitle">
+                  <div class="mec2019-program-title">
+                    <span class="mec2019-presentation">Abstract Representation of Music: A Framework for Interoperable Research Tools</span>
+                    <a class="mec2019-abstract" href="/conference/abstracts/abstracts_mec2019/Harley_Nicholas_Poster_MEC2019.pdf" target="_blank"> &#10515;</a>
+                  </div>
+                  <div class="mec2019-program-speakers">Harley, Nicholas; Wiggins, Geraint</div>
+                  <div class="mec2019-program-title">
+                    <span class="mec2019-presentation">Encoding the Troubadours</span>
+                    <a class="mec2019-abstract" href="/conference/abstracts/abstracts_mec2019/EncodingTheTroubadours.pdf" target="_blank"> &#10515;</a>
+                  </div>
+                  <div class="mec2019-program-speakers">Chapman, Katie Elizabeth</div>
+                  <div class="mec2019-program-title">
+                    <span class="mec2019-presentation">Humdrum encodings of Polish Music</span>
+                    <a class="mec2019-abstract" href="/conference/abstracts/abstracts_mec2019/Jacek-Iwaszko%20Humdrum-encodings-of-Polish-music.pdf" target="_blank"> &#10515;</a>
+                  </div>
+                  <div class="mec2019-program-speakers">Iwaszko, Jacek Jarosław</div>
+                  <div class="mec2019-program-title">
+                    <span class="mec2019-presentation">Modelling FRBR:ized work relations in the context of a hybrid edition using MEI</span>
+                    <a class="mec2019-abstract" href="/conference/abstracts/abstracts_mec2019/Modelling%20FRBR%20ized%20work%20relations%20in%20the%20context%20of%20a%20hybrid%20edition%20using%20MEI-2.pdf" target="_blank"> &#10515;</a>
+                  </div>
+                  <div class="mec2019-program-speakers">Bohl, Benjamin W.</div>
+                  <div class="mec2019-program-title">
+                    <span class="mec2019-presentation">Perspectives in Voice Leading: Extending the General Chord Type and Directional Interval Class Representations</span>
+                    <a class="mec2019-abstract" href="/conference/abstracts/abstracts_mec2019/Giannos_Konstantinos_Poster_MEC2019.pdf" target="_blank"> &#10515;</a>
+                  </div>
+                  <div class="mec2019-program-speakers">Giannos, Konstantinos; Cambouropoulos, Emilios; Kaliakatsos-Papakostas, Maximos</div>
+                  <div class="mec2019-program-title">
+                    <span class="mec2019-presentation">Statistical Explorations of Harmony, Cadences, and Form in the Annotated Mozart Dataset</span>
+                    <a class="mec2019-abstract" href="/conference/abstracts/abstracts_mec2019/Neuwirth_Markus_Poster_MEC2019.pdf" target="_blank"> &#10515;</a>
+                  </div>
+                  <div class="mec2019-program-speakers">Neuwirth, Markus; Rohrmeier, Martin</div>
+                  <div class="mec2019-program-title">
+                    <span class="mec2019-presentation">The effects of translation between symbolic music formats: A case study with Humdrum, Lilypond, MEI, and MusicXML</span>
+                    <a class="mec2019-abstract" href="/conference/abstracts/abstracts_mec2019/The%20effects%20of%20translation%20between%20the%20Humdrum%20%20Lilypond%20%20MEI%20%20and%20MusicXML.pdf" target="_blank"> &#10515;</a>
+                  </div>
+                  <div class="mec2019-program-speakers">Napoles Lopez, Nestor; Vigliensoni, Gabriel; Fujinaga, Ichiro</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card rounded">
+      <div class="card-header">
+        <div class="card-title">17:30</div>
+        <div class="card-subtitle">
+          <div class="mec2019-program-title">Presentation of the Digital Mozart Edition (DME) and projects of the Digital Musicology working group of the Academy of Sciences, bread and wine</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="mec2019-program-row-main">
+    <h4>Friday, 31 May 2019</h4>
+    <span class="chip">Hörsaal 1, Institute of Musicology</span>
+      <div class="card rounded">
+        <div class="card-header">
+          <div class="card-title">09:00 - 10:00</div>
+          <div class="card-title">Panel</div>
+          <div class="card-subtitle">
+            <div class="mec2019-program-title">Cultivating MEI: Recent and Future Developments <a class="mec2019-abstract" href="/conference/abstracts/abstracts_mec2019/CultivatingMEIfinal.pdf" target="_blank">&#10515;</a></div>
+          </div>
+        </div>
+      </div>
+    <div class="card rounded">
+      <div class="card-header">
+        <div class="card-title">10:00 - 11:00</div>
+        <div class="card-title">Paper Session 4: Composition and Performance</div>
+        <div class="card-subtitle">Session chair: Tim Crawford
+          <div class="mec2019-program-title">
+            <span class="mec2019-presentation">Score and Performance Features for Rendering Expressive Music Performances</span>
+            <a class="mec2019-abstract" href="/conference/abstracts/abstracts_mec2019/Dasaem%20Jeong%20Music%20Encoding%20Conference%202019.pdf" target="_blank"> &#10515;</a>
+          </div>
+          <div class="mec2019-program-speakers">Jeong, Dasaem; Kwon, Taegyun; Kim, Yoojin; Nam, Juhan</div>
+          <div class="mec2019-program-title">
+            <span class="mec2019-presentation">The Dialect Elements in Chinese Contemporary Music Practice: A Visualization Analysis of the Composition, Performance and Hearing
+            of the Chinese Piano Work Lan Huahua</span>
+            <a class="mec2019-abstract" href="/conference/abstracts/abstracts_mec2019/The%20Dialect%20Elements%20in%20Chinese%20Contemporary%20Music%20Practice.pdf" target="_blank"> &#10515;</a>
+          </div>
+          <div class="mec2019-program-speakers">Li, Xiaonuo</div>
+        </div>
+      </div>
+    </div>
+    <div class="divider text-center" data-content="Coffee Break (30 minutes)"></div>
+    <div class="card rounded">
+      <div class="card-header">
+        <div class="card-title">11:30 - 12:30</div>
+        <div class="card-title">Paper Session 5: Encoded Collections Supporting Scholarly Needs</div>
+        <div class="card-subtitle">Session chair: Kevin Page
+          <div class="mec2019-program-title">
+            <span class="mec2019-presentation">Application of Music-Encoding Technologies to Guatemalan Choirbooks, Facilitating Preservation and Musicological Studies of the
+            Colonial Repertoire</span>
+            <a class="mec2019-abstract" href="/conference/abstracts/abstracts_mec2019/ApplicationGuatemalanChoirbooks.pdf" target="_blank"> &#10515;</a>
+          </div>
+          <div class="mec2019-program-speakers">Thomae, Martha E.; Cumming, Julie E.; Fujinaga, Ichiro</div>
+          <div class="mec2019-program-title">
+            <span class="mec2019-presentation">On the thin line between enriching metadata and keeping usability</span>
+            <a class="mec2019-abstract" href="/conference/abstracts/abstracts_mec2019/Bach%20digital%20MEC2019.pdf" target="_blank"> &#10515;</a>
+          </div>
+          <div class="mec2019-program-speakers">Rettinghaus, Klaus</div>
+        </div>
+      </div>
+    </div>
+    <div class="divider text-center" data-content="Lunch (1 hour)"></div>
+    <div class="card rounded">
+      <div class="card-header">
+        <div class="card-title">13:30 - 15:00</div>
+        <div class="card-title">Paper Session 6: Optical Music Recognition Workflows</div>
+        <div class="card-subtitle">Session chair: Andrew Hankinson
+          <div class="mec2019-program-title">
+            <span class="mec2019-presentation">From image to encoding: Full optical music recognition of Medieval and Renaissance music</span>
+            <a class="mec2019-abstract" href="/conference/abstracts/abstracts_mec2019/vigliensoni19from%20camera%20ready.pdf" target="_blank"> &#10515;</a>
+          </div>
+          <div class="mec2019-program-speakers">Vigliensoni, Gabriel; Daigle, Alex; Liu, Eric; Calvo-Zaragoza, Jorge; Regimbal, Juliette; Nguyen, Minh Anh; Baxter...</div>
+          <div class="mec2019-program-title">
+            <span class="mec2019-presentation">Neon2: A Verovio-based square-notation editor</span>
+            <a class="mec2019-abstract" href="/conference/abstracts/abstracts_mec2019/Neon2.pdf" target="_blank"> &#10515;</a>
+          </div>
+          <div class="mec2019-program-speakers">Regimbal, Juliette; McLennan, Zoé; Vigliensoni, Gabriel; Tran, Andrew; Fujinaga, Ichiro</div>
+          <div class="mec2019-program-title">
+            <span class="mec2019-presentation">On the Impact of the Music Encoding for Optical Music Recognition</span>
+            <a class="mec2019-abstract" href="/conference/abstracts/abstracts_mec2019/MEC_2019__Music_Encoding_for_OMR.pdf" target="_blank"> &#10515;</a>
+          </div>
+          <div class="mec2019-program-speakers">Alfaro-Contreras, María; Calvo-Zaragoza, Jorge; Iñesta, Jose M.; Rizo, David</div>
+        </div>
+      </div>
+    </div>
+    <div class="divider text-center" data-content="Coffee Break (30 minutes)"></div>
+    <div class="card rounded">
+      <div class="card-header">
+        <div class="card-title">15:30 - 17:00</div>
+        <div class="card-title">Closing Keynote</div>
+        <div class="mec2019-program-title">The potential of note-level encodings for interdisciplinary research on human engagement with music</div>
+        <div class="mec2019-program-speakers">Johanna Devaney</div>
+      </div>
+    </div>
+    <div class="card rounded">
+      <div class="card-header">
+        <div class="card-title">18:30</div>
+        <div class="card-subtitle">Bus transfer to the conference dinner in Grinzing</div>
+      </div>
+    </div>
+      <span class="chip">Grinzing</span>
+      <div class="card rounded">
+        <div class="card-header">
+          <div class="card-title">19:00 - 23:00</div>
+          <div class="card-subtitle">Conference dinner, invitation by the City of Vienna to the "Heuriger" s'Pfiff</div>
+        </div>
+      </div>
+  </div>
+
+  <div class="mec2019-program-row-main">
+    <h4>Saturday, 1 June 2019</h4>
+    <span class="chip">Hörsaal 2, Institute of Musicology</span>
+    <div class="card rounded">
+      <div class="card-header">
+        <div class="card-title">09:00 - 10:00</div>
+        <div class="card-title">MEI Board Meeting</div>
+      </div>
+    </div>
+    <span class="chip">Hörsaal 1, Institute of Musicology</span>
+    <div class="card rounded">
+      <div class="card-header">
+        <div class="card-title">10:00 - 12:00</div>
+        <div class="card-title">Community Meeting</div>
+      </div>
+    </div>
+    <div class="columns">
+      <div class="column">
+        <div class="card rounded unconference">
+          <div class="card-header">
+            <div class="card-title">12:00 - 17:00</div>
+            <div class="card-title">Special Interest Groups (SIG) meetings</div>
+            <div class="card-subtitle">Topics will be, among others, mensural and neume notation as well as metadata and cataloging. Separate rooms will be available.</div>
+          </div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="card rounded unconference">
+          <div class="card-header">
+            <div class="card-title">13:00 - 16:00</div>
+            <div class="card-title">Transkribus Workshop</div>
+            <div class="card-subtitle">For additional information please visit the <a href="https://transkribus.eu/Transkribus/" target="blank">Transkribus website</a>.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="mec2019-program-row-main">
+    <h4>Sunday, 2 June 2019</h4>
+    <span class="chip">Hörsaal 2, Institute of Musicology</span>
+    <div class="card rounded">
+      <div class="card-header">
+        <div class="card-title">10:00 - 12:00</div>
+        <div class="card-title">SIMSSA Workshop <a class="mec2019-abstract" href="/conference/abstracts/abstracts_mec2019/SIMSSA%20Workshop%20XVIII.pdf" target="_blank">&#10515;</a></div>
+        <div class="card-subtitle">Open to anyone interested in the <a href="https://simssa.ca/" target="_blank">SIMSSA project</a>.</div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <script>
+    function toggleDescription(ref) {
+      var x = document.getElementById(ref);
+      if (x.style.display === "none") {
+          x.style.display = "block";
+      } else {
+          x.style.display = "none";
+      }
+    }
+  </script>
+
+</div>
+
+    
+  </div>
+  <div class="column col-2 hide-sm">
+    <ul class="menu">
+      
+          <li class="menu-item ">
+            <a href="/conference/2019/call/" >Call for proposals</a>
+          </li>
+      
+          <li class="menu-item ">
+            <a href="/conference/2019/green_meeting/" >Green Meeting</a>
+          </li>
+      
+          <li class="menu-item ">
+            <a href="/conference/2019/" >Music Encoding Conference 2019</a>
+          </li>
+      
+          <li class="menu-item ">
+            <a href="/conference/2019/maps/" >Maps</a>
+          </li>
+      
+          <li class="menu-item ">
+            <a href="/conference/2019/people/" >Personnel</a>
+          </li>
+      
+          <li class="menu-item ">
+            <a href="/conference/2019/program/"  class="active" >Program</a>
+          </li>
+      
+          <li class="menu-item ">
+            <a href="/conference/2019/travel/" >Travel and Accommodation</a>
+          </li>
+      
+    </ul>
+  </div>
+</div>
+
+    </div>
+
+    <!-- Make sure to mirror changes in the guidelines repository in _include/footer.html when necessary -->
+<footer>
+  <div class="container">
+    <div class="columns institutions">
+      <div class="column col-12 text-center">
+        <a class="institutionsLink" target="_blank" href="https://www.adwmainz.de">
+          <img src="/pix/akademie-small.png" alt="Akademie der Wissenschaften | Mainz" />
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="text-center">
+    <a class="footerLinks" href="/">Home</a> | <a class="footerLinks" href="/community/community-contacts.html">Contact</a><br/>
+    <small>© Music Encoding Initiative 2024</small>
+  </div>
+</footer>
+
+
+  </body>
+
+</html>

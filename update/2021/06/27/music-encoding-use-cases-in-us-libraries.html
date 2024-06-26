@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Event: Music Encoding Use-cases in U.S. Libraries: Aims, Pedagogy, and Workflows</title>
+    <meta name="description" content="">
+
+    <link rel="stylesheet" href="/css/main.css">
+    <!-- syntax highlighting CSS -->
+    <link rel="stylesheet" href="/css/syntax.css" />
+    <script type="text/javascript" src="/js/carousel.js"></script>
+    <script type="text/javascript">
+      document.addEventListener("DOMContentLoaded", event => {
+        const indexCarousel = document.getElementById("index-carousel");
+        if (indexCarousel !== null) {
+          animateCarousel(indexCarousel, 3000);
+          indexCarousel.addEventListener("mouseover", event => {
+            stopCarouselAnimation(indexCarousel);
+          });
+          indexCarousel.addEventListener("mouseout", event => {
+            animateCarousel(indexCarousel, 3000);
+          });
+        }
+      });
+    </script>
+</head>
+
+
+  <body>
+
+    <!-- Make sure to mirror changes in the guidelines repository in _include/header.html when necessary -->
+<header class="navbar">
+  <div class="navbar-section">
+    <a class="navbar-brand" href="https://music-encoding.org">
+      <img src="/pix/meilogo-inverted.png" alt="MEI logo"/>
+    </a>
+    <div class="hide-lg">
+      
+    <div class="dropdown dropdownCustomMenuToggle">
+        
+            <a href="/about" class="btn btn-link top-menu-link" tabindex="0">
+                About
+            </a>
+        
+    </div>
+
+    <div class="dropdown dropdownCustomMenuToggle">
+        
+            <a href="#" class="btn btn-link dropdown-toggle top-menu-link" tabindex="1">
+                Community <i class="icon icon-caret"></i>
+            </a>
+
+            
+             <ul class="menu"> 
+                <li class="menu-item">
+                    <a href="/community/projects-users.html" class="btn btn-link text-left menu-link">
+                        Projects / Users
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/community/news-events.html" class="btn btn-link text-left menu-link">
+                        News / Events
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/community/community-contacts.html" class="btn btn-link text-left menu-link">
+                        Community Contacts
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/community/interest-groups.html" class="btn btn-link text-left menu-link">
+                        Interest Groups
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/community/technical-team.html" class="btn btn-link text-left menu-link">
+                        Technical Team
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/community/mei-board.html" class="btn btn-link text-left menu-link">
+                        MEI Board
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/community/mei-by-laws.html" class="btn btn-link text-left menu-link">
+                        MEI By-laws
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/community/code-of-conduct.html" class="btn btn-link text-left menu-link">
+                        Code of Conduct
+                    </a>
+                </li>
+                 </ul> 
+            
+
+        
+    </div>
+
+    <div class="dropdown dropdownCustomMenuToggle">
+        
+            <a href="#" class="btn btn-link dropdown-toggle top-menu-link" tabindex="2">
+                Conference <i class="icon icon-caret"></i>
+            </a>
+
+            
+             <ul class="menu"> 
+                <li class="menu-item">
+                    <a href="/conference/2024" class="btn btn-link text-left menu-link">
+                        MEC 2024
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/conference/past.html" class="btn btn-link text-left menu-link">
+                        Past Conferences
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/conference/proceedings.html" class="btn btn-link text-left menu-link">
+                        Proceedings
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/conference/awards.html" class="btn btn-link text-left menu-link">
+                        MEC Awards
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/conference/hosting-guidelines.html" class="btn btn-link text-left menu-link">
+                        Hosting Guidelines
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/conference/code-of-conduct.html" class="btn btn-link text-left menu-link">
+                        Code of conduct
+                    </a>
+                </li>
+                 </ul> 
+            
+
+        
+    </div>
+
+    <div class="dropdown dropdownCustomMenuToggle">
+        
+            <a href="#" class="btn btn-link dropdown-toggle top-menu-link" tabindex="3">
+                Resources <i class="icon icon-caret"></i>
+            </a>
+
+            
+             <ul class="menu"> 
+                <li class="menu-item">
+                    <a href="/resources/background.html" class="btn btn-link text-left menu-link">
+                        Background
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/resources/bibliography.html" class="btn btn-link text-left menu-link">
+                        Bibliography
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/resources/pedagogy.html" class="btn btn-link text-left menu-link">
+                        Pedagogy & Praxis
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/resources/schemas.html" class="btn btn-link text-left menu-link">
+                        Schemas and Namespace
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/resources/tools.html" class="btn btn-link text-left menu-link">
+                        Tools
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/resources/tutorials.html" class="btn btn-link text-left menu-link">
+                        Tutorials
+                    </a>
+                </li>
+                 </ul> 
+            
+
+        
+    </div>
+
+    <div class="dropdown dropdownCustomMenuToggle">
+        
+            <a href="#" class="btn btn-link dropdown-toggle top-menu-link" tabindex="4">
+                Documentation <i class="icon icon-caret"></i>
+            </a>
+
+            
+             <ul class="menu"> 
+                <li class="menu-item">
+                    <a href="/guidelines/v5" class="btn btn-link text-left menu-link">
+                        MEI 5 (latest release)
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/guidelines/dev" class="btn btn-link text-left menu-link">
+                        Development version
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/guidelines/v4" class="btn btn-link text-left menu-link">
+                        MEI 4
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/guidelines/v3" class="btn btn-link text-left menu-link">
+                        MEI 3
+                    </a>
+                </li>
+                 </ul> 
+            
+
+        
+    </div>
+
+    <div class="dropdown dropdownCustomMenuToggle">
+        
+            <a href="/archive" class="btn btn-link top-menu-link" tabindex="5">
+                Archive
+            </a>
+        
+    </div>
+
+
+    </div>
+  </div>
+  <div class="navbar-section" id="socialLinks">
+    <a class="twitterLink" target="_blank" href="https://twitter.com/MusicEncoding">
+      <img src="/pix/twitter.png" alt="Twitter" class="logo"/>
+    </a>
+    <a class="githubLink" target="_blank" href="https://github.com/music-encoding">
+      <img src="/pix/github.png" alt="GitHub" class="logo"/>
+    </a>
+    <a class="slackLink" target="_blank" href="https://music-encoding.slack.com/">
+      <img src="/pix/slack.png" alt="Slack" class="logo"/>
+    </a>
+  </div>
+    <div id="menu-accordion" class="accordion-container dropdown-toggle show-lg column col-12">
+  <div class="accordion">
+    <input id="accordion-toggle" type="checkbox" name="accordion-checkbox" hidden=""/>
+    <label class="accordion-header c-hand" for="accordion-toggle">
+      <i class="icon icon-menu"></i>
+    </label>
+
+    <div class="accordion-body">
+      <ul class="menu menu-nav">
+        
+        <li class="menu-item">
+          <div class="accordion menu">
+            <input id="accordion-About" type="checkbox" name="accordion-checkbox" hidden=""/>
+            <label class="accordion-header c-hand" for="accordion-About">
+              
+                  <a href="/about">
+                      About
+                  </a>
+              
+            </label>
+            
+          </div>
+        </li>
+        
+        <li class="menu-item">
+          <div class="accordion menu">
+            <input id="accordion-Community" type="checkbox" name="accordion-checkbox" hidden=""/>
+            <label class="accordion-header c-hand" for="accordion-Community">
+              
+                Community
+              
+            </label>
+            
+            <div class="accordion-body">
+              <ul class="menu menu-nav">
+                
+                   <li><ul class="menu"> 
+                  <li class="menu-item"><a href="/community/projects-users.html">Projects / Users</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/community/news-events.html">News / Events</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/community/community-contacts.html">Community Contacts</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/community/interest-groups.html">Interest Groups</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/community/technical-team.html">Technical Team</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/community/mei-board.html">MEI Board</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/community/mei-by-laws.html">MEI By-laws</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/community/code-of-conduct.html">Code of Conduct</a></li>
+                   </ul></li> 
+                
+              </ul>
+            </div>
+            
+          </div>
+        </li>
+        
+        <li class="menu-item">
+          <div class="accordion menu">
+            <input id="accordion-Conference" type="checkbox" name="accordion-checkbox" hidden=""/>
+            <label class="accordion-header c-hand" for="accordion-Conference">
+              
+                Conference
+              
+            </label>
+            
+            <div class="accordion-body">
+              <ul class="menu menu-nav">
+                
+                   <li><ul class="menu"> 
+                  <li class="menu-item"><a href="/conference/2024">MEC 2024</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/conference/past.html">Past Conferences</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/conference/proceedings.html">Proceedings</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/conference/awards.html">MEC Awards</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/conference/hosting-guidelines.html">Hosting Guidelines</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/conference/code-of-conduct.html">Code of conduct</a></li>
+                   </ul></li> 
+                
+              </ul>
+            </div>
+            
+          </div>
+        </li>
+        
+        <li class="menu-item">
+          <div class="accordion menu">
+            <input id="accordion-Resources" type="checkbox" name="accordion-checkbox" hidden=""/>
+            <label class="accordion-header c-hand" for="accordion-Resources">
+              
+                Resources
+              
+            </label>
+            
+            <div class="accordion-body">
+              <ul class="menu menu-nav">
+                
+                   <li><ul class="menu"> 
+                  <li class="menu-item"><a href="/resources/background.html">Background</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/resources/bibliography.html">Bibliography</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/resources/pedagogy.html">Pedagogy & Praxis</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/resources/schemas.html">Schemas and Namespace</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/resources/tools.html">Tools</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/resources/tutorials.html">Tutorials</a></li>
+                   </ul></li> 
+                
+              </ul>
+            </div>
+            
+          </div>
+        </li>
+        
+        <li class="menu-item">
+          <div class="accordion menu">
+            <input id="accordion-Documentation" type="checkbox" name="accordion-checkbox" hidden=""/>
+            <label class="accordion-header c-hand" for="accordion-Documentation">
+              
+                Documentation
+              
+            </label>
+            
+            <div class="accordion-body">
+              <ul class="menu menu-nav">
+                
+                   <li><ul class="menu"> 
+                  <li class="menu-item"><a href="/guidelines/v5">MEI 5 (latest release)</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/guidelines/dev">Development version</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/guidelines/v4">MEI 4</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/guidelines/v3">MEI 3</a></li>
+                   </ul></li> 
+                
+              </ul>
+            </div>
+            
+          </div>
+        </li>
+        
+        <li class="menu-item">
+          <div class="accordion menu">
+            <input id="accordion-Archive" type="checkbox" name="accordion-checkbox" hidden=""/>
+            <label class="accordion-header c-hand" for="accordion-Archive">
+              
+                  <a href="/archive">
+                      Archive
+                  </a>
+              
+            </label>
+            
+          </div>
+        </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+
+</header>
+
+
+    <div class="container grid-xl content">
+        <div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">Event: Music Encoding Use-cases in U.S. Libraries: Aims, Pedagogy, and Workflows</h1>
+    <p class="post-meta">Jun 27, 2021</p>
+  </header>
+
+  <article class="post-content">
+    <p>There is a session of interest to the MEI community on Tuesday, July 27 during the International Association of Music Libraries, Archives and Documentation Centres Congress (IAML) and Digital Libraries for Musicology Conference.</p>
+
+<p><strong>Music Encoding Use-cases in U.S. Libraries: Aims, Pedagogy, and Workflows</strong></p>
+
+<p>July 27, 2021, 19-20.30 UTC</p>
+
+<p>Presented by the Forum of Sections <br />
+Chair: Anna E. Kijas <br />
+Speakers: Anna E. Kijas (Tufts University), Maristella Feustle (University of North Texas), Jacob Schaub (Vanderbilt University), and David Day (Brigham Young University, Provo, UT)</p>
+
+<p>How are library professionals engaging with music encoding and why? What workflows have been developed to aid in teaching students or staff to transcribe and encode music? By “music encoding” we mean representing music notation in a standardized, machine-readable format. Librarians from four public and private U.S. academic institutions will present music encoding use cases that highlight particular aspects of their collections with a focus on pedagogical approaches, workflows, and choices of technology.</p>
+
+<p>At Tufts University, Lilly Music Library students are working on a music incipits project that aims to make compositions by un(der)-represented composers visible and discoverable. They are developing expertise in transcription and editing, and expanding their knowledge of a diverse music repertoire. Project aims, workflows, and pedagogical value of this work will be discussed.</p>
+
+<p>At Brigham Young University, students are involved in a harp music incipits project that aims to explore how incipits can be used 1) to provide enhanced metadata in online catalogs and/or the planned online harp repertory guide, 2) for analysis of the adaptation of popular songs and operatic arias in harp music arrangements, 3) to create online thematic catalogs for composers who wrote primarily for the harp, and 4)  potentially in RISM. The idea of encoding themes from Pierre Adolphe Capelle’s La clé du claveau will also be explored.</p>
+
+<p>The University of North Texas Music Library is pursuing multiple, complementary benefits through the encoding of early editions of operas and ballets by Jean-Baptise Lully and his sons. Encoding is the first step in unlocking possibilities for discovery, performance, study, and data analysis. A pilot project with one librarian and two graduate students at UNT has focused on encoding the scarcely performed opera Zéphire et Flore by Louis and Jean-Louis Lully, refining workflows and training materials for future plans to encode UNT’s extensive Lully collection.</p>
+
+<p>The Wilson Music Library at Vanderbilt University is exploring areas of MEI pedagogy as well as the potential and challenges of MEI application to contemporary musical manuscripts. In Spring 2020, a student library fellows seminar at Vanderbilt co-led by a music librarian and a musicology faculty member focused on equipping students with the basics of MEI as well as utilizing these tools toward the ongoing encoding of a 1994 working draft of Alfred Schnittke’s Sinfonisches Vorspiel held in Vanderbilt University Special Collections.</p>
+
+<p>These four use-cases will demonstrate the ways in which librarians are engaging with music encoding in ways that highlight aspects of their collections, generate music data for further analysis or research, and create an environment of praxis for students, staff, and faculty.</p>
+
+  </article>
+
+</div>
+
+    </div>
+
+    <!-- Make sure to mirror changes in the guidelines repository in _include/footer.html when necessary -->
+<footer>
+  <div class="container">
+    <div class="columns institutions">
+      <div class="column col-12 text-center">
+        <a class="institutionsLink" target="_blank" href="https://www.adwmainz.de">
+          <img src="/pix/akademie-small.png" alt="Akademie der Wissenschaften | Mainz" />
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="text-center">
+    <a class="footerLinks" href="/">Home</a> | <a class="footerLinks" href="/community/community-contacts.html">Contact</a><br/>
+    <small>© Music Encoding Initiative 2024</small>
+  </div>
+</footer>
+
+
+  </body>
+
+</html>

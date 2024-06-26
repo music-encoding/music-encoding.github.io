@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>MEI Board</title>
+    <meta name="description" content="">
+
+    <link rel="stylesheet" href="/css/main.css">
+    <!-- syntax highlighting CSS -->
+    <link rel="stylesheet" href="/css/syntax.css" />
+    <script type="text/javascript" src="/js/carousel.js"></script>
+    <script type="text/javascript">
+      document.addEventListener("DOMContentLoaded", event => {
+        const indexCarousel = document.getElementById("index-carousel");
+        if (indexCarousel !== null) {
+          animateCarousel(indexCarousel, 3000);
+          indexCarousel.addEventListener("mouseover", event => {
+            stopCarouselAnimation(indexCarousel);
+          });
+          indexCarousel.addEventListener("mouseout", event => {
+            animateCarousel(indexCarousel, 3000);
+          });
+        }
+      });
+    </script>
+</head>
+
+
+  <body>
+
+    <!-- Make sure to mirror changes in the guidelines repository in _include/header.html when necessary -->
+<header class="navbar">
+  <div class="navbar-section">
+    <a class="navbar-brand" href="https://music-encoding.org">
+      <img src="/pix/meilogo-inverted.png" alt="MEI logo"/>
+    </a>
+    <div class="hide-lg">
+      
+    <div class="dropdown dropdownCustomMenuToggle">
+        
+            <a href="/about" class="btn btn-link top-menu-link" tabindex="0">
+                About
+            </a>
+        
+    </div>
+
+    <div class="dropdown dropdownCustomMenuToggle">
+        
+            <a href="#" class="btn btn-link dropdown-toggle top-menu-link" tabindex="1">
+                Community <i class="icon icon-caret"></i>
+            </a>
+
+            
+             <ul class="menu"> 
+                <li class="menu-item">
+                    <a href="/community/projects-users.html" class="btn btn-link text-left menu-link">
+                        Projects / Users
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/community/news-events.html" class="btn btn-link text-left menu-link">
+                        News / Events
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/community/community-contacts.html" class="btn btn-link text-left menu-link">
+                        Community Contacts
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/community/interest-groups.html" class="btn btn-link text-left menu-link">
+                        Interest Groups
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/community/technical-team.html" class="btn btn-link text-left menu-link">
+                        Technical Team
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/community/mei-board.html" class="btn btn-link text-left menu-link">
+                        MEI Board
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/community/mei-by-laws.html" class="btn btn-link text-left menu-link">
+                        MEI By-laws
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/community/code-of-conduct.html" class="btn btn-link text-left menu-link">
+                        Code of Conduct
+                    </a>
+                </li>
+                 </ul> 
+            
+
+        
+    </div>
+
+    <div class="dropdown dropdownCustomMenuToggle">
+        
+            <a href="#" class="btn btn-link dropdown-toggle top-menu-link" tabindex="2">
+                Conference <i class="icon icon-caret"></i>
+            </a>
+
+            
+             <ul class="menu"> 
+                <li class="menu-item">
+                    <a href="/conference/2024" class="btn btn-link text-left menu-link">
+                        MEC 2024
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/conference/past.html" class="btn btn-link text-left menu-link">
+                        Past Conferences
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/conference/proceedings.html" class="btn btn-link text-left menu-link">
+                        Proceedings
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/conference/awards.html" class="btn btn-link text-left menu-link">
+                        MEC Awards
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/conference/hosting-guidelines.html" class="btn btn-link text-left menu-link">
+                        Hosting Guidelines
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/conference/code-of-conduct.html" class="btn btn-link text-left menu-link">
+                        Code of conduct
+                    </a>
+                </li>
+                 </ul> 
+            
+
+        
+    </div>
+
+    <div class="dropdown dropdownCustomMenuToggle">
+        
+            <a href="#" class="btn btn-link dropdown-toggle top-menu-link" tabindex="3">
+                Resources <i class="icon icon-caret"></i>
+            </a>
+
+            
+             <ul class="menu"> 
+                <li class="menu-item">
+                    <a href="/resources/background.html" class="btn btn-link text-left menu-link">
+                        Background
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/resources/bibliography.html" class="btn btn-link text-left menu-link">
+                        Bibliography
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/resources/pedagogy.html" class="btn btn-link text-left menu-link">
+                        Pedagogy & Praxis
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/resources/schemas.html" class="btn btn-link text-left menu-link">
+                        Schemas and Namespace
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/resources/tools.html" class="btn btn-link text-left menu-link">
+                        Tools
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/resources/tutorials.html" class="btn btn-link text-left menu-link">
+                        Tutorials
+                    </a>
+                </li>
+                 </ul> 
+            
+
+        
+    </div>
+
+    <div class="dropdown dropdownCustomMenuToggle">
+        
+            <a href="#" class="btn btn-link dropdown-toggle top-menu-link" tabindex="4">
+                Documentation <i class="icon icon-caret"></i>
+            </a>
+
+            
+             <ul class="menu"> 
+                <li class="menu-item">
+                    <a href="/guidelines/v5" class="btn btn-link text-left menu-link">
+                        MEI 5 (latest release)
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/guidelines/dev" class="btn btn-link text-left menu-link">
+                        Development version
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/guidelines/v4" class="btn btn-link text-left menu-link">
+                        MEI 4
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/guidelines/v3" class="btn btn-link text-left menu-link">
+                        MEI 3
+                    </a>
+                </li>
+                 </ul> 
+            
+
+        
+    </div>
+
+    <div class="dropdown dropdownCustomMenuToggle">
+        
+            <a href="/archive" class="btn btn-link top-menu-link" tabindex="5">
+                Archive
+            </a>
+        
+    </div>
+
+
+    </div>
+  </div>
+  <div class="navbar-section" id="socialLinks">
+    <a class="twitterLink" target="_blank" href="https://twitter.com/MusicEncoding">
+      <img src="/pix/twitter.png" alt="Twitter" class="logo"/>
+    </a>
+    <a class="githubLink" target="_blank" href="https://github.com/music-encoding">
+      <img src="/pix/github.png" alt="GitHub" class="logo"/>
+    </a>
+    <a class="slackLink" target="_blank" href="https://music-encoding.slack.com/">
+      <img src="/pix/slack.png" alt="Slack" class="logo"/>
+    </a>
+  </div>
+    <div id="menu-accordion" class="accordion-container dropdown-toggle show-lg column col-12">
+  <div class="accordion">
+    <input id="accordion-toggle" type="checkbox" name="accordion-checkbox" hidden=""/>
+    <label class="accordion-header c-hand" for="accordion-toggle">
+      <i class="icon icon-menu"></i>
+    </label>
+
+    <div class="accordion-body">
+      <ul class="menu menu-nav">
+        
+        <li class="menu-item">
+          <div class="accordion menu">
+            <input id="accordion-About" type="checkbox" name="accordion-checkbox" hidden=""/>
+            <label class="accordion-header c-hand" for="accordion-About">
+              
+                  <a href="/about">
+                      About
+                  </a>
+              
+            </label>
+            
+          </div>
+        </li>
+        
+        <li class="menu-item">
+          <div class="accordion menu">
+            <input id="accordion-Community" type="checkbox" name="accordion-checkbox" hidden=""/>
+            <label class="accordion-header c-hand" for="accordion-Community">
+              
+                Community
+              
+            </label>
+            
+            <div class="accordion-body">
+              <ul class="menu menu-nav">
+                
+                   <li><ul class="menu"> 
+                  <li class="menu-item"><a href="/community/projects-users.html">Projects / Users</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/community/news-events.html">News / Events</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/community/community-contacts.html">Community Contacts</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/community/interest-groups.html">Interest Groups</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/community/technical-team.html">Technical Team</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/community/mei-board.html">MEI Board</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/community/mei-by-laws.html">MEI By-laws</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/community/code-of-conduct.html">Code of Conduct</a></li>
+                   </ul></li> 
+                
+              </ul>
+            </div>
+            
+          </div>
+        </li>
+        
+        <li class="menu-item">
+          <div class="accordion menu">
+            <input id="accordion-Conference" type="checkbox" name="accordion-checkbox" hidden=""/>
+            <label class="accordion-header c-hand" for="accordion-Conference">
+              
+                Conference
+              
+            </label>
+            
+            <div class="accordion-body">
+              <ul class="menu menu-nav">
+                
+                   <li><ul class="menu"> 
+                  <li class="menu-item"><a href="/conference/2024">MEC 2024</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/conference/past.html">Past Conferences</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/conference/proceedings.html">Proceedings</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/conference/awards.html">MEC Awards</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/conference/hosting-guidelines.html">Hosting Guidelines</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/conference/code-of-conduct.html">Code of conduct</a></li>
+                   </ul></li> 
+                
+              </ul>
+            </div>
+            
+          </div>
+        </li>
+        
+        <li class="menu-item">
+          <div class="accordion menu">
+            <input id="accordion-Resources" type="checkbox" name="accordion-checkbox" hidden=""/>
+            <label class="accordion-header c-hand" for="accordion-Resources">
+              
+                Resources
+              
+            </label>
+            
+            <div class="accordion-body">
+              <ul class="menu menu-nav">
+                
+                   <li><ul class="menu"> 
+                  <li class="menu-item"><a href="/resources/background.html">Background</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/resources/bibliography.html">Bibliography</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/resources/pedagogy.html">Pedagogy & Praxis</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/resources/schemas.html">Schemas and Namespace</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/resources/tools.html">Tools</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/resources/tutorials.html">Tutorials</a></li>
+                   </ul></li> 
+                
+              </ul>
+            </div>
+            
+          </div>
+        </li>
+        
+        <li class="menu-item">
+          <div class="accordion menu">
+            <input id="accordion-Documentation" type="checkbox" name="accordion-checkbox" hidden=""/>
+            <label class="accordion-header c-hand" for="accordion-Documentation">
+              
+                Documentation
+              
+            </label>
+            
+            <div class="accordion-body">
+              <ul class="menu menu-nav">
+                
+                   <li><ul class="menu"> 
+                  <li class="menu-item"><a href="/guidelines/v5">MEI 5 (latest release)</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/guidelines/dev">Development version</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/guidelines/v4">MEI 4</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/guidelines/v3">MEI 3</a></li>
+                   </ul></li> 
+                
+              </ul>
+            </div>
+            
+          </div>
+        </li>
+        
+        <li class="menu-item">
+          <div class="accordion menu">
+            <input id="accordion-Archive" type="checkbox" name="accordion-checkbox" hidden=""/>
+            <label class="accordion-header c-hand" for="accordion-Archive">
+              
+                  <a href="/archive">
+                      Archive
+                  </a>
+              
+            </label>
+            
+          </div>
+        </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+
+</header>
+
+
+    <div class="container grid-xl content">
+        <h1 id="mei-board">MEI Board</h1>
+
+<p>The MEI Board manages the property and business of MEI. It promotes the development of MEI, oversees the activities of the MEI Technical Team, guides the development of the MEI conceptual model, Guidelines and schemata, and acts as a contact point for MEI-related activities. The Board consists of nine elected members and one member designated by each Host Institution. The Board will hold regular, virtual or in-person meetings. As schedules and funding permit, the Board will meet in person at least once per year.</p>
+
+<p><a href="/community/mei-board/elections/2023/candidates">Read the 2023 Election Candidate statements</a></p>
+
+<h2 id="current-board-members">Current Board Members</h2>
+
+<h3 id="term-2024-2026">Term 2024-2026</h3>
+
+<ul>
+  <li><strong>Maristella Feustle</strong>, Music Library, University of North Texas</li>
+  <li><strong>Stefan Münnich (Technical Co-Chair)</strong>, University of Basel</li>
+  <li><strong>Laurent Pugin</strong>, RISM Digital Center, Bern</li>
+</ul>
+
+<h3 id="term-20232025">Term 2023–2025</h3>
+
+<ul>
+  <li><strong>Johannes Kepper</strong>, Musikwissenschaftliches Seminar Detmold/Paderborn</li>
+  <li><strong>Anna Plaksin</strong>, Musikwissenschaftliches Seminar Detmold/Paderborn, KreativInstitut.OWL</li>
+  <li><strong>David M. Weigl</strong>, Institut für musikalische Akustik – Wiener Klangstil, mdw – Universität für Musik und darstellende Kunst Wien</li>
+</ul>
+
+<h3 id="term-20222024">Term 2022–2024</h3>
+
+<ul>
+  <li><strong>Benjamin W. Bohl (Technical Co-Chair)</strong>, Institut für Musikwissenschaft, Goethe Universität Frankfurt, Frankfurt am Main and Musikwissenschaftliches Seminar Detmold/Paderborn</li>
+  <li><strong>Anna E. Kijas (Administrative Chair)</strong>, Lilly Music Library, Tufts University</li>
+  <li><strong>Klaus Rettinghaus</strong>, Enote GmbH, Berlin</li>
+</ul>
+
+<h3 id="term-20212023">Term 2021–2023</h3>
+
+<ul>
+  <li><strong>Stefan Münnich (Technical Co-Chair)</strong>, University of Basel</li>
+  <li><strong>Laurent Pugin</strong>, RISM Digital Center, Bern</li>
+  <li><strong>Kristina Richts-Matthaei</strong>, Musikwissenschaftliches Seminar Detmold/Paderborn</li>
+</ul>
+
+<h3 id="previous-board-members">Previous Board Members</h3>
+
+<ul>
+  <li><strong>Elsa De Luca</strong>, Centro de Estudos de Sociologia e Estética Musical (CESEM), Universidade Nova de Lisboa, Lisboa (2019–2021)</li>
+  <li><strong>Giuliano Di Bacco</strong>, Jacobs School of Music, Indiana University, Bloomington, (2015–2017)</li>
+  <li><strong>Nobert Dubowy</strong>, Internationale Stiftung Mozarteum, Salzburg (2018–2020)</li>
+  <li><strong>Ichiro Fujinaga</strong>, McGill University, Montréal (2015–2021)</li>
+  <li><strong>Axel Teich Geertinger</strong>, Danish Centre for Music Editing, Royal Library, Copenhagen, (2015–2016)</li>
+  <li><strong>Andrew Hankinson</strong>, Bodleian Library, Oxford (2017–2019)</li>
+  <li><strong>Perry Roland</strong>, University of Virginia Library, Charlottesville (2015–2018, 2020–2022)</li>
+  <li><strong>Eleanor Selfridge-Field</strong>, Center for Computer-Assisted Research in the Humanities, Stanford University (2015–2019)</li>
+  <li><strong>Martha Thomae</strong>, McGill University, Montréal (2020–2022)</li>
+</ul>
+
+<h2 id="protocols-of-board-meetings">Protocols of Board Meetings</h2>
+
+<ul>
+  <li><a href="mei-board/protocols/2015-05-21_Face-to-Face-Meeting-MEC2015-Florence.md">2015-05-21, Face to Face meeting at the MEC2015 in Florence</a></li>
+  <li><a href="mei-board/protocols/2017-05-17_Face-to-Face-Meeting-MEC2017-Tours.md">2017-05-17, Face to Face meeting at the MEC2017 in Tours</a></li>
+  <li><a href="mei-board/protocols/2017-08-29_Virtual-Board-Meeting.md">2017-08-29, Virtual Board Meeting</a></li>
+  <li><a href="mei-board/protocols/2018-01-15_Virtual-Board-Meeting.md">2018-01-15, Virtual Board Meeting</a></li>
+  <li><a href="mei-board/protocols/2018-05-22_Face-to-Face-Meeting-MEC2018-College-Park.md">2018-05-22, Face to Face meeting at the MEC2018 in College Park</a></li>
+  <li><a href="mei-board/protocols/2018-10-12_Virtual-Board-Meeting.md">2018-10-12, Virtual Board Meeting</a></li>
+  <li><a href="mei-board/protocols/2019-01-15_Virtual-Board-Meeting.md">2019-01-15, Virtual Board Meeting</a></li>
+  <li><a href="mei-board/protocols/2019-06-01_Face-to-Face-Meeting-MEC2019-Vienna.md">2019-06-12, Face to Face meeting at the MEC2019 in Vienna</a></li>
+  <li><a href="mei-board/protocols/2020-01-15_Virtual-Board-Meeting.md">2020-01-15, Virtual Board Meeting</a></li>
+  <li><a href="mei-board/protocols/2020-03-25_Virtual-Board-Meeting.md">2020-03-25, Virtual Board Meeting</a></li>
+  <li><a href="mei-board/protocols/2020-07-23_Virtual-Board-Meeting.md">2020-07-23, Virtual Board Meeting</a></li>
+  <li><a href="mei-board/protocols/2020-10-07_Virtual-Board-Meeting.md">2020-10-07, Virtual Board Meeting</a></li>
+  <li><a href="mei-board/protocols/2021-01-14_Virtual-Board-Meeting.md">2021-01-14, Virtual Board Meeting</a></li>
+  <li><a href="mei-board/protocols/2022-01-19_Virtual-Board-Meeting.md">2022-01-19, Virtual Board Meeting</a></li>
+</ul>
+
+<h2 id="elections">Elections</h2>
+
+<p>The elected members of the Board are each elected for a three year term. Terms on the Board are staggered so that three positions are open for election each year. Terms of office begin January 1 at 2 pm UTC. The initial Board has been elected in December 2014.</p>
+
+<p>Exception to annual elections and term lengths will be made in case a Board member resigns.</p>
+
+<p>Board members may resign from their commitments at any time but are expected to give adequate notice. After accepting the resignation, the Board may decide on how to proceed concerning the newly vacant position. Options should include but are not limited to holding a special election, appointing a replacement, or leaving the position vacant.</p>
+
+<p>In case of a special election to fill a vacancy between regular elections the newly elected Board member will serve for the remainder of the term of the vacant position.</p>
+
+<h3 id="eligibility">Eligibility</h3>
+
+<p>In order to be available for election to the Board, candidates must hold Personal Membership in MEI. Individuals who have previously served on the Board will be eligible for re-appointment.</p>
+
+<h3 id="election-procedure">Election procedure</h3>
+
+<p>In order to determine a range of candidates, a four-week nomination phase will precede the elections, in which self-nominations are permitted. Individuals will be informed of their nomination and asked to confirm their willingness to serve on the Board determined. Elections will be held in a timely manner after determination of a final list of candidates. A ranked voting system without minimum voter turnout will be applied.</p>
+
+<p>Each member holding Personal Membership in MEI has the right to vote in Board member elections.</p>
+
+<h3 id="previous-elections">Previous elections</h3>
+
+<ul>
+  <li><a href="/community/mei-board/elections/2022/candidates">Read the 2022 Election Candidate statements</a></li>
+  <li><a href="/community/mei-board/elections/2021/candidates">Read the 2021 Election Candidate statements</a></li>
+  <li><a href="/community/mei-board/elections/2020/candidates">Read the 2020 Election Candidate statements</a></li>
+  <li><a href="/community/mei-board/elections/2019/candidates">Read the 2019 Election Candidate statements</a></li>
+  <li><a href="/community/mei-board/elections/2018/candidates">Read the 2018 Election Candidate statements</a></li>
+</ul>
+
+    </div>
+
+    <!-- Make sure to mirror changes in the guidelines repository in _include/footer.html when necessary -->
+<footer>
+  <div class="container">
+    <div class="columns institutions">
+      <div class="column col-12 text-center">
+        <a class="institutionsLink" target="_blank" href="https://www.adwmainz.de">
+          <img src="/pix/akademie-small.png" alt="Akademie der Wissenschaften | Mainz" />
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="text-center">
+    <a class="footerLinks" href="/">Home</a> | <a class="footerLinks" href="/community/community-contacts.html">Contact</a><br/>
+    <small>© Music Encoding Initiative 2024</small>
+  </div>
+</footer>
+
+
+  </body>
+
+</html>
