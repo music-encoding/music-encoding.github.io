@@ -38,7 +38,7 @@ b. Run Jekyll in a Docker container
 
 To install and run Jekyll natively on your machine, please follow these steps:
 
-0. Check prerequisites
+1. Check prerequisites
 
    Make sure you have Jekyll installed on your machine (needs Ruby under the hood). You can check by running `jekyll -v` in your terminal. If this does not succeed, try to follow the instructions given in the [Jekyll docs](https://jekyllrb.com/docs/). There a detailed installation guidelines for the most common operating systems ([https://jekyllrb.com/docs/installation/](https://jekyllrb.com/docs/installation/)).
 
