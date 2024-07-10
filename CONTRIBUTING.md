@@ -31,21 +31,30 @@ Create a new branch for your changes on your local Git repository. You should ma
 For properly reviewing any changes made to your local copy of the MEI website in your browser, you need Jekyll to build and serve the page on your local machine. There are two recommended options for doing this:
 
 a. Run Jekyll on your machine natively
+
 b. Run Jekyll in a Docker container
 
 #### Step 3a: Run Jekyll on your machine natively
 
 To install and run Jekyll natively on your machine, please follow these steps:
 
-1. Install Jekyll
+1. Check prerequisites
+
+   Make sure you have Jekyll installed on your machine (needs Ruby under the hood). You can check by running `jekyll -v` in your terminal. If this does not succeed, try to follow the instructions given in the [Jekyll docs](https://jekyllrb.com/docs/). There a detailed installation guidelines for the most common operating systems ([https://jekyllrb.com/docs/installation/](https://jekyllrb.com/docs/installation/)).
+
+2. Install Jekyll
 
     Run `bundle install` in the root directory of your local clone of this repository. This will install all of the requirements for running the site locally.
 
-    Windows users should check out this step-by-step guide to setting up Jekyll on Windows: [https://jekyll-windows.juthilo.com/](https://jekyll-windows.juthilo.com/)
+3. Run the Jekyll server
 
-2. Run the Jekyll server
+    You can run the Jekyll service locally with `bundle exec jekyll serve --baseurl=""`. This will compile the site and start serving the content locally. (If needed, you can add the option `-V` to get a more verbose output and information about the running compilation steps.) Once it's ready, you can open your browser and visit `http://localhost:4000` to see your local version of the website.
 
-    You can run the Jekyll service locally with `bundle exec jekyll serve --baseurl=""`. This will compile the site and start serving the content locally. Since compiling can take a while, you can add the option `-V` to get a more verbose output and information about the running compilation steps. Once it's ready, you can open your browser and visit `http://localhost:4000` to see your local version of the website.
+> [!TIP]
+> Pass the `--livereload` option to `serve` to automatically refresh the page with each change you make to the source files:
+>
+> `bundle exec jekyll serve --baseurl="" --livereload`
+   
 
 #### Step 3b: Run Jekyll in a Docker container
 
