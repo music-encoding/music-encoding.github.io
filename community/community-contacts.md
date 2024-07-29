@@ -23,9 +23,9 @@ To join, please follow [this link](https://join.slack.com/t/music-encoding/share
 
 Slack has [clients](https://slack.com/) for Mac, PC, Linux, and mobile devices, and may be used via any web browser.
 
-# Humanities Commons: MEI Group
+# Knowledge Commons: MEI Group
 
-The Music Encoding Initiative group in the Humanities Commons is devoted to a discussion of topics related to music encoding, and is an extension of the Music Encoding Initiative channels on MEI-L and website. The Humanities Commons is a network for people working in the humanities. Connect with other scholars and their scholarship, and increase the impact of your work by sharing it in the repository. The MEI Group at the Humanities Commons can be accessed at [https://hcommons.org/groups/music-encoding-initiative/](https://hcommons.org/groups/music-encoding-initiative/).
+The Music Encoding Initiative group in the Knowledge Commons (previously called Humanities Commons) is devoted to a discussion of topics related to music encoding, and is an extension of the Music Encoding Initiative channels on MEI-L and website. The Knowledge Commons is a network for people working in the humanities. Connect with other scholars and their scholarship, and increase the impact of your work by sharing it in the repository. The MEI Group at the Knowledge Commons can be accessed at [https://hcommons.org/groups/music-encoding-initiative/](https://hcommons.org/groups/music-encoding-initiative/).
 
 # Contact info
 
