@@ -1,0 +1,125 @@
+<div>
+    <p>
+        La mayor parte de tipos de datos en formato ODD siguen unos conceptos comunes y consolidados: hay números enteros, valores booleanos, cadenas de caracteres y demás. Echemos un vistazo más detallado a alguno de ellos. El atributo <em>@n</em>se define dentro de la clase de atributo <em><a href="https://music-encoding.org/guidelines/v4/attribute-classes/att.ninteger.html">att.nInteger</a></em>:        
+    </p>
+    <pre class="codeblock">&lt;attDef ident="n" usage="opt"&gt;
+    &lt;desc&gt;Proporciona un identificador númerico que indica la posición de un elemento en una secuencia de elementos similares. Su valor deberá ser un número entero no negativo.&lt;/desc&gt;
+    &lt;datatype maxOccurs="1" minOccurs="1"&gt;
+        &lt;rng:data type="nonNegativeInteger"/&gt;
+    &lt;/datatype&gt;
+&lt;/attDef&gt;</pre>
+    <p>
+        Esto ocurre al usar el elemento <em>&lt;data&gt;</em> para el <em>rng:</em> espacio de nombres, donde <em>@type</em> utiliza un valor definido en RelaxNG. Los atributos <em>@maxOccurs</em> y <em>@minOccurs</em> definen la frecuencia con la que se da un valor de este tipo. En el atributo <em>@staff</em> definido en <em>att.staffIdent</em>se puede encontrar un ejemplo para otros valores. Este atributo se utiliza para asociar <a href="https://music-encoding.org/guidelines/v4/content/introduction.html#eventsControlevents" target="_blank" rel="noopener, noreferrer">ControlEvents</a> con uno o más pentagramas y podrá tener uno o más números enteros. Utiliza <a href="https://music-encoding.org/guidelines/v4/attribute-classes/att.staffident.html" target="_blank" rel="noopener, noreferrer">el siguiente marcado</a> para conseguir esto:
+    </p>
+    <pre class="codeblock">&lt;datatype maxOccurs="unbounded" minOccurs="1"&gt;
+    &lt;rng:data type="positiveInteger"/&gt;
+&lt;/datatype&gt;</pre>
+    <p>
+        En otros casos, MEI define sus propios tipos de datos. Esto se consigue con el elemento <a href="https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-macroSpec.html" target="_blank" rel="noopener, noreferrer">&lt;macroSpec&gt;</a>. Echemos un vistazo al tipo de dato <em><a href="https://music-encoding.org/guidelines/v4/data-types/data.barrendition.html" target="_blank" rel="noopener, noreferrer">data.BARRENDITION</a></em>, que se utiliza para definir la apariencia de la línea divisoria: 
+    </p>
+    <pre class="codeblock">&lt;macroSpec ident="data.BARRENDITION" module="MEI" type="dt"&gt;
+    &lt;desc&gt;Renderizaciones de las líneas divisorias. Algunos valores corresponden a la parte de símbolos musicales occidentales del estándar Unicode.&lt;/desc&gt;
+    &lt;content&gt;
+        &lt;valList type="closed"&gt;
+            &lt;valItem ident="dashed"&gt;
+                &lt;desc&gt;Línea discontinua (Unicode 1D104).&lt;/desc&gt;
+            &lt;/valItem&gt;
+            &lt;valItem ident="dotted"&gt;
+                &lt;desc&gt;Línea de puntos.&lt;/desc&gt;
+            &lt;/valItem&gt;
+            &lt;valItem ident="dbl"&gt;
+                &lt;desc&gt;(Unicode 1D101).&lt;/desc&gt;
+            &lt;/valItem&gt;
+            &lt;valItem ident="dbldashed"&gt;
+                &lt;desc&gt;Línea discontinua doble.&lt;/desc&gt;
+            &lt;/valItem&gt;
+            &lt;valItem ident="dbldotted"&gt;
+                &lt;desc&gt;Línea de puntos doble.&lt;/desc&gt;
+            &lt;/valItem&gt;
+            &lt;valItem ident="end"&gt;
+                &lt;desc&gt;(Unicode 1D102).&lt;/desc&gt;
+            &lt;/valItem&gt;
+            &lt;valItem ident="invis"&gt;
+                &lt;desc&gt;Línea divisoria no renderizada.&lt;/desc&gt;
+            &lt;/valItem&gt;
+            &lt;valItem ident="rptstart"&gt;
+                &lt;desc&gt;Repetir principio (Unicode 1D106).&lt;/desc&gt;
+            &lt;/valItem&gt;
+            &lt;valItem ident="rptboth"&gt;
+                &lt;desc&gt;Repetir principio y final.&lt;/desc&gt;
+            &lt;/valItem&gt;
+            &lt;valItem ident="rptend"&gt;
+                &lt;desc&gt;Repetir final (Unicode 1D107).&lt;/desc&gt;
+            &lt;/valItem&gt;
+            &lt;valItem ident="single"&gt;
+                &lt;desc&gt;(Unicode 1D100).&lt;/desc&gt;
+            &lt;/valItem&gt;
+        &lt;/valList&gt;
+    &lt;/content&gt;
+&lt;/macroSpec&gt;</pre>
+    <p>
+        De nuevo, los atributos <em>@ident</em> and <em>@module</em> se utilizan de la misma forma que ya hemos visto, como el elemento hijo <em>&lt;desc&gt;</em>. Lo importante es el atributo <em>@type</em> con un valor de "<em>dt</em>" (tipo de dato). Convencionalmente, todos los nombre de tipos de datos van prefijados por "<em>data.</em>", y el nombre que le sigue figura todo en mayúsculas. Después tenemos una <em>lista de valores</em>, que en este caso está cerrada. Esto significa que todos los valores posibles aparecen enumerados aquí. Otras veces, <em>@type</em> de "<em>semi</em>" indica una lista semiabierta. Este tipo de lista proporciona recomendaciones, pero permite al usuario la opción de inventarse valores personalizados cuando ninguna de las sugerencias encaja con la situación en curso. Esto normalmente proporciona un buen equilibrio entre asegurar la consistencia y permitir ampliar el esquema bajo demanda.  
+    </p>
+    <p>
+        Al igual que con las <em>clases de modelos</em> y <em>atributos</em>, los tipos de datos pueden anidarse. Un ejemplo de esto sería el tipo de dato<em><a href="https://music-encoding.org/guidelines/v4/data-types/data.noteheadmodifier.html" target="_blank" rel="noopener, noreferrer">data.NOTEHEADMODIFIER</a></em>: 
+    </p>
+    <pre class="codeblock">&lt;macroSpec ident="data.NOTEHEADMODIFIER" module="MEI" type="dt"&gt;
+    &lt;desc&gt;Captura todos los "modificadores" de la cabeza de la nota; es decir, los símbolos añadidos a la cabeza de la nota, como las barras inclinadas, líneas, texto, recuadros, etc.&lt;/desc&gt;
+    &lt;content&gt;
+        &lt;rng:choice&gt;
+            &lt;rng:ref name="data.NOTEHEADMODIFIER.list" /&gt;
+            &lt;rng:ref name="data.NOTEHEADMODIFIER.pat" /&gt;
+        &lt;/rng:choice&gt;
+    &lt;/content&gt;
+&lt;/macroSpec&gt;</pre>
+    <p>
+        Esto significa que un atributo que utiliza el tipo de dato <em>data.NOTEHEADMODIFIER</em> aceptará valores que sigan las normas de los tipos de datos <em>data.NOTEHEADMODIFIER.list</em> o <em>data.NOTEHEADMODIFIER.pat</em>. 
+    </p>
+    <p>
+        El último tipo de dato que nos gustaría presentar es <em>data.COLORVALUES</em>, usado por <em>data.COLOR</em>, que a su vez se utiliza para controlar los valores de los atributos como <em>@color</em> (through <em><a href="https://music-encoding.org/guidelines/v4/attribute-classes/att.color.html" target="_blank" rel="noopener, noreferrer">att.color</a></em>) or <em>@beam.color</em> (a través de <em><a href="https://music-encoding.org/guidelines/v4/attribute-classes/att.beaming.vis.html" target="_blank" rel="noopener, noreferrer">att.beaming.vis</a></em>). Utiliza un conjunto de <em>expresiones regulares</em> para controlar diferentes mecanismos de codificación de color:
+    </p>
+    <pre class="codeblock">&lt;macroSpec ident="data.COLORVALUES" module="MEI" type="dt"&gt;
+    &lt;desc&gt;Valores de color parametrizados&lt;/desc&gt;
+    &lt;content&gt;
+        &lt;rng:choice&gt;
+            &lt;rng:data type="token"&gt;
+                &lt;rng:param name="pattern"&gt;#[0-9A-Fa-f]{6,6}&lt;/rng:param&gt;
+            &lt;/rng:data&gt;
+            &lt;rng:data type="token"&gt;
+                &lt;rng:param name="pattern"&gt;#[0-9A-Fa-f]{8,8}&lt;/rng:param&gt;
+            &lt;/rng:data&gt;
+            &lt;rng:data type="token"&gt;
+                &lt;rng:param name="pattern"&gt;
+                    rgb\((\s*(([01]?[0-9]?[0-9])|2[0-4][0-9]|25[0-5])\s*,\s*){2}
+                    ([01]?[0-9]?[0-9]|2[0-4][0-9]|25[0-5])\s*\)
+                &lt;/rng:param&gt;
+            &lt;/rng:data&gt;
+            &lt;rng:data type="token"&gt;
+                &lt;rng:param name="pattern"&gt;
+                    rgba\(\s*(([01]?[0-9]?[0-9]|2[0-4][0-9]|25[0-5])\s*,\s*){3}(
+                    0(\.\d+)?|1(\.0+)?)\s*\)|rgba\(\s*(((\d{1,2})?%|100%)\s*,\s*
+                    ){2}(\d{1,2}%|100%)\s*,\s*(0(\.\d+)?|1(\.0+)?)\s*\)
+                &lt;/rng:param&gt;
+            &lt;/rng:data&gt;
+            &lt;rng:data type="token"&gt;
+                &lt;rng:param name="pattern"&gt;
+                    hsl\(\s*((\d{1,2})|[12]\d{2}|3[0-5]\d|360)\s*,\s*(\d{1,2}%|1
+                    00%)\s*,\s*(\d{1,2}%|100%)\s*\)
+                &lt;/rng:param&gt;
+            &lt;/rng:data&gt;
+            &lt;rng:data type="token"&gt;
+                &lt;rng:param name="pattern"&gt;
+                    hsla\(\s*(\d{1,2}|[12]\d{2}|3[0-5]\d|360)\s*,\s*(\d{1,2}%|10
+                    0%)\s*,\s*(\d{1,2}%|100%)\s*,\s*(0(\.\d+)?|1(\.0+)?)\s*\)
+                &lt;/rng:param&gt;
+            &lt;/rng:data&gt;
+        &lt;/rng:choice&gt;
+    &lt;/content&gt;
+&lt;/macroSpec&gt;</pre>
+    <p>
+        El <em>&lt;rng:choice&gt;</em> alrededor de los diferentes elementos <em>&lt;rng:data&gt;</em> expone que un valor del atributo <em>@color</em> debe seguir uno de los patrones regex que contiene. Explicar la semántica de<u>expresiones</u> <u>regulares</u> queda fuera del alcance de este tutorial.&nbsp;Básicamente, es una forma de describir un patrón para una cadena, y se puede utilizar para comprobar si esa cadena coincide con el patrón o no. Una buena manera de empezar con las expresiones regulares es el <strong>Crucigrama Regex</strong>, disponible en <a href="https://regexcrossword.com/" target="_blank" rel="noopener, noreferrer">https://regexcrossword.com/</a>. 
+    </p>
+    <p>
+        Hay muchos más tipos de datos que se pueden utilizar, pero ya que anidar no suele ser tan complejo como las <em>clases de modelos</em> o <em>atributos</em>, los tipos de datos se suelen considerar más accesibles a la hora de introducirse en ODD (desde luego que hay menos que aprender). Así que pasemos a <em>Macros</em>.
+    </p>
+</div>

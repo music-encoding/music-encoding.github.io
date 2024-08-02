@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>What is MEI?</title>
+    <meta name="description" content="">
+
+    <link rel="stylesheet" href="/css/main.css">
+    <!-- syntax highlighting CSS -->
+    <link rel="stylesheet" href="/css/syntax.css" />
+    <script type="text/javascript" src="/js/carousel.js"></script>
+    <script type="text/javascript">
+      document.addEventListener("DOMContentLoaded", event => {
+        const indexCarousel = document.getElementById("index-carousel");
+        if (indexCarousel !== null) {
+          animateCarousel(indexCarousel, 3000);
+          indexCarousel.addEventListener("mouseover", event => {
+            stopCarouselAnimation(indexCarousel);
+          });
+          indexCarousel.addEventListener("mouseout", event => {
+            animateCarousel(indexCarousel, 3000);
+          });
+        }
+      });
+    </script>
+</head>
+
+
+  <body>
+
+    <!-- Make sure to mirror changes in the guidelines repository in _include/header.html when necessary -->
+<header class="navbar">
+  <div class="navbar-section">
+    <a class="navbar-brand" href="https://music-encoding.org">
+      <img src="/pix/meilogo-inverted.png" alt="MEI logo"/>
+    </a>
+    <div class="hide-lg">
+      
+    <div class="dropdown dropdownCustomMenuToggle">
+        
+            <a href="/about" class="btn btn-link top-menu-link" tabindex="0">
+                About
+            </a>
+        
+    </div>
+
+    <div class="dropdown dropdownCustomMenuToggle">
+        
+            <a href="#" class="btn btn-link dropdown-toggle top-menu-link" tabindex="1">
+                Community <i class="icon icon-caret"></i>
+            </a>
+
+            
+             <ul class="menu"> 
+                <li class="menu-item">
+                    <a href="/community/projects-users.html" class="btn btn-link text-left menu-link">
+                        Projects / Users
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/community/news-events.html" class="btn btn-link text-left menu-link">
+                        News / Events
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/community/community-contacts.html" class="btn btn-link text-left menu-link">
+                        Community Contacts
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/community/interest-groups.html" class="btn btn-link text-left menu-link">
+                        Interest Groups
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/community/technical-team.html" class="btn btn-link text-left menu-link">
+                        Technical Team
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/community/mei-board.html" class="btn btn-link text-left menu-link">
+                        MEI Board
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/community/mei-by-laws.html" class="btn btn-link text-left menu-link">
+                        MEI By-laws
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/community/code-of-conduct.html" class="btn btn-link text-left menu-link">
+                        Code of Conduct
+                    </a>
+                </li>
+                 </ul> 
+            
+
+        
+    </div>
+
+    <div class="dropdown dropdownCustomMenuToggle">
+        
+            <a href="#" class="btn btn-link dropdown-toggle top-menu-link" tabindex="2">
+                Conference <i class="icon icon-caret"></i>
+            </a>
+
+            
+             <ul class="menu"> 
+                <li class="menu-item">
+                    <a href="/conference/2024" class="btn btn-link text-left menu-link">
+                        MEC 2024
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/conference/past.html" class="btn btn-link text-left menu-link">
+                        Past Conferences
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/conference/proceedings.html" class="btn btn-link text-left menu-link">
+                        Proceedings
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/conference/awards.html" class="btn btn-link text-left menu-link">
+                        MEC Awards
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/conference/hosting-guidelines.html" class="btn btn-link text-left menu-link">
+                        Hosting Guidelines
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/conference/code-of-conduct.html" class="btn btn-link text-left menu-link">
+                        Code of conduct
+                    </a>
+                </li>
+                 </ul> 
+            
+
+        
+    </div>
+
+    <div class="dropdown dropdownCustomMenuToggle">
+        
+            <a href="#" class="btn btn-link dropdown-toggle top-menu-link" tabindex="3">
+                Resources <i class="icon icon-caret"></i>
+            </a>
+
+            
+             <ul class="menu"> 
+                <li class="menu-item">
+                    <a href="/resources/background.html" class="btn btn-link text-left menu-link">
+                        Background
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/resources/bibliography.html" class="btn btn-link text-left menu-link">
+                        Bibliography
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/resources/pedagogy.html" class="btn btn-link text-left menu-link">
+                        Pedagogy & Praxis
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/resources/schemas.html" class="btn btn-link text-left menu-link">
+                        Schemas and Namespace
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/resources/tools.html" class="btn btn-link text-left menu-link">
+                        Tools
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/resources/tutorials.html" class="btn btn-link text-left menu-link">
+                        Tutorials
+                    </a>
+                </li>
+                 </ul> 
+            
+
+        
+    </div>
+
+    <div class="dropdown dropdownCustomMenuToggle">
+        
+            <a href="#" class="btn btn-link dropdown-toggle top-menu-link" tabindex="4">
+                Documentation <i class="icon icon-caret"></i>
+            </a>
+
+            
+             <ul class="menu"> 
+                <li class="menu-item">
+                    <a href="/guidelines/v5" class="btn btn-link text-left menu-link">
+                        MEI 5 (latest release)
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/guidelines/dev" class="btn btn-link text-left menu-link">
+                        Development version
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/guidelines/v4" class="btn btn-link text-left menu-link">
+                        MEI 4
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/guidelines/v3" class="btn btn-link text-left menu-link">
+                        MEI 3
+                    </a>
+                </li>
+                 </ul> 
+            
+
+        
+    </div>
+
+    <div class="dropdown dropdownCustomMenuToggle">
+        
+            <a href="/archive" class="btn btn-link top-menu-link" tabindex="5">
+                Archive
+            </a>
+        
+    </div>
+
+
+    </div>
+  </div>
+  <div class="navbar-section" id="socialLinks">
+    <a class="twitterLink" target="_blank" href="https://twitter.com/MusicEncoding">
+      <img src="/pix/twitter.png" alt="Twitter" class="logo"/>
+    </a>
+    <a class="githubLink" target="_blank" href="https://github.com/music-encoding">
+      <img src="/pix/github.png" alt="GitHub" class="logo"/>
+    </a>
+    <a class="slackLink" target="_blank" href="https://music-encoding.slack.com/">
+      <img src="/pix/slack.png" alt="Slack" class="logo"/>
+    </a>
+  </div>
+    <div id="menu-accordion" class="accordion-container dropdown-toggle show-lg column col-12">
+  <div class="accordion">
+    <input id="accordion-toggle" type="checkbox" name="accordion-checkbox" hidden=""/>
+    <label class="accordion-header c-hand" for="accordion-toggle">
+      <i class="icon icon-menu"></i>
+    </label>
+
+    <div class="accordion-body">
+      <ul class="menu menu-nav">
+        
+        <li class="menu-item">
+          <div class="accordion menu">
+            <input id="accordion-About" type="checkbox" name="accordion-checkbox" hidden=""/>
+            <label class="accordion-header c-hand" for="accordion-About">
+              
+                  <a href="/about">
+                      About
+                  </a>
+              
+            </label>
+            
+          </div>
+        </li>
+        
+        <li class="menu-item">
+          <div class="accordion menu">
+            <input id="accordion-Community" type="checkbox" name="accordion-checkbox" hidden=""/>
+            <label class="accordion-header c-hand" for="accordion-Community">
+              
+                Community
+              
+            </label>
+            
+            <div class="accordion-body">
+              <ul class="menu menu-nav">
+                
+                   <li><ul class="menu"> 
+                  <li class="menu-item"><a href="/community/projects-users.html">Projects / Users</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/community/news-events.html">News / Events</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/community/community-contacts.html">Community Contacts</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/community/interest-groups.html">Interest Groups</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/community/technical-team.html">Technical Team</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/community/mei-board.html">MEI Board</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/community/mei-by-laws.html">MEI By-laws</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/community/code-of-conduct.html">Code of Conduct</a></li>
+                   </ul></li> 
+                
+              </ul>
+            </div>
+            
+          </div>
+        </li>
+        
+        <li class="menu-item">
+          <div class="accordion menu">
+            <input id="accordion-Conference" type="checkbox" name="accordion-checkbox" hidden=""/>
+            <label class="accordion-header c-hand" for="accordion-Conference">
+              
+                Conference
+              
+            </label>
+            
+            <div class="accordion-body">
+              <ul class="menu menu-nav">
+                
+                   <li><ul class="menu"> 
+                  <li class="menu-item"><a href="/conference/2024">MEC 2024</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/conference/past.html">Past Conferences</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/conference/proceedings.html">Proceedings</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/conference/awards.html">MEC Awards</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/conference/hosting-guidelines.html">Hosting Guidelines</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/conference/code-of-conduct.html">Code of conduct</a></li>
+                   </ul></li> 
+                
+              </ul>
+            </div>
+            
+          </div>
+        </li>
+        
+        <li class="menu-item">
+          <div class="accordion menu">
+            <input id="accordion-Resources" type="checkbox" name="accordion-checkbox" hidden=""/>
+            <label class="accordion-header c-hand" for="accordion-Resources">
+              
+                Resources
+              
+            </label>
+            
+            <div class="accordion-body">
+              <ul class="menu menu-nav">
+                
+                   <li><ul class="menu"> 
+                  <li class="menu-item"><a href="/resources/background.html">Background</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/resources/bibliography.html">Bibliography</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/resources/pedagogy.html">Pedagogy & Praxis</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/resources/schemas.html">Schemas and Namespace</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/resources/tools.html">Tools</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/resources/tutorials.html">Tutorials</a></li>
+                   </ul></li> 
+                
+              </ul>
+            </div>
+            
+          </div>
+        </li>
+        
+        <li class="menu-item">
+          <div class="accordion menu">
+            <input id="accordion-Documentation" type="checkbox" name="accordion-checkbox" hidden=""/>
+            <label class="accordion-header c-hand" for="accordion-Documentation">
+              
+                Documentation
+              
+            </label>
+            
+            <div class="accordion-body">
+              <ul class="menu menu-nav">
+                
+                   <li><ul class="menu"> 
+                  <li class="menu-item"><a href="/guidelines/v5">MEI 5 (latest release)</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/guidelines/dev">Development version</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/guidelines/v4">MEI 4</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/guidelines/v3">MEI 3</a></li>
+                   </ul></li> 
+                
+              </ul>
+            </div>
+            
+          </div>
+        </li>
+        
+        <li class="menu-item">
+          <div class="accordion menu">
+            <input id="accordion-Archive" type="checkbox" name="accordion-checkbox" hidden=""/>
+            <label class="accordion-header c-hand" for="accordion-Archive">
+              
+                  <a href="/archive">
+                      Archive
+                  </a>
+              
+            </label>
+            
+          </div>
+        </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+
+</header>
+
+
+    <div class="container grid-xl content">
+        <h1 id="an-introduction-to-mei">An introduction to MEI</h1>
+
+<p>The Music Encoding Initiative (MEI) is a community-driven, <a href="https://github.com/music-encoding/music-encoding">open-source</a> effort to define a system for encoding musical documents in a machine-readable structure. MEI brings together specialists from various music research communities, including technologists, librarians, historians, and theorists in a common effort to define best practices for representing a broad range of musical documents and structures. The results of these discussions are formalized in the <a href="/resources/schemas.html">MEI schema</a>, a core set of rules for recording physical and intellectual characteristics of music notation documents expressed as an eXtensible Markup Language (<a href="https://web.archive.org/web/20191028132600/https://www.tei-c.org/release/doc/tei-p5-doc/en/html/SG.html">XML</a>) schema. It is complemented by the <a href="https://music-encoding.org/guidelines/v4/content/">MEI Guidelines</a>, which provide detailed explanations of the components of the MEI model and best practices suggestions. The schema is developed and maintained by the <a href="/community/technical-team.html">MEI Technical Team</a>.</p>
+
+<p>MEI, like the <a href="http://www.tei-c.org/">Text Encoding Initiative</a> (TEI), is an umbrella term to simultaneously describe an organization, a research community, and a markup language. It closely mirrors work done by text scholars in the TEI and, while the two encoding initiatives are not formally related, they share many common characteristics and development practices.</p>
+
+<h2 id="the-goals-of-mei">The goals of MEI</h2>
+
+<p>The scholarly community devoted to the historical study of music needs an encoding system that meets the following requirements:</p>
+
+<ul>
+  <li>represents the semantic and structural complexity of the entire diverse history of Western notation;</li>
+  <li>represents the common expressive features of traditional facsimile, critical, and performance editions;</li>
+  <li>is a public, open standard controlled by the scholarly community;</li>
+  <li>is platform independent and based on open standards; and</li>
+  <li>supports scholarly analysis and a variety of both digital and print rendering possibilities.</li>
+</ul>
+
+<p>Therefore, the Music Encoding Initiative strives to create a semantically rich model for music notation that:</p>
+
+<ul>
+  <li>accommodates the encoding of common Western music, but is not limited to common music notation;</li>
+  <li>is designed by the scholarly community for scholarly uses, but does not exclude other uses;</li>
+  <li>provides for the common functions of traditional facsimile, critical, and performance editions;</li>
+  <li>has a modular structure that permits use dependent on the goals of scholars; and</li>
+  <li>is based on open standards and is platform-independent;</li>
+  <li>permits the development of comprehensive and permanent international archives of notated music as a basis for editions, analysis, performances, and other forms of research.</li>
+</ul>
+
+<h2 id="is-mei-free">Is MEI free?</h2>
+
+<p>Yes! MEI is distributed under the Educational Community License Version 2.0, a modified form of the Apache 2.0 license. Under this license, you are granted a “perpetual, worldwide, non-exclusive, no-charge, royalty-free, irrevocable copyright license to reproduce, prepare derivative works of, publicly display, publicly perform, sublicense, and distribute MEI and any derivative” version you create. For the legal details, <a href="https://opensource.org/licenses/ECL-2.0" title="Educational Community License">see the license</a>. Because MEI provides a flexible and extensible framework as well as the opportunity to participate in its development, it is free, not just in the sense of “free beer”, but also in the sense of giving its users the freedom to use it as they desire.</p>
+
+<h2 id="how-is-mei-different-from-musicxml">How is MEI different from MusicXML?</h2>
+
+<p>MEI and MusicXML share some similarities – both of them encode music notation (notes, staves, rests, clefs, etc.), and they are both expressed in XML. However, they are guided by two different philosophies. The goal of MusicXML is to be an interchange format between notation editors. MEI contains the same functionality in terms of notation and page layout, but beyond this it can also encode information about the notation and its intellectual content in a structured and systematic way. MEI supports notation systems outside of standard Common Western Notation: mensural (Renaissance-era) and neume (Medieval) notations. It supports these notations not just through visual emulation, but by retaining the structure and semantics of the notation in order to accurately represent it. In addition, MEI can record the relationships between notational features and digital page images and audio recordings.</p>
+
+<h2 id="what-is-the-history-of-mei">What is the history of MEI?</h2>
+
+<p>In 1999, Perry Roland created an XML schema (DTD) for the representation of music notation. Eventually, this DTD became known as MEI, drawing on the same principles that guided the creation of the <a href="http://www.tei-c.org/">Text Encoding Initiative</a> (TEI). Perry presented his initial work at the first <a href="https://ismir2000.ismir.net/">ISMIR conference</a> in 2000.</p>
+
+<p>In 2005, the <a href="https://www.library.virginia.edu">University of Virginia Library</a> provided support for a 2-year pilot project to demonstrate the capability of MEI to represent a sample of music scores and to ensure that the semantic information encoded in MEI could be rendered as music notation.</p>
+
+<p>In the summer of 2007, Perry was approached by representatives of the German markup community and asked to present MEI to the Arbeitsgruppe Musikcodierung in der <a href="http://www.adwmainz.de/startseite.html">Akademie der Wissenschaften und Literatur in Mainz</a>. Initial results of these collaborations were demonstrated at the conference <a href="../downloads/2007-12_Tagungsbericht_Web.pdf">“Digitale Edition zwischen Experiment und Standardisierung”</a>, held in Paderborn, Germany in December, 2007.</p>
+
+<p>Further collaboration between researchers in Germany and the United States was supported by a DFG/NEH “Bilateral Digital Humanities Program: Bilateral Symposia and Workshops” grant. This one-year grant provided funding to address the lack of standardization in the representation of music through supporting two workshops attended by an international group of digital technologists and scholars representing musicology, music theory, and librarianship.</p>
+
+<p>The first of the two workshops took place in Charlottesville, Virginia, July 29th-31st, 2009. At this meeting it was decided that MEI held promise as an open-source, scholarly standard for music representation. Following this decision, the group turned its attention to development work necessary for the growth of MEI. A list of potential users and uses for the standard was recorded and a functional requirements document was drafted. Based on these functional requirements, a work plan was developed that included the revision of the schema and the creation of a tag library. Following the revision of the schema, sample scores selected by the work group that illustrate problems in successful music encoding were encoded in MEI. This workshop marked the beginning of MEI development as an international community-driven effort.</p>
+
+<p>The second DFG/NEH funded meeting was held in Detmold, Germany in March 2010. At this meeting, the group reviewed the finished examples, schema and tag library. In addition, a plan for continued development and dissemination of the results was created, submitted to the DFG and NEH, and implemented by the MEI Advisory Board. A three-year research project called “Digital Music Notation Data Model and Prototype Delivery System” ran from October 2010 until the Summer of 2013 thanks to a DFG/NEH “Bilateral Digital Humanities Program: Enriching Digital Collections” grant. This project resulted in the creation of the MEI Guidelines, the preparation of a collection of MEI sample files, the development of tutorials, and significant growth in the number of contributors to MEI.</p>
+
+<p>In 2013, the first Music Encoding Conference was held in Mainz, Germany. The success of this initial meeting demonstrated a need for an annual conference on the topic of music notation encoding, inviting representatives from within the MEI community and in other notation encoding communities to gather and share research and experiences with an international audience.</p>
+
+<p>Also in 2013 the MEI community accepted an invitation from the <a href="http://www.adwmainz.de/">Akademie der Wissenschaften und Literatur in Mainz</a> to be hosted there. This offer prompted the community to formalize its governance structures, leading to the introduction of the MEI <a href="/community/mei-by-laws.html">Community By-laws</a>, the <a href="/community/technical-team.html">Technical Team</a>, <a href="/community/interest-groups.html">Interest Groups</a>, and the <a href="/community/mei-board.html">MEI Board</a> which oversees the activities of the community.</p>
+
+    </div>
+
+    <!-- Make sure to mirror changes in the guidelines repository in _include/footer.html when necessary -->
+<footer>
+  <div class="container">
+    <div class="columns institutions">
+      <div class="column col-12 text-center">
+        <a class="institutionsLink" target="_blank" href="https://www.adwmainz.de">
+          <img src="/pix/akademie-small.png" alt="Akademie der Wissenschaften | Mainz" />
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="text-center">
+    <a class="footerLinks" href="/">Home</a> | <a class="footerLinks" href="/community/community-contacts.html">Contact</a><br/>
+    <small>© Music Encoding Initiative 2024</small>
+  </div>
+</footer>
+
+
+  </body>
+
+</html>

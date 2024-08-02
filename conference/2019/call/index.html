@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Call for proposals</title>
+    <meta name="description" content="">
+
+    <link rel="stylesheet" href="/css/main.css">
+    <!-- syntax highlighting CSS -->
+    <link rel="stylesheet" href="/css/syntax.css" />
+    <script type="text/javascript" src="/js/carousel.js"></script>
+    <script type="text/javascript">
+      document.addEventListener("DOMContentLoaded", event => {
+        const indexCarousel = document.getElementById("index-carousel");
+        if (indexCarousel !== null) {
+          animateCarousel(indexCarousel, 3000);
+          indexCarousel.addEventListener("mouseover", event => {
+            stopCarouselAnimation(indexCarousel);
+          });
+          indexCarousel.addEventListener("mouseout", event => {
+            animateCarousel(indexCarousel, 3000);
+          });
+        }
+      });
+    </script>
+</head>
+
+
+  <body>
+
+    <!-- Make sure to mirror changes in the guidelines repository in _include/header.html when necessary -->
+<header class="navbar">
+  <div class="navbar-section">
+    <a class="navbar-brand" href="https://music-encoding.org">
+      <img src="/pix/meilogo-inverted.png" alt="MEI logo"/>
+    </a>
+    <div class="hide-lg">
+      
+    <div class="dropdown dropdownCustomMenuToggle">
+        
+            <a href="/about" class="btn btn-link top-menu-link" tabindex="0">
+                About
+            </a>
+        
+    </div>
+
+    <div class="dropdown dropdownCustomMenuToggle">
+        
+            <a href="#" class="btn btn-link dropdown-toggle top-menu-link" tabindex="1">
+                Community <i class="icon icon-caret"></i>
+            </a>
+
+            
+             <ul class="menu"> 
+                <li class="menu-item">
+                    <a href="/community/projects-users.html" class="btn btn-link text-left menu-link">
+                        Projects / Users
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/community/news-events.html" class="btn btn-link text-left menu-link">
+                        News / Events
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/community/community-contacts.html" class="btn btn-link text-left menu-link">
+                        Community Contacts
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/community/interest-groups.html" class="btn btn-link text-left menu-link">
+                        Interest Groups
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/community/technical-team.html" class="btn btn-link text-left menu-link">
+                        Technical Team
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/community/mei-board.html" class="btn btn-link text-left menu-link">
+                        MEI Board
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/community/mei-by-laws.html" class="btn btn-link text-left menu-link">
+                        MEI By-laws
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/community/code-of-conduct.html" class="btn btn-link text-left menu-link">
+                        Code of Conduct
+                    </a>
+                </li>
+                 </ul> 
+            
+
+        
+    </div>
+
+    <div class="dropdown dropdownCustomMenuToggle">
+        
+            <a href="#" class="btn btn-link dropdown-toggle top-menu-link" tabindex="2">
+                Conference <i class="icon icon-caret"></i>
+            </a>
+
+            
+             <ul class="menu"> 
+                <li class="menu-item">
+                    <a href="/conference/2024" class="btn btn-link text-left menu-link">
+                        MEC 2024
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/conference/past.html" class="btn btn-link text-left menu-link">
+                        Past Conferences
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/conference/proceedings.html" class="btn btn-link text-left menu-link">
+                        Proceedings
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/conference/awards.html" class="btn btn-link text-left menu-link">
+                        MEC Awards
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/conference/hosting-guidelines.html" class="btn btn-link text-left menu-link">
+                        Hosting Guidelines
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/conference/code-of-conduct.html" class="btn btn-link text-left menu-link">
+                        Code of conduct
+                    </a>
+                </li>
+                 </ul> 
+            
+
+        
+    </div>
+
+    <div class="dropdown dropdownCustomMenuToggle">
+        
+            <a href="#" class="btn btn-link dropdown-toggle top-menu-link" tabindex="3">
+                Resources <i class="icon icon-caret"></i>
+            </a>
+
+            
+             <ul class="menu"> 
+                <li class="menu-item">
+                    <a href="/resources/background.html" class="btn btn-link text-left menu-link">
+                        Background
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/resources/bibliography.html" class="btn btn-link text-left menu-link">
+                        Bibliography
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/resources/pedagogy.html" class="btn btn-link text-left menu-link">
+                        Pedagogy & Praxis
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/resources/schemas.html" class="btn btn-link text-left menu-link">
+                        Schemas and Namespace
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/resources/tools.html" class="btn btn-link text-left menu-link">
+                        Tools
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/resources/tutorials.html" class="btn btn-link text-left menu-link">
+                        Tutorials
+                    </a>
+                </li>
+                 </ul> 
+            
+
+        
+    </div>
+
+    <div class="dropdown dropdownCustomMenuToggle">
+        
+            <a href="#" class="btn btn-link dropdown-toggle top-menu-link" tabindex="4">
+                Documentation <i class="icon icon-caret"></i>
+            </a>
+
+            
+             <ul class="menu"> 
+                <li class="menu-item">
+                    <a href="/guidelines/v5" class="btn btn-link text-left menu-link">
+                        MEI 5 (latest release)
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/guidelines/dev" class="btn btn-link text-left menu-link">
+                        Development version
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/guidelines/v4" class="btn btn-link text-left menu-link">
+                        MEI 4
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/guidelines/v3" class="btn btn-link text-left menu-link">
+                        MEI 3
+                    </a>
+                </li>
+                 </ul> 
+            
+
+        
+    </div>
+
+    <div class="dropdown dropdownCustomMenuToggle">
+        
+            <a href="/archive" class="btn btn-link top-menu-link" tabindex="5">
+                Archive
+            </a>
+        
+    </div>
+
+
+    </div>
+  </div>
+  <div class="navbar-section" id="socialLinks">
+    <a class="twitterLink" target="_blank" href="https://twitter.com/MusicEncoding">
+      <img src="/pix/twitter.png" alt="Twitter" class="logo"/>
+    </a>
+    <a class="githubLink" target="_blank" href="https://github.com/music-encoding">
+      <img src="/pix/github.png" alt="GitHub" class="logo"/>
+    </a>
+    <a class="slackLink" target="_blank" href="https://music-encoding.slack.com/">
+      <img src="/pix/slack.png" alt="Slack" class="logo"/>
+    </a>
+  </div>
+    <div id="menu-accordion" class="accordion-container dropdown-toggle show-lg column col-12">
+  <div class="accordion">
+    <input id="accordion-toggle" type="checkbox" name="accordion-checkbox" hidden=""/>
+    <label class="accordion-header c-hand" for="accordion-toggle">
+      <i class="icon icon-menu"></i>
+    </label>
+
+    <div class="accordion-body">
+      <ul class="menu menu-nav">
+        
+        <li class="menu-item">
+          <div class="accordion menu">
+            <input id="accordion-About" type="checkbox" name="accordion-checkbox" hidden=""/>
+            <label class="accordion-header c-hand" for="accordion-About">
+              
+                  <a href="/about">
+                      About
+                  </a>
+              
+            </label>
+            
+          </div>
+        </li>
+        
+        <li class="menu-item">
+          <div class="accordion menu">
+            <input id="accordion-Community" type="checkbox" name="accordion-checkbox" hidden=""/>
+            <label class="accordion-header c-hand" for="accordion-Community">
+              
+                Community
+              
+            </label>
+            
+            <div class="accordion-body">
+              <ul class="menu menu-nav">
+                
+                   <li><ul class="menu"> 
+                  <li class="menu-item"><a href="/community/projects-users.html">Projects / Users</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/community/news-events.html">News / Events</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/community/community-contacts.html">Community Contacts</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/community/interest-groups.html">Interest Groups</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/community/technical-team.html">Technical Team</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/community/mei-board.html">MEI Board</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/community/mei-by-laws.html">MEI By-laws</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/community/code-of-conduct.html">Code of Conduct</a></li>
+                   </ul></li> 
+                
+              </ul>
+            </div>
+            
+          </div>
+        </li>
+        
+        <li class="menu-item">
+          <div class="accordion menu">
+            <input id="accordion-Conference" type="checkbox" name="accordion-checkbox" hidden=""/>
+            <label class="accordion-header c-hand" for="accordion-Conference">
+              
+                Conference
+              
+            </label>
+            
+            <div class="accordion-body">
+              <ul class="menu menu-nav">
+                
+                   <li><ul class="menu"> 
+                  <li class="menu-item"><a href="/conference/2024">MEC 2024</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/conference/past.html">Past Conferences</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/conference/proceedings.html">Proceedings</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/conference/awards.html">MEC Awards</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/conference/hosting-guidelines.html">Hosting Guidelines</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/conference/code-of-conduct.html">Code of conduct</a></li>
+                   </ul></li> 
+                
+              </ul>
+            </div>
+            
+          </div>
+        </li>
+        
+        <li class="menu-item">
+          <div class="accordion menu">
+            <input id="accordion-Resources" type="checkbox" name="accordion-checkbox" hidden=""/>
+            <label class="accordion-header c-hand" for="accordion-Resources">
+              
+                Resources
+              
+            </label>
+            
+            <div class="accordion-body">
+              <ul class="menu menu-nav">
+                
+                   <li><ul class="menu"> 
+                  <li class="menu-item"><a href="/resources/background.html">Background</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/resources/bibliography.html">Bibliography</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/resources/pedagogy.html">Pedagogy & Praxis</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/resources/schemas.html">Schemas and Namespace</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/resources/tools.html">Tools</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/resources/tutorials.html">Tutorials</a></li>
+                   </ul></li> 
+                
+              </ul>
+            </div>
+            
+          </div>
+        </li>
+        
+        <li class="menu-item">
+          <div class="accordion menu">
+            <input id="accordion-Documentation" type="checkbox" name="accordion-checkbox" hidden=""/>
+            <label class="accordion-header c-hand" for="accordion-Documentation">
+              
+                Documentation
+              
+            </label>
+            
+            <div class="accordion-body">
+              <ul class="menu menu-nav">
+                
+                   <li><ul class="menu"> 
+                  <li class="menu-item"><a href="/guidelines/v5">MEI 5 (latest release)</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/guidelines/dev">Development version</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/guidelines/v4">MEI 4</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/guidelines/v3">MEI 3</a></li>
+                   </ul></li> 
+                
+              </ul>
+            </div>
+            
+          </div>
+        </li>
+        
+        <li class="menu-item">
+          <div class="accordion menu">
+            <input id="accordion-Archive" type="checkbox" name="accordion-checkbox" hidden=""/>
+            <label class="accordion-header c-hand" for="accordion-Archive">
+              
+                  <a href="/archive">
+                      Archive
+                  </a>
+              
+            </label>
+            
+          </div>
+        </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+
+</header>
+
+
+    <div class="container grid-xl content">
+        
+<div class="columns">
+  <div class="column col-10 col-sm-12">
+    
+      <div class="dropdown col-sm-1 show-sm">
+        <div class="rounded bg-gray text-center my-1">
+          <a href="#" tabindex="1" class="btn btn-primary dropdown-toggle btn-lg" id="MEC2019-menuBtn">
+            <i class="icon icon-menu"></i>
+          </a>
+          <ul class="menu text-left" id="MEC2019-menu">
+            
+              <li class="menu-item ">
+                <a href="/conference/2019/call/">Call for proposals</a>
+              </li>
+            
+              <li class="menu-item ">
+                <a href="/conference/2019/green_meeting/">Green Meeting</a>
+              </li>
+            
+              <li class="menu-item ">
+                <a href="/conference/2019/">Music Encoding Conference 2019</a>
+              </li>
+            
+              <li class="menu-item ">
+                <a href="/conference/2019/maps/">Maps</a>
+              </li>
+            
+              <li class="menu-item ">
+                <a href="/conference/2019/people/">Personnel</a>
+              </li>
+            
+              <li class="menu-item ">
+                <a href="/conference/2019/program/">Program</a>
+              </li>
+            
+              <li class="menu-item ">
+                <a href="/conference/2019/travel/">Travel and Accommodation</a>
+              </li>
+            
+          </ul>
+        </div>
+      </div>
+      <img src="/images/conference/2019/mec2019dates.jpg" class="img-responsive" alt="MEC 2019"/>
+
+<div class="mec2019-page">
+    <h2>Call for proposals</h2>
+
+    <div class="text-center"><span class="label"><strong> ** CALL IS CLOSED ** </strong></span></div>
+
+    <p style="margin-top:2em;">The Music Encoding Conference 2019 calls for paper, poster, panel, and workshop proposals to be submitted by <s>7 December 2018</s> <b>16 December 2018</b>.</p>
+    <p>The seventh Music Encoding Conference will take place in 2019, continuing this key annual event for dissemination and discussion for those working with, and on, music encoding.</p>
+    <p>The 2019 conference will be held in the beautiful and culturally rich city of Vienna, Austria, jointly organised by the Austrian Academy of Sciences, the Department of Musicology at the University of Vienna and the Mozart Institute of the Mozarteum Foundation Salzburg, on behalf of the Music Encoding Initiative community. The conference will be hosted at the University of Vienna over four days, with pre-conference workshops on Wednesday 29 May, the formal programme on Thursday 30 and Friday 31 May, and an ‘unconference’ on Saturday 1 June.</p>
+
+    <div class="mec2019-program-row-main">
+        <h4>Important dates and information</h4>
+        <p><b>Date</b><span style="font-weight: 400;">: 30 - 31 May (with pre-conference workshops on 29 May and an ‘un-conference’ day on 1 June)
+        </span></p>
+        <p><b>Location</b><span style="font-weight: 400;">: Institute of Musicology, University of Vienna, Austria</span></p>
+        <p><b>Registration:</b> open until <b>May 20</b></p>
+        <p><b>New Deadline for Proposals</b><span style="font-weight: 400;">: 16 December 2018 (deadline is midnight, Vienna UTC+1)</span></p>
+        <p><b>Notification of Acceptance</b><span style="font-weight: 400;">: 25 January 2019</span></p>
+        <p><b>Poster Size</b><span style="font-weight: 400;">: DIN A0 (841 x 1189 mm or 33.1 x 46.8 inches), portrait format</span></p>
+        <p><b>For further questions</b>, please e-mail <a href="mailto:mec@oeaw.ac.at">mec@oeaw.ac.at</a><span style="font-weight: 400;"></span></p>
+    </div>
+
+    <h4>Background</h4>
+    <p><span style="font-weight: 400;">When using and manipulating digital music information, the properties and behaviours of its encoding are of fundamental importance - be that for musicological study, music theory, production of digital editions, composition, performance, teaching and learning, cataloguing, symbolic music information retrieval and recommendation, or more general electronic presentation of musical material and associated narratives. The study of music encoding and its applications is therefore a critical foundation for the use of music information by scholars, librarians, publishers, and the wider music industry.</span></p>
+    <p><span style="font-weight: 400;">The Music Encoding Conference has emerged as the foremost international forum where researchers and practitioners from across these diverse fields can meet and explore new developments in music encoding and its use. The Conference celebrates a multidisciplinary programme, combining the latest advances from established music encodings, novel technical proposals and encoding extensions, and the presentation or evaluation of new practical applications of music encoding (e.g. in academic study, libraries, editions, commercial products).</span></p>
+    <p><span style="font-weight: 400;">Pre-conference workshops provide an opportunity to quickly engage with best practice in the community. Newcomers are encouraged to submit to the main programme with articulations of the potential for music encoding in their work, highlighting strengths and weaknesses of existing approaches within this context. Following the formal programme, on Saturday 1 June, an unconference session fosters collaboration in the community through the meeting of Interest Groups, and self-selected discussions on hot topics that emerge during the conference.</span></p>
+    <p><span style="font-weight: 400;">The programme welcomes contributions from all those working on, or with, any music encoding. In addition, the Conference serves as a focus event for the Music Encoding Initiative community, with its annual community meeting scheduled the day following the main programme, on Saturday 1 June.</span></p>
+
+    <h4>Topics</h4>
+    <p><span style="font-weight: 400;">The conference welcomes contributions from all those who are developing or applying music encodings in their work and research. Topics include, but are not limited to:</span>
+    <ul>
+        <li><span style="font-weight: 400;">data structures for music encoding</span></li>
+        <li><span style="font-weight: 400;">music encoding standardisation</span></li>
+        <li><span style="font-weight: 400;">music encoding interoperability / universality</span></li>
+        <li><span style="font-weight: 400;">methodologies for encoding, music editing, description and analysis</span></li>
+        <li><span style="font-weight: 400;">computational analysis of encoded music</span></li>
+        <li><span style="font-weight: 400;">rendering of symbolic music data in audio and graphical forms</span></li>
+        <li><span style="font-weight: 400;">conceptual encoding of relationships between multimodal music forms (e.g. symbolic music data, encoded text, facsimile images, audio)</span></li>
+        <li><span style="font-weight: 400;">capture, interchange, and re-purposing of musical data and metadata</span></li>
+        <li><span style="font-weight: 400;">ontologies, authority files, and linked data in music encoding and description</span></li>
+        <li><span style="font-weight: 400;">(symbolic) music information retrieval using music encoding</span></li>
+        <li><span style="font-weight: 400;">evaluation of music encodings</span></li>
+        <li><span style="font-weight: 400;">best practice in approaches to music encoding</span></li>
+    </ul>
+    <p><span style="font-weight: 400;">and the use or application of music encodings in:</span>
+        <ul>
+            <li><span style="font-weight: 400;">music theory and analysis</span></li>
+            <li><span style="font-weight: 400;">digital musicology and, more broadly, digital humanities</span></li>
+            <li><span style="font-weight: 400;">music digital libraries</span></li>
+            <li><span style="font-weight: 400;">digital editions</span></li>
+            <li><span style="font-weight: 400;">bibliographies and bibliographic studies</span></li>
+            <li><span style="font-weight: 400;">catalogues</span></li>
+            <li><span style="font-weight: 400;">collection management</span></li>
+            <li><span style="font-weight: 400;">composition</span></li>
+            <li><span style="font-weight: 400;">performance</span></li>
+            <li><span style="font-weight: 400;">teaching and learning</span></li>
+            <li><span style="font-weight: 400;">search and browsing</span></li>
+            <li><span style="font-weight: 400;">multimedia music presentation, exploration, and exhibition</span></li>
+        </ul>
+
+    <h4>Submissions</h4>
+        <p><span style="font-weight: 400;">The Music Encoding Conference 2019 calls for paper, poster, panel, and workshop proposals. All submissions will be reviewed by 2-3 members of the programme committee before acceptance.</span></p>
+        <p><span style="font-weight: 400;">Authors are invited to upload their anonymized submission for review to our Conftool website: <a href="https://www.conftool.net/music-encoding2019">www.conftool.net/music-encoding2019</a></span></p>
+        <p><span style="font-weight: 400;">The deadline for all submissions is <b>16 December 2018</b> (see IMPORTANT DATES above). Conftool accepts abstracts as PDF files only. The submission to Conftool must include:
+            <ul>
+                <li><span style="font-weight: 400;">name(s) of author(s)</span></li>
+                <li><span style="font-weight: 400;">title</span></li>
+                <li><span style="font-weight: 400;">abstract (see below for maximum lengths)</span></li>
+                <li><span style="font-weight: 400;">current or most recent institutional affiliation of author(s) and e-mail address</span></li>
+                <li><span style="font-weight: 400;">proposal type: paper, poster, panel session, or workshop</span></li>
+                <li><span style="font-weight: 400;">all identifying information must be provided in the corresponding fields of Conftool only, while the submitted PDF must anonymize the author’s details.</span></li>
+            </ul>
+        </span></p>
+        <p><span style="font-weight: 400;">Paper and poster proposals must include an abstract of no more than 1000 words. Relevant bibliographic references may be included above this limit (i.e. will not be counted within the 1000 word limit). Please also include a short statement regarding your current interests related to music encoding.</span></p>
+        <p><span style="font-weight: 400;">Panel discussion proposal abstracts must be no longer than 2000 words, and describe the topic and nature of the discussion, along with short biographies of the participants. Panel discussions are not expected to be a set of papers which could otherwise be submitted as individual papers.</span></p>
+        <p><span style="font-weight: 400;">Proposals for half- or full-day pre-conference workshops, to be held on May 29th, should include the workshop’s proposed duration, as well as its logistical and technical requirements.</span></p>
+        <p><span style="font-weight: 400;">The maximum size for the posters is DIN A0, which is 841 x 1189 mm or 33.1 x 46.8 inches. Please use portrait format for your posters!</span></p>
+        <p><span style="font-weight: 400;">If you have any questions, please e-mail <a href="mailto:mec@oeaw.ac.at">mec@oeaw.ac.at</a>.</span></p>
+
+    <h4>Program Committee</h4>
+    <ul>
+     	<li><span style="font-weight: 400;">Tim Crawford, Goldsmiths, University of London</span></li>
+        <li><span style="font-weight: 400;">Johanna Devaney, Brooklyn College, CUNY</span></li>
+        <li><span style="font-weight: 400;">Andrew Hankinson, Bodleian Libraries</span></li>
+        <li><span style="font-weight: 400;">Anna E. Kijas, Boston College</span></li>
+        <li><span style="font-weight: 400;">Kevin R. Page, chair, University of Oxford</span></li>
+        <li><span style="font-weight: 400;">Klaus Rettinghaus, Saxon Academy of Sciences and Humanities in Leipzig</span></li>
+        <li><span style="font-weight: 400;">Agnes Seipelt, University of Paderborn</span></li>
+        <li><span style="font-weight: 400;">Raffaele Viglianti, University of Maryland</span></li>
+    </ul>
+    <h4>Local organizing Committee</h4>
+    <ul>
+        <li><span style="font-weight: 400;">Norbert Dubowy, Mozart Institute, Mozarteum Foundation Salzburg</span></li>
+        <li><span style="font-weight: 400;">Robert Klugseder, chair, Institute for History of Art and Musicology, Austrian Academy of Sciences</span></li>
+        <li><span style="font-weight: 400;">Franz Kelnreiter, Mozart Institute, Mozarteum Foundation Salzburg</span></li>
+        <li><span style="font-weight: 400;">Clemens Gubsch, Institute for History of Art and Musicology, Austrian Academy of Sciences</span></li>
+        <li><span style="font-weight: 400;">Paul Gulewycz, Institute for History of Art and Musicology, Austrian Academy of Sciences</span></li>
+    </ul>
+</div>
+
+    
+  </div>
+  <div class="column col-2 hide-sm">
+    <ul class="menu">
+      
+          <li class="menu-item ">
+            <a href="/conference/2019/call/"  class="active" >Call for proposals</a>
+          </li>
+      
+          <li class="menu-item ">
+            <a href="/conference/2019/green_meeting/" >Green Meeting</a>
+          </li>
+      
+          <li class="menu-item ">
+            <a href="/conference/2019/" >Music Encoding Conference 2019</a>
+          </li>
+      
+          <li class="menu-item ">
+            <a href="/conference/2019/maps/" >Maps</a>
+          </li>
+      
+          <li class="menu-item ">
+            <a href="/conference/2019/people/" >Personnel</a>
+          </li>
+      
+          <li class="menu-item ">
+            <a href="/conference/2019/program/" >Program</a>
+          </li>
+      
+          <li class="menu-item ">
+            <a href="/conference/2019/travel/" >Travel and Accommodation</a>
+          </li>
+      
+    </ul>
+  </div>
+</div>
+
+    </div>
+
+    <!-- Make sure to mirror changes in the guidelines repository in _include/footer.html when necessary -->
+<footer>
+  <div class="container">
+    <div class="columns institutions">
+      <div class="column col-12 text-center">
+        <a class="institutionsLink" target="_blank" href="https://www.adwmainz.de">
+          <img src="/pix/akademie-small.png" alt="Akademie der Wissenschaften | Mainz" />
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="text-center">
+    <a class="footerLinks" href="/">Home</a> | <a class="footerLinks" href="/community/community-contacts.html">Contact</a><br/>
+    <small>© Music Encoding Initiative 2024</small>
+  </div>
+</footer>
+
+
+  </body>
+
+</html>

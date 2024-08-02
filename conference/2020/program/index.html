@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Virtual Conference Program</title>
+    <meta name="description" content="">
+
+    <link rel="stylesheet" href="/css/main.css">
+    <!-- syntax highlighting CSS -->
+    <link rel="stylesheet" href="/css/syntax.css" />
+    <script type="text/javascript" src="/js/carousel.js"></script>
+    <script type="text/javascript">
+      document.addEventListener("DOMContentLoaded", event => {
+        const indexCarousel = document.getElementById("index-carousel");
+        if (indexCarousel !== null) {
+          animateCarousel(indexCarousel, 3000);
+          indexCarousel.addEventListener("mouseover", event => {
+            stopCarouselAnimation(indexCarousel);
+          });
+          indexCarousel.addEventListener("mouseout", event => {
+            animateCarousel(indexCarousel, 3000);
+          });
+        }
+      });
+    </script>
+</head>
+
+
+  <body>
+
+    <!-- Make sure to mirror changes in the guidelines repository in _include/header.html when necessary -->
+<header class="navbar">
+  <div class="navbar-section">
+    <a class="navbar-brand" href="https://music-encoding.org">
+      <img src="/pix/meilogo-inverted.png" alt="MEI logo"/>
+    </a>
+    <div class="hide-lg">
+      
+    <div class="dropdown dropdownCustomMenuToggle">
+        
+            <a href="/about" class="btn btn-link top-menu-link" tabindex="0">
+                About
+            </a>
+        
+    </div>
+
+    <div class="dropdown dropdownCustomMenuToggle">
+        
+            <a href="#" class="btn btn-link dropdown-toggle top-menu-link" tabindex="1">
+                Community <i class="icon icon-caret"></i>
+            </a>
+
+            
+             <ul class="menu"> 
+                <li class="menu-item">
+                    <a href="/community/projects-users.html" class="btn btn-link text-left menu-link">
+                        Projects / Users
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/community/news-events.html" class="btn btn-link text-left menu-link">
+                        News / Events
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/community/community-contacts.html" class="btn btn-link text-left menu-link">
+                        Community Contacts
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/community/interest-groups.html" class="btn btn-link text-left menu-link">
+                        Interest Groups
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/community/technical-team.html" class="btn btn-link text-left menu-link">
+                        Technical Team
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/community/mei-board.html" class="btn btn-link text-left menu-link">
+                        MEI Board
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/community/mei-by-laws.html" class="btn btn-link text-left menu-link">
+                        MEI By-laws
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/community/code-of-conduct.html" class="btn btn-link text-left menu-link">
+                        Code of Conduct
+                    </a>
+                </li>
+                 </ul> 
+            
+
+        
+    </div>
+
+    <div class="dropdown dropdownCustomMenuToggle">
+        
+            <a href="#" class="btn btn-link dropdown-toggle top-menu-link" tabindex="2">
+                Conference <i class="icon icon-caret"></i>
+            </a>
+
+            
+             <ul class="menu"> 
+                <li class="menu-item">
+                    <a href="/conference/2024" class="btn btn-link text-left menu-link">
+                        MEC 2024
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/conference/past.html" class="btn btn-link text-left menu-link">
+                        Past Conferences
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/conference/proceedings.html" class="btn btn-link text-left menu-link">
+                        Proceedings
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/conference/awards.html" class="btn btn-link text-left menu-link">
+                        MEC Awards
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/conference/hosting-guidelines.html" class="btn btn-link text-left menu-link">
+                        Hosting Guidelines
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/conference/code-of-conduct.html" class="btn btn-link text-left menu-link">
+                        Code of conduct
+                    </a>
+                </li>
+                 </ul> 
+            
+
+        
+    </div>
+
+    <div class="dropdown dropdownCustomMenuToggle">
+        
+            <a href="#" class="btn btn-link dropdown-toggle top-menu-link" tabindex="3">
+                Resources <i class="icon icon-caret"></i>
+            </a>
+
+            
+             <ul class="menu"> 
+                <li class="menu-item">
+                    <a href="/resources/background.html" class="btn btn-link text-left menu-link">
+                        Background
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/resources/bibliography.html" class="btn btn-link text-left menu-link">
+                        Bibliography
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/resources/pedagogy.html" class="btn btn-link text-left menu-link">
+                        Pedagogy & Praxis
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/resources/schemas.html" class="btn btn-link text-left menu-link">
+                        Schemas and Namespace
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/resources/tools.html" class="btn btn-link text-left menu-link">
+                        Tools
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/resources/tutorials.html" class="btn btn-link text-left menu-link">
+                        Tutorials
+                    </a>
+                </li>
+                 </ul> 
+            
+
+        
+    </div>
+
+    <div class="dropdown dropdownCustomMenuToggle">
+        
+            <a href="#" class="btn btn-link dropdown-toggle top-menu-link" tabindex="4">
+                Documentation <i class="icon icon-caret"></i>
+            </a>
+
+            
+             <ul class="menu"> 
+                <li class="menu-item">
+                    <a href="/guidelines/v5" class="btn btn-link text-left menu-link">
+                        MEI 5 (latest release)
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/guidelines/dev" class="btn btn-link text-left menu-link">
+                        Development version
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/guidelines/v4" class="btn btn-link text-left menu-link">
+                        MEI 4
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/guidelines/v3" class="btn btn-link text-left menu-link">
+                        MEI 3
+                    </a>
+                </li>
+                 </ul> 
+            
+
+        
+    </div>
+
+    <div class="dropdown dropdownCustomMenuToggle">
+        
+            <a href="/archive" class="btn btn-link top-menu-link" tabindex="5">
+                Archive
+            </a>
+        
+    </div>
+
+
+    </div>
+  </div>
+  <div class="navbar-section" id="socialLinks">
+    <a class="twitterLink" target="_blank" href="https://twitter.com/MusicEncoding">
+      <img src="/pix/twitter.png" alt="Twitter" class="logo"/>
+    </a>
+    <a class="githubLink" target="_blank" href="https://github.com/music-encoding">
+      <img src="/pix/github.png" alt="GitHub" class="logo"/>
+    </a>
+    <a class="slackLink" target="_blank" href="https://music-encoding.slack.com/">
+      <img src="/pix/slack.png" alt="Slack" class="logo"/>
+    </a>
+  </div>
+    <div id="menu-accordion" class="accordion-container dropdown-toggle show-lg column col-12">
+  <div class="accordion">
+    <input id="accordion-toggle" type="checkbox" name="accordion-checkbox" hidden=""/>
+    <label class="accordion-header c-hand" for="accordion-toggle">
+      <i class="icon icon-menu"></i>
+    </label>
+
+    <div class="accordion-body">
+      <ul class="menu menu-nav">
+        
+        <li class="menu-item">
+          <div class="accordion menu">
+            <input id="accordion-About" type="checkbox" name="accordion-checkbox" hidden=""/>
+            <label class="accordion-header c-hand" for="accordion-About">
+              
+                  <a href="/about">
+                      About
+                  </a>
+              
+            </label>
+            
+          </div>
+        </li>
+        
+        <li class="menu-item">
+          <div class="accordion menu">
+            <input id="accordion-Community" type="checkbox" name="accordion-checkbox" hidden=""/>
+            <label class="accordion-header c-hand" for="accordion-Community">
+              
+                Community
+              
+            </label>
+            
+            <div class="accordion-body">
+              <ul class="menu menu-nav">
+                
+                   <li><ul class="menu"> 
+                  <li class="menu-item"><a href="/community/projects-users.html">Projects / Users</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/community/news-events.html">News / Events</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/community/community-contacts.html">Community Contacts</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/community/interest-groups.html">Interest Groups</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/community/technical-team.html">Technical Team</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/community/mei-board.html">MEI Board</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/community/mei-by-laws.html">MEI By-laws</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/community/code-of-conduct.html">Code of Conduct</a></li>
+                   </ul></li> 
+                
+              </ul>
+            </div>
+            
+          </div>
+        </li>
+        
+        <li class="menu-item">
+          <div class="accordion menu">
+            <input id="accordion-Conference" type="checkbox" name="accordion-checkbox" hidden=""/>
+            <label class="accordion-header c-hand" for="accordion-Conference">
+              
+                Conference
+              
+            </label>
+            
+            <div class="accordion-body">
+              <ul class="menu menu-nav">
+                
+                   <li><ul class="menu"> 
+                  <li class="menu-item"><a href="/conference/2024">MEC 2024</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/conference/past.html">Past Conferences</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/conference/proceedings.html">Proceedings</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/conference/awards.html">MEC Awards</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/conference/hosting-guidelines.html">Hosting Guidelines</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/conference/code-of-conduct.html">Code of conduct</a></li>
+                   </ul></li> 
+                
+              </ul>
+            </div>
+            
+          </div>
+        </li>
+        
+        <li class="menu-item">
+          <div class="accordion menu">
+            <input id="accordion-Resources" type="checkbox" name="accordion-checkbox" hidden=""/>
+            <label class="accordion-header c-hand" for="accordion-Resources">
+              
+                Resources
+              
+            </label>
+            
+            <div class="accordion-body">
+              <ul class="menu menu-nav">
+                
+                   <li><ul class="menu"> 
+                  <li class="menu-item"><a href="/resources/background.html">Background</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/resources/bibliography.html">Bibliography</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/resources/pedagogy.html">Pedagogy & Praxis</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/resources/schemas.html">Schemas and Namespace</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/resources/tools.html">Tools</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/resources/tutorials.html">Tutorials</a></li>
+                   </ul></li> 
+                
+              </ul>
+            </div>
+            
+          </div>
+        </li>
+        
+        <li class="menu-item">
+          <div class="accordion menu">
+            <input id="accordion-Documentation" type="checkbox" name="accordion-checkbox" hidden=""/>
+            <label class="accordion-header c-hand" for="accordion-Documentation">
+              
+                Documentation
+              
+            </label>
+            
+            <div class="accordion-body">
+              <ul class="menu menu-nav">
+                
+                   <li><ul class="menu"> 
+                  <li class="menu-item"><a href="/guidelines/v5">MEI 5 (latest release)</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/guidelines/dev">Development version</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/guidelines/v4">MEI 4</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/guidelines/v3">MEI 3</a></li>
+                   </ul></li> 
+                
+              </ul>
+            </div>
+            
+          </div>
+        </li>
+        
+        <li class="menu-item">
+          <div class="accordion menu">
+            <input id="accordion-Archive" type="checkbox" name="accordion-checkbox" hidden=""/>
+            <label class="accordion-header c-hand" for="accordion-Archive">
+              
+                  <a href="/archive">
+                      Archive
+                  </a>
+              
+            </label>
+            
+          </div>
+        </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+
+</header>
+
+
+    <div class="container grid-xl content">
+        
+<div class="columns">
+  <div class="column col-10 col-sm-12">
+    
+      <div class="dropdown col-sm-1 show-sm">
+        <div class="rounded bg-gray text-center my-1">
+          <a href="#" tabindex="1" class="btn btn-primary dropdown-toggle btn-lg" id="MEC2020-menuBtn">
+            <i class="icon icon-menu"></i>
+          </a>
+          <ul class="menu text-left" id="MEC2020-menu">
+            
+              <li class="menu-item ">
+                <a href="/conference/2020/call/">Call for proposals</a>
+              </li>
+            
+              <li class="menu-item ">
+                <a href="/conference/2020/code-of-conduct/">Code of Conduct</a>
+              </li>
+            
+              <li class="menu-item ">
+                <a href="/conference/2020/covid/">Covid-19 Update</a>
+              </li>
+            
+              <li class="menu-item ">
+                <a href="/conference/2020/">Music Encoding Conference 2020</a>
+              </li>
+            
+              <li class="menu-item ">
+                <a href="/conference/2020/keynotes/">Keynote videos</a>
+              </li>
+            
+              <li class="menu-item ">
+                <a href="/conference/2020/people/">Personnel</a>
+              </li>
+            
+              <li class="menu-item ">
+                <a href="/conference/2020/program/">Virtual Conference Program</a>
+              </li>
+            
+              <li class="menu-item ">
+                <a href="/conference/2020/technology-plan/">Technology Plan</a>
+              </li>
+            
+          </ul>
+        </div>
+      </div>
+      <img src="/images/conference/2020/MEC4.jpg" class="img-responsive" alt="Music Encoding Conference, Tufts University, 26-29 May 2020"/>
+
+<div class="mec2020-page" style="margin-top:2em;">
+
+<h1>Virtual Conference Program</h1>
+
+<p>Registration for the Virtual Music Encoding Conference is free and is now open. Please register by May 19, 2020.</p>
+<p>Register online at <a href="https://www.conftool.net/music-encoding2020/index.php" target="_blank">https://www.conftool.net/music-encoding2020/index.php</a>. If you'd like to attend a workshop that is full, please include a note with your registration in case we can add more seats.</p>
+  <p>All registered participants will receive an email several days prior to the event with Zoom meeting details. Workshop participants will receive an additional email with details pertaining to their workshops. Paper and poster abstracts are <a href="https://drive.google.com/drive/folders/1kBtw6JZgFALPRy-uKgtoeo1GFMOLyuhH" target="_blank">available online in this folder</a> to enable wider access and more substantive discussion. Presentations will also be uploaded to the <a href="https://hcommons.org/groups/music-encoding-initiative/" target="_blank">Humanities Commons Music Encoding Initiative group</a> where they will be archived for the long-term.</p>
+
+<p>Please note that all times are <a href="https://www.timeanddate.com/worldclock/usa/boston" target="_blank">Eastern Daylight Time</a>. Technical assistance will be available on Wednesday and Thursday morning beginning at 9 AM (EDT).</p>
+  <p>Please review details about setting up and using technology for this conference on the <a href="https://music-encoding.org/conference/2020/technology-plan/" target="_blank">Technology Plan page</a>.</p>
+  <p>All attendees are expected to adhere to the conference <a href="https://music-encoding.org/conference/2020/code-of-conduct/">Code of Conduct</a>.</p>
+
+  <br/>
+
+<h3>Workshops, Tuesday 26 May 2020</h3>
+
+  <p>Workshop descriptions can be found on the registration page.</p>
+
+  <ul>
+    <li><strong>10:00 AM - 1:00 PM:</strong> Developing Verovio - <i>facilitated by Laurent Pugin, Craig Sapp, Werner Goebl, David Weigl, Klaus Rettinghaus</i></li>
+    <li><strong>10:00 AM - 1:00 PM:</strong> Introduction to Music Encoding Initiative (MEI) - <i>facilitated by Benjamin W. Bohl</i></li>
+    <li><strong>1:30 PM - 3:30 PM:</strong> Working with MEI Metadata - <i>facilitated by Margrethe Støkken Bue, Kristin Herold, Kristina Richts</i></li>
+  </ul>
+
+<br/>
+
+<h3>Wednesday 27 May 2020</h3>
+
+<p><strong>10:00 AM – 10:15 AM:</strong> Welcome, Bárbara Brizuela (Dean of Academic Affairs for Arts & Sciences), and Dorothy Meaney (Director of Tisch Library)</p>
+
+<p><strong>10:15 AM – 11:30 AM:</strong> Opening keynote, "The forgotten classroom? Bringing music encoding to a new generation," Dr. Timothy Duguid (University of Glasgow)</p>
+
+<p><strong>11:30 AM – 12:00 PM:</strong> Paper “Slam” Session #1</p>
+<ul>
+  <li>"IIIF-based lyric and neume editor for square-notation manuscripts" - <i>Juliette Regimbal, Gabriel Vigliensoni, Caitlin Hutnyk, Ichiro Fujinaga (Schulich School of Music, McGill University)</i></li>
+
+ <li>"Retrieving Music Semantics from Optical Music Recognition by Machine Translation" - <i>Martha E. Thomae (Schulich School of Music, McGill University); Antonio Ríos-Vila, Jorge Calvo-Zaragoza, David Rizo, José M. Iñesta (University of Alicante)</i></li>
+
+ <li>"Editing Italian Madrigals in the Digital World: The Tasso in Music Project" - <i>Emiliano Ricciardi (University of Massachusetts, Amherst); Craig Sapp (Stanford University)</i></li>
+
+<li>"Probstücke Digital" - <i>Niels Pfeffer (HMDK Stuttgart); Klaus Rettinghaus (Universität Leipzig)</i></li>
+
+ <li>"MEI and Verovio for MIR: A Minimal Computing Approach" - <i>Natalia Ermolaev (Princeton University); Mark Saccomano (Columbia University)</i></li>
+
+ <li>"Rehearsal encodings with a social life" - <i>David M. Weigl, Werner Goebl (University of Music and Performing Arts, Vienna)</i></li>
+
+ <li>"MIDI 2.0: the Benefits and the Challenges" - <i>Paul D. Lehrman (Tufts University)</i></li>
+
+ <li>"Preventing conversion failure across encoding formats: A transcription protocol and representation scheme considerations" (Poster) - <i>Emilia Parada-Cabaleiro, Álvaro Torrente (Complutense University of Madrid)</i></li>
+
+<li>"Integrating Score Rendition in the MEI Garage" (Poster) - <i>Klaus Rettinghaus (Universität Leipzig); Daniel Röwenstrunk, Johannes Kepper (University of Paderborn)</i></li>
+</ul>
+
+<p><strong>12:00 PM – 12:15 PM:</strong> Short Break</p>
+
+<p><strong>12:15 PM – 1:15 PM:</strong> Individual Slack Discussion Sessions</p>
+  <ul>
+    <li><strong>#mec2020-images-OMR</strong> 1)"IIIF-based lyric and neume editor for square-notation manuscripts"; 2)"Retrieving Music Semantics from Optical Music Recognition by Machine Translation"</li>
+
+    <li><strong>#mec2020-digital-editions</strong> 1)"Editing Italian Madrigals in the Digital World: The Tasso in Music Project"; 2)"Probstücke Digital"</li>
+
+    <li><strong>#mec2020-midi-rehearsal</strong> 1)"Rehearsal encodings with a social life"; 2)"MIDI 2.0: the Benefits and the Challenges"</li>
+
+    <li><strong>#mec2020-encoding-formats</strong> 1)"Integrating Score Rendition in the MEI Garage"; 2)"MEI and Verovio for MIR: A Minimal Computing Approach"; 3)"Preventing conversion failure across encoding formats: A transcription protocol and representation scheme considerations"</li>
+  </ul>
+
+<p><strong>1:30 PM – 2:00 PM:</strong> Break</p>
+
+<p><strong>2:00 PM – 3:00 PM:</strong> Community Meeting (Open to All)</p>
+
+<br/>
+
+<h3>Thursday 28 May 2020</h3>
+<p><strong>10:00 AM – 11:30 AM:</strong> Closing keynote, "Traversing Eighteenth-Century Networks of Operatic Fame," Dr. Estelle Joubert (Dalhousie University)</p>
+
+<p><strong>11:30 AM – 12:00 PM:</strong> Paper “Slam” Session #2</p>
+<ul>
+  <li>"Multimedia from the 17th-Century Book to the 21st-Century Web: a playable digital edition of Michael Maier’s "Atalanta fugiens" (Poster) - <i>Patrick Rashleigh, Crystal Brusch (Brown University Library)</i></li>
+
+ <li>"Implementing the Enhancing Music Addressability API for MusicXML" (Poster) - <i>Kevin Kuo and Raffaele Viglianti (University of Maryland)</i></li>
+
+ <li>"MusicDiff: A Diff Tool for MEI" - <i>Johannes Kepper, Agnes Seipelt, Kristin Herold, Ran Mo (Musikwissenschaftliches Seminar Detmold / Paderborn)</i></li>
+
+<li>"Beethovens Werkstatt on the test bench" - <i>Salome Obert (Musikwissenschaftliches Seminar Detmold/Paderborn | Beethovens Werkstatt)</i></li>
+
+ <li>"Figured Bass Encodings for Bach Chorales in Various Symbolic Formats: A Case Study" - <i>Yaolong Ju, Sylvain Margot (McGill University); Cory McKay (Marianopolis College); Ichiro Fujinaga (McGill University)</i></li>
+
+ <li>“Crafting TabMEI, a module for encoding instrumental tablatures” - <i>Reinier de Valk, David Lewis, Tim Crawford (Goldsmiths, University of London); Ryaan Ahmed (Digital Humanities, MIT); Laurent Pugin (Répertoire International des Sources Musicales, Switzerland); Johannes Kepper (University of Paderborn)</i></li>
+
+  <li>"Harmalysis: A language for the annotation of roman numerals in symbolic music representations" - <i>Néstor Nápoles López, Ichiro Fujinaga (McGill University, CIRMMT)</i></li>
+
+ <li>"Do visual features matter? Studies in phylogenetic analysis of mensural music" - <i>Anna Plaksin (Max Weber Stiftung)</i></li>
+
+  <li>"Computer-Aided Analysis Across the Tonal Divide: Cross-Stylistic Applications of the Discrete Fourier Transform" - <i>Jennifer Diane Harding (Florida State University)</i></li>
+
+<li>“Next Steps for Measuring Polyphony: A Prototype Editor for Encoding Mensural Music” (Poster) - <i>Karen Desmond (Brandeis University); Andrew Hankinson (Bodleian Libraries, University of Oxford); Laurent Pugin (Répertoire International des Sources Musicales, Switzerland); Juliette Regimbal (McGill University); Craig Sapp (Stanford University); Martha Thomae Elias (McGill University)</i></li>
+</ul>
+
+<p><strong>12:00 PM – 12:15 PM:</strong> Short Break</p>
+
+<p><strong>12:15 PM – 1:15 PM:</strong> Individual Slack Discussion Sessions</p>
+    <ul>
+      <li><strong>#mec2020-addressability-digital-editions</strong> 1)"Multimedia from the 17th-Century Book to the 21st-Century Web: a playable digital edition of Michael Maier’s "Atalanta fugiens""; 2)"Implementing the Enhancing Music Addressability API for MusicXML"</li>
+      <li><strong>#mec2020-beethoven</strong> 1)"MusicDiff: A Diff Tool for MEI"; 2)"Beethovens Werkstatt on the test bench"</li>
+      <li><strong>#mec2020-analysis</strong> 1)"Harmalysis: A language for the annotation of roman numerals in symbolic music representations"; 2)"Computer-Aided Analysis Across the Tonal Divide: Cross-Stylistic Applications of the Discrete Fourier Transform"; 3)"Figured Bass Encodings for Bach Chorales in Various Symbolic Formats: A Case Study"</li>
+      <li><strong>#mec2020-tablature-mensural</strong> 1)"Do visual features matter? Studies in phylogenetic analysis of mensural music"; 2)“Next Steps for Measuring Polyphony: A Prototype Editor for Encoding Mensural Music”; 3)“Crafting TabMEI, a module for encoding instrumental tablatures”</li>
+    </ul>
+
+<p><strong>1:30 PM – 2:00 PM:</strong> Break</p>
+
+  <p><strong>2:00 PM:</strong> Brief Town Hall Meeting</p>
+
+  <p><strong>2:30 PM:</strong> Neumes Interest Group (Chair, Ichiro Fujinaga), Slack: #neumes-ig</p>
+
+<br/>
+
+<h3>Friday 29 May 2020</h3>
+<p><strong>10:00 AM:</strong> Brief Town Hall Meeting</p>
+<p><strong>10:30 AM:</strong> Metadata & Cataloging Interest Group (Co-chairs, Margrethe Støkken Bue, Kristina Richts), Slack: #metadata-ig</p>
+<p><strong>10:30 AM:</strong> Tablatures Interest Group (Co-chairs, David Lewis, Reinier de Valk), Slack: #tablature</p>
+
+
+<p><strong>2:00 PM:</strong> Brief Town Hall Meeting</p>
+ <p><strong>2:30 PM:</strong> Mensural Interest Group (Chair, Giuliano Di Bacco), Slack: #mensural-ig</p>
+<br/>
+
+<h3>Keynote Speaker Biographies</h3>
+<p><img src="/images/conference/2020/Duguid.JPG" class="img-responsive" alt="headshot of Dr. Timothy Duguid" width="20%" align="left" style="margin:0px 15px"> <strong><a href="https://www.gla.ac.uk/schools/humanities/staff/timduguid/" target="_blank">Dr. Timothy Duguid</a></strong> is a lecturer in Digital Humanities and Information Studies at the University of Glasgow. His current research interests lie in the intersection between digital humanities and historical musicology. In particular, he is focused on discoverability for digital research outputs in music, working on a virtual research environment called <a href="https://muso.arts.gla.ac.uk/" target="_blank">Music Scholarship Online</a> (MuSO) that will draw together published scholarship, digitized archival materials, and born-digital scholarship into a single online portal. Duguid is also working on a digital edition of the Scottish metrical psalms dating from 1564 to 1640. His work on Reformation history and early modern music resulted in the creation of a performing edition of the Wode Psalter, an early modern music collection, and he was associate editor for the digital project <a href="http://www.marianexile.div.ed.ac.uk/" target="_blank">“Letters in Exile: Documents from the Marian Exile”</a>.</p>
+<br>
+  <br>
+  <br>
+  <br>
+<p><img src="/images/conference/2020/Joubert.jpeg" class="img-responsive" alt="headshot of Dr. Estelle Joubert" width="25%" align="left" style="margin:0px 15px"> <strong><a href="https://www.dal.ca/faculty/arts/school-of-performing-arts/faculty-staff/our-faculty/musicology/estelle-joubert.html" target="_blank">Dr. Estelle Joubert</a></strong> is Associate Professor of Musicology at the Fountain School of Performing Arts, Dalhousie University.  Her research interests include opera and political theory, music in the global early modern period and computational approaches in musicology. From 2015-2019 Joubert was principal investigator for a large-scale research project, <a href="http://operacanon.io/" target="_blank">Opera and the Musical Canon, 1750-1815</a>, funded by a SSHRC Insight Grant.  Current projects include a monograph entitled German Opera and the Politics of Sensation, 1750-1815, the seventeenth- and eighteenth-century volume of A Cultural History of Music co-edited with David R. M. Irving, and graph database visualization software to analyze operatic fame in the eighteenth century.</p>
+
+  </div>
+
+    
+  </div>
+  <div class="column col-2 hide-sm">
+    <ul class="menu">
+      
+          <li class="menu-item ">
+            <a href="/conference/2020/call/" >Call for proposals</a>
+          </li>
+      
+          <li class="menu-item ">
+            <a href="/conference/2020/code-of-conduct/" >Code of Conduct</a>
+          </li>
+      
+          <li class="menu-item ">
+            <a href="/conference/2020/covid/" >Covid-19 Update</a>
+          </li>
+      
+          <li class="menu-item ">
+            <a href="/conference/2020/" >Music Encoding Conference 2020</a>
+          </li>
+      
+          <li class="menu-item ">
+            <a href="/conference/2020/keynotes/" >Keynote videos</a>
+          </li>
+      
+          <li class="menu-item ">
+            <a href="/conference/2020/people/" >Personnel</a>
+          </li>
+      
+          <li class="menu-item ">
+            <a href="/conference/2020/program/"  class="active" >Virtual Conference Program</a>
+          </li>
+      
+          <li class="menu-item ">
+            <a href="/conference/2020/technology-plan/" >Technology Plan</a>
+          </li>
+      
+    </ul>
+  </div>
+</div>
+
+    </div>
+
+    <!-- Make sure to mirror changes in the guidelines repository in _include/footer.html when necessary -->
+<footer>
+  <div class="container">
+    <div class="columns institutions">
+      <div class="column col-12 text-center">
+        <a class="institutionsLink" target="_blank" href="https://www.adwmainz.de">
+          <img src="/pix/akademie-small.png" alt="Akademie der Wissenschaften | Mainz" />
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="text-center">
+    <a class="footerLinks" href="/">Home</a> | <a class="footerLinks" href="/community/community-contacts.html">Contact</a><br/>
+    <small>© Music Encoding Initiative 2024</small>
+  </div>
+</footer>
+
+
+  </body>
+
+</html>

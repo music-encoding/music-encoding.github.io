@@ -1,0 +1,58 @@
+<div>
+    <p>
+        Macros are the last part of ODD that is needed to fully understand the specifications of MEI, and they are clearly the
+        least important aspect. Macros are placeholders for elements which can be added to the <em>&lt;content&gt;</em>
+        of an element in one go. The most-used macro is probably <em>macro.struc-unstrucContent</em>, which is defined as follows:
+    </p>
+    <pre class="codeblock">&lt;macroSpec ident="macro.struc-unstrucContent" module="MEI.shared" type="pe"&gt;
+        &lt;desc&gt;Provides a choice between structured and unstructured/mixed content.&lt;/desc&gt;
+        &lt;content&gt;
+            &lt;rng:choice&gt;
+                &lt;rng:group&gt;
+                    &lt;rng:zeroOrMore&gt;
+                        &lt;rng:ref name="model.headLike" /&gt;
+                    &lt;/rng:zeroOrMore&gt;
+                    &lt;rng:zeroOrMore&gt;
+                        &lt;rng:ref name="model.pLike" /&gt;
+                    &lt;/rng:zeroOrMore&gt;
+                &lt;/rng:group&gt;
+                &lt;rng:zeroOrMore&gt;
+                    &lt;rng:choice&gt;
+                        &lt;rng:text/&gt;
+                        &lt;rng:ref name="model.textPhraseLike.limited" /&gt;
+                    &lt;/rng:choice&gt;
+                &lt;/rng:zeroOrMore&gt;
+            &lt;/rng:choice&gt;
+        &lt;/content&gt;
+    &lt;/macroSpec&gt;</pre>
+    <p>
+        Macros again use the <a href="https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-macroSpec.html" target="_blank" rel="noopener, noreferrer"><em>&lt;macroSpec&gt;</em></a>
+        element, but this time with a <em>@type</em> with value "<em>pe</em>". The names, which are again stored in <em>@ident</em>,
+        are prefixed with a "<em>macro.</em>", and of course we have a <em>&lt;desc&gt;</em> again. The main difference to <em>model
+        classes</em> is that <em>macro</em>s do not substitute for elements alone, but also for more complex rules about combinations
+        of elements. Here, <em>macro.struc-unstrucContent</em> provides a good example. It forces the <em>user</em> to decide between 
+        a structured encoding model (using a dedicated <em>&lt;head&gt;</em> element, followed by a series of paragraphs), or an 
+        unstructured model (where textual content is directly inserted and may be marked up with a variety of elements). It can be used 
+        inside elements like <em>&lt;watermark&gt;</em>, and is helpful to avoid having to redefine the same combination of elements in
+        numerous places.
+    </p>    
+    <pre class="codeblock">&lt;elementSpec ident="watermark" module="MEI.header"&gt;
+    &lt;desc&gt;Contains a description of a watermark or similar device.&lt;/desc&gt;
+    &lt;classes&gt;
+        &lt;!-- memberships skipped for brevity --&gt;
+    &lt;/classes&gt;
+    &lt;content&gt;
+        &lt;rng:ref name="macro.struc-unstrucContent" /&gt;
+    &lt;/content&gt;
+    &lt;!-- remarks skipped for brevity --&gt;
+&lt;/elementSpec&gt;</pre>
+    <p>
+        In essence, the <em>&lt;rng:ref&gt;</em> inside the <em>&lt;elementSpec&gt;</em> is just replaced with the child elements of
+        the <em>&lt;macroSpec&gt;</em>'s <em>&lt;content&gt;</em>, so that it's possible to combine a <em>macro</em> with other contents. <em>Macros</em>
+        therefore serve as predefined, re-usable spec blocks.
+    </p>
+    <p>
+        Like I mentioned earlier, <em>macros</em> are not the most important aspect of ODD from an MEI perspective, and so you should have 
+        been able to get all that's necessary already. That means you're done with this final step – let's <strong>continue</strong> for some closing remarks…
+    </p>
+</div>

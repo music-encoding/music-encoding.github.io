@@ -1,0 +1,8 @@
+<measure n="1">
+    <staff n="1">
+        <layer>
+            <note pname="e" oct="4" dur="4" />
+            <!-- Tu codificación debe reemplazar esta línea -->
+        </layer>
+    </staff>
+</measure>

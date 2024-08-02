@@ -1,0 +1,122 @@
+.added {
+    color: #32c20e;
+    fill: #32c20e;
+}
+
+.removed {
+    color: #c4370a;
+    fill: #c4370a;
+}
+
+.casechanged, .changed {
+    color: #f5ab2f;/*#c47f0a;*/
+    fill: #f5ab2f;/*#c47f0a;*/
+}
+
+.unchanged {
+    color: #999999;
+    fill: #999999;
+}
+
+.attribute:before {
+    content: '@';
+}
+
+.block {
+    display: block;
+}
+
+table {
+    margin: 0 2rem 3rem;
+    border-collapse: collapse;
+}
+
+tr:nth-of-type(2n-1) {
+    background-color: #f5f5f5;
+}
+
+td {
+    vertical-align: top;
+    padding: .2rem .5rem .5rem .2rem;
+}
+
+td.desc {
+    width: 30%;
+}
+
+.ident {
+    font-weight: bold;
+}
+
+.module {
+    font-style: italic;
+}
+
+td.classes ul, td.content ul, td.atts ul {
+    margin: 0;
+    list-style-type: none;
+}
+
+td.classes ul li, td.content ul li, td.atts ul li {
+    position: relative;
+}
+
+td.classes ul li.added:before, td.content ul li.added:before, td.atts ul li.added:before {
+    content: '+';
+    position: absolute;
+    left: -1rem;
+}
+
+td.classes ul li.removed:before, td.content ul li.removed:before, td.atts ul li.removed:before {
+    content: '–';
+    position: absolute;
+    left: -1rem;
+}
+
+td.classes ul li.changed:before, td.content ul li.changed:before, td.atts ul li.changed:before {
+    content: '~';
+    position: absolute;
+    left: -1rem;
+}
+
+td.classes ul li.casechanged:before, td.content ul li.casechanged:before, td.atts ul li.casechanged:before {
+    content: '~';
+    position: absolute;
+    left: -1rem;
+}
+
+#chartArea {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    text-align: right;
+}
+
+#chartsBox {
+    border-left: .5px solid #999999;
+    border-bottom: .5px solid #999999;
+    border-right: .5px solid #999999;
+    border-radius: 0 0 8px 8px;
+    background-color: #ffffffe5;
+    margin: 0 1rem 1rem;
+    display: inline-block;
+}
+
+#chartsBox .sample {
+    padding: 0 .1rem; 
+    margin: 0 .2rem;
+    font-size: .7rem;
+}
+
+.chartBox {
+    display: inline-block;
+    margin: 1rem;
+}
+
+.chartBox label {
+    display: block;
+    font-size: .6rem;
+    text-align: center;
+    padding-bottom: .2rem;
+}
