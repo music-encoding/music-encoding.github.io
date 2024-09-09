@@ -36,6 +36,7 @@ The MEI Board manages the property and business of MEI. It promotes the developm
 * **Ichiro Fujinaga**, McGill University, Montréal (2015–2021)
 * **Axel Teich Geertinger**, Danish Centre for Music Editing, Royal Library, Copenhagen, (2015–2016)
 * **Andrew Hankinson**, Bodleian Library, Oxford (2017–2019)
+* **Kristina Richts-Matthaei**, Centre for Digital Music Documentation (CDMD), Academy of Sciences and Literature, Mainz (2015–2023)
 * **Perry Roland**, University of Virginia Library, Charlottesville (2015–2018, 2020–2022)
 * **Eleanor Selfridge-Field**, Center for Computer-Assisted Research in the Humanities, Stanford University (2015–2019)
 * **Martha Thomae**, McGill University, Montréal (2020–2022)
