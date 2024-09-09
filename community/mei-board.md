@@ -28,12 +28,6 @@ The MEI Board manages the property and business of MEI. It promotes the developm
 * **Anna E. Kijas (Administrative Chair)**, Lilly Music Library, Tufts University
 * **Klaus Rettinghaus**, Enote GmbH, Berlin
 
-### Term 2021–2023
-
-* **Stefan Münnich (Technical Co-Chair)**, University of Basel
-* **Laurent Pugin**, RISM Digital Center, Bern
-* **Kristina Richts-Matthaei**, Musikwissenschaftliches Seminar Detmold/Paderborn
-
 ### Previous Board Members
 
 * **Elsa De Luca**, Centro de Estudos de Sociologia e Estética Musical (CESEM), Universidade Nova de Lisboa, Lisboa (2019–2021)
