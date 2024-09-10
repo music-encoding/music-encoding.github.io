@@ -3,7 +3,7 @@
         Como hemos visto, ODD permite especificar qué elementos hijos exactos están permitidos dentro de un elemento. Esto permite un control muy preciso de la jerarquía MEI, pero a costa de listados muy detallados de lo que puede contener cada elemento. Esto no es especialmente fácil de mantener ni de seguir: algunos elementos de MEI pueden contener docenas de otros elementos, y comparar dos de estos elementos es bastante engorroso.
     </p>
     <p>
-        Entre otros, el elemento <a href="https://music-encoding.org/guidelines/v4/elements/castitem.html" target="_blank" rel="noopener, noreferrer">&lt;castItem&gt;</a> del último paso de este tutorial tenía un elemento hijo <a href="https://music-encoding.org/guidelines/v4/elements/role.html" target="_blank" rel="noopener, noreferrer">&lt;role&gt;</a>. La documentación de <em>&lt;role&gt;</em> enumera un total de 54 elementos hijos, además del contenido textual:
+        Entre otros, el elemento <a href="/guidelines/v5/elements/castItem.html" target="_blank" rel="noopener, noreferrer">&lt;castItem&gt;</a> del último paso de este tutorial tenía un elemento hijo <a href="/guidelines/v5/elements/role.html" target="_blank" rel="noopener, noreferrer">&lt;role&gt;</a>. La documentación de <em>&lt;role&gt;</em> enumera un total de 54 elementos hijos, además del contenido textual:
     </p>
     <div>
         <img style="width: 100%;" src="../tutorials/role-children.png"/>
@@ -45,7 +45,7 @@
         Una clase de modelo se codifica con un elemento <a href="https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-classSpec.html" target="_blank" rel="noopener, noreferrer">&lt;classSpec&gt;</a>, que tiene el atributo <strong>@type="model"</strong>. Al igual que los elementos, se identifica de forma única mediante el atributo <strong>@ident</strong>. Se asigna a uno de los módulos de MEI con el atributo <em>@module</em>. MEI sigue la convención de que todos los nombres de las clases de modelos llevan como prefijo la cadena "<em>model.</em>". También tienen siempre un <em>&lt;desc&gt;</em> con una breve explicación del propósito del grupo. Vamos a omitir los elementos <em>&lt;memberOf&gt;</em> en <em>&lt;classSpec&gt;</em> del ejemplo anterior por un momento, y vamos a ver cómo esos 54 elementos que hemos visto anteriormente están vinculados a <em>model.textPhraseLike.limited</em>. 
     </p>
     <p>
-        Si vamos a las Directrices MEI para <a href="https://music-encoding.org/guidelines/v4/model-classes/model.textphraselike.limited.html#members" target="_blank" rel="noopener, noreferrer">model.textPhraseLike.limited</a>, vemos que seis elementos son "<em>miembros</em>" directos de esta clase de modelo: <em>&lt;dedicatee&gt;</em>, <em>&lt;dimensions&gt;</em>, <em>&lt;extent&gt;</em>, <em>&lt;seg&gt;</em>, <em>&lt;symbol&gt;</em>, y <em>&lt;term&gt;</em>. Echemos un vistazo a <em>&lt;dedicatee&gt;</em>:
+        Si vamos a las Directrices MEI para <a href="/guidelines/v5/model-classes/model.textPhraseLike.limited.html#members" target="_blank" rel="noopener, noreferrer">model.textPhraseLike.limited</a>, vemos que seis elementos son "<em>miembros</em>" directos de esta clase de modelo: <em>&lt;dedicatee&gt;</em>, <em>&lt;dimensions&gt;</em>, <em>&lt;extent&gt;</em>, <em>&lt;seg&gt;</em>, <em>&lt;symbol&gt;</em>, y <em>&lt;term&gt;</em>. Echemos un vistazo a <em>&lt;dedicatee&gt;</em>:
     </p>
     <pre class="codeblock">&lt;elementSpec ident="dedicatee" module="MEI.shared"&gt;
     &lt;desc&gt;Entidad a la que se ofrece formalmente un trabajo creativo.&lt;/desc&gt;
@@ -73,7 +73,7 @@
         <img style="width: 100%;" src="../tutorials/role-children-byclass.png"/>
     </div>
     <p>
-        Vemos los seis hijos directos listados, pero también que <em>&lt;fig&gt;</em> aparece bajo la etiqueta <em>model.figureLike</em>, y <em>&lt;catchwords&gt;</em> y <em>&lt;fingerprint&gt;</em> provienen de <em>model.msInline</em>. <a href="https://music-encoding.org/guidelines/v4/elements/role.html#mayContain" target="_blank" rel="noopener, noreferrer">Este listado</a> continúa y explica el origen de los 54 elementos. Si echamos un vistazo a <em>model.figureLike</em>, vemos que esta clase tiene un <em>&lt;memberOf&gt;</em>, que apunta a <em>model.textPhraseLike.limited</em>:
+        Vemos los seis hijos directos listados, pero también que <em>&lt;fig&gt;</em> aparece bajo la etiqueta <em>model.figureLike</em>, y <em>&lt;catchwords&gt;</em> y <em>&lt;fingerprint&gt;</em> provienen de <em>model.msInline</em>. <a href="/guidelines/v5/elements/role.html#mayContain" target="_blank" rel="noopener, noreferrer">Este listado</a> continúa y explica el origen de los 54 elementos. Si echamos un vistazo a <em>model.figureLike</em>, vemos que esta clase tiene un <em>&lt;memberOf&gt;</em>, que apunta a <em>model.textPhraseLike.limited</em>:
     </p>
     <pre class="codeblock">&lt;classSpec ident="model.figureLike" module="MEI.figtable" type="model"&gt;
     &lt;desc&gt;Agrupa elementos que representan o contienen información gráfica, como una ilustración o una figura.&lt;/desc&gt;
