@@ -59,7 +59,7 @@ Financial revenue of MEI  (generated through membership fees, donations, grants
 
 ## 5 Board
 
-The property and business of MEI are managed by the [Board](https://music-encoding.org/community/mei-board.html). The broad role of the Board is to promote the development of MEI; oversee the activities of the [MEI Technical Team](https://music-encoding.org/community/technical-team.html); guide the development of the MEI conceptual model, [Guidelines](https://music-encoding.org/guidelines/v4/content/), and schemata; and act as a contact point for MEI-related activities.
+The property and business of MEI are managed by the [Board](https://music-encoding.org/community/mei-board.html). The broad role of the Board is to promote the development of MEI; oversee the activities of the [MEI Technical Team](https://music-encoding.org/community/technical-team.html); guide the development of the MEI conceptual model, [Guidelines](https://music-encoding.org/guidelines/), and schemata; and act as a contact point for MEI-related activities.
 
 Board members serve as such without remuneration.
 
