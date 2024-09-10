@@ -2,7 +2,7 @@
     <p>
         Most data types in ODD are following common, well-established concepts: There are integers, boolean values, strings, and 
         so on. Let's have a closer look at some of them. The <em>@n</em> attribute is defined within the 
-        <em><a href="https://music-encoding.org/guidelines/v4/attribute-classes/att.ninteger.html">att.nInteger</a></em> attribute 
+        <em><a href="/guidelines/v5/attribute-classes/att.nInteger.html">att.nInteger</a></em> attribute 
         class:        
     </p>
     <pre class="codeblock">&lt;attDef ident="n" usage="opt"&gt;
@@ -16,9 +16,9 @@
         RelaxNG. The <em>@maxOccurs</em> and <em>@minOccurs</em> attributes define how often a value of this type may be given. An 
         example for other values can be found for the <em>@staff</em> attribute defined in <em>att.staffIdent</em>. This attribute
         is used to associate 
-        <a href="https://music-encoding.org/guidelines/v4/content/introduction.html#eventsControlevents" target="_blank" rel="noopener, noreferrer">controlevents</a>
+        <a href="/guidelines/v5/content/introduction.html#eventsControlevents" target="_blank" rel="noopener, noreferrer">controlevents</a>
         with one or more staves, and may hold one or more integers. It uses 
-        <a href="https://music-encoding.org/guidelines/v4/attribute-classes/att.staffident.html" target="_blank" rel="noopener, noreferrer">the following markup</a> to achieve this:
+        <a href="/guidelines/v5/attribute-classes/att.staffIdent.html" target="_blank" rel="noopener, noreferrer">the following markup</a> to achieve this:
     </p>
     <pre class="codeblock">&lt;datatype maxOccurs="unbounded" minOccurs="1"&gt;
     &lt;rng:data type="positiveInteger"/&gt;
@@ -27,7 +27,7 @@
         In other cases, MEI defines its own datatypes. This is done with a
         <a href="https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-macroSpec.html" target="_blank" rel="noopener, noreferrer">&lt;macroSpec&gt;</a> element.
         Let's have a look at the 
-        <em><a href="https://music-encoding.org/guidelines/v4/data-types/data.barrendition.html" target="_blank" rel="noopener, noreferrer">data.BARRENDITION</a></em> 
+        <em><a href="/guidelines/v5/data-types/data.BARRENDITION.html" target="_blank" rel="noopener, noreferrer">data.BARRENDITION</a></em> 
         data type, which is used to define the appearance of barlines: 
     </p>
     <pre class="codeblock">&lt;macroSpec ident="data.BARRENDITION" module="MEI" type="dt"&gt;
@@ -81,7 +81,7 @@
     </p>
     <p>
         Like with <em>model</em> and <em>attribute classes</em>, data types may be nested. One example for this is the
-        <em><a href="https://music-encoding.org/guidelines/v4/data-types/data.noteheadmodifier.html" target="_blank" rel="noopener, noreferrer">data.NOTEHEADMODIFIER</a></em>
+        <em><a href="/guidelines/v5/data-types/data.NOTEHEADMODIFIER.html" target="_blank" rel="noopener, noreferrer">data.NOTEHEADMODIFIER</a></em>
         data type: 
     </p>
     <pre class="codeblock">&lt;macroSpec ident="data.NOTEHEADMODIFIER" module="MEI" type="dt"&gt;
@@ -100,9 +100,9 @@
     <p>
         One last data type that we'd like to introduce is <em>data.COLORVALUES</em>, which is used by <em>data.COLOR</em>, which
         in turn is used to control the values of attributes like <em>@color</em> (through 
-        <em><a href="https://music-encoding.org/guidelines/v4/attribute-classes/att.color.html" target="_blank" rel="noopener, noreferrer">att.color</a></em>) 
+        <em><a href="/guidelines/v5/attribute-classes/att.color.html" target="_blank" rel="noopener, noreferrer">att.color</a></em>) 
         or <em>@beam.color</em> (through 
-        <em><a href="https://music-encoding.org/guidelines/v4/attribute-classes/att.beaming.vis.html" target="_blank" rel="noopener, noreferrer">att.beaming.vis</a></em>).
+        <em><a href="/guidelines/v5/attribute-classes/att.beaming.vis.html" target="_blank" rel="noopener, noreferrer">att.beaming.vis</a></em>).
         It uses a set of <em>regular expressions</em> to control different color encoding mechanisms:
     </p>
     <pre class="codeblock">&lt;macroSpec ident="data.COLORVALUES" module="MEI" type="dt"&gt;

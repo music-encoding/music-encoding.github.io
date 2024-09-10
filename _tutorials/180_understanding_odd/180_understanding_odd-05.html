@@ -2,7 +2,7 @@
     <p>
         The most obvious building blocks for the MEI specification are the definitions of elements. They are done using the TEI's
         <a href="https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-elementSpec.html" target="_blank" rel="noopener, noreferrer">&lt;elementSpec&gt;</a> element.
-        Let's have a look at MEI's <a href="https://music-encoding.org/guidelines/v4/elements/castitem.html" target="_blank" rel="noopener, noreferrer">&lt;castItem&gt;</a>
+        Let's have a look at MEI's <a href="/guidelines/v5/elements/castItem.html" target="_blank" rel="noopener, noreferrer">&lt;castItem&gt;</a>
         element:
     </p>
     <pre class="codeblock">&lt;elementSpec ident="castItem" module="MEI.shared"&gt;
@@ -54,10 +54,10 @@
         as indicated by the <em>rng:</em> prefix to the element names. The next levels of markup can be understood quite 
         intuitively from the elements' names: The content can be <em>one or more</em> of a <em>choice</em> of either 
         <em>textual content</em>, or the elements 
-        <a href="https://music-encoding.org/guidelines/v4/elements/role.html" target="_blank" rel="noopener, noreferrer">&lt;role&gt;</a>,
-        <a href="https://music-encoding.org/guidelines/v4/elements/roledesc.html" target="_blank" rel="noopener, noreferrer">&lt;roleDesc&gt;</a>,
-        <a href="https://music-encoding.org/guidelines/v4/elements/actor.html" target="_blank" rel="noopener, noreferrer">&lt;actor&gt;</a>, or
-        <a href="https://music-encoding.org/guidelines/v4/elements/perfres.html" target="_blank" rel="noopener, noreferrer">&lt;perfRes&gt;</a>. 
+        <a href="/guidelines/v5/elements/role.html" target="_blank" rel="noopener, noreferrer">&lt;role&gt;</a>,
+        <a href="/guidelines/v5/elements/roleDesc.html" target="_blank" rel="noopener, noreferrer">&lt;roleDesc&gt;</a>,
+        <a href="/guidelines/v5/elements/actor.html" target="_blank" rel="noopener, noreferrer">&lt;actor&gt;</a>, or
+        <a href="/guidelines/v5/elements/perfRes.html" target="_blank" rel="noopener, noreferrer">&lt;perfRes&gt;</a>. 
         The nesting of <em>&lt;rng:oneOrMore&gt;</em> and <em>&lt;rng:choice&gt;</em> makes it clear that there is no 
         particular order for those child elements, and that they may be freely intermixed with textual content. 
     </p>
@@ -76,7 +76,7 @@
         In addition to the things seen here on <em>&lt;castItem&gt;</em>, ODD offers two more things than can be specified
         on elements. Sometimes, it is easier or more appropriate to specify <strong>attributes</strong> directly on an element, instead of
         using <em>attribute classes</em>. An example for that can be found at the 
-        <a href="https://music-encoding.org/guidelines/v4/elements/title.html" target="_blank" rel="noopener, noreferrer">&lt;title&gt;</a> element, which 
+        <a href="/guidelines/v5/elements/title.html" target="_blank" rel="noopener, noreferrer">&lt;title&gt;</a> element, which 
         has both <em>@level</em> and <em>@type</em> defined locally using the
         <a href="https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-attList.html" target="_blank" rel="noopener, noreferrer">&lt;attList&gt;</a> element inside
         <em>&lt;elementSpec&gt;</em>.
@@ -90,7 +90,7 @@
         <a href="http://dh.obdurodon.org/schematron-intro.xhtml" target="_blank" rel="noopener, noreferrer">here</a> or
         <a href="https://www.xml.com/pub/a/2003/11/12/schematron.html" target="_blank" rel="noopener, noreferrer">here</a>), and of course
         one may use existing Schematron rules in MEI to better understand how it is applied. A good starting point for that is surely the
-        <a href="https://music-encoding.org/guidelines/v4/elements/staffdef.html#constraints" target="_blank" rel="noopener, noreferrer">&lt;staffDef&gt;</a> element,
+        <a href="/guidelines/v5/elements/staffDef.html#constraints" target="_blank" rel="noopener, noreferrer">&lt;staffDef&gt;</a> element,
         which is controlled by a considerable number of Schematron rules.  
     </p>
     <p>
