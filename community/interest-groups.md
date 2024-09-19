@@ -18,7 +18,7 @@ To form a new IG, a proposal shall be made to the Board, containing the group’
 
 ## Mensural Interest Group
 
-**Administrative Co-Chairs: [Giuliano Di Bacco](mailto:gdibacco@indiana.edu) and [Anna Plaksin](mailto:annplaksin@gmx.net)**.<br/>
+**Administrative Co-Chairs: [Martha E. Thomae](mailto:marthathomae@fcsh.unl.pt) and [Anna Plaksin](mailto:anna.plaksin@uni-paderborn.de)**.<br/>
 The aim of the Interest Group is to discuss the use of MEI for the encoding of musical repertories in mensural notation (late 13th century to about 1600); to recommend additions and emendations to future versions of the MEI schema and guidelines; to discuss the use, adaptation or creation of tools for editorial and analytical purposes. These goals may be extended. The group's work is conducted through a dedicated mailing list, and an annual meeting is held at the Music Encoding Conference. All members of the MEI community with an interest in mensural notation are welcome to join the IG by subscribing to the mailing list: [https://lists.uni-paderborn.de/mailman/listinfo/mei-mensural-ig](https://lists.uni-paderborn.de/mailman/listinfo/mei-mensural-ig).
 
 ## Metadata and Cataloging Interest Group
