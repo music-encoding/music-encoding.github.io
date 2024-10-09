@@ -1,0 +1,203 @@
+{
+    "steps": [
+        {
+            "label":"Bienvenido a MEI",
+            "descFile": "103_chords_step-00-desc.html"
+        },
+        {
+            "label":"Preparación",
+            "editorLines":3,
+            "descFile": "103_chords_step-01-desc.html",
+            "prefillFile": "103_chords_step-01-prefill.xml",
+            "xmlFile": "../tutorials/103_chords_step-01.xml",
+            "xpaths": [
+                {"rule":"count(\/\/mei:note) = 3", "renderanyway": false, "hint": "Necesitas tres elementos nota."},
+                {"rule":"count(\/\/mei:note[1]\/@*) = 3 and \/\/mei:note[1]\/@pname and \/\/mei:note[1]\/@oct and \/\/mei:note[1]\/@dur", "renderanyway": false, "hint": "Necesitas tres atributosen la primera nota (@pname, @oct, and @dur)."},
+                {"rule":"count(\/\/mei:note[2]\/@*) = 3 and \/\/mei:note[2]\/@pname and \/\/mei:note[2]\/@oct and \/\/mei:note[2]\/@dur", "renderanyway": false, "hint": "Necesitas tres atributosen la segunda nota (@pname, @oct, and @dur)."},
+                {"rule":"count(\/\/mei:note[3]\/@*) = 3 and \/\/mei:note[3]\/@pname and \/\/mei:note[3]\/@oct and \/\/mei:note[3]\/@dur", "renderanyway": false, "hint": "Necesitas tres atributosen la tercera nota (@pname, @oct, and @dur)."},
+                {"rule":"\/\/mei:note\/@pname", "renderanyway": false, "hint": "El atributo @pname permite valores desde ‘la' hasta ’sol'."},
+                {"rule":"\/\/mei:note\/@oct", "renderanyway": false, "hint": "El atributo @oct requiere números enteros."},
+                {"rule":"\/\/mei:note\/@dur", "renderanyway": false, "hint": "El atributo @dur permite valores como '1', '2', '4', '8'..."},
+                {"rule":"\/\/mei:note[1]\/@pname = 'e'", "renderanyway": true, "hint": "Necesitas un atributo @pname con un valor e en el primer elemento nota."},
+                {"rule":"\/\/mei:note[1]\/@oct = '4'", "renderanyway": true, "hint": "Necesitas un @oct con un valor 4 en el primer elemento nota."},
+                {"rule":"\/\/mei:note[1]\/@dur = '4'", "renderanyway": true, "hint": "Necesitas un atributo @dur con un valor 4 en el primer elemento nota."},
+                {"rule":"\/\/mei:note[2]\/@pname = 'g'", "renderanyway": true, "hint": "Necesitas un atributo @pname con un valor g en el segundo elemento nota."},
+                {"rule":"\/\/mei:note[2]\/@oct = '4'", "renderanyway": true, "hint": "Necesitas un @oct con un valor 4 en el segundo elemento nota."},
+                {"rule":"\/\/mei:note[2]\/@dur = '4'", "renderanyway": true, "hint": "Necesitas un atributo @dur con un valor 4 en el segundo elemento nota."},
+                {"rule":"\/\/mei:note[3]\/@pname = 'c'", "renderanyway": true, "hint": "Necesitas un atributo @pname con un valor c en el tercer elemento nota."},
+                {"rule":"\/\/mei:note[3]\/@oct = '5'", "renderanyway": true, "hint": "Necesitas un @oct con un valor 5 en el tercer elemento nota."},
+                {"rule":"\/\/mei:note[3]\/@dur = '4'", "renderanyway": true, "hint": "Necesitas un atributo @dur con un valor 4 en el tercer elemento nota."}
+            ]
+        },
+        {
+            "label":"Primer acorde",
+            "editorLines":5,
+            "descFile": "103_chords_step-02-desc.html",
+            "prefillFile": "103_chords_step-02-prefill.xml",
+            "xmlFile": "../tutorials/103_chords_step-02.xml",
+            "xpaths": [
+                {"rule":"count(\/\/mei:note) = 3", "renderanyway": false, "hint": "Necesitas tres elementos nota."},
+                {"rule":"\/\/mei:note[1]\/@pname and \/\/mei:note[1]\/@oct", "renderanyway": true, "hint": "Necesitas dos atributos en la primera nota (@pname, @oct)."},
+                {"rule":"\/\/mei:note[2]\/@pname and \/\/mei:note[2]\/@oct", "renderanyway": true, "hint": "Necesitas dos atributos en la segunda nota (@pname, @oct)."},
+                {"rule":"\/\/mei:note[3]\/@pname and \/\/mei:note[3]\/@oct", "renderanyway": true, "hint": "Necesitas dos atributos en la tercera nota (@pname, @oct)."},
+                {"rule":"\/\/mei:note\/@pname", "renderanyway": false, "hint": "El atributo @pname permite valores desde ‘la' hasta ’sol'."},
+                {"rule":"\/\/mei:note\/@oct", "renderanyway": false, "hint": "El atributo @oct requiere números enteros."},
+                {"rule":"\/\/mei:note[@pname = 'e' and @oct = '4']", "renderanyway": true, "hint": "Necesitas una nota con un @pname con un valor e y un @oct con un valor 4."},
+                {"rule":"\/\/mei:note[@pname = 'g' and @oct = '4']", "renderanyway": true, "hint": "Necesitas una nota con un @pname con un valor g y un @oct con un valor 4."},
+                {"rule":"\/\/mei:note[@pname = 'c' and @oct = '5']", "renderanyway": true, "hint": "Necesitas una nota con un @pname con un valor c y un @oct con un valor 5."},
+                {"rule":"count(\/\/mei:chord) = 1", "renderanyway": false, "hint": "Necesitas un elemento chord."},
+                {"rule":"\/\/mei:chord\/mei:note", "renderanyway": false, "hint": "El elemento chord debe incluir a todos los elementos note."},
+                {"rule":"count(\/\/mei:note[1]\/@*) = 2", "renderanyway": true, "hint": "Sólo necesitas dos atributos en la primera nota (@pname, @oct)."},
+                {"rule":"count(\/\/mei:note[2]\/@*) = 2", "renderanyway": true, "hint": "Sólo necesitas dos atributos en la segunda nota (@pname, @oct)."},
+                {"rule":"count(\/\/mei:note[3]\/@*) = 2", "renderanyway": true, "hint": "Sólo necesitas dos atributos en la tercera nota (@pname, @oct)."},
+                {"rule":"count(\/\/mei:chord\/@*) = 1 and \/\/mei:chord\/@dur", "renderanyway": true, "hint": "Necesitas un atributo en el acorde (@dur)."},
+                {"rule":"\/\/mei:chord\/@dur", "renderanyway": true, "hint": "El atributo @dur permite valores como '1', '2', '4', '8'..."},
+                {"rule":"\/\/mei:chord\/@dur = '4'", "renderanyway": true, "hint": "Necesitas un atributo @dur con un valor 4 en el elemento chord."}
+            ]
+        },
+        {
+            "label":"Progresión simple de acordes",
+            "editorLines":20,
+            "descFile": "103_chords_step-03-desc.html",
+            "prefillFile": "../tutorials/103_chords_step-03-prefill.xml",
+            "xmlFile": "../tutorials/103_chords_step-03.xml",
+            "xpaths": [
+                {"rule":"count(\/\/mei:chord) = 4", "renderanyway": true, "hint":  "Necesitas cuatro elementos chord."},
+                {"rule":"count(\/\/mei:chord[1]\/@*) = 1 and \/\/mei:chord[1]\/@dur", "renderanyway": true, "hint": "Necesitas un atributo en el primer acorde (@dur)."},
+                {"rule":"\/\/mei:chord[1]\/@dur = '4'", "renderanyway": true, "hint": "Necesitas un atributo @dur con un valor 4 en el primer elemento chord."},
+                {"rule":"count(\/\/mei:chord[2]\/@*) = 1 and \/\/mei:chord[2]\/@dur", "renderanyway": true, "hint": "Necesitas un atributo en el segundo acorde (@dur)."},
+                {"rule":"\/\/mei:chord[2]\/@dur = '4'", "renderanyway": true, "hint": "Necesitas un atributo @dur con un valor 4 en el segundo elemento chord."},
+                {"rule":"count(\/\/mei:chord[3]\/@*) = 1 and \/\/mei:chord[3]\/@dur", "renderanyway": true, "hint": "Necesitas un atributo en el tercer acorde (@dur)."},
+                {"rule":"\/\/mei:chord[3]\/@dur = '4'", "renderanyway": true, "hint": "Necesitas un atributo @dur con un valor 4 en el tercer elemento chord."},
+                {"rule":"count(\/\/mei:chord[4]\/@*) = 1 and \/\/mei:chord[4]\/@dur", "renderanyway": true, "hint": "Necesitas un atributo en el último acorde (@dur)."},
+                {"rule":"\/\/mei:chord[4]\/@dur = '4'", "renderanyway": true, "hint": "Necesitas un atributo @dur con un valor 4 en el último elemento chord."},
+
+                {"rule":"count(\/\/mei:chord[1]\/mei:note) = 3", "renderanyway": true, "hint": "Necesitas tres elementos nota para el primer acorde."},
+                {"rule":"count(\/\/mei:chord[1]\/mei:note[1]\/@*) = 2 and \/\/mei:chord[1]\/mei:note[1]\/@pname and \/\/mei:chord[1]\/mei:note[1]\/@oct", "renderanyway": true, "hint": "Necesitas dos atributos en la primera nota (@pname, @oct) del primer acorde."},
+                {"rule":"\/\/mei:chord[1]\/mei:note[@pname = 'e' and @oct = '4']", "renderanyway": true, "hint": "En el primer acorde, necesitas una nota con un @pname con un valor e y un @oct con un valor 4."},
+                {"rule":"count(\/\/mei:chord[1]\/mei:note[2]\/@*) = 2 and \/\/mei:chord[1]\/mei:note[2]\/@pname and \/\/mei:chord[1]\/mei:note[2]\/@oct", "renderanyway": true, "hint": "Necesitas dos atributos en la segunda nota (@pname, @oct) del primer acorde."},
+                {"rule":"\/\/mei:chord[1]\/mei:note[@pname = 'g' and @oct = '4']", "renderanyway": true, "hint": "En el primer acorde, necesitas una nota con un @pname con un valor g y un @oct con un valor 4."},
+                {"rule":"count(\/\/mei:chord[1]\/mei:note[3]\/@*) = 2 and \/\/mei:chord[1]\/mei:note[3]\/@pname and \/\/mei:chord[1]\/mei:note[3]\/@oct", "renderanyway": true, "hint": "Necesitas dos atributos en la tercera nota (@pname, @oct) del primer acorde."},
+                {"rule":"\/\/mei:chord[1]\/mei:note[@pname = 'c' and @oct = '5']", "renderanyway": true, "hint": "En el primer acorde, necesitas una nota con un @pname con un valor c y un @oct con un valor 5."},
+
+
+                {"rule":"count(\/\/mei:chord[2]\/mei:note) = 3", "renderanyway": true, "hint": "Necesitas tres elementos nota para el segundo acorde."},
+                {"rule":"count(\/\/mei:chord[2]\/mei:note[1]\/@*) = 2 and \/\/mei:chord[2]\/mei:note[1]\/@pname and \/\/mei:chord[2]\/mei:note[1]\/@oct", "renderanyway": true, "hint": "Necesitas dos atributos en la primera nota (@pname, @oct) del segundo acorde."},
+                {"rule":"\/\/mei:chord[2]\/mei:note[@pname = 'f' and @oct = '4']", "renderanyway": true, "hint": "En el segundo acorde, necesitas un atributo @pname con un valor f y un @oct con un valor 4."},
+                {"rule":"count(\/\/mei:chord[2]\/mei:note[2]\/@*) = 2 and \/\/mei:chord[2]\/mei:note[2]\/@pname and \/\/mei:chord[2]\/mei:note[1]\/@oct", "renderanyway": true, "hint": "Necesitas dos atributos en la segunda nota (@pname, @oct) del segundo acorde."},
+                {"rule":"\/\/mei:chord[2]\/mei:note[@pname = 'a' and @oct = '4']", "renderanyway": true, "hint": "En el segundo acorde, necesitas un atributo @pname con un valor a y un @oct con un valor 4."},
+                {"rule":"count(\/\/mei:chord[2]\/mei:note[3]\/@*) = 2 and \/\/mei:chord[2]\/mei:note[3]\/@pname and \/\/mei:chord[2]\/mei:note[1]\/@oct", "renderanyway": true, "hint": "Necesitas dos atributos en la tercera nota (@pname, @oct) del segundo acorde."},
+                {"rule":"\/\/mei:chord[2]\/mei:note[@pname = 'c' and @oct = '5']", "renderanyway": true, "hint": "En el segundo acorde, necesitas un atributo @pname con un valor c y un @oct con un valor 5."},
+
+
+                {"rule":"count(\/\/mei:chord[3]\/mei:note) = 3", "renderanyway": true, "hint": "Necesitas tres elementos nota para el tercer acorde."},
+                {"rule":"count(\/\/mei:chord[3]\/mei:note[1]\/@*) = 2 and \/\/mei:chord[3]\/mei:note[1]\/@pname and \/\/mei:chord[3]\/mei:note[1]\/@oct", "renderanyway": true, "hint": "Necesitas dos atributos en la primera nota (@pname, @oct) del tercer acorde."},
+                {"rule":"\/\/mei:chord[3]\/mei:note[@pname = 'd' and @oct = '4']", "renderanyway": true, "hint": "En el tercer acorde, necesitas un atributo @pname con un valor d y un @oct con un valor 4."},
+                {"rule":"count(\/\/mei:chord[3]\/mei:note[2]\/@*) = 2 and \/\/mei:chord[3]\/mei:note[2]\/@pname and \/\/mei:chord[3]\/mei:note[1]\/@oct", "renderanyway": true, "hint": "Necesitas dos atributos en la segunda nota (@pname, @oct) del tercer acorde."},
+                {"rule":"\/\/mei:chord[3]\/mei:note[@pname = 'g' and @oct = '4']", "renderanyway": true, "hint": "En el tercer acorde, necesitas un atributo @pname con un valor g y un @oct con un valor 4."},
+                {"rule":"count(\/\/mei:chord[3]\/mei:note[3]\/@*) = 2 and \/\/mei:chord[3]\/mei:note[3]\/@pname and \/\/mei:chord[3]\/mei:note[1]\/@oct", "renderanyway": true, "hint": "Necesitas dos atributos en la tercera nota (@pname, @oct) del tercer acorde."},
+                {"rule":"\/\/mei:chord[3]\/mei:note[@pname = 'b' and @oct = '4']", "renderanyway": true, "hint": "En el tercer acorde, necesitas un atributo @pname con un valor b y un @oct con un valor 4."},
+
+                {"rule":"count(\/\/mei:chord[4]\/mei:note) = 3", "renderanyway": true, "hint": "Necesitas tres elementos nota para el cuarto acorde."},
+                {"rule":"count(\/\/mei:chord[4]\/mei:note[1]\/@*) = 2 and \/\/mei:chord[4]\/mei:note[1]\/@pname and \/\/mei:chord[4]\/mei:note[1]\/@oct", "renderanyway": true, "hint": "Necesitas dos atributos en la primera nota (@pname, @oct) del cuarto acorde."},
+                {"rule":"\/\/mei:chord[4]\/mei:note[@pname = 'e' and @oct = '4']", "renderanyway": true, "hint": "En el cuarto acorde, necesitas un atributo @pname con un valor e y un @oct con un valor 4."},
+                {"rule":"count(\/\/mei:chord[4]\/mei:note[2]\/@*) = 2 and \/\/mei:chord[4]\/mei:note[2]\/@pname and \/\/mei:chord[4]\/mei:note[1]\/@oct", "renderanyway": true, "hint": "Necesitas dos atributos en la segunda nota (@pname, @oct) del cuarto acorde."},
+                {"rule":"\/\/mei:chord[4]\/mei:note[@pname = 'g' and @oct = '4']", "renderanyway": true, "hint": "En el cuarto acorde, necesitas un @pname con un valor g y un @oct con un valor 4."},
+                {"rule":"count(\/\/mei:chord[4]\/mei:note[3]\/@*) = 2 and \/\/mei:chord[4]\/mei:note[3]\/@pname and \/\/mei:chord[4]\/mei:note[1]\/@oct", "renderanyway": true, "hint": "Necesitas dos atributos en la tercera nota (@pname, @oct) del cuarto acorde."},
+                {"rule":"\/\/mei:chord[4]\/mei:note[@pname = 'c' and @oct = '5']", "renderanyway": true, "hint": "En el cuarto acorde, necesitas un @pname con un valor c y un @oct con un valor 5."}
+            ]
+        },
+        {
+            "label":"Progresión extendida de acordes",
+            "editorLines":35,
+            "descFile": "103_chords_step-04-desc.html",
+            "prefillFile": "../tutorials/103_chords_step-04-prefill.xml",
+            "xmlFile": "../tutorials/103_chords_step-04.xml",
+            "xpaths": [
+                {"rule":"count(\/\/mei:chord) = 7", "renderanyway": true, "hint":  "Necesitas siete elementos chord."},
+                {"rule":"count(\/\/mei:chord[1]\/@*) = 2 and \/\/mei:chord[1]\/@dur and \/\/mei:chord[1]\/@dots", "renderanyway": true, "hint": "Necesitas dos atributos en el primer acorde (@dur, @dots)."},
+                {"rule":"\/\/mei:chord[1]\/@dur = '4'", "renderanyway": true, "hint": "Necesitas un atributo @dur con un valor 4 en el primer elemento chord."},
+                {"rule":"\/\/mei:chord[1]\/@dots = '1'", "renderanyway": true, "hint": "Necesitas un atributo @dots con un valor 1 en el primer elemento chord."},
+                {"rule":"count(\/\/mei:chord[2]\/@*) = 1 and \/\/mei:chord[2]\/@dur", "renderanyway": true, "hint": "Necesitas un atributo en el segundo acorde (@dur)."},
+                {"rule":"\/\/mei:chord[2]\/@dur = '8'", "renderanyway": true, "hint": "Necesitas un atributo @dur con un valor 8 en el segundo elemento chord."},
+                {"rule":"count(\/\/mei:chord[3]\/@*) = 1 and \/\/mei:chord[3]\/@dur", "renderanyway": true, "hint": "Necesitas un atributo en el tercer acorde (@dur)."},
+                {"rule":"\/\/mei:chord[3]\/@dur = '4'", "renderanyway": true, "hint": "Necesitas un atributo @dur con un valor 4 en el tercer elemento chord."},
+                {"rule":"count(\/\/mei:chord[4]\/@*) = 1 and \/\/mei:chord[4]\/@dur", "renderanyway": true, "hint": "Necesitas un atributo en el cuarto acorde (@dur)."},
+                {"rule":"\/\/mei:chord[4]\/@dur = '4'", "renderanyway": true, "hint": "Necesitas un atributo @dur con un valor 4 en el cuarto elemento chord."},
+                {"rule":"count(\/\/mei:chord[5]\/@*) = 1 and \/\/mei:chord[5]\/@dur", "renderanyway": true, "hint": "Necesitas un atributo on the fifth chord (@dur)."},
+                {"rule":"\/\/mei:chord[5]\/@dur = '4'", "renderanyway": true, "hint": "Necesitas un atributo @dur con un valor 4 on the fifth chord element."},
+                {"rule":"count(\/\/mei:chord[6]\/@*) = 1 and \/\/mei:chord[6]\/@dur", "renderanyway": true, "hint": "Necesitas un atributo on the sixth chord (@dur)."},
+                {"rule":"\/\/mei:chord[6]\/@dur = '4'", "renderanyway": true, "hint": "Necesitas un atributo @dur con un valor 4 on the sixth chord element."},
+                {"rule":"count(\/\/mei:chord[7]\/@*) = 1 and \/\/mei:chord[7]\/@dur", "renderanyway": true, "hint": "Necesitas un atributo en el último acorde (@dur)."},
+                {"rule":"\/\/mei:chord[7]\/@dur = '2'", "renderanyway": true, "hint": "Necesitas un atributo @dur con un valor 2 en el último elemento chord."},
+
+                {"rule":"count(\/\/mei:chord[1]\/mei:note) = 3", "renderanyway": true, "hint": "Necesitas tres elementos nota para el primer acorde."},
+                {"rule":"count(\/\/mei:chord[1]\/mei:note[1]\/@*) = 2 and \/\/mei:chord[1]\/mei:note[1]\/@pname and \/\/mei:chord[1]\/mei:note[1]\/@oct", "renderanyway": true, "hint": "Necesitas dos atributos en la primera nota (@pname, @oct) del primer acorde."},
+                {"rule":"\/\/mei:chord[1]\/mei:note[@pname = 'g' and @oct = '4']", "renderanyway": true, "hint": "En el primer acorde, necesitas una nota con un @pname con un valor g y un @oct con un valor 4."},
+                {"rule":"count(\/\/mei:chord[1]\/mei:note[2]\/@*) = 2 and \/\/mei:chord[1]\/mei:note[2]\/@pname and \/\/mei:chord[1]\/mei:note[2]\/@oct", "renderanyway": true, "hint": "Necesitas dos atributos en la segunda nota (@pname, @oct) del primer acorde."},
+                {"rule":"\/\/mei:chord[1]\/mei:note[@pname = 'c' and @oct = '5']", "renderanyway": true, "hint": "En el primer acorde, necesitas una nota con un @pname con un valor c y un @oct con un valor 5."},
+                {"rule":"count(\/\/mei:chord[1]\/mei:note[3]\/@*) = 2 and \/\/mei:chord[1]\/mei:note[3]\/@pname and \/\/mei:chord[1]\/mei:note[3]\/@oct", "renderanyway": true, "hint": "Necesitas dos atributos en la tercera nota (@pname, @oct) del primer acorde."},
+                {"rule":"\/\/mei:chord[1]\/mei:note[@pname = 'e' and @oct = '5']", "renderanyway": true, "hint": "En el primer acorde, necesitas una nota con un @pname con un valor e y un @oct con un valor 5."},
+
+                {"rule":"count(\/\/mei:chord[2]\/mei:note) = 3", "renderanyway": true, "hint": "Necesitas tres elementos nota para el segundo acorde."},
+                {"rule":"count(\/\/mei:chord[2]\/mei:note[1]\/@*) = 2 and \/\/mei:chord[2]\/mei:note[1]\/@pname and \/\/mei:chord[2]\/mei:note[1]\/@oct", "renderanyway": true, "hint": "Necesitas dos atributos en la primera nota (@pname, @oct) del segundo acorde."},
+                {"rule":"\/\/mei:chord[2]\/mei:note[@pname = 'f' and @oct = '4']", "renderanyway": true, "hint": "En el segundo acorde, necesitas un atributo @pname con un valor f y un @oct con un valor 4."},
+                {"rule":"count(\/\/mei:chord[2]\/mei:note[2]\/@*) = 2 and \/\/mei:chord[2]\/mei:note[2]\/@pname and \/\/mei:chord[2]\/mei:note[1]\/@oct", "renderanyway": true, "hint": "Necesitas dos atributos en la segunda nota (@pname, @oct) del segundo acorde."},
+                {"rule":"\/\/mei:chord[2]\/mei:note[@pname = 'b' and @oct = '4']", "renderanyway": true, "hint": "En el segundo acorde, necesitas un atributo @pname con un valor b y un @oct con un valor 4."},
+                {"rule":"count(\/\/mei:chord[2]\/mei:note[3]\/@*) = 2 and \/\/mei:chord[2]\/mei:note[3]\/@pname and \/\/mei:chord[2]\/mei:note[1]\/@oct", "renderanyway": true, "hint": "Necesitas dos atributos en la tercera nota (@pname, @oct) del segundo acorde."},
+                {"rule":"\/\/mei:chord[2]\/mei:note[@pname = 'd' and @oct = '5']", "renderanyway": true, "hint": "En el segundo acorde, necesitas un atributo @pname con un valor d y un @oct con un valor 5."},
+
+                {"rule":"count(\/\/mei:chord[3]\/mei:note) = 3", "renderanyway": true, "hint": "Necesitas tres elementos nota para el tercer acorde."},
+                {"rule":"count(\/\/mei:chord[3]\/mei:note[1]\/@*) = 2 and \/\/mei:chord[3]\/mei:note[1]\/@pname and \/\/mei:chord[3]\/mei:note[1]\/@oct", "renderanyway": true, "hint": "Necesitas dos atributos en la primera nota (@pname, @oct) del tercer acorde."},
+                {"rule":"\/\/mei:chord[3]\/mei:note[@pname = 'e' and @oct = '4']", "renderanyway": true, "hint": "En el tercer acorde, necesitas un atributo @pname con un valor e y un @oct con un valor 4."},
+                {"rule":"count(\/\/mei:chord[3]\/mei:note[2]\/@*) = 2 and \/\/mei:chord[3]\/mei:note[2]\/@pname and \/\/mei:chord[3]\/mei:note[1]\/@oct", "renderanyway": true, "hint": "Necesitas dos atributos en la segunda nota (@pname, @oct) del tercer acorde."},
+                {"rule":"\/\/mei:chord[3]\/mei:note[@pname = 'g' and @oct = '4']", "renderanyway": true, "hint": "En el tercer acorde, necesitas un atributo @pname con un valor g y un @oct con un valor 4."},
+                {"rule":"count(\/\/mei:chord[3]\/mei:note[3]\/@*) = 2 and \/\/mei:chord[3]\/mei:note[3]\/@pname and \/\/mei:chord[3]\/mei:note[1]\/@oct", "renderanyway": true, "hint": "Necesitas dos atributos en la tercera nota (@pname, @oct) del tercer acorde."},
+                {"rule":"\/\/mei:chord[3]\/mei:note[@pname = 'c' and @oct = '5']", "renderanyway": true, "hint": "En el tercer acorde, necesitas un atributo @pname con un valor c y un @oct con un valor 5."},
+
+                {"rule":"count(\/\/mei:chord[4]\/mei:note) = 3", "renderanyway": true, "hint": "Necesitas tres elementos nota para el cuarto acorde."},
+                {"rule":"count(\/\/mei:chord[4]\/mei:note[1]\/@*) = 2 and \/\/mei:chord[4]\/mei:note[1]\/@pname and \/\/mei:chord[4]\/mei:note[1]\/@oct", "renderanyway": true, "hint": "Necesitas dos atributos en la primera nota (@pname, @oct) del cuarto acorde."},
+                {"rule":"\/\/mei:chord[4]\/mei:note[@pname = 'f' and @oct = '4']", "renderanyway": true, "hint": "En el cuarto acorde, necesitas un atributo @pname con un valor f y un @oct con un valor 4."},
+                {"rule":"count(\/\/mei:chord[4]\/mei:note[2]\/@*) = 2 and \/\/mei:chord[4]\/mei:note[2]\/@pname and \/\/mei:chord[4]\/mei:note[1]\/@oct", "renderanyway": true, "hint": "Necesitas dos atributos en la segunda nota (@pname, @oct) del cuarto acorde."},
+                {"rule":"\/\/mei:chord[4]\/mei:note[@pname = 'b' and @oct = '4']", "renderanyway": true, "hint": "En el cuarto acorde, necesitas un atributo @pname con un valor b y un @oct con un valor 4."},
+                {"rule":"count(\/\/mei:chord[4]\/mei:note[3]\/@*) = 2 and \/\/mei:chord[4]\/mei:note[3]\/@pname and \/\/mei:chord[4]\/mei:note[1]\/@oct", "renderanyway": true, "hint": "Necesitas dos atributos en la tercera nota (@pname, @oct) del cuarto acorde."},
+                {"rule":"\/\/mei:chord[4]\/mei:note[@pname = 'd' and @oct = '5']", "renderanyway": true, "hint": "En el cuarto acorde, necesitas un atributo @pname con un valor d y un @oct con un valor 5."},
+
+                {"rule":"count(\/\/mei:chord[5]\/mei:note) = 3", "renderanyway": true, "hint": "Necesitas tres elementos nota para el quinto acorde."},
+                {"rule":"count(\/\/mei:chord[5]\/mei:note[1]\/@*) = 2 and \/\/mei:chord[5]\/mei:note[1]\/@pname and \/\/mei:chord[5]\/mei:note[1]\/@oct", "renderanyway": true, "hint": "Necesitas dos atributos en la primera nota (@pname, @oct) del quinto acorde."},
+                {"rule":"\/\/mei:chord[5]\/mei:note[@pname = 'g' and @oct = '4']", "renderanyway": true, "hint": "En el quinto acorde, necesitas una nota con un @pname con un valor g y un @oct con un valor 4."},
+                {"rule":"count(\/\/mei:chord[5]\/mei:note[2]\/@*) = 2 and \/\/mei:chord[5]\/mei:note[2]\/@pname and \/\/mei:chord[5]\/mei:note[2]\/@oct", "renderanyway": true, "hint": "Necesitas dos atributos en la segunda nota (@pname, @oct) del quinto acorde."},
+                {"rule":"\/\/mei:chord[5]\/mei:note[@pname = 'c' and @oct = '5']", "renderanyway": true, "hint": "En el quinto acorde, necesitas una nota con un @pname con un valor c y un @oct con un valor 5."},
+                {"rule":"count(\/\/mei:chord[5]\/mei:note[3]\/@*) = 2 and \/\/mei:chord[5]\/mei:note[3]\/@pname and \/\/mei:chord[5]\/mei:note[3]\/@oct", "renderanyway": true, "hint": "Necesitas dos atributos en la tercera nota (@pname, @oct) del quinto acorde."},
+                {"rule":"\/\/mei:chord[5]\/mei:note[@pname = 'e' and @oct = '5']", "renderanyway": true, "hint": "En el quinto acorde, necesitas una nota con un @pname con un valor e y un @oct con un valor 5."},
+
+                {"rule":"count(\/\/mei:chord[6]\/mei:note) = 3", "renderanyway": true, "hint": "Necesitas tres elementos nota para el sexto acorde."},
+                {"rule":"count(\/\/mei:chord[6]\/mei:note[1]\/@*) = 2 and \/\/mei:chord[6]\/mei:note[1]\/@pname and \/\/mei:chord[6]\/mei:note[1]\/@oct", "renderanyway": true, "hint": "Necesitas dos atributos en la primera nota (@pname, @oct) del sexto acorde."},
+                {"rule":"\/\/mei:chord[6]\/mei:note[@pname = 'g' and @oct = '4']", "renderanyway": true, "hint": "En el sexto acorde, necesitas una nota con un @pname con un valor g y un @oct con un valor 4."},
+                {"rule":"count(\/\/mei:chord[6]\/mei:note[2]\/@*) = 2 and \/\/mei:chord[6]\/mei:note[2]\/@pname and \/\/mei:chord[6]\/mei:note[2]\/@oct", "renderanyway": true, "hint": "Necesitas dos atributos en la segunda nota (@pname, @oct) del sexto acorde."},
+                {"rule":"\/\/mei:chord[6]\/mei:note[@pname = 'c' and @oct = '5']", "renderanyway": true, "hint": "En el sexto acorde, necesitas una nota con un @pname con un valor c y un @oct con un valor 5."},
+                {"rule":"count(\/\/mei:chord[6]\/mei:note[3]\/@*) = 2 and \/\/mei:chord[6]\/mei:note[3]\/@pname and \/\/mei:chord[6]\/mei:note[3]\/@oct", "renderanyway": true, "hint": "Necesitas dos atributos en la tercera nota (@pname, @oct) del sexto acorde."},
+                {"rule":"\/\/mei:chord[6]\/mei:note[@pname = 'e' and @oct = '5']", "renderanyway": true, "hint": "En el sexto acorde, necesitas una nota con un @pname con un valor e y un @oct con un valor 5."},
+
+                {"rule":"count(\/\/mei:chord[7]\/mei:note) = 3", "renderanyway": true, "hint": "Necesitas tres elementos nota para el último acorde."},
+                {"rule":"count(\/\/mei:chord[7]\/mei:note[1]\/@*) = 2 and \/\/mei:chord[7]\/mei:note[1]\/@pname and \/\/mei:chord[7]\/mei:note[1]\/@oct", "renderanyway": true, "hint": "Necesitas dos atributos en la primera nota (@pname, @oct) del último acorde."},
+                {"rule":"\/\/mei:chord[7]\/mei:note[@pname = 'g' and @oct = '4']", "renderanyway": true, "hint": "En el último acorde, necesitas una nota con un @pname con un valor g y un @oct con un valor 4."},
+                {"rule":"count(\/\/mei:chord[7]\/mei:note[2]\/@*) = 2 and \/\/mei:chord[7]\/mei:note[2]\/@pname and \/\/mei:chord[7]\/mei:note[2]\/@oct", "renderanyway": true, "hint": "Necesitas dos atributos en la segunda nota (@pname, @oct) del último acorde."},
+                {"rule":"\/\/mei:chord[7]\/mei:note[@pname = 'c' and @oct = '5']", "renderanyway": true, "hint": "En el último acorde, necesitas una nota con un @pname con un valor c y un @oct con un valor 5."},
+                {"rule":"count(\/\/mei:chord[7]\/mei:note[3]\/@*) = 2 and \/\/mei:chord[7]\/mei:note[3]\/@pname and \/\/mei:chord[7]\/mei:note[3]\/@oct", "renderanyway": true, "hint": "Necesitas dos atributos en la tercera nota (@pname, @oct) del último acorde."},
+                {"rule":"\/\/mei:chord[7]\/mei:note[@pname = 'e' and @oct = '5']", "renderanyway": true, "hint": "En el último acorde, necesitas una nota con un @pname con un valor e y un @oct con un valor 5."}
+            ]
+        }
+    ],
+    "end":"103_chords_end.html",
+    "resp":[
+        {
+            "name":"Stefan Münnich",
+            "affiliation":"Anton Webern Gesamtausgabe | Universidad de Basilea"
+        },
+        {
+            "name":"Johannes Kepper",
+            "affiliation":"Beethovens Werkstatt | Universidad de Paderborn"
+        }
+    ]
+}
