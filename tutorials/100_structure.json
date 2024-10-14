@@ -1,0 +1,81 @@
+{
+  "steps": [
+    {
+      "label":"Welcome to MEI",
+      "descFile": "100_structure_step-00-desc.html"
+    },
+    {
+      "label": "The MEI root element",
+      "editorLines": 1,
+      "descFile": "100_structure_step-01-desc.html",
+      "prefillFile": "100_structure_step-01-prefill.xml",
+      "xmlFile": "100_structure_step-01.xml",
+      "xpaths": [
+        {"rule": "count(//mei) = 1", "renderanyway": true, "hint": "You need one mei element."}
+      ]
+    },
+    {
+      "label": "The MEI namespace",
+      "editorLines": 1,
+      "descFile": "100_structure_step-02-desc.html",
+      "prefillFile": "100_structure_step-02-prefill.xml",
+      "xmlFile": "100_structure_step-02.xml",
+      "xpaths": [
+        {"rule": "count(*[local-name()='mei']) = 1", "renderanyway": true, "hint": "You need one mei element."},
+        {"rule": "*[local-name()='mei' and namespace-uri()='http://www.music-encoding.org/ns/mei']", "renderanyway": true, "hint": "You need a @xmlns declaration with the mei namespace 'http://www.music-encoding.org/ns/mei'."}
+      ]
+    },
+    {
+      "label": "Two basic child elements",
+      "editorLines": 4,
+      "descFile": "100_structure_step-03-desc.html",
+      "prefillFile": "100_structure_step-03-prefill.xml",
+      "xmlFile": "100_structure_step-03.xml",
+      "xpaths": [
+        {"rule": "count(//*[local-name()='mei']) = 1", "renderanyway": false, "hint": "You need one mei element."},
+        {"rule": "*[local-name()='mei' and namespace-uri()='http://www.music-encoding.org/ns/mei']", "renderanyway": true, "hint": "You need a @xmlns declaration with the mei namespace 'http://www.music-encoding.org/ns/mei' in the mei element."},
+        {"rule": "count(//*[local-name()='meiHead']) = 1", "renderanyway": false, "hint": "You need one meiHead element."},
+        {"rule": "//*[local-name()='mei']/*[local-name()='meiHead']", "renderanyway": false, "hint": "meiHead has to a be child of the mei element."},
+        {"rule": "count(//*[local-name()='music']) = 1", "renderanyway": false, "hint": "You need one music element."},
+        {"rule": "//*[local-name()='mei']/*[local-name()='music']", "renderanyway": false, "hint": "music has to a be child of the mei element."},
+        {"rule": "//*[local-name()='mei']/*[local-name()='meiHead']/following-sibling::*[local-name()='music']", "renderanyway": false, "hint": "music has to follow the meiHead element."}
+      ]
+    },
+    {
+      "label": "The minimum MEI header",
+      "editorLines": 11,
+      "descFile": "100_structure_step-04-desc.html",
+      "prefillFile": "100_structure_step-04-prefill.xml",
+      "xmlFile": "100_structure_step-04.xml",
+      "xpaths": [
+        {"rule": "count(//*[local-name()='mei']) = 1", "renderanyway": false, "hint": "You need one mei element."},
+        {"rule": "*[local-name()='mei' and namespace-uri()='http://www.music-encoding.org/ns/mei']", "renderanyway": true, "hint": "You need a @xmlns declaration with the mei namespace 'http://www.music-encoding.org/ns/mei' in the mei element."},
+        {"rule": "count(//*[local-name()='meiHead']) = 1", "renderanyway": false, "hint": "You need one meiHead element."},
+        {"rule": "//*[local-name()='mei']/*[local-name()='meiHead']", "renderanyway": false, "hint": "meiHead has to be a child of the mei element."},
+        {"rule": "count(//*[local-name()='music']) = 1", "renderanyway": false, "hint": "You need one music element."},
+        {"rule": "//*[local-name()='mei']/*[local-name()='music']", "renderanyway": false, "hint": "music has to be a child of the mei element."},
+        {"rule": "//*[local-name()='mei']/*[local-name()='meiHead']/following-sibling::*[local-name()='music']", "renderanyway": false, "hint": "music has to follow the meiHead element."},
+        {"rule": "count(//*[local-name()='fileDesc']) = 1", "renderanyway": false, "hint": "You need one fileDesc element."},
+        {"rule": "//*[local-name()='meiHead']/*[local-name()='fileDesc']", "renderanyway": false, "hint": "fileDesc has to be a child of the meiHead element."},
+        {"rule": "count(//*[local-name()='titleStmt']) = 1", "renderanyway": false, "hint": "You need one titleStmt element."},
+        {"rule": "//*[local-name()='fileDesc']/*[local-name()='titleStmt']", "renderanyway": false, "hint": "titleStmt has to be a child of the fileDesc element."},
+        {"rule": "count(//*[local-name()='pubStmt']) = 1", "renderanyway": false, "hint": "You need one pubStmt element."},
+        {"rule": "//*[local-name()='fileDesc']/*[local-name()='pubStmt']", "renderanyway": false, "hint": "pubStmt has to be a child of the fileDesc element."},
+        {"rule": "//*[local-name()='fileDesc']/*[local-name()='titleStmt']/following-sibling::*[local-name()='pubStmt']", "renderanyway": false, "hint": "pubStmt has to follow the titleStmt element."},
+        {"rule": "count(//*[local-name()='title']) = 1", "renderanyway": false, "hint": "You need one title element."},
+        {"rule": "//*[local-name()='titleStmt']/*[local-name()='title']", "renderanyway": false, "hint": "title has to be a child of the titleStmt element."}
+      ]
+    }
+  ],
+  "end": "100_structure_end.html",
+  "resp":[
+    {
+      "name":"Stefan Münnich",
+      "affiliation":"Anton Webern Gesamtausgabe | University of Basel"
+    },
+    {
+      "name":"Johannes Kepper",
+      "affiliation":"Beethovens Werkstatt | Universität Paderborn"
+    }
+  ]
+}
