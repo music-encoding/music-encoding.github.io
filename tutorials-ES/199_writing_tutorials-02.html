@@ -1,0 +1,21 @@
+<div>
+    <p>
+        Como el resto de nuestra página web, todos los tutoriales se ofrecen directamente desde un <a href="https://github.com/music-encoding/music-encoding.github.io" target="_blank">repositorio GitHub</a>. Esto tiene ventajas e inconvenientes. Una enorme ventaja es que crear un nuevo tutorial es tan fácil como enviar una carpeta al repositorio (se explica más adelante, no te preocupes). Los mayores inconvenientes son que la interactividad requerida para un tutorial no se soporta muy bien debido a esa configuración técnica, y que no podemos realmente validar contra el esquema MEI. Hemos tenido en cuenta ambos aspectos, y esperamos que nuestras soluciones equilibren bien las necesidades de orientación del usuario y el esfuerzo que requiere la preparación de un tutorial. Volveremos a esto más adelante también.
+    </p>
+    <p>
+        Y ahora, <b>empecemos</b>. Nuestras páginas se construyen y están alojadas en servidores con <a href="https://jekyllrb.com/" target="_blank">Jekyll</a>. Esto significa que en nuestros tutoriales necesitamos un archivo <a href="https://en.wikipedia.org/wiki/Markdown" target="_blank">Markdown</a>con los detalles sobre nuestro tutorial que el sitio web circundante necesita saber para incrustarlo correctamente. Echemos un vistazo al archivo Markdown de este mismo tutorial:
+    </p>
+    <pre class="codeblock">---
+layout: tutorials
+type: tutorial
+name: "Escribir tutoriales "
+fullname: "Una introducción a la escritura de tutoriales MEI"
+data: "tutorials.json"
+---</pre>
+    <label>tutorials.md (Archivo Markdown)</label>
+    <p>Por un lado, las dos primeras líneas; <code>layout: tutorials</code> y <code>type: tutorial</code> siempre tienen que quedarse así, pero las dos siguientes pueden cambiar. Lo que escribas aquí se mostrará, por ejemplo, en la lista de tutoriales. Ten en cuenta que la primera y última línea, cada una con tres guiones, deben quedar así para que el tutorial funcione correctamente.
+    </p>
+    <p>
+        Como he dicho antes, en cierta medida tenemos que trabajar con las limitaciones de nuestra configuración técnica. Es por eso que se hace referencia a un archivo llamado <code>tutorials.json</code>, que se aloja en la misma carpeta. El nombre del archivo no es importante, siempre que se encuentre en la misma carpeta que el archivo Markdown. Pasemos al contenido del archivo JSON. 
+    </p>
+</div>

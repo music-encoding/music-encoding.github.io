@@ -1,0 +1,14 @@
+<scoreDef key.sig="3f" meter.sym="cut">
+    <staffGrp>
+        <staffDef n="1" lines="5" clef.shape="G" clef.line="2" />
+    </staffGrp>
+</scoreDef>
+<section>
+    <measure n="0">
+        <staff n="1">
+            <layer>
+                <!-- Your encoding should replace this line -->
+            </layer>
+        </staff>
+    </measure>
+</section>
