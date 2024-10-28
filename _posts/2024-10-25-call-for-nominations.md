@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Call for nominations 2024"
-date: 2024-10-28 16:00:00 +0000
+date: 2024-10-28 10:00:00 +0000
 categories: update
 ---
 
