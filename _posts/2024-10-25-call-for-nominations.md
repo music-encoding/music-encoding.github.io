@@ -11,17 +11,17 @@ In the 2024 MEI Board elections, the MEI community will determine three MEI Boar
 
 The timeline of the elections will be as follows:
 
-**Nomination phase** (25 October – 8 November 2024; All deadlines are 11:59 pm, UTC)
+**Nomination phase** (28 October – 11 November 2024; All deadlines are 11:59 pm, UTC)
 
 - You can submit nominations by filling in the form linked in the Call for Nominations posted to the MEI-L mailing list.
 - Any person who today is a subscriber of the MEI-L mailing list has the right to nominate candidates.
-- Any individual is eligible for nomination, including those who have previously served on the MEI Board. Candidates in the election must be members of the MEI-L mailing list but may register until 22 November 2024.
+- Any individual is eligible for nomination, including those who have previously served on the MEI Board. Candidates in the election must be members of the MEI-L mailing list but may register until 26 November 2024.
 - Self-nominations are welcome.
 - Individuals will be informed of their nomination when received and asked to confirm their willingness to serve on the MEI Board.
 - Acceptance of a nomination requires submission of a short CV and a personal statement of interest in MEI (a maximum of 200 words each) to elections@music-encoding.org by 22 November 2024.
-- Candidates who have been nominated but have not confirmed their willingness by 22 November 2024 will not be included on the ballot.
+- Candidates who have been nominated but have not confirmed their willingness by 26 November 2024 will not be included on the ballot.
 
-**Election phase** (25 November – 12 December 2024)
+**Election phase** (27 November – 15 December 2024)
 
 - The election will take place using OpaVote and the Scottish STV Ranked Choice Voting method (https://www.opavote.com/methods/single-transferable-vote#scottish-stv).
 - We will inform you in separate emails about the start of the election and your individual voting tokens.
