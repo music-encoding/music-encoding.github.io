@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Call for nominations 2024"
-date: 2024-10-25 16:00:00 +0000
+date: 2024-10-28 16:00:00 +0000
 categories: update
 ---
 
@@ -18,7 +18,7 @@ The timeline of the elections will be as follows:
 - Any individual is eligible for nomination, including those who have previously served on the MEI Board. Candidates in the election must be members of the MEI-L mailing list but may register until 26 November 2024.
 - Self-nominations are welcome.
 - Individuals will be informed of their nomination when received and asked to confirm their willingness to serve on the MEI Board.
-- Acceptance of a nomination requires submission of a short CV and a personal statement of interest in MEI (a maximum of 200 words each) to elections@music-encoding.org by 22 November 2024.
+- Acceptance of a nomination requires submission of a short CV and a personal statement of interest in MEI (a maximum of 200 words each) to elections@music-encoding.org by 26 November 2024.
 - Candidates who have been nominated but have not confirmed their willingness by 26 November 2024 will not be included on the ballot.
 
 **Election phase** (27 November – 15 December 2024)
