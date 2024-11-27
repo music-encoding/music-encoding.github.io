@@ -48,7 +48,7 @@ involvement. Although these general issues might not promote new features in
 MEI’s encoding guidelines, I see them as the central aspect of MEI’s success.
 
 Moreover, I envision more frequent stable releases of the MEI schemata and
-guidelines and wou would love to foster this through my engagement as Technical
+guidelines and would love to foster this through my engagement as Technical
 Co-Chair in improving and automating the build and release processes of the MEI
 schemata and guidelines.
 
@@ -65,8 +65,8 @@ Valle de Guatemala, my academic journey bridges technology, music, and cultural
 preservation.
 
 At McGill’s Distributed Digital Music Archives and Libraries (DDMAL) Lab, I
-contributed to the Single Interface for Music Score Searching and Analysis (
-SIMSSA) Research Project, directed by Ichiro Fujinaga, which focuses on
+contributed to the Single Interface for Music Score Searching and Analysis 
+(SIMSSA) Research Project, directed by Ichiro Fujinaga, which focuses on
 developing computational methods for recognizing music symbols in digital images
 of music documents.
 
@@ -154,7 +154,7 @@ grants from the US Department of Education and the University of Florida. He
 recently completed a term as Executive Editor of The Opera Journal, and
 currently serves as co-chair of MEI’s Digital Pedagogy Interest Group. Joining
 the Academy of Sciences and Literature in Mainz in 2021, his introduction to the
-MEI community came through the conversion of theJoseph Haydn Werke metadata into
+MEI community came through the conversion of the Joseph Haydn Werke metadata into
 MEI. He is currently running a project focused on integrating vocal performance
 analysis with notation expression variant-inclusive MEI as a means of examining
 Dietrich Fischer-Dieskau’s long association with Die Winterreise in relationship
@@ -213,7 +213,7 @@ tools that build on MEI to meet the diverse needs of community members.
 Kristina Richts-Matthaei works as a digital humanist at the interface between
 library and information science and (digital) musicology. She has been in
 contact with MEI for many years and has been primarily involved in the metadata
-area and it’s further development. She was spokesperson for the MEI Metadata
+area and its further development. She was spokesperson for the MEI Metadata
 Group for many years. Since January 2024, she has been head of the Centre for
 Digital Music Documentation (CDMD) at the Academy of Sciences and Literature in
 Mainz, where she is responsible for all digital aspects of long-term
