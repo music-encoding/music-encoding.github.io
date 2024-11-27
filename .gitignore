@@ -10,3 +10,6 @@ vendor/
 
 # macOS
 .DS_Store
+
+# various IDEs
+.idea/
