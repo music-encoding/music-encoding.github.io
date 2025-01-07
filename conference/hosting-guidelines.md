@@ -4,6 +4,8 @@ title: "Hosting guidelines"
 ---
 # Hosting Guidelines for the Music Encoding Conference (MEC)
 
+**Submit your proposal via [this form](https://forms.gle/oYKoz9TTimo4sXWD7).**
+
 ## Purpose of these Guidelines
 
 The Music Encoding Initiative (MEI) is a non-profit, community-based organization ([https://music-encoding.org/about/](https://music-encoding.org/about/)) whose aim is to define a system for encoding musical documents in a machine-readable structure. MEI brings together specialists from various music research communities, including technologists, librarians, historians, and theorists in a common effort to define best practices for representing a broad range of musical documents and structures. Among its activities, MEI oversees the organization of an annual conference, the Music Encoding Conference (MEC), to provide a meeting place for scholars interested in discussing the modeling, generation and uses of music encoding in traditional music studies (from editing to analysis), computational musicology, and music librarianship. While the conference has an emphasis on the development and uses of MEI, contributions utilizing other scholarly approaches to music encoding are welcome. During the MEC, the annual MEI Members Meeting is held, and the conference is an opportunity for the organization of tutorials, workshops and meetings related to MEI and its activities. Building upon the experience of past conferences, the present document provides guidelines to those interested in making a bid for the organization of future conferences. Deviations from the following guidelines are possible upon agreement with the MEI Board, which is ultimately responsible for their approval. Proposals for future conferences will be accepted until the date specified in the call for proposals. The Board will reach a final determination well in advance of the next annual conference so that the location of the following conference can be announced at least a year in advance.
@@ -87,7 +89,7 @@ Organizers are asked to provide, along with their proposal, a detailed timeline 
 
 ## How to make a proposal
 
-The proposal should come from the person who will eventually chair the organizing committee, explaining his/her relationship with the hosting institution and their shared motivation. Proposing two co-chairs for the organizing committee is also acceptable. If basic requirements are met, local organizers are encouraged to contact the Administrative Chair of the MEI Board in advance to discuss their ideas, and possible difficulties, and to be creative: the MEI Board is willing to work with hosts to reflect local interests and strengths. The bid should consist of a PDF document of no more than 10 pages addressing the above requirements in detail, and also explaining:
+The proposal should come from the person who will eventually chair the organizing committee, explaining their relationship with the hosting institution and their shared motivation. Proposing two co-chairs for the organizing committee is also acceptable. If basic requirements are met, local organizers are encouraged to contact the Administrative Chair of the MEI Board in advance to discuss their ideas, and possible difficulties, and to be creative: the MEI Board is willing to work with hosts to reflect local interests and strengths. The bid should address the above requirements in detail, and also explain:
 
 * Motivations of the organizing institutions and their representatives (including a statement of their experience with organizing similar events)
 * Venue and its suitability for a conference of this size and type (please describe the rooms and technology available, as well as accessibility accommodations)
@@ -98,6 +100,8 @@ The proposal should come from the person who will eventually chair the organizin
   * registration fee scheme, including possible student support (e.g. reduced fees, affordable housing, travel grants) and late registration fees
   * estimate for different scenarios: for example how to manage a lower (or higher) participation
 * Detailed timeline of the organization, and people involved
+
+**Submit your proposal via [this form](https://forms.gle/oYKoz9TTimo4sXWD7).**
 
 Bids are assessed by the MEI Board, which makes the final decision based on the suitability of the location and venue proposed, the level of support being committed by the institution and sponsors, the existence a suitable plan to reach financial break-even, and other factors which may affect the overall success of the conference. Successful bidders must prepare a short presentation introducing themselves and the conference location to be delivered at the conference immediately following their selection.
 
