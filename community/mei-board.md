@@ -10,6 +10,11 @@ The MEI Board manages the property and business of MEI. It promotes the developm
 
 ## Current Board Members
 
+### Term 2025–2027
+* **Benjamin W. Bohl (Technical Co-Chair)**, Institut für Musikwissenschaft, Goethe Universität Frankfurt, Frankfurt am Main and Musikwissenschaftliches Seminar Detmold/Paderborn
+* **Anna E. Kijas (Administrative Chair)**, Lilly Music Library, Tufts University
+* **Martha Thomae**, Centro de Estudos de Sociologia e Estética Musical (CESEM), Universidade Nova de Lisboa, Lisboa
+
 ### Term 2024-2026
 
 * **Maristella Feustle**, Music Library, University of North Texas
@@ -22,11 +27,6 @@ The MEI Board manages the property and business of MEI. It promotes the developm
 * **Anna Plaksin**, Musikwissenschaftliches Seminar Detmold/Paderborn, KreativInstitut.OWL
 * **David M. Weigl**, Institut für musikalische Akustik – Wiener Klangstil, mdw – Universität für Musik und darstellende Kunst Wien
 
-### Term 2022–2024
-
-* **Benjamin W. Bohl (Technical Co-Chair)**, Institut für Musikwissenschaft, Goethe Universität Frankfurt, Frankfurt am Main and Musikwissenschaftliches Seminar Detmold/Paderborn
-* **Anna E. Kijas (Administrative Chair)**, Lilly Music Library, Tufts University
-* **Klaus Rettinghaus**, Enote GmbH, Berlin
 
 ### Previous Board Members
 
@@ -36,6 +36,7 @@ The MEI Board manages the property and business of MEI. It promotes the developm
 * **Ichiro Fujinaga**, McGill University, Montréal (2015–2021)
 * **Axel Teich Geertinger**, Danish Centre for Music Editing, Royal Library, Copenhagen, (2015–2016)
 * **Andrew Hankinson**, Bodleian Library, Oxford (2017–2019)
+* **Klaus Rettinghaus**, Enote GmbH, Berlin (2022–2024)
 * **Kristina Richts-Matthaei**, Centre for Digital Music Documentation (CDMD), Academy of Sciences and Literature, Mainz (2015–2023)
 * **Perry Roland**, University of Virginia Library, Charlottesville (2015–2018, 2020–2022)
 * **Eleanor Selfridge-Field**, Center for Computer-Assisted Research in the Humanities, Stanford University (2015–2019)
