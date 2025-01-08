@@ -56,7 +56,7 @@ The schedule for these developer workshops is the _last Friday of every odd mont
 <details>
   <summary>ODD meetings in 2024</summary>
 * November 29, 2024 <a href="https://www.timeanddate.com/worldclock/converter.html?iso=20241129T130000&p1=1440&p2=994&p3=43">13:00 UTC</a> ODD Friday <br/>
-* November 7, 2024 <a href="https://www.timeanddate.com/worldclock/converter.html?iso=20241107T130000&p1=1440&p2=994&p3=43">13:00 UTC</a> ODD Thursday <br/>
+* November 7(!), 2024 <a href="https://www.timeanddate.com/worldclock/converter.html?iso=20241107T130000&p1=1440&p2=994&p3=43">13:00 UTC</a> ODD Thursday <br/>
 * September 27, 2024 <a href="https://www.timeanddate.com/worldclock/converter.html?iso=20240927T120000&p1=1440&p2=994&p3=43">12:00 UTC</a> ODD Friday <br/>
 * August: summer break
 * July 26, 2024 <a href="https://www.timeanddate.com/worldclock/converter.html?iso=20240726T120000&p1=1440&p2=994&p3=43">12:00 UTC</a> ODD Friday <br/>
@@ -65,7 +65,7 @@ The schedule for these developer workshops is the _last Friday of every odd mont
 * May 20–23, 2024: MEC conference
 * April 25, 2024 <a href="https://www.timeanddate.com/worldclock/converter.html?iso=20240425T150000&p1=1440&p2=994&p3=43">15:00 UTC</a> ODD Thursday <br/>
 * March 22, 2024 <a href="https://www.timeanddate.com/worldclock/converter.html?iso=20240322T160000&p1=1440&p2=994&p3=43">16:00 UTC</a> ODD Friday <br/>
-* March 6, 2024 <a href="https://www.timeanddate.com/worldclock/converter.html?iso=20240306T150000&p1=1440&p2=994&p3=43">15:00 UTC</a> ODD Thursday (= Wednesday) <br/> 
+* March 6(!), 2024 <a href="https://www.timeanddate.com/worldclock/converter.html?iso=20240306T150000&p1=1440&p2=994&p3=43">15:00 UTC</a> ODD Thursday (= Wednesday) <br/> 
 * January 26, 2024 <a href="https://www.timeanddate.com/worldclock/converter.html?iso=20240126T160000&p1=1440&p2=994&p3=43">16:00 UTC</a> ODD Friday <br/>
 * January 18–20, 2024: Developer workshop, Vienna
 </details>
