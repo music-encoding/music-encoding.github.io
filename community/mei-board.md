@@ -10,6 +10,11 @@ The MEI Board manages the property and business of MEI. It promotes the developm
 
 ## Current Board Members
 
+### Term 2025–2027
+* **Benjamin W. Bohl (Technical Co-Chair)**, Institut für Musikwissenschaft, Goethe Universität Frankfurt, Frankfurt am Main and Musikwissenschaftliches Seminar Detmold/Paderborn
+* **Anna E. Kijas (Administrative Chair)**, Lilly Music Library, Tufts University
+* **Martha Thomae**, Centro de Estudos de Sociologia e Estética Musical (CESEM), Universidade Nova de Lisboa, Lisboa
+
 ### Term 2024-2026
 
 * **Maristella Feustle**, Music Library, University of North Texas
@@ -22,11 +27,6 @@ The MEI Board manages the property and business of MEI. It promotes the developm
 * **Anna Plaksin**, Musikwissenschaftliches Seminar Detmold/Paderborn, KreativInstitut.OWL
 * **David M. Weigl**, Institut für musikalische Akustik – Wiener Klangstil, mdw – Universität für Musik und darstellende Kunst Wien
 
-### Term 2022–2024
-
-* **Benjamin W. Bohl (Technical Co-Chair)**, Institut für Musikwissenschaft, Goethe Universität Frankfurt, Frankfurt am Main and Musikwissenschaftliches Seminar Detmold/Paderborn
-* **Anna E. Kijas (Administrative Chair)**, Lilly Music Library, Tufts University
-* **Klaus Rettinghaus**, Enote GmbH, Berlin
 
 ### Previous Board Members
 
@@ -36,6 +36,7 @@ The MEI Board manages the property and business of MEI. It promotes the developm
 * **Ichiro Fujinaga**, McGill University, Montréal (2015–2021)
 * **Axel Teich Geertinger**, Danish Centre for Music Editing, Royal Library, Copenhagen, (2015–2016)
 * **Andrew Hankinson**, Bodleian Library, Oxford (2017–2019)
+* **Klaus Rettinghaus**, Enote GmbH, Berlin (2022–2024)
 * **Kristina Richts-Matthaei**, Centre for Digital Music Documentation (CDMD), Academy of Sciences and Literature, Mainz (2015–2023)
 * **Perry Roland**, University of Virginia Library, Charlottesville (2015–2018, 2020–2022)
 * **Eleanor Selfridge-Field**, Center for Computer-Assisted Research in the Humanities, Stanford University (2015–2019)
@@ -43,20 +44,20 @@ The MEI Board manages the property and business of MEI. It promotes the developm
 
 ## Protocols of Board Meetings
 
-* [2015-05-21, Face to Face meeting at the MEC2015 in Florence](mei-board/protocols/2015-05-21_Face-to-Face-Meeting-MEC2015-Florence.md)
-* [2017-05-17, Face to Face meeting at the MEC2017 in Tours](mei-board/protocols/2017-05-17_Face-to-Face-Meeting-MEC2017-Tours.md)
-* [2017-08-29, Virtual Board Meeting](mei-board/protocols/2017-08-29_Virtual-Board-Meeting.md)
-* [2018-01-15, Virtual Board Meeting](mei-board/protocols/2018-01-15_Virtual-Board-Meeting.md)
-* [2018-05-22, Face to Face meeting at the MEC2018 in College Park](mei-board/protocols/2018-05-22_Face-to-Face-Meeting-MEC2018-College-Park.md)
-* [2018-10-12, Virtual Board Meeting](mei-board/protocols/2018-10-12_Virtual-Board-Meeting.md)
-* [2019-01-15, Virtual Board Meeting](mei-board/protocols/2019-01-15_Virtual-Board-Meeting.md)
-* [2019-06-12, Face to Face meeting at the MEC2019 in Vienna](mei-board/protocols/2019-06-01_Face-to-Face-Meeting-MEC2019-Vienna.md)
-* [2020-01-15, Virtual Board Meeting](mei-board/protocols/2020-01-15_Virtual-Board-Meeting.md)
-* [2020-03-25, Virtual Board Meeting](mei-board/protocols/2020-03-25_Virtual-Board-Meeting.md)
-* [2020-07-23, Virtual Board Meeting](mei-board/protocols/2020-07-23_Virtual-Board-Meeting.md)
-* [2020-10-07, Virtual Board Meeting](mei-board/protocols/2020-10-07_Virtual-Board-Meeting.md)
-* [2021-01-14, Virtual Board Meeting](mei-board/protocols/2021-01-14_Virtual-Board-Meeting.md)
-* [2022-01-19, Virtual Board Meeting](mei-board/protocols/2022-01-19_Virtual-Board-Meeting.md)
+* [2015-05-21, Face to Face meeting at the MEC2015 in Florence](mei-board/protocols/2015-05-21_Face-to-Face-Meeting-MEC2015-Florence)
+* [2017-05-17, Face to Face meeting at the MEC2017 in Tours](mei-board/protocols/2017-05-17_Face-to-Face-Meeting-MEC2017-Tours)
+* [2017-08-29, Virtual Board Meeting](mei-board/protocols/2017-08-29_Virtual-Board-Meeting)
+* [2018-01-15, Virtual Board Meeting](mei-board/protocols/2018-01-15_Virtual-Board-Meeting)
+* [2018-05-22, Face to Face meeting at the MEC2018 in College Park](mei-board/protocols/2018-05-22_Face-to-Face-Meeting-MEC2018-College-Park)
+* [2018-10-12, Virtual Board Meeting](mei-board/protocols/2018-10-12_Virtual-Board-Meeting)
+* [2019-01-15, Virtual Board Meeting](mei-board/protocols/2019-01-15_Virtual-Board-Meeting)
+* [2019-06-12, Face to Face meeting at the MEC2019 in Vienna](mei-board/protocols/2019-06-01_Face-to-Face-Meeting-MEC2019-Vienna)
+* [2020-01-15, Virtual Board Meeting](mei-board/protocols/2020-01-15_Virtual-Board-Meeting)
+* [2020-03-25, Virtual Board Meeting](mei-board/protocols/2020-03-25_Virtual-Board-Meeting)
+* [2020-07-23, Virtual Board Meeting](mei-board/protocols/2020-07-23_Virtual-Board-Meeting)
+* [2020-10-07, Virtual Board Meeting](mei-board/protocols/2020-10-07_Virtual-Board-Meeting)
+* [2021-01-14, Virtual Board Meeting](mei-board/protocols/2021-01-14_Virtual-Board-Meeting)
+* [2022-01-19, Virtual Board Meeting](mei-board/protocols/2022-01-19_Virtual-Board-Meeting)
 
 ## Elections
 
