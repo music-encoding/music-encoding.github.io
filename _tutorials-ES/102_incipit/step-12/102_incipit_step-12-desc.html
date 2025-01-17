@@ -14,7 +14,7 @@
         Para hacerlo, los valores de los atributos <code>@startid</code> y <code>@endid</code> deben referenciar un atributo llamado <code>@xml:id</code> de los elementos reales donde comienza y termina el ligado.
         Los <code>@xml:id</code> son identificadores con una secuencia de caracteres arbitraria pero única que regularizan la denominación de un elemento a lo largo de un documento
         y así facilitan la creación de enlaces entre elementos y otros recursos. Este es un mecanismo de referencia común en XML: aplicar un <code>@xml:id</code> a un elemento y referenciarlo desde otro elemento.</p>
-    
+<p>En el caso de una ligadura <code>&lt;slur&gt;</code>, el atributo <code>@startid</code> hace referencia al <code>@xml:id</code> del elemento donde la ligadura inicia y el atributo <code>@endid</code> hace referencia al <code>@xml:id</code> del elemento donde la ligadura termina.</p>
     <p>Por ejemplo, si tienes un elemento <code>&lt;note&gt;</code> con un <code>@xml:id</code> de "note-1" y otro elemento <code>&lt;note&gt;</code> con un <code>@xml:id</code> de "note-2", 
         puedes crear un <code>&lt;slur&gt;</code> que comienza en la primera nota y termina en la segunda nota configurando el atributo <code>@startid</code> a "#note-1" y el atributo <code>@endid</code> a "#note-2". 
         Nota que el hash de referencia <code>#</code> solo se usa con los atributos de referencia, no con los <code>@xml:id</code> en sí mismos:</p>
