@@ -11,7 +11,7 @@
         Para permitir un control preciso sobre la colocación del ligado en relación con el pentagrama musical, se puede usar el atributo <code>@staff</code>. Este atributo identifica el número del pentagrama al que se aplica el elemento <code>&lt;slur&gt;</code>.</p>
 
     <p>Para indicar el punto inicial y el punto final de la ligadura,  se pueden usar los atributos <code>@startid</code> y <code>@endid</code>. 
-        Para hacerlo, los valores de los atributos <code>@startid</code> y <code>@endid</code> deben referenciar un atributo llamado <code>@xml:id</code> de los elementos reales donde comienza y termina el ligado.
+        Para hacerlo, los valores de los atributos <code>@startid</code> y <code>@endid</code> deben hacer referencia al valor del atributo <code>@xml:id</code> de los elementos donde comienza y termina la ligadura.
         Los <code>@xml:id</code> son identificadores con una secuencia de caracteres arbitraria pero única que regularizan la denominación de un elemento a lo largo de un documento
         y así facilitan la creación de enlaces entre elementos y otros recursos. Este es un mecanismo de referencia común en XML: aplicar un <code>@xml:id</code> a un elemento y referenciarlo desde otro elemento.</p>
 <p>En el caso de una ligadura <code>&lt;slur&gt;</code>, el atributo <code>@startid</code> hace referencia al <code>@xml:id</code> del elemento donde la ligadura inicia y el atributo <code>@endid</code> hace referencia al <code>@xml:id</code> del elemento donde la ligadura termina.</p>
