@@ -38,4 +38,4 @@ For more details, including the full release notes and updated documentation, vi
 - [MEI Encoding Tools v5.1](https://github.com/music-encoding/encoding-tools/releases/tag/v5.1)
  Updated tools for working with MEI data, optimized for the latest schema.
 
-**Your MEI Development Team**
+**Your MEI Technical Team**
