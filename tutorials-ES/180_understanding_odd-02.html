@@ -1,0 +1,11 @@
+<div>
+    <p>
+        ODD, acrónimo de <em>One Document Does-it-all (Un documento lo hace todo)</em>, forma parte del estándar <a href="https://tei-c.org/guidelines/customization/getting-started-with-p5-odds/" target="_blank" rel="noopener, noreferrer">TEI</a>, y también se utiliza para definir el propio TEI.    
+    </p>
+    <p>
+        ODD utiliza un conjunto de elementos especiales en el espacio de nombres <a href="https://tei-c.org/ns/1.0/" target="_blank" rel="noopener, noreferrer">TEI</a> para describir los formatos de datos basados en XML. Además de para el núcleo de TEI, se utiliza para formatos basados en TEI como <a href="https://sourceforge.net/p/epidoc/wiki/Home/" target="_blank" rel="noopener, noreferrer">EpiDoc</a>, pero también para formatos técnicamente independientes como MEI. En 2016, TEI sacó una versión de ODD llamada <em><a href="https://wiki.tei-c.org/index.php/ODD#.22Pure_ODD.22" target="_blank" rel="noopener, noreferrer">Pure ODD (ODD puro)</a></em>. Sin embargo, a partir del verano de 2020, MEI sigue utilizando la versión más antigua de ODD, ya que la nueva versión no aporta ninguna ventaja pertinente para MEI, sino que supondría un importante trabajo de mantenimiento para varias herramientas y flujos de trabajo relacionados con MEI. 
+    </p>
+    <p>
+        La principal diferencia con <em>Pure ODD</em> es que la versión antigua utilizada por MEI utiliza elementos del espacio de nombres <em><a href="https://relaxng.org/" target="_blank" rel="noopener, noreferrer">RelaxNG</a></em>. Al final, los archivos ODD suelen compilarse a un esquema RelaxNG (o XSD) de todos modos, ya que no hay literalmente ningún soporte de software para la validación directa contra ODD. Sin embargo, este recurso a RelaxNG en el marco de ODD añade una dependencia adicional en el flujo de trabajo de TEI y, por tanto, reduce la libertad técnica para definir TEI y/o ODD en cierta (¿menor?) medida. Como MEI ya está definido en un formato que está fuera del control (directo) de la comunidad MEI, y necesita lidiar con múltiples espacios de nombres XML de todos modos, el argumento de tener todo definido consistentemente en <em>Pure ODD</em> es menos llamativo, y por lo tanto no se ha seguido hasta ahora. 
+    </p>
+</div>

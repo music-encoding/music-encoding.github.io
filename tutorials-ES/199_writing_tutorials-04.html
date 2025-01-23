@@ -1,0 +1,46 @@
+<div>
+    <p>
+        A la hora de hacer un tutorial por tu cuenta, es posible que te hayas preguntado cómo Verovio es capaz de renderizar la MEI del usuario, a pesar de que éste no haya introducido un archivo MEI completo. Esto se consigue con la propiedad <code>"xmlFile"</code> del paso del tutorial introducido en la última página. Esta propiedad hace referencia a un archivo MEI completo, que proporciona el contexto que necesita ir "alrededor" de la entrada del usuario para una correcta renderización. Veamos un ejemplo sencillo: 
+    </p>
+    <pre class="codeblock">&lt;mei xmlns="http://www.music-encoding.org/ns/mei"&gt;
+    &lt;meiHead&gt;
+        &lt;fileDesc&gt;
+            &lt;titleStmt&gt;
+                &lt;title/&gt;
+            &lt;/titleStmt&gt;
+            &lt;pubStmt/&gt;
+        &lt;/fileDesc&gt;
+    &lt;/meiHead&gt;
+    &lt;music&gt;
+        &lt;body&gt;
+            &lt;mdiv&gt;
+                &lt;score&gt;
+                    &lt;scoreDef&gt;
+                        &lt;staffGrp&gt;
+                            &lt;staffDef clef.shape="G" clef.line="2" n="1" lines="5"/&gt;
+                        &lt;/staffGrp&gt;
+                    &lt;/scoreDef&gt;
+                    &lt;section&gt;
+                        &lt;measure&gt;
+                            &lt;staff n="1"&gt;
+                                &lt;layer&gt;
+                                    <span class="text-error"><?snippet-start?></span>
+                                    &lt;note pname="c" oct="4" dur="4"/&gt;
+                                    <span class="text-error"><?snippet-end?></span>
+                                &lt;/layer&gt;
+                            &lt;/staff&gt;
+                        &lt;/measure&gt;
+                    &lt;/section&gt;
+                &lt;/score&gt;
+            &lt;/mdiv&gt;
+        &lt;/body&gt;
+    &lt;/music&gt;
+&lt;/mei&gt;</pre>
+    <label>Un archivo MEI simple, que se utilizará como contexto para la entrada del usuario.</label>
+    <p>
+        Se trata de un archivo MEI normal, pero contiene dos instrucciones de procesamiento importantes (marcadas en rojo). El contenido de este archivo se lee en la memoria. Siempre que la entrada del usuario en el editor sea un XML bien formado, se inserta <i>entre</i> las dos instrucciones de procesamiento, y el archivo completo (ahora incluyendo la entrada del usuario) se valida y (si procede) se envía a Verovio para su renderización. 
+    </p>
+    <p>
+        Lo que se almacena entre las dos <i>instrucciones de procesamiento</i> pretende servir como solución de muestra. Esa funcionalidad aún no está implementada, pero se añadirá pronto. Ya es posible descargar el archivo completo (incluido el contexto), para que los usuarios puedan utilizarlo como referencia futura o como modelo para su propio trabajo. 
+    </p>
+</div>

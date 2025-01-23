@@ -1,0 +1,1177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Tools</title>
+    <meta name="description" content="">
+
+    <link rel="stylesheet" href="/css/main.css">
+    <!-- syntax highlighting CSS -->
+    <link rel="stylesheet" href="/css/syntax.css" />
+    <script type="text/javascript" src="/js/carousel.js"></script>
+    <script type="text/javascript">
+      document.addEventListener("DOMContentLoaded", event => {
+        const indexCarousel = document.getElementById("index-carousel");
+        if (indexCarousel !== null) {
+          animateCarousel(indexCarousel, 3000);
+          indexCarousel.addEventListener("mouseover", event => {
+            stopCarouselAnimation(indexCarousel);
+          });
+          indexCarousel.addEventListener("mouseout", event => {
+            animateCarousel(indexCarousel, 3000);
+          });
+        }
+      });
+    </script>
+</head>
+
+
+  <body>
+
+    <!-- Make sure to mirror changes in the guidelines repository in _include/header.html when necessary -->
+<header class="navbar">
+  <div class="navbar-section">
+    <a class="navbar-brand" href="https://music-encoding.org">
+      <img src="/pix/meilogo-inverted.png" alt="MEI logo"/>
+    </a>
+    <div class="hide-lg">
+      
+    <div class="dropdown dropdownCustomMenuToggle">
+        
+            <a href="/about" class="btn btn-link top-menu-link" tabindex="0">
+                About
+            </a>
+        
+    </div>
+
+    <div class="dropdown dropdownCustomMenuToggle">
+        
+            <a href="#" class="btn btn-link dropdown-toggle top-menu-link" tabindex="1">
+                Community <i class="icon icon-caret"></i>
+            </a>
+
+            
+             <ul class="menu"> 
+                <li class="menu-item">
+                    <a href="/community/projects-users.html" class="btn btn-link text-left menu-link">
+                        Projects / Users
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/community/news-events.html" class="btn btn-link text-left menu-link">
+                        News / Events
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/community/community-contacts.html" class="btn btn-link text-left menu-link">
+                        Community Contacts
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/community/interest-groups.html" class="btn btn-link text-left menu-link">
+                        Interest Groups
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/community/technical-team.html" class="btn btn-link text-left menu-link">
+                        Technical Team
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/community/mei-board.html" class="btn btn-link text-left menu-link">
+                        MEI Board
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/community/mei-by-laws.html" class="btn btn-link text-left menu-link">
+                        MEI By-laws
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/community/code-of-conduct.html" class="btn btn-link text-left menu-link">
+                        Code of Conduct
+                    </a>
+                </li>
+                 </ul> 
+            
+
+        
+    </div>
+
+    <div class="dropdown dropdownCustomMenuToggle">
+        
+            <a href="#" class="btn btn-link dropdown-toggle top-menu-link" tabindex="2">
+                Conference <i class="icon icon-caret"></i>
+            </a>
+
+            
+             <ul class="menu"> 
+                <li class="menu-item">
+                    <a href="/conference/2025" class="btn btn-link text-left menu-link">
+                        MEC 2025
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/conference/past.html" class="btn btn-link text-left menu-link">
+                        Past Conferences
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/conference/proceedings.html" class="btn btn-link text-left menu-link">
+                        Proceedings
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/conference/awards.html" class="btn btn-link text-left menu-link">
+                        MEC Awards
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/conference/hosting-guidelines.html" class="btn btn-link text-left menu-link">
+                        Hosting Guidelines
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/conference/code-of-conduct.html" class="btn btn-link text-left menu-link">
+                        Code of conduct
+                    </a>
+                </li>
+                 </ul> 
+            
+
+        
+    </div>
+
+    <div class="dropdown dropdownCustomMenuToggle">
+        
+            <a href="#" class="btn btn-link dropdown-toggle top-menu-link" tabindex="3">
+                Resources <i class="icon icon-caret"></i>
+            </a>
+
+            
+             <ul class="menu"> 
+                <li class="menu-item">
+                    <a href="/resources/background.html" class="btn btn-link text-left menu-link">
+                        Background
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/resources/bibliography.html" class="btn btn-link text-left menu-link">
+                        Bibliography
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/resources/pedagogy.html" class="btn btn-link text-left menu-link">
+                        Pedagogy & Praxis
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/resources/schemas.html" class="btn btn-link text-left menu-link">
+                        Schemas and Namespace
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/resources/tools.html" class="btn btn-link text-left menu-link">
+                        Tools
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/resources/tutorials.html" class="btn btn-link text-left menu-link">
+                        Tutorials
+                    </a>
+                </li>
+                 </ul> 
+            
+
+        
+    </div>
+
+    <div class="dropdown dropdownCustomMenuToggle">
+        
+            <a href="#" class="btn btn-link dropdown-toggle top-menu-link" tabindex="4">
+                Documentation <i class="icon icon-caret"></i>
+            </a>
+
+            
+             <ul class="menu"> 
+                <li class="menu-item">
+                    <a href="/guidelines/v5" class="btn btn-link text-left menu-link">
+                        MEI 5 (latest release)
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/guidelines/dev" class="btn btn-link text-left menu-link">
+                        Development version
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/guidelines/v4" class="btn btn-link text-left menu-link">
+                        MEI 4
+                    </a>
+                </li>
+                
+            
+            
+                <li class="menu-item">
+                    <a href="/guidelines/v3" class="btn btn-link text-left menu-link">
+                        MEI 3
+                    </a>
+                </li>
+                 </ul> 
+            
+
+        
+    </div>
+
+    <div class="dropdown dropdownCustomMenuToggle">
+        
+            <a href="/archive" class="btn btn-link top-menu-link" tabindex="5">
+                Archive
+            </a>
+        
+    </div>
+
+
+    </div>
+  </div>
+  <div class="navbar-section" id="socialLinks">
+    <a class="githubLink" target="_blank" href="https://github.com/music-encoding" title="Link to GitHub">
+      <img src="/pix/github.png" alt="GitHub" class="logo"/>
+    </a>
+    <a class="slackLink" target="_blank" href="https://music-encoding.slack.com/" title="MEI Slack channel">
+      <img src="/pix/slack.png" alt="Slack" class="logo"/>
+    </a>
+  </div>
+    <div id="menu-accordion" class="accordion-container dropdown-toggle show-lg column col-12">
+  <div class="accordion">
+    <input id="accordion-toggle" type="checkbox" name="accordion-checkbox" hidden=""/>
+    <label class="accordion-header c-hand" for="accordion-toggle">
+      <i class="icon icon-menu"></i>
+    </label>
+
+    <div class="accordion-body">
+      <ul class="menu menu-nav">
+        
+        <li class="menu-item">
+          <div class="accordion menu">
+            <input id="accordion-About" type="checkbox" name="accordion-checkbox" hidden=""/>
+            <label class="accordion-header c-hand" for="accordion-About">
+              
+                  <a href="/about">
+                      About
+                  </a>
+              
+            </label>
+            
+          </div>
+        </li>
+        
+        <li class="menu-item">
+          <div class="accordion menu">
+            <input id="accordion-Community" type="checkbox" name="accordion-checkbox" hidden=""/>
+            <label class="accordion-header c-hand" for="accordion-Community">
+              
+                Community
+              
+            </label>
+            
+            <div class="accordion-body">
+              <ul class="menu menu-nav">
+                
+                   <li><ul class="menu"> 
+                  <li class="menu-item"><a href="/community/projects-users.html">Projects / Users</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/community/news-events.html">News / Events</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/community/community-contacts.html">Community Contacts</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/community/interest-groups.html">Interest Groups</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/community/technical-team.html">Technical Team</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/community/mei-board.html">MEI Board</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/community/mei-by-laws.html">MEI By-laws</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/community/code-of-conduct.html">Code of Conduct</a></li>
+                   </ul></li> 
+                
+              </ul>
+            </div>
+            
+          </div>
+        </li>
+        
+        <li class="menu-item">
+          <div class="accordion menu">
+            <input id="accordion-Conference" type="checkbox" name="accordion-checkbox" hidden=""/>
+            <label class="accordion-header c-hand" for="accordion-Conference">
+              
+                Conference
+              
+            </label>
+            
+            <div class="accordion-body">
+              <ul class="menu menu-nav">
+                
+                   <li><ul class="menu"> 
+                  <li class="menu-item"><a href="/conference/2025">MEC 2025</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/conference/past.html">Past Conferences</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/conference/proceedings.html">Proceedings</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/conference/awards.html">MEC Awards</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/conference/hosting-guidelines.html">Hosting Guidelines</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/conference/code-of-conduct.html">Code of conduct</a></li>
+                   </ul></li> 
+                
+              </ul>
+            </div>
+            
+          </div>
+        </li>
+        
+        <li class="menu-item">
+          <div class="accordion menu">
+            <input id="accordion-Resources" type="checkbox" name="accordion-checkbox" hidden=""/>
+            <label class="accordion-header c-hand" for="accordion-Resources">
+              
+                Resources
+              
+            </label>
+            
+            <div class="accordion-body">
+              <ul class="menu menu-nav">
+                
+                   <li><ul class="menu"> 
+                  <li class="menu-item"><a href="/resources/background.html">Background</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/resources/bibliography.html">Bibliography</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/resources/pedagogy.html">Pedagogy & Praxis</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/resources/schemas.html">Schemas and Namespace</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/resources/tools.html">Tools</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/resources/tutorials.html">Tutorials</a></li>
+                   </ul></li> 
+                
+              </ul>
+            </div>
+            
+          </div>
+        </li>
+        
+        <li class="menu-item">
+          <div class="accordion menu">
+            <input id="accordion-Documentation" type="checkbox" name="accordion-checkbox" hidden=""/>
+            <label class="accordion-header c-hand" for="accordion-Documentation">
+              
+                Documentation
+              
+            </label>
+            
+            <div class="accordion-body">
+              <ul class="menu menu-nav">
+                
+                   <li><ul class="menu"> 
+                  <li class="menu-item"><a href="/guidelines/v5">MEI 5 (latest release)</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/guidelines/dev">Development version</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/guidelines/v4">MEI 4</a></li>
+                  
+                
+                  
+                  <li class="menu-item"><a href="/guidelines/v3">MEI 3</a></li>
+                   </ul></li> 
+                
+              </ul>
+            </div>
+            
+          </div>
+        </li>
+        
+        <li class="menu-item">
+          <div class="accordion menu">
+            <input id="accordion-Archive" type="checkbox" name="accordion-checkbox" hidden=""/>
+            <label class="accordion-header c-hand" for="accordion-Archive">
+              
+                  <a href="/archive">
+                      Archive
+                  </a>
+              
+            </label>
+            
+          </div>
+        </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+
+</header>
+
+
+    <div class="container grid-xl content">
+        <h1>Tools</h1>
+
+<p>This is a collection of tools for working with MEI files. If you are missing any tool, or see room for improvement please submit your ideas in our <a href="https://github.com/music-encoding/music-encoding.github.io">repository</a>.</p>
+<p>The tools have been tagged with the below tags. Click any of the tags to filter the displayed tools.</p>
+<div class="columns filter my-2">
+  
+    
+    <input type="checkbox" id="tag-1" class="filter-tag" name="filter-check" hidden="" />
+  
+    
+    <input type="checkbox" id="tag-2" class="filter-tag" name="filter-check" hidden="" />
+  
+    
+    <input type="checkbox" id="tag-3" class="filter-tag" name="filter-check" hidden="" />
+  
+    
+    <input type="checkbox" id="tag-4" class="filter-tag" name="filter-check" hidden="" />
+  
+    
+    <input type="checkbox" id="tag-5" class="filter-tag" name="filter-check" hidden="" />
+  
+    
+    <input type="checkbox" id="tag-6" class="filter-tag" name="filter-check" hidden="" />
+  
+    
+    <input type="checkbox" id="tag-7" class="filter-tag" name="filter-check" hidden="" />
+  
+    
+    <input type="checkbox" id="tag-8" class="filter-tag" name="filter-check" hidden="" />
+  
+    
+    <input type="checkbox" id="tag-9" class="filter-tag" name="filter-check" hidden="" />
+  
+    
+    <input type="checkbox" id="tag-10" class="filter-tag" name="filter-check" hidden="" />
+  
+    
+    <input type="checkbox" id="tag-11" class="filter-tag" name="filter-check" hidden="" />
+  
+    
+    <input type="checkbox" id="tag-12" class="filter-tag" name="filter-check" hidden="" />
+  
+    
+    <input type="checkbox" id="tag-13" class="filter-tag" name="filter-check" hidden="" />
+  
+    
+    <input type="checkbox" id="tag-14" class="filter-tag" name="filter-check" hidden="" />
+  
+    
+    <input type="checkbox" id="tag-15" class="filter-tag" name="filter-check" hidden="" />
+  
+    
+    <input type="checkbox" id="tag-16" class="filter-tag" name="filter-check" hidden="" />
+  
+    
+    <input type="checkbox" id="tag-17" class="filter-tag" name="filter-check" hidden="" />
+  
+    
+    <input type="checkbox" id="tag-18" class="filter-tag" name="filter-check" hidden="" />
+  
+  <div class="filter-nav">
+    
+        
+        <label class="chip" for="tag-1">browser-based</label>
+    
+        
+        <label class="chip" for="tag-2">cataloguing</label>
+    
+        
+        <label class="chip" for="tag-3">conversion</label>
+    
+        
+        <label class="chip" for="tag-4">developers</label>
+    
+        
+        <label class="chip" for="tag-5">documentation</label>
+    
+        
+        <label class="chip" for="tag-6">editor</label>
+    
+        
+        <label class="chip" for="tag-7">getting-started</label>
+    
+        
+        <label class="chip" for="tag-8">library</label>
+    
+        
+        <label class="chip" for="tag-9">metadata</label>
+    
+        
+        <label class="chip" for="tag-10">plug-in</label>
+    
+        
+        <label class="chip" for="tag-11">rendering</label>
+    
+        
+        <label class="chip" for="tag-12">repository</label>
+    
+        
+        <label class="chip" for="tag-13">score-editing</label>
+    
+        
+        <label class="chip" for="tag-14">sonification</label>
+    
+        
+        <label class="chip" for="tag-15">utility</label>
+    
+        
+        <label class="chip" for="tag-16">validation</label>
+    
+        
+        <label class="chip" for="tag-17">viewer</label>
+    
+        
+        <label class="chip" for="tag-18">xslt</label>
+    
+  </div>
+  <div class="columns filter-body projects">
+    
+        <div class="column col-4 col-sm-12 col-lg-6 filter-item" data-tag="tag-3 tag-4 tag-18 ">
+            <div class="card project">
+                <div class="card-image">
+                
+                    <div class="hero hero-sm bg-primary text-light">
+                        <div class="hero-body px-2">
+                        <h3>Encoding tools</h3>
+                        </div>
+                    </div>
+                
+                </div>
+                <div class="card-header">
+                    <div class="card-title h5">
+                        Encoding tools
+                    </div>
+                    <div class="card-subtitle text-gray">
+                        
+                        Converters and linters
+                        <br />
+                        
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <a class="btn float-right btn-sm" href="/tools/encoding-tools">More…</a>
+                    
+                    <label class="chip">conversion</label>
+                    
+                    <label class="chip">developers</label>
+                    
+                    <label class="chip">xslt</label>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div class="column col-4 col-sm-12 col-lg-6 filter-item" data-tag="tag-4 tag-8 ">
+            <div class="card project">
+                <div class="card-image">
+                
+                    <div class="hero hero-sm bg-primary text-light">
+                        <div class="hero-body px-2">
+                        <h3>LibMEI</h3>
+                        </div>
+                    </div>
+                
+                </div>
+                <div class="card-header">
+                    <div class="card-title h5">
+                        LibMEI
+                    </div>
+                    <div class="card-subtitle text-gray">
+                        
+                        C++ library for MEI
+                        <br />
+                        
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <a class="btn float-right btn-sm" href="/tools/libmei">More…</a>
+                    
+                    <label class="chip">developers</label>
+                    
+                    <label class="chip">library</label>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div class="column col-4 col-sm-12 col-lg-6 filter-item" data-tag="tag-1 tag-6 tag-7 tag-11 tag-14 tag-15 tag-17 ">
+            <div class="card project">
+                <div class="card-image">
+                
+                    
+                    
+                        <img class="mei-project-image img-fit-contain p-2" alt="mei-friend.md logo" src="https://raw.githubusercontent.com/mei-friend/mei-friend/main/app/static/owl/menu-logo.svg" />
+                    
+                
+                </div>
+                <div class="card-header">
+                    <div class="card-title h5">
+                        mei-friend
+                    </div>
+                    <div class="card-subtitle text-gray">
+                        
+                        Browser-based music editor
+                        <br />
+                        
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <a class="btn float-right btn-sm" href="/tools/mei-friend">More…</a>
+                    
+                    <label class="chip">browser-based</label>
+                    
+                    <label class="chip">editor</label>
+                    
+                    <label class="chip">getting-started</label>
+                    
+                    <label class="chip">rendering</label>
+                    
+                    <label class="chip">sonification</label>
+                    
+                    <label class="chip">utility</label>
+                    
+                    <label class="chip">viewer</label>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div class="column col-4 col-sm-12 col-lg-6 filter-item" data-tag="tag-3 tag-4 tag-5 tag-16 ">
+            <div class="card project">
+                <div class="card-image">
+                
+                    
+                    
+                        <img class="mei-project-image img-fit-contain p-2" alt="mei-garage.md logo" src="https://custom.music-encoding.org/img/meigarage.logo.166c7942.png" />
+                    
+                
+                </div>
+                <div class="card-header">
+                    <div class="card-title h5">
+                        MEI Garage
+                    </div>
+                    <div class="card-subtitle text-gray">
+                        
+                        Schema customization service
+                        <br />
+                        
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <a class="btn float-right btn-sm" href="/tools/mei-garage">More…</a>
+                    
+                    <label class="chip">conversion</label>
+                    
+                    <label class="chip">developers</label>
+                    
+                    <label class="chip">documentation</label>
+                    
+                    <label class="chip">validation</label>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div class="column col-4 col-sm-12 col-lg-6 filter-item" data-tag="tag-3 tag-14 tag-18 ">
+            <div class="card project">
+                <div class="card-image">
+                
+                    
+                    
+                        <img class="mei-project-image img-fit-contain p-2" alt="meico.md logo" src="https://github.com/cemfi/meico/raw/master/figures/meico_title_small.png" />
+                    
+                
+                </div>
+                <div class="card-header">
+                    <div class="card-title h5">
+                        meico
+                    </div>
+                    <div class="card-subtitle text-gray">
+                        
+                        Converter framework for MEI files
+                        <br />
+                        
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <a class="btn float-right btn-sm" href="/tools/meico">More…</a>
+                    
+                    <label class="chip">conversion</label>
+                    
+                    <label class="chip">sonification</label>
+                    
+                    <label class="chip">xslt</label>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div class="column col-4 col-sm-12 col-lg-6 filter-item" data-tag="tag-11 tag-18 ">
+            <div class="card project">
+                <div class="card-image">
+                
+                    <div class="hero hero-sm bg-primary text-light">
+                        <div class="hero-body px-2">
+                        <h3>MEILER</h3>
+                        </div>
+                    </div>
+                
+                </div>
+                <div class="card-header">
+                    <div class="card-title h5">
+                        MEILER
+                    </div>
+                    <div class="card-subtitle text-gray">
+                        
+                        MEI LilyPond Engraving Refinement
+                        <br />
+                        
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <a class="btn float-right btn-sm" href="/tools/meiler">More…</a>
+                    
+                    <label class="chip">rendering</label>
+                    
+                    <label class="chip">xslt</label>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div class="column col-4 col-sm-12 col-lg-6 filter-item" data-tag="tag-2 tag-6 tag-7 tag-9 tag-12 tag-17 ">
+            <div class="card project">
+                <div class="card-image">
+                
+                    <div class="hero hero-sm bg-primary text-light">
+                        <div class="hero-body px-2">
+                        <h3>MerMEId</h3>
+                        </div>
+                    </div>
+                
+                </div>
+                <div class="card-header">
+                    <div class="card-title h5">
+                        MerMEId
+                    </div>
+                    <div class="card-subtitle text-gray">
+                        
+                        Metadata editor and repository for MEI data
+                        <br />
+                        
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <a class="btn float-right btn-sm" href="/tools/mermeid">More…</a>
+                    
+                    <label class="chip">cataloguing</label>
+                    
+                    <label class="chip">editor</label>
+                    
+                    <label class="chip">getting-started</label>
+                    
+                    <label class="chip">metadata</label>
+                    
+                    <label class="chip">repository</label>
+                    
+                    <label class="chip">viewer</label>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div class="column col-4 col-sm-12 col-lg-6 filter-item" data-tag="tag-3 tag-7 tag-11 tag-13 ">
+            <div class="card project">
+                <div class="card-image">
+                
+                    
+                    
+                        <img class="mei-project-image img-fit-contain p-2" alt="musescore.md logo" src="https://github.com/musescore/MuseScore/raw/master/share/icons/musescore_logo_full.png" />
+                    
+                
+                </div>
+                <div class="card-header">
+                    <div class="card-title h5">
+                        MuseScore
+                    </div>
+                    <div class="card-subtitle text-gray">
+                        
+                        Music engraving software
+                        <br />
+                        
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <a class="btn float-right btn-sm" href="/tools/musescore">More…</a>
+                    
+                    <label class="chip">conversion</label>
+                    
+                    <label class="chip">getting-started</label>
+                    
+                    <label class="chip">rendering</label>
+                    
+                    <label class="chip">score-editing</label>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div class="column col-4 col-sm-12 col-lg-6 filter-item" data-tag="tag-1 tag-4 tag-7 tag-10 tag-11 tag-14 ">
+            <div class="card project">
+                <div class="card-image">
+                
+                    <div class="hero hero-sm bg-primary text-light">
+                        <div class="hero-body px-2">
+                        <h3>Music Sheet Viewer</h3>
+                        </div>
+                    </div>
+                
+                </div>
+                <div class="card-header">
+                    <div class="card-title h5">
+                        Music Sheet Viewer
+                    </div>
+                    <div class="card-subtitle text-gray">
+                        
+                        Wordpress plug-in for music rendering
+                        <br />
+                        
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <a class="btn float-right btn-sm" href="/tools/music-sheet-viewer">More…</a>
+                    
+                    <label class="chip">browser-based</label>
+                    
+                    <label class="chip">developers</label>
+                    
+                    <label class="chip">getting-started</label>
+                    
+                    <label class="chip">plug-in</label>
+                    
+                    <label class="chip">rendering</label>
+                    
+                    <label class="chip">sonification</label>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div class="column col-4 col-sm-12 col-lg-6 filter-item" data-tag="tag-3 tag-4 tag-8 tag-14 ">
+            <div class="card project">
+                <div class="card-image">
+                
+                    
+                    
+                        <img class="mei-project-image img-fit-contain p-2" alt="music21.md logo" src="https://web.mit.edu/music21/bg_top_left.jpg" />
+                    
+                
+                </div>
+                <div class="card-header">
+                    <div class="card-title h5">
+                        music21
+                    </div>
+                    <div class="card-subtitle text-gray">
+                        
+                        music21: a toolkit for computer-aided musicology
+                        <br />
+                        
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <a class="btn float-right btn-sm" href="/tools/music21">More…</a>
+                    
+                    <label class="chip">conversion</label>
+                    
+                    <label class="chip">developers</label>
+                    
+                    <label class="chip">library</label>
+                    
+                    <label class="chip">sonification</label>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div class="column col-4 col-sm-12 col-lg-6 filter-item" data-tag="tag-5 tag-7 ">
+            <div class="card project">
+                <div class="card-image">
+                
+                    <div class="hero hero-sm bg-primary text-light">
+                        <div class="hero-body px-2">
+                        <h3>Sample encodings</h3>
+                        </div>
+                    </div>
+                
+                </div>
+                <div class="card-header">
+                    <div class="card-title h5">
+                        Sample encodings
+                    </div>
+                    <div class="card-subtitle text-gray">
+                        
+                        Collection of MEI-encoded music files
+                        <br />
+                        
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <a class="btn float-right btn-sm" href="/tools/sample-encodings">More…</a>
+                    
+                    <label class="chip">documentation</label>
+                    
+                    <label class="chip">getting-started</label>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div class="column col-4 col-sm-12 col-lg-6 filter-item" data-tag="tag-3 tag-10 ">
+            <div class="card project">
+                <div class="card-image">
+                
+                    <div class="hero hero-sm bg-primary text-light">
+                        <div class="hero-body px-2">
+                        <h3>SibMEI</h3>
+                        </div>
+                    </div>
+                
+                </div>
+                <div class="card-header">
+                    <div class="card-title h5">
+                        SibMEI
+                    </div>
+                    <div class="card-subtitle text-gray">
+                        
+                        MEI Plug-in for Sibelius
+                        <br />
+                        
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <a class="btn float-right btn-sm" href="/tools/sibmei">More…</a>
+                    
+                    <label class="chip">conversion</label>
+                    
+                    <label class="chip">plug-in</label>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div class="column col-4 col-sm-12 col-lg-6 filter-item" data-tag="tag-1 tag-4 tag-8 tag-11 tag-14 ">
+            <div class="card project">
+                <div class="card-image">
+                
+                    
+                    
+                        <img class="mei-project-image img-fit-contain p-2" alt="verovio.md logo" src="https://www.verovio.org/assets/images/verovio-fadded-50.png" />
+                    
+                
+                </div>
+                <div class="card-header">
+                    <div class="card-title h5">
+                        Verovio
+                    </div>
+                    <div class="card-subtitle text-gray">
+                        
+                        Javascript and C++ score rendering
+                        <br />
+                        
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <a class="btn float-right btn-sm" href="/tools/verovio">More…</a>
+                    
+                    <label class="chip">browser-based</label>
+                    
+                    <label class="chip">developers</label>
+                    
+                    <label class="chip">library</label>
+                    
+                    <label class="chip">rendering</label>
+                    
+                    <label class="chip">sonification</label>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div class="column col-4 col-sm-12 col-lg-6 filter-item" data-tag="tag-2 tag-6 tag-7 tag-9 tag-12 tag-17 ">
+            <div class="card project">
+                <div class="card-image">
+                
+                    <div class="hero hero-sm bg-primary text-light">
+                        <div class="hero-body px-2">
+                        <h3>WizKit</h3>
+                        </div>
+                    </div>
+                
+                </div>
+                <div class="card-header">
+                    <div class="card-title h5">
+                        WizKit
+                    </div>
+                    <div class="card-subtitle text-gray">
+                        
+                        Environment for editing MEI metadata in oXygen XML Editor
+                        <br />
+                        
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <a class="btn float-right btn-sm" href="/tools/wizkit">More…</a>
+                    
+                    <label class="chip">cataloguing</label>
+                    
+                    <label class="chip">editor</label>
+                    
+                    <label class="chip">getting-started</label>
+                    
+                    <label class="chip">metadata</label>
+                    
+                    <label class="chip">repository</label>
+                    
+                    <label class="chip">viewer</label>
+                    
+                </div>
+            </div>
+        </div>
+        
+  </div>
+</div>
+
+    </div>
+
+    <!-- Make sure to mirror changes in the guidelines repository in _include/footer.html when necessary -->
+<footer>
+  <div class="container">
+    <div class="columns institutions">
+      <div class="column col-12 text-center">
+        <a class="institutionsLink" target="_blank" href="https://www.adwmainz.de">
+          <img src="/pix/akademie-small.png" alt="Akademie der Wissenschaften | Mainz" />
+        </a>
+      </div>
+    </div>
+  </div>
+  <div class="text-center">
+    <a class="footerLinks" href="/">Home</a> | <a class="footerLinks" href="/community/community-contacts.html">Contact</a><br/>
+    <small>© Music Encoding Initiative 2025</small>
+  </div>
+</footer>
+
+
+  </body>
+
+</html>

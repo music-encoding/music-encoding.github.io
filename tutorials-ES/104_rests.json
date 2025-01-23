@@ -1,0 +1,71 @@
+{
+  "steps": [
+    {
+        "label":"Bienvenido/a",
+        "descFile": "104_rests_step-00-desc.html",
+        "xmlFile": "../tutorials/104_rests_step-00.xml",
+        "editorLines":1,
+        "xpaths": [
+            {"rule":"count(\/\/mei:rest) = 1", "renderanyway": false, "hint": "Necesitas un elemento rest."},
+            {"rule":"count(\/\/mei:rest\/@*) = 1 and \/\/mei:rest\/@dur", "renderanyway": false, "hint": "Necesitas un atributo @dur."},
+            {"rule":"\/\/mei:rest\/@dur = '4'", "renderanyway": true, "hint": "El atributo @dur usa valores como '1','2', o '4'. Utiliza el último para el silencio de negra."}
+        ]
+    },
+    {
+        "label":"Distintas duraciones",
+        "editorLines":5,
+        "descFile": "104_rests_step-01-desc.html",
+        "xmlFile": "../tutorials/104_rests_step-01.xml",
+        "xpaths": [
+            {"rule":"count(\/\/mei:rest) = 5", "renderanyway": true, "hint":"Necesitas codificar cinco elementos rest."},
+            {"rule":"\/\/mei:rest[1]\/@dur and \/\/mei:rest[1]\/@dur = '1'", "renderanyway": true},
+            {"rule":"\/\/mei:rest[2]\/@dur and \/\/mei:rest[2]\/@dur = '2'", "renderanyway": true},
+            {"rule":"\/\/mei:rest[3]\/@dur and \/\/mei:rest[3]\/@dur = '4' and \/\/mei:rest[3]\/@dots and \/\/mei:rest[3]\/@dots = '1'", "renderanyway": true},
+            {"rule":"\/\/mei:rest[4]\/@dur and \/\/mei:rest[4]\/@dur = '8'", "renderanyway": true},
+            {"rule":"\/\/mei:rest[5]\/@dur and \/\/mei:rest[5]\/@dur = '16'", "renderanyway": true}
+        ]
+    },
+    {
+        "label":"Silencios de compás",
+        "editorLines":1,
+        "descFile": "104_rests_step-02-desc.html",
+        "xmlFile": "../tutorials/104_rests_step-02.xml",
+        "prefillFile": "../tutorials/104_rests_step-02-prefill.xml",
+        "xpaths": [
+            {"rule":"count(\/\/mei:mRest) = 1", "renderanyway": true, "hint":"Necesitas un elemento mRest."},
+            {"rule":"count(\/\/mei:mRest\/@*) = 0", "renderanyway": true,"hint":"El elemento mRest element no necesita atributos."},
+            {"rule":"count(\/\/mei:layer\/mei:*) = 1","renderanyway":true,"hint":"Debes codificar un elemento mRest sólo."}
+        ]
+    },
+    {
+        "label":"Silencios de varios compases",
+        "editorLines":1,
+        "descFile": "104_rests_step-03-desc.html",
+        "xmlFile": "../tutorials/104_rests_step-03.xml",
+        "xpaths": [
+            {"rule":"count(\/\/mei:multiRest) = 1", "renderanyway": true, "hint":"Necesitas un elemento multiRest."},
+            {"rule":"count(\/\/mei:layer\/mei:*) = 1","renderanyway":true,"hint":"Debes codificar un elemento mRest sólo."},
+            {"rule":"count(\/\/mei:multiRest\/@*) = 1 and \/\/mei:multiRest\/@num", "renderanyway": true,"hint":"El elemento multiRest necesita un atributo aquí (@num)."},
+            {"rule":"\/\/mei:multiRest\/@num = '15'", "renderanyway": true,"hint":"El multiRest debería tener una duración de 15 compases."}
+        ]
+    },
+    {
+        "label":"Espacios \/ Silencios invisibles",
+        "editorLines":6,
+        "descFile": "104_rests_step-04-desc.html",
+        "xmlFile": "../tutorials/104_rests_step-04.xml",
+        "prefillFile": "104_rests_step-04-prefill.xml",
+        "xpaths": [
+            {"rule":"\/\/mei:space\/following-sibling::mei:note", "renderanyway": true, "hint":"elemento space debe preceder al elemento note."},
+            {"rule":"count(\/\/mei:space[@dur = '4']) = 3 or (\/\/mei:space[@dur = '2' and @dots = '1']) or (\/\/mei:space[@dur = '2'] and \/\/mei:space[@dur = '4'])", "renderanyway": true}
+        ]
+    }
+  ],
+  "end":"104_rests_end.html",
+  "resp":[
+    {
+        "name":"Johannes Kepper",
+        "affiliation":"Beethovens Werkstatt | Universidad de Paderborn"
+    }
+  ]
+}
