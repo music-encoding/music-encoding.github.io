@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "MEI v5.1 released"
+title:  "MEI 5.1 released"
 date:   2025-01-23 10:17:00
 categories: update
 ---
