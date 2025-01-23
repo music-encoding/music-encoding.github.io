@@ -17,7 +17,7 @@ This update focuses primarily on maintenance and consistency improvements, with 
 One of the highlights is the full integration of support for German Lute Tablature (GLT).
 
 ### Corrections to Guidelines
-The description of the `<optimize>` attribute in the `<scoreDef>` element has been corrected to clarify that empty staff lines will not be displayed if the value is set to ‘true.’
+The description of the `<optimize>` attribute in the `<scoreDef>` element has been corrected to clarify that empty staff lines will _not_ be displayed if the value is set to ‘true.’
 
 ### Schema Improvements
 Introduction of `att.dataSelecting` and its addition to `symbolDef`, along with the inclusion of the value ‘unspecified’ for bracket spans.
