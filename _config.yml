@@ -100,7 +100,7 @@ menu:
             url: '/resources/development.html'
             separator: true
           - id: guidelines-older
-            label: 'Older versions'
+            label: 'Previous versions'
             url: '/archive/#previous-versions-of-mei'
     - id: archive
       label: 'Archive'
