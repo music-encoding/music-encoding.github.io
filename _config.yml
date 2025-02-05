@@ -97,7 +97,7 @@ menu:
             url: '/guidelines/v5'
           - id: guidelines-dev
             label: 'Development versions'
-            url: '/versions/development.html'
+            url: '/resources/development.html'
             separator: true
           - id: guidelines-older
             label: 'Older versions'
