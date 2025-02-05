@@ -99,8 +99,8 @@ menu:
             label: 'Development versions'
             url: '/resources/development.html'
             separator: true
-          - id: guidelines-older
-            label: 'Older versions'
+          - id: guidelines-previous
+            label: 'Previous versions'
             url: '/archive/#previous-versions-of-mei'
     - id: archive
       label: 'Archive'

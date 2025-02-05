@@ -31,3 +31,5 @@ In the context of tutorial exercises (or comparable purposes), the `MEI ALL (Any
 Further detailed customization of a schema, allowing to restrict specific elements or attributes, can be done with the MEI Garage profiler: [https://meigarage.edirom.de/profiler](https://meigarage.edirom.de/profiler).
 
 A detailed overview of the changes for the MEI 5.1 schema is available here: [https://music-encoding.org/archive/comparison-5.1.html](../archive/comparison-5_1.html)
+
+The schemas for previous versions of MEI are available from the [Archive](/archive/#previous-versions-of-mei) page.
