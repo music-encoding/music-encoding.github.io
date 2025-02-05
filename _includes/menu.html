@@ -11,8 +11,9 @@
 
             {% for item in entry.submenu %}
             {% if forloop.first %} <ul class="menu"> {% endif %}
+                {% if item.separator %}<hr/>{% endif %}
                 <li class="menu-item">
-                    <a href="{{entry.url}}{{item.url}}" class="btn btn-link text-left menu-link">
+                    <a href="{{entry.url}}{{item.url}}" disable class="btn btn-link text-left menu-link">
                         {{item.label}}
                     </a>
                 </li>
