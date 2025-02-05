@@ -11,36 +11,36 @@ Here you will find archived material, such as previous versions of MEI, document
 - [MEI v5.0 (2023)](https://github.com/music-encoding/music-encoding/releases/tag/v5.0)
   - MEI 5.0 Guidelines ([PDF](https://zenodo.org/records/10040258); DOI: [10.5281/zenodo.10040258](https://doi.org/10.5281/zenodo.10040258))
   - RelaxNG schemata:
-    - [MEI All](https://music-encoding.org/schema/5.0/mei-all.rng)
-    - [MEI All Anystart](https://music-encoding.org/schema/5.0/mei-all_anyStart.rng)
-    - [MEI Basic](https://music-encoding.org/schema/5.0/mei-basic.rng)
-    - [MEI CMN](https://music-encoding.org/schema/5.0/mei-CMN.rng)
-    - [MEI Mensural](https://music-encoding.org/schema/5.0/mei-Mensural.rng)
-    - [MEI Neumes](https://music-encoding.org/schema/5.0/mei-Neumes.rng)
+    [MEI All](https://music-encoding.org/schema/5.0/mei-all.rng) –
+    [MEI All Anystart](https://music-encoding.org/schema/5.0/mei-all_anyStart.rng) –
+    [MEI Basic](https://music-encoding.org/schema/5.0/mei-basic.rng) –
+    [MEI CMN](https://music-encoding.org/schema/5.0/mei-CMN.rng) –
+    [MEI Mensural](https://music-encoding.org/schema/5.0/mei-Mensural.rng) –
+    [MEI Neumes](https://music-encoding.org/schema/5.0/mei-Neumes.rng)
 - [MEI v4.0.1 (2019)](https://github.com/music-encoding/music-encoding/releases/tag/v4.0.1)
   - MEI 4.0.1 Guidelines ([HTML](https://music-encoding.org/guidelines/v4/))
-  - RelaxNG schemata:
-    - [MEI All](https://music-encoding.org/schema/4.0.1/mei-all.rng)
-    - [MEI All Anystart](https://music-encoding.org/schema/4.0.1/mei-all_anyStart.rng)
-    - [MEI CMN](https://music-encoding.org/schema/4.0.1/mei-CMN.rng)
-    - [MEI Mensural](https://music-encoding.org/schema/4.0.1/mei-Mensural.rng)
-    - [MEI Neumes](https://music-encoding.org/schema/4.0.1/mei-Neumes.rng)
+  - RelaxNG schemata: 
+    [MEI All](https://music-encoding.org/schema/4.0.1/mei-all.rng) –
+    [MEI All Anystart](https://music-encoding.org/schema/4.0.1/mei-all_anyStart.rng) –
+    [MEI CMN](https://music-encoding.org/schema/4.0.1/mei-CMN.rng) –
+    [MEI Mensural](https://music-encoding.org/schema/4.0.1/mei-Mensural.rng) –
+    [MEI Neumes](https://music-encoding.org/schema/4.0.1/mei-Neumes.rng)
 - [MEI v3.0.0 (2016)](https://github.com/music-encoding/music-encoding/releases/tag/v3.0.0)
   - MEI 3.0.0 Guidelines ([HTML](https://music-encoding.org/guidelines/v3/), [PDF](https://zenodo.org/records/10040230); DOI: [10.5281/zenodo.10040230](https://doi.org/10.5281/zenodo.10040230))
   - RelaxNG schemata:
-    - [MEI All](https://music-encoding.org/schema/3.0.0/mei-all.rng)
-    - [MEI All Anystart](https://music-encoding.org/schema/3.0.0/mei-all_anyStart.rng)
-    - [MEI CMN](https://music-encoding.org/schema/3.0.0/mei-CMN.rng)
-    - [MEI Mensural](https://music-encoding.org/schema/3.0.0/mei-Mensural.rng)
-    - [MEI Neumes](https://music-encoding.org/schema/3.0.0/mei-Neumes.rng)
+    [MEI All](https://music-encoding.org/schema/3.0.0/mei-all.rng) –
+    [MEI All Anystart](https://music-encoding.org/schema/3.0.0/mei-all_anyStart.rng) –
+    [MEI CMN](https://music-encoding.org/schema/3.0.0/mei-CMN.rng) –
+    [MEI Mensural](https://music-encoding.org/schema/3.0.0/mei-Mensural.rng) –
+    [MEI Neumes](https://music-encoding.org/schema/3.0.0/mei-Neumes.rng)
 - [MEI 2013 (v2.1.1)](https://github.com/music-encoding/music-encoding/releases/tag/MEI2013_v2.1.1)
   - MEI 2013 Guidelines ([PDF](https://zenodo.org/records/10040218); DOI: [10.5281/zenodo.10040218](https://doi.org/10.5281/zenodo.10040218))
   - RelaxNG schemata:
-    - [MEI All](https://music-encoding.org/schema/2.1.1/mei-all.rng)
-    - [MEI All Anystart](https://music-encoding.org/schema/2.1.1/mei-all_anyStart.rng)
-    - [MEI CMN](https://music-encoding.org/schema/2.1.1/mei-CMN.rng)
-    - [MEI Mensural](https://music-encoding.org/schema/2.1.1/mei-Mensural.rng)
-    - [MEI Neumes](https://music-encoding.org/schema/2.1.1/mei-Neumes.rng)
+    [MEI All](https://music-encoding.org/schema/2.1.1/mei-all.rng) –
+    [MEI All Anystart](https://music-encoding.org/schema/2.1.1/mei-all_anyStart.rng) –
+    [MEI CMN](https://music-encoding.org/schema/2.1.1/mei-CMN.rng) –
+    [MEI Mensural](https://music-encoding.org/schema/2.1.1/mei-Mensural.rng) –
+    [MEI Neumes](https://music-encoding.org/schema/2.1.1/mei-Neumes.rng)
 - [MEI 2012](https://github.com/music-encoding/music-encoding/releases/tag/MEI2012_v2.0.0)
   - MEI 2012 Release ([ZIP](https://github.com/music-encoding/music-encoding/archive/MEI2012_v2.0.0.zip))
   - MEI 2012 Guidelines ([PDF](https://zenodo.org/records/10040170); DOI: [10.5281/zenodo.10040170](https://doi.org/10.5281/zenodo.10040170))
