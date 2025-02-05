@@ -6,11 +6,6 @@ title: "Archive"
 
 Here you will find archived material, such as previous versions of MEI, documentation, workshop materials, posters, presentations, etc.  If there is material you feel should be here and isn’t, please [let us know](mailto:info@music-encoding.org).
 
-## Past Music Encoding Conferences
-
-* [Programs](/conference/past.html)
-* [Proceedings](/conference/proceedings.html)
-
 ## Previous Versions of MEI
 
 * see [Schemas and Namespace](/resources/schemas.html)
