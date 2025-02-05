@@ -93,17 +93,15 @@ menu:
       label: 'Documentation'
       submenu:
           - id: guidelines-v5
-            label: 'MEI 5 (latest release)'
+            label: 'MEI 5'
             url: '/guidelines/v5'
           - id: guidelines-dev
-            label: 'Development version'
-            url: '/guidelines/dev'
-          - id: guidelines-v4
-            label: 'MEI 4'
-            url: '/guidelines/v4'
-          - id: guidelines-v3
-            label: 'MEI 3'
-            url: '/guidelines/v3'
+            label: 'Development versions'
+            url: '/resources/development.html'
+            separator: true
+          - id: guidelines-older
+            label: 'Older versions'
+            url: '/archive/#previous-versions-of-mei'
     - id: archive
       label: 'Archive'
       url: '/archive'
