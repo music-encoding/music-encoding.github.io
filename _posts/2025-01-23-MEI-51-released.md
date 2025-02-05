@@ -5,8 +5,6 @@ date:   2025-01-23 10:17:00
 categories: update
 ---
 
-# MEI 5.1 Released
-
 We are thrilled to announce the official release of **MEI 5.1**!
 
 This update focuses primarily on maintenance and consistency improvements, with some notable enhancements:
