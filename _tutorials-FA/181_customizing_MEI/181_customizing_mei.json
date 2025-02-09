@@ -1,0 +1,35 @@
+{
+  "steps": [
+    {
+        "label":"Welcome",
+        "descFile": "181_customizing_mei-01.html"
+    },
+    {
+        "label":"ProfileDrafter",
+        "descFile": "181_customizing_mei-02.html"
+    },
+    {
+        "label":"Compiling ODD",
+        "descFile": "181_customizing_mei-03.html"
+    },
+    {
+        "label":"Review simple Customizations",
+        "descFile": "181_customizing_mei-04.html"
+    },
+    {
+        "label":"Understanding Modes",
+        "descFile": "181_customizing_mei-05.html"
+    },
+    {
+        "label":"Changing Roots",
+        "descFile": "181_customizing_mei-06.html"
+    }
+  ],
+  "end":"181_customizing_mei-end.html",
+  "resp":[
+    {
+        "name":"Johannes Kepper",
+        "affiliation":"Beethovens Werkstatt | Universität Paderborn"
+    }
+  ]
+}

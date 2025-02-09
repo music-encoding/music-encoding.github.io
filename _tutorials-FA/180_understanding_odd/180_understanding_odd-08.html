@@ -1,0 +1,176 @@
+<div>
+    <p>
+        بیشتر انواع داده‌ها در ODD از مفاهیم شناخته‌شده پیروی می‌کنند: اعداد صحیح، مقادیر boolean (true or false)،
+        رشته‌های متنی و غیره. بیایید نگاهی دقیق‌تر به برخی از آن‌ها داشته باشیم. خصیصه <em>@n</em> در کلاس خصیصه
+        <em><a
+                href="https://music-encoding.org/guidelines/v4/attribute-classes/att.ninteger.html">att.nInteger</a></em>&nbsp;
+        به این صورت تعریف شده است:
+    </p>
+    <pre class="codeblock">&lt;attDef ident="n" usage="opt"&gt;
+        &lt;desc&gt;Provides a numeric designation that indicates an element's position in a sequence of similar elements. Its value must be a non-negative integer.&lt;/desc&gt;
+        &lt;datatype maxOccurs="1" minOccurs="1"&gt;
+            &lt;rng:data type="nonNegativeInteger"/&gt;
+        &lt;/datatype&gt;
+    &lt;/attDef&gt;</pre>
+    <p>
+        این‌جا از یک المنت <em>&lt;data&gt;</em> از نام‌حوزه <em>rng:</em> استفاده شده، که <em>@type</em> از یک
+        مقدار تعریف شده در RelaxNG استفاده می‌کند. خصیصه‌های <em>@maxOccurs</em> و <em>@minOccurs</em> مشخص می‌کنند
+        که چند بار مقدار این «نوعِ داده» ممکن است مقداردهی شود.&nbsp;<span
+            style="font-size: 2rem;">&nbsp;</span><span style="font-size: 2rem;">در</span><span
+            style="font-size: 2rem;">&nbsp;</span><em style="font-size: 2rem;">att.staffIdent</em><span
+            style="font-size: 2rem;">&nbsp;</span><span style="font-size: 2rem;">می‌توان</span><span
+            style="font-size: 2rem;">&nbsp;</span><span style="font-size: 2rem;">مثالی دیگر یافت برای مقادیری که در
+            خصیصه </span><em style="font-size: 2rem;">@staff</em><span style="font-size: 2rem;"> تعریف
+            شده‌اند</span><span style="font-size: 2rem;">. این خصیصه برای ارتباط
+        </span><a href="https://music-encoding.org/guidelines/v4/content/introduction.html#eventsControlevents"
+            target="_blank" rel="noopener, noreferrer" style="font-size: 2rem;">کنترل رویدادها</a><span
+            style="font-size: 2rem;">
+            با یک یا چند خط حامل استفاده می‌شود و ممکن است یک یا چند عدد صحیح نگهداری کند. از
+        </span><a href="https://music-encoding.org/guidelines/v4/attribute-classes/att.staffident.html"
+            target="_blank" rel="noopener, noreferrer" style="font-size: 2rem;">نشانه‌گذاری زیر</a><span
+            style="font-size: 2rem;"> برای دستیابی به این هدف استفاده می‌کند:</span></p>
+    <pre class="codeblock">&lt;datatype maxOccurs="unbounded" minOccurs="1"&gt;
+        &lt;rng:data type="positiveInteger"/&gt;
+    &lt;/datatype&gt;</pre>
+    <p>
+        در موارد دیگر، MEI انواع داده خاص خود را تعریف می‌کند. این کار با یک المنت
+        <a href="https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-macroSpec.html" target="_blank"
+            rel="noopener, noreferrer">&lt;macroSpec&gt;</a> انجام می‌شود.
+        بیایید نگاهی به نوع داده
+        <em><a href="https://music-encoding.org/guidelines/v4/data-types/data.barrendition.html" target="_blank"
+                rel="noopener, noreferrer">data.BARRENDITION</a></em> که برای تعریف ظاهر خطوط میزان استفاده می‌شود،
+        بیاندازیم:
+    </p>
+    <pre class="codeblock">&lt;macroSpec ident="data.BARRENDITION" module="MEI" type="dt"&gt;
+        &lt;desc&gt;Renderings of bar lines. Some values correspond to the Western Musical Symbols portion of the Unicode Standard.&lt;/desc&gt;
+        &lt;content&gt;
+            &lt;valList type="closed"&gt;
+                &lt;valItem ident="dashed"&gt;
+                    &lt;desc&gt;Dashed line (Unicode 1D104).&lt;/desc&gt;
+                &lt;/valItem&gt;
+                &lt;valItem ident="dotted"&gt;
+                    &lt;desc&gt;Dotted line.&lt;/desc&gt;
+                &lt;/valItem&gt;
+                &lt;valItem ident="dbl"&gt;
+                    &lt;desc&gt;(Unicode 1D101).&lt;/desc&gt;
+                &lt;/valItem&gt;
+                &lt;valItem ident="dbldashed"&gt;
+                    &lt;desc&gt;Double dashed line.&lt;/desc&gt;
+                &lt;/valItem&gt;
+                &lt;valItem ident="dbldotted"&gt;
+                    &lt;desc&gt;Double dotted line.&lt;/desc&gt;
+                &lt;/valItem&gt;
+                &lt;valItem ident="end"&gt;
+                    &lt;desc&gt;(Unicode 1D102).&lt;/desc&gt;
+                &lt;/valItem&gt;
+                &lt;valItem ident="invis"&gt;
+                    &lt;desc&gt;Bar line not rendered.&lt;/desc&gt;
+                &lt;/valItem&gt;
+                &lt;valItem ident="rptstart"&gt;
+                    &lt;desc&gt;Repeat start (Unicode 1D106).&lt;/desc&gt;
+                &lt;/valItem&gt;
+                &lt;valItem ident="rptboth"&gt;
+                    &lt;desc&gt;Repeat start and end.&lt;/desc&gt;
+                &lt;/valItem&gt;
+                &lt;valItem ident="rptend"&gt;
+                    &lt;desc&gt;Repeat end (Unicode 1D107).&lt;/desc&gt;
+                &lt;/valItem&gt;
+                &lt;valItem ident="single"&gt;
+                    &lt;desc&gt;(Unicode 1D100).&lt;/desc&gt;
+                &lt;/valItem&gt;
+            &lt;/valList&gt;
+        &lt;/content&gt;
+    &lt;/macroSpec&gt;</pre>
+    <p>
+        دوباره خصیصه‌های <em>@ident</em> و <em>@module</em> به کار رفته‌اند و همانطور که قبلاً دیده‌ایم، یک المنت
+        <em>&lt;desc&gt;</em> نیز وجود دارد. چیزی که مهم است، خصیصه <em>@type</em> با مقداری از "<em>dt</em>" (نوعِ
+        داده) است.
+        بر اساس قرارداد، تمام نام‌های نوعِ داده با "<em>data.</em>" شروع می‌شوند و نام بعدی به صورت تمام حروف بزرگ
+        داده می‌شود.
+        سپس لیستی از مقادیر (valList) داریم که در این مورد، یک لیست بسته است. به این معنی که تمام مقادیر ممکن در
+        اینجا فهرست شده‌اند. در موارد دیگر، خصیصه <em>@type</em> با مقدار "<em>semi</em>" نشان‌دهنده یک لیست
+        نیمه‌بسته است. چنین لیستی توصیه‌هایی ارائه می‌دهد، اما به کاربر اجازه می‌دهد در صورت عدم تطابق هیچ یک از
+        پیشنهادات با وضعیت فعلی، مقادیر سفارشی ایجاد کند.
+        این معمولاً تعادل خوبی بین اطمینان از سازگاری و امکان توسعه بر اساس نیاز از طرح‌واره را فراهم می‌کند.
+    </p>
+    <p><span style="font-size: 2rem;">انواع داده هم&nbsp;</span>مانند کلاس‌های <em>مدل</em> و <em>خصیصه</em>،
+        می‌توانند تو در تو باشند. یک مثال برای این مورد، نوع داده
+        <em><a href="https://music-encoding.org/guidelines/v4/data-types/data.noteheadmodifier.html" target="_blank"
+                rel="noopener, noreferrer">data.NOTEHEADMODIFIER</a></em> است:
+    </p>
+    <pre class="codeblock">&lt;macroSpec ident="data.NOTEHEADMODIFIER" module="MEI" type="dt"&gt;
+        &lt;desc&gt;Captures any notehead "modifiers"; that is, symbols added to the notehead, such as slashes, lines, text, and enclosures, etc.&lt;/desc&gt;
+        &lt;content&gt;
+            &lt;rng:choice&gt;
+                &lt;rng:ref name="data.NOTEHEADMODIFIER.list" /&gt;
+                &lt;rng:ref name="data.NOTEHEADMODIFIER.pat" /&gt;
+            &lt;/rng:choice&gt;
+        &lt;/content&gt;
+    &lt;/macroSpec&gt;</pre>
+    <p>
+        این بدان معنی است که خصیصه‌ای که از نوع داده <em>data.NOTEHEADMODIFIER</em> استفاده می‌کند، مقادیری را قبول
+        خواهد کرد که از قوانین نوع داده <em>data.NOTEHEADMODIFIER.list</em> یا <em>data.NOTEHEADMODIFIER.pat</em>
+        پیروی می‌کنند.
+    </p>
+    <p>
+        آخرین نوع داده‌ای که می‌خواهیم معرفی کنیم <em>data.COLORVALUES</em> است که توسط <em>data.COLOR</em> استفاده
+        می‌شود که به نوبه خود برای کنترل مقادیر خصیصه‌هایی مانند <em>@color</em> (از طریق
+        <em><a href="https://music-encoding.org/guidelines/v4/attribute-classes/att.color.html" target="_blank"
+                rel="noopener, noreferrer">att.color</a></em>)
+        و <em>@linecolor</em> (از طریق <em>att.linecolor</em>) استفاده می‌شود.
+    </p>
+    <pre class="codeblock">&lt;macroSpec ident="data.COLORVALUES" module="MEI" type="dt"&gt;
+        &lt;desc&gt;Parameterized color values&lt;/desc&gt;
+        &lt;content&gt;
+            &lt;rng:choice&gt;
+                &lt;rng:data type="token"&gt;
+                    &lt;rng:param name="pattern"&gt;#[0-9A-Fa-f]{6,6}&lt;/rng:param&gt;
+                &lt;/rng:data&gt;
+                &lt;rng:data type="token"&gt;
+                    &lt;rng:param name="pattern"&gt;#[0-9A-Fa-f]{8,8}&lt;/rng:param&gt;
+                &lt;/rng:data&gt;
+                &lt;rng:data type="token"&gt;
+                    &lt;rng:param name="pattern"&gt;
+                        rgb\((\s*(([01]?[0-9]?[0-9])|2[0-4][0-9]|25[0-5])\s*,\s*){2}
+                        ([01]?[0-9]?[0-9]|2[0-4][0-9]|25[0-5])\s*\)
+                    &lt;/rng:param&gt;
+                &lt;/rng:data&gt;
+                &lt;rng:data type="token"&gt;
+                    &lt;rng:param name="pattern"&gt;
+                        rgba\(\s*(([01]?[0-9]?[0-9]|2[0-4][0-9]|25[0-5])\s*,\s*){3}(
+                        0(\.\d+)?|1(\.0+)?)\s*\)|rgba\(\s*(((\d{1,2})?%|100%)\s*,\s*
+                        ){2}(\d{1,2}%|100%)\s*,\s*(0(\.\d+)?|1(\.0+)?)\s*\)
+                    &lt;/rng:param&gt;
+                &lt;/rng:data&gt;
+                &lt;rng:data type="token"&gt;
+                    &lt;rng:param name="pattern"&gt;
+                        hsl\(\s*((\d{1,2})|[12]\d{2}|3[0-5]\d|360)\s*,\s*(\d{1,2}%|1
+                        00%)\s*,\s*(\d{1,2}%|100%)\s*\)
+                    &lt;/rng:param&gt;
+                &lt;/rng:data&gt;
+                &lt;rng:data type="token"&gt;
+                    &lt;rng:param name="pattern"&gt;
+                        hsla\(\s*(\d{1,2}|[12]\d{2}|3[0-5]\d|360)\s*,\s*(\d{1,2}%|10
+                        0%)\s*,\s*(\d{1,2}%|100%)\s*,\s*(0(\.\d+)?|1(\.0+)?)\s*\)
+                    &lt;/rng:param&gt;
+                &lt;/rng:data&gt;
+            &lt;/rng:choice&gt;
+        &lt;/content&gt;
+    &lt;/macroSpec&gt;</pre>
+
+
+    <p>
+        المنت <em>&lt;rng:choice&gt;</em> که دور المنت‌های مختلف <em>&lt;rng:data&gt;</em> قرار دارد، بیان می‌کند که
+        مقدار خصیصه <em>@color</em> باید با یکی از الگوهای regex موجود مطابقت داشته باشد.
+        توضیح مفهوم <u>عبارات باقاعده</u>&nbsp;(Regular Expressions - Regex) خارج از حیطه این آموزش است – در اصل،
+        روشی برای توصیف یک الگو برای یک رشته‌ی متنی است و می‌تواند برای بررسی تطابق آن رشته با الگو استفاده شود.
+        نقطه شروع خوبی برای آشنایی با عبارات باقاعده، <strong>جدول کلمات متقاطع Regex</strong> است که در <a
+            href="https://regexcrossword.com/" target="_blank"
+            rel="noopener, noreferrer">https://regexcrossword.com/</a> در دسترس است.
+    </p>
+    <p>بسیاری دیگر از انواع داده‌هاوجود دارد که می‌توان از آن‌ها استفاده کرد، اما چون تودرتویی معمولاً به اندازه
+        کلاس‌های <em>مدل</em> یا <em>خصیصه</em> عمیق نیست، انواع داده‌ها اغلب هنگام ورود به ODD دسترس‌پذیرتر در نظر
+        گرفته می‌شوند – قطعاً برای یادگیری آن‌ها موارد کمتری وجود دارد. پس بیایید به <em>ماکروها</em> برویم.
+    </p>
+
+</div>

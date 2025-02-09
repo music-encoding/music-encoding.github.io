@@ -1,0 +1,56 @@
+<div>
+    <p>
+        هنگام انجام یک آموزش به‌صورت شخصی، ممکن است تعجب کرده باشید که Verovio چگونه قادر است MEI کاربر را رندر کند،
+        حتی زمانی که یک فایل کامل MEI توسط کاربر وارد نشده است. این کار توسط خاصیت <code>"xmlFile"</code>
+        در یک مرحله آموزشی که در صفحه قبلی معرفی شد، انجام می‌شود. این خاصیت به یک فایل کامل MEI اشاره می‌کند،
+        که زمینه‌ای را فراهم می‌کند که باید برای رندر درست "اطراف" ورودی کاربر قرار گیرد. بیایید یک مثال ساده را
+        بررسی کنیم:
+    </p>
+    <pre class="codeblock">&lt;mei xmlns="http://www.music-encoding.org/ns/mei"&gt;
+&lt;meiHead&gt;
+    &lt;fileDesc&gt;
+        &lt;titleStmt&gt;
+            &lt;title/&gt;
+        &lt;/titleStmt&gt;
+        &lt;pubStmt/&gt;
+    &lt;/fileDesc&gt;
+&lt;/meiHead&gt;
+&lt;music&gt;
+    &lt;body&gt;
+        &lt;mdiv&gt;
+            &lt;score&gt;
+                &lt;scoreDef&gt;
+                    &lt;staffGrp&gt;
+                        &lt;staffDef clef.shape="G" clef.line="2" n="1" lines="5"/&gt;
+                    &lt;/staffGrp&gt;
+                &lt;/scoreDef&gt;
+                &lt;section&gt;
+                    &lt;measure&gt;
+                        &lt;staff n="1"&gt;
+                            &lt;layer&gt;
+                                <span class="text-error">&lt;?snippet-start?&gt;</span>
+                                &lt;note pname="c" oct="4" dur="4"/&gt;
+                                <span class="text-error">&lt;?snippet-end?&gt;</span>
+                            &lt;/layer&gt;
+                        &lt;/staff&gt;
+                    &lt;/measure&gt;
+                &lt;/section&gt;
+            &lt;/score&gt;
+        &lt;/mdiv&gt;
+    &lt;/body&gt;
+&lt;/music&gt;
+&lt;/mei&gt;</pre>
+    <label>یک فایل ساده MEI، برای استفاده به عنوان زمینه ورودی کاربر.</label>
+    <p>
+        این فقط یک فایل معمولی MEI است، اما حاوی دو <i>دستور پردازشی</i> مهم (که به رنگ قرمز مشخص شده‌اند) است.
+        محتوای این فایل در حافظه خوانده می‌شود. هر زمان که ورودی کاربر در ویرایشگر یک XML با ساختار صحیح باشد،
+        این ورودی <i>بین</i> دو دستور پردازشی درج می‌شود و فایل کامل (که اکنون شامل ورودی کاربر است)
+        اعتبارسنجی شده و (در صورت امکان) برای رندر به Verovio ارسال می‌شود.
+    </p>
+    <p>
+        آنچه که بین دو <i>دستور پردازشی</i> ذخیره شده است به عنوان یک راه‌حل نمونه در نظر گرفته شده است.
+        این قابلیت هنوز پیاده‌سازی نشده است، اما به زودی اضافه خواهد شد. در حال حاضر امکان دانلود فایل کامل
+        (شامل زمینه) وجود دارد، به طوری که کاربران می‌توانند از آن برای مراجعه‌های آینده یا به عنوان مدلی
+        برای کارهای خود استفاده کنند.
+    </p>
+</div>

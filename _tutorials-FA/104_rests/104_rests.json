@@ -1,0 +1,74 @@
+{
+  "steps": [
+    [
+        {
+            "label": "خوش‌ آمدید",
+            "descFile": "104_rests_step-00-desc.html",
+            "xmlFile": "104_rests_step-00.xml",
+            "editorLines": 1,
+            "xpaths": [
+                { "rule": "count(//mei:rest) = 1", "renderanyway": false, "hint": "باید یک المنت سکوت داشته باشید." },
+                { "rule": "count(//mei:rest/@*) = 1 and //mei:rest/@dur", "renderanyway": false, "hint": "باید یک خصیصه @dur داشته باشید." },
+                { "rule": "//mei:rest/@dur = '4'", "renderanyway": true, "hint": "خصیصه @dur از مقادیری مانند '1'، '2' یا '4' استفاده می‌کند. از مقدار آخر برای سکوت نت سیاه استفاده کنید." }
+            ]
+        },
+        {
+            "label": "ارزش‌های زمانی مختلف",
+            "editorLines": 5,
+            "descFile": "104_rests_step-01-desc.html",
+            "xmlFile": "104_rests_step-00.xml",
+            "xpaths": [
+                { "rule": "count(//mei:rest) = 5", "renderanyway": true, "hint": "باید پنج المنت سکوت کدگذاری کنید." },
+                { "rule": "//mei:rest[1]/@dur and //mei:rest[1]/@dur = '1'", "renderanyway": true },
+                { "rule": "//mei:rest[2]/@dur and //mei:rest[2]/@dur = '2'", "renderanyway": true },
+                { "rule": "//mei:rest[3]/@dur and //mei:rest[3]/@dur = '4' and //mei:rest[3]/@dots and //mei:rest[3]/@dots = '1'", "renderanyway": true },
+                { "rule": "//mei:rest[4]/@dur and //mei:rest[4]/@dur = '8'", "renderanyway": true },
+                { "rule": "//mei:rest[5]/@dur and //mei:rest[5]/@dur = '16'", "renderanyway": true }
+            ]
+        },
+        {
+            "label": "سکوت‌های یک میزانی",
+            "editorLines": 1,
+            "descFile": "104_rests_step-02-desc.html",
+            "xmlFile": "104_rests_step-02.xml",
+            "prefillFile": "104_rests_step-02-prefill.xml",
+            "xpaths": [
+                { "rule": "count(//mei:mRest) = 1", "renderanyway": true, "hint": "باید یک المنت mRest داشته باشید." },
+                { "rule": "count(//mei:mRest/@*) = 0", "renderanyway": true, "hint": "المنت mRest نباید خصیصه‌ای داشته باشد." },
+                { "rule": "count(//mei:layer/mei:*) = 1", "renderanyway": true, "hint": "باید تنها یک المنت mRest کدگذاری کنید." }
+            ]
+        },
+        {
+            "label": "سکوت‌های چند میزانی",
+            "editorLines": 1,
+            "descFile": "104_rests_step-03-desc.html",
+            "xmlFile": "104_rests_step-02.xml",
+            "xpaths": [
+                { "rule": "count(//mei:multiRest) = 1", "renderanyway": true, "hint": "باید یک المنت multiRest داشته باشید." },
+                { "rule": "count(//mei:layer/mei:*) = 1", "renderanyway": true, "hint": "باید تنها یک المنت multiRest کدگذاری کنید." },
+                { "rule": "count(//mei:multiRest/@*) = 1 and //mei:multiRest/@num", "renderanyway": true, "hint": "المنت multiRest باید یک خصیصه (@num) داشته باشد." },
+                { "rule": "//mei:multiRest/@num = '15'", "renderanyway": true, "hint": "المنت multiRest باید دارای مدت زمانی معادل 15 میزان باشد." }
+            ]
+        },
+        {
+            "label": "فضاهای خالی / سکوت‌های نامرئی",
+            "editorLines": 6,
+            "descFile": "104_rests_step-04-desc.html",
+            "xmlFile": "104_rests_step-04.xml",
+            "prefillFile": "104_rests_step-04-prefill.xml",
+            "xpaths": [
+                { "rule": "//mei:space/following-sibling::mei:note", "renderanyway": true, "hint": "المنت space باید پیش از المنت note قرار گیرد." },
+                { "rule": "count(//mei:space[@dur = '4']) = 3 or (//mei:space[@dur = '2' and @dots = '1']) or (//mei:space[@dur = '2'] and //mei:space[@dur = '4'])", "renderanyway": true }
+            ]
+        }
+    ]
+    
+  ],
+  "end":"104_rests_end.html",
+  "resp":[
+    {
+        "name":"Johannes Kepper",
+        "affiliation":"Beethovens Werkstatt | Universität Paderborn"
+    }
+  ]
+}

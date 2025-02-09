@@ -1,0 +1,63 @@
+
+<div>
+    <p><em>ماژول‌ها&nbsp;</em><span>بالاترین سطح در&nbsp;</span><span>ساختار مفهومی ODD</span><span>&nbsp;هستند.
+            ماژول‌ها امکان تقسیم‌بندی طرح را
+            به نواحی مختلف فراهم می‌کنند، که هرکدام یک جنبه مشخص را تعریف خواهد کرد. تا سال 2019، ساختار راهنماهای
+            وبسایت MEI از
+            ماژول‌های ODD پیروی می‌کرد، اما این ساختار با یک تقسیم‌بندی آموزشی‌تر جایگزین شد.
+            اکنون، ماژول‌ها در راهنماهای MEI در بالای تعاریف المنت‌ها، خصیصه‌ها و غیره نمایش داده می‌شوند:</span></p>
+    <div>
+        <img style="width: 100%;" src="./beam-module.png">
+    </div>
+    <p>
+        این تنها یک ارجاع ساده به ماژول‌ها است. اگر قصد کار بر روی ODD در MEI را دارید، مهم‌تر است بدانید که
+        کد سورس MEI بر اساس ماژول‌ها تقسیم‌بندی شده است. فایل
+        <a href="https://github.com/music-encoding/music-encoding/blob/develop/source/mei-source.xml" target="_blank"
+            rel="noopener, noreferrer">mei-source.xml</a>
+        به عنوان نقطه شروع برای ورود به مشخصات MEI عمل می‌کند. المنت
+        <a href="https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-schemaSpec.html" target="_blank"
+            rel="noopener, noreferrer">&lt;schemaSpec&gt;</a>
+        در <a
+            href="https://github.com/music-encoding/music-encoding/blob/93d8c00cd14126af2e680d47f437042227eb2c0e/source/mei-source.xml#L83"
+            target="_blank" rel="noopener, noreferrer">خط 83</a>&nbsp;(یا همان حوالی) یک شِمای جدید را با نام‌حوزه MEI
+        (<code>@ns="http://www.music-encoding.org/ns/mei"</code>) تعریف می‌کند.
+        سپس تعدادی
+        <em>XInclude</em> به عنوان المنت‌های فرزند دارد. <em>XInclude</em> برای تقسیم یک فایل XML منطقی بزرگ‌تر به
+        فایل‌های کوچک‌تر و مدیریت‌پذیرتر استفاده می‌شود. در اینجا، هر ماژول MEI در یک فایل جداگانه در زیرپوشه
+        <a href="https://github.com/music-encoding/music-encoding/tree/develop/source/modules" target="_blank"
+            rel="noopener, noreferrer">modules</a> ذخیره شده است.
+    </p>
+    <p>
+        ماژول‌های MEI بر اساس موضوعات مختلف ساخته شده‌اند. ماژول‌هایی هستند که بر روی رپرتوارهای موسیقی خاص تمرکز
+        دارند
+        (<a href="https://github.com/music-encoding/music-encoding/blob/develop/source/modules/MEI.cmn.xml"
+            target="_blank" rel="noopener, noreferrer">CMN</a>،
+        <a href="https://github.com/music-encoding/music-encoding/blob/develop/source/modules/MEI.mensural.xml"
+            target="_blank" rel="noopener, noreferrer">Mensural</a>،
+        <a href="https://github.com/music-encoding/music-encoding/blob/develop/source/modules/MEI.neumes.xml"
+            target="_blank" rel="noopener, noreferrer">Neumes</a>، یا
+        <a href="https://github.com/music-encoding/music-encoding/blob/develop/source/modules/MEI.stringtab.xml"
+            target="_blank" rel="noopener, noreferrer">Tablature زهی</a>)،
+        اما همچنین ماژول‌هایی برای دیدگاه‌های خاص در موسیقی
+        (<a href="https://github.com/music-encoding/music-encoding/blob/develop/source/modules/MEI.visual.xml"
+            target="_blank" rel="noopener, noreferrer">بصری</a>،
+        <a href="https://github.com/music-encoding/music-encoding/blob/develop/source/modules/MEI.gestural.xml"
+            target="_blank" rel="noopener, noreferrer">حرکتی</a>،
+        <a href="https://github.com/music-encoding/music-encoding/blob/develop/source/modules/MEI.analytical.xml"
+            target="_blank" rel="noopener, noreferrer">تحلیلی</a>)،
+        فناوری‌ها (
+        <a href="https://github.com/music-encoding/music-encoding/blob/develop/source/modules/MEI.midi.xml"
+            target="_blank" rel="noopener, noreferrer">MIDI</a>) یا موارد استفاده
+        (<a href="https://github.com/music-encoding/music-encoding/blob/develop/source/modules/MEI.facsimile.xml"
+            target="_blank" rel="noopener, noreferrer">نسخه‌ها</a>،
+        <a href="https://github.com/music-encoding/music-encoding/blob/develop/source/modules/MEI.performance.xml"
+            target="_blank" rel="noopener, noreferrer">اجراها</a>،
+        <a href="https://github.com/music-encoding/music-encoding/blob/develop/source/modules/MEI.edittrans.xml"
+            target="_blank" rel="noopener, noreferrer">استفاده ویرایشی</a>).
+        دامنه هر یک از این ماژول‌ها در راهنماهای MEI توصیف شده است.
+    </p>
+    <p>
+        علاوه بر بهبود قابلیت نگهداری سورس‌کد MEI به دلیل کاهش حجم فایل‌ها، این تقسیم‌بندی عمدتاً به ما امکان
+        می‌دهد که به‌راحتی بخش‌های بزرگ‌تر (-&gt; ماژول‌ها) از طرح MEI را «خاموش کنیم».
+    </p>
+</div>
