@@ -1,0 +1,30 @@
+<div>
+    <h1>Customizing ODD</h1>
+    <p>
+        This is an advanced tutorial that introduces how to customize MEI for project-specific needs. It assumes a solid understanding of the 
+        internal ODD structures of MEI, as described in the <a href="/tutorials/103-chords.html" target="_blank" rel="noopener, noreferrer">Understanding ODD</a>
+        tutorial. If you're not familiar with <a href="https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-elementSpec.html" target="_blank" rel="noopener, noreferrer">&lt;elementSpec&gt;</a>
+        elements, model classes and attribute classes, it is probably better to go back to <a href="/tutorials/103-chords.html" target="_blank" rel="noopener, noreferrer">that tutorial</a> first. 
+    </p>
+    <p>
+        Now let's start with our current tutorial. The <em>purpose</em> of customizations is to <em>restrict</em> the MEI schema to just those
+        parts of the framework which are relevant for a given task or project. It is also possible to <em>extend</em> MEI using the same
+        mechanisms described here, but this is left to yet another tutorial. For now, the focus is on subsetting MEI, though, as files 
+        validated against such a customized version of MEI will also validate against the 
+        <a href="/resources/schemas.html" target="_blank" rel="noopener, noreferrer">MEI All</a> customization, which resembles the full 
+        MEI framework. This ensures a substantial level of compatibility with existing tools and documentation. In general, extensions to MEI
+        should be made only when absolutely necessary, and it's usually a good idea in such situations to consult with the 
+        <a href="/community/community-contacts.html" target="_blank" rel="noopener, noreferrer">MEI Community</a> to verify that no other 
+        solution exists already.
+    </p>
+    <p>
+        In this tutorial, we will first learn how to use the <a href="https://meigarage.edirom.de/profiler" target="_blank" rel="noopener, noreferrer">MEI ProfileDrafter</a>,
+        which provides a graphical user interface for generating basic restricting customizations. It is part of the 
+        <a href="https://meigarage.edirom.de" target="_blank" rel="noopener, noreferrer">MEI Garage</a>, and while being somewhat limited, it
+        definitely helps to better understand the concepts of MEI Customizations. Next, we will examine the output
+        of the MEI ProfileDrafter and see how to generate a RelaxNG file for validation purposes from that. Finally, we will introduce
+        some more advanced customization options, which are beyond the scope of the MEI ProfileDrafter. You may want to use a XML Editor
+        application at some point to follow along, but we'll be using web services for all processing, so it really doesn't matter which
+        editor you choose – any is fine. With that out of the way, let's get started!  
+    </p>
+</div>
