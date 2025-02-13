@@ -44,21 +44,21 @@ The MEI Board manages the property and business of MEI. It promotes the developm
 
 ## Protocols of Board Meetings
 
-* [2015-05-21, Face to Face meeting at the MEC2015 in Florence](mei-board/protocols/2015-05-21_Face-to-Face-Meeting-MEC2015-Florence)
-* [2017-05-17, Face to Face meeting at the MEC2017 in Tours](mei-board/protocols/2017-05-17_Face-to-Face-Meeting-MEC2017-Tours)
-* [2017-08-29, Virtual Board Meeting](mei-board/protocols/2017-08-29_Virtual-Board-Meeting)
-* [2018-01-15, Virtual Board Meeting](mei-board/protocols/2018-01-15_Virtual-Board-Meeting)
-* [2018-05-22, Face to Face meeting at the MEC2018 in College Park](mei-board/protocols/2018-05-22_Face-to-Face-Meeting-MEC2018-College-Park)
-* [2018-10-12, Virtual Board Meeting](mei-board/protocols/2018-10-12_Virtual-Board-Meeting)
-* [2019-01-15, Virtual Board Meeting](mei-board/protocols/2019-01-15_Virtual-Board-Meeting)
-* [2019-06-12, Face to Face meeting at the MEC2019 in Vienna](mei-board/protocols/2019-06-01_Face-to-Face-Meeting-MEC2019-Vienna)
-* [2020-01-15, Virtual Board Meeting](mei-board/protocols/2020-01-15_Virtual-Board-Meeting)
-* [2020-03-25, Virtual Board Meeting](mei-board/protocols/2020-03-25_Virtual-Board-Meeting)
-* [2020-07-23, Virtual Board Meeting](mei-board/protocols/2020-07-23_Virtual-Board-Meeting)
-* [2020-10-07, Virtual Board Meeting](mei-board/protocols/2020-10-07_Virtual-Board-Meeting)
-* [2021-01-14, Virtual Board Meeting](mei-board/protocols/2021-01-14_Virtual-Board-Meeting)
-* [2022-01-19, Virtual Board Meeting](mei-board/protocols/2022-01-19_Virtual-Board-Meeting)
-* [2025-01-07, Virtual Board Meeting](mei-board/protocols/2025-01-07_Virtual-Board-Meeting)
+* [2015-05-21, Face to Face meeting at the MEC2015 in Florence](mei-board/protocols/2015-05-21_Face-to-Face-Meeting-MEC2015-Florence.html)
+* [2017-05-17, Face to Face meeting at the MEC2017 in Tours](mei-board/protocols/2017-05-17_Face-to-Face-Meeting-MEC2017-Tours.html)
+* [2017-08-29, Virtual Board Meeting](mei-board/protocols/2017-08-29_Virtual-Board-Meeting.html)
+* [2018-01-15, Virtual Board Meeting](mei-board/protocols/2018-01-15_Virtual-Board-Meeting.html)
+* [2018-05-22, Face to Face meeting at the MEC2018 in College Park](mei-board/protocols/2018-05-22_Face-to-Face-Meeting-MEC2018-College-Park.html)
+* [2018-10-12, Virtual Board Meeting](mei-board/protocols/2018-10-12_Virtual-Board-Meeting.html)
+* [2019-01-15, Virtual Board Meeting](mei-board/protocols/2019-01-15_Virtual-Board-Meeting.html)
+* [2019-06-12, Face to Face meeting at the MEC2019 in Vienna](mei-board/protocols/2019-06-01_Face-to-Face-Meeting-MEC2019-Vienna.html)
+* [2020-01-15, Virtual Board Meeting](mei-board/protocols/2020-01-15_Virtual-Board-Meeting.html)
+* [2020-03-25, Virtual Board Meeting](mei-board/protocols/2020-03-25_Virtual-Board-Meeting.html)
+* [2020-07-23, Virtual Board Meeting](mei-board/protocols/2020-07-23_Virtual-Board-Meeting.html)
+* [2020-10-07, Virtual Board Meeting](mei-board/protocols/2020-10-07_Virtual-Board-Meeting.html)
+* [2021-01-14, Virtual Board Meeting](mei-board/protocols/2021-01-14_Virtual-Board-Meeting.html)
+* [2022-01-19, Virtual Board Meeting](mei-board/protocols/2022-01-19_Virtual-Board-Meeting.html)
+* [2025-01-07, Virtual Board Meeting](mei-board/protocols/2025-01-07_Virtual-Board-Meeting.html)
 
 ## Elections
 
