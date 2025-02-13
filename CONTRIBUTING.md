@@ -58,7 +58,7 @@ To install and run Jekyll natively on your machine, please follow these steps:
 
 #### Step 3b: Run Jekyll in a Docker container
 
-To avoid installing Jekyll natively and to assure it comes with all the necessary dependencies, you can run it in a preconfigured container image. The publishers of Jekyll offer a corresponding Docker image for such purposes. To run it, please follow these instructions:
+To avoid installing Jekyll natively and to assure it comes with all the necessary dependencies, you can run it in a preconfigured container image. The publishers of Jekyll offer a corresponding [Docker image](https://github.com/envygeeks/jekyll-docker) for such purposes. To run it, please follow these instructions:
 
 1. Install Docker
 
@@ -84,6 +84,19 @@ To avoid installing Jekyll natively and to assure it comes with all the necessar
     | jekyll serve     | execute jekyll to serve the website                                                      |
 
     This will compile the site and start serving the content locally. Information on the compilation process will be output to the command shell. Once it's ready, you can open your browser and visit `http://localhost:4000` to see your local version of the website.
+
+> [!NOTE]
+> The `$PWD` ("print working directory") command is commonly used in Unix-like operating systems to get the current working directory.
+> However, on other systems, especially Windows, you might need to replace it with a different command. Below are the alternatives for different command line tools:
+>
+> | Command Line Tool | Command |
+> |-------------------|---------|
+> | **Unix-like Systems** | |
+> | - Terminal        | `$PWD` |
+> | **Windows Systems** | |
+> | - Powershell        | `${PWD}` |
+> | - CMD               | `%CD%`   |
+> | - Git Bash for Windows | `/$(pwd)` |
 
 ### Step 5. Make your changes and commit
 
