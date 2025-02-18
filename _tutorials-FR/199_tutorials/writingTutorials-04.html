@@ -1,0 +1,68 @@
+<div>
+  <p>
+    Lorsque vous réalisez un tutoriel par vous-même, vous vous êtes peut-être
+    demandé comment Verovio parvient à rendre le code MEI de l'utilisateur, même si
+    l'utilisateur n'entre pas un fichier MEI complet. Cela est permis grâce à la
+    propriété <code>"xmlFile"</code> introduite à la dernière page. Cette
+    propriété fait référence à un fichier MEI complet, qui fournit le contexte
+    nécessaire pour encadrer la saisie de l'utilisateur en vue d'un rendu
+    correct. Regardons un exemple simple :
+  </p>
+  <pre
+    class="codeblock"
+  >&lt;mei xmlns="http://www.music-encoding.org/ns/mei"&gt;
+    &lt;meiHead&gt;
+        &lt;fileDesc&gt;
+            &lt;titleStmt&gt;
+                &lt;title/&gt;
+            &lt;/titleStmt&gt;
+            &lt;pubStmt/&gt;
+        &lt;/fileDesc&gt;
+    &lt;/meiHead&gt;
+    &lt;music&gt;
+        &lt;body&gt;
+            &lt;mdiv&gt;
+                &lt;score&gt;
+                    &lt;scoreDef&gt;
+                        &lt;staffGrp&gt;
+                            &lt;staffDef clef.shape="G" clef.line="2" n="1" lines="5"/&gt;
+                        &lt;/staffGrp&gt;
+                    &lt;/scoreDef&gt;
+                    &lt;section&gt;
+                        &lt;measure&gt;
+                            &lt;staff n="1"&gt;
+                                &lt;layer&gt;
+                                    <span class="text-error">&lt;?snippet-start?&gt;</span>
+                                    &lt;note pname="c" oct="4" dur="4"/&gt;
+                                    <span class="text-error">&lt;?snippet-end?&gt;</span>
+                                &lt;/layer&gt;
+                            &lt;/staff&gt;
+                        &lt;/measure&gt;
+                    &lt;/section&gt;
+                &lt;/score&gt;
+            &lt;/mdiv&gt;
+        &lt;/body&gt;
+    &lt;/music&gt;
+&lt;/mei&gt;</pre>
+  <label
+    >Un fichier MEI simple, à utiliser comme contexte pour la saisie de
+    l'utilisateur.</label
+  >
+  <p>
+    Il s'agit simplement d'un fichier MEI classique, mais qui contient deux
+    <i>instructions de traitement</i> importantes (marquées en rouge). Le
+    contenu de ce fichier est lu en mémoire. Chaque fois que la saisie de
+    l'utilisateur dans l'éditeur est bien formée en XML, elle est insérée
+    <i>entre</i> les deux instructions de traitement, et le fichier complet
+    (incluant désormais la saisie de l'utilisateur) est validé et (le cas
+    échéant) envoyé à Verovio pour le rendu.
+  </p>
+  <p>
+    Ce qui est stocké entre les deux <i>instructions de traitement</i> est
+    destiné à servir de solution d'exemple. Cette fonctionnalité n'est pas
+    encore implémentée, mais le sera bientôt. Il est déjà possible de
+    télécharger le fichier complet (incluant le contexte), de sorte que les
+    utilisateurs puissent les utiliser comme référence future ou comme modèle
+    pour leur propre travail.
+  </p>
+</div>

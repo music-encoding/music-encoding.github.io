@@ -51,38 +51,47 @@ var LANG; //this will be used to store the current language
 var tutorialStrings = {
     'codeNotWellformed': {
         'EN': 'Your code is not well-formed.',
+        'EN': 'Your code is not well-formed.',
         'ES': 'Su código no está bien formado.'
     },
     'fetchOperationProblem': {
+        'EN': 'There has been a problem with the fetch operation for:',
         'EN': 'There has been a problem with the fetch operation for:',
         'ES': 'Ha habido un problema con la operación fetch para:'
     },
     'finish': {
         'EN': 'Finish',
+        'FR': 'Terminer',
         'ES': 'Terminar'
     },
     'goal': {
         'EN': 'Goal',
+        'FR': 'Objectif',
         'ES': 'Objetivo'
     },
     'hideHint': {
         'EN': 'hide hint',
+        'FR': 'cacher l\'indice',
         'ES': 'ocultar pista'
     },
     'networkError': {
         'EN': 'Network response was not ok while trying to fetch:',
+        'FR': 'La réponse du réseau n\'était pas correcte en essayant de chercher:',
         'ES': 'La respuesta de la red no fue correcta al intentar buscar:'
     },
     'renderingError': {
         'EN': 'The current encoding cannot be rendered.',
+        'FR': 'Le codage actuel ne peut pas être représenté.',
         'ES': 'La codificación actual no se puede representar.'
     },
     'showHint': {
         'EN': 'show hint',
+        'FR': 'montrer l\'indice',
         'ES': 'mostrar pista'
     },
     'task': {
         'EN': 'Task',
+        'FR': 'Tâche',
         'ES': 'Tarea'
     }
 };

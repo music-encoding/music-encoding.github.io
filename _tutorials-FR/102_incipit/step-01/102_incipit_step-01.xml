@@ -1,0 +1,25 @@
+<mei xmlns="http://www.music-encoding.org/ns/mei">
+    <meiHead>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">March</title>
+            </titleStmt>
+            <pubStmt></pubStmt>
+        </fileDesc>
+    </meiHead>
+    <music>
+        <body>
+            <mdiv>
+                <score>
+                    <?edit-start?>
+                    <scoreDef>
+                        <staffGrp>
+                            <staffDef></staffDef>
+                        </staffGrp>
+                    </scoreDef>
+                    <?edit-end?>
+                </score>
+            </mdiv>
+        </body>
+    </music>
+</mei>

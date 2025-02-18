@@ -1,0 +1,48 @@
+<div>
+  <p>
+    Le MEI standard autorise les <strong>éléments du document</strong> suivants
+    : <code>&lt;mei&gt;</code>, <code>&lt;meiHead&gt;</code>,
+    <code>&lt;music&gt;</code>, et <code>&lt;meiCorpus&gt;</code>. Cela signifie
+    que ces éléments peuvent servir d'éléments extérieurs dans un fichier MEI.
+    Cependant, un projet peut concevoir une structure de données qui nécessite
+    d'autres éléments de départ ou des éléments de départ additionnels. Par
+    exemple, un projet peut décider de conserver toutes les annotations
+    éditoriales dans des fichiers séparés, chacun contenant son propre élément
+    <code>&lt;annot&gt;</code>. La personnalisation officielle
+    <a
+      href="/guidelines/dev/content/introduction.html#meiprofiles"
+      target="_blank"
+      rel="noopener, noreferrer"
+      >mei-all_anyStart</a
+    >
+    permet d'utiliser chaque élément individuel dans l'espace de noms MEI comme
+    élément de départ, mais cela est principalement à des fins pédagogiques et
+    n'est pas recommandé pour un usage pratique. À la place, ODD offre un
+    mécanisme simple pour définir les éléments de départ autorisés, en utilisant
+    l'élément initial <code>&lt;schemaSpec&gt;</code>.
+  </p>
+  <pre class="codeblock">
+&lt;schemaSpec ident="mei" 
+    ns="http://www.music-encoding.org/ns/mei" 
+    prefix="mei_" 
+    start="mei meiHead meiCorpus music"&gt;</pre
+  >
+  <p>
+    Comme vous pouvez le voir, l'attribut <code>@start</code> est utilisé comme
+    une liste séparée par des espaces de tous les éléments de départ. Si le
+    projet mentionné ci-dessus décidait d'autoriser <code>&lt;mei&gt;</code> et
+    <code>&lt;annot&gt;</code>, mais de désautoriser tous les autres éléments de
+    départ, cela pourrait être modifié comme suit :
+  </p>
+  <pre class="codeblock">
+&lt;schemaSpec ident="mei" 
+    ns="http://www.music-encoding.org/ns/mei" 
+    prefix="mei_" 
+    start="mei annot"&gt;</pre
+  >
+  <p>
+    Comme vous pouvez le constater, ajuster les éléments de départ est en
+    réalité assez simple. Résumons ce que nous avons appris sur la
+    personnalisation ODD.
+  </p>
+</div>

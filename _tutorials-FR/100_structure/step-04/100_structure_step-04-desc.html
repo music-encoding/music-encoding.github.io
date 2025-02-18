@@ -1,0 +1,28 @@
+<p class="tutorialGoal">
+    Dernière étape : fournir les informations minimales nécessaires pour l'en-tête MEI.
+</p>
+<p>
+    Parfait ! Vous êtes maintenant très proche de disposer d'une structure de fichier MEI de base valide. Ce qui manque encore, 
+    ce sont deux éléments incontournable de l'en-tête MEI :
+    <ul>
+        <li>
+            <code>&lt;titleStmt&gt;</code> - un élément conteneur pour le titre et les métadonnées de responsabilité. 
+            Le titre d'une entité bibliographique est donné via son sous-élément obligatoire <code>&lt;title&gt;</code>;
+        </li>
+        <li>
+            <code>&lt;pubStmt&gt;</code> - un élément conteneur pour les informations concernant la publication ou 
+            la distribution d'un élément bibliographique, y compris le nom et l'adresse de l'éditeur, la date de 
+            publication et d'autres détails pertinents.
+        </li>
+    </ul>
+    <p>
+        Ces deux éléments font partie de la description du fichier (<code>&lt;fileDesc&gt;</code>), qui est un élément 
+        enfant direct de <code>&lt;meiHead&gt;</code> et permet une description bibliographique complète d'un fichier MEI.
+    </p>
+    <p class="task">Dans l'éditeur ci-dessous, ajoutez un élément <code>&lt;fileDesc&gt;</code> à l'intérieur de 
+        <code>&lt;meiHead&gt;</code> donné. Ensuite, ajoutez les éléments obligatoires <code>&lt;titleStmt&gt;</code> 
+        et <code>&lt;pubStmt&gt;</code> à <code>&lt;fileDesc&gt;</code> et un élément <code>&lt;title&gt;</code> à 
+        <code>&lt;titleStmt&gt;</code>.
+    </p>
+</div>
+

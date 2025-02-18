@@ -1,0 +1,105 @@
+<div>
+  <p>
+    La plupart des types de données dans ODD suivent des concepts courants bien
+    établis : il y a des entiers, des valeurs booléennes, des chaînes de
+    caractères, etc. Examinons de plus près certains d'entre eux. L'attribut
+    <em>@n</em> est défini dans la classe d'attributs
+    <em
+      ><a
+        href="https://music-encoding.org/guidelines/v4/attribute-classes/att.ninteger.html"
+        >att.nInteger</a
+      ></em
+    >
+    :
+  </p>
+  <pre class="codeblock">
+&lt;attDef ident="n" usage="opt"&gt;
+    &lt;desc&gt;Fournit une désignation numérique indiquant la position d'un élément dans une séquence d'éléments similaires. Sa valeur doit être un entier non négatif.&lt;/desc&gt;
+    &lt;datatype maxOccurs="1" minOccurs="1"&gt;
+        &lt;rng:data type="nonNegativeInteger"/&gt;
+    &lt;/datatype&gt;
+&lt;/attDef&gt;</pre
+  >
+  <p>
+    Cela utilise un élément <em>&lt;data&gt;</em> de l'espace de noms
+    <em>rng:</em>, où <em>@type</em> utilise une valeur définie dans RelaxNG.
+    Les attributs <em>@maxOccurs</em> et <em>@minOccurs</em> définissent combien
+    de fois une valeur de ce type peut être fournie. Un exemple pour d'autres
+    valeurs peut être trouvé pour l'attribut <em>@staff</em> défini dans
+    <em>att.staffIdent</em>. Cet attribut est utilisé pour associer des
+    <a
+      href="https://music-encoding.org/guidelines/v4/content/introduction.html#eventsControlevents"
+      target="_blank"
+      rel="noopener, noreferrer"
+      >controlevents</a
+    >
+    à une ou plusieurs portées, et peut contenir un ou plusieurs entiers. Il
+    utilise
+    <a
+      href="https://music-encoding.org/guidelines/v4/attribute-classes/att.staffident.html"
+      target="_blank"
+      rel="noopener, noreferrer"
+      >la balise suivante</a
+    >
+    pour cela :
+  </p>
+  <pre class="codeblock">
+&lt;datatype maxOccurs="unbounded" minOccurs="1"&gt;
+    &lt;rng:data type="positiveInteger"/&gt;
+&lt;/datatype&gt;</pre
+  >
+  <p>
+    Dans d'autres cas, MEI définit ses propres types de données. Cela se fait
+    avec un élément
+    <a
+      href="https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-macroSpec.html"
+      target="_blank"
+      rel="noopener, noreferrer"
+      >&lt;macroSpec&gt;</a
+    >. Regardons le type de données
+    <em
+      ><a
+        href="https://music-encoding.org/guidelines/v4/data-types/data.barrendition.html"
+        target="_blank"
+        rel="noopener, noreferrer"
+        >data.BARRENDITION</a
+      ></em
+    >, qui est utilisé pour définir l'apparence des barres :
+  </p>
+  <pre class="codeblock">
+&lt;macroSpec ident="data.BARRENDITION" module="MEI" type="dt"&gt;
+    &lt;desc&gt;Représentations graphiques des barres. Certaines valeurs correspondent à la partie "Western Musical Symbols" du standard Unicode.&lt;/desc&gt;
+    &lt;content&gt;
+        &lt;valList type="closed"&gt;
+            &lt;valItem ident="dashed"&gt;
+                &lt;desc&gt;Ligne en pointillés (Unicode 1D104).&lt;/desc&gt;
+            &lt;/valItem&gt;
+            &lt;valItem ident="dotted"&gt;
+                &lt;desc&gt;Ligne pointillée.&lt;/desc&gt;
+            &lt;/valItem&gt;
+            &lt;valItem ident="dbl"&gt;
+                &lt;desc&gt;(Unicode 1D101).&lt;/desc&gt;
+            &lt;/valItem&gt;
+            &lt;valItem ident="dbldashed"&gt;
+                &lt;desc&gt;Double ligne en pointillés.&lt;/desc&gt;
+            &lt;/valItem&gt;
+            &lt;valItem ident="dbldotted"&gt;
+                &lt;desc&gt;Double ligne pointillée.&lt;/desc&gt;
+            &lt;/valItem&gt;
+            &lt;valItem ident="end"&gt;
+                &lt;desc&gt;(Unicode 1D102).&lt;/desc&gt;
+            &lt;/valItem&gt;
+            &lt;valItem ident="invis"&gt;
+                &lt;desc&gt;Barre non rendue.&lt;/desc&gt;
+            &lt;/valItem&gt;
+            &lt;valItem ident="rptstart"&gt;
+                &lt;desc&gt;Début de répétition (Unicode 1D106).&lt;/desc&gt;
+            &lt;/valItem&gt;
+            &lt;valItem ident="rptboth"&gt;
+                &lt;desc&gt;Début et fin de répétition.&lt;/desc&gt;
+            &lt;/valItem&gt;
+            &lt;valItem ident="rptend"&gt;
+                &
+</pre
+  >
+</div>
