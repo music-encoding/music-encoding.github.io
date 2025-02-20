@@ -5,7 +5,7 @@ title: "2025-01-07 Virtual MEI Board Meeting"
 
 # 2025 January 7 Virtual MEI Board Meeting
 
-Present: Anna Kijas, Martha Thomae Elias, Maristella Feustle, Stefan, Münnich, Benjamin Bohl, David Weigl, Anna Plaksin, Laurent Pugin
+Present: Anna Kijas, Martha Thomae Elias, Maristella Feustle, Stefan Münnich, Benjamin Bohl, David Weigl, Anna Plaksin, Laurent Pugin
 
 Regards: Johannes Kepper
 
