@@ -1,0 +1,118 @@
+<div>
+  <p>
+    À la dernière étape, nous avons appris qu'un
+    <code>&lt;classSpec type="atts" ident="att.basic" mode="delete"/&gt;</code>
+    peut être utilisé pour supprimer la classe d'attributs
+    <em>att.basic</em> (comme toute autre) d'une personnalisation MEI.
+    L'attribut <code>@mode</code> est ce qui détermine ce comportement ici. Les
+    directives TEI pour la classe d'attributs
+    <a
+      href="https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-att.combinable.html"
+      target="_blank"
+      rel="noopener, noreferrer"
+      >att.combinable</a
+    >
+    fournissent une documentation supplémentaire sur les valeurs autorisées.
+    Elle indique que "<em
+      >un processeur ODD doit gérer les valeurs de @mode comme suit</em
+    >":
+  </p>
+  <dl>
+    <dt>add</dt>
+    <dd>
+      l'objet doit être créé (en traitant éventuellement les enfants en mode
+      add); générer une erreur si un objet avec le même identifiant existe déjà
+    </dd>
+    <dt>replace</dt>
+    <dd>
+      utiliser cet objet de préférence à tout objet existant avec le même
+      identifiant, et ignorer tout enfant de cet objet; traiter tout nouvel
+      enfant en mode 'replace'
+    </dd>
+    <dt>delete</dt>
+    <dd>
+      ne pas traiter cet objet ni aucun objet existant avec le même identifiant;
+      générer une erreur si de nouveaux enfants sont fournis
+    </dd>
+    <dt>change</dt>
+    <dd>
+      traiter cet objet, et traiter ses enfants, ainsi que ceux de tout objet
+      existant avec le même identifiant, en mode 'change'
+    </dd>
+  </dl>
+  <p>
+    Avec cela, il est possible non seulement de <em>supprimer</em> des classes
+    d'attributs via une personnalisation, mais aussi de les modifier. Par
+    exemple, dans la
+    <a
+      href="/guidelines/dev/content/introduction.html#meiprofiles"
+      target="_blank"
+      rel="noopener, noreferrer"
+      >personnalisation MEI de base</a
+    >, l'attribut <code>@xml:base</code> est supprimé du schéma. Dans les
+    sources MEI, cela est défini dans la classe d'attributs
+    <code>att.basic</code> :
+  </p>
+  <pre class="codeblock">
+&lt;classSpec ident="att.basic" module="MEI.shared" type="atts"&gt;
+    &lt;desc&gt;Attributs qui forment la base de la classe att.common.&lt;/desc&gt;
+        &lt;classes&gt;
+            &lt;memberOf key="att.id"/&gt;
+        &lt;/classes&gt;
+    &lt;attList&gt;
+        &lt;attDef ident="xml:base" usage="opt"&gt;
+            &lt;desc&gt;Fournit une référence d'URI de base avec laquelle les applications peuvent résoudre des références d'URI relatives en références d'URI absolues.&lt;/desc&gt;
+            &lt;datatype&gt;
+                &lt;rng:ref name="data.URI"/&gt;
+            &lt;/datatype&gt;
+        &lt;/attDef&gt;
+    &lt;/attList&gt;
+&lt;/classSpec&gt;</pre
+  >
+  <p>
+    Comme vous pouvez le voir, la classe <code>att.basic</code> est membre de la
+    classe <code>att.id</code> - qui est responsable de rendre l'attribut
+    <code>@xml:id</code> disponible sur chaque élément. Ainsi, supprimer
+    <code>att.basic</code> du schéma interdirait également l'utilisation des
+    <code>@xml:id</code> n'importe où dans les fichiers conformes à la
+    personnalisation résultante - certainement pas une bonne idée dans tout cas
+    d'utilisation pratique. À la place, la flexibilité offerte par les
+    différents <code>@mode</code>s peut être utilisée pour faire des
+    déclarations plus précises ici. L'exemple suivant montre ce qui a été fait
+    pour personnaliser <code>att.basic</code> pour le profil MEI de base :
+  </p>
+  <pre class="codeblock">
+&lt;classSpec ident="att.basic" module="MEI.shared" type="atts" mode="replace"&gt;
+    &lt;desc&gt;Attributs qui forment la base de la classe att.common.&lt;/desc&gt;
+    &lt;classes&gt;
+        &lt;memberOf key="att.id"/&gt;
+    &lt;/classes&gt;
+&lt;/classSpec&gt;</pre
+  >
+  <p>
+    Au lieu de <code>mode="delete"</code>, il utilise
+    <code>mode="replace"</code> pour donner une nouvelle définition à la classe
+    d'attributs. Cette classe d'attributs manque alors de la définition
+    d'attribut pour <code>@xml:base</code>. Alternativement, il aurait été
+    possible d'utiliser <code>@mode="change"</code> sur la classe d'attributs,
+    omettre les classes enfants (comme une valeur de <em>change</em> déclenchera
+    le traitement des classes d'origine également, voir ci-dessus), et ajouter
+    un <code>mode="delete"</code> supplémentaire sur la définition de
+    l'attribut, comme on peut le voir dans l'exemple suivant :
+  </p>
+  <pre class="codeblock">
+&lt;classSpec ident="att.basic" module="MEI.shared" type="atts" mode="change"&gt;
+    &lt;attList&gt;
+        &lt;attDef ident="xml:base" mode="delete"/&gt;
+    &lt;/attList&gt;
+&lt;/classSpec&gt;</pre
+  >
+  <p>
+    Les deux approches donnent les mêmes résultats, donc c'est surtout une
+    question de préférence de choisir une solution. En général, il est judicieux
+    de copier une définition existante (qui est toujours accessible via les
+    directives MEI) dans votre personnalisation, puis de l'ajuster en insérant
+    soigneusement des <code>@mode</code>s de traitement sur l'objet lui-même et
+    ses enfants. <code>@mode</code> peut être utilisé sur un certain
+  </p>
+</div>

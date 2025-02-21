@@ -1,0 +1,109 @@
+<div>
+  <p>
+    Comme nous l'avons vu à l'étape précédente, une grande partie de la
+    hiérarchie MEI est établie grâce à l'utilisation de classes modèles. Un
+    mécanisme très similaire est utilisé par ODD pour rendre les attributs
+    disponibles sur plusieurs éléments. Mais avant de traiter des classes
+    d'attributs, jetons un bref coup d'œil sur la manière dont un attribut est
+    réellement défini dans ODD. L'attribut <em>@xml:id</em> est disponible sur
+    chaque élément MEI et est défini avec les spécifications suivantes :
+  </p>
+  <pre class="codeblock">
+&lt;attDef ident="xml:id" usage="opt"&gt;
+        &lt;desc&gt;Normalise le nom d'un élément et facilite ainsi la création de liens entre lui et d'autres ressources. Chaque attribut id dans un document doit avoir une valeur unique.&lt;/desc&gt;
+        &lt;datatype maxOccurs="1" minOccurs="1"&gt;
+            &lt;rng:data type="ID"/&gt;
+        &lt;/datatype&gt;
+    &lt;/attDef&gt;</pre
+  >
+  <p>
+    Les attributs sont spécifiés à l'aide de l'élément
+    <a
+      href="https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-attDef.html"
+      target="_blank"
+      rel="noopener, noreferrer"
+      >&lt;attDef&gt;</a
+    >
+    et suivent certaines conventions que nous avons déjà vues sur les éléments
+    et les classes modèles : leur nom est fourni dans l'attribut
+    <em>@ident</em>, et ils ont un élément <em>&lt;desc&gt;</em> avec une brève
+    description. Ce qui est nouveau, c'est l'attribut <strong>@usage</strong>,
+    qui spécifie quand utiliser l'attribut spécifié. La valeur ici,
+    "<em>opt</em>", est utilisée pour les attributs facultatifs – <em
+      >@xml:id</em
+    >
+    peut être utilisé sur tous les éléments MEI, mais ce n'est pas obligatoire.
+    D'autres valeurs autorisées pour <em>@usage</em> sont "<em>req</em>"
+    (requis) et "<em>rec</em>" (recommandé lorsqu'il est applicable).
+  </p>
+  <p>
+    Maintenant, regardons où se trouvent ces éléments <em>&lt;attDef&gt;</em>.
+    Même si ce n'est pas vraiment la solution préférée, parfois les attributs
+    sont définis à l'endroit où ils doivent être utilisés, comme avec l'attribut
+    <em>@type</em> sur
+    <a
+      href="https://music-encoding.org/guidelines/v4/elements/meihead.html"
+      target="_blank"
+      rel="noopener, noreferrer"
+      >&lt;meiHead&gt;</a
+    >
+    :
+  </p>
+  <pre class="codeblock">
+&lt;elementSpec ident="meiHead" module="MEI.header"&gt;
+    &lt;desc&gt;(En-tête MEI) – Fournit les métadonnées descriptives et déclaratives préfixées à chaque texte conforme à MEI.&lt;/desc&gt;
+    &lt;classes&gt;
+        &lt;!-- Les éléments memberOf sont omis pour des raisons de brièveté --&gt;
+    &lt;/classes&gt;
+    &lt;content&gt;
+        &lt;!-- Les contenus sont omis pour des raisons de brièveté --&gt;
+    &lt;/content&gt;
+    &lt;!-- Les spécifications de contraintes sont omises pour des raisons de brièveté --&gt;
+    &lt;attList&gt;
+        &lt;attDef ident="type" usage="opt"&gt;
+            &lt;desc&gt;Spécifie le type de document auquel l'en-tête est attaché, par exemple s'il
+                s'agit d'un corpus ou d'un texte individuel.&lt;/desc&gt;
+            &lt;valList type="closed"&gt;
+                &lt;valItem ident="music"&gt;
+                    &lt;desc&gt;L'en-tête est attaché à un document musical.&lt;/desc&gt;
+                &lt;/valItem&gt;
+                &lt;valItem ident="corpus"&gt;
+                    &lt;desc&gt;L'en-tête est attaché à un corpus.&lt;/desc&gt;
+                &lt;/valItem&gt;
+                &lt;valItem ident="independent"&gt;
+                    &lt;desc&gt;L'en-tête est indépendant ; c'est-à-dire, non attaché à un document musical ou à un corpus.&lt;/desc&gt;
+                &lt;/valItem&gt;
+            &lt;/valList&gt;
+        &lt;/attDef&gt;
+    &lt;/attList&gt;
+    &lt;!-- Les remarques sont omises pour des raisons de brièveté --&gt;
+&lt;/elementSpec&gt;</pre
+  >
+  <p>
+    Comme nous pouvons le voir, les attributs sont simplement contenus dans un
+    enfant <em>&lt;attList&gt;</em> à l'intérieur de
+    <em>&lt;elementSpec&gt;</em>. Cependant, dans la plupart des cas, un
+    attribut est censé être disponible sur plus d'un élément. L'attribut
+    <em>@xml:id</em> introduit ci-dessus est disponible sur chaque élément MEI,
+    il devrait donc être défini plusieurs centaines de fois – encore une fois,
+    cela n'est ni maintenable ni efficace. Au lieu de cela, ODD utilise à
+    nouveau un système de classes, cette fois-ci pour les
+    <strong>classes d'attributs</strong>. Regardons comment <em>@xml:id</em> est
+    réellement distribué dans MEI en utilisant la classe d'attributs
+    <em>att.id</em> :
+  </p>
+  <pre class="codeblock">
+&lt;classSpec ident="att.id" module="MEI.shared" type="atts"&gt;
+    &lt;desc&gt;Attributs qui identifient de manière unique un élément.&lt;/desc&gt;
+    &lt;attList org="group"&gt;
+        &lt;attDef ident="xml:id" usage="opt"&gt;
+            &lt;!-- On saute cela, car c'est exactement la même chose que dans l'exemple ci-dessus --&gt;
+        &lt;/attDef&gt;
+    &lt;/attList&gt;
+&lt;/classSpec&gt;</pre
+  >
+  <p>
+    Nous avons déjà vu le <em>&lt;attDef&gt;</em>, et il n'y a aucune différence
+    entre les attributs définis à l'intérieur d'un élément ou à l'int
+  </p>
+</div>
