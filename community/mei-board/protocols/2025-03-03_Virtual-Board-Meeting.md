@@ -20,7 +20,7 @@ Updates: MEC 2025 (Anna P.)
 - Bursary information is being drafted and will be shared soon
 
 MEC Reviews
-- Discussed ways to impmrove and develop reviewer guidelines for future music encoding conferences
+- Discussed ways to improve and develop reviewer guidelines for future music encoding conferences
 
 Planning for Community Meeting on April 8, 2025
 - Outcomes from Developers’ Workshop and MEC 2025 will be shared with community
