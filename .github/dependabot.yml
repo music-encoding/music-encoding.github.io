@@ -1,17 +1,27 @@
 version: 2
 updates:
   # Maintain dependencies for GitHub Actions
-  - package-ecosystem: 'github-actions'
+  - package-ecosystem: "github-actions"
     directory: '/'
     schedule:
-      interval: 'daily'
-    labels:
-      - 'gh actions dependencies'
+      # Check for updates on the first day of every month
+      interval: "monthly"
+    reviewers:
+      - music-encoding/technical-team-co-chairs
+    groups:
+      actions:
+        patterns:
+          - "*"
 
   # Maintain dependencies for Ruby
   - package-ecosystem: bundler
     directory: /
     schedule:
-      interval: daily
-    labels:
-      - 'dependencies'
+      # Check for updates on the first day of every month
+      interval: "monthly"
+    reviewers:
+      - music-encoding/technical-team-co-chairs
+    groups:
+      bundler-dependencies:
+        patterns:
+          - "*"
