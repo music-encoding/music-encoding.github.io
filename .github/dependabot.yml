@@ -21,6 +21,8 @@ updates:
     schedule:
       # Check for updates on the first day of every month
       interval: "monthly"
+    labels:
+      - "dependencies"
     reviewers:
       - music-encoding/technical-team-co-chairs
     groups:
