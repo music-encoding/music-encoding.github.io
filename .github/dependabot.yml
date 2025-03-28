@@ -2,7 +2,7 @@ version: 2
 updates:
   # Maintain dependencies for GitHub Actions
   - package-ecosystem: "github-actions"
-    directory: '/'
+    directory: "/"
     schedule:
       # Check for updates on the first day of every month
       interval: "monthly"
