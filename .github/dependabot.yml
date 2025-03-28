@@ -18,8 +18,7 @@ updates:
   - package-ecosystem: bundler
     directory: "/"
     schedule:
-      # Check for updates on the first day of every month
-      interval: "monthly"
+      interval: "weekly"
     labels:
       - "dependencies"
     reviewers:
