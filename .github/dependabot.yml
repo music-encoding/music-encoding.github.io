@@ -6,6 +6,8 @@ updates:
     schedule:
       # Check for updates on the first day of every month
       interval: "monthly"
+    labels:
+      - "gh actions dependencies"
     reviewers:
       - music-encoding/technical-team-co-chairs
     groups:
