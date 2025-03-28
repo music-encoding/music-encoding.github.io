@@ -17,7 +17,7 @@ updates:
 
   # Maintain dependencies for Ruby
   - package-ecosystem: bundler
-    directory: /
+    directory: "/"
     schedule:
       # Check for updates on the first day of every month
       interval: "monthly"
