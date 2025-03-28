@@ -24,7 +24,7 @@ updates:
     labels:
       - "dependencies"
     reviewers:
-      - music-encoding/technical-team-co-chairs
+      - "music-encoding/technical-team-co-chairs"
     groups:
       bundler-dependencies:
         patterns:
