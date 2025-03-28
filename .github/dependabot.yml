@@ -4,8 +4,7 @@ updates:
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
-      # Check for updates on the first day of every month
-      interval: "monthly"
+      interval: "weekly"
     labels:
       - "gh actions dependencies"
     reviewers:
