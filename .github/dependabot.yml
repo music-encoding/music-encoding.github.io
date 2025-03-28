@@ -9,7 +9,7 @@ updates:
     labels:
       - "gh actions dependencies"
     reviewers:
-      - music-encoding/technical-team-co-chairs
+      - "music-encoding/technical-team-co-chairs"
     groups:
       actions:
         patterns:
