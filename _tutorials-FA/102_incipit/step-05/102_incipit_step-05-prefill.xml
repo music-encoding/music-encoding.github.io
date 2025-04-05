@@ -1,0 +1,10 @@
+<section>
+    <measure n="0">
+        <staff n="1">
+            <layer>
+                <note pname="b" oct="3" dur="4" />
+            </layer>
+        </staff>
+    </measure>
+    <!-- Your encoding should replace this line -->
+</section>
