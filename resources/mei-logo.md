@@ -56,28 +56,3 @@ title: "MEI Logo"
     </div>
   </div>
 </div>
-
-<style>
-  .logo-credits .cc-logo {
-    height: 22px!important;
-    margin-left: 3px;
-    vertical-align: text-bottom;
-  }
-  .logo-section {
-    margin-bottom: 20px;
-  }
-  .logo-row {
-    display: flex;
-    gap: 20px;
-    margin-bottom: 20px;
-  }
-  .logo-item {
-    flex: 1;
-    text-align: center;
-  }
-  .logo-item > figure > img {
-    max-width: 250px; 
-    margin-bottom: 10px; 
-  }
- 
-</style>
