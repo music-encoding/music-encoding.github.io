@@ -20,8 +20,8 @@ Updates: MEC 2025 (Anna P.)
 
 Updates: Social Media Outreach
 - BlueSky and Mastodon accounts are live
-    - [https://bsky.app/profile/music-encoding.bsky.social](https://bsky.app/profile/music-encoding.bsky.social)
-    - [https://mastodon.social/@MusicEncoding](https://mastodon.social/@MusicEncoding)
+    - <https://bsky.app/profile/music-encoding.bsky.social>
+    - <https://mastodon.social/@MusicEncoding>
 - MEI Community can use [content curation form](https://forms.gle/u8fj95149x1SzcDp9) to send announcements and updates relevant to the MEI community.
 - Questions can be directed to Maristella Feustle (maristella.feustle at unt.edu)
 
