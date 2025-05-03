@@ -1,13 +1,13 @@
 <div>
     <p>
-        همان‌طور که دیدیم، ODD این امکان را می‌دهد که مشخص کنید&nbsp;<span style="font-size: 2rem;">درون یک المنت
-            خاص،</span><span style="font-size: 2rem;">&nbsp;</span><span style="font-size: 2rem;">دقیقاً</span><span
-            style="font-size: 2rem;">&nbsp;</span><span style="font-size: 2rem;">چه المنت‌هایی به عنوان فرزند مجاز
-            هستند. این قابلیت کنترل بسیار دقیقی روی سلسله‌مراتب عناصر MEI فراهم می‌کند، اما به قیمت فهرست‌بندی مفصل و
-            طولانی از آنچه هر المنت ممکن است دربرداشته باشد!&nbsp;</span><span style="font-size: 2rem;">نگهداری و
-            دنبال‌کردن</span><span style="font-size: 2rem;">&nbsp;چن</span><span style="font-size: 2rem;">ین روشی آسان
+        همان‌طور که دیدیم، ODD این امکان را می‌دهد که مشخص کنید درون یک المنت
+            خاص، دقیقاً چه المنت‌هایی به عنوان فرزند مجاز
+            هستند. این قابلیت، کنترل بسیار دقیقی روی سلسله‌مراتب عناصر MEI فراهم می‌کند، اما به قیمت فهرست‌بندی مفصل و
+            طولانی از آنچه هر المنت ممکن است دربرداشته باشد! نگهداری و
+            دنبال‌کردن چنین روشی آسان
             نیست چون برخی از المنت‌ها در MEI می‌توانند ده‌ها المنت دیگر را شامل شوند، و مقایسه‌ی چنین المنتهایی باهم،
-            فرایند زمانبری است.</span></p>
+            فرایند زمانبری است.
+    </p>
     <p>
         مثلاً، المنت
         <a href="https://music-encoding.org/guidelines/v4/elements/castitem.html" target="_blank"
@@ -20,11 +20,10 @@
     <div>
         <img style="width: 100%;" src="./role-children.png">
     </div>
-    <p>اما با مشاهده&nbsp;<em>&lt;elementSpec&gt;</em>&nbsp;میبینیم که چنین فهرستی وجود ندارد:
-    </p>
-    <pre class="codeblock">&lt;elementSpec ident="role" module="MEI.shared"&gt;
-            &lt;desc&gt;Name of a dramatic role, as given in a cast list.&lt;/desc&gt;
-            &lt;classes&gt;
+    <p>اما با مشاهده<em>&lt;elementSpec&gt;</em>;میبینیم که چنین فهرستی وجود ندارد:
+    </p> <pre class="codeblock">&lt;elementSpec ident="role" module="MEI.shared"&gt;
+    &lt;desc&gt;Name of a dramatic role, as given in a cast list.&lt;/desc&gt;
+    &lt;classes&gt;
         &lt;memberOf key="att.common"/&gt;
         &lt;memberOf key="att.facsimile"/&gt;
         &lt;memberOf key="att.lang"/&gt;
@@ -38,11 +37,11 @@
         &lt;/rng:zeroOrMore&gt;
     &lt;/content&gt;
     &lt;remarks&gt;
-        &lt;p part="N"&gt;این المنت بر اساس یک المنت در استاندارد Text Encoding Initiative (TEI) مدل‌سازی شده است.&lt;/p&gt;
+        &lt;p part="N"&gt;This element is modelled on an element in the Text Encoding Initiative (TEI) standard.&lt;/p&gt;
     &lt;/remarks&gt;
 &lt;/elementSpec&gt;</pre>
     <p>
-        به جای ۵۴ المنت از تصویر بالا، تنها یک ارجاع&nbsp;<em>&lt;rng:ref&gt;</em> داده شده است که به چیزی به نام
+        به جای ۵۴ المنت از تصویر بالا، تنها یک ارجاع<em>&lt;rng:ref&gt;</em> داده شده است که به چیزی به نام
         <em>model.textPhraseLike.limited</em> اشاره می‌کند. این یک <strong>کلاسِ مدل</strong> است. کلاس‌های مدل به
         عنوان جایگزینی برای گروه‌هایی از المنت‌ها در نظر گرفته می‌شوند. خود کلاس مدل نمی‌داند که کدام المنت‌ها را شامل
         می‌شود:
@@ -59,10 +58,10 @@
         کلاسِ مدل با یک المنت
         <a href="https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-classSpec.html" target="_blank"
             rel="noopener, noreferrer">&lt;classSpec&gt;</a> کدگذاری شده است،
-        که دارای خصیصه&nbsp;<strong>@type="model"</strong> است. مانند المنت‌ها، با استفاده از
-        خصیصه&nbsp;<strong>@ident</strong> به طور منحصربه‌فرد شناسایی می‌شود و به یکی از ماژول‌های MEI با
-        خصیصه&nbsp;<em>@module</em> اختصاص داده می‌شود.
-        MEI از این قرارداد پیروی می‌کند که تمام نام‌های کلاس مدل با رشته "<em>model.</em>" شروع می‌شوند. همچنین همیشه
+        که دارای خصیصه<strong>@type="model"</strong> است. مانند المنت‌ها، با استفاده از
+        خصیصه&nbsp;<strong>@ident</strong> به طور منحصربه‌فرد شناسایی می‌شود و مختص به یکی از ماژول‌های MEI با
+        خصیصه<em>@module</em> است.
+        MEI از این قرارداد پیروی می‌کند که تمام نام‌های کلاس مدل با رشته متنی "<em>model.</em>" شروع می‌شوند. همچنین همیشه
         یک <em>&lt;desc&gt;</em> با توضیح مختصری از هدف گروه دارند. بیایید عناصر <em>&lt;memberOf&gt;</em> را در
         <em>&lt;classSpec&gt;</em> از مثال بالا موقتا نادیده بگیریم و ببینیم که چگونه آن ۵۴ المنتی که بالاتر دیدیم
         به
@@ -109,30 +108,29 @@
         مجموعاً 54 المنت به‌عنوان محتوای مجاز (یعنی المنت‌های فرزند) اضافه می‌شوند. 48 المنت باقی‌مانده از کجا
         آمده‌اند؟
         اعتراف می‌کنیم که ارائه فعلی مستندات راهنما به‌خوبی نشان نمی‌دهد که این المنت‌های اضافی از کجا آمده‌اند.
-        پاسخ به این است که <strong>کلاس‌های مدل تو در تو</strong> هستند. یک کلاس مدل می‌تواند عضو یک کلاس مدل دیگر
-        باشد، همان‌طور که در <em>&lt;classSpec&gt;</em>
-        بالا دیده‌ایم. بیایید به فرزندان مجاز المنت <em>&lt;role&gt;</em> در دیدگاه <em>بر اساس کلاس</em> برگردیم:
+        پاسخ این است که <strong>کلاس‌های مدل، تو در تو هستند. </strong> همان‌طور که در <em>&lt;classSpec&gt;</em>
+        بالا دیدیم، یک کلاس مدل می‌تواند عضو یک کلاس مدل دیگر
+        باشد. بیایید به فرزندان مجاز المنت <em>&lt;role&gt;</em> در دیدگاه <em>کلاس محور</em> برگردیم:
     </p>
     <div>
         <img style="width: 100%;" src="./role-children-byclass.png">
     </div>
     <p>
-        ما شش فرزند مستقیم را می‌بینیم، اما همچنین <em>&lt;fig&gt;</em> را تحت برچسب <em>model.figureLike</em>
+        ما شش فرزند مستقیم را می‌بینیم، اما همچنین <em>&lt;fig&gt;</em> را زیرمجموعه تگ <em>model.figureLike</em>
         فهرست‌شده و <em>&lt;catchwords&gt;</em>
         و <em>&lt;fingerprint&gt;</em> از <em>model.msInline</em> آمده‌اند.
         <a href="https://music-encoding.org/guidelines/v4/elements/role.html#mayContain" target="_blank"
             rel="noopener, noreferrer">این فهرست</a> ادامه دارد و منشا همه
         54 المنت را توضیح می‌دهد. اگر به <em>model.figureLike</em> نگاهی بیاندازیم، می‌بینیم که این کلاس یک
         <em>&lt;memberOf&gt;</em> دارد که به <em>model.textPhraseLike.limited</em> اشاره می‌کند:
-    </p>
-    <pre class="codeblock">&lt;classSpec ident="model.figureLike" module="MEI.figtable" type="model"&gt;
-            &lt;desc&gt;عناصری را گروه‌بندی می‌کند که اطلاعات گرافیکی مانند یک تصویر یا شکل را نمایش می‌دهند یا شامل می‌کنند.&lt;/desc&gt;
-            &lt;classes&gt;
-                &lt;memberOf key="model.textPhraseLike.limited"/&gt;
-            &lt;/classes&gt;
-        &lt;/classSpec&gt;</pre>
+    </p>  <pre class="codeblock">&lt;classSpec ident="model.figureLike" module="MEI.figtable" type="model"&gt;
+    &lt;desc&gt;Groups elements representing or containing graphic information such as an illustration or figure.&lt;/desc&gt;
+    &lt;classes&gt;
+        &lt;memberOf key="model.textPhraseLike.limited"/&gt;
+    &lt;/classes&gt;
+&lt;/classSpec&gt;</pre>
     <p>
-        بنابراین، <em>model.figureLike</em> عضوی از <em>model.textPhraseLike.limited</em> است، به این معنی که هر
+        بنابراین، <em>model.figureLike</em> عضوی از <em>model.textPhraseLike.limited</em> است، یعنی هر
         جایی که <em>model.textPhraseLike.limited</em> به‌عنوان محتوای فرزند مجاز باشد، <em>model.figureLike</em> (و
         همه المنت‌هایی که عضو آن هستند) نیز مجاز خواهند بود. عمیق‌ترین <em>تودرتویی</em> کلاس‌ها در
         <em>model.textPhraseLike.limited</em> در واقع سه لایه است: <em>model.nameLike.geogName</em> عضو
