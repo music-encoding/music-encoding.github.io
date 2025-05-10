@@ -3,7 +3,7 @@
         بیشتر انواع داده‌ها در ODD از مفاهیم شناخته‌شده پیروی می‌کنند: اعداد صحیح، مقادیر boolean (true or false)،
         رشته‌های متنی و غیره. بیایید نگاهی دقیق‌تر به برخی از آن‌ها داشته باشیم. خصیصه <em>@n</em> در کلاس خصیصه
         <em><a
-                href="https://music-encoding.org/guidelines/v4/attribute-classes/att.ninteger.html">att.nInteger</a></em>&nbsp;
+                href="https://music-encoding.org/guidelines/v4/attribute-classes/att.ninteger.html">att.nInteger</a></em>
         به این صورت تعریف شده است:
     </p>
     <pre class="codeblock">&lt;attDef ident="n" usage="opt"&gt;
@@ -15,20 +15,17 @@
     <p>
         این‌جا از یک المنت <em>&lt;data&gt;</em> از نام‌حوزه <em>rng:</em> استفاده شده، که <em>@type</em> از یک
         مقدار تعریف شده در RelaxNG استفاده می‌کند. خصیصه‌های <em>@maxOccurs</em> و <em>@minOccurs</em> مشخص می‌کنند
-        که چند بار مقدار این «نوعِ داده» ممکن است مقداردهی شود.&nbsp;<span
-            style="font-size: 2rem;">&nbsp;</span><span style="font-size: 2rem;">در</span><span
-            style="font-size: 2rem;">&nbsp;</span><em style="font-size: 2rem;">att.staffIdent</em><span
-            style="font-size: 2rem;">&nbsp;</span><span style="font-size: 2rem;">می‌توان</span><span
-            style="font-size: 2rem;">&nbsp;</span><span style="font-size: 2rem;">مثالی دیگر یافت برای مقادیری که در
-            خصیصه </span><em style="font-size: 2rem;">@staff</em><span style="font-size: 2rem;"> تعریف
-            شده‌اند</span><span style="font-size: 2rem;">. این خصیصه برای ارتباط
-        </span><a href="https://music-encoding.org/guidelines/v4/content/introduction.html#eventsControlevents"
-            target="_blank" rel="noopener, noreferrer" style="font-size: 2rem;">کنترل رویدادها</a><span
-            style="font-size: 2rem;">
-            با یک یا چند خط حامل استفاده می‌شود و ممکن است یک یا چند عدد صحیح نگهداری کند. از
-        </span><a href="https://music-encoding.org/guidelines/v4/attribute-classes/att.staffident.html"
-            target="_blank" rel="noopener, noreferrer" style="font-size: 2rem;">نشانه‌گذاری زیر</a><span
-            style="font-size: 2rem;"> برای دستیابی به این هدف استفاده می‌کند:</span></p>
+         این «نوعِ داده» چند بار ممکن است مقداردهی شود. در<em>att.staffIdent</em> می‌توان مثالی دیگر یافت برای مقادیری که در
+خصیصه <em>@staff</em> تعریف شده‌اند
+ این خصیصه برای ارتباط <a
+    href="https://music-encoding.org/guidelines/v4/content/introduction.html#eventsControlevents" target="_blank"
+    rel="noopener, noreferrer">کنترل‌رویدادها</a>
+            با یک یا چند خط حامل استفاده می‌شود و ممکن است یک یا چند عدد صحیح نگهداری کند. از 
+        <a href="https://music-encoding.org/guidelines/v4/attribute-classes/att.staffident.html
+             < target="_blank" rel="noopener, noreferrer" 
+        نشانه‌گذاری زیر</a>
+    
+   برای دستیابی به این هدف استفاده می‌کند:</p>
     <pre class="codeblock">&lt;datatype maxOccurs="unbounded" minOccurs="1"&gt;
         &lt;rng:data type="positiveInteger"/&gt;
     &lt;/datatype&gt;</pre>
@@ -89,11 +86,12 @@
         داده می‌شود.
         سپس لیستی از مقادیر (valList) داریم که در این مورد، یک لیست بسته است. به این معنی که تمام مقادیر ممکن در
         اینجا فهرست شده‌اند. در موارد دیگر، خصیصه <em>@type</em> با مقدار "<em>semi</em>" نشان‌دهنده یک لیست
-        نیمه‌بسته است. چنین لیستی توصیه‌هایی ارائه می‌دهد، اما به کاربر اجازه می‌دهد در صورت عدم تطابق هیچ یک از
+        نیمه‌بسته است. چنین لیستی توصیه‌هایی ارائه می‌کند، اما به کاربر اجازه می‌دهد در صورت عدم تطابق هیچ یک از
         پیشنهادات با وضعیت فعلی، مقادیر سفارشی ایجاد کند.
         این معمولاً تعادل خوبی بین اطمینان از سازگاری و امکان توسعه بر اساس نیاز از طرح‌واره را فراهم می‌کند.
     </p>
-    <p><span style="font-size: 2rem;">انواع داده هم&nbsp;</span>مانند کلاس‌های <em>مدل</em> و <em>خصیصه</em>،
+    <p>
+انواع داده هم مانند کلاس‌های <em>مدل</em> و <em>خصیصه</em>،
         می‌توانند تو در تو باشند. یک مثال برای این مورد، نوع داده
         <em><a href="https://music-encoding.org/guidelines/v4/data-types/data.noteheadmodifier.html" target="_blank"
                 rel="noopener, noreferrer">data.NOTEHEADMODIFIER</a></em> است:
@@ -113,11 +111,11 @@
         پیروی می‌کنند.
     </p>
     <p>
-        آخرین نوع داده‌ای که می‌خواهیم معرفی کنیم <em>data.COLORVALUES</em> است که توسط <em>data.COLOR</em> استفاده
-        می‌شود که به نوبه خود برای کنترل مقادیر خصیصه‌هایی مانند <em>@color</em> (از طریق
+        آخرین نوع داده‌ای که می‌خواهیم معرفی کنیم <em>data.COLORVALUES</em> است که در <em>data.COLOR</em> استفاده
+        می‌شود و به برای کنترل مقادیر خصیصه‌هایی مانند <em>@color</em> (از طریق
         <em><a href="https://music-encoding.org/guidelines/v4/attribute-classes/att.color.html" target="_blank"
                 rel="noopener, noreferrer">att.color</a></em>)
-        و <em>@linecolor</em> (از طریق <em>att.linecolor</em>) استفاده می‌شود.
+        و <em>@linecolor</em> (از طریق <em>att.linecolor</em>) استفاده به کار می‌رود.
     </p>
     <pre class="codeblock">&lt;macroSpec ident="data.COLORVALUES" module="MEI" type="dt"&gt;
         &lt;desc&gt;Parameterized color values&lt;/desc&gt;
