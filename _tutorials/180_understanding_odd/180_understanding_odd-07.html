@@ -20,7 +20,7 @@
         applicable). 
     </p>
     <p>
-        Now let's have a look for these <em>&lt;attDef&gt;</em> elements are located. Even though that's not really the preferred solution, sometimes
+        Now let's have a look where these <em>&lt;attDef&gt;</em> elements are located. Even though that's not really the preferred solution, sometimes
         attributes are defined at the element where they need to be used, as with the <em>@type</em> attribute on 
         <a href="/guidelines/v5/elements/meiHead.html" target="_blank" rel="noopener, noreferrer">&lt;meiHead&gt;</a>:
     </p>
@@ -108,13 +108,13 @@
     &lt;/classes&gt;
 &lt;/classSpec&gt;</pre>
     <p>
-        Again, it is through the use of a <em>&lt;memberOf</em> element with the proper <em>@key</em> how membership in different classes is achieved in 
+        Again, it is through the use of a <em>&lt;memberOf&gt;</em> element with the proper <em>@key</em> how membership in different classes is achieved in 
         MEI, so this mechanism should be familiar already. And just like with <em>model classes</em>, <em>attribute classes</em> are used from rather generic
         classes to very specific sets of well-aligned attributes. By subscribing to the right attribute class(es), an element may thus get just the right set of 
         attributes, and it becomes possible to selectively add or remove attributes to new or existing elements by modifying these memberships.  
     </p>
     <p>
-        In specs for <em>att.common</em> above reveal another attribute class <em>att.typed</em> which provides an attribute 
+        The specs for <em>att.common</em> above reveal another attribute class <em>att.typed</em> which provides an attribute 
         <em>@type</em>. Obviously, this hasn't been used on <em>&lt;meiHead&gt;</em>, as seen above. The reason is that the attribute class
         provides a <em>@type</em> attribute which has only a very generic description: <em>Designation which characterizes the element 
             in some sense, using any convenient classification scheme or typology that employs single-token labels.</em> 
