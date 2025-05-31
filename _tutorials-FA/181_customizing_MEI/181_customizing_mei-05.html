@@ -5,7 +5,7 @@
         در اینجا این رفتار را تعیین می‌کند. راهنمای TEI برای کلاس خصیصه
         <a href="https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-att.combinable.html" target="_blank" rel="noopener, noreferrer">att.combinable</a>
         مستندات اضافی درباره مقادیر مجاز ارائه می‌دهد. این راهنما بیان می‌کند که "<em>یک پردازنده ODD باید مقادیر @mode را به این شکل پردازش کند</em>":
-    </p>
+    </p> 
     <dl>
         <dt>add</dt>
         <dd>شیء باید ایجاد شود (پردازش هر فرزند در حالت افزودن)؛ در صورتی که شیئی با همان شناسه از قبل وجود داشته باشد، خطا ایجاد شود.</dd>
@@ -17,9 +17,8 @@
         <dd>این شیء پردازش شود و فرزندان آن و فرزندان هر شیء موجود با همان شناسه در حالت "تغییر" پردازش شوند</dd>
     </dl>
     <p>
-        با این روش،&nbsp;<span style="font-size: 2rem;">نه تنها</span><span style="font-size: 2rem;">&nbsp;</span><span style="font-size: 2rem;">امکان </span><em style="font-size: 2rem;">حذف</em><span style="font-size: 2rem;"> کلاس‌های خصیصه از طریق سفارشی‌سازی وجود دارد، بلکه می‌توان آن را تغییر هم داد. مثلاً، در
-        </span><a href="/guidelines/dev/content/introduction.html#meiprofiles" target="_blank" rel="noopener, noreferrer" style="font-size: 2rem;">سفارشی‌سازی MEI Basic</a><span style="font-size: 2rem;">
-        خصیصه </span><code style="font-size: 2rem;">@xml:base</code><span style="font-size: 2rem;"> از شِما حذف شده است. در منابع MEI، این خصیصه در کلاس خصیصه </span><code style="font-size: 2rem;">att.basic</code><span style="font-size: 2rem;"> تعریف شده است:</span></p>
+        با این روش، نه تنها امکان <em>حذف</em> کلاس‌های خصیصه از طریق سفارشی‌سازی وجود دارد، بلکه می‌توان آن را تغییر هم داد. مثلاً، در<a href="/guidelines/dev/content/introduction.html#meiprofiles" target="_blank" rel="noopener, noreferrer">سفارشی‌سازی پایه‌‌ای MEI،  </a>
+        خصیصه <code >@xml:base</code> از شِما حذف شده است. در منابع MEI، این خصیصه در کلاس خصیصه <code >att.basic</code> تعریف شده است:</p>
     <pre class="codeblock">&lt;classSpec ident="att.basic" module="MEI.shared" type="atts"&gt;
     &lt;desc&gt;خصیصه‌هایی که پایه کلاس att.common را تشکیل می‌دهند.&lt;/desc&gt;
         &lt;classes&gt;
@@ -35,8 +34,8 @@
     &lt;/attList&gt;
 &lt;/classSpec&gt;</pre>
     <p>
-        همان‌طور که مشاهده می‌کنید، کلاس <code>att.basic</code> عضوی از کلاس <code>att.id</code> است - که مسئول ارائه خصیصه <code>@xml:id</code>
-        برای هر المنت می‌باشد. بنابراین، حذف <code>att.basic</code> از شِما، استفاده از <code>@xml:id</code>ها را در هر جایی از فایل‌هایی که با سفارشی‌سازی حاصل مطابقت دارند، غیرفعال می‌کند؛ قطعاً این، ایده خوبی نیست! در عوض، انعطاف‌پذیری ارائه‌شده از طریق <code>@mode</code>های مختلف می‌تواند برای بیان‌های دقیق‌تر در اینجا استفاده شود. مثال زیر نشان می‌دهد که چه چیزی برای سفارشی‌سازی <code>att.basic</code> برای پروفایل MEI Basic انجام شده است:
+        همان‌طور که مشاهده می‌کنید، کلاس <code>att.basic</code> عضوی از کلاس <code>att.id</code> بوده - که مسئول ارائه خصیصه <code>@xml:id</code>
+        برای هر المنت است. بنابراین، حذف <code>att.basic</code> از شِما، استفاده از <code>@xml:id</code>ها را در هر جایی از فایل‌هایی که با سفارشی‌سازی حاصل مطابقت دارند، غیرفعال می‌کند؛ قطعاً این، ایده خوبی نیست! در عوض، انعطاف‌پذیری ارائه‌شده از طریق <code>@mode</code>های مختلف می‌تواند برای بیان‌های دقیق‌تر در اینجا استفاده شود. مثال زیر نشان می‌دهد که چه چیزی برای سفارشی‌سازی <code>att.basic</code> برای پروفایل MEI Basic انجام شده است:
     </p>
     <pre class="codeblock">&lt;classSpec ident="att.basic" module="MEI.shared" type="atts" mode="replace"&gt;
     &lt;desc&gt;خصیصه‌هایی که پایه کلاس att.common را تشکیل می‌دهند.&lt;/desc&gt;
