@@ -100,7 +100,7 @@ menu:
             url: '/guidelines/v5'
           - id: guidelines-dev
             label: 'Development versions'
-            url: '/resources/development.html'
+            url: '/guidelines/dev'
             separator: true
           - id: guidelines-previous
             label: 'Previous versions'
