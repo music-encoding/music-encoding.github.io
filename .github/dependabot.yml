@@ -7,8 +7,6 @@ updates:
       interval: "weekly"
     labels:
       - "gh actions dependencies"
-    reviewers:
-      - "music-encoding/technical-team-co-chairs"
     groups:
       actions:
         patterns:
@@ -21,8 +19,6 @@ updates:
       interval: "weekly"
     labels:
       - "dependencies"
-    reviewers:
-      - "music-encoding/technical-team-co-chairs"
     groups:
       bundler-dependencies:
         patterns:
