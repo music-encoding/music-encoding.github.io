@@ -25,7 +25,7 @@ Discussion
 - Draft invitation for MEI Institutional Sponsors
     - Invitation would be sent to ally organizations/institutions requesting tiered sponsorship opportunities to help support MEI activities, such as bursaries and conferences
     - Board members provided feedback and finalized document will be shared when ready
-- Opportunity to bring a second MEI sponsor on board who would oversee MEI’s financial accounts
+- Opportunity to bring a second MEI host institution on board, who would oversee MEI’s financial accounts
 
 Calendering
 - Planning for Community Forum in November or December (date tbd)
