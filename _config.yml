@@ -4,7 +4,8 @@ email: info@music-encoding.org
 baseurl: ""
 style_baseurl: ""
 url: "https://music-encoding.org" # the base hostname & protocol for your site
-twitter_username: music-encoding
+bluesky_handle: music-encoding.bsky.social
+mastodon_address: MusicEncoding@mastodon.social
 
 # Build settings
 markdown: kramdown
