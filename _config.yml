@@ -30,6 +30,9 @@ menu:
           - id: communitycontacts
             label: 'Community Contacts'
             url: '/community-contacts.html'
+          - id: communityforums
+            label: 'Community Forums'
+            url: '/community-forums.html'
           - id: interestgroups
             label: 'Interest Groups'
             url: '/interest-groups.html'
