@@ -35,7 +35,7 @@ Discussion
     - Further discussion will be required if we would like to use a formatting template to streamline the process of publishing abstracts from the annual conference (for example template used by ADHO - https://github.com/ADHO/dhconvalidator) 
 
 - Customization Specific Guidelines
-    - Several chapters in guidelines need introductions about customizations
+    - Several chapters in guidelines need introductions about [customizations](https://music-encoding.org/guidelines/dev/)
     - Benni will invite IG Chairs/relevant contributors to work on introductions and revise chapters as necessary
     - Additional information will be shared at the Community Forum
 
