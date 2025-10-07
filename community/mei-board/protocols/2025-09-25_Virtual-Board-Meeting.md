@@ -5,7 +5,7 @@ title: "2025-09-25 Virtual MEI Board Meeting"
 
 # 2025 September 25 Virtual MEI Board Meeting
 
-Present: Martha Thomae Elias, Anna Kijas, Maristella Feustle, Stefan Münnich, Benni Bohl
+Present: Martha Thomae Elias, Anna Kijas, Maristella Feustle, Stefan Münnich, Benjamin W. Bohl
 Excused: Laurent Pugin, David Weigl, Johannes Kepper, Anna Plaksin
 
 Minutes: Anna Kijas
