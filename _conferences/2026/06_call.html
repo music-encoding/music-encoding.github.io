@@ -6,11 +6,105 @@ tag: MEC2026
 id: call
 ---
 
-<img src="/images/conference/2026/banner.png" class="img-responsive" style="margin-bottom: 1em" alt="Music Encoding Conference 2026 banner">
+<img src="/images/conference/2026/banner.png" class="img-responsive" style="margin-bottom: 1em"
+    alt="Music Encoding Conference 2026 banner">
 
 <div class="mec2026-page">
 
+    <style>
+        .simple-table {
+            width: 100%;
+            border-collapse: collapse;
+            /* 境界線を重ねる */
+            margin: 2em 0;
+            font-family: sans-serif;
+        }
+
+        .simple-table td {
+            padding: 12px 15px;
+            /* セルの余白 */
+            border-bottom: 1px solid #ddd;
+            /* 行間の罫線 */
+            text-align: left;
+        }
+
+        /* 偶数行の背景色を変更 */
+        .simple-table tr:nth-child(even) {
+            background-color: #f8f8f8;
+        }
+
+        /* マウスが乗った行の背景色を変更 */
+        .simple-table tbody tr:hover {
+            background-color: #f1f1f1;
+        }
+
+        /* 左側の項目名を太字に */
+        .simple-table td:first-child {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .simple-table th:nth-child(2),
+        .simple-table td:nth-child(2),
+        .simple-table th:nth-child(3),
+        .simple-table td:nth-child(3) {
+            text-align: center;
+        }
+
+        body {
+            font-family: sans-serif;
+            padding: 30px;
+        }
+
+        #location-text {
+            color: #007bff;
+            text-decoration: underline dotted;
+            cursor: pointer;
+            position: relative;
+            /* ポップアップの基準位置 */
+            display: inline-block;
+        }
+
+        #map-popup {
+            display: none;
+            /* 最初は非表示 */
+            position: absolute;
+            bottom: 120%;
+            left: 0;
+            width: 600px;
+            /* サイズを調整 */
+            height: 450px;
+            /* サイズを調整 */
+            border: 1px solid #ccc;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: white;
+            z-index: 1000;
+        }
+
+        /* iframeをコンテナにぴったり合わせる */
+        #map-popup iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+    </style>
+
     <h1>Call for proposals</h1>
+
+    <div class="key-info-box"
+        style="background-color: #f2f2f2; border-left: 5px solid #007bff; padding: 15px; margin-bottom: 2em;">
+        <h2 style="margin-top: 0;">Key Information</h2>
+        <ul>
+            <li><strong>Conference Dates:</strong> May 26–29, 2026</li>
+            <li><strong>Location:</strong> <span id="location-text">
+                    <a href="https://maps.app.goo.gl/kQiL9uWGgrJ3MvBq7" target="_blank">Morito Memorial Hall, Tokyo University of Science, Tokyo, Japan</a> <div id="map-popup">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d809.9965277015522!2d139.7398028!3d35.7019594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188c5a8b8f110f%3A0xe53fb3ac997bb764!2z5p2x5Lqs55CG56eR5aSn5a2mIOajruaIuOiomOW_temkqA!5e0!3m2!1sja!2sjp!4v1760435520605!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </span></li>
+            <li><strong>Deadline for Submissions:</strong> November 28, 2025 (AoE)</li>
+            <li><a href="#submissions" class="btn btn-primary">→ Submission Categories</a></li>
+        </ul>
+    </div>
     <ul>
         <li><a href="#dates">Important dates</a></li>
         <li><a href="#background">Background</a></li>
@@ -18,27 +112,62 @@ id: call
         <li><a href="#submissions">Submissions</a></li>
         <li><a href="#org">Conference organisation</a></li>
     </ul>
+    <script>
+        // JavaScriptは表示/非表示を切り替えるだけ
+        const locationText = document.getElementById('location-text');
+        const mapPopup = document.getElementById('map-popup');
+
+        locationText.addEventListener('mouseenter', () => {
+            mapPopup.style.display = 'block';
+        });
+
+        locationText.addEventListener('mouseleave', () => {
+            mapPopup.style.display = 'none';
+        });
+    </script>
+
     <p>We are pleased to announce our call for papers, posters, panels, and workshops for
-            the Music Encoding Conference 2026.</p>
-    <p>The Music Encoding Conference brings together members from music encoding, analysis, 
-        performance, and research communities, including musicologists, theorists, librarians, 
+        the Music Encoding Conference 2026.</p>
+    <p>The Music Encoding Conference brings together members from music encoding, analysis,
+        performance, and research communities, including musicologists, theorists, librarians,
         technologists, music scholars, teachers, and students, providing an opportunity for
         all participants to learn from and engage with each other.</p>
     <p>This year, we will host lectures, panels, posters, and workshops and tutorials, but
         also a showcase where developers can demonstrate software tools and platforms.</p>
     <p>The conference will be held 26–29 May 2026 at the Tokyo University of
-            Science on behalf of the Music Encoding Initiative community.</p>
-    <h2 id="dates">Important dates and information</h2>
-    <p>Conference date: 26–29 May, 2026</p>
-    <p>Location: Morito Memorial Hall, Tokyo University of Science, Tokyo, Japan</p>
-    <p><strong>Deadline for proposals</strong>: Friday 28 November 2025 (Anywhere on Earth)</p>
-    <p>Notification of acceptance: Monday 26 January 2026 </p>
-    <p>Registration deadline for authors: 2 April 2026</p>
-    <p>Last changes to abstracts for publication: 24 April 2026</p>
-    <p>For further questions, please e-mail 
-        <a href="mailto:conference2026@music-encoding.org">conference2026@music-encoding.org</a></p>
+        Science on behalf of the Music Encoding Initiative community.</p>
+
+    <h2 id="dates">Important Dates</h2>
+
+    <table class="simple-table">
+
+        <tr>
+            <td>Proposal Deadline</td>
+            <td>Friday, November 28, 2025</td>
+        </tr>
+        <tr>
+            <td>Notification of Acceptance</td>
+            <td>Monday, January 26, 2026</td>
+        </tr>
+        <tr>
+            <td>Registration Deadline (for authors)</td>
+            <td>April 2, 2026</td>
+        </tr>
+        <tr>
+            <td>Last changes to abstracts for publication</td>
+            <td>24 April 2026</td>
+        </tr>
+        <tr>
+            <td>Conference Dates</td>
+            <td>May 26–29, 2026</td>
+        </tr>
+    </table>
+
+    <p>For further questions, please e-mail
+        <a href="mailto:conference2026@music-encoding.org">conference2026@music-encoding.org</a>
+    </p>
     <h2 id="background">Background</h2>
-    <p>The Music Encoding Conference&nbsp;provides a forum where researchers and 
+    <p>The Music Encoding Conference&nbsp;provides a forum where researchers and
         practitioners from varied fields can meet and share new research built on digital music editions and,
         especially, research into music encoding itself. The Conference celebrates a multidisciplinary program,
         combining the latest advances from established music encodings, novel technical proposals and encoding
@@ -61,44 +190,40 @@ id: call
         organised by the Music Encoding Initiative, which will hold its annual community meeting on Friday, 6
         June.</p>
     <p>The main academic conference is preceded by pre-conference workshops and tutorials, which provide an
-        opportunity to engage with the tools and good practices developed within the community, and this 
+        opportunity to engage with the tools and good practices developed within the community, and this
         will be further reinforced by a showcase during the conference, where these tools can also be
         demonstrated.</p>
     <p>Following a formal program, unconference sessions will be held on 29th May 2026, designed to foster
-        collaboration in the community through the meeting of Interest Groups, and open participation in 
-        discussions on hot topics that emerge during the conference. Spaces for these meetings have been 
+        collaboration in the community through the meeting of Interest Groups, and open participation in
+        discussions on hot topics that emerge during the conference. Spaces for these meetings have been
         generously provided by the hosting institution. As part of the conference, we would like to extend
         an invitation to attendees who may wish to organize additional meetings (e.g. project meetings) or
         other collaborative sessions in conjunction with the event. Availability of space for meetings during or
         immediately before or after the conference can be checked upon request. Please get in touch with conference
         organizers if you need to reserve these spaces.</p>
     <h2 id="topics">Topics</h2>
-    <p>The conference welcomes contributions from all those who are developing or using music encodings in
-         their work and research.</p>
+    <p>The conference welcomes contributions from all those who are developing or using music encodings in their work
+        and research.</p>
     <p>Topics around music encoding include, but are not limited to:</p>
     <ul>
-        <li>concepts, models and structures for music representation and
-                encoding</li>
+        <li>concepts, models and structures for music representation and encoding</li>
         <li>music encoding standardisation and interoperability</li>
-        <li>methodologies for encoding, music editing, description and
-                analysis</li>
+        <li>methodologies for encoding, music editing, description and analysis</li>
         <li>computational analysis of encoded music</li>
-        <li>rendering symbolic music data in audio and graphical forms
-        </li>
-        <li>relationships between multimodal music forms (e.g. symbolic music
-                data, encoded text, facsimile images, audio and video)</li>
-        <li>capture, interchange, and re-purposing of musical data and
-                metadata</li>
+        <li>rendering symbolic music data in audio and graphical forms</li>
+        <li>relationships between multimodal music forms (e.g. symbolic music data, encoded text, facsimile images,
+            audio and video)</li>
+        <li>capture, interchange, and re-purposing of musical data and metadata</li>
         <li>ontologies, authority files, and linked data in music encoding
-                and description</li>
+            and description</li>
         <li>(symbolic) music information retrieval using music
-                encoding</li>
+            encoding</li>
         <li>evaluation of music encodings</li>
         <li>music encoding for non-European and/or un-notated musics
         </li>
     </ul>
     <p>Topics concerned with use of music encoding might situate them in:</p>
-    <ul >
+    <ul>
         <li>music theory and analysis</li>
         <li>digital musicology and, more broadly, digital humanities</li>
         <li>digital editions</li>
@@ -114,84 +239,128 @@ id: call
         <li>machine learning approaches.</li>
     </ul>
     <h2 id="submissions">Submissions</h2>
+
+    <h3>Submission Categories at a Glance</h3>
+    <table class="simple-table">
+        <thead>
+            <tr>
+                <th>Category</th>
+                <th>Word Count</th>
+                <th>Presentation Time</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><a href="#Submission-Long">Long papers</a></td>
+                <td>1000-1500 words</td>
+                <td>20 min presentation + 10 min for discussion</td>
+            </tr>
+            <tr>
+                <td><a href="#Submission-Short">Short papers</a></td>
+                <td>500-1000 words</td>
+                <td>10 min presentation + 5 min for discussion</td>
+            </tr>
+            <tr>
+                <td><a href="#Submission-Panel">Panels</a></td>
+                <td>1500-2000 words</td>
+                <td>90 min total</td>
+            </tr>
+            <tr>
+                <td><a href="#Submission-Poster">Posters</a></td>
+                <td>500-1000 words</td>
+                <td>N/A</td>
+            </tr>
+            <tr>
+                <td><a href="#Submission-Showcase">Showcase demonstrations</a></td>
+                <td>500-1000 words</td>
+                <td>N/A
+                </td>
+            </tr>
+
+            <tr>
+                <td><a href="#Submission-Workshop">Half- or full-day workshops</a></td>
+                <td>1000-1500 words</td>
+                <td>Half day (3-4 hours) or full day (6-8 hours)</td>
+            </tr>
+        </tbody>
+    </table>
+
     <p>The Program Committee for the Music Encoding Conference 2026 will accept proposals for papers,
-            posters, panels, showcase demonstrations and workshops in the form of extended abstracts. All
-            submissions will be double-blind peer-reviewed by multiple members of the
-            committee before a decision is made on acceptance. After the review process, authors of
-            accepted submissions will have the opportunity to make non-<span
-            >substantive&nbsp;revisions&nbsp;before the conference, to
+        posters, panels, showcase demonstrations and workshops in the form of extended abstracts. All
+        submissions will be double-blind peer-reviewed by multiple members of the
+        committee before a decision is made on acceptance. After the review process, authors of
+        accepted submissions will have the opportunity to make non-<span>substantive&nbsp;revisions&nbsp;before the
+            conference, to
             address minor corrections or clarifications suggested during the review process. </p>
     <p>Please also refer to our <a href="/conference/2026/ai-statement">statement on
             the use of generative AI in submissions</a>. <br>Accepted abstracts&nbsp;will be
-            published as part of the conference program and a Book of Abstracts after the
-            conference.</p>
+        published as part of the conference program and a Book of Abstracts after the
+        conference.</p>
     <p>Authors are invited to upload their anonymized submissions for review to our
-        Conftool website: <a 
-                href="https://www.conftool.net/mec2026/">https://www.conftool.net/mec2026/</a></p>
+        Conftool website: <a href="https://www.conftool.net/mec2026/">https://www.conftool.net/mec2026/</a></p>
     <p>The deadline for all submissions is 28 November 2025 (see <a href="#dates">IMPORTANT DATES</a> above).
-        When you upload into ConfTool, you will be asked for Title, Author information and the PDF 
-        of your submission. In addition, you will need to supply a short summary abstract and up 
+        When you upload into ConfTool, you will be asked for Title, Author information and the PDF
+        of your submission. In addition, you will need to supply a short summary abstract and up
         to five keywords &ndash; these will be used for review assignment,
         but may also appear on the conference programme and website. Since review will be anonymous, please ensure
         that all identifying information is removed from your PDF before submission. </p>
-    <p>Please use our <a href="https://tinyurl.com/MEC2026-Template">template at 
-        <code>https://tinyurl.com/MEC2026-Template</code></a>
-         for your PDF proposals. Word counts apply to the
+    <p>Please use our <a href="https://tinyurl.com/MEC2026-Template">template at
+            <code>https://tinyurl.com/MEC2026-Template</code></a>
+        for your PDF proposals. Word counts apply to the
         text of the proposal, excluding titles, keywords and references.</p>
-    <h3>Long papers: 1000-1500 words</h3>
+    <h3 id="Submission-Long">Long papers: 1000-1500 words</h3>
     <p>Long papers are expected to present overviews or specific aspects of ongoing or completed
-            projects, detailed case-studies or elaborated perspectives on best practices in the field, or provide
-            in-depth reports on topics relevant to the conference. Speakers will be given 30 minutes: 20 minutes
-            for their presentation, and 10 minutes for discussion.</p>
-    <h3>Short papers: 500-1000 words</h3>
+        projects, detailed case-studies or elaborated perspectives on best practices in the field, or provide
+        in-depth reports on topics relevant to the conference. Speakers will be given 30 minutes: 20 minutes
+        for their presentation, and 10 minutes for discussion.</p>
+    <h3 id="Submission-Short">Short papers: 500-1000 words</h3>
     <p>Short papers are suitable for introducing tools, new ideas, and experimental topics. Speakers will be given
-            15 minutes: 10 minutes for presentation, 5 minutes for discussion.</p>
-    <h3>Panels: 1500-2000 words</h3>
-    <p>Panels are suited to coordinated approaches or discussions relating to a single theme, 
-        or round-table discussions. Particularly welcome are those with interactive elements, 
-        such as Q&amp;A sessions or community consultation. Submissions should describe the 
-        topic and nature of the panel, along with its format, including titles and short 
-        abstracts for any presentations that will form part of the session. It should be 
-        clear from the text how any presentations are connected, and the way these will 
+        15 minutes: 10 minutes for presentation, 5 minutes for discussion.</p>
+    <h3 id="Submission-Panel">Panels: 1500-2000 words</h3>
+    <p>Panels are suited to coordinated approaches or discussions relating to a single theme,
+        or round-table discussions. Particularly welcome are those with interactive elements,
+        such as Q&amp;A sessions or community consultation. Submissions should describe the
+        topic and nature of the panel, along with its format, including titles and short
+        abstracts for any presentations that will form part of the session. It should be
+        clear from the text how any presentations are connected, and the way these will
         be integrated into the discussion. </p>
-    <p>Themed sessions (independent papers relating to a single topic or project) will not be 
+    <p>Themed sessions (independent papers relating to a single topic or project) will not be
         considered; instead these should be submitted as separate papers. Panel sessions
         will be given 90 minutes, which can be used flexibly.</p>
-    <h3>Posters: 500-1000 words</h3>
-    <p>Posters are expected to report on early-stage work, introduce new work, projects, 
-        or software, or present experimental ideas for community feedback. Poster presenters 
+    <h3 id="Submission-Poster">Posters: 500-1000 words</h3>
+    <p>Posters are expected to report on early-stage work, introduce new work, projects,
+        or software, or present experimental ideas for community feedback. Poster presenters
         will have the chance to engage with interested parties more about their project during
         the poster exhibition, where the audience can browse freely.</p>
     <p><b>Poster Size:</b> maximum DIN A0 (841 x 1189 mm or 33.1 x 46.8 inches), portrait format</p>
-    <h3>Showcase demonstrations: 500-1000 words</h3>
+    <h3 id="Submission-Showcase">Showcase demonstrations: 500-1000 words</h3>
     <p>We will host a showcase session, giving the opportunity to show tools and resources
         in an interactive and engaging way. Presenters will be given small tables to stand
         demos on, and poster boards for any written information.</p>
     <p><b>Poster Size:</b> maximum DIN A0 (841 x 1189 mm or 33.1 x 46.8 inches), portrait format</p>
-    <h3>Half- or full-day workshops: 1000-1500 words</h3>
+    <h3 id="Submission-Workshop">Half- or full-day workshops: 1000-1500 words</h3>
     <p>These can be tutorials, explaining key concepts and tools, or interactive workshops,
         engaging participants as contributors. Proposals must also include:</p>
-    <ul >
+    <ul>
         <li>A brief outline of the topic and its appeal to the
-                community</li>
+            community</li>
         <li>The duration of the workshop or seminar (half day, full
-                day)</li>
+            day)</li>
         <li>Expected audience experience level and target and maximum
-                size</li>
+            size</li>
         <li>Any special logistical and technical requirements (e.g.,
-                participant-supplied laptops, projector, flipchart)</li>
+            participant-supplied laptops, projector, flipchart)</li>
     </ul>
     <h2 id="org">Conference organisation</h2>
     <h3 id="pc">Program Committee</h3>
-    <ul >
+    <ul>
         <li>David Lewis, Goldsmiths, University of London &amp; University of
-                Oxford (chair)</li>
+            Oxford (chair)</li>
         <li>Richard Freedman, Haverford College</li>
         <li>Satoru Fukayama, National Institute of Advanced Industrial
-                Science and Technology, Tokyo</li>
+            Science and Technology, Tokyo</li>
         <li>Mark Gotham, King&rsquo;s College London</li>
-        <li>Olja Janju&scaron;, <span
-                >Ludwig-Maximilians-Universit&auml;t M&uuml;nchen</li>
+        <li>Olja Janju&scaron;, <span>Ludwig-Maximilians-Universit&auml;t M&uuml;nchen</li>
         <li>Anna E. Kijas, Tufts University</li>
         <li>Elsa De Luca, NOVA University Lisbon</li>
         <li>Davide Andrea Mauro, Paderborn University</li>
@@ -203,18 +372,18 @@ id: call
         <li>Frankie Perry, University of Oxford | British Library</li>
         <li>Anna Plaksin, Paderborn University</li>
         <li>Nevin &#350;ahin, Hacettepe University Ankara State
-                Conservatory</li>
+            Conservatory</li>
         <li>Martha E. Thomae, NOVA University Lisbon</li>
         <li>Sandra Tuppen, British Library</li>
         <li>Mirjam Visscher, Utrecht University </li>
         <li>David M. Weigl, mdw &ndash; University of Music and Performing
-                Arts Vienna</li>
+            Arts Vienna</li>
     </ul>
     <h4 id="org">Local Organizing Committee</h4>
-    <ul >
+    <ul>
         <li>Eita Nakamura, Kyushu University</li>
         <li>Satoru Fukayama, National Institute of Advanced Industrial Science and
-                Technology, Tokyo</li>
+            Technology, Tokyo</li>
         <li>Shun Sawada, Nippon Institute of Technology</li>
         <li>Shintaro Seki, RIKEN</li>
     </ul>
