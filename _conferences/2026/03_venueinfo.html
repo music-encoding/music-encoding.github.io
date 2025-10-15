@@ -8,33 +8,24 @@ id: venueinfo
 ---
 
 <style>
-    /* --- Venue Page: UNIQUE Styles ONLY --- */
-    /*
-      このページにしかない要素（住所ブロックと地図）のスタイルのみを定義します。
-      基本的な文字スタイルやレイアウトはサイト共通のCSSに任せます。
-    */
-
-    /* 住所ブロックのスタイル */
     .venue-address {
         font-style: normal;
-        background-color: #f8f9fa; /* 背景を少しグレーに */
+        background-color: #f8f9fa; 
         padding: 15px;
         border-radius: 5px;
-        border-left: 4px solid #7f8c8d; /* 左のアクセントボーダー */
+        border-left: 4px solid #7f8c8d; 
         margin-top: 1em;
         margin-bottom: 1em;
     }
 
-    /* レスポンシブな地図のコンテナ */
 .map-placeholder {
     position: relative;
     overflow: hidden;
     width: 100%;
-    /* ↓ 3行追加 */
-    max-width: 750px; /* 地図の最大幅を750pxに制限 */
-    margin-left: auto; /* 中央揃え（左の余白を自動） */
-    margin-right: auto; /* 中央揃え（右の余白を自動） */
-    padding-top: 56.25%; /* アスペクト比 16:9 */
+    max-width: 750px; 
+    margin-left: auto; 
+    margin-right: auto; 
+    padding-top: 56.25%; 
     margin-top: 1.5em;
     border-radius: 5px;
 }
