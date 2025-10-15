@@ -1,0 +1,100 @@
+---
+layout: conference
+title: "Venue information"
+subtitle: "Music Encoding Conference 2026"
+permalink: "/conference/2026/venueinfo"
+tag: MEC2026
+id: venueinfo
+---
+
+<style>
+    /* --- Venue Page: UNIQUE Styles ONLY --- */
+    /*
+      このページにしかない要素（住所ブロックと地図）のスタイルのみを定義します。
+      基本的な文字スタイルやレイアウトはサイト共通のCSSに任せます。
+    */
+
+    /* 住所ブロックのスタイル */
+    .venue-address {
+        font-style: normal;
+        background-color: #f8f9fa; /* 背景を少しグレーに */
+        padding: 15px;
+        border-radius: 5px;
+        border-left: 4px solid #7f8c8d; /* 左のアクセントボーダー */
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+
+    /* レスポンシブな地図のコンテナ */
+.map-placeholder {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    /* ↓ 3行追加 */
+    max-width: 750px; /* 地図の最大幅を750pxに制限 */
+    margin-left: auto; /* 中央揃え（左の余白を自動） */
+    margin-right: auto; /* 中央揃え（右の余白を自動） */
+    padding-top: 56.25%; /* アスペクト比 16:9 */
+    margin-top: 1.5em;
+    border-radius: 5px;
+}
+
+    /* 地図のiframe自体 */
+    .map-placeholder iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
+    }
+</style>
+
+<div class="mec2026-page">
+
+    <img src="/images/conference/2026/banner.png" class="img-responsive" style="margin-bottom: 1em" alt="Music Encoding Conference banner">
+    
+    <h1>Venue Information</h1>
+
+    <p>
+        Welcome to the conference! We are delighted to host this year's event at the <strong>Morito Memorial Hall</strong> (森戸記念館) of the Tokyo University of Science.
+    </p>
+
+    <section id="location">
+        <h2>Location & Map</h2>
+        <p>The venue is located in the historic and charming Kagurazaka district.</p>
+
+        <address class="venue-address">
+            Morito Memorial Hall, Tokyo University of Science<br>
+            4-2-2 Kagurazaka, Shinjuku-ku, Tokyo
+        </address>
+
+        <div class="map-placeholder">
+            <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3239.984368592685!2d139.73725331220763!3d35.70200227246616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188c5a8b8f110f%3A0xe53fb3ac997bb764!2z5p2x5Lqs55CG56eR5aSn5a2mIOajruaIuOiomOW_temkqA!5e0!3m2!1sja!2sjp!4v1760493509507!5m2!1sja!2sjp"
+                allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+        <section id="access">
+            <h2>Access Information</h2>
+            <p>Located centrally in Tokyo, the venue is easily accessible via a comprehensive network of public
+                transportation.</p>
+
+            <h3>From International Airports</h3>
+            <ul>
+                <li><strong>From Narita Airport (NRT):</strong> Approximately 90 minutes by train.</li>
+                <li><strong>From Haneda Airport (HND):</strong> Approximately 60 minutes by train.</li>
+            </ul>
+
+            <h3>Closest Stations</h3>
+            <p>The closest stations to the venue are:</p>
+            <ul>
+                <li><strong>Toei Oedo Line:</strong> <strong>Ushigome-kagurazaka Station</strong> (A3 Exit) -
+                    <strong>3 min walk</strong></li>
+                <li><strong>JR Line / Tokyo Metro:</strong> <strong>Iidabashi Station</strong> (JR West Exit / Metro
+                    B3 Exit) - <strong>6 min walk</strong></li>
+            </ul>
+        </section>
+</div>
