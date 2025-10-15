@@ -29,5 +29,5 @@ The Music Encoding Initiative group in the Knowledge Commons (previously called 
 
 # Contact info
 
-You can also contact MEI by [email](mailto:{{site.email}}).
-
+Ask a general question: info at music-encoding.org
+Contact the MEI Board: mei-board at lists.uni-paderborn.de 
