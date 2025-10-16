@@ -10,7 +10,9 @@ layout: default
 
         {% else %}
 
-            <h2>{{ page.fullname }}</h2>
+        <h1><a href="{{ site.baseurl }}/resources/tutorials.html" title="Back to Tutorials main page">←</a> MEI Tutorials</h1>
+           
+        <h2>{{ page.fullname }}</h2>
 
             {% if content %}
                 {{ content }}
@@ -19,9 +21,11 @@ layout: default
             <h3 id="stepLabel">
                 <!-- step label goes in here -->
             </h3>
+
             <div id="instruction">
                 <!-- instruction texts go in here -->
             </div>
+
             <div id="editorContainer" style="display: none;">
                 <h3>Editeur MEI
                     <button id="btn-openFullFileModal" class="btn btn-link float-right disabled" title="uniquement permis lors au moment de la validation">afficher le code complet</button>
@@ -42,14 +46,17 @@ layout: default
                     <!-- verovio rendering goes in here -->
                 </div>
             </div>
-            <button id="nextStepButton" class="btn btn-primary btn-sm float-right">Continuer <i class="icon icon-forward"></i></button>
-            
             <div id="acknowledgments" style="display: none;">
                 <h3>Remerciements</h3>
                 <p>Ce tutoriel a été créé par :</p>
                 <ul id="ackList"></ul>
                 <p>Traductions réalisées par Aurelien Balland Chatignon et Félix Poullet-Pagès</p>
             </div>
+
+             <div id="navigationButtons" style="width: 100%;">
+                <button id="previousStepButton" style="display: none;" class="btn btn-primary btn-sm float-left" ><i class="icon icon-back"></i> Back</button>
+                <button id="nextStepButton" style="display: none;" class="btn btn-primary btn-sm float-right">Continue <i class="icon icon-forward"></i></button>
+            </div>  
             
             <ul id="stepBox" class="step">
                 <!-- tutorial step list goes in here -->
