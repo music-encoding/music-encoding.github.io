@@ -1,16 +1,16 @@
 <div>
-    <p class="tutorialGoal">Deuxième étape : ajoutez des attributs au squelette structurel que vous avez créé à l'étape précédente. Ces attributs fourniront 
+    <p class="tutorialGoal">Deuxième étape : ajoutez des attributs au squelette structurel que vous venez de créer. Ces attributs fourniront 
         des informations de base sur la portée, la clef et la tonalité de l'exemple.</p>
 
     <p>Vous avez appris dans l'étape précédente que l'élément <code>&lt;scoreDef&gt;</code> est utilisé pour spécifier les paramètres communs d'une partition, et 
-        <code>&lt;staffDef&gt;</code> contient toutes les métadonnées relatives à une portée individuelle. Évidemment, il n'y a qu'une seule portée dans cet exemple 
+        <code>&lt;staffDef&gt;</code> contient toutes les métadonnées relatives à une portée précise. Évidemment, il n'y a qu'une seule portée dans cet exemple 
         d'incipit, il serait donc possible de déclarer l'armure (3 bémols) et l'indication de mesure (mesure à 2/2) dans <code>&lt;staffDef&gt;</code>. Mais déplaçons 
         ces informations dans <code>&lt;scoreDef&gt;</code>, en supposant que la tonalité et la mesure sont les mêmes pour tous les autres instruments ou parties de la 
         partition complète de l'Opus 1 de Halvorsen. Pour spécifier une certaine tonalité ou mesure, vous devez utiliser les attributs suivants de <code>&lt;scoreDef&gt;</code> 
         et les ajouter à l'élément <code>&lt;scoreDef&gt;</code> :</p>
     <ul>
-        <li><code>@key.sig</code> (l'armure) – le nombre de dièses/bémols à l'armure écrite, utilisez <code>"3f"</code> pour 3 bémols.</li>
-        <li><code>@meter.sym</code> (indication de mesure) – utilisez <code>"cut"</code> pour une mesure à 2/2 (C/).
+        <li><code>@key.sig</code> (l'armure) – le nombre de dièses/bémols à l'armure écrite, utilisez <code>3f</code> pour 3 bémols.</li>
+        <li><code>@meter.sym</code> (indication de mesure) – utilisez <code>cut</code> pour une mesure à 2/2 (C/).
 
         </li>
     </ul>
@@ -18,14 +18,14 @@
     <p>La clef, quant à elle, est décrite dans l'élément <code>&lt;staffDef&gt;</code>, car elle est liée à la portée individuelle (d'autres instruments peuvent avoir d'autres clefs). 
         Vous devez utiliser les attributs suivants de <code>&lt;staffDef&gt;</code> :</p>
     <ul>
-        <li><code>@n</code> (un nombre ordinal) – représente la position de la portée dans le <code>&lt;staffGrp&gt;</code>, utilisez <code>"1"</code> pour la première (et unique) portée</li>
-        <li><code>@lines</code> – représente le nombre de ligne de la portée. Utilisez <code>"5"</code> pour une portée à cinq lignes</li>
-        <li><code>@clef.shape</code> – représente le symbole de la clef. Utilisez <code>"G"</code> pour un symbole de clef de sol.</li>
-        <li><code>@clef.line</code> – représente la position de la clef dans la portée (en comptant à partir du bas). Utilisez <code>"2"</code>.</li>
+        <li><code>@n</code> (un nombre ordinal) – représente la position de la portée dans le <code>&lt;staffGrp&gt;</code>, utilisez <code>1</code> pour la première (et unique) portée</li>
+        <li><code>@lines</code> – représente le nombre de ligne de la portée. Utilisez <code>5</code> pour une portée à cinq lignes</li>
+        <li><code>@clef.shape</code> – représente le symbole de la clef. Utilisez <code>G</code> pour un symbole de clef de sol.</li>
+        <li><code>@clef.line</code> – représente la position de la clef dans la portée (en comptant à partir du bas). Utilisez <code>2</code>.</li>
     </ul>
 
     <p class="task">Ajoutez les attributs décrits ci-dessus et leurs valeurs respectives à <code>&lt;scoreDef&gt;</code> et <code>&lt;staffDef&gt;</code> dans l'éditeur ci-dessous. 
-        (Pour une représentation, il est encore nécessaire de fournir quelques informations supplémentaires. Nous touchons au but !)</p>
+        (Pour le rendu, il est encore nécessaire de fournir quelques informations supplémentaires. Nous touchons au but !)</p>
 
-    <p> PS : Si vous n'êtes pas très familier avec XML : Chaque fois que nous faisons référence à des attributs, nous préfixons leur nom avec le signe @. C'est une pratique courante qui provient du langage <a href="https://en.wikipedia.org/wiki/XPath" target="_blank" rel="noopener noreferrer">XPath</a>. Lorsque vous les écrivez en XML, vous ne devez pas inclure le signe @, mais écrire uniquement le nom de l'attribut. N'hésitez pas à consulter notre <a href="/tutorials/100-structure.html" target="_blank" rel="noopener noreferrer">tutoriel sur les bases de XML</a>.</p>
+    <p> PS : Si vous n'êtes pas très familier avec XML : chaque fois que nous faisons référence à des attributs, nous préfixons leur nom avec le signe @. C'est une pratique courante qui provient du langage <a href="https://en.wikipedia.org/wiki/XPath" target="_blank" rel="noopener noreferrer">XPath</a>. Lorsque vous les écrivez en XML, vous ne devez pas inclure le signe @, mais écrire uniquement le nom de l'attribut. N'hésitez pas à consulter notre <a href="/tutorials/100-structure.html" target="_blank" rel="noopener noreferrer">tutoriel sur les bases de XML</a>.</p>
 </div>
