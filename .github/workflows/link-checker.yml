@@ -1,0 +1,65 @@
+name: Link Checker
+
+on:
+  schedule:
+    - cron: "0 13 * * 0" # run every Sunday at 1pm UTC https://crontab.guru/#0_13_*_*_1
+  workflow_dispatch: # trigger manually
+    inputs:
+      branch:
+        description: "Branch to check"
+        required: true
+        default: main
+
+permissions:
+  contents: read
+
+# globals
+env:
+  CHECK_WEBSITE: https://music-encoding.org
+  CHECK_OWNER: music-encoding
+  CHECK_BRANCH: main
+
+jobs:
+  website_link_check:
+    name: Check website links
+    runs-on: ubuntu-latest
+    if: ${{ github.repository_owner == 'music-encoding' }}
+
+    steps:
+      - uses: technote-space/broken-link-checker-action@7820497a025fb09ff736ee11bb8bb12ca715b4fe # v2.3.1
+        with:
+          TARGET: ${{ env.CHECK_WEBSITE }}
+          EXCLUDED_KEYWORDS: |
+            twitter.com
+
+  linkChecker:
+    runs-on: ubuntu-latest
+    if: ${{ github.repository_owner == 'music-encoding' }}
+    
+    permissions:
+      contents: read
+      issues: write
+
+    steps:
+      - name: Set variables
+        run: |
+          if [[ "${{ github.event.inputs.branch }}" != '' ]] ; then
+            echo "Setting branch: ${{ github.event.inputs.branch }}"
+            echo "CHECK_BRANCH=${{ github.event.inputs.branch }}" >> $GITHUB_ENV
+          fi
+      - name: Checkout main repo
+        uses: actions/checkout@08c6903cd8c0fde910a37f88322edcfb5dd907a8 # v5.0.0
+        with:
+          ref: ${{ env.CHECK_BRANCH }}
+
+      - name: Link Checker
+        id: lychee
+        uses: lycheeverse/lychee-action@885c65f3dc543b57c898c8099f4e08c8afd178a2 # v2.6.1
+
+      - name: Create Issue From File
+        if: env.lychee_exit_code != 0
+        uses: peter-evans/create-issue-from-file@fca9117c27cdc29c6c4db3b86c48e4115a786710 # v6.0.0
+        with:
+          title: Link Checker Report
+          content-filepath: ./lychee/out.md
+          labels: bug, documentation
