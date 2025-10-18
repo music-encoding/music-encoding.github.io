@@ -1,0 +1,126 @@
+---
+layout: default
+---
+<div class="columns">
+    <div class="column col-8 col-sm-12 tutorialBox">
+
+        {% if page.type != 'tutorial-FR' %}
+
+            {{ content }}
+
+        {% else %}
+
+        <h1><a href="{{ site.baseurl }}/resources/tutorials.html" title="Back to Tutorials main page">←</a> MEI Tutorials</h1>
+           
+        <h2>{{ page.fullname }}</h2>
+
+            {% if content %}
+                {{ content }}
+            {% endif %}
+
+            <h3 id="stepLabel">
+                <!-- step label goes in here -->
+            </h3>
+
+            <div id="instruction">
+                <!-- instruction texts go in here -->
+            </div>
+
+            <div id="editorContainer" style="display: none;">
+                <h3>Editeur MEI
+                    <button id="btn-openFullFileModal" class="btn btn-link float-right disabled" title="uniquement permis lors au moment de la validation">afficher le code complet</button>
+                    <button id="btn-toggleHint" class="btn btn-link float-right disabled" title="tromperie ou ruse">afficher l'indice</button>
+                </h3>
+                <div id="editorBox">
+                    <div id="editor">
+                        <!-- editor content goes in here -->
+                    </div>
+                </div>
+
+                <div id="hints" style="display: none;">
+                    <!-- validation hints go in here -->
+                </div>
+
+                <h3>Rendu</h3>
+                <div id="rendering">
+                    <!-- verovio rendering goes in here -->
+                </div>
+            </div>
+            <div id="acknowledgments" style="display: none;">
+                <h3>Remerciements</h3>
+                <p>Ce tutoriel a été créé par :</p>
+                <ul id="ackList"></ul>
+                <p>Traductions réalisées par Aurelien Balland Chatignon et Félix Poullet-Pagès</p>
+            </div>
+
+             <div id="navigationButtons" style="width: 100%;">
+                <button id="previousStepButton" style="display: none;" class="btn btn-primary btn-sm float-left" ><i class="icon icon-back"></i>Retour</button>
+                <button id="nextStepButton" style="display: none;" class="btn btn-primary btn-sm float-right">Continuer<i class="icon icon-forward"></i></button>
+            </div>  
+            
+            <ul id="stepBox" class="step">
+                <!-- tutorial step list goes in here -->
+            </ul>
+        
+            <div class="modal modal-lg" id="fullFileModal"><a id="fullFileModalCloseBack" class="modal-overlay" href="#modals-sizes" aria-label="Close"></a>
+                <div class="modal-container" role="document">
+                    <div class="modal-header"><a id="fullFileModalCloseTop" class="btn btn-clear float-right" href="#modals-sizes" aria-label="Close"></a>
+                        <div id="fullFileTitle" class="modal-title h5"></div>
+                    </div>
+                    <div class="modal-body">
+                        <div id="fullFileContent" class="content">
+                            
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <a id="fullFileDownloadBtn" class="btn btn-primary"><i class="icon icon-download"></i>Télécharger</a>
+                        <a id="fullFileModalCloseBottom" class="btn btn-link" href="#modals-sizes">Fermer</a>
+                    </div>
+                </div>
+            </div>
+
+            <script src="/js/ace-src-noconflict/ace.js"></script>
+            <script src="/js/verovio-toolkit.js"></script>
+            <script src="/js/mei-tutorials.js"></script>
+            <script>
+
+                try {
+                    fetch("./{{page.data}}")
+                        .then(function(response) {
+                            if (response.ok) {
+                                return response.json()
+                            }
+                            throw new Error('Erreur réseau en essayant de réccupérer  ', page.data);
+                        })
+                        .then(function(data) {
+                            setupTutorial(data, "FR");
+                        });
+                } catch(err) {
+                    console.log('Erreur lors de la réccupération des données : ' + err)
+                }
+
+            </script>
+        {% endif %}
+    </div>
+
+    <!-- side menu -->
+    <div class="column col-4 col-sm-12">
+        <h2>Tutoriels disponibles</h2>
+        {% assign t = site.collections | where: "label","tutorials-FR" | first %}
+        {% for tutorial in t.docs %}
+        {% if tutorial.name != page.name %}
+        <div class="tile">
+            <div class="tile-icon">
+                <div class="arrow-tile-icon">
+                    <a href="{{ tutorial.url }}.html" class="icon icon-message centered"></a>
+                </div>
+            </div>
+            <div class="tile-content">
+                <div class="tile-title"><a href="{{ tutorial.url }}.html">{{ tutorial.name }}</a></div>
+                <div class="tile-subtitle text-gray">{{tutorial.fullname}}</div>
+            </div>
+        </div>
+        {% endif %}
+        {% endfor %}
+    </div>
+</div>

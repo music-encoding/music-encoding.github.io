@@ -1,0 +1,58 @@
+<div>
+  <p>
+    ODD, acronyme de <em>One Document Does-it-all</em>, fait partie de la
+    <a
+      href="https://tei-c.org/guidelines/customization/getting-started-with-p5-odds/"
+      target="_blank"
+      rel="noopener, noreferrer"
+      >norme TEI</a
+    >, et est également utilisé pour définir la TEI elle-même.
+  </p>
+  <p>
+    ODD utilise un ensemble d'éléments spéciaux dans l'espace de noms
+    <a
+      href="https://tei-c.org/ns/1.0/"
+      target="_blank"
+      rel="noopener, noreferrer"
+      >TEI</a
+    >
+    pour décrire des formats de données basés sur XML. En plus de la TEI de
+    base, il est utilisé pour des formats basés sur la TEI tels que
+    <a
+      href="https://sourceforge.net/p/epidoc/wiki/Home/"
+      target="_blank"
+      rel="noopener, noreferrer"
+      >EpiDoc</a
+    >, mais aussi pour des formats techniquement indépendants comme la MEI. En
+    2016, la TEI a proposé une version d'ODD appelée
+    <em
+      ><a
+        href="https://wiki.tei-c.org/index.php/ODD#.22Pure_ODD.22"
+        target="_blank"
+        rel="noopener, noreferrer"
+        >Pure ODD</a
+      ></em
+    >. En été 2020, la MEI continue cependant d'utiliser l'ancienne version d'ODD,
+    car la nouvelle version n'apporte pas d'avantages pertinents pour la MEI, mais
+    entraînerait un travail de maintenance significatif pour divers outils et
+    flux de travail liés à la MEI.
+  </p>
+  <p>
+    La principale différence avec <em>Pure ODD</em> est que l'ancienne version
+    utilisée par la MEI utilise des éléments de l'espace de noms
+    <em
+      ><a href="https://relaxng.org/" target="_blank" rel="noopener, noreferrer"
+        >RelaxNG</a
+      ></em
+    >. En fin de compte, les fichiers ODD sont généralement compilés en un
+    schéma RelaxNG (ou XSD), car il n'y a littéralement aucun support logiciel
+    pour une validation directe contre ODD. Cependant, le recours à RelaxNG dans
+    ODD ajoute une dépendance supplémentaire au flux de travail TEI, réduisant
+    ainsi la liberté technique pour définir TEI et/ou ODD à un certain degré
+    (mineur?). Comme la MEI est déjà défini dans un format qui est hors du contrôle
+    direct de la communauté MEI et doit de toute façon gérer plusieurs espaces
+    de noms XML, l'argument en faveur de la définition cohérente de tout en
+    <em>Pure ODD</em> est moins convaincant et n'a donc pas été suivi jusqu'à
+    présent.
+  </p>
+</div>
