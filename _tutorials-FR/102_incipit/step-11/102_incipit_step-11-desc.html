@@ -7,22 +7,21 @@
         Ils sont placés en texte brut entre les balises ouvrante et fermante de l'élément <code>&lt;dynam&gt;</code>, exemple : 
         <code>&lt;dynam&gt;pp&lt;/dynam&gt;</code>.</p>
 
-    <p> Au contraire des signes d'articulation, l'élément <code>&lt;dynam&gt;</code> est un <code>évènement de contrôle</code> qui 
-         regroupes différents éléments (commes les nuances, les liaisons, les phrasés, les indications de pédales, etc.), qui dépendent 
-         d'autres événements, tels que les notes ou les silences, pour être valide. 
-        En général, les <code>évènements de contrôle</code> ne sont pas encodés commes des éléments enfants des évènements qu'ils ont sous
-        leur contrôle.
-        En practique, ils sont, dans la plupart des cas, placés à l'extérieur de l'élément <code>staff</code>.</p>
+    <p> Au contraire des signes d'articulation, l'élément <code>&lt;dynam&gt;</code> fait partie de ce qu'on appelle les <code>évènements de contrôle</code>. 
+        En MEI, chaque élément de la partition amenant une information sur un phénomène sonore ou temporel, comme une note jouée, un silence, un accord ou un triolet, est appelé évènement. 
+        Les <code>évènements de contrôle</code> regroupe les évènements dépendant d'autres événements pour être valide (commes les nuances, les liaisons, les phrasés, les indications de pédales, etc.) 
+        En général, les <code>évènements de contrôle</code> ne sont pas encodés commes des éléments enfants des évènements qu'ils ont sous leur contrôle.
+        Ils sont, dans la plupart des cas, placés à l'extérieur de l'élément <code>staff</code>.</p>
 
-    <p>Il y a différentes options pour indiquer qu'un <code>évènements de contrôle</code> comme <code>&lt;dynam&gt;</code> se réfère à un 
+    <p>Il existe différentes options pour indiquer qu'un <code>évènements de contrôle</code> comme <code>&lt;dynam&gt;</code> se réfère à un 
         élément <code>&lt;note&gt;</code> ou <code>&lt;rest&gt;</code> :
 
     <ul>
-        <li>En premier lieu, <code>&lt;staff&gt;</code> auquel l'<code>événement de contrôle</code> doit être appliqué peut être référencé par
+        <li>En premier lieu, On peut référencer l'élément <code>&lt;staff&gt;</code> auquel l'<code>événement de contrôle</code> est appliqué par
              un attribut <code>@staff</code>.</li>
-        <li>De plus, le point de départ d'une indication de nuance doit être indiqué soit par un attribut <code>startid</code>, soit par un 
-            <code>tstamp</code>, un <code>tstamp.ges</code>, ou encore un <code>tstamp.real</code>. Parrallèlement, le point final peut être 
-            indiqué soit par un attribut <code>dur</code>, par <code>dur.ges</code>, un <code>endid</code>, ou un <code>tstamp2</code>. 
+        <li>On peut également indiquer le point de départ d'une indication de nuance par un attribut <code>@startid</code> qui le lie à une autre entité, un 
+            <code>@tstamp</code> pour représenter un temps écrit dans la mesure, un <code>@tstamp.ges</code> pour représenter un temps joué (lors d'un écart expressif par exemple) ou un <code>@tstamp.real</code> qui représente le temps en seconde.
+            La fin de l'évènement de contrôle peut être indiqué soit par un attribut <code>@dur</code>, par <code>dur.ges</code> (la différence entre ces deux premier est le même que pour @tstamp et @tstamp.ges), un <code>endid</code>, ou un <code>tstamp2</code>. 
             Ne pas spécifier d'attribut pour le point de départ est une erreur sémantique.</li>
     </ul>
 
@@ -31,9 +30,9 @@
 
     <p>Les attributs suivants font partie de ceux qui peuvent être utilisés avec <code>&lt;dynam&gt;</code>:</p>
     <ul>
-        <li><code>@staff</code> – L'identification du numéro de portée à laquelle un élément est appliqué, dans notre cas, par exemple, il s'agit de <code>“1”</code></li>
-        <li><code>@tstamp</code> ("time stamp") – Le début d'un évènement en matière de temps musical c'est à dire les temps, par exemple <code>“1”</code>, <code>“2.5”</code>
-        <li><code>@place</code> – La position de l'indication de nuance, <code>“above”</code> (au-dessus) ou <code>“below”</code> (en-dessous) de la portée.</li>
+        <li><code>@staff</code> – L'identification du numéro de portée à laquelle un élément est appliqué, dans notre cas, par exemple, il s'agit de <code>"1"</code></li>
+        <li><code>@tstamp</code> ("time stamp") – Le début d'un évènement en matière de temps musical c'est à dire les temps, par exemple <code>"1"</code> pour le premier temps, <code>"2.5"</code> pour la moitié du second temps.
+        <li><code>@place</code> – La position de l'indication de nuance, <code>"above"</code> (au-dessus) ou <code>"below"</code> (en-dessous) de la portée.</li>
     </ul>
 
     <p class="task">Trouvez les éléments <code>&lt;note&gt;</code> dans l'exemple auquel des indications de nuances sont attribuées. Ajoutez un élément "frère" (c'est-à-dire qui partage le même élément parent) <code>&lt;dynam&gt;</code> à l'élément <code>&lt;staff&gt;</code> correspondant et appliquez les attributs en question (<code>@staff</code>, <code>@tstamp</code>, <code>@place</code>). N'oubliez pas d'inclure le signe <code>ff</code> entre la balise d'ouverture et de fermeture de <code>&lt;dynam&gt;</code>.</p>

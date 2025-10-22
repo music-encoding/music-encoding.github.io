@@ -54,8 +54,8 @@
     Première étape : fournir quelques notes pour un accord.
   </p>
   <p>
-    En MEI, la notion d'un accord signifie la "production simultanée de deux
-    notes ou plus dans la même couche avec la même durée" (voir
+    En MEI, la notion d'un accord signifie la « production simultanée de deux
+    notes ou plus dans la même "couche" avec la même durée » (voir
     <a
       href="https://music-encoding.org/guidelines/v4/elements/chord.html"
       target="_blank"
@@ -67,16 +67,16 @@
     accord, mais cela ne fait pas partie de ce tutoriel de base.)
   </p>
   <p>
-    Pour encoder une telle "production simultanée", l'élément
+    Pour encoder une telle « production simultanée », l'élément
     <code>&lt;chord&gt;</code> est utilisé en MEI. Son utilisation est assez
-    simple : plusieurs éléments <code>&lt;note&gt;</code> dans la même couche
+    simple : plusieurs éléments <code>&lt;note&gt;</code> dans la même voix
     sont inclus dans un élément <code>&lt;chord&gt;</code> et l'attribut de
     durée (@dur) est déplacé des <code>&lt;note&gt;</code> vers l'élément
     <code>&lt;chord&gt;</code> (puisque la durée est la même pour toutes les
     notes). Cependant, que vous écriviez d'abord un élément
     <code>&lt;chord&gt;</code> externe pour ajouter des éléments
-    <code>&lt;note&gt;</code> internes, ou que vous commenciez par les
-    <code>&lt;note&gt;</code>s et les enfermiez ensuite dans un élément
+    <code>&lt;note&gt;</code> internes, ou que vous commenciez par les éléments
+    <code>&lt;note&gt;</code> et les enfermiez ensuite dans un élément
     <code>&lt;chord&gt;</code>, n'a, en pratique, aucune importance.
   </p>
   <p>
