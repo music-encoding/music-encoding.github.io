@@ -6,7 +6,7 @@
         "xmlFile": "104_rests_step-00.xml",
         "editorLines":1,
         "xpaths": [
-            {"rule":"count(//mei:rest) = 1", "renderanyway": false, "hint": "Vous avez besoin d'un élément 'rest'"},
+            {"rule":"count(//mei:rest) = 1", "renderanyway": false, "hint": "Vous avez besoin d'un élément rest"},
             {"rule":"count(//mei:rest/@*) = 1 and //mei:rest/@dur", "renderanyway": false, "hint": "Vous avez besoin d'un attribut @dur."},
             {"rule":"//mei:rest/@dur = '4'", "renderanyway": true, "hint": "L'attribut @dur utilise des valeurs comme '1','2', ou '4'. Utilisez ce dernier pour un soupir."}
         ]
@@ -17,7 +17,7 @@
         "descFile": "104_rests_step-01-desc.html",
         "xmlFile": "104_rests_step-00.xml",
         "xpaths": [
-            {"rule":"count(//mei:rest) = 5", "renderanyway": true, "hint":"Vous devez encoder 5 éléments 'rest'."},
+            {"rule":"count(//mei:rest) = 5", "renderanyway": true, "hint":"Vous devez encoder 5 éléments rest."},
             {"rule":"//mei:rest[1]/@dur and //mei:rest[1]/@dur = '1'", "renderanyway": true},
             {"rule":"//mei:rest[2]/@dur and //mei:rest[2]/@dur = '2'", "renderanyway": true},
             {"rule":"//mei:rest[3]/@dur and //mei:rest[3]/@dur = '4' and //mei:rest[3]/@dots and //mei:rest[3]/@dots = '1'", "renderanyway": true},
@@ -34,7 +34,7 @@
         "xpaths": [
             {"rule":"count(//mei:mRest) = 1", "renderanyway": true, "hint":"Il vous faut un élément mRest."},
             {"rule":"count(//mei:mRest/@*) = 0", "renderanyway": true,"hint":"L'élément mRest n'a pas besoin d'attributs"},
-            {"rule":"count(//mei:layer/mei:*) = 1","renderanyway":true,"hint":"Vous devez seulement encoder un élément'mRest'."}
+            {"rule":"count(//mei:layer/mei:*) = 1","renderanyway":true,"hint":"Vous devez seulement encoder un élément mRest."}
         ]
     },
     {
@@ -44,7 +44,7 @@
         "xmlFile": "104_rests_step-02.xml",
         "xpaths": [
             {"rule":"count(//mei:multiRest) = 1", "renderanyway": true, "hint":"Il vous faut un élément multiRest."},
-            {"rule":"count(//mei:layer/mei:*) = 1","renderanyway":true,"hint":"Vous devez seulement encoder un élément 'multiRest'."},
+            {"rule":"count(//mei:layer/mei:*) = 1","renderanyway":true,"hint":"Vous devez seulement encoder un élément multiRest."},
             {"rule":"count(//mei:multiRest/@*) = 1 and //mei:multiRest/@num", "renderanyway": true,"hint":"L'élément multiRest a besoin d'un seul attribut ici (@num)."},
             {"rule":"//mei:multiRest/@num = '15'", "renderanyway": true,"hint":"L'élément multiRest doit avoir une durée de 15 mesures"}
         ]
@@ -56,7 +56,7 @@
         "xmlFile": "104_rests_step-04.xml",
         "prefillFile": "104_rests_step-04-prefill.xml",
         "xpaths": [
-            {"rule":"//mei:space/following-sibling::mei:note", "renderanyway": true, "hint":"Un élément 'space' doit précédé un élément 'note'."},
+            {"rule":"//mei:space/following-sibling::mei:note", "renderanyway": true, "hint":"Un élément space doit précéder un élément note."},
             {"rule":"count(//mei:space[@dur = '4']) = 3 or (//mei:space[@dur = '2' and @dots = '1']) or (//mei:space[@dur = '2'] and //mei:space[@dur = '4'])", "renderanyway": true}
         ]
     }
