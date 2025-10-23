@@ -1,11 +1,11 @@
 <div>
   <p>
-    Comme nous l'avons vu, ODD permet de spécifier quels éléments enfants exacts
+    Comme nous l'avons vu, ODD permet de spécifier avec précision quels éléments enfants 
     sont autorisés à l'intérieur d'un élément donné. Cela permet un contrôle
     très précis de la hiérarchie MEI, mais cela se fait au prix de listes très
     verbeuses de ce que chaque élément peut contenir. Ce n'est ni
     particulièrement maintenable ni facile à suivre : certains éléments de MEI
-    peuvent contenir des dizaines d'autres éléments, et la comparaison de deux
+    peuvent contenir des dizaines d'autres éléments et la comparaison de deux
     de ces éléments est plutôt fastidieuse.
   </p>
   <p>
@@ -29,8 +29,8 @@
     <img style="width: 100%" src="./role-children.png" />
   </div>
   <p>
-    En regardant le <em>&lt;elementSpec&gt;</em>, il n'y a pas une telle liste,
-    cependant :
+    En regardant <em>&lt;elementSpec&gt;</em>, nous ne voyons pas une telle liste,
+    mais plutôt :
   </p>
   <pre class="codeblock">
 &lt;elementSpec ident="role" module="MEI.shared"&gt;
@@ -54,8 +54,8 @@
 &lt;/elementSpec&gt;</pre
   >
   <p>
-    Au lieu des 54 éléments de la capture d'écran ci-dessus, un seul
-    <em>&lt;rng:ref&gt;</em> est donné, pointant vers quelque chose nommé
+    Au lieu des 54 éléments de la capture d'écran précédante, un seul
+    <em>&lt;rng:ref&gt;</em> nous est donné, pointant vers quelque chose nommé
     <em>model.textPhraseLike.limited</em>. Il s'agit d'une
     <strong>classe modèle</strong>. Les classes modèles sont destinées à servir
     de substituts pour des groupes d'éléments. La classe modèle elle-même ne

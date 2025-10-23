@@ -1,18 +1,18 @@
 <div>
   <p>
-    La structure conceptuelle de plus haut niveau dans ODD est constituée de
+    La structure conceptuelle de plus haut niveau dans ODD est celle des
     <em>modules</em>. Les modules permettent de diviser le schéma en différentes
-    zones, chacune définissant un aspect clairement délimité. Jusqu'en 2019, la
-    structure des Directives MEI suivait les modules ODD, mais cette
-    configuration a été remplacée par une division plus instructive. À l'heure
-    actuelle, les modules apparaissent dans les Directives MEI en haut des
+    sections, chacune définissant un aspect clairement délimité. Jusqu'en 2019, la
+    structure des <em>MEI Guidelines</em> suivait les modules ODD, mais cette
+    configuration a été remplacée par une division plus pédagogique. À l'heure
+    actuelle, les modules apparaissent dans les <em>MEI Guidelines</em> en haut des
     définitions des éléments, attributs, etc. :
   </p>
   <div>
     <img style="width: 100%" src="./beam-module.png" />
   </div>
   <p>
-    Il s'agit simplement d'une référence facile aux modules. Si vous prévoyez de
+    Il s'agit simplement d'une référence pratique aux modules. Si vous prévoyez de
     travailler sur le MEI ODD, cependant, il est plus important de savoir que le
     code source MEI est divisé en suivant les modules. Le fichier
     <a
@@ -28,7 +28,7 @@
       rel="noopener, noreferrer"
       >&lt;schemaSpec&gt;</a
     >
-    dans
+    à
     <a
       href="https://github.com/music-encoding/music-encoding/blob/93d8c00cd14126af2e680d47f437042227eb2c0e/source/mei-source.xml#L83"
       target="_blank"
@@ -38,8 +38,8 @@
     définit un nouveau schéma avec l'espace de noms MEI
     (<code>@ns="http://www.music-encoding.org/ns/mei"</code>). Il a ensuite un
     certain nombre de sous-éléments <em>XInclude</em>. <em>XInclude</em> est
-    utilisé pour diviser un fichier XML logique plus grand en fichiers plus
-    petits, plus gérables. Ici, chaque module MEI est stocké dans un fichier
+    utilisé pour diviser un grand fichier XML logique en fichiers plus
+    petits et plus facile à gérer. Ici, chaque module MEI est stocké dans un fichier
     séparé dans le
     <a
       href="https://github.com/music-encoding/music-encoding/tree/develop/source/modules"
@@ -114,11 +114,11 @@
       target="_blank"
       rel="noopener, noreferrer"
       >usage éditorial</a
-    >). La portée de chacun de ces modules est décrite dans les Directives MEI.
+    >). La portée de chacun de ces modules est décrite dans les <em>MEI Guidelines</em>.
   </p>
   <p>
-    Outre une meilleure maintenabilité du code source MEI grâce à des fichiers
-    plus petits, la division permet principalement de "désactiver" plus
+    Outre de rendre le code source MEI plus facile à maintenir grâce à des fichiers
+    plus petits, la division permet également de « désactiver » plus
     facilement des parties plus importantes (-> modules) du schéma MEI.
   </p>
 </div>
