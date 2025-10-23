@@ -95,11 +95,12 @@
     déjà vu l'élément <a href="https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-classSpec.html" target="_blank"
       rel="noopener, noreferrer">&lt;classSpec&gt;</a> utilisé pour les <em>classes de modèle</em>. La seule différence
     ici est que les classes d'attributs utilisent l'attribut <strong>@type="atts"</strong>. De plus, tandis que les noms
-    des classes de modèle commencent toujours par <em>model.</em>, les classes d'attributs dans MEI commencent toujours
-    par <em>att.</em>. </p>
-  <p> Plus tôt dans ce tutoriel, nous avons vu la définition de l'élément <a href="/guidelines/v5/elements/role.html"
-      target="_blank" rel="noopener, noreferrer">&lt;role&gt;</a>. Regardons-la à nouveau, en omettant certaines parties
-    : </p>
+    des classes de modèle commencent toujours par « <em>model.</em> », les classes d'attributs dans MEI commencent toujours
+    par « <em>att.</em> ». </p>
+  <p>
+    Plus tôt dans ce tutoriel, nous avons vu la définition de l'élément <a href="/guidelines/v5/elements/role.html"
+      target="_blank" rel="noopener, noreferrer">&lt;role&gt;</a>. Regardons-la à nouveau, en omettant certaines parties :
+     </p>
   <pre class="codeblock">&lt;elementSpec ident="role" module="MEI.shared"&gt;
     &lt;desc&gt;Nom d'un rôle dramatique, tel qu'indiqué dans une liste de distribution.&lt;/desc&gt;
     &lt;classes&gt; 
@@ -110,9 +111,9 @@
     &lt;!-- contenu et remarques omis ici --&gt; 
   &lt;/elementSpec&gt;</pre>
   <p> Selon cette définition, <em>&lt;role&gt;</em> est membre (<em>&lt;memberOf&gt;</em>) des classes d'attributs
-    <em>att.common</em>, <em>att.facsimile</em> et <em>att.lang</em>, mais **pas** de <em>att.id</em>. Pourtant, la
+    <em>att.common</em>, <em>att.facsimile</em> et <em>att.lang</em>, mais pas de <em>att.id</em>. Pourtant, la
     documentation de <em>&lt;role&gt;</em> indique bien que <em>@xml:id</em> est disponible. La réponse se trouve dans
-    le **mécanisme d'imbrication des classes** : <em>&lt;role&gt;</em> hérite des attributs de <em>att.common</em> (qui,
+    le mécanisme d'imbrication des classes : <em>&lt;role&gt;</em> hérite des attributs de <em>att.common</em> (qui,
     en soi, n'en définit aucun). Mais <em>att.common</em> est à son tour membre de <em>att.basic</em>, qui apporte
     l'attribut <em>@xml:base</em>, et <em>att.basic</em> est lui-même membre de <em>att.id</em>, qui apporte finalement
     l'attribut <em>@xml:id</em>. Regardons brièvement la définition de <em>att.common</em> :
