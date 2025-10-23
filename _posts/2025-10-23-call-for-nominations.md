@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Call for nominations 2025"
-date: 2025-10-23 10:30:00 +0000
+date: 2025-10-28 00:00:00 +0000
 categories: update
 ---
 
