@@ -63,7 +63,7 @@
     La prochaine information est fournie avec l'élément
     <strong>&lt;classes&gt;</strong>, qui spécifie à quelles <em>classes</em>
     l'élément appartient. Nous couvrirons cela plus en détail plus tard, mais
-    pour vous donner une première compréhension : cela est utilisé pour définir
+    pour vous donner une première compréhension, il s'agit de définir
     quelles attributs sont disponibles sur l'élément et où il peut être utilisé
     à l'intérieur d'un fichier MEI.
   </p>
@@ -74,7 +74,7 @@
     <em>RelaxNG</em> (http://relaxng.org/ns/structure/1.0), comme indiqué par le
     préfixe <em>rng:</em> aux noms des éléments. Les niveaux suivants de
     balisage peuvent être compris de manière assez intuitive à partir des noms
-    des éléments : Le contenu peut être <em>un ou plusieurs</em>
+    des éléments. Le contenu peut être <em>un ou plusieurs</em>
     <em>choix</em> soit de <em>contenu textuel</em>, soit des éléments
     <a
       href="https://music-encoding.org/guidelines/v4/elements/role.html"
@@ -117,14 +117,15 @@
     <em>&lt;remarks&gt;</em>. Alors que l'élément <em>&lt;desc&gt;</em> fournit uniquement une brève description d'un élément (généralement une phrase), l'élément <em>&lt;remarks&gt;</em>
     offre souvent des informations supplémentaires sur son utilisation, ou, comme dans ce cas, précise qu'il est dérivé d'un élément existant dans un autre format.
     En plus de ce que l'on observe ici pour <em>&lt;castItem&gt;</em>, ODD propose deux autres types d'informations que l'on peut spécifier pour les éléments.
-Parfois, il est plus simple ou plus approprié de définir certains attributs directement sur un élément, plutôt que de passer par des classes d'attributs. Un exemple se trouve dans l'élément <em>&lt;title&gt;</em>
-, qui définit localement les attributs <em>&lt;level&gt;</em> et <em>&lt;type&gt;</em> à l'aide de l'élément <em>&lt;attList&gt;</em> à l'intérieur de <em>&lt;elementSpec&gt;</em>.
-L'autre type d'information absente de <em>&lt;castItem&gt;</em> concerne les règles Schematron, qui peuvent être définies à l'aide d'éléments <em>&lt;constraintSpec&gt;</em> Schematron fait partie intégrante de MEI et permet de vérifier certaines contraintes dépendantes du contexte dans les fichiers MEI.
-Toutefois, une documentation complète de Schematron dépasserait le cadre de ce tutoriel.
-Il y a d'autres tutoriels en ligne (comme 
+    Parfois, il est plus simple ou plus approprié de définir certains attributs directement sur un élément, plutôt que de passer par des classes d'attributs. Un exemple se trouve dans l'élément <em>&lt;title&gt;</em>
+    , qui définit localement les attributs <em>&lt;level&gt;</em> et <em>&lt;type&gt;</em> à l'aide de l'élément <em>&lt;attList&gt;</em> à l'intérieur de <em>&lt;elementSpec&gt;</em>.
+    L'autre type d'information absente de <em>&lt;castItem&gt;</em> concerne les règles Schematron, qui peuvent être définies à l'aide d'éléments <em>&lt;constraintSpec&gt;</em>. Schematron 
+    fait partie intégrante de MEI et permet de vérifier certaines contraintes dépendantes du contexte dans les fichiers MEI.
+    Toutefois, une documentation complète de Schematron dépasserait le cadre de ce tutoriel.
+    Il y a d'autres tutoriels en ligne (comme 
         <a href="http://dh.obdurodon.org/schematron-intro.xhtml" target="_blank" rel="noopener, noreferrer">ici</a> ou
         <a href="https://www.xml.com/pub/a/2003/11/12/schematron.html" target="_blank" rel="noopener, noreferrer">là</a>), et bien sûr
-        il est toujours possible d'étudier les règles Schematron déjà présentes dans MEI pour comprendre leur fonctionnement.Un bon point de départ est sans doute l'élément
+        il est toujours possible d'étudier les règles Schematron déjà présentes dans MEI pour comprendre leur fonctionnement. Un bon point de départ est sans doute l'élément
         <a href="/guidelines/v5/elements/staffDef.html#constraints" target="_blank" rel="noopener, noreferrer">&lt;staffDef&gt;</a>,
        qui est soumis à un grand nombre de règles Schematron.  
     </p>

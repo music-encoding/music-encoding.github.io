@@ -58,8 +58,7 @@
     <em>&lt;rng:ref&gt;</em> nous est donné, pointant vers quelque chose nommé
     <em>model.textPhraseLike.limited</em>. Il s'agit d'une
     <strong>classe modèle</strong>. Les classes modèles sont destinées à servir
-    de substituts pour des groupes d'éléments. La classe modèle elle-même ne
-    sait pas quels éléments en font partie :
+    de substituts pour des groupes d'éléments. La classe de modèle elle-même ne connaît pas les éléments dont elle est composée : elle agit simplement comme un point de regroupement logique.
   </p>
   <pre class="codeblock">
 &lt;classSpec ident="model.textPhraseLike.limited" module="MEI.shared" type="model"&gt;
@@ -72,18 +71,18 @@
 &lt;/classSpec&gt;</pre
   >
   <p>
-    Une classe modèle est encodée avec un
+    Une classe modèle est encodée avec un élément
     <a
       href="https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-classSpec.html"
       target="_blank"
       rel="noopener, noreferrer"
       >&lt;classSpec&gt;</a
     >
-    élément, qui a l'attribut <strong>@type="model"</strong>. Comme les
+    , possédant l'attribut <strong>@type="model"</strong>. Comme les
     éléments, elle est identifiée de manière unique avec l'attribut
     <strong>@ident</strong>. Elle est attribuée à l'un des modules MEI avec
     l'attribut <em>@module</em>. MEI suit la convention que tous les noms de
-    classes modèle sont préfixés par la chaîne "<em>model.</em>". Ils ont
+    classes modèle sont préfixés par la chaîne « <em>model.</em> ». Ils ont
     également toujours un <em>&lt;desc&gt;</em> avec une brève explication de
     l'objectif du groupe. Passons les éléments <em>&lt;memberOf&gt;</em> sur
     <em>&lt;classSpec&gt;</em> de l'exemple ci-dessus pour un moment, et voyons
@@ -97,7 +96,7 @@
       target="_blank"
       rel="noopener, noreferrer"
       >model.textPhraseLike.limited</a
-    >, nous voyons que six éléments sont directement des "<em>membres</em>" de
+    >, nous voyons que six éléments sont directement des « <em>membres</em> » de
     cette classe modèle : <em>&lt;dedicatee&gt;</em>,
     <em>&lt;dimensions&gt;</em>, <em>&lt;extent&gt;</em>, <em>&lt;seg&gt;</em>,
     <em>&lt;symbol&gt;</em>, et <em>&lt;term&gt;</em>. Regardons

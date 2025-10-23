@@ -14,39 +14,28 @@
         &lt;datatype maxOccurs="1" minOccurs="1"&gt;
             &lt;rng:data type="ID"/&gt;
         &lt;/datatype&gt;
-    &lt;/attDef&gt;</pre
-  >
+    &lt;/attDef&gt;</pre>
   <p>
     Les attributs sont spécifiés à l'aide de l'élément
-    <a
-      href="https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-attDef.html"
-      target="_blank"
-      rel="noopener, noreferrer"
-      >&lt;attDef&gt;</a
-    >
+    <a href="https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-attDef.html" target="_blank"
+      rel="noopener, noreferrer">&lt;attDef&gt;</a>
     et suivent certaines conventions que nous avons déjà vues sur les éléments
     et les classes modèles : leur nom est fourni dans l'attribut
     <em>@ident</em>, et ils ont un élément <em>&lt;desc&gt;</em> avec une brève
     description. Ce qui est nouveau, c'est l'attribut <strong>@usage</strong>,
     qui spécifie quand utiliser l'attribut spécifié. La valeur ici,
-    "<em>opt</em>", est utilisée pour les attributs facultatifs – <em
-      >@xml:id</em
-    >
+    « <em>opt</em> », est utilisée pour les attributs facultatifs – <em>@xml:id</em>
     peut être utilisé sur tous les éléments MEI, mais ce n'est pas obligatoire.
-    D'autres valeurs autorisées pour <em>@usage</em> sont "<em>req</em>"
-    (requis) et "<em>rec</em>" (recommandé lorsqu'il est applicable).
+    D'autres valeurs autorisées pour <em>@usage</em> sont « <em>req</em> »
+    (requis) et « <em>rec</em> » (recommandé lorsqu'il est applicable).
   </p>
   <p>
     Maintenant, regardons où se trouvent ces éléments <em>&lt;attDef&gt;</em>.
-    Même si ce n'est pas vraiment la solution préférée, parfois les attributs
+    Parfois, et même si cela n'est pas la solution privilégiée, les attributs
     sont définis à l'endroit où ils doivent être utilisés, comme avec l'attribut
     <em>@type</em> sur
-    <a
-      href="https://music-encoding.org/guidelines/v4/elements/meihead.html"
-      target="_blank"
-      rel="noopener, noreferrer"
-      >&lt;meiHead&gt;</a
-    >
+    <a href="https://music-encoding.org/guidelines/v4/elements/meihead.html" target="_blank"
+      rel="noopener, noreferrer">&lt;meiHead&gt;</a>
     :
   </p>
   <pre class="codeblock">
@@ -77,18 +66,17 @@
         &lt;/attDef&gt;
     &lt;/attList&gt;
     &lt;!-- Les remarques sont omises pour des raisons de brièveté --&gt;
-&lt;/elementSpec&gt;</pre
-  >
+&lt;/elementSpec&gt;</pre>
   <p>
     Comme nous pouvons le voir, les attributs sont simplement contenus dans un
     enfant <em>&lt;attList&gt;</em> à l'intérieur de
     <em>&lt;elementSpec&gt;</em>. Cependant, dans la plupart des cas, un
     attribut est censé être disponible sur plus d'un élément. L'attribut
-    <em>@xml:id</em> introduit ci-dessus est disponible sur chaque élément MEI,
-    il devrait donc être défini plusieurs centaines de fois – encore une fois,
-    cela n'est ni maintenable ni efficace. Au lieu de cela, ODD utilise à
+    <em>@xml:id</em> introduit ci-dessus est disponible sur <strong>tous</strong> les élément MEI,
+    il devrait donc être défini plusieurs centaines de fois – cela n'est ni maintenable ni efficace. Pour pallier ce
+    problème, ODD utilise à
     nouveau un système de classes, cette fois-ci pour les
-    <strong>classes d'attributs</strong>. Regardons comment <em>@xml:id</em> est
+    <strong>classes d'attributs</strong>. Voyons comment <em>@xml:id</em> est
     réellement distribué dans MEI en utilisant la classe d'attributs
     <em>att.id</em> :
   </p>
@@ -97,13 +85,52 @@
     &lt;desc&gt;Attributs qui identifient de manière unique un élément.&lt;/desc&gt;
     &lt;attList org="group"&gt;
         &lt;attDef ident="xml:id" usage="opt"&gt;
-            &lt;!-- On saute cela, car c'est exactement la même chose que dans l'exemple ci-dessus --&gt;
+            &lt;!-- ignorons ce passage, identique à l'exemple précédant --&gt;
         &lt;/attDef&gt;
     &lt;/attList&gt;
-&lt;/classSpec&gt;</pre
-  >
+&lt;/classSpec&gt;</pre>
   <p>
-    Nous avons déjà vu le <em>&lt;attDef&gt;</em>, et il n'y a aucune différence
-    entre les attributs définis à l'intérieur d'un élément ou à l'int
+    Nous avons déjà vu l'élément <em>&lt;attDef&gt;</em> ; il n'y a aucune différence
+    entre un attribut défini dans un élément et un attribut défini dans une classe d'attributs. Nous avons également
+    déjà vu l'élément <a href="https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-classSpec.html" target="_blank"
+      rel="noopener, noreferrer">&lt;classSpec&gt;</a> utilisé pour les <em>classes de modèle</em>. La seule différence
+    ici est que les classes d'attributs utilisent l'attribut <strong>@type="atts"</strong>. De plus, tandis que les noms
+    des classes de modèle commencent toujours par <em>model.</em>, les classes d'attributs dans MEI commencent toujours
+    par <em>att.</em>. </p>
+  <p> Plus tôt dans ce tutoriel, nous avons vu la définition de l'élément <a href="/guidelines/v5/elements/role.html"
+      target="_blank" rel="noopener, noreferrer">&lt;role&gt;</a>. Regardons-la à nouveau, en omettant certaines parties
+    : </p>
+  <pre
+    class="codeblock">&lt;elementSpec ident="role" module="MEI.shared"&gt; &lt;desc&gt;Nom d'un rôle dramatique, tel qu'indiqué
+    dans une liste de distribution.&lt;/desc&gt; &lt;classes&gt; &lt;memberOf key="att.common"/&gt; &lt;memberOf key="att.facsimile"/&gt; &lt;memberOf key="att.lang"/&gt; &lt;/classes&gt; &lt;!-- contenu et remarques omis ici --&gt; &lt;/elementSpec&gt;</pre>
+  <p> Selon cette définition, <em>&lt;role&gt;</em> est membre (<em>&lt;memberOf&gt;</em>) des classes d'attributs
+    <em>att.common</em>, <em>att.facsimile</em> et <em>att.lang</em>, mais **pas** de <em>att.id</em>. Pourtant, la
+    documentation de <em>&lt;role&gt;</em> indique bien que <em>@xml:id</em> est disponible. La réponse se trouve dans
+    le **mécanisme d'imbrication des classes** : <em>&lt;role&gt;</em> hérite des attributs de <em>att.common</em> (qui,
+    en soi, n'en définit aucun). Mais <em>att.common</em> est à son tour membre de <em>att.basic</em>, qui apporte
+    l'attribut <em>@xml:base</em>, et <em>att.basic</em> est lui-même membre de <em>att.id</em>, qui apporte finalement
+    l'attribut <em>@xml:id</em>. Regardons brièvement la définition de <em>att.common</em> :
+  </p>
+  <pre
+    class="codeblock">&lt;classSpec ident="att.common" module="MEI.shared" type="atts"&gt; &lt;desc&gt;Attributs communs à de nombreux éléments.&lt;/desc&gt; &lt;classes&gt; &lt;memberOf key="att.basic"/&gt; &lt;memberOf key="att.labelled"/&gt; &lt;memberOf key="att.linking"/&gt; &lt;memberOf key="att.nNumberLike"/&gt; &lt;memberOf key="att.responsibility"/&gt; &lt;memberOf key="att.typed"/&gt; &lt;/classes&gt; &lt;/classSpec&gt;</pre>
+  <p> Ainsi, c'est encore par l'usage de l'élément <em>&lt;memberOf&gt;</em> et de son attribut <em>@key</em> que
+    l'appartenance à différentes classes est établie dans MEI — un mécanisme désormais familier. Tout comme pour les
+    classes de modèle, les **classes d'attributs** vont des plus générales aux plus spécifiques. En adhérant aux bonnes
+    classes d'attributs, un élément obtient ainsi exactement le jeu d'attributs approprié, et il devient possible
+    d'ajouter ou de retirer sélectivement des attributs à de nouveaux ou anciens éléments simplement en modifiant ces
+    associations. </p>
+  <p> Enfin, la spécification de <em>att.common</em> ci-dessus révèle une autre classe d'attributs, <em>att.typed</em>,
+    qui fournit l'attribut <em>@type</em>. Celui-ci n'a manifestement pas été utilisé dans <em>&lt;meiHead&gt;</em>,
+    comme nous l'avons vu plus haut. La raison en est que cette classe d'attributs définit un <em>@type</em> très
+    générique : <em>Désignation caractérisant l'élément d'une certaine manière, selon un système de classification ou
+      une typologie à étiquette unique.</em> Comparé à cela, le <em>@type</em> de <em>&lt;meiHead&gt;</em> possède une
+    définition bien plus stricte. De manière générale, MEI cherche à éviter d'utiliser un même nom d'attribut pour
+    plusieurs définitions différentes, même si cela n'entraîne pas de confusion technique. Grâce à la perspective « par
+    classe » des attributs (voir la section « attributs » de la documentation de <a
+      href="/guidelines/v5/elements/meiHead.html#attributes" target="_blank"
+      rel="noopener, noreferrer">&lt;meiHead&gt;</a>), il est facile de remonter à l'origine de n'importe quel attribut
+    autorisé. </p>
+  <p> Il ne reste plus qu'une grande partie à comprendre pour maîtriser ODD tel qu'il est utilisé pour définir MEI : les
+    **types de données**, qui seront présentés dans l'étape suivante de ce tutoriel. </p>
   </p>
 </div>

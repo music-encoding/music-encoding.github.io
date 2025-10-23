@@ -32,8 +32,8 @@
         rel="noopener, noreferrer"
         >Pure ODD</a
       ></em
-    >. En été 2020, la MEI continue cependant d'utiliser l'ancienne version d'ODD,
-    car la nouvelle version n'apportait pas d'avantages pertinents pour la MEI, mais aurait
+    >. En été 2020, la MEI a décidé de continuer d'utiliser l'ancienne version d'ODD,
+    car la nouvelle version n'apportait pas d'avantages pertinents, mais aurait
     entraîné un travail de maintenance significatif pour divers outils et
     flux de travail liés à la MEI.
   </p>
@@ -44,14 +44,11 @@
       ><a href="https://relaxng.org/" target="_blank" rel="noopener, noreferrer"
         >RelaxNG</a
       ></em
-    >. En fin de compte, les fichiers ODD sont généralement compilés en un
-    schéma RelaxNG (ou XSD), car il n'y a aucun support logiciel
-    pour une validation directe à partir d'un fichier ODD. Cependant, le recours à RelaxNG dans
-    ODD ajoute une dépendance supplémentaire au flux de travail TEI, amoindrissant quelques peu
-    la liberté technique dans la définition de la TEI et/ou d'ODD. Comme la MEI est déjà défini dans un format qui est hors du contrôle
-    direct de la communauté MEI et doit de toute façon gérer plusieurs espaces
-    de noms XML, l'argument en faveur de la définition cohérente de tout en
-    <em>Pure ODD</em> est moins convaincant et n'a donc pas été suivi jusqu'à
-    présent.
+    >. De toute façon, les fichiers ODD finissent presque toujours par être compilés en un
+    schéma RelaxNG (ou XSD), car il n'existe pas de logiciel
+    capable de valider directement un fichier ODD. Cependant, le recours à RelaxNG dans
+    ODD crée une dépendance supplémentaire dans le processus de définition des schémas TEI ou MEI, et limite légèrement leur flexibilité. 
+    Étant donné que MEI utilise déjà un format externe et qu'il doit gérer plusieurs espaces de noms XML, l'idée de tout redéfinir uniquement en
+    <em>Pure ODD</em> est moins nécessaire, et n'a donc pas été mise en œuvre jusqu'à aujourd'hui.
   </p>
 </div>
