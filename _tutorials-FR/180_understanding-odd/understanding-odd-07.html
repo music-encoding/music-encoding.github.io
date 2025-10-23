@@ -100,9 +100,15 @@
   <p> Plus tôt dans ce tutoriel, nous avons vu la définition de l'élément <a href="/guidelines/v5/elements/role.html"
       target="_blank" rel="noopener, noreferrer">&lt;role&gt;</a>. Regardons-la à nouveau, en omettant certaines parties
     : </p>
-  <pre
-    class="codeblock">&lt;elementSpec ident="role" module="MEI.shared"&gt; &lt;desc&gt;Nom d'un rôle dramatique, tel qu'indiqué
-    dans une liste de distribution.&lt;/desc&gt; &lt;classes&gt; &lt;memberOf key="att.common"/&gt; &lt;memberOf key="att.facsimile"/&gt; &lt;memberOf key="att.lang"/&gt; &lt;/classes&gt; &lt;!-- contenu et remarques omis ici --&gt; &lt;/elementSpec&gt;</pre>
+  <pre class="codeblock">&lt;elementSpec ident="role" module="MEI.shared"&gt;
+    &lt;desc&gt;Nom d'un rôle dramatique, tel qu'indiqué dans une liste de distribution.&lt;/desc&gt;
+    &lt;classes&gt; 
+      &lt;memberOf key="att.common"/&gt; 
+      &lt;memberOf key="att.facsimile"/&gt; 
+      &lt;memberOf key="att.lang"/&gt; 
+    &lt;/classes&gt; 
+    &lt;!-- contenu et remarques omis ici --&gt; 
+  &lt;/elementSpec&gt;</pre>
   <p> Selon cette définition, <em>&lt;role&gt;</em> est membre (<em>&lt;memberOf&gt;</em>) des classes d'attributs
     <em>att.common</em>, <em>att.facsimile</em> et <em>att.lang</em>, mais **pas** de <em>att.id</em>. Pourtant, la
     documentation de <em>&lt;role&gt;</em> indique bien que <em>@xml:id</em> est disponible. La réponse se trouve dans
@@ -111,11 +117,19 @@
     l'attribut <em>@xml:base</em>, et <em>att.basic</em> est lui-même membre de <em>att.id</em>, qui apporte finalement
     l'attribut <em>@xml:id</em>. Regardons brièvement la définition de <em>att.common</em> :
   </p>
-  <pre
-    class="codeblock">&lt;classSpec ident="att.common" module="MEI.shared" type="atts"&gt; &lt;desc&gt;Attributs communs à de nombreux éléments.&lt;/desc&gt; &lt;classes&gt; &lt;memberOf key="att.basic"/&gt; &lt;memberOf key="att.labelled"/&gt; &lt;memberOf key="att.linking"/&gt; &lt;memberOf key="att.nNumberLike"/&gt; &lt;memberOf key="att.responsibility"/&gt; &lt;memberOf key="att.typed"/&gt; &lt;/classes&gt; &lt;/classSpec&gt;</pre>
+  <pre class="codeblock">&lt;classSpec ident="att.common" module="MEI.shared" type="atts"&gt; 
+      &lt;desc&gt;Attributs communs à de nombreux éléments.&lt;/desc&gt; 
+      &lt;classes&gt; &lt;memberOf key="att.basic"/&gt;
+        &lt;memberOf key="att.labelled"/&gt; 
+        &lt;memberOf key="att.linking"/&gt; 
+        &lt;memberOf key="att.nNumberLike"/&gt; 
+        &lt;memberOf key="att.responsibility"/&gt; 
+        &lt;memberOf key="att.typed"/&gt; 
+      &lt;/classes&gt; 
+    &lt;/classSpec&gt;</pre>
   <p> Ainsi, c'est encore par l'usage de l'élément <em>&lt;memberOf&gt;</em> et de son attribut <em>@key</em> que
     l'appartenance à différentes classes est établie dans MEI — un mécanisme désormais familier. Tout comme pour les
-    classes de modèle, les **classes d'attributs** vont des plus générales aux plus spécifiques. En adhérant aux bonnes
+    classes de modèle, les <strong>>classes d'attributs</strong> vont des plus générales aux plus spécifiques. En adhérant aux bonnes
     classes d'attributs, un élément obtient ainsi exactement le jeu d'attributs approprié, et il devient possible
     d'ajouter ou de retirer sélectivement des attributs à de nouveaux ou anciens éléments simplement en modifiant ces
     associations. </p>
@@ -131,6 +145,6 @@
       rel="noopener, noreferrer">&lt;meiHead&gt;</a>), il est facile de remonter à l'origine de n'importe quel attribut
     autorisé. </p>
   <p> Il ne reste plus qu'une grande partie à comprendre pour maîtriser ODD tel qu'il est utilisé pour définir MEI : les
-    **types de données**, qui seront présentés dans l'étape suivante de ce tutoriel. </p>
+    <stong>types de données</stong>, qui seront présentés dans l'étape suivante de ce tutoriel. </p>
   </p>
 </div>
