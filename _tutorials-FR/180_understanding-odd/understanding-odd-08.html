@@ -99,7 +99,106 @@
                 &lt;desc&gt;Début et fin de répétition.&lt;/desc&gt;
             &lt;/valItem&gt;
             &lt;valItem ident="rptend"&gt;
-                &
-</pre
-  >
+                &lt;desc&gt;Fin de répétition (Unicode 1D107).&lt;/desc&gt;
+            &lt;/valItem&gt;
+            &lt;valItem ident="single"&gt;
+                &lt;desc&gt;(Unicode 1D100).&lt;/desc&gt;
+            &lt;/valItem&gt;
+        &lt;/valList&gt;
+    &lt;/content&gt;
+&lt;/macroSpec&gt;</pre>
+</pre>
+<p>
+        Nous retrouvons dans cet exemple l'usage des attributs <em>@ident</em> et <em>@module</em> et de l'élément enfant <em>&lt;desc&gt;</em>. 
+        Ce qui nous intéresse ici est l'attribut <em>@type</em> dont la valeur est « <em>dt</em> » (pour data type).
+        Par convention, tous les noms de types de données utilisent le préfixe « <em>data.</em> », et le nom qui suit est écrit en capitales.
+        Nous voyons ensuite, l'élément <em>&lt;value list&gt;</em> qui est dans notre cas indiqué comme « closed ». Toutes les valeurs possibles 
+        sont énumérées dans cette liste. Dans le cas contraire, l'attribut <em>@type</em> avec la valeur « <em>semi</em> » aurait indiqué une 
+        liste « semi-ouverte » qui propose des valeurs recommandées, mais permet à l'utilisateur d'en définir d'autres si aucune ne convient à la situation.
+        Cela offre en général un bon compromis entre la cohérence du schéma et la possibilité de l'étendre selon les besoins.
+    </p>
+    <p>
+        Comme pour <em>model</em> et <em>attribute classes</em>, les types de données peuvent être imbriqués. Nous avons ici un exemple avec le type de données :
+        <em><a href="/guidelines/v5/data-types/data.NOTEHEADMODIFIER.html" target="_blank" rel="noopener, noreferrer">data.NOTEHEADMODIFIER</a></em> 
+    </p>
+    <pre class="codeblock">&lt;macroSpec ident="data.NOTEHEADMODIFIER" module="MEI" type="dt"&gt;
+    &lt;desc&gt;Capture tous les « modificateurs » de tête de note ; c'est-à-dire les symboles ajoutés à la tête de note, comme des barres obliques, des lignes, du texte ou des encadrements, etc.&lt;/desc&gt;
+    &lt;content&gt;
+        &lt;rng:choice&gt;
+            &lt;rng:ref name="data.NOTEHEADMODIFIER.list" /&gt;
+            &lt;rng:ref name="data.NOTEHEADMODIFIER.pat" /&gt;
+        &lt;/rng:choice&gt;
+    &lt;/content&gt;
+&lt;/macroSpec&gt;</pre>
+    <p>
+        Cela signifie qu'un attribut utilisant le type de donnée <em>data.NOTEHEADMODIFIER</em> acceptera des valeurs conformes aux règles définies soit par 
+        le type <em>data.NOTEHEADMODIFIER.list</em>, soit par le type <em>data.NOTEHEADMODIFIER.pat</em>. 
+    </p>
+    <p>
+        Le dernier type de donnée que nous souhaitons présenter est <em>data.COLORVALUES</em>.  
+Ce type est utilisé par <em>data.COLOR</em>, qui sert à contrôler les valeurs d'attributs tels que <em>@color</em> (via
+        <em><a href="/guidelines/v5/attribute-classes/att.color.html" target="_blank" rel="noopener, noreferrer">att.color</a></em>) 
+        ou <em>@beam.color</em> (via 
+        <em><a href="/guidelines/v5/attribute-classes/att.beaming.vis.html" target="_blank" rel="noopener, noreferrer">att.beaming.vis</a></em>).
+        Il utilise un ensemble d'<em>expressions régulières</em> pour définir les différents mécanismes de codage des couleurs :
+    </p>
+    
+    <pre class="codeblock">&lt;macroSpec ident="data.COLORVALUES" module="MEI" type="dt"&gt;
+    &lt;desc&gt;Valeur paramétrables de couleur&lt;/desc&gt;
+    &lt;content&gt;
+        &lt;rng:choice&gt;
+            &lt;rng:data type="token"&gt;
+                &lt;rng:param name="pattern"&gt;#[0-9A-Fa-f]{6,6}&lt;/rng:param&gt;
+            &lt;/rng:data&gt;
+            &lt;rng:data type="token"&gt;
+                &lt;rng:param name="pattern"&gt;#[0-9A-Fa-f]{8,8}&lt;/rng:param&gt;
+            &lt;/rng:data&gt;
+            &lt;rng:data type="token"&gt;
+                &lt;rng:param name="pattern"&gt;
+                    rgb\((\s*(([01]?[0-9]?[0-9])|2[0-4][0-9]|25[0-5])\s*,\s*){2}
+                    ([01]?[0-9]?[0-9]|2[0-4][0-9]|25[0-5])\s*\)
+                &lt;/rng:param&gt;
+            &lt;/rng:data&gt;
+            &lt;rng:data type="token"&gt;
+                &lt;rng:param name="pattern"&gt;
+                    rgba\(\s*(([01]?[0-9]?[0-9]|2[0-4][0-9]|25[0-5])\s*,\s*){3}(
+                    0(\.\d+)?|1(\.0+)?)\s*\)|rgba\(\s*(((\d{1,2})?%|100%)\s*,\s*
+                    ){2}(\d{1,2}%|100%)\s*,\s*(0(\.\d+)?|1(\.0+)?)\s*\)
+                &lt;/rng:param&gt;
+            &lt;/rng:data&gt;
+            &lt;rng:data type="token"&gt;
+                &lt;rng:param name="pattern"&gt;
+                    hsl\(\s*((\d{1,2})|[12]\d{2}|3[0-5]\d|360)\s*,\s*(\d{1,2}%|1
+                    00%)\s*,\s*(\d{1,2}%|100%)\s*\)
+                &lt;/rng:param&gt;
+            &lt;/rng:data&gt;
+            &lt;rng:data type="token"&gt;
+                &lt;rng:param name="pattern"&gt;
+                    hsla\(\s*(\d{1,2}|[12]\d{2}|3[0-5]\d|360)\s*,\s*(\d{1,2}%|10
+                    0%)\s*,\s*(\d{1,2}%|100%)\s*,\s*(0(\.\d+)?|1(\.0+)?)\s*\)
+                &lt;/rng:param&gt;
+            &lt;/rng:data&gt;
+        &lt;/rng:choice&gt;
+    &lt;/content&gt;
+&lt;/macroSpec&gt;</pre>
+    <p>
+        L'élément <em>&lt;rng:choice&gt;</em> qui entoure les différents éléments <em>&lt;rng:data&gt;</em> indique que la valeur pour l'attribut 
+        <em>@color</em> doit correspondre à l'un des modèles d'expression régulière contenus.
+        Expliquer en détail la sémantique des expressions régulières dépasserait clairement le cadre de ce tutoriel : en résumé, il s'agit d'un moyen de décrire un modèle de chaîne de caractères, 
+        permettant de vérifier si une chaîne donnée correspond ou non à ce modèle.
+        Pour découvrir les expressions régulières de façon ludique, vous pouvez consulter le site <strong>Regex Crossword</strong>, disponible à l'adresse suivante : 
+        <a href="https://regexcrossword.com/" target="_blank" rel="noopener, noreferrer">https://regexcrossword.com/</a>. 
+    </p>
+    <p>
+        Les types de données sont souvent plus simples à comprendre que les <em>classes de modèle</em> ou les <em>classes d'attributs</em>. En effet, ils sont généralement moins imbriqués : 
+        un type de donnée définit simplement le format qu'une valeur peut prendre (par exemple, une couleur, un nombre ou une date), sans dépendre de nombreuses autres définitions.
+
+        C'est pour cette raison que les types de données sont souvent considérés comme une bonne porte d'entrée pour découvrir ODD — il y a moins de notions à assimiler avant de pouvoir 
+        les utiliser. Nous ne nous attarderons donc pas sur le sujet. Passons plutôt aux <em>Macros</em>.
+    </p>
+
 </div>
+
+
+            
+           
