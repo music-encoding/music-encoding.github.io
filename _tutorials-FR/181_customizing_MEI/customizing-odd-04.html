@@ -1,6 +1,6 @@
 <div>
   <p>
-    Vous avez déjà appris comment utiliser le
+    Vous avez déjà appris comment utiliser
     <a
       href="https://meigarage.edirom.de/profiler"
       target="_blank"
@@ -17,24 +17,23 @@
     <code>.odd</code> avec cette personnalisation. Nous supposons que votre
     personnalisation exclut certains modules, éléments et classes d'attributs.
     Examinons maintenant comment cela se manifeste dans le fichier de
-    personnalisation ODD. Veuillez l'ouvrir avec n'importe quel éditeur XML
-    pratique.
+    personnalisation ODD. Ouvrez le avec l'éditeur XML de votre choix.
   </p>
   <p>
-    Vous trouverez un fichier TEI normal, avec quelques avertissements en haut,
+    Vous trouverez un fichier TEI, avec un avertissement en commentaire, dans les premières lignes du fichier,
     et un élément <code>&lt;teiHeader&gt;</code> qui peut servir de point de
     départ pour fournir une documentation appropriée pour votre
-    personnalisation. Vous voudrez certainement ajuster le
+    personnalisation. Vous pouvez ajuster le
     <code>&lt;respStmt&gt;</code> (déclaration de responsabilité) qui se trouve
-    généralement vers la ligne 27 pour revendiquer la responsabilité. Le contenu
-    intéressant commence à la ligne 54 (le numéro exact peut varier). Là, nous
+    généralement vers la ligne 27 pour revendiquer la responsabilité de cette personnalisation. Le contenu
+    qui nous intéresse commence à la ligne 54 (le numéro exact peut varier). Là, nous
     avons l'élément
     <a
       href="https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-schemaSpec.html"
       target="_blank"
       rel="noopener, noreferrer"
       >&lt;schemaSpec&gt;</a
-    >, qui commence notre personnalisation. Mettons de côté les attributs
+    > qui commence notre personnalisation. Mettons de côté les attributs
     spécifiés ici, et ignorons également l'élément
     <code>&lt;constraintSpec&gt;</code> pour le moment.
   </p>
@@ -52,31 +51,31 @@
     celui-ci dans votre fichier de personnalisation.
   </p>
   <p>
-    Sur un ou plusieurs <code>&lt;moduleRef&gt;</code>, vous devriez voir un
+    Dans un ou plusieurs <code>&lt;moduleRef&gt;</code>, vous devriez voir un
     attribut supplémentaire <code>@except</code>. Cet attribut contient une
-    <em>liste d'éléments</em> du module spécifié, qui doivent être
-    <em>exclus</em> de la personnalisation. Fondamentalement, ici, vous pouvez
-    prendre sélectivement des éléments individuels, tout en conservant tous les
-    autres du module actuel dans votre personnalisation. ODD prend également en
-    charge l'approche inverse permettant d'autoriser explicitement des éléments
-    d'un module grâce à l'attribut <code>@include</code>. Il n'est pas autorisé
-    de combiner les deux approches, et selon les directives TEI, les processeurs
-    ODD sont invités à émettre un message d'erreur. Le MEI ProfileDrafter
-    comprendra les deux approches lors de l'importation de personnalisations
-    existantes, mais préférera <em>@except</em> à <em>@include</em> lors de
-    l'exportation de données.
+    <em>liste d'éléments</em> du module spécifié qui doivent être
+    <em>exclus</em> de la personnalisation. En d'autres termes, il permet de 
+    sélectionner précisément les éléments à retirer, tout en conservant tous les 
+    autres éléments du module dans votre personnalisation. ODD propose également 
+    l'approche inverse en permettant d'autoriser explicitement des éléments
+    d'un module grâce à l'attribut <code>@include</code>. Il n'est toutefois pas 
+    permis de combiner les deux approches. Conformément aux directives TEI, les 
+    processeurs ODD signaleront cela comme une erreur. Lors de l'importation de 
+    personnalisations existantes, MEI ProfileDrafter reconnaît ces deux méthodes, 
+    mais lors de l'exportation des données, il privilégiera l'attribut <em>@except</em> 
+    plutôt que <em>@include</em>
   </p>
   <p>
-    Enfin, à la fin de votre fichier ODD, il y aura une liste d'éléments
+    Enfin, à la fin de votre fichier ODD, vous trouverez une liste d'éléments
     <code>&lt;classSpec&gt;</code> (<a
       href="https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-classSpec.html"
       target="_blank"
       rel="noopener, noreferrer"
       >spécification de classe</a
-    >) avec <code>@type="atts"</code>. Ils utilisent également l'attribut
+    >) avec <code>@type="atts"</code>. Ces éléments utilisent également l'attribut
     <code>@ident</code> pour identifier des classes d'attributs individuelles.
-    Veuillez noter que cet élément n'a aucune référence au module dans lequel
-    cet attribut est défini. Au lieu de cela, et plus important encore, il
+    Notez que cet élément ne contient aucune référence au module dans lequel l'attribut est défini.
+    À la place – et c'est plus important – il
     utilise l'attribut <code>@mode</code>
     pour spécifier ce qui doit être fait aux sources MEI originales, qui sont
     censées être modifiées par votre personnalisation. Ici, la seule valeur
