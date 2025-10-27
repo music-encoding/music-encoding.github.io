@@ -1,0 +1,72 @@
+<div>
+  <p>
+    Lorsque la musique se décompose en plusieurs instruments ou voix qui se
+    partagent une même portée, il est parfois nécessaire de "déplacer" des
+    événements comme des notes vers une position ultérieure dans la mesure, sans
+    signifier pour autant que l'espace généré pour ce déplacement est un
+    silence. C'est généralement le cas lorsque le document encodé alterne entre
+    une notation en accords et une représentation en notes séparées au sein
+    d'une mesure (cf. figure ci-dessous). Comme la MEI utilise l'élément
+    <a
+      href="/guidelines/v4/elements/layer.html"
+      target="_blank"
+      rel="noopener, noreferrer"
+      >&lt;layer&gt;</a
+    >
+    pour disposer plusieurs instruments, et que, dans ces situations, un
+    instrument bascule d'une couche à l'autre au milieu d'une mesure, les
+    "trous" dans ces mesures doivent être comblées. C'est là que l'élément
+    <code>&lt;space&gt;</code> intervient.
+    <img
+      style="display: block; margin: 0.5rem auto; width: 240px"
+      src="./104_rests-spaces.png"
+      alt="Une situation nécessitant des éléments d'espace"
+    />
+  </p>
+  <p>
+    Bien sûr, un espace n'est pas vraiment un silence. Cependant, les silences
+    (invisibles) sont souvent utilisés à ces fins dans d'autres formats
+    d'encodage ou éditeurs de partitions. L'avantage de l'élément
+    <code>&lt;space&gt;</code> de la MEI est qu'il n'a aucune signification
+    sémantique - il pousse simplement d'autres événements autour. Cela facilite
+    l'encodage et l'extraction de voix individuelles, car aucun élément porteur
+    d'informations inexistantes n'est introduit à tort pour une meilleure
+    coordination.
+  </p>
+  <p>
+    Cependant, vous pouvez appliquer une certaine durée à l'élément
+    <code>&lt;space&gt;</code> en utilisant l'attribut <code>@dur</code>. Vous
+    pouvez même utiliser <code>@dots</code> pour prolonger cette durée de la
+    moitié de sa valeur. La durée que vous appliquez à
+    <code>&lt;space&gt;</code> est le nombre de temps que les événements, comme
+    une <code>&lt;note&gt;</code>, suivant le <code>&lt;space&gt;</code>, sont
+    déplacés vers la droite.
+  </p>
+  <p class="task">
+    Dans l'éditeur ci-dessous, vous voyez un encodage prérempli d'un Sol noire
+    (positionnée au premier temps dans la deuxième couche). Déplacez
+    cette note à la fin de la mesure, de manière à ce qu'elle se trouve sur le
+    dernier temps sous le Ré noire, comme sur l'image ci-dessus. Pour ce faire,
+    utilisez l'élément <code>&lt;space&gt;</code> et appliquez une durée
+    appropriée (elle doit être de 3 temps au total). En fait, il existe
+    plusieurs façons de l'encoder :
+  </p>
+  <ul>
+    <li>
+      avec trois <code>&lt;space&gt;</code> utilisant la même valeur pour
+      <code>@dur</code>,
+    </li>
+    <li>
+      avec deux éléments <code>&lt;space&gt;</code> utilisant uniquement
+      <code>@dur</code>, mais avec deux valeurs différentes,
+    </li>
+    <li>
+      ou même avec un seul élément <code>&lt;space&gt;</code>, utilisant
+      <code>@dur</code> et <code>@dots</code>.
+    </li>
+  </ul>
+  <p>
+    Vous pouvez jouer avec les valeurs des attributs pour voir comment elles
+    influent sur le rendu. Essayez les trois solutions possibles !
+  </p>
+</div>

@@ -1,0 +1,90 @@
+<div>
+  <p>
+    Pour les étapes suivantes, vous devriez ouvrir
+    <a
+      href="https://meigarage.edirom.de/profiler"
+      target="_blank"
+      rel="noopener, noreferrer"
+      >MEI ProfileDrafter</a
+    >
+    dans une fenêtre de navigateur séparée (ou un onglet) pour suivre ces
+    instructions.
+  </p>
+  <!--<div>
+        <img style="width: 100%;" src="./profileDrafter_overview.png"/>
+    </div>-->
+  <p>
+    Lorsque vous ouvrez ProfileDrafter, vous verrez une liste de tous les
+    modules MEI dans la colonne centrale. Pour chacun, le nombre d'éléments et
+    de classes d'attributs dans ce module est indiqué. Les modules individuels
+    peuvent être désactivés en décochant la case à gauche de leur nom. Veuillez
+    interdire certains modules MEI en les décochant.
+  </p>
+  <p>
+    C'est assez simple de (dé)sélectionner les modules MEI, n'est-ce pas ?
+    Cependant, en n'utilisant que cette case à cocher, vous obtenez très peu de
+    retour sur les conséquences de vos choix - l'interface utilisateur ne vous
+    dit pas vraiment ce que vous retirez du schéma avec ces sélections.
+    Cependant, chaque boîte de module a également un bouton
+    <em>customize</em> (personnaliser) dans son coin supérieur droit. En cliquant sur ce
+    bouton, la liste des modules dans la colonne centrale est remplacée par une
+    liste de tous les éléments et classes d'attributs qui font partie du module
+    actuel. Veuillez noter que cela n'est possible que pour les modules que vous
+    n'avez pas exclus du schéma.
+  </p>
+  <p>
+    Si vous cliquez pour personnaliser le module <em>MEI.cmnOrnaments</em>, vous
+    verrez une liste avec les éléments &lt;mordent&gt;, &lt;trill&gt; et
+    &lt;turn&gt;, et les classes d'attributs <em>att.mordent.log</em>,
+    <em>att.ornamentAccid</em>, <em>att.ornamPresent</em>,
+    <em>att.trill.log</em> et <em>att.turn.log</em>. Encore une fois, vous
+    pouvez désélectionner n'importe lequel d'entre eux, en fonction de vos
+    besoins spécifiques. Alors que sur le dernier écran, vous avez pu désactiver
+    des modules entiers, ici vous pouvez faire des choix sélectifs, restreignant
+    MEI à vos besoins spécifiques. Si, pour une raison quelconque, vous avez
+    besoin d'une version de MEI qui vous permet d'encoder des &lt;trill&gt;,
+    mais qui ne prend pas en charge les &lt;mordent&gt; et &lt;turn&gt;, vous
+    pouvez facilement désactiver ces deux éléments, mais conserver le module
+    <em>MEI.cmnOrnaments</em> en tant que tel. En regardant des modules « plus
+    grands » comme <em>MEI.cmn</em>, <em>MEI.header</em> ou
+    <em>MEI.edittrans</em>, il est facile d'envisager des cas d'utilisation plus
+    pratiques pour cette exclusion sélective d'éléments.
+  </p>
+  <p>
+    Comme pour les éléments, il est possible d'
+    <strong>interdire des classes d'attributs</strong> dans cette vue d'ensemble
+    du module. Cependant, cela nécessite une bonne compréhension des classes
+    disponibles et de leur hiérarchie. Pour la plupart des utilisateurs (et des
+    cas d'utilisation), il sera plus pratique de le faire d'une autre manière. Sur chaque élément, il y a un bouton
+    <em>définir les attributs</em>. Si vous cliquez sur ce bouton, le contenu de
+    la colonne principale est à nouveau remplacé par un contenu différent. Cette
+    fois, vous trouverez une liste de tous les attributs disponibles sur cet
+    élément. La disposition de cette liste suit les classes d'attributs dont cet
+    élément est membre. Chaque classe d'attribut a une case à cocher qui peut
+    être utilisée pour la désactiver. Si vous désélectionnez une classe
+    d'attribut, cela ne supprimera pas seulement les attributs définis dans
+    cette classe, mais supprimera également toutes les autres classes
+    d'attributs héritées à travers la hiérarchie de classes - y compris tous les
+    attributs définis par celles-ci. Par exemple, si vous décochez la classe
+    d'attributs <em>att.basic</em> (qui est disponible sur chaque élément dans
+    MEI via la classe <em>att.common</em>), cela supprimera non seulement
+    l'attribut <em>@xml:base</em>, mais aussi la classe <em>att.id</em>, et par 
+    conséquent l'attribut <em>@xml:id</em>. Après avoir fait cela sur un élément quelconque. 
+    Vous remarquerez que la même classe d'attributs est déjà désactivée sur les autres éléments : 
+    toutes ces options sont coordonnées. Cela inclut les classes d'attributs
+    listées au niveau des modules individuels.
+  </p>
+  <p>
+    Avec les options pour désactiver les <strong>modules</strong>, les
+    <strong>éléments</strong> individuels et des
+    <strong>classes d'attributs</strong>
+    spécifiques, il est déjà possible de restreindre considérablement le schéma
+    MEI, le rendant plus adapté aux besoins spécifiques de tout projet donné, et
+    aidant ce projet à éviter toute incohérence et autres problèmes d'encodage.
+    Comme MEI ProfileDrafter permet de partir de plusieurs personnalisations
+    MEI officielles, il est assez simple de générer une version personnalisée de
+    MEI qui restreint davantage le profil MEI CMN (ou toute autre
+    personnalisation). Dans la prochaine étape de ce tutoriel, nous verrons
+    comment utiliser cette personnalisation.
+  </p>
+</div>

@@ -1,0 +1,128 @@
+<div>
+  <p>
+    Le fichier
+    <a href="https://en.wikipedia.org/wiki/JSON" target="_blank">JSON</a>
+    représente la table des matières du tutoriel. Il contient un objet avec
+    plusieurs propriétés. Jetons un coup d'œil à (une version simplifiée) du
+    tutoriel actuel :
+  </p>
+  <pre class="codeblock">{
+  "steps": [
+    {
+        "label":"Bienvenue",
+        "descFile": "writingTutorials-01.html"
+    },
+    {
+        "label":"Configuration du site web",
+        "descFile": "writingTutorials-02.html"
+    },
+    
+    <span class="text-gray"><i>… plus d'étapes à ajouter ici …</i></span>
+    
+  ],
+  "end":"writingTutorials-end.html",
+  "resp":[
+    {
+        "name":"Johannes Kepper",
+        "affiliation":"Beethovens Werkstatt | Universität Paderborn"
+    }
+  ]
+}</pre>
+  <label>tutorials.json</label>
+  <p>
+    Il y a trois propriétés importantes ici. La première, <code>"steps"</code>,
+    est utilisée pour décrire les différentes étapes d'un tutoriel. Nous y
+    reviendrons dans un instant. Ensuite, <code>"end"</code> spécifie un fichier
+    dans lequel la page finale du tutoriel est fournie. Enfin, il y a
+    <code>"resp"</code>. Dans cet ensemble, vous devez indiquer votre nom et
+    votre affiliation. Cela permet d'identifier l'auteur et d'être en mesure de
+    le contacter pour des questions, mais aussi de vous donner une
+    reconnaissance publique pour le travail que vous faites sur la MEI. Si vous
+    avez travaillé sur un tutoriel avec un groupe de personnes, vous pouvez bien
+    sûr toutes les inclure. Alors pourquoi ne pas demander à certains de vos
+    étudiants de travailler sur ces tutoriels ?
+  </p>
+  <h1>Étapes</h1>
+  <p>
+    Revenons à la propriété <code>"steps"</code>. Il s'agit d'un tableau d'objets,
+    décrivant chacun une étape du tutoriel. La seule propriété qui est
+    obligatoire est <code>"descFile"</code>. Ici, vous devez fournir le nom du
+    fichier HTML qui correspond au contenu de cette étape. Par exemple le texte que vous
+    lisez actuellement provient de l'un de ces fichiers. Ce fichier n'est pas un
+    fichier HTML complet ; il doit commencer par un élément racine
+    <code>&lt;div&gt;</code> et contenir du HTML simple. La propriété suivante,
+    <code>"label"</code>, est facultative. Si vous ne la fournissez pas, l'étape
+    sera étiquetée en fonction de sa position (c'est-à-dire "Étape 3" ou
+    similaire).
+  </p>
+  <p>
+    Évidemment, un tutoriel n'est pas censé être uniquement du texte (cela ne
+    justifierait guère toute cette configuration...). Parfois, vous voudrez
+    peut-être que l'utilisateur encode réellement des éléments MEI. Regardons la
+    définition d'une telle étape :
+  </p>
+  <pre class="codeblock">{
+    <span class="text-gray">"label":"Une Étape Exemple",</span>
+    <span class="text-gray">"descFile": "instructions-etape.html",</span>
+    "xmlFile": "encodage.xml",
+    "xpaths": [
+        {
+            "rule":"count(//mei:note) = 1",
+            "renderanyway":false
+        },
+        {
+            "rule":"//mei:note/@pname = 'g'",
+            "renderanyway":true,
+            "hint":"Vous avez besoin d'un attribut @pname avec une valeur de g."
+        }
+    ],
+    "editorLines":3,
+    "prefillFile":"remplissage.xml"
+}</pre>
+  <label
+    >Définition d'une étape de tutoriel qui comprend un composant éditeur, à
+    insérer dans le tableau "étapes" de tutorials.json</label
+  >
+  <p>
+    Les deux propriétés que nous connaissons déjà sont en gris, nous n'avons pas
+    besoin d'y revenir. Si une étape contient à la fois une propriété
+    <code>"xmlFile"</code> et une propriété <code>"xpaths"</code>, un éditeur
+    sera affiché. En même temps, le bouton "Continuer" en bas à droite
+    disparaîtra. Pour avancer, l'utilisateur doit maintenant suivre vos
+    instructions et entrer le code MEI dans l'éditeur. Pour décider si
+    l'utilisateur a réussi ou non, vous devez fournir un certain nombre de
+    règles
+    <a href="https://fr.wikipedia.org/wiki/XPath" target="_blank">XPath</a>.
+    L'expression XPath elle-même est stockée dans une propriété
+    <code>"rule"</code>. Elle doit renvoyer une valeur booléenne, c'est-à-dire
+    <i>true</i> ou <i>false</i>. Si vous souhaitez guider l'utilisateur, vous
+    pouvez fournir une propriété <code>"hint"</code>. Si le contenu de l'éditeur
+    ne correspond pas à une règle XPath, son indication sera affichée comme une
+    boîte d'avertissement en dessous de l'éditeur. Les règles XPath sont
+    vérifiées dans l'ordre, et la vérification s'arrête dès qu'une règle est
+    fausse. Si toutes les règles sont satisfaites, le tutoriel passera
+    automatiquement à l'étape suivante.
+  </p>
+  <p>
+    La propriété <code>"renderanyway"</code> d'une règle XPath est utile lorsque
+    vous souhaitez que l'utilisateur manipule l'encodage. Normalement, la
+    saisie de l'utilisateur n'est rendue que lorsque toutes les règles XPath
+    sont satisfaites. Cependant, vous pourriez demander à l'utilisateur
+    d'essayer différentes hauteurs, en indiquant que le tour continue lorsqu'une
+    hauteur spécifique est entrée. Ensuite, vous pouvez définir
+    <code>"renderanyway"</code> sur <code>true</code>, et Verovio fera de son
+    mieux pour rendre la saisie actuelle de l'utilisateur. Ce comportement est
+    implémenté dans la deuxième règle XPath ci-dessus.
+  </p>
+  <p>
+    La propriété <code>"xmlfile"</code> spécifie un fichier qui sert de contexte
+    pour l'éditeur. Dans la prochaine étape de ce tutoriel, nous expliquerons
+    cela en détail. Il existe deux autres propriétés qui peuvent être utiles.
+    Avec la propriété <code>"editorLines"</code>, vous pouvez spécifier la
+    hauteur de la fenêtre de l'éditeur. Si vous ne rentrez rien, une hauteur par défaut de 5 lignes
+    sera appliquée. Enfin, vous pouvez préremplir l'éditeur au début d'une étape
+    avec le contenu d'un fichier que vous spécifiez avec la propriété <code>"prefillFile"</code>.
+    Si vous n'en spécifiez pas, l'éditeur conserve le code entré par l'utilisateur durant
+    l'étape précédante (ou il est vide s'il s'agit de la première étape.)
+  </p>
+</div>

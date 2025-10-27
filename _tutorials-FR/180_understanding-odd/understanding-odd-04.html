@@ -1,0 +1,123 @@
+<div>
+  <p>
+    La structure conceptuelle de plus haut niveau dans ODD est celle des
+    <em>modules</em>. Les modules permettent de diviser le schéma en différentes
+    sections, chacune définissant un aspect clairement délimité. Jusqu'en 2019, la
+    structure des <em>MEI Guidelines</em> suivait les modules ODD, mais cette
+    configuration a été remplacée par une division plus pédagogique. À l'heure
+    actuelle, les modules apparaissent dans les <em>MEI Guidelines</em> en haut des
+    définitions des éléments, attributs, etc. :
+  </p>
+  <div>
+    <img style="width: 100%" src="./beam-module.png" />
+  </div>
+  <p>
+    Il ne s'agit là que d'un simple renvoi vers les modules. Mais pour qui souhaite travailler sur l'ODD de MEI, il est essentiel de savoir que le
+    code source MEI est divisé en suivant les modules. Le fichier
+    <a
+      href="https://github.com/music-encoding/music-encoding/blob/develop/source/mei-source.xml"
+      target="_blank"
+      rel="noopener, noreferrer"
+      >mei-source.xml</a
+    >
+    fait office de point d'entrée dans la spécification MEI. L'élément
+    <a
+      href="https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-schemaSpec.html"
+      target="_blank"
+      rel="noopener, noreferrer"
+      >&lt;schemaSpec&gt;</a
+    >
+    à
+    <a
+      href="https://github.com/music-encoding/music-encoding/blob/93d8c00cd14126af2e680d47f437042227eb2c0e/source/mei-source.xml#L83"
+      target="_blank"
+      rel="noopener, noreferrer"
+      >la ligne 83</a
+    >
+    définit un nouveau schéma avec l'espace de noms MEI
+    (<code>@ns="http://www.music-encoding.org/ns/mei"</code>). Il a ensuite un
+    certain nombre de sous-éléments <em>XInclude</em>. <em>XInclude</em> est
+    utilisé pour diviser un grand fichier XML en fichiers plus
+    petits et plus facile à gérer. Ici, chaque module MEI est stocké dans un fichier
+    séparé dans le
+    <a
+      href="https://github.com/music-encoding/music-encoding/tree/develop/source/modules"
+      target="_blank"
+      rel="noopener, noreferrer"
+      >sous-dossier modules</a
+    >.
+  </p>
+  <p>
+    Les modules MEI sont construits autour de différents thèmes. Il existe des
+    modules qui se concentrent sur des répertoires musicaux spécifiques (<a
+      href="https://github.com/music-encoding/music-encoding/blob/develop/source/modules/MEI.cmn.xml"
+      target="_blank"
+      rel="noopener, noreferrer"
+      >CMN</a
+    >,
+    <a
+      href="https://github.com/music-encoding/music-encoding/blob/develop/source/modules/MEI.mensural.xml"
+      target="_blank"
+      rel="noopener, noreferrer"
+      >Mensural</a
+    >,
+    <a
+      href="https://github.com/music-encoding/music-encoding/blob/develop/source/modules/MEI.neumes.xml"
+      target="_blank"
+      rel="noopener, noreferrer"
+      >Neumes</a
+    >, ou
+    <a
+      href="https://github.com/music-encoding/music-encoding/blob/develop/source/modules/MEI.stringtab.xml"
+      target="_blank"
+      rel="noopener, noreferrer"
+      >Tablature de cordes</a
+    >), mais aussi des modules pour des perspectives spécifiques sur la musique
+    (<a
+      href="https://github.com/music-encoding/music-encoding/blob/develop/source/modules/MEI.visual.xml"
+      target="_blank"
+      rel="noopener, noreferrer"
+      >visuelle</a
+    >,
+    <a
+      href="https://github.com/music-encoding/music-encoding/blob/develop/source/modules/MEI.gestural.xml"
+      target="_blank"
+      rel="noopener, noreferrer"
+      >gestuelle</a
+    >,
+    <a
+      href="https://github.com/music-encoding/music-encoding/blob/develop/source/modules/MEI.analytical.xml"
+      target="_blank"
+      rel="noopener, noreferrer"
+      >analytique</a
+    >), des technologies
+      (<a
+      href="https://github.com/music-encoding/music-encoding/blob/develop/source/modules/MEI.midi.xml"
+      target="_blank"
+      rel="noopener, noreferrer"
+      >MIDI</a
+    >) ou des cas d'utilisation (<a
+      href="https://github.com/music-encoding/music-encoding/blob/develop/source/modules/MEI.facsimile.xml"
+      target="_blank"
+      rel="noopener, noreferrer"
+      >fac-similés</a
+    >,
+    <a
+      href="https://github.com/music-encoding/music-encoding/blob/develop/source/modules/MEI.performance.xml"
+      target="_blank"
+      rel="noopener, noreferrer"
+      >performances</a
+    >,
+    <a
+      href="https://github.com/music-encoding/music-encoding/blob/develop/source/modules/MEI.edittrans.xml"
+      target="_blank"
+      rel="noopener, noreferrer"
+      >usage éditorial</a
+    >). La portée de chacun de ces modules est décrite dans les <em>MEI Guidelines</em>.
+  </p>
+  <p>
+    Outre de rendre le code source MEI plus facile à maintenir grâce à des fichiers
+    plus petits, la division permet également de « désactiver » plus
+    facilement des parties plus importantes (-> modules) du schéma MEI.
+  </p>
+</div>

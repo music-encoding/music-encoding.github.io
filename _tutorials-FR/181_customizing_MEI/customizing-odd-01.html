@@ -1,0 +1,70 @@
+<div>
+  <h1>Personnalisation de l'ODD</h1>
+  <p>
+    Ce tutoriel, d'un niveau avancé, présente la personnalisation de la structure de la MEI pour
+    les besoins spécifiques d'un projet. Il suppose une compréhension approfondie des
+    structures internes de la MEI et de leur définition au moyen d'ODD, telles que décrites dans le tutoriel
+    <a
+      href="/tutorials/180_understanding-odd.html"
+      target="_blank"
+      rel="noopener, noreferrer"
+      >Comprendre ODD</a
+    >. Si vous n'êtes pas familier avec les éléments
+    <a
+      href="https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-elementSpec.html"
+      target="_blank"
+      rel="noopener, noreferrer"
+      >&lt;elementSpec&gt;</a
+    >, les classes modèles et les classes d'attributs, il est probablement
+    préférable de revenir à
+    <a
+      href="/tutorials/180_understanding-odd.html"
+      target="_blank"
+      rel="noopener, noreferrer"
+      >ce tutoriel</a
+    >
+    d'abord, sinon nous pouvons commencer.
+  </p>
+  <p>
+    S'il est possible La personnalisation a pour objectif de <em>restreindre</em> le schéma MEI en ne
+    conservant que les parties du cadre pertinentes pour une tâche ou un projet
+    donné. Il est également possible d'<em>étendre</em> la MEI en utilisant les
+    mêmes mécanismes décrits ici, mais nous n'explorerons pas cet usage ici. Pour
+    l'instant, nous allons mettre en œuvre un sous-ensemble de la MEI, , car les fichiers 
+    validés à l'aide d'une version personnalisée de la MEI restent compatibles avec la personnalisation 
+    <a href="/resources/schemas.html" target="_blank" rel="noopener, noreferrer"
+      >MEI All</a
+    >, qui correspond à l'ensemble complet du cadre MEI. Cela garantit un haut niveau 
+    de compatibilité avec les outils et la documentation existants. En général,
+    les extensions de la MEI ne devraient être effectuées que lorsqu'elles sont absoument nécessaires.
+    Dans de tels cas, nous vous recommandons de consulter la
+    <a
+      href="/community/community-contacts.html"
+      target="_blank"
+      rel="noopener, noreferrer"
+      >communauté MEI</a
+    >
+    pour vérifier qu'aucune autre solution n'existe déjà.
+  </p>
+  <p>
+    Dans ce tutoriel, nous apprendrons d'abord comment utiliser le
+    <a
+      href="https://meigarage.edirom.de/profiler"
+      target="_blank"
+      rel="noopener, noreferrer"
+      >MEI ProfileDrafter</a
+    >, qui fournit une interface utilisateur graphique pour générer des
+    personnalisations de base à visée restrictive. Cet outil fait partie du
+    <a
+      href="https://meigarage.edirom.de"
+      target="_blank"
+      rel="noopener, noreferrer"
+      >MEI Garage</a
+    >. Bien que ses fonctionnalités soient quelque peu limitées, il aide à mieux
+    comprendre les concepts liés aux personnalisations MEI. Ensuite, nous examinerons
+    la sortie du MEI ProfileDrafter et verrons comment générer un fichier RelaxNG à partir de celui-ci pour la validation.
+    Enfin, nous aborderons des options de personnalisation plus avancées, qui dépassent le cadre des possibilités offertes par le MEI ProfileDrafter. 
+    Vous voudrez peut-être utiliser un éditeur XML pour suivre les exemples, mais comme toutes les opérations seront effectuées 
+    via des services web, le choix de l'éditeur n'importe pas - n'importe lequel conviendra. Nous pouvons commencer !
+  </p>
+</div>
