@@ -3,7 +3,7 @@
     À la dernière étape, nous avons appris qu'un
     <code>&lt;classSpec type="atts" ident="att.basic" mode="delete"/&gt;</code>
     peut être utilisé pour supprimer la classe d'attributs
-    <em>att.basic</em> (comme toute autre) d'une personnalisation MEI.
+    <em>att.basic</em> (comme n'importe quelle classe d'attribut) d'une personnalisation MEI.
     L'attribut <code>@mode</code> est ce qui détermine ce comportement ici. Les
     directives TEI pour la classe d'attributs
     <a
@@ -13,9 +13,9 @@
       >att.combinable</a
     >
     fournissent une documentation supplémentaire sur les valeurs autorisées.
-    Elle indique que "<em
+    Elle indique qu' « <em
       >un processeur ODD doit gérer les valeurs de @mode comme suit</em
-    >":
+    > »:
   </p>
   <dl>
     <dt>add</dt>
@@ -74,9 +74,8 @@
     classe <code>att.id</code> - qui est responsable de rendre l'attribut
     <code>@xml:id</code> disponible sur chaque élément. Ainsi, supprimer
     <code>att.basic</code> du schéma interdirait également l'utilisation des
-    <code>@xml:id</code> n'importe où dans les fichiers conformes à la
-    personnalisation résultante - certainement pas une bonne idée dans tout cas
-    d'utilisation pratique. À la place, la flexibilité offerte par les
+    <code>@xml:id</code> dans les fichiers conformes à la
+    personnalisation résultante - ce qui est rarement une bonne idée. À la place, la flexibilité offerte par les
     différents <code>@mode</code>s peut être utilisée pour faire des
     déclarations plus précises ici. L'exemple suivant montre ce qui a été fait
     pour personnaliser <code>att.basic</code> pour le profil MEI de base :
@@ -108,8 +107,8 @@
 &lt;/classSpec&gt;</pre
   >
   <p>
-    Les deux approches donnent les mêmes résultats, donc c'est surtout une
-    question de préférence de choisir une solution. En général, il est judicieux
+    Les deux approches donnent le même résultat, il s'agit là d'une
+    question de préférence. En général, il est judicieux
     de copier une définition existante (qui est toujours accessible via les
     directives MEI) dans votre personnalisation, puis de l'ajuster en insérant
     soigneusement des <code>@mode</code>s de traitement sur l'objet lui-même et
