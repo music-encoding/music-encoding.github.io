@@ -3,11 +3,11 @@ layout: tutorials-FR
 title: "Tutoriels MEI"
 ---
 
-# Tutoriels sur le MEI
+# Tutoriels sur la MEI
 
 Sur cette page, vous trouverez une série de courts tutoriels pour aborder la MEI, chacun d'entre eux présente une fonctionnalité spécifique de cette spécification.
 
-Si vous débuttez avec la MEI, nous vous recommandons de commencer par le tutoriel [Quickstart](/tutorials-FR/101-quickstart), qui vous permettra de coder une mélodie simple avec le MEI.
+Si vous débutez avec la MEI, nous vous recommandons de commencer par le tutoriel [Quickstart](/tutorials-FR/101-quickstart), qui vous permettra de coder une mélodie simple en MEI.
 
 Si vous souhaitez rédiger un nouveau tutoriel sur la MEI, nous vous recommandons de commencer par le tutoriel [Rédaction de tutoriels](/tutorials-FR/tutorials), qui vous fournira des informations sur les étapes nécessaires. Consultez également notre liste de tutoriels manquants sur [Github] (https://github.com/music-encoding/music-encoding.github.io/issues/88) avec lesquels vous pourriez contribuer au projet.
 
