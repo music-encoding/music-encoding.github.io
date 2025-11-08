@@ -13,9 +13,8 @@ The Technical Team consists of interested developers and two Board-appointed Co-
 * **Andrew Hankinson**, RISM Digital Center, Bern
 * **Johannes Kepper**, Musikwissenschaftliches Seminar Detmold/Paderborn
 * **Laurent Pugin**, RISM Digital Center, Bern
-* **Klaus Rettinghaus**, Enote GmbH, Berlin
+* **Klaus Rettinghaus**, Sächsische Landesbibliothek — Staats- und Universitätsbibliothek Dresden (SLUB)
 * **Perry D. Roland**, Charlottesville
-* **Daniel Röwenstrunk**, Musikwissenschaftliches Seminar Detmold/Paderborn
 * **Craig Sapp**, Center for Computer-Assisted Research in the Humanities, Stanford University
 * **Martha E. Thomae**, McGill University, Montréal
 * **Raffaele Viglianti**, Maryland Institute for Technology in the Humanities
