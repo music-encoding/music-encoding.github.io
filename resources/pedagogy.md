@@ -18,7 +18,7 @@ If you have questions or need assistance, please reach out to the [Pedagogy Inte
 
 * [Edirom-Summer-School](https://ess.uni-paderborn.de/) at the University of Paderborn, Germany.
 * [European Summer University in Digital Humanities](https://esu.fdhl.info/) is hosted by the University of Leipzig.
-* [Digital Humanities Summer Institute](https://dhsi.org/)(DHSI) is an annual digital scholarship training institute that takes place at the University of Victoria.
+* [Digital Humanities Summer Institute](https://dhsi.org/)(DHSI) is an annual digital scholarship training institute in Montreal, Canada.
 * [Digital Musicology, Digital Humanities at Oxford Summer School](https://digital.humanities.ox.ac.uk/digital-humanities-oxford-summer-school)
 * [Music Encoding Initiative](https://music-encoding.org/community/news-events.html) has an annual conference and offers trainings and events throughout the year.
 
