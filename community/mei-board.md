@@ -8,7 +8,7 @@ The MEI Board manages the property and business of MEI. It promotes the developm
 
 Contact the MEI Board: mei-board at lists.uni-paderborn.de 
 
-[Read the 2024 Election Candidate statements](/community/mei-board/elections/2024/candidates)
+[Read the 2025 Election Candidate statements](/community/mei-board/elections/2025/candidates)
 
 ## Current Board Members
 
@@ -89,6 +89,7 @@ Each member holding Personal Membership in MEI has the right to vote in Board me
 
 ### Previous elections
 
+* [Read the 2024 Election Candidate statements](/community/mei-board/elections/2024/candidates)
 * [Read the 2023 Election Candidate statements](/community/mei-board/elections/2023/candidates)
 * [Read the 2022 Election Candidate statements](/community/mei-board/elections/2022/candidates)
 * [Read the 2021 Election Candidate statements](/community/mei-board/elections/2021/candidates)
