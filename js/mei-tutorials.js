@@ -66,7 +66,7 @@ var tutorialStrings = {
     },
     'goal': {
         'EN': 'Goal',
-        'FR': 'Objectif ',
+        'FR': 'Objectif ',
         'ES': 'Objetivo'
     },
     'hideHint': {

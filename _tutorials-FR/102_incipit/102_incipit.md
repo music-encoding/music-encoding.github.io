@@ -9,5 +9,5 @@ Bienvenue ! Dans ce tutoriel, vous apprendrez à encoder un incipit (la séquenc
 
 ![Hallingdal Bataljons Marsch](./102_incipit.png)
 
-Au fait : il s'agit du début de _Hallingdal Bataljons Marsch_, l'Opus 1 du compositeur norvégien [Johan Halvorsen](https://fr.wikipedia.org/wiki/Johan_Halvorsen) (1864–1935).
+Pour information, il s'agit du début de _Hallingdal Bataljons Marsch_, l'Opus 1 du compositeur norvégien [Johan Halvorsen](https://fr.wikipedia.org/wiki/Johan_Halvorsen) (1864–1935).
 
