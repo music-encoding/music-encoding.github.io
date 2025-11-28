@@ -7,10 +7,38 @@ title: "2025 Board Election Candidate Statements"
 
 Candidates for the MEI Elections are invited to send along a brief CV and Candidate Statement. These are provided below, ordered alphabetically by surname.
 
+* [Jessica Grimmer](#jessica-grimmer)
 * [Jesse P. Karlsberg](#jesse-p-karlsberg)
 * [Emerson Morgan](#emerson-morgan)
 * [Anna Plaksin](#anna-plaksin)
 * [David Weigl](#david-weigl)
+
+## Jessica Grimmer
+
+### CV
+With a Ph.D. in Historical Musicology and an MLIS, I combine music scholarship with extensive archival and information science expertise. I serve as Co-Director of the Center for Archival Futures and Lecturer in the University of Maryland's College of Information, where I teach digital curation, records management, information lifecycles, and music encoding for preservation and research. My archival experience includes positions at the Library of Congress and at the University of Maryland’s Special Collections in Performing Arts, where I led major processing projects, developed metadata workflows, and curated exhibitions. 
+
+My research centers on digital collections and the role of community in their long-term sustainability, with a case study on the Music Encoding Initiative, as well as pedagogical approaches to encoding, and Holocaust representation in music. My work appears in _Archival Science_, the _Journal of Musicological Research_, and other leading publications. I present regularly at national and international conferences and contribute to professional communities through service to MARAC, the Music Library Association, the Music Encoding Initiative, and the American Musicological Society.
+
+### Candidate Statement
+I am delighted and honored to be considered as a candidate for the MEI Board. I currently serve as
+the Co-Director of the Center for Archival Futures (CAFe) and Lecturer at the University of
+Maryland’s College of Information. There, I research and teach courses that explore how digital
+infrastructures sustain cultural memory, particularly in music and the performing arts.
+
+Over the past several years, I have worked extensively on digital-humanities projects that intersect
+with MEI's mission: teaching courses on encoding music for preservation and research, developing
+a new dual master’s degree in musicology and library science, publishing on community-centered
+sustainability, and researching how born-digital compositional workflows and archival practices
+can ensure long-term access to creative output.
+
+If elected to the MEI Board, I will bring a perspective grounded in archival practice, teaching, and
+community-centered sustainability. I aim to support the continued development of pedagogical
+resources for new and existing users, promote equitable governance and sustainable funding
+models, and deepen MEI’s engagement with allied communities in archives, libraries, digital
+humanities, and contemporary music. I would be honored to help guide MEI through its next
+phase as an inclusive, technically robust, and socially meaningful standard.
+
 
 ## Jesse P. Karlsberg
 
