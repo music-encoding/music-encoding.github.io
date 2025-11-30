@@ -1,0 +1,49 @@
+<measure n="1">
+    <staff n="1">
+        <layer>
+            <note pname="e" oct="4" dur="4" />
+            <beam>
+                <note pname="e" oct="4" dur="8" />
+                <note pname="g" oct="4" dur="8" />
+            </beam>
+            <note pname="f" oct="4" dur="4" dots="1" >
+                <!-- Your encoding should replace this line -->
+            </note>
+            <note pname="d" oct="4" dur="8"></note>
+        </layer>
+    </staff>
+</measure>
+<measure n="2">
+    <staff n="1">
+        <layer>
+            <note pname="e" oct="4" dur="4"></note>
+            <beam>
+                <note pname="e" oct="4" dur="8" ></note>
+                <note pname="g" oct="4" dur="8" ></note>
+            </beam>
+            <note pname="b" oct="4" dur="4" dots="1">
+                <!-- Your encoding should replace this line -->
+            </note>
+            <note pname="g" oct="4" dur="8" ></note>
+        </layer>
+    </staff>
+</measure>
+<measure n="3">
+    <staff n="1">
+        <layer>
+            <beam>
+                <note dur="8" pname="a" oct="4"></note>
+                <note dur="8" pname="b" oct="4"></note>
+                <note dur="8" pname="c" oct="5"></note>
+                <note dur="8" pname="d" oct="5"></note>
+            </beam>
+            <note dur="4" pname="e" oct="5">
+                <!-- Your encoding should replace this line -->
+            </note>
+            <beam>
+                <note dur="8" pname="d" oct="5"></note>
+                <note dur="8" pname="b" oct="4"></note>
+            </beam>
+        </layer>
+    </staff>
+</measure>
