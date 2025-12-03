@@ -1,7 +1,7 @@
 ---
 layout: tools
 title: "Verovio"
-subtitle: "Javascript and C++ score rendering"
+subtitle: "JavaScript and C++ score rendering"
 image: https://www.verovio.org/assets/images/verovio-fadded-50.png
 website: https://www.verovio.org
 repository: https://github.com/rism-digital/verovio
