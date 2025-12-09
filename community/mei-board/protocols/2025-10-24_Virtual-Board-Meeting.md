@@ -31,6 +31,6 @@ Reminders
 
 Calendering
 - Next Board meeting will be on November 20, 2025, 10 AM (EST) / 4 PM (CET)
-- MEI Community Forum will be held on December 11 AM (EST) / 5 PM (CET), please [register in advance](https://tufts.zoom.us/j/99919762917?pwd=folsEidkstRUP7a9Yb6HgnZc3aur5A.1).
+- MEI Community Forum will be held on December 11th at 11 AM (EST) / 5 PM (CET), please [register in advance](https://tufts.zoom.us/j/99919762917?pwd=folsEidkstRUP7a9Yb6HgnZc3aur5A.1).
 
 **MEI Community**: If you have questions or agenda items you would like the MEI Board to consider in a future meeting, please reach out to Anna Kijas (anna.kijas at tufts.edu) with your input.
