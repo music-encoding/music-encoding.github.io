@@ -5,7 +5,7 @@ title: "Memorandum of Understanding Template"
 
 # Memorandum of Understanding Between the Music Encoding Initiative (MEI) and [Hosting Institution Name]
 
-This Memorandum of Understanding (MOU) sets forth the terms and responsibilities agreed upon by the Music Encoding Initiative (MEI) and [Hosting Institution Name] regarding the organization and hosting of the annual Music Encoding Conference. Full guidelines are available at [https://music-encoding.org/conference/hosting-guidelines.html](https://music-encoding.org/conference/hosting-guidelines.html). 
+This Memorandum of Understanding (MOU) sets forth the terms and responsibilities agreed upon by the Music Encoding Initiative (MEI) and [Hosting Institution Name] regarding the organization and hosting of the annual Music Encoding Conference. Full guidelines are available at [https://music-encoding.org/conference/hosting-guidelines.html](conference/hosting-guidelines.html). 
 
 ## 1. Conference Details
 The [Year] Music Encoding Conference will be held at [Hosting Institution Name], located in [City, Country], from [Start Date] to [End Date].
