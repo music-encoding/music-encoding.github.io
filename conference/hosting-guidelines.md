@@ -18,7 +18,7 @@ The MEC has been held annually since 2013. Historically, the conference has been
 
 ### Location
 
-The ideal location will be one well-connected with the rest of the country through a public transportation system or will be at a short distance from an international airport; will offer a welcoming context and several accommodation options. The presence of musical institutions/libraries/museums, good climate and availability of cultural events at the time of the conference will be a plus. MEI attempts to ensure that over time the conference is held in locations reflecting the distribution of the members of the MEI community. Since its first edition, the location has alternated between Europe and North America:
+The ideal location will be one well-connected with the rest of the country through a public transportation system or will be at a short distance from an international airport; will offer a welcoming context and several accommodation options. The presence of musical institutions/libraries/museums, good climate and availability of cultural events at the time of the conference will be a plus. MEI attempts to ensure that over time the conference is held in locations reflecting the distribution of the members of the MEI community. The conference location alternates every year.
 
 * 21-24 May 2013: Mainz, Germany (hosted by Akademie der Wissenschaften und der Literatur, Mainz)
 * 20-23 May 2014: Charlottesville, VA, USA (hosted by University of Virginia Libraries)
@@ -35,7 +35,6 @@ The ideal location will be one well-connected with the rest of the country throu
 * 3-6 June 2025: London, United Kingdom (hosted by Goldsmiths University of London and City University of London)
 * 26-29 May 2026: Tokyo, Japan (hosted by Tokyo University of Science)
 
-Nevertheless, hosting proposals are welcome from any location.
 
 ### Venue
 
