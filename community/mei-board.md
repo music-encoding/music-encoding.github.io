@@ -12,6 +12,12 @@ Contact the MEI Board: mei-board at lists.uni-paderborn.de
 
 ## Current Board Members
 
+### Term 2026–2028
+
+* **Jessica Grimmer**, Center for Archival Futures (CAFe) and Maryland's College of Information
+* **Anna Plaksin**, Musikwissenschaftliches Seminar Detmold/Paderborn, KreativInstitut.OWL
+* **David M. Weigl**, Institut für musikalische Akustik – Wiener Klangstil, mdw – Universität für Musik und darstellende Kunst Wien
+
 ### Term 2025–2027
 * **Benjamin W. Bohl (Technical Co-Chair)**, Institut für Musikwissenschaft, Goethe Universität Frankfurt, Frankfurt am Main and Musikwissenschaftliches Seminar Detmold/Paderborn
 * **Anna E. Kijas (Administrative Chair)**, Lilly Music Library, Tufts University
@@ -23,13 +29,6 @@ Contact the MEI Board: mei-board at lists.uni-paderborn.de
 * **Stefan Münnich (Technical Co-Chair)**, University of Basel
 * **Laurent Pugin**, RISM Digital Center, Bern
 
-### Term 2023–2025
-
-* **Johannes Kepper**, Musikwissenschaftliches Seminar Detmold/Paderborn
-* **Anna Plaksin**, Musikwissenschaftliches Seminar Detmold/Paderborn, KreativInstitut.OWL
-* **David M. Weigl**, Institut für musikalische Akustik – Wiener Klangstil, mdw – Universität für Musik und darstellende Kunst Wien
-
-
 ### Previous Board Members
 
 * **Elsa De Luca**, Centro de Estudos de Sociologia e Estética Musical (CESEM), Universidade Nova de Lisboa, Lisboa (2019–2021)
@@ -38,6 +37,7 @@ Contact the MEI Board: mei-board at lists.uni-paderborn.de
 * **Ichiro Fujinaga**, McGill University, Montréal (2015–2021)
 * **Axel Teich Geertinger**, Danish Centre for Music Editing, Royal Library, Copenhagen, (2015–2016)
 * **Andrew Hankinson**, Bodleian Library, Oxford (2017–2019)
+* **Johannes Kepper**, Musikwissenschaftliches Seminar Detmold/Paderborn (2015-2025)
 * **Klaus Rettinghaus**, Enote GmbH, Berlin (2022–2024)
 * **Kristina Richts-Matthaei**, Centre for Digital Music Documentation (CDMD), Academy of Sciences and Literature, Mainz (2015–2023)
 * **Perry Roland**, University of Virginia Library, Charlottesville (2015–2018, 2020–2022)
