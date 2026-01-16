@@ -21,12 +21,12 @@ Contact the MEI Board: mei-board at lists.uni-paderborn.de
 ### Term 2025–2027
 * **Benjamin W. Bohl (Technical Co-Chair)**, Institut für Musikwissenschaft, Goethe Universität Frankfurt, Frankfurt am Main and Musikwissenschaftliches Seminar Detmold/Paderborn
 * **Anna E. Kijas (Administrative Chair)**, Lilly Music Library, Tufts University
-* **Martha Thomae**, Centro de Estudos de Sociologia e Estética Musical (CESEM), Universidade Nova de Lisboa, Lisboa
+* **Martha Thomae (Technical Co-Chair)**, Centro de Estudos de Sociologia e Estética Musical (CESEM), Universidade Nova de Lisboa, Lisboa
 
 ### Term 2024-2026
 
 * **Maristella Feustle**, Music Library, University of North Texas
-* **Stefan Münnich (Technical Co-Chair)**, University of Basel
+* **Stefan Münnich**, University of Basel
 * **Laurent Pugin**, RISM Digital Center, Bern
 
 ### Previous Board Members
