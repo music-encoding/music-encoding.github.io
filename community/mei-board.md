@@ -68,6 +68,7 @@ Contact the MEI Board: mei-board at lists.uni-paderborn.de
 * [2025-09-25, Virtual Board Meeting](mei-board/protocols/2025-09-25_Virtual-Board-Meeting.html)
 * [2025-10-24, Virtual Board Meeting](mei-board/protocols/2025-10-24_Virtual-Board-Meeting.html)
 * [2025-11-20, Virtual Board Meeting](mei-board/protocols/2025-11-20_Virtual-Board-Meeting.html)
+* [2025-12-19, Virtual Board Meeting](mei-board/protocols/2025-12-19_Virtual-Board-Meeting.html)
 
 ## Elections
 
