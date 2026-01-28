@@ -22,7 +22,7 @@ Feedback/Discussion
 - Discussed process and next steps for sharing Institutional membership sponsor levels and by-law text revisions 
 Ongoing discussion about publishing MEC Proceedings
     - Discussed merits of publishing in [Knowledge Commons](https://hcommons.org/groups/music-encoding-initiative) or [Zenodo](https://zenodo.org/communities/mei/)
-    - Short-term decision ios for proceedings for MEC 2026 to be published in Zenodo 
+    - Short-term decision is for proceedings for MEC 2026 to be published in Zenodo 
 
 Calendering
 - Next Board meeting will be on January 16, 2025, 10 AM (EST) / 4 PM (CET)
