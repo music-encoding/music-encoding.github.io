@@ -6,7 +6,7 @@ title: "2025-12-19 Virtual MEI Board Meeting"
 # 2025 December 19 Virtual MEI Board Meeting
 
 Present: Laurent Pugin, Anna Kijas, Stefan Münnich, Maristella Feustle, Martha Thomae Elias, Anna Plaksin, David Weigl
-Excused: Johannes Kepper, Benni Bohl
+Excused: Johannes Kepper, Benni W. Bohl
 
 Minutes: Anna Kijas
 
