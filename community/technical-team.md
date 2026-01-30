@@ -36,8 +36,22 @@ The schedule for these developer workshops is the _last Friday of every odd mont
 
 **Note**: An exclamation mark (!) signifies a change from the regular schedule due to holidays or other special circumstances.
 
-**2025**
+**2026**
+* December: winter break
+* November 27 2026, ODD Friday
+* October 29 2026, ODD Thursday
+* September 25 2026, ODD Friday
+* August summer break
+* July 31 2026, ODD Friday
+* June 25 2026, ODD Thursday
+* May 29 2026, ODD Friday
+* April 30 2026, ODD Thursday
+* March Friday 27 2026, ODD Friday
+* February 26 2026, ODD Thursday
+* January 30 2026, ODD Friday
 
+<details>
+  <summary>ODD meetings in 2025</summary>
 * November 28, 2025 [13:00 UTC](https://www.timeanddate.com/worldclock/converter.html?iso=20251128T130000&p1=1440&p2=994&p3=43) ODD Friday
 * October 23(!), 2025 [13:00 UTC](https://www.timeanddate.com/worldclock/converter.html?iso=20251030T130000&p1=1440&p2=994&p3=43) ODD Thursday
 * September 26, 2025 [12:00 UTC](https://www.timeanddate.com/worldclock/converter.html?iso=20250926T120000&p1=1440&p2=994&p3=43) ODD Friday
