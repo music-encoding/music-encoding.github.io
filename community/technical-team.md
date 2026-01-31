@@ -32,7 +32,7 @@ If a proposal doesn't match these two criteria, it will be postponed and should 
 
 We aim to organize, schedule, and document these meetings with the help of a GitHub dashboard: [https://github.com/orgs/music-encoding/projects/9](https://github.com/orgs/music-encoding/projects/9). We also plan to send out timely reminders in advance of these meetings. The intention is to increase both comprehensibility and transparency of the MEI development workflow, and make it more accessible and inviting to newcomers.
 
-The schedule for these developer workshops is the _last Friday of every odd month_, and _last Thursday of every even month_, at 12:00 UTC (in summer) resp. 13:00 UTC (in winter). Calls are scheduled for:
+The schedule for these developer workshops is the _last Friday of every odd month_, and _last Thursday of every even month_, at 14:00 UTC. Calls are scheduled for:
 
 **Note**: An exclamation mark (!) signifies a change from the regular schedule due to holidays or other special circumstances.
 
