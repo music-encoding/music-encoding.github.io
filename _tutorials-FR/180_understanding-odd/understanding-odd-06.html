@@ -58,7 +58,7 @@
     <em>&lt;rng:ref&gt;</em> nous est donné, pointant vers quelque chose nommé
     <em>model.textPhraseLike.limited</em>. Il s'agit d'une
     <strong>classe modèle</strong>. Les classes modèles sont destinées à servir
-    de substituts pour des groupes d'éléments. La classe de modèle elle-même ne connaît pas les éléments dont elle est composée. Elle agit simplement comme un point de regroupement logique.
+    de substituts pour des groupes d'éléments. La classe modèle elle-même ne connaît pas les éléments dont elle est composée. Elle agit simplement comme un point de regroupement logique.
   </p>
   <pre class="codeblock">
 &lt;classSpec ident="model.textPhraseLike.limited" module="MEI.shared" type="model"&gt;
@@ -78,7 +78,7 @@
       rel="noopener, noreferrer"
       >&lt;classSpec&gt;</a
     >
-    , possédant l'attribut <strong>@type="model"</strong>. Comme les
+     possédant l'attribut <strong>@type="model"</strong>. Comme les
     éléments, elle est identifiée de manière unique avec l'attribut
     <strong>@ident</strong>. Elle est attribuée à l'un des modules MEI avec
     l'attribut <em>@module</em>. La MEI suit la convention que tous les noms de
@@ -96,7 +96,7 @@
       target="_blank"
       rel="noopener, noreferrer"
       >model.textPhraseLike.limited</a
-    >, nous voyons que six éléments sont directement des « <em>membres</em> » de
+    >, nous voyons que six éléments sont directement des « membres » de
     cette classe modèle : <em>&lt;dedicatee&gt;</em>,
     <em>&lt;dimensions&gt;</em>, <em>&lt;extent&gt;</em>, <em>&lt;seg&gt;</em>,
     <em>&lt;symbol&gt;</em> et <em>&lt;term&gt;</em>. Regardons
@@ -120,27 +120,26 @@
     &lt;-- constraintSpec
 </pre>
 <p>
-        The element has a <em>&lt;memberOf&gt;</em> element, which uses its <strong>@key</strong> attribute to reference the 
-        <em>model.textPhraseLike.limited</em> model class. So, an element claims membership in a given model class, and it will be automatically allowed 
-        everywhere this model class is allowed within the <em>&lt;content&gt;</em> of an element. As a side note: this means that <em>&lt;dedicatee&gt;</em> may be
-        self-nested (one dedicatee element may contain another dedicatee as child element), which is rather a side effect of the class system than an 
-        intended feature of MEI…
+    Cet élément contient un élément <em>&lt;memberOf&gt;</em> qui référence, dans son attribut <strong>@key</strong>, la classe modèle <em>model.textPhraseLike.limited</em>
+     Ainsi, un élément qui revendiquent son appartenance à une classe modèle est automatiquement compris quand cette classe modèle est automatiquement autorisée où cette 
+     classe modèle est admise dans le <em>&lt;content&gt;</em> d'un élément.
+     Par conséquent, cela veut dire que <em>&lt;dedicatee&gt;</em> peut être auto-imbriqué (un élément <em>&lt;dedicatee&gt;</em> peut contenir un autre élément
+     <em>&lt;dedicatee&gt;</em> comme élément enfant), ce qui relève davantage d'un effet de bord du système de classes que d'une fonctionnalité intentionnelle de la MEI…
     </p>
     <p>
-        However, in regular MEI only six elements are direct members of <em>model.textPhraseLike.limited</em>, but we saw that by referencing this model
-        class, a total of 54 elements are added as allowed content (= child elements). Where do the remaining 48 elements come from? Admittedly, the current 
-        presentation of the Guidelines doesn't present well where those additional elements come from. The answer are 
-        <strong>nested model classes</strong>. One model class can be a member of another model class, as we've seen in the <em>&lt;classSpec&gt;</em>
-        above. Let's go back to the allowed children of the <em>&lt;role&gt;</em> element, but in the <em>by class</em> perspective:
+        Cependant, dans la MEI standard, il n'y a que six éléments qui sont membres direct de <em>model.textPhraseLike.limited</em>, mais nous voyons qu'en faisant référence à cette classe modèle
+        un total de 54 éléments sont ajoutés en tant que contenu autorisé (= éléments enfants). D'où proviennent les 48 éléments supplémentaires ? Il faut reconnaître que la présentztion actuelle des <i>Guidelines</i>
+        ne montre pas clairement d'où proviennent ces éléments supplémentaires. La réponse réside dans les <strong>classes modèles imbriquées</strong>. Une classe modèle peut être membre d'une autre classe modèle, comme nous l'avons vu
+        ci-dessus dans l'élément <em>&lt;classSpec&gt;</em>. Revenons aux enfants autorisés de l'élément <em>&lt;role&gt;</em>, mais cette fois du point de vue des classes :
     </p>
     <div>
         <img style="width: 100%;" src="./role-children-byclass.png"/>
     </div>
     <p>
-        We see the six direct children listed, but also that <em>&lt;fig&gt;</em> is listed under the <em>model.figureLike</em> label, and <em>&lt;catchwords&gt;</em>
-        and <em>&lt;fingerprint&gt;</em> are coming from <em>model.msInline</em>.
-        <a href="/guidelines/v5/elements/role.html#mayContain" target="_blank" rel="noopener, noreferrer">This listing</a> continues and explains the origin of all
-        54 elements. If we have a look at <em>model.figureLike</em>, we see that this class has a <em>&lt;memberOf&gt;</em>, pointing to <em>model.textPhraseLike.limited</em>:
+        Nous voyons la liste des six éléments enfants direct, mais aussi <em>&lt;fig&gt;</em> qui est listé sous l'étiquette <em>model.figureLike</em> et <em>&lt;catchwords&gt;</em>
+        et <em>&lt;fingerprint&gt;</em> proviennent de <em>model.msInline</em>.
+        <a href="/guidelines/v5/elements/role.html#mayContain" target="_blank" rel="noopener, noreferrer">Cette liste</a> se poursuit et explique l'origine des 54 éléments.
+        Si l'on examine <em>model.figureLike</em>, nous voyons que cette classe possède un élément <em>&lt;memberOf&gt;</em> qui pointe vers <em>model.textPhraseLike.limited</em> :
     </p>
     <pre class="codeblock">&lt;classSpec ident="model.figureLike" module="MEI.figtable" type="model"&gt;
     &lt;desc&gt;Groups elements representing or containing graphic information such as an illustration or figure.&lt;/desc&gt;
@@ -149,20 +148,21 @@
     &lt;/classes&gt;
 &lt;/classSpec&gt;</pre>
     <p>
-        So, <em>model.figureLike</em> is a member of <em>model.textPhraseLike.limited</em>, which means that wherever <em>model.textPhraseLike.limited</em>
-        is allowed as child content, <em>model.figureLike</em> (and all the elements which are members of it) is also allowed. The deepest <em>nesting</em>
-        of classes within <em>model.textPhraseLike.limited</em> is actually three: <em>model.nameLike.geogName</em> is a member of <em>model.nameLike.place</em>, 
-        which is a member of <em>model.nameLike</em>, which is a member of <em>model.textPhraseLike.limited</em>. All elements which are members of any of those
-        classes will be allowed as children of any element which has a &lt;rng:ref name="model.textPhraseLike.limited" /&gt; in its <em>&lt;content&gt;</em>. 
+        Ainsi, <em>model.figureLike</em> est membre de <em>model.textPhraseLike.limited</em>, ce qui signifie que partout où <em>model.textPhraseLike.limited</em>
+        est autorisé <em>model.figureLike</em> (et tous les éléments qui en font partie) l'est également. Le niveau d'<em>imbrication</em> le plus profond
+        des classes au sein de <em>model.textPhraseLike.limited</em> est de trois : <em>model.nameLike.geogName</em> fait partie de <em>model.nameLike.place</em>
+        qui fait partie de <em>model.nameLike</em> qui fait partie de <em>model.textPhraseLike.limited</em>. Tous les éléments qui font partie d'une de ces classes
+        sont autorisés comme enfant de tout élément dont le <em>&lt;content&gt;</em> contient une référence &lt;rng:ref name="model.textPhraseLike.limited" /&gt;. 
     </p>
     <p>
-        As you can see from the names in that class hierarchy above, more specific classes are members of more generic classes. When trying to identify the
-        set of elements that should be allowed inside a given (new) element, one may purposely pick a class that adds some very specific elements, or that 
-        brings a very wide slate of elements. This system of model classes makes it very easy to be very selective on the allowed contents of elements. It 
-        also makes it very easy to introduce new elements into MEI: By subscribing to existing model classes, those elements will be automatically included
-        in the schema in all the places those model classes are allowed already.
+        Comme on peut le constater à partir des noms figurant dans cette hiérarchie de classes, les classes les plus spécifiques sont membres de classes plus 
+        génériques. Lorsqu'il s'agit d'identifier l'ensemble des éléments qui doivent être autorisés à l'intérieur d'un élément donné (nouvellement créé, 
+        par exemple), on peut délibérément choisir une classe qui n'ajoute que des éléments très spécifiques, ou au contraire une classe qui introduit un 
+        ensemble très large d'éléments. Ce système de classes modèles permet ainsi de contrôler très finement les contenus autorisés des éléments. Il facilite 
+        également grandement l'introduction de nouveaux éléments dans la MEI. En s'inscrivant dans des classes modèles existantes, ces éléments seront 
+        automatiquement inclus dans le schéma partout où ces classes modèles sont déjà autorisées.
     </p>
     <p>
-        Now let's move on to <em>attributes</em>, which are handled in a very similar manner.
+        Passons maintenant aux <em>attributs</em> qui sont gérés d’une manière très similaire.
     </p>
 </div>
