@@ -12,7 +12,7 @@
       "prefillFile": "101_quickstart_step-01-prefill.xml",
       "xpaths": [
         {"rule":"count(//mei:note) = 1", "renderanyway": false, "hint": "Vous avez besoin d'un élément note."},
-        {"rule":"count(//mei:note/@*) = 3 and //mei:note/@pname and //mei:note/@oct and //mei:note/@dur", "renderanyway": false, "hint": "Vous avez besoin de trois attributs : @pname, @oct, et @dur."},
+        {"rule":"count(//mei:note/@*) = 3 and //mei:note/@pname and //mei:note/@oct and //mei:note/@dur", "renderanyway": false, "hint": "Vous avez besoin de trois attributs : @pname, @oct et @dur."},
         {"rule":"//mei:note/@pname", "renderanyway": false, "hint": "La valeur de l'attribut @pname est comprise entre 'a' et 'g'."},
         {"rule":"//mei:note/@oct", "renderanyway": false, "hint": "La valeur de l'attribut @oct doit être un entier."},
         {"rule":"//mei:note/@dur", "renderanyway": false, "hint": "Les valeurs possible de l'attribut @dur doivent respecter une progression géométrique (1, 2, 4, 8, 16, …), où chaque nombre est le double du précédent jusqu'à 2048."},

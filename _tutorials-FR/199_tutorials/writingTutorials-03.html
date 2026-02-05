@@ -3,7 +3,7 @@
     Le fichier
     <a href="https://en.wikipedia.org/wiki/JSON" target="_blank">JSON</a>
     représente la table des matières du tutoriel. Il contient un objet avec
-    plusieurs propriétés. Jetons un coup d'œil à (une version simplifiée) du
+    plusieurs propriétés. Jetons un coup d'œil à une version simplifiée du
     tutoriel actuel :
   </p>
   <pre class="codeblock">{
@@ -39,7 +39,7 @@
     le contacter pour des questions, mais aussi de vous donner une
     reconnaissance publique pour le travail que vous faites sur la MEI. Si vous
     avez travaillé sur un tutoriel avec un groupe de personnes, vous pouvez bien
-    sûr toutes les inclure. Alors pourquoi ne pas demander à certains de vos
+    sûr toutes les inclure. Alors, pourquoi ne pas demander à certains de vos
     étudiants de travailler sur ces tutoriels ?
   </p>
   <h1>Étapes</h1>
@@ -47,7 +47,7 @@
     Revenons à la propriété <code>"steps"</code>. Il s'agit d'un tableau d'objets,
     décrivant chacun une étape du tutoriel. La seule propriété qui est
     obligatoire est <code>"descFile"</code>. Ici, vous devez fournir le nom du
-    fichier HTML qui correspond au contenu de cette étape. Par exemple le texte que vous
+    fichier HTML qui correspond au contenu de cette étape. Par exemple, le texte que vous
     lisez actuellement provient de l'un de ces fichiers. Ce fichier n'est pas un
     fichier HTML complet ; il doit commencer par un élément racine
     <code>&lt;div&gt;</code> et contenir du HTML simple. La propriété suivante,
@@ -99,7 +99,7 @@
     pouvez fournir une propriété <code>"hint"</code>. Si le contenu de l'éditeur
     ne correspond pas à une règle XPath, son indication sera affichée comme une
     boîte d'avertissement en dessous de l'éditeur. Les règles XPath sont
-    vérifiées dans l'ordre, et la vérification s'arrête dès qu'une règle est
+    vérifiées dans l'ordre et la vérification s'arrête dès qu'une règle est
     fausse. Si toutes les règles sont satisfaites, le tutoriel passera
     automatiquement à l'étape suivante.
   </p>
@@ -110,7 +110,7 @@
     sont satisfaites. Cependant, vous pourriez demander à l'utilisateur
     d'essayer différentes hauteurs, en indiquant que le tour continue lorsqu'une
     hauteur spécifique est entrée. Ensuite, vous pouvez définir
-    <code>"renderanyway"</code> sur <code>true</code>, et Verovio fera de son
+    <code>"renderanyway"</code> sur <code>true</code> et Verovio fera de son
     mieux pour rendre la saisie actuelle de l'utilisateur. Ce comportement est
     implémenté dans la deuxième règle XPath ci-dessus.
   </p>
@@ -123,6 +123,6 @@
     sera appliquée. Enfin, vous pouvez préremplir l'éditeur au début d'une étape
     avec le contenu d'un fichier que vous spécifiez avec la propriété <code>"prefillFile"</code>.
     Si vous n'en spécifiez pas, l'éditeur conserve le code entré par l'utilisateur durant
-    l'étape précédante (ou il est vide s'il s'agit de la première étape.)
+    l'étape précédente (ou il est vide s'il s'agit de la première étape.)
   </p>
 </div>

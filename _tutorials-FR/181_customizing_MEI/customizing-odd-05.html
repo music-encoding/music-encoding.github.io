@@ -26,17 +26,17 @@
     <dt>replace</dt>
     <dd>
       utiliser cet objet de préférence à tout objet existant avec le même
-      identifiant, et ignorer tout enfant de cet objet; traiter tout nouvel
+      identifiant et ignorer tout enfant de cet objet; traiter tout nouvel
       enfant en mode 'replace'
     </dd>
     <dt>delete</dt>
     <dd>
-      ne pas traiter cet objet ni aucun objet existant avec le même identifiant;
+      ne pas traiter cet objet ni aucun objet existant avec le même identifiant,
       générer une erreur si de nouveaux enfants sont fournis
     </dd>
     <dt>change</dt>
     <dd>
-      traiter cet objet, et traiter ses enfants, ainsi que ceux de tout objet
+      traiter cet objet et traiter ses enfants, ainsi que ceux de tout objet
       existant avec le même identifiant, en mode 'change'
     </dd>
   </dl>
@@ -95,7 +95,7 @@
     d'attribut pour <code>@xml:base</code>. Alternativement, il aurait été
     possible d'utiliser <code>@mode="change"</code> sur la classe d'attributs,
     omettre les classes enfants (comme une valeur de <em>change</em> déclenchera
-    le traitement des classes d'origine également, voir ci-dessus), et ajouter
+    le traitement des classes d'origine également, voir ci-dessus) et ajouter
     un <code>mode="delete"</code> supplémentaire sur la définition de
     l'attribut, comme on peut le voir dans l'exemple suivant :
   </p>

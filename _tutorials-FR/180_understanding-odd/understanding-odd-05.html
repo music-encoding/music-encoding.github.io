@@ -1,6 +1,6 @@
 <div>
   <p>
-   Les définitions des éléments constituent les principaux blocs de construction de la spécification MEI. Leur définition sont réalisées 
+   Les définitions des éléments constituent les principaux blocs de construction de la spécification MEI. Leurs définition sont réalisées 
    en utilisant l'élément
     <a
       href="https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-elementSpec.html"
@@ -49,26 +49,26 @@
     l'élément &lt;elementSpec&gt;. De plus, le module auquel il appartient est
     spécifié avec l'attribut <strong>@module</strong>. Le module
     <em>MEI.shared</em> utilisé ici sert de solution de secours pour de
-    nombreux éléments trop génériques pour s'intègrer dans un module précis ou 
+    nombreux éléments trop génériques pour s'intégrer dans un module précis ou 
     qui sont indispensables pour utiliser MEI.
   </p>
   <p>
     Nous voyons ensuite un élément <em>&lt;desc&gt;</em> qui donne une
-    explication très succinte de l'objectif et de la portée de l'élément en
+    explication très succincte de l'objectif et de la portée de l'élément en
     question. Cette information est souvent utilisée dans les logiciels sous
-    forme d'info-bulle pour guider un codeur dans l'utilisation des éléments
+    forme d'infobulle pour guider un codeur dans l'utilisation des éléments
     appropriés. Cette description doit donc être la plus efficace possible.
   </p>
   <p>
     La prochaine information est fournie avec l'élément
-    <em>&lt;classes&gt;</em>, qui spécifie à quelles <em>classes</em>
+    <em>&lt;classes&gt;</em> qui spécifie à quelles <em>classes</em>
     l'élément appartient. Nous couvrirons cela plus en détail plus tard, mais
     pour vous donner une première compréhension, il s'agit de définir
-    quelles attributs sont disponibles sur l'élément et où il peut être utilisé
+    quels attributs sont disponibles sur l'élément et où il peut être utilisé
     à l'intérieur d'un fichier MEI.
   </p>
   <p>
-    Nous voyons maintenant l'élément <em>&lt;content&gt;</em>, qui
+    Nous voyons maintenant l'élément <em>&lt;content&gt;</em> qui
     définit ce qui peut être <em>à l'intérieur</em> de notre élément. Ici, la
     version d'ODD utilisée par MEI bascule vers l'espace de noms
     <em>RelaxNG</em> (http://relaxng.org/ns/structure/1.0), comme indiqué par le
@@ -101,11 +101,11 @@
       >&lt;perfRes&gt;</a
     >. Le fait que <em>&lt;rng:oneOrMore&gt;</em> contienne
     <em>&lt;rng:choice&gt;</em> indique qu'il n'y a pas d'ordre particulier pour
-    ces éléments enfants, et qu'ils peuvent être librement mélangés avec du
+    ces éléments enfants et qu'ils peuvent être librement mélangés avec du
     contenu textuel.
   </p>
   <p>
-    Dans notre exemple, les éléments suivant sont des références directes
+    Dans notre exemple, les éléments suivants sont des références directes
     (<em>&lt;rng:ref&gt;</em>) à des éléments précis, identifiés par leurs
     attributs <em>@ident</em> respectifs. Dans la prochaine étape de ce
     tutoriel, nous verrons une approche plus flexible en utilisant des
@@ -113,7 +113,7 @@
     les besoins.
   </p>
   <p>
-    Le dernier élément fournie par <em>&lt;elementSpec&gt;</em> est
+    Le dernier élément fourni par <em>&lt;elementSpec&gt;</em> est
     <em>&lt;remarks&gt;</em>. Alors que l'élément <em>&lt;desc&gt;</em> fournit uniquement une brève description d'un élément (généralement une phrase), l'élément <em>&lt;remarks&gt;</em>
     offre souvent des informations supplémentaires sur son utilisation, ou, comme dans ce cas, précise qu'il est dérivé d'un élément existant dans un autre format.
     En plus de ce que l'on observe ici pour <em>&lt;castItem&gt;</em>, ODD propose deux autres types d'informations que l'on peut spécifier pour les éléments.
@@ -123,13 +123,13 @@
   </p>
     
     <p>
-    En plus de cette deuxième façon de définir les attributs, notre exemple avec <em>&lt;castItem&gt;</em> ne nous montre pas les règles Schematron, qui peuvent être définies à l'aide d'éléments 
+    En plus de cette deuxième façon de définir les attributs, notre exemple avec <em>&lt;castItem&gt;</em> ne nous montre pas les règles Schematron qui peuvent être définies à l'aide d'éléments 
     <a href="https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-constraintSpec.html" target="_blank" rel="noopener, noreferrer">&lt;constraintSpec&gt;</a>. Schematron 
     fait partie intégrante de la MEI et permet de vérifier certaines contraintes dépendantes du contexte dans les fichiers MEI.
     Toutefois, une documentation complète de Schematron dépasserait le cadre de ce tutoriel.
     Il y a d'autres tutoriels en ligne (comme 
         <a href="http://dh.obdurodon.org/schematron-intro.xhtml" target="_blank" rel="noopener, noreferrer">ici</a> ou
-        <a href="https://www.xml.com/pub/a/2003/11/12/schematron.html" target="_blank" rel="noopener, noreferrer">là</a>), et bien sûr
+        <a href="https://www.xml.com/pub/a/2003/11/12/schematron.html" target="_blank" rel="noopener, noreferrer">là</a>) et, bien sûr,
         il est toujours possible d'étudier les règles Schematron déjà présentes dans MEI pour comprendre leur fonctionnement. Un bon point de départ est sans doute l'élément
         <a href="/guidelines/v5/elements/staffDef.html#constraints" target="_blank" rel="noopener, noreferrer">&lt;staffDef&gt;</a>,
        qui est soumis à un grand nombre de règles Schematron.  

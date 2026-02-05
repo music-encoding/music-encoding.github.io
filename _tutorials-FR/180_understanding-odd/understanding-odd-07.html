@@ -20,8 +20,8 @@
     <a href="https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-attDef.html" target="_blank"
       rel="noopener, noreferrer">&lt;attDef&gt;</a>
     et suivent certaines conventions que nous avons déjà vues sur les éléments
-    et les classes modèles : leur nom est fourni dans l'attribut
-    <em>@ident</em>, et ils ont un élément <em>&lt;desc&gt;</em> avec une brève
+    et les classes modèles : leur nom est fourni dans l'attribut
+    <em>@ident</em> et ils ont un élément <em>&lt;desc&gt;</em> avec une brève
     description. Ce qui est nouveau, c'est l'attribut <strong>@usage</strong>,
     qui spécifie quand utiliser l'attribut spécifié. La valeur ici,
     « <em>opt</em> », est utilisée pour les attributs facultatifs – <em>@xml:id</em>
@@ -113,9 +113,9 @@
   <p> Selon cette définition, <em>&lt;role&gt;</em> est membre (<em>&lt;memberOf&gt;</em>) des classes d'attributs
     <em>att.common</em>, <em>att.facsimile</em> et <em>att.lang</em>, mais pas de <em>att.id</em>. Pourtant, la
     documentation de <em>&lt;role&gt;</em> indique bien que <em>@xml:id</em> est disponible. La réponse se trouve dans
-    le mécanisme d'imbrication des classes : <em>&lt;role&gt;</em> hérite des attributs de <em>att.common</em> (qui,
-    en soi, n'en définit aucun). Mais <em>att.common</em> est à son tour membre de <em>att.basic</em>, qui apporte
-    l'attribut <em>@xml:base</em>, et <em>att.basic</em> est lui-même membre de <em>att.id</em>, qui apporte finalement
+    le mécanisme d'imbrication des classes : <em>&lt;role&gt;</em> hérite des attributs de <em>att.common</em> (qui,
+    en soi, n'en définit aucun). Mais <em>att.common</em> est à son tour membre de <em>att.basic</em> qui apporte
+    l'attribut <em>@xml:base</em> et <em>att.basic</em> est lui-même membre de <em>att.id</em> qui apporte finalement
     l'attribut <em>@xml:id</em>. Regardons brièvement la définition de <em>att.common</em> :
   </p>
   <pre class="codeblock">&lt;classSpec ident="att.common" module="MEI.shared" type="atts"&gt; 
@@ -131,7 +131,7 @@
   <p> Ainsi, c'est encore par l'usage de l'élément <em>&lt;memberOf&gt;</em> et de son attribut <em>@key</em> que
     l'appartenance à différentes classes est établie dans MEI — un mécanisme désormais familier. Tout comme pour les
     classes de modèle, les <strong>>classes d'attributs</strong> vont des plus générales aux plus spécifiques. En adhérant aux bonnes
-    classes d'attributs, un élément obtient ainsi exactement le jeu d'attributs approprié, et il devient possible
+    classes d'attributs, un élément obtient ainsi exactement le jeu d'attributs approprié et il devient possible
     d'ajouter ou de retirer sélectivement des attributs à de nouveaux ou anciens éléments simplement en modifiant ces
     associations. </p>
   <p> Enfin, la spécification de <em>att.common</em> ci-dessus révèle une autre classe d'attributs, <em>att.typed</em>,
@@ -145,7 +145,7 @@
       href="/guidelines/v5/elements/meiHead.html#attributes" target="_blank"
       rel="noopener, noreferrer">&lt;meiHead&gt;</a>), il est facile de remonter à l'origine de n'importe quel attribut
     autorisé. </p>
-  <p> Il ne reste plus qu'une grande partie à comprendre pour maîtriser ODD tel qu'il est utilisé pour définir MEI : les
-    <stong>types de données</stong>, qui seront présentés dans l'étape suivante de ce tutoriel. </p>
+  <p> Il ne reste plus qu'une grande partie à comprendre pour maîtriser ODD tel qu'il est utilisé pour définir MEI : les
+    <strong>types de données</strong> qui seront présentés dans l'étape suivante de ce tutoriel. </p>
   </p>
 </div>
