@@ -49,7 +49,7 @@
 &lt;/datatype&gt;</pre
   >
   <p>
-    Dans d'autres cas, MEI définit ses propres types de données. Cela se fait
+    Dans d'autres cas, la MEI définit ses propres types de données. Cela se fait
     avec un élément
     <a
       href="https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-macroSpec.html"
@@ -112,7 +112,7 @@
         Nous retrouvons dans cet exemple l'usage des attributs <em>@ident</em> et <em>@module</em> et de l'élément enfant <em>&lt;desc&gt;</em>. 
         Ce qui nous intéresse ici est l'attribut <em>@type</em> dont la valeur est « <em>dt</em> » (pour data type).
         Par convention, tous les noms de types de données utilisent le préfixe « <em>data.</em> » et le nom qui suit est écrit en capitales.
-        Nous voyons ensuite, l'élément <em>&lt;value list&gt;</em> qui est dans notre cas indiqué comme « closed ». Toutes les valeurs possibles 
+        Nous voyons ensuite l'élément <em>&lt;value list&gt;</em> qui est dans notre cas indiqué comme « closed ». Toutes les valeurs possibles 
         sont énumérées dans cette liste. Dans le cas contraire, l'attribut <em>@type</em> avec la valeur « <em>semi</em> » aurait indiqué une 
         liste « semi-ouverte » qui propose des valeurs recommandées, mais permet à l'utilisateur d'en définir d'autres si aucune ne convient à la situation.
         Cela offre en général un bon compromis entre la cohérence du schéma et la possibilité de l'étendre selon les besoins.
@@ -144,7 +144,7 @@ Ce type est utilisé par <em>data.COLOR</em> qui sert à contrôler les valeurs 
     </p>
     
     <pre class="codeblock">&lt;macroSpec ident="data.COLORVALUES" module="MEI" type="dt"&gt;
-    &lt;desc&gt;Valeur paramétrables de couleur&lt;/desc&gt;
+    &lt;desc&gt;Valeurs paramétrables de couleur&lt;/desc&gt;
     &lt;content&gt;
         &lt;rng:choice&gt;
             &lt;rng:data type="token"&gt;

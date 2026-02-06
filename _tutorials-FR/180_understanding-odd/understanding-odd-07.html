@@ -1,7 +1,7 @@
 <div>
   <p>
     Comme nous l'avons vu à l'étape précédente, une grande partie de la
-    hiérarchie MEI est établie grâce à l'utilisation de classes modèles. Un
+    hiérarchie MEI est établie grâce à l'utilisation de classes de modèles. Un
     mécanisme très similaire est utilisé par ODD pour rendre les attributs
     disponibles sur plusieurs éléments. Mais avant de traiter des classes
     d'attributs, jetons un bref coup d'œil sur la manière dont un attribut est
@@ -20,7 +20,7 @@
     <a href="https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-attDef.html" target="_blank"
       rel="noopener, noreferrer">&lt;attDef&gt;</a>
     et suivent certaines conventions que nous avons déjà vues sur les éléments
-    et les classes modèles : leur nom est fourni dans l'attribut
+    et les classes de modèles : leur nom est fourni dans l'attribut
     <em>@ident</em> et ils ont un élément <em>&lt;desc&gt;</em> avec une brève
     description. Ce qui est nouveau, c'est l'attribut <strong>@usage</strong>,
     qui spécifie quand utiliser l'attribut spécifié. La valeur ici,
@@ -72,7 +72,7 @@
     enfant <em>&lt;attList&gt;</em> à l'intérieur de
     <em>&lt;elementSpec&gt;</em>. Cependant, dans la plupart des cas, un
     attribut est censé être disponible sur plus d'un élément. L'attribut
-    <em>@xml:id</em> introduit ci-dessus est disponible sur <strong>tous</strong> les élément MEI,
+    <em>@xml:id</em> introduit ci-dessus est disponible sur <strong>tous</strong> les éléments MEI,
     il devrait donc être défini plusieurs centaines de fois – cela n'est ni maintenable ni efficace. Pour pallier ce
     problème, ODD utilise à
     nouveau un système de classes, cette fois-ci pour les
@@ -130,7 +130,7 @@
     &lt;/classSpec&gt;</pre>
   <p> Ainsi, c'est encore par l'usage de l'élément <em>&lt;memberOf&gt;</em> et de son attribut <em>@key</em> que
     l'appartenance à différentes classes est établie dans MEI — un mécanisme désormais familier. Tout comme pour les
-    classes de modèle, les <strong>>classes d'attributs</strong> vont des plus générales aux plus spécifiques. En adhérant aux bonnes
+    classes de modèle, les <strong>classes d'attributs</strong> vont des plus générales aux plus spécifiques. En adhérant aux bonnes
     classes d'attributs, un élément obtient ainsi exactement le jeu d'attributs approprié et il devient possible
     d'ajouter ou de retirer sélectivement des attributs à de nouveaux ou anciens éléments simplement en modifiant ces
     associations. </p>
@@ -139,13 +139,13 @@
     comme nous l'avons vu plus haut. La raison en est que cette classe d'attributs définit un <em>@type</em> très
     générique : <em>Désignation caractérisant l'élément d'une certaine manière, selon un système de classification ou
       une typologie à étiquette unique.</em> Comparé à cela, le <em>@type</em> de <em>&lt;meiHead&gt;</em> possède une
-    définition bien plus stricte. De manière générale, MEI cherche à éviter d'utiliser un même nom d'attribut pour
+    définition bien plus stricte. De manière générale, la MEI cherche à éviter d'utiliser un même nom d'attribut pour
     plusieurs définitions différentes, même si cela n'entraîne pas de confusion technique. Grâce à la perspective « par
     classe » des attributs (voir la section « attributs » de la documentation de <a
       href="/guidelines/v5/elements/meiHead.html#attributes" target="_blank"
       rel="noopener, noreferrer">&lt;meiHead&gt;</a>), il est facile de remonter à l'origine de n'importe quel attribut
     autorisé. </p>
-  <p> Il ne reste plus qu'une grande partie à comprendre pour maîtriser ODD tel qu'il est utilisé pour définir MEI : les
+  <p> Il ne reste plus qu'une grande partie à comprendre pour maîtriser ODD tel qu'il est utilisé pour définir la MEI : les
     <strong>types de données</strong> qui seront présentés dans l'étape suivante de ce tutoriel. </p>
   </p>
 </div>

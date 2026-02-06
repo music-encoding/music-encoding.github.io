@@ -57,8 +57,8 @@
     Au lieu des 54 éléments de la capture d'écran précédente, un seul
     <em>&lt;rng:ref&gt;</em> nous est donné, pointant vers quelque chose nommé
     <em>model.textPhraseLike.limited</em>. Il s'agit d'une
-    <strong>classe modèle</strong>. Les classes modèles sont destinées à servir
-    de substituts pour des groupes d'éléments. La classe modèle elle-même ne connaît pas les éléments dont elle est composée. Elle agit simplement comme un point de regroupement logique.
+    <strong>classe de modèle</strong>. Les classes de modèles sont destinées à servir
+    de substituts pour des groupes d'éléments. La classe de modèle elle-même ne connaît pas les éléments dont elle est composée. Elle agit simplement comme un point de regroupement logique.
   </p>
   <pre class="codeblock">
 &lt;classSpec ident="model.textPhraseLike.limited" module="MEI.shared" type="model"&gt;
@@ -71,7 +71,7 @@
 &lt;/classSpec&gt;</pre
   >
   <p>
-    Une classe modèle est encodée avec un élément
+    Une classe de modèle est encodée avec un élément
     <a
       href="https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-classSpec.html"
       target="_blank"
@@ -82,7 +82,7 @@
     éléments, elle est identifiée de manière unique avec l'attribut
     <strong>@ident</strong>. Elle est attribuée à l'un des modules MEI avec
     l'attribut <em>@module</em>. La MEI suit la convention que tous les noms de
-    classes modèle sont préfixés par « <em>model.</em> ». Ils ont
+    classes de modèle sont préfixés par « <em>model.</em> ». Ils ont
     également toujours un <em>&lt;desc&gt;</em> avec une brève explication de
     l'objectif du groupe. Passons les éléments <em>&lt;memberOf&gt;</em> sur
     <em>&lt;classSpec&gt;</em> de l'exemple ci-dessus pour un moment et voyons
@@ -97,7 +97,7 @@
       rel="noopener, noreferrer"
       >model.textPhraseLike.limited</a
     >, nous voyons que six éléments sont directement des « membres » de
-    cette classe modèle : <em>&lt;dedicatee&gt;</em>,
+    cette classe de modèle : <em>&lt;dedicatee&gt;</em>,
     <em>&lt;dimensions&gt;</em>, <em>&lt;extent&gt;</em>, <em>&lt;seg&gt;</em>,
     <em>&lt;symbol&gt;</em> et <em>&lt;term&gt;</em>. Regardons
     <em>&lt;dedicatee&gt;</em> :
@@ -120,16 +120,16 @@
     &lt;-- constraintSpec
 </pre>
 <p>
-    Cet élément contient un élément <em>&lt;memberOf&gt;</em> qui référence, dans son attribut <strong>@key</strong>, la classe modèle <em>model.textPhraseLike.limited</em>
-     Ainsi, un élément qui revendiquent son appartenance à une classe modèle est automatiquement compris quand cette classe modèle est automatiquement autorisée où cette 
-     classe modèle est admise dans le <em>&lt;content&gt;</em> d'un élément.
+    Cet élément contient un élément <em>&lt;memberOf&gt;</em> qui référence, dans son attribut <strong>@key</strong>, la classe de modèle <em>model.textPhraseLike.limited</em>
+     Ainsi, un élément qui revendiquent son appartenance à une classe de modèle est automatiquement compris quand cette classe de modèle est automatiquement autorisée où cette 
+     classe de modèle est admise dans le <em>&lt;content&gt;</em> d'un élément.
      Par conséquent, cela veut dire que <em>&lt;dedicatee&gt;</em> peut être auto-imbriqué (un élément <em>&lt;dedicatee&gt;</em> peut contenir un autre élément
      <em>&lt;dedicatee&gt;</em> comme élément enfant), ce qui relève davantage d'un effet de bord du système de classes que d'une fonctionnalité intentionnelle de la MEI…
     </p>
     <p>
-        Cependant, dans la MEI standard, il n'y a que six éléments qui sont membres direct de <em>model.textPhraseLike.limited</em>, mais nous voyons qu'en faisant référence à cette classe modèle
+        Cependant, dans la MEI standard, il n'y a que six éléments qui sont membres direct de <em>model.textPhraseLike.limited</em>, mais nous voyons qu'en faisant référence à cette classe de modèle
         un total de 54 éléments sont ajoutés en tant que contenu autorisé (= éléments enfants). D'où proviennent les 48 éléments supplémentaires ? Il faut reconnaître que la présentztion actuelle des <i>Guidelines</i>
-        ne montre pas clairement d'où proviennent ces éléments supplémentaires. La réponse réside dans les <strong>classes modèles imbriquées</strong>. Une classe modèle peut être membre d'une autre classe modèle, comme nous l'avons vu
+        ne montre pas clairement d'où proviennent ces éléments supplémentaires. La réponse réside dans les <strong>classes de modèles imbriquées</strong>. Une classe de modèle peut être membre d'une autre classe de modèle, comme nous l'avons vu
         ci-dessus dans l'élément <em>&lt;classSpec&gt;</em>. Revenons aux enfants autorisés de l'élément <em>&lt;role&gt;</em>, mais cette fois du point de vue des classes :
     </p>
     <div>
@@ -158,9 +158,9 @@
         Comme on peut le constater à partir des noms figurant dans cette hiérarchie de classes, les classes les plus spécifiques sont membres de classes plus 
         génériques. Lorsqu'il s'agit d'identifier l'ensemble des éléments qui doivent être autorisés à l'intérieur d'un élément donné (nouvellement créé, 
         par exemple), on peut délibérément choisir une classe qui n'ajoute que des éléments très spécifiques, ou au contraire une classe qui introduit un 
-        ensemble très large d'éléments. Ce système de classes modèles permet ainsi de contrôler très finement les contenus autorisés des éléments. Il facilite 
-        également grandement l'introduction de nouveaux éléments dans la MEI. En s'inscrivant dans des classes modèles existantes, ces éléments seront 
-        automatiquement inclus dans le schéma partout où ces classes modèles sont déjà autorisées.
+        ensemble très large d'éléments. Ce système de classes de modèles permet ainsi de contrôler très finement les contenus autorisés des éléments. Il facilite 
+        également grandement l'introduction de nouveaux éléments dans la MEI. En s'inscrivant dans des classes de modèles existantes, ces éléments seront 
+        automatiquement inclus dans le schéma partout où ces classes de modèles sont déjà autorisées.
     </p>
     <p>
         Passons maintenant aux <em>attributs</em> qui sont gérés d’une manière très similaire.
