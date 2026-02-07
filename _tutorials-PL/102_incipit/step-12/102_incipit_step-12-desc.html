@@ -1,0 +1,23 @@
+<div>
+    <p class="tutorialGoal">Krok dwunasty: dodanie ostatniego brakującego elementu przykładu, łuku w trzecim takcie.</p>
+
+    <p>Istnieją dwa różne sposoby zakodowania łuku w MEI:</p>
+    <ol>
+        <li>Atrybut <code>@slur</code> na elemencie <code>&lt;note&gt;</code> lub <code>&lt;chord&gt;</code> z wartością <code>i=initial</code>, <code>m=medial</code> lub <code>t=terminal</code>.</li>
+        <li>Oddzielny element <code>&lt;slur&gt;</code>.</li>
+    </ol>
+
+    <p>W tym ostatnim kroku, będziesz używać drugiego podejścia: Podobnie jak w przypadku dynamiki, elementy <code>&lt;slur&gt;</code> są zdarzeniami kontrolnymi. Nie są one kodowane jako elementy potomne odpowiadających im zdarzeń, ale są umieszczane w większości przypadków na zewnątrz elementów <code>staff</code>.</p>
+
+    <p>Aby wskazać punkt początkowy i końcowy łuku, można zastosować odniesienie do odpowiadającego <code>@xml:id</code> elementu <code>&lt;note&gt;</code> lub <code>&lt;chord&gt;</code>. <code>@xml:id</code> to identyfikatory z arbitralną, ale unikalną sekwencją znaków, które regulują nazewnictwo elementu w całym dokumencie i ułatwiają tworzenie linków między elementami a innymi zasobami. Dla elementów <code>&lt;slur&gt;</code>, odniesienie do <code>@xml:id</code> elementu można podać za pomocą atrybutów <code>@startid</code> i <code>@endid</code>.</p>
+
+    <p>Razem z <code>@startid</code> i <code>@endid</code>, w tym kroku należy użyć następujących atrybutów:</p>
+    <ul>
+        <li><code>@staff</code> – numer identyfikacyjny pięciolinii, do której jest stosowany element, np. <code>“1”</code> w tym przypadku,</li>
+        <li><code>@curvedir</code> (kierunek łuku) – opisuje łuk z ogólnym terminem wskazującym kierunek skrzywienia: <code>“powyżej”</code>, <code>“poniżej”</code> lub <code>“mieszany”</code>,</li>
+        <li><code>@startid</code> – odwołanie do <code>xml:id</code> początkowej nuty łuku, w formie: <code>#xml:id</code> (zauważ hasz <code>#</code>),</li>
+        <li><code>@endid</code> – odwołanie do <code>xml:id</code> końcowej nuty łuku, w formie: <code>#xml:id</code> (zauważ hasz <code>#</code>).</li>
+    </ul>
+
+    <p class="tutorialTask">Zidentyfikuj pierwszą i ostatnią nutę, do których jest dołączony łuk (wewnątrz pierwszego elementu <code>&lt;beam&gt;</code> w takcie 3) i dodaj atrybuty <code>@xml:id</code> do obu elementów <code>&lt;note&gt;</code>. Ustaw unikalną wartość dla każdego <code>@xml:id</code>, dla tego przykładu możesz użyć wartości: <code>“d1e4614”</code>, <code>“d1e4615”</code>. Dodaj element kontrolny <code>&lt;slur&gt;</code> po zamknięciu tagu <code>&lt;staff&gt;</code> i zastosuj odpowiednie atrybuty.</p>
+</div>
