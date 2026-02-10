@@ -23,4 +23,5 @@ Institutional membership plays a vital role in sustaining MEI’s mission and ac
     - Sponsor materials (such as stickers, handouts, pencils, etc.) can be provided to conference organizers for inclusion with conference registration packets provided to attendees
     - Conference coffee break sponsorship
     - Conference bursary sponsorship 
-    - Conference exhibitor (subject to review by MEI Board and MEC organizers)
+    - Conference exhibitor (present your company, project, or institution at a dedicated accessible location at the conference venue) 
+        - will be subject to review by MEI Board and MEC organizers
