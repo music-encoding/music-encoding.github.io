@@ -45,6 +45,9 @@ menu:
           - id: meiboard
             label: 'MEI Board'
             url: '/mei-board.html'
+          - id: institutionalsponsors
+            label: 'Institutional Membership Sponsor Levels'
+            url: '/institutional-sponsorship.html'
           - id: meibylaws
             label: 'MEI By-laws'
             url: '/mei-by-laws.html'
