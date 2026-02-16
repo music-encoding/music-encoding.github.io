@@ -15,7 +15,7 @@ Minutes: Anna Kijas
 Updates
 - Conference & Workshop Planning
     - There are two institutions interested in hosting future Music Encoding Conferences in 2027 and 2028
-    - Potential host for 2027 will confirm by mid-March 2026 whether it is feasible for the to host
+    - Potential host for 2027 will confirm by mid-March 2026 whether it is feasible for them to host
     - We have a interested host for the 2026 Developers’ Workshop and are waiting for confirmation  
 - Community Comments on By-law revisions
     - The period for community comments about the By-law revisions ended on February 9th, but we will accept comments through February 13th before sending out the ballot on February 16th
