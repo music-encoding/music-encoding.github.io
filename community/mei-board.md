@@ -6,36 +6,38 @@ title: "MEI Board"
 
 The MEI Board manages the property and business of MEI. It promotes the development of MEI, oversees the activities of the MEI Technical Team, guides the development of the MEI conceptual model, Guidelines and schemata, and acts as a contact point for MEI-related activities. The Board consists of nine elected members and one member designated by each Host Institution. The Board will hold regular, virtual or in-person meetings. As schedules and funding permit, the Board will meet in person at least once per year.
 
-[Read the 2024 Election Candidate statements](/community/mei-board/elections/2024/candidates)
+Contact the MEI Board: mei-board at lists.uni-paderborn.de 
+
+[Read the 2025 Election Candidate statements](/community/mei-board/elections/2025/candidates)
 
 ## Current Board Members
+
+### Term 2026–2028
+
+* **Jessica Grimmer**, Center for Archival Futures (CAFe) and Maryland's College of Information
+* **Anna Plaksin**, Musikwissenschaftliches Seminar Detmold/Paderborn, KreativInstitut.OWL
+* **David M. Weigl**, Institut für musikalische Akustik – Wiener Klangstil, mdw – Universität für Musik und darstellende Kunst Wien
 
 ### Term 2025–2027
 * **Benjamin W. Bohl (Technical Co-Chair)**, Institut für Musikwissenschaft, Goethe Universität Frankfurt, Frankfurt am Main and Musikwissenschaftliches Seminar Detmold/Paderborn
 * **Anna E. Kijas (Administrative Chair)**, Lilly Music Library, Tufts University
-* **Martha Thomae**, Centro de Estudos de Sociologia e Estética Musical (CESEM), Universidade Nova de Lisboa, Lisboa
+* **Martha Thomae (Technical Co-Chair)**, Centro de Estudos em Música (CESEM), Universidade NOVA de Lisboa
 
 ### Term 2024-2026
 
 * **Maristella Feustle**, Music Library, University of North Texas
-* **Stefan Münnich (Technical Co-Chair)**, University of Basel
+* **Stefan Münnich**, University of Basel
 * **Laurent Pugin**, RISM Digital Center, Bern
-
-### Term 2023–2025
-
-* **Johannes Kepper**, Musikwissenschaftliches Seminar Detmold/Paderborn
-* **Anna Plaksin**, Musikwissenschaftliches Seminar Detmold/Paderborn, KreativInstitut.OWL
-* **David M. Weigl**, Institut für musikalische Akustik – Wiener Klangstil, mdw – Universität für Musik und darstellende Kunst Wien
-
 
 ### Previous Board Members
 
-* **Elsa De Luca**, Centro de Estudos de Sociologia e Estética Musical (CESEM), Universidade Nova de Lisboa, Lisboa (2019–2021)
+* **Elsa De Luca**, Centro de Estudos em Música (CESEM), Universidade NOVA de Lisboa (2019–2021)
 * **Giuliano Di Bacco**, Jacobs School of Music, Indiana University, Bloomington, (2015–2017)
 * **Nobert Dubowy**, Internationale Stiftung Mozarteum, Salzburg (2018–2020)
 * **Ichiro Fujinaga**, McGill University, Montréal (2015–2021)
 * **Axel Teich Geertinger**, Danish Centre for Music Editing, Royal Library, Copenhagen, (2015–2016)
 * **Andrew Hankinson**, Bodleian Library, Oxford (2017–2019)
+* **Johannes Kepper**, Musikwissenschaftliches Seminar Detmold/Paderborn (2015-2025)
 * **Klaus Rettinghaus**, Enote GmbH, Berlin (2022–2024)
 * **Kristina Richts-Matthaei**, Centre for Digital Music Documentation (CDMD), Academy of Sciences and Literature, Mainz (2015–2023)
 * **Perry Roland**, University of Virginia Library, Charlottesville (2015–2018, 2020–2022)
@@ -59,6 +61,16 @@ The MEI Board manages the property and business of MEI. It promotes the developm
 * [2021-01-14, Virtual Board Meeting](mei-board/protocols/2021-01-14_Virtual-Board-Meeting.html)
 * [2022-01-19, Virtual Board Meeting](mei-board/protocols/2022-01-19_Virtual-Board-Meeting.html)
 * [2025-01-07, Virtual Board Meeting](mei-board/protocols/2025-01-07_Virtual-Board-Meeting.html)
+* [2025-02-03, Virtual Board Meeting](mei-board/protocols/2025-02-03_Virtual-Board-Meeting.html)
+* [2025-03-03, Virtual Board Meeting](mei-board/protocols/2025-03-03_Virtual-Board-Meeting.html)
+* [2025-04-07, Virtual Board Meeting](mei-board/protocols/2025-04-07_Virtual-Board-Meeting.html)
+* [2025-08-18, Virtual Board Meeting](mei-board/protocols/2025-08-18_Virtual-Board-Meeting.html)
+* [2025-09-25, Virtual Board Meeting](mei-board/protocols/2025-09-25_Virtual-Board-Meeting.html)
+* [2025-10-24, Virtual Board Meeting](mei-board/protocols/2025-10-24_Virtual-Board-Meeting.html)
+* [2025-11-20, Virtual Board Meeting](mei-board/protocols/2025-11-20_Virtual-Board-Meeting.html)
+* [2025-12-19, Virtual Board Meeting](mei-board/protocols/2025-12-19_Virtual-Board-Meeting.html)
+* [2026-01-16, Virtual Board Meeting](mei-board/protocols/2026-01-16_Virtual-Board-Meeting.html)
+* [2026-02-10, Virtual Board Meeting](mei-board/protocols/2026-02-10_Virtual-Board-Meeting.html)
 
 ## Elections
 
@@ -82,6 +94,7 @@ Each member holding Personal Membership in MEI has the right to vote in Board me
 
 ### Previous elections
 
+* [Read the 2024 Election Candidate statements](/community/mei-board/elections/2024/candidates)
 * [Read the 2023 Election Candidate statements](/community/mei-board/elections/2023/candidates)
 * [Read the 2022 Election Candidate statements](/community/mei-board/elections/2022/candidates)
 * [Read the 2021 Election Candidate statements](/community/mei-board/elections/2021/candidates)

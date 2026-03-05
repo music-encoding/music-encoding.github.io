@@ -4,7 +4,10 @@ email: info@music-encoding.org
 baseurl: ""
 style_baseurl: ""
 url: "https://music-encoding.org" # the base hostname & protocol for your site
-twitter_username: music-encoding
+bluesky_handle: music-encoding.bsky.social
+mastodon_address: MusicEncoding@mastodon.social
+github: music-encoding
+slack: music-encoding
 
 # Build settings
 markdown: kramdown
@@ -33,6 +36,9 @@ menu:
           - id: communitycontacts
             label: 'Community Contacts'
             url: '/community-contacts.html'
+          - id: communityforums
+            label: 'Community Forums'
+            url: '/community-forums.html'
           - id: interestgroups
             label: 'Interest Groups'
             url: '/interest-groups.html'
@@ -42,6 +48,9 @@ menu:
           - id: meiboard
             label: 'MEI Board'
             url: '/mei-board.html'
+          - id: institutionalsponsors
+            label: 'Institutional Membership Sponsor Levels'
+            url: '/institutional-sponsorship.html'
           - id: meibylaws
             label: 'MEI By-laws'
             url: '/mei-by-laws.html'
@@ -53,8 +62,8 @@ menu:
       url: '/conference'
       submenu:
           - id: upcoming
-            label: 'MEC 2025'
-            url: '/2025'
+            label: 'MEC 2026'
+            url: '/2026'
           - id: previous
             label: 'Past Conferences'
             url: '/past.html'
@@ -67,6 +76,9 @@ menu:
           - id: hosting
             label: 'Hosting Guidelines'
             url: '/hosting-guidelines.html'
+          - id: mou
+            label: 'MOU Template'
+            url: '/mou-conference-hosts.html'
           - id: code-of-conduct
             label: 'Code of conduct'
             url: '/code-of-conduct.html'
@@ -80,6 +92,9 @@ menu:
           - id: bibliography
             label: 'Bibliography'
             url: '/bibliography.html'
+          - id: logo
+            label: 'MEI Logo'
+            url: '/mei-logo.html'
           - id: pedagogy
             label: 'Pedagogy & Praxis'
             url: '/pedagogy.html'
@@ -100,7 +115,7 @@ menu:
             url: '/guidelines/v5'
           - id: guidelines-dev
             label: 'Development versions'
-            url: '/resources/development.html'
+            url: '/guidelines/dev'
             separator: true
           - id: guidelines-previous
             label: 'Previous versions'

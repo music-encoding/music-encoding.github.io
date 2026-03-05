@@ -2,7 +2,7 @@
 layout: tools
 title: "music21"
 subtitle: "music21: a toolkit for computer-aided musicology"
-image: https://web.mit.edu/music21/bg_top_left.jpg
+image:
 website: https://web.mit.edu/music21/
 repository: https://github.com/cuthbertLab/music21
 tags: [conversion, developers, library, sonification]
