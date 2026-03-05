@@ -21,6 +21,6 @@ Retour aux [tutoriels en anglais](/resources/tutorials.html).
 
 _Traductions réalisées dans le cadre du consortium [Musica2](https://musica.hypotheses.org) pour la Music Encoding Initiative :_
 
- - _Aurélien Balland Chatignon, traducteur (CNRS, [Musica2](https://musica.hypotheses.org), [IReMus](http://iremus.cnrs.fr) & [MSH Lorraine](https://msh-lorraine.fr/))_ 
+ - _Aurélien Balland Chatignon, traducteur ([CNRS](https://www.cnrs.fr), [Musica2](https://musica.hypotheses.org), [IReMus](http://iremus.cnrs.fr) & [MSH Lorraine](https://msh-lorraine.fr/))_ 
  - _Félix Poullet-Pagès, traducteur ([CNRS](https://www.cnrs.fr), [IReMus](http://iremus.cnrs.fr))_
  - _Kévin Roger, superviseur ([Université de Lorraine](https://www.univ-lorraine.fr/), [CRULH](https://crulh.univ-lorraine.fr/))_
