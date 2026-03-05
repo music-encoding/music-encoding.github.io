@@ -5,7 +5,7 @@ title: "Tutoriels MEI"
 
 # Tutoriels sur la MEI
 
-Sur cette page, vous trouverez une série de courts tutoriels pour aborder la MEI, chacun d'entre eux présente une fonctionnalité spécifique de cette spécification.
+Sur cette page, vous trouverez une série de courts tutoriels pour aborder la MEI, chacun d'entre eux présentant une fonctionnalité spécifique.
 
 Si vous débutez avec la MEI, nous vous recommandons de commencer par le tutoriel [Quickstart](/tutorials-FR/101-quickstart), qui vous permettra de coder une mélodie simple en MEI.
 
@@ -19,4 +19,8 @@ Retour aux [tutoriels en anglais](/resources/tutorials.html).
 
 ---
 
-_Traductions réalisées par Aurelien Balland Chatignon et Félix Poullet-Pagès pour la Music Encoding Initiative, ingénieurs d'études à [l'Institut de recherche en musicologie](http://iremus.cnrs.fr) et membres du consortium [MUSICA2](https://musica.hypotheses.org)_
+_Traductions réalisées dans le cadre du consortium [Musica2](https://musica.hypotheses.org) pour la Music Encoding Initiative par :_
+
+ - _Aurélien Balland Chatignon (CNRS, [Musica2](https://musica.hypotheses.org), [IReMus](http://iremus.cnrs.fr) & [MSH Lorraine](https://msh-lorraine.fr/)) et_ 
+ - _Félix Poullet-Pagès ([CNRS](https://www.cnrs.fr), [IReMus](http://iremus.cnrs.fr))_
+ - _sous la supervision de Kévin Roger ([Université de Lorraine](https://www.univ-lorraine.fr/), [CRULH](https://crulh.univ-lorraine.fr/))_
