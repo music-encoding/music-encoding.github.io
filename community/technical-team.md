@@ -37,21 +37,23 @@ The schedule for these developer workshops is the _last Friday of every odd mont
 **Note**: An exclamation mark (!) signifies a change from the regular schedule due to holidays or other special circumstances.
 
 **2026**
+
 * December: winter break
 * November 27, 2026 [14:00 UTC](https://www.timeanddate.com/worldclock/converter.html?iso=20261127T140000&p1=1440&p2=994&p3=43) ODD Friday
 * October 29, 2026 [14:00 UTC](https://www.timeanddate.com/worldclock/converter.html?iso=20261029T140000&p1=1440&p2=994&p3=43) ODD Thursday
-* September 25, 2026 [14:00 UTC](https://www.timeanddate.com/worldclock/converter.html?iso=20260925T140000&p1=1440&p2=994&p3=43) ODD Friday
+* September 25, 2026 [13:00 UTC](https://www.timeanddate.com/worldclock/converter.html?iso=20260925T130000&p1=1440&p2=994&p3=43) ODD Friday
 * August: summer break
-* July 31, 2026 [14:00 UTC](https://www.timeanddate.com/worldclock/converter.html?iso=20260731T140000&p1=1440&p2=994&p3=43) ODD Friday
-* June 25, 2026 [14:00 UTC](https://www.timeanddate.com/worldclock/converter.html?iso=20260625T140000&p1=1440&p2=994&p3=43) ODD Thursday
-* June 05(!), 2026 [14:00 UTC](https://www.timeanddate.com/worldclock/converter.html?iso=20260605T140000&p1=1440&p2=994&p3=43) ODD Friday
-* April 30, 2026 [14:00 UTC](https://www.timeanddate.com/worldclock/converter.html?iso=20260430T140000&p1=1440&p2=994&p3=43) ODD Thursday
+* July 31, 2026 [13:00 UTC](https://www.timeanddate.com/worldclock/converter.html?iso=20260731T130000&p1=1440&p2=994&p3=43) ODD Friday
+* June 25, 2026 [13:00 UTC](https://www.timeanddate.com/worldclock/converter.html?iso=20260625T130000&p1=1440&p2=994&p3=43) ODD Thursday
+* June 05(!), 2026 [13:00 UTC](https://www.timeanddate.com/worldclock/converter.html?iso=20260605T130000&p1=1440&p2=994&p3=43) ODD Friday
+* April 30, 2026 [13:00 UTC](https://www.timeanddate.com/worldclock/converter.html?iso=20260430T130000&p1=1440&p2=994&p3=43) ODD Thursday
 * March 27, 2026 [14:00 UTC](https://www.timeanddate.com/worldclock/converter.html?iso=20260327T140000&p1=1440&p2=994&p3=43) ODD Friday
 * March 05(!), 2026 [14:00 UTC](https://www.timeanddate.com/worldclock/converter.html?iso=20260305T140000&p1=1440&p2=994&p3=43) ODD Thursday
 * January 30, 2026 [15:00 UTC](https://www.timeanddate.com/worldclock/converter.html?iso=20260130T150000&p1=1440&p2=994&p3=43) ODD Friday
 
 <details>
   <summary>ODD meetings in 2025</summary>
+
 * November 28, 2025 [13:00 UTC](https://www.timeanddate.com/worldclock/converter.html?iso=20251128T130000&p1=1440&p2=994&p3=43) ODD Friday
 * October 23(!), 2025 [13:00 UTC](https://www.timeanddate.com/worldclock/converter.html?iso=20251030T130000&p1=1440&p2=994&p3=43) ODD Thursday
 * September 26, 2025 [12:00 UTC](https://www.timeanddate.com/worldclock/converter.html?iso=20250926T120000&p1=1440&p2=994&p3=43) ODD Friday
@@ -68,6 +70,7 @@ The schedule for these developer workshops is the _last Friday of every odd mont
 
 <details>
   <summary>ODD meetings in 2024</summary>
+
 * November 29, 2024 <a href="https://www.timeanddate.com/worldclock/converter.html?iso=20241129T130000&p1=1440&p2=994&p3=43">13:00 UTC</a> ODD Friday <br/>
 * November 7(!), 2024 <a href="https://www.timeanddate.com/worldclock/converter.html?iso=20241107T130000&p1=1440&p2=994&p3=43">13:00 UTC</a> ODD Thursday <br/>
 * September 27, 2024 <a href="https://www.timeanddate.com/worldclock/converter.html?iso=20240927T120000&p1=1440&p2=994&p3=43">12:00 UTC</a> ODD Friday <br/>
