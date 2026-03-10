@@ -11,3 +11,4 @@ The Music Encoding Initiative holds several virtual community forums throughout 
 - 2024 March 19 [PDF of slides](community-forums/forum-pdfs/2024-march-19_mei-community-forum.pdf)
 - 2024 December 2 [PDF of slides](community-forums/forum-pdfs/2024-dec-02_mei-community-forum.pdf)
 - 2025 April 8 [PDF of slides](community-forums/forum-pdfs/2025-apr-08_mei-community-forum.pdf)
+- 2026 March 10 [PDF of slides](community-forums/forum-pdfs/2026-mar-10_mei-community-forum.pdf)
