@@ -35,7 +35,7 @@ Only private individuals may obtain personal membership in MEI. Personal members
 
 Institutional Membership in MEI is available for any form of organization, project or company. Any of the above wishing to become an Institutional Member of MEI may apply by submitting an application, in a form prescribed by the Board, to any elected member of the Board.
 
-There are three levels of Institutional Membership: Regular, Patron, and Sustaining with different annual monetary contribution rates and associated benefits. In-kind commitments, such as staff time or administrative support that correspond to the annual contribution rate, may substitute for monetary contributions.
+There are [three levels of Institutional Membership: Regular, Patron, and Sustaining](https://music-encoding.org/community/institutional-sponsorship.html) with different annual monetary contribution rates and associated benefits. In-kind commitments, such as staff time or administrative support that correspond to the annual contribution rate, may substitute for monetary contributions.
 
 The logos of sponsoring organizations will appear on publications by the [MEI Board](https://music-encoding.org/community/mei-board.html) (e.g. conference proceedings, guidelines) and on a sponsors page on the [MEI website](https://www.music-encoding.org). Logos of Patron members will additionally appear on the [MEI website](https://www.music-encoding.org) homepage, and logos of Sustaining members will have prominent placement in the footer of each page on the [MEI website](https://www.music-encoding.org).
 
