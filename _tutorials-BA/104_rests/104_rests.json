@@ -1,0 +1,71 @@
+{
+  "steps": [
+    {
+        "label":"Welcome",
+        "descFile": "104_rests_step-00-desc.html",
+        "xmlFile": "104_rests_step-00.xml",
+        "editorLines":1,
+        "xpaths": [
+            {"rule":"count(//mei:rest) = 1", "renderanyway": false, "hint": "You need a rest element."},
+            {"rule":"count(//mei:rest/@*) = 1 and //mei:rest/@dur", "renderanyway": false, "hint": "You need a @dur attribute."},
+            {"rule":"//mei:rest/@dur = '4'", "renderanyway": true, "hint": "The @dur attribute uses values like '1','2', or '4'. Use the latter for a quarter rest."}
+        ]
+    },
+    {
+        "label":"Different durations",
+        "editorLines":5,
+        "descFile": "104_rests_step-01-desc.html",
+        "xmlFile": "104_rests_step-00.xml",
+        "xpaths": [
+            {"rule":"count(//mei:rest) = 5", "renderanyway": true, "hint":"You need to encode five rest elements."},
+            {"rule":"//mei:rest[1]/@dur and //mei:rest[1]/@dur = '1'", "renderanyway": true},
+            {"rule":"//mei:rest[2]/@dur and //mei:rest[2]/@dur = '2'", "renderanyway": true},
+            {"rule":"//mei:rest[3]/@dur and //mei:rest[3]/@dur = '4' and //mei:rest[3]/@dots and //mei:rest[3]/@dots = '1'", "renderanyway": true},
+            {"rule":"//mei:rest[4]/@dur and //mei:rest[4]/@dur = '8'", "renderanyway": true},
+            {"rule":"//mei:rest[5]/@dur and //mei:rest[5]/@dur = '16'", "renderanyway": true}
+        ]
+    },
+    {
+        "label":"Full-measure rests",
+        "editorLines":1,
+        "descFile": "104_rests_step-02-desc.html",
+        "xmlFile": "104_rests_step-02.xml",
+        "prefillFile": "104_rests_step-02-prefill.xml",
+        "xpaths": [
+            {"rule":"count(//mei:mRest) = 1", "renderanyway": true, "hint":"You need one mRest element."},
+            {"rule":"count(//mei:mRest/@*) = 0", "renderanyway": true,"hint":"The mRest element needs no attributes."},
+            {"rule":"count(//mei:layer/mei:*) = 1","renderanyway":true,"hint":"You must encode an mRest element only."}
+        ]
+    },
+    {
+        "label":"Multi-measure rests",
+        "editorLines":1,
+        "descFile": "104_rests_step-03-desc.html",
+        "xmlFile": "104_rests_step-02.xml",
+        "xpaths": [
+            {"rule":"count(//mei:multiRest) = 1", "renderanyway": true, "hint":"You need one multiRest element."},
+            {"rule":"count(//mei:layer/mei:*) = 1","renderanyway":true,"hint":"You must encode a multiRest element only."},
+            {"rule":"count(//mei:multiRest/@*) = 1 and //mei:multiRest/@num", "renderanyway": true,"hint":"The multiRest element needs one attribute here (@num)."},
+            {"rule":"//mei:multiRest/@num = '15'", "renderanyway": true,"hint":"The multiRest should have a duration of 15 measures"}
+        ]
+    },
+    {
+        "label":"Spaces / Invisible rests",
+        "editorLines":6,
+        "descFile": "104_rests_step-04-desc.html",
+        "xmlFile": "104_rests_step-04.xml",
+        "prefillFile": "104_rests_step-04-prefill.xml",
+        "xpaths": [
+            {"rule":"//mei:space/following-sibling::mei:note", "renderanyway": true, "hint":"space element must precede the note element."},
+            {"rule":"count(//mei:space[@dur = '4']) = 3 or (//mei:space[@dur = '2' and @dots = '1']) or (//mei:space[@dur = '2'] and //mei:space[@dur = '4'])", "renderanyway": true}
+        ]
+    }
+  ],
+  "end":"104_rests_end.html",
+  "resp":[
+    {
+        "name":"Johannes Kepper",
+        "affiliation":"Beethovens Werkstatt | Universität Paderborn"
+    }
+  ]
+}
