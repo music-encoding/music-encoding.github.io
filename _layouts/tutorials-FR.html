@@ -50,7 +50,7 @@ layout: default
                 <h3>Remerciements</h3>
                 <p>Ce tutoriel a été créé par :</p>
                 <ul id="ackList"></ul>
-                <p>Traductions réalisées par Aurelien Balland Chatignon et Félix Poullet-Pagès</p>
+                <p>Traductions réalisées par Aurélien Balland Chatignon et Félix Poullet-Pagès sous la supervision de Kévin Roger.</p>
             </div>
 
              <div id="navigationButtons" style="width: 100%;">
@@ -90,13 +90,13 @@ layout: default
                             if (response.ok) {
                                 return response.json()
                             }
-                            throw new Error('Erreur réseau en essayant de réccupérer  ', page.data);
+                            throw new Error('Erreur réseau en essayant de récupérer  ', page.data);
                         })
                         .then(function(data) {
                             setupTutorial(data, "FR");
                         });
                 } catch(err) {
-                    console.log('Erreur lors de la réccupération des données : ' + err)
+                    console.log('Erreur lors de la récupération des données : ' + err)
                 }
 
             </script>
