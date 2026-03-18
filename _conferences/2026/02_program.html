@@ -1,0 +1,632 @@
+---
+layout: conference
+title: 'Conference Program'
+permalink: '/conference/2026/program/'
+tag: MEC2026
+id: program
+---
+
+<style>
+    /* Design Overhaul */
+    .mec2026-page {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        color: #201f3c;
+        line-height: 1.6;
+    }
+
+    /* Program Overview Table - Clean Style */
+    .mec2026-page table.overview {
+        width: 100%;
+        border-collapse: separate;
+        border-spacing: 0 0.5em;
+        margin-bottom: 2em;
+    }
+
+    .mec2026-page table.overview td {
+        background: #f8f9fa;
+        padding: 0.8em 1.2em;
+        border-radius: 8px;
+        transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .mec2026-page table.overview td:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(32, 31, 60, 0.1);
+        background: #fff;
+    }
+
+    .mec2026-page table.overview a {
+        text-decoration: none;
+        color: #201f3c;
+        font-weight: 600;
+        display: block;
+    }
+
+    /* Details as Cards */
+    .mec2026-page details {
+        background: #fff;
+        border-radius: 12px;
+        margin-bottom: 1em;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        border: 1px solid rgba(0, 0, 0, 0.05);
+        overflow: hidden;
+        transition: box-shadow 0.3s ease;
+    }
+
+    .mec2026-page details[open] {
+        box-shadow: 0 8px 24px rgba(32, 31, 60, 0.12);
+    }
+
+    .mec2026-page summary {
+        padding: 1em 1.5em;
+        cursor: pointer;
+        font-weight: 600;
+        background: #fff;
+        display: flex;
+        align-items: center;
+        list-style: none;
+        /* Remove default arrow */
+    }
+
+    .mec2026-page summary::-webkit-details-marker {
+        display: none;
+    }
+
+    .mec2026-page summary::before {
+        content: '▶';
+        display: inline-block;
+        margin-right: 0.8em;
+        font-size: 0.8em;
+        transition: transform 0.3s;
+        color: #6a6a8a;
+    }
+
+    .mec2026-page details[open] summary::before {
+        transform: rotate(90deg);
+    }
+
+    .mec2026-page summary:hover {
+        background: #fbfbfd;
+    }
+
+    /* Content within Details */
+    .mec2026-page .details-content {
+        padding: 0 1.5em 1.5em 3em;
+        border-top: 1px solid rgba(0, 0, 0, 0.03);
+        padding-top: 1em;
+    }
+
+    .mec2026-page .details-content p {
+        margin: 0.5em 0;
+    }
+
+    .mec2026-page .details-content small {
+        color: #666;
+        display: block;
+        margin-top: 0.5em;
+    }
+
+    /* Headings and Spacing */
+    .mec2026-page h4 {
+        margin-top: 2em;
+        margin-bottom: 1em;
+        color: #201f3c;
+        border-left: 4px solid #201f3c;
+        padding-left: 0.5em;
+    }
+
+    .mec2026-page hr {
+        border: 0;
+        height: 1px;
+        background: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0));
+        margin: 2em 0;
+    }
+
+    .mec2026-page ul {
+        padding-left: 0;
+        list-style-type: none;
+        /* Add this back since it was removed globally */
+    }
+
+    .mec2026-page li {
+        margin-bottom: 1.5em;
+    }
+
+    .mec2026-page li.break {
+        height: 1em;
+    }
+
+    .mec2026-page .time-slot {
+        display: inline-block;
+        background: #201f3c;
+        color: #fff;
+        padding: 0.2em 0.8em;
+        border-radius: 4px;
+        font-size: 0.9em;
+        margin-bottom: 0.5em;
+    }
+
+    /* Parallel Session Styling */
+    .mec2026-page .parallel-container {
+        background: rgba(32, 31, 60, 0.02);
+        border: 2px dashed rgba(32, 31, 60, 0.1);
+        border-radius: 16px;
+        padding: 1.2em;
+        margin-top: 0.5em;
+    }
+
+    .mec2026-page .parallel-header {
+        font-size: 0.8em;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        color: #6a6a8a;
+        margin-bottom: 0.8em;
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+    }
+
+    .mec2026-page .parallel-header::before {
+        content: '';
+        display: inline-block;
+        width: 12px;
+        height: 12px;
+        background: #201f3c;
+        border-radius: 2px;
+        margin-right: 0.6em;
+    }
+
+    .mec2026-page .parallel-badge {
+        font-size: 0.7em;
+        background: #eef1f6;
+        color: #201f3c;
+        padding: 0.1em 0.5em;
+        border-radius: 4px;
+        margin-left: 0.8em;
+        vertical-align: middle;
+        border: 1px solid rgba(32, 31, 60, 0.1);
+    }
+</style>
+
+<img src="/images/conference/2026/banner.png" class="img-responsive" alt="Music Encoding Conference banner"
+    style="margin-bottom: 1em" />
+
+<div class="mec2026-page">
+    <hr />
+    <p>
+        Times are given in local conference time (JST).
+    </p>
+
+    <a class="anchor" id="top"></a>
+    <strong>Program Overview:</strong>
+    <table class="overview">
+        <tr>
+            <td><a href="#may26">Tuesday, 26 May 2026: Workshops & Opening</a></td>
+        </tr>
+        <tr>
+            <td><a href="#may27">Wednesday, 27 May 2026: Conference Day 1</a></td>
+        </tr>
+        <tr>
+            <td><a href="#may28">Thursday, 28 May 2026: Conference Day 2</a></td>
+        </tr>
+        <tr>
+            <td><a href="#may29">Friday, 29 May 2026: Unconference & Community Meeting</a></td>
+        </tr>
+    </table>
+
+    <hr />
+    <a class="anchor" id="may26"></a>
+    <h4>Tuesday, 26 May 2026: Workshops & Opening <a href="#top"
+            style="text-decoration: none; font-size: 0.8em;">&uarr;</a></h4>
+    <ul>
+        <li>
+            <span class="time-slot">10:00am - 1:00pm</span>
+            <div class="parallel-container">
+                <div class="parallel-header">Parallel Sessions</div>
+                <details>
+                    <summary>Beyond Notation: Encoding Black Creative Lineages and DAW-Based Composition Practices <span
+                            class="parallel-badge">Parallel</span></summary>
+                    <div class="details-content">
+                        <p>Tika Simone</p>
+                        <small>Iverna Island, Canada</small>
+                    </div>
+                </details>
+                <details>
+                    <summary>Music Alignment Uncovered: Representations, Algorithms and Hands-On Tools <span
+                            class="parallel-badge">Parallel</span></summary>
+                    <div class="details-content">
+                        <p>Carlos Cancino-Chacón<sup>1</sup>, Jiyun Park<sup>2</sup>, Silvan Peter<sup>1</sup>, Yigitcan
+                            Özer<sup>3</sup>, Suhit Chiruthapudi<sup>1</sup></p>
+                        <small>1: Johannes Kepler University Linz, Austria<br>2: Korea Advanced Institute of Science and
+                            Technology, South Korea<br>3: National Institute of Informatics, Japan</small>
+                    </div>
+                </details>
+                <details>
+                    <summary>Music encoding with mei-friend <span class="parallel-badge">Parallel</span></summary>
+                    <div class="details-content">
+                        <p>Anna Plaksin<sup>1</sup>, David M. Weigl<sup>2</sup>, Werner Goebl<sup>2</sup></p>
+                        <small>1: KreativInstitut.OWL, Paderborn University, Germany<br>2: Department of Music Acoustics
+                            – Wiener Klangstil (IWK) mdw – University of Music and Performing Arts Vienna</small>
+                    </div>
+                </details>
+            </div>
+        </li>
+        <li>
+            <span class="time-slot">1:00pm - 2:00pm</span>
+            <strong>Break</strong>
+        </li>
+        <li>
+            <span class="time-slot">2:00pm - 5:00pm</span>
+            <div class="parallel-container">
+                <div class="parallel-header">Parallel Sessions</div>
+                <details>
+                    <summary>Approaches to Musical Performance Research: Techniques, Formats, Software <span
+                            class="parallel-badge">Parallel</span></summary>
+                    <div class="details-content">
+                        <p>Frithjof Bömcke-Vollmer<sup>2</sup>, Silvan Peter<sup>1</sup>, Patricia Hu<sup>1</sup>,
+                            Yucong Jiang<sup>3</sup>, Carlos Cancino-Chacón<sup>1</sup>, Werner Goebl<sup>4</sup>, Lars
+                            Engeln<sup>2</sup>, Andreas Münzmay<sup>2</sup>, Johannes Hentschel<sup>5</sup>, David M.
+                            Weigl<sup>4</sup>, Axel Berndt<sup>2</sup></p>
+                        <small>1: Johannes Kepler University, Austria<br>2: Paderborn University / Detmold University of
+                            Music: Musicology Seminar Detmold–Paderborn<br>3: University of Richmond, USA<br>4:
+                            University of Music and Performing Arts Vienna<br>5: Bruckner University, Austria</small>
+                    </div>
+                </details>
+                <details>
+                    <summary>Fingering Encoding and Performance Experience for Robo-Sax <span
+                            class="parallel-badge">Parallel</span></summary>
+                    <div class="details-content">
+                        <p>Masatoshi Hamanaka<sup>1</sup>, Gou Koutaki<sup>2</sup></p>
+                        <small>1: RIKEN, Japan<br>2: Kumamoto University, Japan</small>
+                    </div>
+                </details>
+                <details>
+                    <summary>Interactive music encoding with Verovio <span class="parallel-badge">Parallel</span>
+                    </summary>
+                    <div class="details-content">
+                        <p>Laurent Pugin, Andrew Hankinson</p>
+                        <small>RISM Digital Center, Switzerland</small>
+                    </div>
+                </details>
+                <details>
+                    <summary>Minimal Publishing of Multimodal Sources: Integrating MEI, TEI, and More <span
+                            class="parallel-badge">Parallel</span></summary>
+                    <div class="details-content">
+                        <p>Torsten Roeder, Fabian C. Moss</p>
+                        <small>Universität Würzburg, Germany</small>
+                    </div>
+                </details>
+            </div>
+        </li>
+        <li>
+            <span class="time-slot">5:00pm - 5:30pm</span>
+            <strong>Break</strong>
+        </li>
+        <li>
+            <span class="time-slot">5:30pm - 7:00pm</span>
+            <strong>Welcome and opening keynote</strong>
+            <p style="margin-left: 1.2em;">Location: First Forum (B1)</p>
+        </li>
+    </ul>
+
+    <hr />
+    <a class="anchor" id="may27"></a>
+    <h4>Wednesday, 27 May 2026: Conference Day 1 <a href="#top"
+            style="text-decoration: none; font-size: 0.8em;">&uarr;</a></h4>
+    <ul>
+        <li>
+            <span class="time-slot">9:30am - 10:45am</span>
+            <strong>Communities in music making, editing and pedagogy</strong>
+            <p style="margin-left: 1.2em;">Location: First Forum (B1)</p>
+            <details>
+                <summary>From Encoding to Empathy: Virtual Choirs as Data for Digital Musicology</summary>
+                <div class="details-content">
+                    <p>Ingrida Alondere</p>
+                    <small>Vilnius city municipality choir Jauna Muzika, Lithuania</small>
+                </div>
+            </details>
+            <details>
+                <summary>Towards Crowd-Encoding and Validation of Music Scores: Contexts and Use-Cases</summary>
+                <div class="details-content">
+                    <p>David M. Weigl<sup>1</sup>, Chanda VanderHart<sup>2</sup>, Werner Goebl<sup>1</sup></p>
+                    <small>1: mdw – University of Music and Performing Arts Vienna, Austria<br>2: mdw – University of
+                        Music and Performing Arts Vienna, Austria / University for Continuing Education Krems,
+                        Austria</small>
+                </div>
+            </details>
+            <details>
+                <summary>Strategic Coalition Building to Expand MEI Pedagogy: Citizen Science, Participation, and
+                    Boundary-Transgressing Encoding Practices</summary>
+                <div class="details-content">
+                    <p>Jessica Grimmer<sup>1</sup>, Joshua Neumann<sup>2</sup>, Tim Duguid<sup>3</sup></p>
+                    <small>1: University of Maryland, United States of America<br>2: Akademie der Wissenschaften und der
+                        Literatur Mainz, Germany<br>3: University of Glasgow, Scotland</small>
+                </div>
+            </details>
+            <details>
+                <summary>Encoding the Musical Legacy of Jacob J. Sawyer (1856-1885): Establishing the First MEI Corpus
+                    of a 19th-Century African-American Composer</summary>
+                <div class="details-content">
+                    <p>Nico Schüler</p>
+                    <small>Texas State University, United States of America</small>
+                </div>
+            </details>
+        </li>
+        <li>
+            <span class="time-slot">10:45am - 11:30am</span>
+            <strong>Rapid poster presentations</strong>
+            <p style="margin-left: 1.2em;">Location: First Forum (B1)</p>
+        </li>
+        <li>
+            <span class="time-slot">11:30am - 12:00pm</span>
+            <strong>☕ Coffee break</strong>
+        </li>
+        <li>
+            <span class="time-slot">12:00pm - 1:30pm</span>
+            <strong>Posters and Showcases</strong>
+        </li>
+        <li>
+            <span class="time-slot">1:30pm - 2:30pm</span>
+            <strong>Lunch break</strong>
+        </li>
+        <li>
+            <span class="time-slot">2:30pm - 4:00pm</span>
+            <strong>Corpora and Complications</strong>
+            <p style="margin-left: 1.2em;">Location: First Forum (B1)</p>
+            <details>
+                <summary>From Manuscript to MEI: Challenges and Solutions in Encoding Early 20th-Century Lithuanian
+                    Sacred Music</summary>
+                <div class="details-content">
+                    <p>dr. Imantas Jonas Šimkus</p>
+                    <small>Kaunas University of Technology, Lithuania</small>
+                </div>
+            </details>
+            <details>
+                <summary>Mixed Notation vs. Transitional Notation: Creating a small encoded corpus of John Dowland songs
+                </summary>
+                <div class="details-content">
+                    <p>Anna Plaksin, William Lepp, Annabelle Mueller, Nils Jesse Schäfer, Sophie Stremel</p>
+                    <small>Paderborn University, Germany</small>
+                </div>
+            </details>
+            <details>
+                <summary>The Extending MEI for Indigenous Sound Archives: Encoding the 1967 Truku Field Recordings
+                </summary>
+                <div class="details-content">
+                    <p>Liang Lee</p>
+                    <small>National Taiwan Normal University, Taiwan</small>
+                </div>
+            </details>
+            <details>
+                <summary>Encoding the Modernization of Tradition: Alignment Strategies for Gagaku Score and Staff
+                    Notation</summary>
+                <div class="details-content">
+                    <p>Shintaro Seki</p>
+                    <small>RIKEN, Japan</small>
+                </div>
+            </details>
+        </li>
+        <li>
+            <span class="time-slot">4:00pm - 4:30pm</span>
+            <strong>☕ Coffee break</strong>
+        </li>
+        <li>
+            <span class="time-slot">4:30pm - 6:00pm</span>
+            <strong>Tools</strong>
+            <p style="margin-left: 1.2em;">Location: First Forum (B1)</p>
+            <details>
+                <summary>Diplomatic rendering with Thulemeier - Digital Fac-similes for MEI</summary>
+                <div class="details-content">
+                    <p>Johannes Kepper<sup>1</sup>, Richard Sänger<sup>2</sup></p>
+                    <small>1: Beethovens Werkstatt, Paderborn University, Germany<br>2: Beethovens Werkstatt,
+                        Beethoven-Haus Bonn, Germany</small>
+                </div>
+            </details>
+            <details>
+                <summary>Handling repetition structures in music encodings: Realising expansions with Verovio</summary>
+                <div class="details-content">
+                    <p>Werner Goebl<sup>1</sup>, David M. Weigl<sup>1</sup>, Iacopo Cividini<sup>2</sup>, Laurent
+                        Pugin<sup>3</sup></p>
+                    <small>1: University of Music and Performing Arts Vienna, Austria<br>2: Salzburg Mozarteum
+                        Foundation, Austria<br>3: RISM Digital Center, Switzerland</small>
+                </div>
+            </details>
+            <details>
+                <summary>Revisiting the (Deep Optical) Measure Detector</summary>
+                <div class="details-content">
+                    <p>Alexander Nguyen<sup>1,2</sup>, Nikolaos Beer<sup>2</sup></p>
+                    <small>1: Institute for Music Informatics and Musicology, Karlsruhe University of Music,
+                        Germany<br>2: Max-Reger-Institute, Karlsruhe, Germany</small>
+                </div>
+            </details>
+            <details>
+                <summary>The Benchmark for Encoding Assessment in Music (BEAM): Evaluating LLM Performance in Symbolic
+                    Music Parsing</summary>
+                <div class="details-content">
+                    <p>Liam Pond<sup>1,2</sup>, Tace McNamara<sup>3</sup>, Ichiro Fujinaga<sup>1,2</sup></p>
+                    <small>1: McGill University<br>2: Centre for Interdisciplinary Research in Music Media and
+                        Technology<br>3: Monash University</small>
+                </div>
+            </details>
+        </li>
+        <li>
+            <span class="time-slot">7:00pm - 10:00pm</span>
+            <strong>Dinner</strong>
+        </li>
+    </ul>
+
+    <hr />
+    <a class="anchor" id="may28"></a>
+    <h4>Thursday, 28 May 2026: Conference Day 2 <a href="#top"
+            style="text-decoration: none; font-size: 0.8em;">&uarr;</a></h4>
+    <ul>
+        <li>
+            <span class="time-slot">9:30am - 11:30am</span>
+            <strong>Notations and traditions</strong>
+            <p style="margin-left: 1.2em;">Location: First Forum (B1)</p>
+            <details>
+                <summary>On Every Note a Griff: Looking for a Useful Representation of Basso Continuo Performance Style
+                </summary>
+                <div class="details-content">
+                    <p>Adam Štefunko<sup>1</sup>, Carlos Eduardo Cancino-Chacón<sup>2</sup>, Jan Hajič jr.<sup>1</sup>
+                    </p>
+                    <small>1: Charles University, Faculty of Mathematics and Physics, Czech Republic (Czechia)<br>2:
+                        Institute of Computational Perception, Johannes Kepler University, Austria</small>
+                </div>
+            </details>
+            <details>
+                <summary>Beyond OHCO: Introducing the MEI-notredame Customisation</summary>
+                <div class="details-content">
+                    <p>Joshua Stutter</p>
+                    <small>Newcastle University, United Kingdom</small>
+                </div>
+            </details>
+            <details>
+                <summary>Encoding Guqin Jianzipu: A Gesture-Based MEI Module for a Logographic Notation</summary>
+                <div class="details-content">
+                    <p>Yifan Huang, Eto Sun, Ichiro Fujinaga</p>
+                    <small>McGill University, Canada</small>
+                </div>
+            </details>
+            <details>
+                <summary>Microtonal support in Verovio</summary>
+                <div class="details-content">
+                    <p>Karim Ratib</p>
+                    <small>Not affiliated, Canada</small>
+                </div>
+            </details>
+        </li>
+        <li>
+            <span class="time-slot">11:30am - 12:00pm</span>
+            <strong>☕ Coffee break</strong>
+        </li>
+        <li>
+            <span class="time-slot">12:00pm - 1:30pm</span>
+            <strong>Managing and cataloguing music data</strong>
+            <p style="margin-left: 1.2em;">Location: First Forum (B1)</p>
+            <details>
+                <summary>Understanding artefacts of Renaissance polyphony: towards an ontology</summary>
+                <div class="details-content">
+                    <p>Erik Bergwall<sup>1</sup>, Marnix van Berchum<sup>2</sup></p>
+                    <small>1: Uppsala University, Sweden<br>2: Utrecht University, The Netherlands</small>
+                </div>
+            </details>
+            <details>
+                <summary>Bibliographic Readiness of Digital Music Editions</summary>
+                <div class="details-content">
+                    <p>Daniel Jettka, Hizkiel Alemayehu, Daniel Röwenstrunk, Kristin Herold</p>
+                    <small>Universität Paderborn, Germany</small>
+                </div>
+            </details>
+            <details>
+                <summary>GitHub Actions in Action: Workflow Automation for Digital Music Research and Editions</summary>
+                <div class="details-content">
+                    <p>Julia Maria Jaklin<sup>1</sup>, Henning Burghoff<sup>2</sup>, David M. Weigl<sup>3</sup></p>
+                    <small>1: TU Wien<br>2: University of Vienna<br>3: mdw — University of Music and Performing Arts
+                        Vienna</small>
+                </div>
+            </details>
+            <details>
+                <summary>Plaine and Easie(r)</summary>
+                <div class="details-content">
+                    <p>Andrew Hankinson, Rodolfo Zitellini, Laurent Pugin</p>
+                    <small>RISM Digital Center, Switzerland</small>
+                </div>
+            </details>
+        </li>
+        <li>
+            <span class="time-slot">1:30pm - 2:30pm</span>
+            <strong>Lunch break</strong>
+        </li>
+        <li>
+            <span class="time-slot">2:30pm - 4:00pm</span>
+            <strong>Annotation</strong>
+            <p style="margin-left: 1.2em;">Location: First Forum (B1)</p>
+            <details>
+                <summary>A Context-Aware Piano Performance Encoding Framework for Sustain Pedaling</summary>
+                <div class="details-content">
+                    <p>Hanwen Zhang<sup>1</sup>, Lele Liu<sup>2</sup>, Ichiro Fujinaga<sup>1</sup></p>
+                    <small>1: McGill University, Canada<br>2: University of Würzburg</small>
+                </div>
+            </details>
+            <details>
+                <summary>Precise and Simple Audio-to-Score Alignment</summary>
+                <div class="details-content">
+                    <p>Silvan Peter, Patricia Hu, Gerhard Widmer</p>
+                    <small>Johannes Kepler University, Austria</small>
+                </div>
+            </details>
+            <details>
+                <summary>Encoding Musical Space in Inviso</summary>
+                <div class="details-content">
+                    <p>Anıl Çamcı, Zeynep Özcan</p>
+                    <small>University of Michigan</small>
+                </div>
+            </details>
+            <details>
+                <summary>A Flexible Encoding Model for Non-Unique Note Alignments</summary>
+                <div class="details-content">
+                    <p>Suhit Chiruthapudi<sup>1</sup>, Adam Štefunko<sup>2</sup>, Silvan Peter<sup>1</sup>, Patricia
+                        Hu<sup>1</sup>, Jan Hajič jr.<sup>2</sup>, Carlos Eduardo Cancino-Chacón<sup>1</sup></p>
+                    <small>1: Institute of Computational Perception, Johannes Kepler University, Austria<br>2: Charles
+                        University, Faculty of Mathematics and Physics, Institute of Formal and Applied
+                        Linguistics</small>
+                </div>
+            </details>
+            <details>
+                <summary>Extending the Music Annotation Ontology: Representing Similarity and Contrast through
+                    Refinement of Classification and Targeting Procedures</summary>
+                <div class="details-content">
+                    <p>Mark Saccomano</p>
+                    <small>Paderborn University, Germany</small>
+                </div>
+            </details>
+            <details>
+                <summary>Score-Agnostic Structure Analysis in Large-Scale Performance Datasets</summary>
+                <div class="details-content">
+                    <p>Patricia Hu, Silvan Peter, Gerhard Widmer</p>
+                    <small>Institute of Computational Perception, Johannes Kepler University, Linz, Austria,
+                        Austria</small>
+                </div>
+            </details>
+        </li>
+        <li>
+            <span class="time-slot">4:00pm - 4:30pm</span>
+            <strong>☕ Coffee break</strong>
+        </li>
+        <li>
+            <span class="time-slot">4:30pm - 6:00pm</span>
+            <strong>Closing Keynote: Christina Crowder</strong>
+            <p style="margin-left: 1.2em;">Location: First Forum (B1)</p>
+            <details>
+                <summary>Start a Band to Build an Archive: The Power of Interdisciplinary Teams and Community Engagement
+                </summary>
+                <div class="details-content">
+                    <p>Christina Crowder, Clara Byom</p>
+                    <small>Klezmer Institute, United States of America</small>
+                </div>
+            </details>
+        </li>
+    </ul>
+
+    <hr />
+    <a class="anchor" id="may29"></a>
+    <h4>Friday, 29 May 2026: Unconference & Community Meeting <a href="#top"
+            style="text-decoration: none; font-size: 0.8em;">&uarr;</a></h4>
+    <ul>
+        <li>
+            <span class="time-slot">9:30am - 12:30pm</span>
+            <strong>Unconference/IG meetings</strong>
+        </li>
+        <li>
+            <span class="time-slot">1:00pm - 2:30pm</span>
+            <strong>MEI Community Meeting</strong>
+            <details>
+                <summary>MEI Community Meeting</summary>
+                <div class="details-content">
+                    <p>Annual meeting for the Music Encoding Initiative community.</p>
+                </div>
+            </details>
+        </li>
+    </ul>
+</div>
