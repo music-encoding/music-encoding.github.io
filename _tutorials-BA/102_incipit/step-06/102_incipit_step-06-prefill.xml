@@ -1,0 +1,8 @@
+<measure n="1">
+    <staff n="1">
+        <layer>
+            <note pname="e" oct="4" dur="4" />
+            <!-- Your encoding should replace this line -->
+        </layer>
+    </staff>
+</measure>

@@ -1,0 +1,27 @@
+<div>
+    <p>
+        Regular MEI allows the following <strong>document elements</strong>: <code>&lt;mei&gt;</code>, <code>&lt;meiHead&gt;</code>,
+        <code>&lt;music&gt;</code>, and <code>&lt;meiCorpus&gt;</code>. This means that these elements may serve as outermost
+        elements in an MEI file. However, a project may come up with a data structure that requires other or additional start elements. 
+        For instance, a project may decide to keep all editorial annotations as separate files, each containing its own <code>&lt;annot&gt;</code>
+        element. The official <a href="/guidelines/dev/content/introduction.html#meiprofiles" target="_blank" rel="noopener, noreferrer">mei-all_anyStart</a>
+        customization allows to use every single element in the MEI Namespace as start element, but this is mostly for teaching purposes and is not 
+        recommendable for practical use. Instead, ODD offers a simple mechanism to define the allowed start elements, using the initial
+        <code>&lt;schemaSpec&gt;</code> element. 
+    </p>
+    <pre class="codeblock">&lt;schemaSpec ident="mei" 
+    ns="http://www.music-encoding.org/ns/mei" 
+    prefix="mei_" 
+    start="mei meiHead meiCorpus music"&gt;</pre>
+    <p>
+        As you can see, the <code>@start</code>-attribute is used as a space-separated list of all start elements. If the project mentioned above decided 
+        to allow <code>&lt;mei&gt;</code> and <code>&lt;annot&gt;</code>, but disallow all other start elements, this could be modified like so:
+    </p>
+    <pre class="codeblock">&lt;schemaSpec ident="mei" 
+    ns="http://www.music-encoding.org/ns/mei" 
+    prefix="mei_" 
+    start="mei annot"&gt;</pre>
+    <p>
+        As you can see, adjusting start elements is actually quite easy. Let's wrap up what we've learned about customizing ODD.  
+    </p>
+</div>

@@ -1,0 +1,24 @@
+<div>
+    <p class="tutorialGoal">
+        Step four: encode an extended sequence of chords.
+    </p>
+    <p>
+        Perfect, you have just encoded a simple chord sequence in MEI. Now let's continue and add some rhythmical variance for a more extended sequence of chords. In fact, we will arrive at an harmonisation of the "Mary had a little lamb" example from the <a href="./101-quickstart.html" target="_blank" rel="noopener, noreferrer">Quickstart tutorial</a>:
+
+        <img style="display: block; margin: .5rem auto; width: 240px;" src="./103_chord-little-lamb.png" alt="Extended chord sequence"/>
+    </p>
+    <p class="task">
+        In the editor below, please try to reproduce the chord sequence above with MEI. Notes are enclosed by chord
+        elements. Each chord needs a <code>@dur</code> attribute, and each note needs <code>@pname</code> and
+        <code>@oct</code> attributes.
+    </p>
+    <p>
+        Keep in mind that the <code>@dur</code> attribute can have values like <code>"1"</code>, <code>"2"</code>, <code>"4"</code>,
+        <code>"8"</code> or <code>"16"</code> to indicate different rhythmical values.
+        For the first chord, you need an additional <code>@dots</code> attribute, where you need to specify
+        the number of dots as an integer – in this case, it's simply a <code>dots="1"</code>.
+    </p>
+    <p>
+        Tip: Once you have laid out the chordal structure, you should be able to copy & paste the block with the three <code>&lt;note&gt;</code> elements.
+    </p>
+</div>

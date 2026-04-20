@@ -1,0 +1,40 @@
+<div>
+    <p>
+        When music is laid out with multiple instruments / voices sharing a staff, it is sometimes 
+        necessary to "push" events like notes to a later position in the measure, without saying they 
+        are resting. This is usually the case when the document that's supposed to be encoded
+        switches between chord-based notation and separated stems within a measure (cf. figure below). As MEI uses the
+        <a href="/guidelines/v4/elements/layer.html" target="_blank" rel="noopener, noreferrer">&lt;layer&gt;</a> element to lay out
+        multiple instruments, and in these situations an instrument switches between those layers 
+        mid-measure, the "gaps" in those measures need to be filled. This is what the 
+        <code>&lt;space&gt;</code> element is for. 
+        <img style="display: block; margin: .5rem auto; width: 240px;" src="./104_rests-spaces.png" alt="A situation in need of space elements"/>
+    </p>
+    <p>
+        Of course, a space isn't really a rest. However, (invisible) rests are often (ab)used for these 
+        purposes in other encoding formats or scorewriters. The benefit of MEI's <code>&lt;space&gt;</code> element is that it carries no
+        semantic meaning – it just pushes other events around. This makes it much easier to actually process
+        an encoding and extract individual voices for it, as no non-existent information-carrying element is
+        falsely introduced just for better coordination. 
+    </p>
+    <p>
+        However, you can apply a certain duration to the <code>&lt;space&gt;</code> element by using the <code>@dur</code>
+        attribute. You can even use <code>@dots</code> to extend that duration by half its value. The duration you apply to
+        <code>&lt;space&gt;</code> is the number of beats that the events, like a <code>&lt;note&gt;</code>, following the
+        <code>&lt;space&gt;</code> are shifted to the right.
+    </p>
+    <p class="task">
+        In the editor below, you see a prefilled encoding of a note G4 (positioned at the first beat in the second layer).
+        Please push this note to the end of the measure, so that it sits on the final beat under the D5, as in the image
+        above. To do so, use the <code>&lt;space&gt;</code> element and apply an appropriate duration (it must be 3 beats
+        altogether). In fact, there are multiple ways to encode it:</p>
+    <ul>
+        <li>with three <code>&lt;space&gt;</code>'s using the same value for <code>@dur</code>,</li>
+        <li>with two <code>&lt;space&gt;</code> elements using only <code>@dur</code>, but with two different values,</li>
+        <li>or even with only one <code>&lt;space&gt;</code> element, using<code>@dur</code> and <code>@dots</code>.</li>
+    </ul>
+    <p>
+        You may play a little bit with the attribute values to see how they influence the rendering. Do you find all
+        three possible solutions?
+    </p>
+</div>

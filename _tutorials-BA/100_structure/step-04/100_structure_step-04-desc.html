@@ -1,0 +1,26 @@
+<div>
+    <p class="tutorialGoal">
+        Step four: provide the minimum necessary information for the MEI header.
+    </p>
+    <p>
+        Perfect! You are now pretty close to a valid basic MEI file structure. What is missing yet, are two mandatory
+        elements of the MEI header:
+    <ul>
+        <li>
+            <code>&lt;titleStmt&gt;</code> - a container element for title and responsibility meta-data. The title of a
+            bibliographic entity is given via its mandatory sub-element <code>&lt;title&gt;</code>;
+        </li>
+        <li>
+            <code>&lt;pubStmt&gt;</code> - a container element for information regarding the publication or distribution of a
+            bibliographic item, including the publisher's name and address, the date of publication, and other relevant
+            details.
+        </li>
+    </ul>
+    <p>
+        Both these elements are part of the file description (<code>&lt;fileDesc&gt;</code>), which is a direct child element
+        of <code>&lt;meiHead&gt;</code> and provides for a full bibliographic description of a MEI file.</p>
+
+    <p class="task">In the editor below, add a <code>&lt;fileDesc&gt;</code> element inside the given <code>&lt;meiHead&gt;</code>.
+        Then add the mandatory <code>&lt;titleStmt&gt;</code> and <code>&lt;pubStmt&gt;</code> elements to
+        <code>&lt;fileDesc&gt;</code> and a <code>&lt;title&gt;</code> element to <code>&lt;titleStmt&gt;</code>.</p>
+</div>

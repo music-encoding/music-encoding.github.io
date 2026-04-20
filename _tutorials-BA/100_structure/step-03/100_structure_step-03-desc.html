@@ -1,0 +1,28 @@
+<div>
+    <p class="tutorialGoal">
+        Step three: learn about the main child elements of the <code>&lt;mei&gt;</code> root element: <code>&lt;meiHead&gt;</code>
+        and <code>&lt;music&gt;</code>.
+    </p>
+    <p>
+        Well done! Now, that we have declared a namespace within our root element, all other elements nested in the root
+        element can be resolved according to the MEI namespace by machine-processing.
+    </p>
+        As already mentioned, you can think of an XML document like a tree that branches from one (outer) root element
+        to nested (inner) child elements. A MEI-encoded file contains at least two structures within the
+        <code>&lt;mei&gt;</code> root element:
+    </p>
+    <ul>
+        <li>
+            <code>&lt;meiHead&gt;</code> - contains a set of elements that supply metadata related to the MEI encoding, including
+            bibliographic information, responsibility statements, encoding standards, or provenance.
+        </li>
+        <li>
+            <code>&lt;music&gt;</code> - contains a set of elements that provide for the encoding of the actual musical content.
+            Beside others, it may comprise structural elements to describe the form of a musical piece (sections,
+            movements, document groups), or notational elements, like e.g. notes, rest, articluations, or dynamics.
+        </li>
+    </ul>
+
+    <p class="task">In the editor below, add a <code>&lt;meiHead&gt;</code> and a <code>&lt;music&gt;</code> element inside the
+        <code>&lt;mei&gt;</code> root element.</p>
+</div>
