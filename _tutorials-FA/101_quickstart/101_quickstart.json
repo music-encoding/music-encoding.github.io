@@ -1,0 +1,95 @@
+{
+  "steps": [
+    {
+      "label":"به MEI خوش آمدید!",
+      "descFile": "101_quickstart_step-00-desc.html"
+    },
+    {
+      "label":"نت اول",
+      "editorLines":1,
+      "descFile": "101_quickstart_step-01-desc.html",
+      "xmlFile": "101_quickstart_step-01.xml",
+      "prefillFile": "101_quickstart_step-01-prefill.xml",
+      "xpaths": [
+        {"rule":"count(//mei:note) = 1", "renderanyway": false, "hint": "یک المنت note لازم دارید."},
+        {"rule":"count(//mei:note/@*) = 3 and //mei:note/@pname and //mei:note/@oct and //mei:note/@dur", "renderanyway": false, "hint": "سه تا خصیصه برای المنت note نیاز دارید: @pname, @oct, و @dur."},
+        {"rule":"//mei:note/@pname", "renderanyway": false, "hint": "خصیصه‌ی @pname مقادیر مجاز 'a' تا 'g' را می‌پذیرد."},
+        {"rule":"//mei:note/@oct", "renderanyway": false, "hint": "خصیصه‌ی @oct به مقدار عددی نیاز دارد."},
+        {"rule":"//mei:note/@dur", "renderanyway": false, "hint": "خصیصه‌ی @dur مقادیری مانند '1', '2', '4', '8' و... را می‌پذیرد."},
+        {"rule":"//mei:note/@pname = 'e'", "renderanyway": true, "hint": "یک خصیصه‌ی @pnameنیاز دارید، با مقدار e."},
+        {"rule":"//mei:note/@oct = '4'", "renderanyway": true, "hint": "یک خصیصه‌ی @octنیاز دارید، با مقدار 4."},
+        {"rule":"//mei:note/@dur = '4'", "renderanyway": true, "hint": "یک خصیصه‌ی @durنیاز دارید، با مقدار 4."}
+      ]
+    },
+    {
+      "label":"چند نت",
+      "editorLines":8,
+      "descFile": "101_quickstart_step-02-desc.html",
+      "xmlFile": "101_quickstart_step-02.xml",
+      "prefillFile": "101_quickstart_step-02-prefill.xml",
+      "xpaths": [
+        {"rule":"count(//mei:note) = 7", "renderanyway": true},
+        {"rule":"//mei:note[1]/@pname = 'e'", "renderanyway": true},
+        {"rule":"//mei:note[1]/@oct = '4'", "renderanyway": true},
+        {"rule":"//mei:note[1]/@dur = '4'", "renderanyway": true},
+        {"rule":"//mei:note[2]/@pname = 'd'", "renderanyway": true},
+        {"rule":"//mei:note[2]/@oct = '4'", "renderanyway": true},
+        {"rule":"//mei:note[2]/@dur = '4'", "renderanyway": true},
+        {"rule":"//mei:note[3]/@pname = 'c'", "renderanyway": true},
+        {"rule":"//mei:note[3]/@oct = '4'", "renderanyway": true},
+        {"rule":"//mei:note[3]/@dur = '4'", "renderanyway": true},
+        {"rule":"//mei:note[4]/@pname = 'd'", "renderanyway": true},
+        {"rule":"//mei:note[4]/@oct = '4'", "renderanyway": true},
+        {"rule":"//mei:note[4]/@dur = '4'", "renderanyway": true},
+        {"rule":"//mei:note[5]/@pname = 'e'", "renderanyway": true},
+        {"rule":"//mei:note[5]/@oct = '4'", "renderanyway": true},
+        {"rule":"//mei:note[5]/@dur = '4'", "renderanyway": true},
+        {"rule":"//mei:note[6]/@pname = 'e'", "renderanyway": true},
+        {"rule":"//mei:note[6]/@oct = '4'", "renderanyway": true},
+        {"rule":"//mei:note[6]/@dur = '4'", "renderanyway": true},
+        {"rule":"//mei:note[7]/@pname = 'e'", "renderanyway": true},
+        {"rule":"//mei:note[7]/@oct = '4'", "renderanyway": true},
+        {"rule":"//mei:note[7]/@dur = '4'", "renderanyway": true}
+      ]
+    },
+    {
+      "label":"یک ملودی ساده",
+      "editorLines":8,
+      "descFile": "101_quickstart_step-03-desc.html",
+      "xmlFile": "101_quickstart_step-03.xml",
+      "prefillFile": "101_quickstart_step-03-prefill.xml",
+      "xpaths": [
+        {"rule":"count(//mei:note) = 7", "renderanyway": true},
+        {"rule":"//mei:note[1]/@pname = 'e'", "renderanyway": true},
+        {"rule":"//mei:note[1]/@oct = '4'", "renderanyway": true},
+        {"rule":"//mei:note[1]/@dur = '4'", "renderanyway": true},
+        {"rule":"//mei:note[1]/@dots = '1'", "renderanyway": true},
+        {"rule":"//mei:note[2]/@pname = 'd'", "renderanyway": true},
+        {"rule":"//mei:note[2]/@oct = '4'", "renderanyway": true},
+        {"rule":"//mei:note[2]/@dur = '8'", "renderanyway": true},
+        {"rule":"//mei:note[3]/@pname = 'c'", "renderanyway": true},
+        {"rule":"//mei:note[3]/@oct = '4'", "renderanyway": true},
+        {"rule":"//mei:note[3]/@dur = '4'", "renderanyway": true},
+        {"rule":"//mei:note[4]/@pname = 'd'", "renderanyway": true},
+        {"rule":"//mei:note[4]/@oct = '4'", "renderanyway": true},
+        {"rule":"//mei:note[4]/@dur = '4'", "renderanyway": true},
+        {"rule":"//mei:note[5]/@pname = 'e'", "renderanyway": true},
+        {"rule":"//mei:note[5]/@oct = '4'", "renderanyway": true},
+        {"rule":"//mei:note[5]/@dur = '4'", "renderanyway": true},
+        {"rule":"//mei:note[6]/@pname = 'e'", "renderanyway": true},
+        {"rule":"//mei:note[6]/@oct = '4'", "renderanyway": true},
+        {"rule":"//mei:note[6]/@dur = '4'", "renderanyway": true},
+        {"rule":"//mei:note[7]/@pname = 'e'", "renderanyway": true},
+        {"rule":"//mei:note[7]/@oct = '4'", "renderanyway": true},
+        {"rule":"//mei:note[7]/@dur = '2'", "renderanyway": true}
+      ]
+    }
+  ],
+  "end":"101_quickstart_end.html",
+  "resp":[
+    {
+      "name":"Johannes Kepper",
+      "affiliation":"Beethovens Werkstatt | Universität Paderborn"
+    }
+  ]
+}

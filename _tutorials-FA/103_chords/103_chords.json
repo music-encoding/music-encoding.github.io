@@ -1,0 +1,155 @@
+{
+    "steps": [
+        {
+            "label":"به MEI خوش آمدید!",
+            "descFile": "103_chords_step-00-desc.html"
+        },
+        {
+            "label": "آماده سازی",
+            "editorLines": 3,
+            "descFile": "103_chords_step-01-desc.html",
+            "prefillFile": "103_chords_step-01-prefill.xml",
+            "xmlFile": "103_chords_step-01.xml",
+            "xpaths": [
+                {"rule": "count(//mei:note) = 3", "renderanyway": false, "hint": "به سه المنت note نیاز دارید."},
+                {"rule": "count(//mei:note[1]/@*) = 3 and //mei:note[1]/@pname and //mei:note[1]/@oct and //mei:note[1]/@dur", "renderanyway": false, "hint": "به سه خصیصه روی اولین note نیاز دارید (@pname, @oct, و @dur)."},
+                {"rule": "count(//mei:note[2]/@*) = 3 and //mei:note[2]/@pname and //mei:note[2]/@oct and //mei:note[2]/@dur", "renderanyway": false, "hint": "به سه خصیصه روی دومین note نیاز دارید (@pname, @oct، و @dur)."},
+                {"rule": "count(//mei:note[3]/@*) = 3 and //mei:note[3]/@pname and //mei:note[3]/@oct and //mei:note[3]/@dur", "renderanyway": false, "hint": "به سه خصیصه روی سومین note نیاز دارید (@pname, @oct، و @dur)."},
+                {"rule": "//mei:note/@pname", "renderanyway": false, "hint": "خصیصه @pname مقادیر بین 'a' تا 'g' را می‌پذیرد."},
+                {"rule": "//mei:note/@oct", "renderanyway": false, "hint": "خصیصه @oct به مقادیر عددی نیاز دارد."},
+                {"rule": "//mei:note/@dur", "renderanyway": false, "hint": "خصیصه @dur مقادیری مانند '1', '2', '4', '8'… را می‌پذیرد."},
+                {"rule": "//mei:note[1]/@pname = 'e'", "renderanyway": true, "hint": "خصیصه @pname با مقدار 'e' روی اولین المنت note لازم است."},
+                {"rule": "//mei:note[1]/@oct = '4'", "renderanyway": true, "hint": "خصیصه @oct با مقدار '4' روی اولین المنت note لازم است."},
+                {"rule": "//mei:note[1]/@dur = '4'", "renderanyway": true, "hint": "خصیصه @dur با مقدار '4' روی اولین المنت note لازم است."},
+                {"rule": "//mei:note[2]/@pname = 'g'", "renderanyway": true, "hint": "خصیصه @pname با مقدار 'g' روی دومین المنت note لازم است."},
+                {"rule": "//mei:note[2]/@oct = '4'", "renderanyway": true, "hint": "خصیصه @oct با مقدار '4' روی دومین المنت note لازم است."},
+                {"rule": "//mei:note[2]/@dur = '4'", "renderanyway": true, "hint": "خصیصه @dur با مقدار '4' روی دومین المنت note لازم است."},
+                {"rule": "//mei:note[3]/@pname = 'c'", "renderanyway": true, "hint": "خصیصه @pname با مقدار 'c' روی سومین المنت note لازم است."},
+                {"rule": "//mei:note[3]/@oct = '5'", "renderanyway": true, "hint": "خصیصه @oct با مقدار '5' روی سومین المنت note لازم است."},
+                {"rule": "//mei:note[3]/@dur = '4'", "renderanyway": true, "hint": "خصیصه @dur با مقدار '4' روی سومین المنت note لازم است."}
+            ]
+        }
+        ,
+        {
+            "label":"اولین آکورد",
+            "editorLines": 5,
+            "descFile": "103_chords_step-02-desc.html",
+            "prefillFile": "103_chords_step-02-prefill.xml",
+            "xmlFile": "103_chords_step-02.xml",
+            "xpaths": [
+                {"rule": "count(//mei:note) = 3", "renderanyway": false, "hint": "به سه المنت note نیاز دارید."},
+                {"rule": "//mei:note[1]/@pname and //mei:note[1]/@oct", "renderanyway": true, "hint": "دو خصیصه روی اولین note لازم است (@pname, @oct)."},
+                {"rule": "//mei:note[2]/@pname and //mei:note[2]/@oct", "renderanyway": true, "hint": "دو خصیصه روی دومین note لازم است (@pname, @oct)."},
+                {"rule": "//mei:note[3]/@pname and //mei:note[3]/@oct", "renderanyway": true, "hint": "دو خصیصه روی سومین note لازم است (@pname, @oct)."},
+                {"rule": "//mei:note/@pname", "renderanyway": false, "hint": "خصیصه @pname مقادیر بین 'a' تا 'g' را می‌پذیرد."},
+                {"rule": "//mei:note/@oct", "renderanyway": false, "hint": "خصیصه @oct به مقادیر عددی نیاز دارد."},
+                {"rule": "//mei:note[@pname = 'e' and @oct = '4']", "renderanyway": true, "hint": "یک note نیاز دارید که خصیصه @pname مقدار 'e' و خصیصه @oct مقدار '4' داشته باشد."},
+                {"rule": "//mei:note[@pname = 'g' and @oct = '4']", "renderanyway": true, "hint": "یک note نیاز دارید که خصیصه @pname مقدار 'g' و خصیصه @oct مقدار '4' داشته باشد."},
+                {"rule": "//mei:note[@pname = 'c' and @oct = '5']", "renderanyway": true, "hint": "یک note نیاز دارید که خصیصه @pname مقدار 'c' و خصیصه @oct مقدار '5' داشته باشد."},
+                {"rule": "count(//mei:chord) = 1", "renderanyway": false, "hint": "به یک المنت chord نیاز دارید."},
+                {"rule": "//mei:chord/mei:note", "renderanyway": false, "hint": "المنت chord باید همه المنت‌های note را دربر بگیرد."},
+                {"rule": "count(//mei:note[1]/@*) = 2", "renderanyway": true, "hint": "روی اولین note تنها به دو خصیصه نیاز دارید (@pname, @oct)."},
+                {"rule": "count(//mei:note[2]/@*) = 2", "renderanyway": true, "hint": "روی دومین note تنها به دو خصیصه نیاز دارید (@pname, @oct)."},
+                {"rule": "count(//mei:note[3]/@*) = 2", "renderanyway": true, "hint": "روی سومین note تنها به دو خصیصه نیاز دارید (@pname, @oct)."},
+                {"rule": "count(//mei:chord/@*) = 1 and //mei:chord/@dur", "renderanyway": true, "hint": "یک خصیصه روی chord لازم دارید (@dur)."},
+                {"rule": "//mei:chord/@dur", "renderanyway": true, "hint": "خصیصه @dur مقادیری مانند '1', '2', '4', '8'… را می‌پذیرد."},
+                {"rule": "//mei:chord/@dur = '4'", "renderanyway": true, "hint": "خصیصه @dur باید مقدار '4' روی المنت chord داشته باشد."}
+            ]
+        },
+        {
+            "label": "یک زنجیره آکوریِ ساده",
+            "editorLines": 20,
+            "descFile": "103_chords_step-03-desc.html",
+            "prefillFile": "103_chords_step-03-prefill.xml",
+            "xmlFile": "103_chords_step-03.xml",
+            "xpaths": [
+              {"rule": "count(//mei:chord) = 4", "renderanyway": true, "hint": "به چهار المنت chord نیاز دارید."},
+              {"rule": "count(//mei:chord[1]/@*) = 1 and //mei:chord[1]/@dur", "renderanyway": true, "hint": "به یک خصیصه روی اولین آکورد (@dur) نیاز دارید."},
+              {"rule": "//mei:chord[1]/@dur = '4'", "renderanyway": true, "hint": "روی اولین آکورد، به یک خصیصه @dur با مقدار 4 نیاز دارید."},
+              {"rule": "count(//mei:chord[2]/@*) = 1 and //mei:chord[2]/@dur", "renderanyway": true, "hint": "به یک خصیصه روی دومین آکورد (@dur) نیاز دارید."},
+              {"rule": "//mei:chord[2]/@dur = '4'", "renderanyway": true, "hint": "روی دومین آکورد، به یک خصیصه @dur با مقدار 4 نیاز دارید."},
+              {"rule": "count(//mei:chord[3]/@*) = 1 and //mei:chord[3]/@dur", "renderanyway": true, "hint": "به یک خصیصه روی سومین آکورد (@dur) نیاز دارید."},
+              {"rule": "//mei:chord[3]/@dur = '4'", "renderanyway": true, "hint": "روی سومین آکورد، به یک خصیصه @dur با مقدار 4 نیاز دارید."},
+              {"rule": "count(//mei:chord[4]/@*) = 1 and //mei:chord[4]/@dur", "renderanyway": true, "hint": "به یک خصیصه روی آخرین آکورد (@dur) نیاز دارید."},
+              {"rule": "//mei:chord[4]/@dur = '4'", "renderanyway": true, "hint": "روی آخرین آکورد، به یک خصیصه @dur با مقدار 4 نیاز دارید."},
+          
+              {"rule": "count(//mei:chord[1]/mei:note) = 3", "renderanyway": true, "hint": "به سه المنت note برای اولین آکورد نیاز دارید."},
+              {"rule": "count(//mei:chord[1]/mei:note[1]/@*) = 2 and //mei:chord[1]/mei:note[1]/@pname and //mei:chord[1]/mei:note[1]/@oct", "renderanyway": true, "hint": "به دو خصیصه روی اولین نت (@pname, @oct) از اولین آکورد نیاز دارید."},
+              {"rule": "//mei:chord[1]/mei:note[@pname = 'e' and @oct = '4']", "renderanyway": true, "hint": "در اولین آکورد، به نتی با خصیصه @pname با مقدار e و خصیصه @oct با مقدار 4 نیاز دارید."},
+              {"rule": "count(//mei:chord[1]/mei:note[2]/@*) = 2 and //mei:chord[1]/mei:note[2]/@pname and //mei:chord[1]/mei:note[2]/@oct", "renderanyway": true, "hint": "به دو خصیصه روی دومین نت (@pname, @oct) از اولین آکورد نیاز دارید."},
+              {"rule": "//mei:chord[1]/mei:note[@pname = 'g' and @oct = '4']", "renderanyway": true, "hint": "در اولین آکورد، به نتی با خصیصه @pname با مقدار g و خصیصه @oct با مقدار 4 نیاز دارید."},
+              {"rule": "count(//mei:chord[1]/mei:note[3]/@*) = 2 and //mei:chord[1]/mei:note[3]/@pname and //mei:chord[1]/mei:note[3]/@oct", "renderanyway": true, "hint": "به دو خصیصه روی سومین نت (@pname, @oct) از اولین آکورد نیاز دارید."},
+              {"rule": "//mei:chord[1]/mei:note[@pname = 'c' and @oct = '5']", "renderanyway": true, "hint": "در اولین آکورد، به نتی با خصیصه @pname با مقدار c و خصیصه @oct با مقدار 5 نیاز دارید."},
+          
+              {"rule": "count(//mei:chord[2]/mei:note) = 3", "renderanyway": true, "hint": "به سه المنت note برای دومین آکورد نیاز دارید."},
+              {"rule": "count(//mei:chord[2]/mei:note[1]/@*) = 2 and //mei:chord[2]/mei:note[1]/@pname and //mei:chord[2]/mei:note[1]/@oct", "renderanyway": true, "hint": "به دو خصیصه روی اولین نت (@pname, @oct) از دومین آکورد نیاز دارید."},
+              {"rule": "//mei:chord[2]/mei:note[@pname = 'f' and @oct = '4']", "renderanyway": true, "hint": "در دومین آکورد، به نتی با خصیصه @pname با مقدار f و خصیصه @oct با مقدار 4 نیاز دارید."},
+              {"rule": "count(//mei:chord[2]/mei:note[2]/@*) = 2 and //mei:chord[2]/mei:note[2]/@pname and //mei:chord[2]/mei:note[2]/@oct", "renderanyway": true, "hint": "به دو خصیصه روی دومین نت (@pname, @oct) از دومین آکورد نیاز دارید."},
+              {"rule": "//mei:chord[2]/mei:note[@pname = 'a' and @oct = '4']", "renderanyway": true, "hint": "در دومین آکورد، به نتی با خصیصه @pname با مقدار a و خصیصه @oct با مقدار 4 نیاز دارید."},
+              {"rule": "count(//mei:chord[2]/mei:note[3]/@*) = 2 and //mei:chord[2]/mei:note[3]/@pname and //mei:chord[2]/mei:note[3]/@oct", "renderanyway": true, "hint": "به دو خصیصه روی سومین نت (@pname, @oct) از دومین آکورد نیاز دارید."},
+              {"rule": "//mei:chord[2]/mei:note[@pname = 'c' and @oct = '5']", "renderanyway": true, "hint": "در دومین آکورد، به نتی با خصیصه @pname با مقدار c و خصیصه @oct با مقدار 5 نیاز دارید."},
+          
+              {"rule": "count(//mei:chord[3]/mei:note) = 3", "renderanyway": true, "hint": "به سه المنت note برای سومین آکورد نیاز دارید."},
+              {"rule": "count(//mei:chord[3]/mei:note[1]/@*) = 2 and //mei:chord[3]/mei:note[1]/@pname and //mei:chord[3]/mei:note[1]/@oct", "renderanyway": true, "hint": "به دو خصیصه روی اولین نت (@pname, @oct) از سومین آکورد نیاز دارید."},
+              {"rule": "//mei:chord[3]/mei:note[@pname = 'e' and @oct = '5']", "renderanyway": true, "hint": "در سومین آکورد، به نتی با خصیصه @pname با مقدار e و خصیصه @oct با مقدار 5 نیاز دارید."},
+              {"rule": "count(//mei:chord[3]/mei:note[2]/@*) = 2 and //mei:chord[3]/mei:note[2]/@pname and //mei:chord[3]/mei:note[2]/@oct", "renderanyway": true, "hint": "به دو خصیصه روی دومین نت (@pname, @oct) از سومین آکورد نیاز دارید."},
+              {"rule": "//mei:chord[3]/mei:note[@pname = 'g' and @oct = '5']", "renderanyway": true, "hint": "در سومین آکورد، به نتی با خصیصه @pname با مقدار g و خصیصه @oct با مقدار 5 نیاز دارید."},
+              {"rule": "count(//mei:chord[3]/mei:note[3]/@*) = 2 and //mei:chord[3]/mei:note[3]/@pname and //mei:chord[3]/mei:note[3]/@oct", "renderanyway": true, "hint": "به دو خصیصه روی سومین نت (@pname, @oct) از سومین آکورد نیاز دارید."},
+              {"rule": "//mei:chord[3]/mei:note[@pname = 'c' and @oct = '6']", "renderanyway": true, "hint": "در سومین آکورد، به نتی با خصیصه @pname با مقدار c و خصیصه @oct با مقدار 6 نیاز دارید."},
+          
+              {"rule": "count(//mei:chord[4]/mei:note) = 3", "renderanyway": true, "hint": "به سه المنت note برای آخرین آکورد نیاز دارید."},
+              {"rule": "count(//mei:chord[4]/mei:note[1]/@*) = 2 and //mei:chord[4]/mei:note[1]/@pname and //mei:chord[4]/mei:note[1]/@oct", "renderanyway": true, "hint": "به دو خصیصه روی اولین نت (@pname, @oct) از آخرین آکورد نیاز دارید."},
+              {"rule": "//mei:chord[4]/mei:note[@pname = 'f' and @oct = '5']", "renderanyway": true, "hint": "در آخرین آکورد، به نتی با خصیصه @pname با مقدار f و خصیصه @oct با مقدار 5 نیاز دارید."},
+              {"rule": "count(//mei:chord[4]/mei:note[2]/@*) = 2 and //mei:chord[4]/mei:note[2]/@pname and //mei:chord[4]/mei:note[2]/@oct", "renderanyway": true, "hint": "به دو خصیصه روی دومین نت (@pname, @oct) از آخرین آکورد نیاز دارید."},
+              {"rule": "//mei:chord[4]/mei:note[@pname = 'a' and @oct = '5']", "renderanyway": true, "hint": "در آخرین آکورد، به نتی با خصیصه @pname با مقدار a و خصیصه @oct با مقدار 5 نیاز دارید."},
+              {"rule": "count(//mei:chord[4]/mei:note[3]/@*) = 2 and //mei:chord[4]/mei:note[3]/@pname and //mei:chord[4]/mei:note[3]/@oct", "renderanyway": true, "hint": "به دو خصیصه روی سومین نت (@pname, @oct) از آخرین آکورد نیاز دارید."},
+              {"rule": "//mei:chord[4]/mei:note[@pname = 'c' and @oct = '6']", "renderanyway": true, "hint": "در آخرین آکورد، به نتی با خصیصه @pname با مقدار c و خصیصه @oct با مقدار 6 نیاز دارید."}
+            ]
+          }
+          ,
+          {
+            "label": "یک زنجیره آکوریِ بسط یافته",
+            "editorLines": 35,
+            "descFile": "103_chords_step-04-desc.html",
+            "prefillFile": "103_chords_step-04-prefill.xml",
+            "xmlFile": "103_chords_step-04.xml",
+            "xpaths": [
+                {"rule": "count(//mei:chord) = 7", "renderanyway": true, "hint": "المنت‌های chord باید هفت عدد باشند."},
+                {"rule": "count(//mei:chord[1]/@*) = 2 and //mei:chord[1]/@dur and //mei:chord[1]/@dots", "renderanyway": true, "hint": "شما به دو خصیصه در المنت اول chord نیاز دارید (@dur، @dots)."},
+                {"rule": "//mei:chord[1]/@dur = '4'", "renderanyway": true, "hint": "شما به یک خصیصه @dur با مقدار 4 در المنت اول chord نیاز دارید."},
+                {"rule": "//mei:chord[1]/@dots = '1'", "renderanyway": true, "hint": "شما به یک خصیصه @dots با مقدار 1 در المنت اول chord نیاز دارید."},
+                {"rule": "count(//mei:chord[2]/@*) = 1 and //mei:chord[2]/@dur", "renderanyway": true, "hint": "شما به یک خصیصه در المنت دوم chord نیاز دارید (@dur)."},
+                {"rule": "//mei:chord[2]/@dur = '8'", "renderanyway": true, "hint": "شما به یک خصیصه @dur با مقدار 8 در المنت دوم chord نیاز دارید."},
+                {"rule": "count(//mei:chord[3]/@*) = 1 and //mei:chord[3]/@dur", "renderanyway": true, "hint": "شما به یک خصیصه در المنت سوم chord نیاز دارید (@dur)."},
+                {"rule": "//mei:chord[3]/@dur = '4'", "renderanyway": true, "hint": "شما به یک خصیصه @dur با مقدار 4 در المنت سوم chord نیاز دارید."},
+                {"rule": "count(//mei:chord[4]/@*) = 1 and //mei:chord[4]/@dur", "renderanyway": true, "hint": "شما به یک خصیصه در المنت چهارم chord نیاز دارید (@dur)."},
+                {"rule": "//mei:chord[4]/@dur = '4'", "renderanyway": true, "hint": "شما به یک خصیصه @dur با مقدار 4 در المنت چهارم chord نیاز دارید."},
+                {"rule": "count(//mei:chord[5]/@*) = 1 and //mei:chord[5]/@dur", "renderanyway": true, "hint": "شما به یک خصیصه در المنت پنجم chord نیاز دارید (@dur)."},
+                {"rule": "//mei:chord[5]/@dur = '4'", "renderanyway": true, "hint": "شما به یک خصیصه @dur با مقدار 4 در المنت پنجم chord نیاز دارید."},
+                {"rule": "count(//mei:chord[6]/@*) = 1 and //mei:chord[6]/@dur", "renderanyway": true, "hint": "شما به یک خصیصه در المنت ششم chord نیاز دارید (@dur)."},
+                {"rule": "//mei:chord[6]/@dur = '4'", "renderanyway": true, "hint": "شما به یک خصیصه @dur با مقدار 4 در المنت ششم chord نیاز دارید."},
+                {"rule": "count(//mei:chord[7]/@*) = 1 and //mei:chord[7]/@dur", "renderanyway": true, "hint": "شما به یک خصیصه در المنت آخر chord نیاز دارید (@dur)."},
+                {"rule": "//mei:chord[7]/@dur = '2'", "renderanyway": true, "hint": "شما به یک خصیصه @dur با مقدار 2 در المنت آخر chord نیاز دارید."},
+                {"rule": "count(//mei:chord[1]/mei:note) = 3", "renderanyway": true, "hint": "شما به سه المنت note در المنت اول chord نیاز دارید."},
+                {"rule": "count(//mei:chord[1]/mei:note[1]/@*) = 2 and //mei:chord[1]/mei:note[1]/@pname and //mei:chord[1]/mei:note[1]/@oct", "renderanyway": true, "hint": "شما به دو خصیصه در اولین المنت note از المنت اول chord نیاز دارید (@pname، @oct)."},
+                {"rule": "//mei:chord[1]/mei:note[@pname = 'g' and @oct = '4']", "renderanyway": true, "hint": "در المنت اول chord، شما به یک note با خصیصه @pname با مقدار g و خصیصه @oct با مقدار 4 نیاز دارید."},
+                {"rule": "count(//mei:chord[1]/mei:note[2]/@*) = 2 and //mei:chord[1]/mei:note[2]/@pname and //mei:chord[1]/mei:note[2]/@oct", "renderanyway": true, "hint": "شما به دو خصیصه در دومین المنت note از المنت اول chord نیاز دارید (@pname، @oct)."},
+                {"rule": "//mei:chord[1]/mei:note[@pname = 'c' and @oct = '5']", "renderanyway": true, "hint": "در المنت اول chord، شما به یک note با خصیصه @pname با مقدار c و خصیصه @oct با مقدار 5 نیاز دارید."},
+                {"rule": "count(//mei:chord[1]/mei:note[3]/@*) = 2 and //mei:chord[1]/mei:note[3]/@pname and //mei:chord[1]/mei:note[3]/@oct", "renderanyway": true, "hint": "شما به دو خصیصه در سومین المنت note از المنت اول chord نیاز دارید (@pname، @oct)."},
+                {"rule": "//mei:chord[1]/mei:note[@pname = 'e' and @oct = '5']", "renderanyway": true, "hint": "در المنت اول chord، شما به یک note با خصیصه @pname با مقدار e و خصیصه @oct با مقدار 5 نیاز دارید."}
+            ]
+        }
+        
+    ],
+    "end":"103_chords_end.html",
+    "resp":[
+        {
+            "name":"Stefan Münnich",
+            "affiliation":"Anton Webern Gesamtausgabe | University of Basel"
+        },
+        {
+            "name":"Johannes Kepper",
+            "affiliation":"Beethovens Werkstatt | Universität Paderborn"
+        }
+    ]
+}
