@@ -1,0 +1,95 @@
+{
+  "steps": [
+    {
+      "label":"Witamy w MEI",
+      "descFile": "101_quickstart_step-00-desc.html"
+    },
+    {
+      "label":"Pierwsza Nuta",
+      "editorLines":1,
+      "descFile": "101_quickstart_step-01-desc.html",
+      "xmlFile": "101_quickstart_step-01.xml",
+      "prefillFile": "101_quickstart_step-01-prefill.xml",
+      "xpaths": [
+        {"rule":"count(//mei:note) = 1", "renderanyway": false, "hint": "Potrzebujesz jeden element nutowy."},
+        {"rule":"count(//mei:note/@*) = 3 and //mei:note/@pname and //mei:note/@oct and //mei:note/@dur", "renderanyway": false, "hint": "Potrzebujesz trzech atrybutów: @pname, @oct, and @dur."},
+        {"rule":"//mei:note/@pname", "renderanyway": false, "hint": "Atrybut @pname pozwala wartości od 'a' to 'g'."},
+        {"rule":"//mei:note/@oct", "renderanyway": false, "hint": "Atrybut @oct wymaga liczby całkowite."},
+        {"rule":"//mei:note/@dur", "renderanyway": false, "hint": "Atrybut @dur pozwala wartości takich jak '1', '2', '4', '8'…"},
+        {"rule":"//mei:note/@pname = 'e'", "renderanyway": true, "hint": "Potrzebujesz atrybut @pname z wartością e."},
+        {"rule":"//mei:note/@oct = '4'", "renderanyway": true, "hint": "Potrzebujesz atrybut @oct z wartością 4."},
+        {"rule":"//mei:note/@dur = '4'", "renderanyway": true, "hint": "Potrzebujesz atrybut @dur z wartością 4."}
+      ]
+    },
+    {
+      "label":"Wiele Nut",
+      "editorLines":8,
+      "descFile": "101_quickstart_step-02-desc.html",
+      "xmlFile": "101_quickstart_step-02.xml",
+      "prefillFile": "101_quickstart_step-02-prefill.xml",
+      "xpaths": [
+        {"rule":"count(//mei:note) = 7", "renderanyway": true},
+        {"rule":"//mei:note[1]/@pname = 'e'", "renderanyway": true},
+        {"rule":"//mei:note[1]/@oct = '4'", "renderanyway": true},
+        {"rule":"//mei:note[1]/@dur = '4'", "renderanyway": true},
+        {"rule":"//mei:note[2]/@pname = 'd'", "renderanyway": true},
+        {"rule":"//mei:note[2]/@oct = '4'", "renderanyway": true},
+        {"rule":"//mei:note[2]/@dur = '4'", "renderanyway": true},
+        {"rule":"//mei:note[3]/@pname = 'c'", "renderanyway": true},
+        {"rule":"//mei:note[3]/@oct = '4'", "renderanyway": true},
+        {"rule":"//mei:note[3]/@dur = '4'", "renderanyway": true},
+        {"rule":"//mei:note[4]/@pname = 'd'", "renderanyway": true},
+        {"rule":"//mei:note[4]/@oct = '4'", "renderanyway": true},
+        {"rule":"//mei:note[4]/@dur = '4'", "renderanyway": true},
+        {"rule":"//mei:note[5]/@pname = 'e'", "renderanyway": true},
+        {"rule":"//mei:note[5]/@oct = '4'", "renderanyway": true},
+        {"rule":"//mei:note[5]/@dur = '4'", "renderanyway": true},
+        {"rule":"//mei:note[6]/@pname = 'e'", "renderanyway": true},
+        {"rule":"//mei:note[6]/@oct = '4'", "renderanyway": true},
+        {"rule":"//mei:note[6]/@dur = '4'", "renderanyway": true},
+        {"rule":"//mei:note[7]/@pname = 'e'", "renderanyway": true},
+        {"rule":"//mei:note[7]/@oct = '4'", "renderanyway": true},
+        {"rule":"//mei:note[7]/@dur = '4'", "renderanyway": true}
+      ]
+    },
+    {
+      "label":"Prosta Melodia",
+      "editorLines":8,
+      "descFile": "101_quickstart_step-03-desc.html",
+      "xmlFile": "101_quickstart_step-03.xml",
+      "prefillFile": "101_quickstart_step-03-prefill.xml",
+      "xpaths": [
+        {"rule":"count(//mei:note) = 7", "renderanyway": true},
+        {"rule":"//mei:note[1]/@pname = 'e'", "renderanyway": true},
+        {"rule":"//mei:note[1]/@oct = '4'", "renderanyway": true},
+        {"rule":"//mei:note[1]/@dur = '4'", "renderanyway": true},
+        {"rule":"//mei:note[1]/@dots = '1'", "renderanyway": true},
+        {"rule":"//mei:note[2]/@pname = 'd'", "renderanyway": true},
+        {"rule":"//mei:note[2]/@oct = '4'", "renderanyway": true},
+        {"rule":"//mei:note[2]/@dur = '8'", "renderanyway": true},
+        {"rule":"//mei:note[3]/@pname = 'c'", "renderanyway": true},
+        {"rule":"//mei:note[3]/@oct = '4'", "renderanyway": true},
+        {"rule":"//mei:note[3]/@dur = '4'", "renderanyway": true},
+        {"rule":"//mei:note[4]/@pname = 'd'", "renderanyway": true},
+        {"rule":"//mei:note[4]/@oct = '4'", "renderanyway": true},
+        {"rule":"//mei:note[4]/@dur = '4'", "renderanyway": true},
+        {"rule":"//mei:note[5]/@pname = 'e'", "renderanyway": true},
+        {"rule":"//mei:note[5]/@oct = '4'", "renderanyway": true},
+        {"rule":"//mei:note[5]/@dur = '4'", "renderanyway": true},
+        {"rule":"//mei:note[6]/@pname = 'e'", "renderanyway": true},
+        {"rule":"//mei:note[6]/@oct = '4'", "renderanyway": true},
+        {"rule":"//mei:note[6]/@dur = '4'", "renderanyway": true},
+        {"rule":"//mei:note[7]/@pname = 'e'", "renderanyway": true},
+        {"rule":"//mei:note[7]/@oct = '4'", "renderanyway": true},
+        {"rule":"//mei:note[7]/@dur = '2'", "renderanyway": true}
+      ]
+    }
+  ],
+  "end":"101_quickstart_end.html",
+  "resp":[
+    {
+      "name":"Johannes Kepper",
+      "affiliation":"Beethovens Werkstatt | Universität Paderborn"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+<div>
+    <p class="tutorialGoal">Krok dziesiąty: dodawanie znaków artykulacyjnych do kodowania przykładu.</p>
+
+    <p>Świetnie! Zakodowałaś całą melodię przykładu. Rozważmy teraz, krok po kroku, brakujące elementy dodatkowe, takie jak dynamika, slury czy akcenty.</p>
+
+    <p>Artykulacje, czyli wskazówki dotyczące sposobu grania nuty lub akordu, mogą być kodowane za pomocą elementów <code>&lt;artic&gt;</code>, które są stosowane jako potomkowie elementów <code>&lt;note&gt;</code>.
+    W tym kroku samouczka powinny być używane następujące atrybuty na elemencie <code>&lt;artic&gt;</code>:</p>
+    <ul>
+        <li><code>@artic</code> (typ artykulacji) – rodzaj znaku artykulacyjnego, np.: akcent <code>“acc”</code>, staccato <code>“stacc”</code>, tenuto <code>“ten”</code>, tutaj użyj <code>“acc”</code>,</li>
+        <li><code>@place</code> – położenie znaku artykulacyjnego, <code>“powyżej”</code> lub <code>“poniżej”</code> pięciolinii, tutaj użyj <code>“powyżej”</code>.</li>
+    </ul>
+
+    <p class="tutorialTask">Znajdź elementy <code>&lt;note&gt;</code> w przykładzie, do których przypisane są artykulacje (są akcenty muzyczne na kropkowanych ćwierćnutach w takcie 1 i 2 oraz na ćwierćnucie w takcie 3). Dodaj potomny element <code>&lt;artic&gt;</code> do tych elementów <code>&lt;note&gt;</code> i zastosuj odpowiednie atrybuty (<code>@artic</code>, <code>@place</code>).</p>
+</div>

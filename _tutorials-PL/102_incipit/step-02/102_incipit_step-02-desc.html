@@ -1,0 +1,23 @@
+<div>
+    <p class="tutorialGoal">Krok drugi: dodanie atrybutów do szkieletu strukturalnego utworzonego w poprzednim kroku. Atrybuty te dostarczą podstawowych informacji o pięciolinii, klucza i tonacji przykładu.</p>
+
+    <p>W poprzednim kroku nauczyłaś się, że element <code>&lt;scoreDef&gt;</code> jest używany do określania wspólnych parametrów partytury, a <code>&lt;staffDef&gt;</code> zawiera wszystkie metadane związane z pojedynczą pięciolinią. Oczywiście w tym przykładzie incipitu jest tylko jeden incipit nutowy, więc byłoby możliwe zadeklarowanie sygnatury tonacji (3 bemole) i symbolu metrum (czas cięcia) w <code>&lt;staffDef&gt;</code>. Ale przenieśmy te informacje do <code>&lt;scoreDef&gt;</code>, zakładając, że tonacja i metrum są takie same dla wszystkich innych instrumentów lub części całej partytury Opus 1 Halvorsena. Aby wskazać określony klucz lub metrum, należy użyć następujących atrybutów <code>&lt;scoreDef&gt;</code> i dodać je do elementu: <code>&lt;scoreDef&gt;</code></p>
+    <ul>
+        <li><code>@key.sig</code> (sygnatura klawisza) – liczba krzyżyków/bemoli w zapisanej sygnaturze klucza, użyj <code>“3f”</code> na 3 bemole.</li>
+        <li><code>@meter.sym</code> (symbol metru) – użyj <code>“cut”</code> dla czasu cięcia (C/).
+
+        </li>
+    </ul>
+
+    <p>Z kolei klucz wiolinowy jest opisany w elemencie <code>&lt;staffDef&gt;</code>, ponieważ jest on powiązany z poszczególną pięciolinią (inne instrumenty mogą mieć inne klucze wiolinowe). Należy użyć następujących atrybutów <code>&lt;staffDef&gt;</code>:</p>
+    <ul>
+        <li><code>@n</code> (liczba porządkowa) - pozycja pięciolinii w otaczającym <code>&lt;staffGrp&gt;</code>, użyj <code>”1”</code> dla dla pierwszej i jedynej pięciolinii</li>
+        <li><code>@lines</code> – użyj <code>“5”</code> na pięciolinię</li>
+        <li><code>@clef.shape</code> – wartość dla symbolu klucza wiolinowego: użyj <code>“G”</code> dla symbolu klucza G.</li>
+        <li><code>@clef.line</code> – linia pięciolinii, na której umieszczony jest klucz wiolinowy (licząc od dołu), użyj <code>“2”</code>.</li>
+    </ul>
+
+    <p class="task">Dodaj atrybuty opisane powyżej i ich odpowiednie wartości do <code>&lt;scoreDef&gt;</code> i <code>&lt;staffDef&gt;</code> w edytorze poniżej. (W przypadku renderowania potrzebne są jeszcze dodatkowe informacje. Idźmy dalej!).</p>
+
+    <p>PS: Chociaż odnosimy się do atrybutów z poprzedzającym znakiem @ w tekście, nie jest to konieczne (a nawet dozwolone) w kodowaniu.</p>
+</div>

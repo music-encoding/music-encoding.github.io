@@ -1,0 +1,25 @@
+<div>
+    <p class="tutorialGoal">Krok jedenasty: dodawanie oznaczeń dynamicznych do twojego kodowania przykładu.</p>
+
+    <p>Dynamika jest określana za pomocą elementu <code>&lt;dynam&gt;</code>. Element <code>&lt;dynam&gt;</code> może być używany do określania chwilowych lub ciągłych oznaczeń dynamicznych, np. <code>“p”</code>, <code>“mf”</code> lub <code>“cresc. poco a poco”</code>. Są one umieszczane jako zwykły tekst między tagami otwarcia i zamknięcia elementu <code>&lt;dynam&gt;</code>, jak na przykład: <code>&lt;dynam&gt;ff&lt;/dynam&gt;</code>.</p>
+
+    <p>W przeciwieństwie do znaków artykulacyjnych, element <code>&lt;dynam&gt;</code> jest tzw. <code>zdarzeniem kontrolnym</code>, które grupuje elementy (takie jak dynamika, łuki, akcenty, znaki pedałowe itp.), które zależą od innych zdarzeń, takich jak nuty lub pauzy, dla swojej ważności. Ogólnie rzecz biorąc, <code>zdarzenia kontrolne</code> nie są kodowane jako elementy potomne odpowiadających im zdarzeń, które są przeznaczone do kontrolowania. W praktyce oznacza to, że są one umieszczane na zewnątrz elementów <code>staff</code> w większości przypadków.</p>
+
+    <p>Istnieją różne opcje wskazujące odniesienie do <code>&lt;note&gt;</code> lub <code>&lt;rest&gt;</code> (lub innego zdarzenia) z <code>zdarzenia kontrolnego</code> jak <code>&lt;dynam&gt;</code>:</p>
+
+    <ul>
+        <li>Najpierw, <code>&lt;staff&gt;</code>, do którego ma być zastosowane <code>zdarzenie kontrolne</code>, może być odwołane za pomocą atrybutu <code>@staff</code>.</li>
+        <li>Ponadto, punkt początkowy oznaczenia dynamicznego musi być wskazany za pomocą atrybutu <code>startid</code>, <code>tstamp</code>, <code>tstamp.ges</code> lub <code>tstamp.real</code>. Punkt końcowy może być wskazany za pomocą atrybutu <code>dur</code>, <code>dur.ges</code>, <code>endid</code> lub <code>tstamp2</code>. Jest to błąd semantyczny, jeśli nie określisz atrybutu punktu początkowego.</li>
+    </ul>
+
+    <p>W tym przykładzie atrybut <code>@tstamp</code> jest używany do wskazania punktu początkowego oznaczenia dynamicznego. <code>@tstamp</code> może być używany do kodowania czasu rozpoczęcia w terminach czasu muzycznego, tj. uderzeń, wyrażonych w zapisanym metrum.</p>
+
+    <p>Następujące atrybuty mają być używane tutaj wewnątrz <code>&lt;dynam&gt;</code>:</p>
+    <ul>
+        <li><code>@staff</code> – numer identyfikacyjny pięciolinii, do której jest stosowany element, np. <code>“1”</code> w tym przypadku,</li>
+        <li><code>@tstamp</code> (znacznik czasu) – czas rozpoczęcia w terminach czasu muzycznego, tj. uderzeń, np. <code>“1”</code>, <code>“2.5”</code>,
+        <li><code>@place</code> – położenie oznaczenia dynamicznego, <code>“powyżej”</code> lub <code>“poniżej”</code> pięciolinii.</li>
+    </ul>
+
+    <p class="tutorialTask">Znajdź elementy <code>&lt;note&gt;</code> w przykładzie, do których są przypisane dynamiki. Dodaj element potomny <code>&lt;dynam&gt;</code> do odpowiedniego elementu <code>&lt;staff&gt;</code> i zastosuj atrybuty (<code>@staff</code>, <code>@tstamp</code>, <code>@place</code>). Nie zapomnij umieścić znaku <code>ff</code> między tagami otwarcia i zamknięcia elementu <code>&lt;dynam&gt;</code>.</p>
+</div>
