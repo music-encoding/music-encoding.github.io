@@ -90,6 +90,77 @@ id: local-info
             height: 100%;
             border: 0;
         }
+
+        /* Responsive Table CSS */
+        .restaurant-table-wrapper {
+            overflow-x: auto;
+            margin-top: 1em;
+        }
+        .restaurant-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.9em;
+        }
+        .restaurant-table th, .restaurant-table td {
+            padding: 0.75em;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+        .restaurant-table th {
+            background-color: #f8f8f8;
+            font-weight: bold;
+        }
+        .restaurant-table tr:nth-child(even) {
+            background-color: #fdfdfd;
+        }
+        .restaurant-link {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .restaurant-link:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .restaurant-table, .restaurant-table tbody, .restaurant-table tr, .restaurant-table td {
+                display: block;
+                width: 100%;
+            }
+            .restaurant-table thead {
+                display: none; /* Hide headers on mobile */
+            }
+            .restaurant-table tr {
+                margin-bottom: 1em;
+                border: 1px solid #ccc;
+                border-radius: 8px;
+                overflow: hidden;
+            }
+            .restaurant-table td {
+                border: none;
+                border-bottom: 1px solid #eee;
+                position: relative;
+                padding-left: 35%;
+            }
+            .restaurant-table td:last-child {
+                border-bottom: none;
+            }
+            .restaurant-table td::before {
+                content: attr(data-label);
+                position: absolute;
+                left: 0;
+                width: 32%;
+                padding-left: 0.75em;
+                font-weight: bold;
+                background-color: #f4f4f4;
+                height: 100%;
+                top: 0;
+                display: flex;
+                align-items: center;
+                box-sizing: border-box;
+                font-size: 0.85em;
+            }
+        }
     </style>
 
     <h1>Local Information</h1>
@@ -218,7 +289,62 @@ id: local-info
         </ul>
         
         <h3>Dining (Lunch & Dietary Restrictions)</h3>
-        <p><em>TBA</em></p>
+        <p>The Kagurazaka area around the venue offers a fantastic variety of dining options. Please enjoy the local restaurants during your lunch break. You can find our recommendations in the map and list below.</p>
+        
+        <!-- Map Embed -->
+        <div class="map-placeholder">
+            <iframe src="https://www.google.com/maps/d/u/1/embed?mid=15fUlXQTTLlH813Q3G3qg1Q2LYPfRTT0&ehbc=2E312F&noprof=1" width="640" height="480"></iframe>
+        </div>
+
+        <h4 style="margin-top: 2em; margin-bottom: 1em;">Recommended Restaurants List</h4>
+        <div class="restaurant-table-wrapper">
+            <table class="restaurant-table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Cuisine</th>
+                        <th>Price</th>
+                        <th>Distance</th>
+                        <th>Lunch Time</th>
+                        <th>Notes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td data-label="Name"><a href="https://tabelog.com/en/tokyo/A1309/A130905/13000479/" target="_blank" class="restaurant-link">Ishiusuhiki Teuchi Kyorakutei (石臼挽き手打 蕎楽亭)</a></td><td data-label="Cuisine">Soba, Tempura</td><td data-label="Price">1–2k</td><td data-label="Distance">3 min.</td><td data-label="Lunch Time">11:30–14:00</td><td data-label="Notes"></td></tr>
+                    <tr><td data-label="Name"><a href="https://tabelog.com/en/tokyo/A1309/A130905/13107796/" target="_blank" class="restaurant-link">Agezuki (あげづき)</a></td><td data-label="Cuisine">Tonkatsu</td><td data-label="Price">1–2.5k</td><td data-label="Distance">2 min.</td><td data-label="Lunch Time">11:30–14:30</td><td data-label="Notes">Closed Tuesdays</td></tr>
+                    <tr><td data-label="Name"><a href="https://tabelog.com/en/tokyo/A1309/A130905/13233789/" target="_blank" class="restaurant-link">Chinese Sai Chirin (中国菜 智林)</a></td><td data-label="Cuisine">Chinese</td><td data-label="Price">2–3k</td><td data-label="Distance">3 min.</td><td data-label="Lunch Time">11:30–14:30</td><td data-label="Notes">Closed Mondays</td></tr>
+                    <tr><td data-label="Name"><a href="https://tabelog.com/en/tokyo/A1309/A130905/13156026/" target="_blank" class="restaurant-link">Chinese Sai Zenraku Bo (中国菜 膳楽房)</a></td><td data-label="Cuisine">Chinese</td><td data-label="Price">1–1.5k</td><td data-label="Distance">5 min.</td><td data-label="Lunch Time">11:30–14:30</td><td data-label="Notes">Closed Mondays</td></tr>
+                    <tr><td data-label="Name"><a href="https://tabelog.com/en/tokyo/A1309/A130905/13000263/" target="_blank" class="restaurant-link">Le Bretagne Kagurazaka (ル・ブルターニュ)</a></td><td data-label="Cuisine">Galette</td><td data-label="Price">2–3k</td><td data-label="Distance">1 min.</td><td data-label="Lunch Time">11:30–22:00</td><td data-label="Notes"></td></tr>
+                    <tr><td data-label="Name"><a href="https://tabelog.com/en/tokyo/A1309/A130905/13287282/" target="_blank" class="restaurant-link">Tori Soba Za Gin (鶏soba座銀 神楽坂東京本店)</a></td><td data-label="Cuisine">Chicken noodles/ramen</td><td data-label="Price">1–2k</td><td data-label="Distance">2 min.</td><td data-label="Lunch Time">11:00–22:30</td><td data-label="Notes">Vegan ramen</td></tr>
+                    <tr><td data-label="Name"><a href="https://tabelog.com/en/tokyo/A1309/A130905/13270568/" target="_blank" class="restaurant-link">RAMEN MONTANA HOUSE (神楽坂家系ラーメン モンタナ)</a></td><td data-label="Cuisine">Ramen</td><td data-label="Price">1k</td><td data-label="Distance">2 min.</td><td data-label="Lunch Time">11:00–16:00</td><td data-label="Notes"></td></tr>
+                    <tr><td data-label="Name"><a href="https://tabelog.com/en/tokyo/A1309/A130905/13234395/" target="_blank" class="restaurant-link">Tsubomi no Kaori (つぼみのかおり)</a></td><td data-label="Cuisine">Curry</td><td data-label="Price">1–2k</td><td data-label="Distance">2 min.</td><td data-label="Lunch Time">11:30–13:30</td><td data-label="Notes">Closed Sat/Sun. Spicy but not hot, Only three kinds of curry. Butter & flour not used.</td></tr>
+                    <tr><td data-label="Name"><a href="https://tabelog.com/en/tokyo/A1309/A130905/13004086/" target="_blank" class="restaurant-link">Le Clos Montmartre (ル・クロ・モンマルトル)</a></td><td data-label="Cuisine">French</td><td data-label="Price">3-4k</td><td data-label="Distance">4 min.</td><td data-label="Lunch Time">11:30–13:30</td><td data-label="Notes">Closed Mon/Wed/Fri</td></tr>
+                    <tr><td data-label="Name"><a href="https://tabelog.com/en/tokyo/A1309/A130905/13211937/" target="_blank" class="restaurant-link">Tsujihan (日本橋海鮮丼 つじ半 神楽坂店)</a></td><td data-label="Cuisine">Kaisen-don (Seafood bowl)</td><td data-label="Price">1.5–4k</td><td data-label="Distance">2 min.</td><td data-label="Lunch Time">11:00–21:00</td><td data-label="Notes">14 counter seats only</td></tr>
+                    <tr><td data-label="Name"><a href="https://tabelog.com/en/tokyo/A1309/A130905/13206827/" target="_blank" class="restaurant-link">Le Piccolo (レ・ピコロ)</a></td><td data-label="Cuisine">French</td><td data-label="Price">1.5-6k</td><td data-label="Distance">1 min.</td><td data-label="Lunch Time">11:30–14:00</td><td data-label="Notes">Closed Mondays</td></tr>
+                    <tr><td data-label="Name"><a href="https://tabelog.com/en/tokyo/A1309/A130905/13040653/" target="_blank" class="restaurant-link">Masudaya (ますだや)</a></td><td data-label="Cuisine">Bento / takeout only</td><td data-label="Price">–1k</td><td data-label="Distance">3 min.</td><td data-label="Lunch Time">10:30–13:00</td><td data-label="Notes">Warm rice</td></tr>
+                    <tr><td data-label="Name"><a href="https://tabelog.com/en/tokyo/A1309/A130905/13262261/" target="_blank" class="restaurant-link">Les aromes</a></td><td data-label="Cuisine">French</td><td data-label="Price">3-5k</td><td data-label="Distance">4 min.</td><td data-label="Lunch Time">11:30–12:30</td><td data-label="Notes">Closed Wednesdays</td></tr>
+                    <tr><td data-label="Name"><a href="https://tabelog.com/tokyo/A1309/A130905/13000402/" target="_blank" class="restaurant-link">CANAL CAFE (カナルカフェ)</a></td><td data-label="Cuisine">Cafe: Pasta, Pizza, etc.</td><td data-label="Price">1–4k</td><td data-label="Distance">6 min.</td><td data-label="Lunch Time">11:30–22:00</td><td data-label="Notes">By the river.</td></tr>
+                    <tr><td data-label="Name"><a href="https://tabelog.com/en/tokyo/A1309/A130905/13133484/" target="_blank" class="restaurant-link">Natsume Tei (夏目亭)</a></td><td data-label="Cuisine">French</td><td data-label="Price">3-5k</td><td data-label="Distance">2 min.</td><td data-label="Lunch Time">12:00–14:00</td><td data-label="Notes">Closed Wednesdays</td></tr>
+                    <tr><td data-label="Name"><a href="https://tabelog.com/en/tokyo/A1309/A130905/13154672/" target="_blank" class="restaurant-link">SHIMADA CAFE KAGURAZAKA (シマダカフェ 神楽坂)</a></td><td data-label="Cuisine">Pasta, Omurice</td><td data-label="Price">1–2k</td><td data-label="Distance">3 min.</td><td data-label="Lunch Time">11:00–21:00</td><td data-label="Notes">Closed Mondays. Limited lunch menu</td></tr>
+                    <tr><td data-label="Name"><a href="https://tabelog.com/en/tokyo/A1309/A130905/13268377/" target="_blank" class="restaurant-link">Kagurazaka Saryo Hon Ten (神楽坂 茶寮 本店)</a></td><td data-label="Cuisine">Japanese</td><td data-label="Price">1–2k</td><td data-label="Distance">3 min.</td><td data-label="Lunch Time">11:30–22:00</td><td data-label="Notes"><a href="https://saryo.jp/wp/wp-content/themes/saryo/pdf/menu_honten.pdf" target="_blank">Menu PDF</a></td></tr>
+                    <tr><td data-label="Name"><a href="https://tabelog.com/en/tokyo/A1309/A130905/13221996/" target="_blank" class="restaurant-link">Kagurazaka Tantebone (神楽坂タンテボーネ)</a></td><td data-label="Cuisine">Italian</td><td data-label="Price">2–3k</td><td data-label="Distance">2 min.</td><td data-label="Lunch Time">11:30–14:00</td><td data-label="Notes">Closed Tuesdays. Online reservation at 11:30 only. 14 seats.</td></tr>
+                    <tr><td data-label="Name"><a href="https://tabelog.com/en/tokyo/A1309/A130905/13264969/" target="_blank" class="restaurant-link">Vegetable base TOKYO</a></td><td data-label="Cuisine">Salads</td><td data-label="Price">1–2k</td><td data-label="Distance">2 min.</td><td data-label="Lunch Time">11:00–14:30</td><td data-label="Notes">Vegan, chicken, salmon</td></tr>
+                    <tr><td data-label="Name"><a href="https://tabelog.com/en/tokyo/A1309/A130905/13164616/" target="_blank" class="restaurant-link">Yakinikuya KAZU Kagurazaka (焼肉家 KAZU 神楽坂)</a></td><td data-label="Cuisine">Yakiniku / BBQ</td><td data-label="Price">1–2k</td><td data-label="Distance">4 min.</td><td data-label="Lunch Time">11:45–14:00</td><td data-label="Notes"></td></tr>
+                    <tr><td data-label="Name"><a href="https://tabelog.com/en/tokyo/A1309/A130905/13167219/" target="_blank" class="restaurant-link">LE PARISIEN (ル・パリジャン)</a></td><td data-label="Cuisine">French Wine bar</td><td data-label="Price">2-5k</td><td data-label="Distance">4 min.</td><td data-label="Lunch Time">11:30–14:30</td><td data-label="Notes"></td></tr>
+                    <tr><td data-label="Name"><a href="https://tabelog.com/en/tokyo/A1309/A130905/13011420/" target="_blank" class="restaurant-link">Men So (め乃惣)</a></td><td data-label="Cuisine">Japanese</td><td data-label="Price">3–14k</td><td data-label="Distance">1 min.</td><td data-label="Lunch Time">11:30–14:00</td><td data-label="Notes">Closed Mondays</td></tr>
+                    <tr><td data-label="Name"><a href="https://tabelog.com/en/tokyo/A1309/A130905/13274832/" target="_blank" class="restaurant-link">Ramenya RYOMA Kagurazaka (らぁ麺や RYOMA 神楽坂)</a></td><td data-label="Cuisine">Ramen</td><td data-label="Price">1–2k</td><td data-label="Distance">4 min.</td><td data-label="Lunch Time">11:00–25:00</td><td data-label="Notes"></td></tr>
+                    <tr><td data-label="Name"><a href="https://tabelog.com/en/tokyo/A1309/A130905/13000398/" target="_blank" class="restaurant-link">Tori Jaya Bettei (鳥茶屋 別亭)</a></td><td data-label="Cuisine">Japanese chicken, Oyakodon</td><td data-label="Price">1.5–3k</td><td data-label="Distance">4 min.</td><td data-label="Lunch Time">11:30–14:30</td><td data-label="Notes">Closed Mondays</td></tr>
+                    <tr><td data-label="Name"><a href="https://tabelog.com/en/tokyo/A1309/A130905/13219049/" target="_blank" class="restaurant-link">Sushi Sake Sakana Sugidama (鮨・酒・肴 杉玉 神楽坂)</a></td><td data-label="Cuisine">Izakaya</td><td data-label="Price">1–2K</td><td data-label="Distance">1 min.</td><td data-label="Lunch Time">11:30–14:30</td><td data-label="Notes"></td></tr>
+                    <tr><td data-label="Name"><a href="https://tabelog.com/en/tokyo/A1309/A130905/13029156/" target="_blank" class="restaurant-link">Yakiniku Sumibi Tei Kagurazaka (焼肉 炭火亭 神楽坂店)</a></td><td data-label="Cuisine">Yakiniku / BBQ</td><td data-label="Price">1–2.5K</td><td data-label="Distance">3 min.</td><td data-label="Lunch Time">11:30–14:30</td><td data-label="Notes"></td></tr>
+                    <tr><td data-label="Name"><a href="https://tabelog.com/en/tokyo/A1309/A130905/13107735/" target="_blank" class="restaurant-link">Sakaba Elvis (酒場 エルビス)</a></td><td data-label="Cuisine">Izakaya / Kushikatsu / Oysters</td><td data-label="Price">1–2k</td><td data-label="Distance">2 min.</td><td data-label="Lunch Time">11:30–14:00</td><td data-label="Notes">Closed Mondays</td></tr>
+                    <tr><td data-label="Name"><a href="https://tabelog.com/en/tokyo/A1309/A130905/13204421/" target="_blank" class="restaurant-link">Bettei Musubi (別亭 むすび)</a></td><td data-label="Cuisine">Izakaya</td><td data-label="Price">1–2k</td><td data-label="Distance">3 min.</td><td data-label="Lunch Time">12:00–14:00</td><td data-label="Notes">Closed Sundays (from May 2026)</td></tr>
+                    <tr><td data-label="Name"><a href="https://tabelog.com/en/tokyo/A1309/A130905/13282312/" target="_blank" class="restaurant-link">La Bonne cachette (台湾料理)</a></td><td data-label="Cuisine">Taiwanese / Creative</td><td data-label="Price">1–2k</td><td data-label="Distance">2 min.</td><td data-label="Lunch Time">11:30–14:30</td><td data-label="Notes">Closed Mondays</td></tr>
+                </tbody>
+            </table>
+        </div>
+        <p style="margin-top: 1em; font-size: 0.85em; color: #6a6a8a; font-style: italic; text-align: right;">
+            * This list was compiled by Ichiro Fujinaga, a local organizer for MEC2026 and a leading gourmet in the MIR community!
+        </p>
     </div>
 
     <h2 id="contact" class="accordion-toggle">6. Any Questions?</h2>
