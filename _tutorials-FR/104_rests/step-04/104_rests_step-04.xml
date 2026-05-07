@@ -1,0 +1,43 @@
+<mei xmlns="http://www.music-encoding.org/ns/mei">
+    <meiHead>
+        <fileDesc>
+            <titleStmt>
+                <title/>
+            </titleStmt>
+            <pubStmt/>
+        </fileDesc>
+    </meiHead>
+    <music>
+        <body>
+            <mdiv>
+                <score>
+                    <scoreDef>
+                        <staffGrp>
+                            <staffDef clef.shape="G" clef.line="2" n="1" lines="5"/>
+                        </staffGrp>
+                    </scoreDef>
+                    <section>
+                        <measure>
+                            <staff n="1">
+                                <layer n="1">
+                                    <chord dur="2" stem.dir="up" color="green">
+                                        <note pname="c" oct="5" />
+                                        <note pname="a" oct="4" />
+                                    </chord>
+                                    <rest dur="4" color="green"/>
+                                    <note pname="d" oct="5" dur="4" color="green" />
+                                </layer>
+                                <?edit-start?>
+                                <layer n="2">
+                                    <space dur="2" dots="1"/>
+                                    <note pname="g" oct="4" dur="4" color="blue"/>
+                                </layer>
+                                <?edit-end?>
+                            </staff>
+                        </measure>
+                    </section>
+                </score>
+            </mdiv>
+        </body>
+    </music>
+</mei>

@@ -1,0 +1,30 @@
+<div>
+    <p class="tutorialGoal">
+        Ajoutez le dernier détail manquant de l'exemple, la liaison dans la troisième mesure.</p>
+
+    <p>Il existe deux façons différentes d'encoder une liaison en MEI :</p>
+    <ol>
+        <li>L'attribut <code>@slur</code> sur <code>&lt;note&gt;</code> ou sur <code>&lt;chord&gt;</code> avec une valeur de <code>i=initial</code>, <code>m=medial</code> ou
+            <code>t=terminal</code>.</li>
+        <li>Un élément séparé <code>&lt;slur&gt;</code>.</li>
+    </ol>
+    
+    <p>Dans cette dernière étape, vous utiliserez la deuxième approche : comme les nuances, les éléments <code>&lt;slur&gt;</code> sont des événements de contrôle. Ils ne sont pas 
+        encodés en tant qu'éléments enfants des événements correspondants qu'ils sont censés contrôler, mais sont placés dans la plupart des cas à l'extérieur des éléments <code>staff</code>.</p>
+    
+    <p>Pour indiquer le point de départ et le point d'arrivée de la liaison, il est possible d'appliquer une référence au <code>@xml:id</code> correspondant d'un élément <code>&lt;note&gt;</code> ou
+        <code>&lt;chord&gt;</code>. Les <code>@xml:id</code> sont des identifiants avec une séquence de caractères arbitraire mais unique qui normalisent la dénomination d'un élément tout au long d'un document
+        et facilitent ainsi la création de liens entre les éléments et d'autres ressources. Pour les <code>&lt;slur&gt;</code>, une référence au <code>@xml:id</code> d'un élément peut être donnée via les
+        attributs <code>@startid</code> et <code>@endid</code>.</p>
+    
+    <p>En plus de <code>@startid</code> et <code>@endid</code>, les attributs suivants devraient être utilisés dans cette étape :</p>
+    <ul>
+        <li><code>@staff</code> – le numéro d'identification de la portée à laquelle un élément est appliqué, par exemple <code>“1”</code> dans ce cas,</li>
+        <li><code>@curvedir</code> (direction de la courbe) – décrit une courbe avec un terme générique indiquant la direction de la courbure : <code>“above”</code>, <code>“below”</code> ou <code>“mixed”</code>,</li>
+        <li><code>@startid</code> – référence au <code>xml:id</code> de la note de départ de la liaison, sous la forme : <code>#xml:id</code> (notez bien le dièse <code>#</code> dans le code),</li>
+        <li><code>@endid</code> – référence au <code>xml:id</code> de la note de fin de la liaison, sous la forme : <code>#xml:id</code> (notez bien le dièse <code>#</code> dans le code).</li>
+    </ul>
+    
+    <p class="task">Identifiez la première et la dernière note à laquelle la liaison est attachée (à l'intérieur du premier élément <code>&lt;beam&gt;</code> de la mesure 3) et ajoutez des <code>@xml:id</code> aux deux éléments <code>&lt;note&gt;</code>. Définissez une valeur unique pour chaque <code>@xml:id</code>, pour cet exemple, vous pouvez utiliser les valeurs : <code>“d1e4614”</code>, <code>“d1e4615”</code>. Ajoutez un élément de contrôle <code>&lt;slur&gt;</code> après la balise de fermeture de l'élément <code>&lt;staff&gt;</code> et appliquez les attributs correspondants.</p>
+    
+</div>
