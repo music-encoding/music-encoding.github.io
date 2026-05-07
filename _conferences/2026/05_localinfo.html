@@ -46,27 +46,61 @@ id: local-info
         .accordion-toggle {
             cursor: pointer;
             position: relative;
-            padding-right: 2em;
+            padding: 1rem 1.5rem;
+            margin-top: 1.5rem;
+            margin-bottom: 0;
+            background-color: #f8f9fa;
+            border: 1px solid #dee2e6;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            transition: all 0.2s ease;
+        }
+        .accordion-toggle:hover {
+            background-color: #e9ecef;
         }
         .accordion-toggle::after {
-            content: '+';
-            position: absolute;
-            right: 0.5em;
-            top: 50%;
-            transform: translateY(-50%);
-            font-size: 1.2em;
-            font-weight: bold;
-            color: #007bff;
+            content: '';
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            border-right: 2px solid #6c757d;
+            border-bottom: 2px solid #6c757d;
+            transform: rotate(45deg);
+            transition: transform 0.3s ease;
+        }
+        .accordion-toggle.active {
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+            border-bottom-color: transparent;
+            background-color: #e6f2ff;
+            color: #0056b3;
         }
         .accordion-toggle.active::after {
-            content: '−';
-        }
-        .accordion-content.hidden {
-            display: none;
+            transform: rotate(-135deg);
+            border-color: #0056b3;
+            margin-top: 6px;
         }
         .accordion-content {
+            display: grid;
+            grid-template-rows: 1fr;
+            transition: grid-template-rows 0.3s ease-out, border-color 0.3s ease;
+            background-color: #ffffff;
+            border: 1px solid #dee2e6;
+            border-top: none;
+            border-bottom-left-radius: 8px;
+            border-bottom-right-radius: 8px;
+        }
+        .accordion-content.hidden {
+            grid-template-rows: 0fr;
+            border-color: transparent;
+        }
+        .accordion-inner {
             overflow: hidden;
-            padding-top: 0.5em;
+        }
+        .accordion-body {
+            padding: 0.5rem 1.5rem 1.5rem 1.5rem;
         }
 
         /* --- Map Styles --- */
@@ -355,6 +389,21 @@ id: local-info
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
+            // アニメーション用にコンテンツをラップする
+            const contents = document.querySelectorAll('.mec2026-page .accordion-content');
+            contents.forEach(content => {
+                const inner = document.createElement('div');
+                inner.className = 'accordion-inner';
+                const body = document.createElement('div');
+                body.className = 'accordion-body';
+                
+                while(content.firstChild) {
+                    body.appendChild(content.firstChild);
+                }
+                inner.appendChild(body);
+                content.appendChild(inner);
+            });
+
             const toggles = document.querySelectorAll('.mec2026-page .accordion-toggle');
 
             toggles.forEach(toggle => {
