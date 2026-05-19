@@ -1,0 +1,86 @@
+<mei xmlns="http://www.music-encoding.org/ns/mei">
+    <meiHead>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">March</title>
+            </titleStmt>
+            <pubStmt></pubStmt>
+        </fileDesc>
+    </meiHead>
+    <music>
+        <body>
+            <mdiv>
+                <score>
+                    <scoreDef key.sig="3f" meter.sym="cut">
+                        <staffGrp>
+                            <staffDef n="1" lines="5" clef.shape="G" clef.line="2" />
+                        </staffGrp>
+                    </scoreDef>
+                    <section>
+                        <measure n="0">
+                            <staff n="1">
+                                <layer>
+                                    <note pname="b" oct="3" dur="4" />
+                                </layer>
+                            </staff>
+                        </measure>
+                        <measure n="1">
+                            <staff n="1">
+                                <layer>
+                                    <note pname="e" oct="4" dur="4" />
+                                    <beam>
+                                        <note pname="e" oct="4" dur="8" />
+                                        <note pname="g" oct="4" dur="8" />
+                                    </beam>
+                                    <note pname="f" oct="4" dur="4" dots="1" ></note>
+                                    <note pname="d" oct="4" dur="8"></note>
+                                </layer>
+                            </staff>
+                        </measure>
+                        <measure n="2">
+                            <staff n="1">
+                                <layer>
+                                    <note pname="e" oct="4" dur="4"></note>
+                                    <beam>
+                                        <note pname="e" oct="4" dur="8" ></note>
+                                        <note pname="g" oct="4" dur="8" ></note>
+                                    </beam>
+                                    <note pname="b" oct="4" dur="4" dots="1"></note>
+                                    <note pname="g" oct="4" dur="8" ></note>
+                                </layer>
+                            </staff>
+                        </measure>
+                        <?edit-start?>
+                        <measure n="3">
+                            <staff n="1">
+                                <layer>
+                                    <beam>
+                                        <note dur="8" pname="a" oct="4"></note>
+                                        <note dur="8" pname="b" oct="4"></note>
+                                        <note dur="8" pname="c" oct="5"></note>
+                                        <note dur="8" pname="d" oct="5"></note>
+                                    </beam>
+                                    <note dur="4" pname="e" oct="5"></note>
+                                    <beam>
+                                        <note dur="8" pname="d" oct="5"></note>
+                                        <note dur="8" pname="b" oct="4"></note>
+                                    </beam>
+                                </layer>
+                            </staff>
+                        </measure>
+                        <measure n="4">
+                            <staff n="1">
+                                <layer>
+                                    <note dur="4" pname="c" oct="5"></note>
+                                    <note dur="4" pname="b" oct="4"></note>
+                                    <rest dur="4"/>
+                                </layer>
+                            </staff>
+                        </measure>
+                        <?edit-end?>
+                    </section>
+                </score>
+            </mdiv>
+        </body>
+    </music>
+</mei>

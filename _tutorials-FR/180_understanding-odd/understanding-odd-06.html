@@ -1,0 +1,168 @@
+<div>
+  <p>
+    Comme nous l'avons vu, ODD permet de spécifier avec précision quels éléments enfants 
+    sont autorisés à l'intérieur d'un élément donné. Cela permet un contrôle
+    très précis de la hiérarchie MEI, mais cela se fait au prix de listes très
+    verbeuses de ce que chaque élément peut contenir. Ce n'est ni
+    maintenable ni facile à suivre ; certains éléments de la MEI
+    peuvent contenir des dizaines d'autres éléments et la comparaison de deux
+    de ces éléments est plutôt fastidieuse.
+  </p>
+  <p>
+    Entre autres, l'élément
+    <a
+      href="https://music-encoding.org/guidelines/v4/elements/castitem.html"
+      target="_blank"
+      rel="noopener, noreferrer"
+      >&lt;castItem&gt;</a
+    >
+    de la dernière étape de ce tutoriel avait un élément enfant
+    <a
+      href="https://music-encoding.org/guidelines/v4/elements/role.html"
+      target="_blank"
+      rel="noopener, noreferrer"
+      >&lt;role&gt;</a
+    >. La documentation pour <em>&lt;role&gt;</em> liste un total de 54 éléments
+    enfants, plus le contenu textuel :
+  </p>
+  <div>
+    <img style="width: 100%" src="./role-children.png" />
+  </div>
+  <p>
+    En regardant <em>&lt;elementSpec&gt;</em>, nous ne voyons pas une telle liste,
+    mais plutôt :
+  </p>
+  <pre class="codeblock">
+&lt;elementSpec ident="role" module="MEI.shared"&gt;
+    &lt;desc&gt;Nom d'un rôle dramatique, tel qu'il est donné dans une distribution.&lt;/desc&gt;
+    &lt;classes&gt;
+        &lt;memberOf key="att.common"/&gt;
+        &lt;memberOf key="att.facsimile"/&gt;
+        &lt;memberOf key="att.lang"/&gt;
+    &lt;/classes&gt;
+    &lt;content&gt;
+        &lt;rng:zeroOrMore&gt;
+            &lt;rng:choice&gt;
+                &lt;rng:text/&gt;
+                &lt;rng:ref name="model.textPhraseLike.limited" /&gt;
+            &lt;/rng:choice&gt;
+        &lt;/rng:zeroOrMore&gt;
+    &lt;/content&gt;
+    &lt;remarks&gt;
+        &lt;p part="N"&gt;Cet élément est modélisé sur un élément dans la norme Text Encoding Initiative (TEI).&lt;/p&gt;
+    &lt;/remarks&gt;
+&lt;/elementSpec&gt;</pre
+  >
+  <p>
+    Au lieu des 54 éléments de la capture d'écran précédente, un seul
+    <em>&lt;rng:ref&gt;</em> nous est donné, pointant vers quelque chose nommé
+    <em>model.textPhraseLike.limited</em>. Il s'agit d'une
+    <strong>classe de modèle</strong>. Les classes de modèles sont destinées à servir
+    de substituts pour des groupes d'éléments. La classe de modèle elle-même ne connaît pas les éléments dont elle est composée. Elle agit simplement comme un point de regroupement logique.
+  </p>
+  <pre class="codeblock">
+&lt;classSpec ident="model.textPhraseLike.limited" module="MEI.shared" type="model"&gt;
+    &lt;desc&gt;Regroupe les éléments textuels qui surviennent au niveau des mots ou des phrases individuels. Cette classe est équivalente à la classe model.textPhraseLike sans l'élément pb.&lt;/desc&gt;
+    &lt;classes&gt;
+        &lt;memberOf key="model.rdgPart.text"/&gt;
+        &lt;memberOf key="model.editTransPart.text"/&gt;
+        &lt;memberOf key="model.textPhraseLike"/&gt;
+    &lt;/classes&gt;
+&lt;/classSpec&gt;</pre
+  >
+  <p>
+    Une classe de modèle est encodée avec un élément
+    <a
+      href="https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-classSpec.html"
+      target="_blank"
+      rel="noopener, noreferrer"
+      >&lt;classSpec&gt;</a
+    >
+     possédant l'attribut <strong>@type="model"</strong>. Comme les
+    éléments, elle est identifiée de manière unique avec l'attribut
+    <strong>@ident</strong>. Elle est attribuée à l'un des modules MEI avec
+    l'attribut <em>@module</em>. La MEI suit la convention que tous les noms de
+    classes de modèle sont préfixés par « <em>model.</em> ». Ils ont
+    également toujours un <em>&lt;desc&gt;</em> avec une brève explication de
+    l'objectif du groupe. Passons les éléments <em>&lt;memberOf&gt;</em> sur
+    <em>&lt;classSpec&gt;</em> de l'exemple ci-dessus pour un moment et voyons
+    comment ces 54 éléments que nous avons vus ci-dessus sont liés à
+    <em>model.textPhraseLike.limited</em>.
+  </p>
+  <p>
+    Si nous allons dans les directives MEI pour
+    <a
+      href="https://music-encoding.org/guidelines/v4/model-classes/model.textphraselike.limited.html#members"
+      target="_blank"
+      rel="noopener, noreferrer"
+      >model.textPhraseLike.limited</a
+    >, nous voyons que six éléments sont directement des « membres » de
+    cette classe de modèle : <em>&lt;dedicatee&gt;</em>,
+    <em>&lt;dimensions&gt;</em>, <em>&lt;extent&gt;</em>, <em>&lt;seg&gt;</em>,
+    <em>&lt;symbol&gt;</em> et <em>&lt;term&gt;</em>. Regardons
+    <em>&lt;dedicatee&gt;</em> :
+  </p>
+  <pre class="codeblock">
+&lt;elementSpec ident="dedicatee" module="MEI.shared"&gt;
+    &lt;desc&gt;Entité à qui une œuvre créative est formellement offerte.&lt;/desc&gt;
+    &lt;classes&gt;
+        &lt;-- autres affiliations supprimées pour la brièveté --&gt;
+        &lt;memberOf key="model.textPhraseLike.limited"/&gt;
+    &lt;/classes&gt;
+    &lt;content&gt;
+        &lt;rng:zeroOrMore&gt;
+            &lt;rng:choice&gt;
+                &lt;rng:text/&gt;
+                &lt;rng:ref name="model.textPhraseLike.limited" /&gt;
+            &lt;/rng:choice&gt;
+        &lt;/rng:zeroOrMore&gt;
+    &lt;/content&gt;
+    &lt;-- constraintSpec
+</pre>
+<p>
+    Cet élément contient un élément <em>&lt;memberOf&gt;</em> qui référence, dans son attribut <strong>@key</strong>, la classe de modèle <em>model.textPhraseLike.limited</em>
+     Ainsi, un élément qui revendiquent son appartenance à une classe de modèle est automatiquement compris quand cette classe de modèle est automatiquement autorisée où cette 
+     classe de modèle est admise dans le <em>&lt;content&gt;</em> d'un élément.
+     Par conséquent, cela veut dire que <em>&lt;dedicatee&gt;</em> peut être auto-imbriqué (un élément <em>&lt;dedicatee&gt;</em> peut contenir un autre élément
+     <em>&lt;dedicatee&gt;</em> comme élément enfant), ce qui relève davantage d'un effet de bord du système de classes que d'une fonctionnalité intentionnelle de la MEI…
+    </p>
+    <p>
+        Cependant, dans la MEI standard, il n'y a que six éléments qui sont membres direct de <em>model.textPhraseLike.limited</em>, mais nous voyons qu'en faisant référence à cette classe de modèle
+        un total de 54 éléments sont ajoutés en tant que contenu autorisé (= éléments enfants). D'où proviennent les 48 éléments supplémentaires ? Il faut reconnaître que la présentztion actuelle des <i>Guidelines</i>
+        ne montre pas clairement d'où proviennent ces éléments supplémentaires. La réponse réside dans les <strong>classes de modèles imbriquées</strong>. Une classe de modèle peut être membre d'une autre classe de modèle, comme nous l'avons vu
+        ci-dessus dans l'élément <em>&lt;classSpec&gt;</em>. Revenons aux enfants autorisés de l'élément <em>&lt;role&gt;</em>, mais cette fois du point de vue des classes :
+    </p>
+    <div>
+        <img style="width: 100%;" src="./role-children-byclass.png"/>
+    </div>
+    <p>
+        Nous voyons la liste des six éléments enfants direct, mais aussi <em>&lt;fig&gt;</em> qui est listé sous l'étiquette <em>model.figureLike</em> et <em>&lt;catchwords&gt;</em>
+        et <em>&lt;fingerprint&gt;</em> proviennent de <em>model.msInline</em>.
+        <a href="/guidelines/v5/elements/role.html#mayContain" target="_blank" rel="noopener, noreferrer">Cette liste</a> se poursuit et explique l'origine des 54 éléments.
+        Si l'on examine <em>model.figureLike</em>, nous voyons que cette classe possède un élément <em>&lt;memberOf&gt;</em> qui pointe vers <em>model.textPhraseLike.limited</em> :
+    </p>
+    <pre class="codeblock">&lt;classSpec ident="model.figureLike" module="MEI.figtable" type="model"&gt;
+    &lt;desc&gt;Groups elements representing or containing graphic information such as an illustration or figure.&lt;/desc&gt;
+    &lt;classes&gt;
+        &lt;memberOf key="model.textPhraseLike.limited"/&gt;
+    &lt;/classes&gt;
+&lt;/classSpec&gt;</pre>
+    <p>
+        Ainsi, <em>model.figureLike</em> est membre de <em>model.textPhraseLike.limited</em>, ce qui signifie que partout où <em>model.textPhraseLike.limited</em>
+        est autorisé <em>model.figureLike</em> (et tous les éléments qui en font partie) l'est également. Le niveau d'<em>imbrication</em> le plus profond
+        des classes au sein de <em>model.textPhraseLike.limited</em> est de trois : <em>model.nameLike.geogName</em> fait partie de <em>model.nameLike.place</em>
+        qui fait partie de <em>model.nameLike</em> qui fait partie de <em>model.textPhraseLike.limited</em>. Tous les éléments qui font partie d'une de ces classes
+        sont autorisés comme enfant de tout élément dont le <em>&lt;content&gt;</em> contient une référence &lt;rng:ref name="model.textPhraseLike.limited" /&gt;. 
+    </p>
+    <p>
+        Comme on peut le constater à partir des noms figurant dans cette hiérarchie de classes, les classes les plus spécifiques sont membres de classes plus 
+        génériques. Lorsqu'il s'agit d'identifier l'ensemble des éléments qui doivent être autorisés à l'intérieur d'un élément donné (nouvellement créé, 
+        par exemple), on peut délibérément choisir une classe qui n'ajoute que des éléments très spécifiques, ou au contraire une classe qui introduit un 
+        ensemble très large d'éléments. Ce système de classes de modèles permet ainsi de contrôler très finement les contenus autorisés des éléments. Il facilite 
+        également grandement l'introduction de nouveaux éléments dans la MEI. En s'inscrivant dans des classes de modèles existantes, ces éléments seront 
+        automatiquement inclus dans le schéma partout où ces classes de modèles sont déjà autorisées.
+    </p>
+    <p>
+        Passons maintenant aux <em>attributs</em> qui sont gérés d’une manière très similaire.
+    </p>
+</div>
