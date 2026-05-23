@@ -1,0 +1,79 @@
+<div>
+    <p>
+        In the last step, we learned that a <code>&lt;classSpec type="atts" ident="att.basic" mode="delete"/&gt;</code> can be used to delete
+        the <em>att.basic</em> attribute class (like any other) from an MEI customization. The <code>@mode</code> attribute is what determines
+        this behavior here. The TEI Guidelines for the 
+        <a href="https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-att.combinable.html" target="_blank" rel="noopener, noreferrer">att.combinable</a>
+        attribute class provide additional documentation about allowed values. It reads that "<em>an ODD processor should handle the values for @mode as follows</em>":        
+    </p>
+    <dl>
+        <dt>add</dt>
+        <dd>the object should be created (processing any children in add mode); raise an error if an object with the same identifier already exists</dd>
+        <dt>replace</dt>
+        <dd>use this object in preference to any existing object with the same identifier, and ignore any children of that object; process any new children in 'replace' mode</dd>
+        <dt>delete</dt>
+        <dd>do not process this object or any existing object with the same identifier; raise an error if any new children supplied</dd>
+        <dt>change</dt>
+        <dd>process this object, and process its children, and those of any existing object with the same identifier, in 'change' mode</dd>
+    </dl>
+    <p>
+        With this, it is possible to not only <em>delete</em> attribute classes through a customization, but also to modify it. For instance, in the 
+        <a href="/guidelines/dev/content/introduction.html#meiprofiles" target="_blank" rel="noopener, noreferrer">MEI Basic customization</a>, the
+        <code>@xml:base</code> attribute is removed from the schema. In the MEI sources, this is defined in the <code>att.basic</code> attribute class:
+    </p>
+    <pre class="codeblock">&lt;classSpec ident="att.basic" module="MEI.shared" type="atts"&gt;
+    &lt;desc&gt;Attributes that form the basis of the att.common class.&lt;/desc&gt;
+        &lt;classes&gt;
+            &lt;memberOf key="att.id"/&gt;
+        &lt;/classes&gt;
+    &lt;attList&gt;
+        &lt;attDef ident="xml:base" usage="opt"&gt;
+            &lt;desc&gt;Provides a base URI reference with which applications can resolve relative URI references into absolute URI references.&lt;/desc&gt;
+            &lt;datatype&gt;
+                &lt;rng:ref name="data.URI"/&gt;
+            &lt;/datatype&gt;
+        &lt;/attDef&gt;
+    &lt;/attList&gt;
+&lt;/classSpec&gt;</pre>
+    <p>
+        As you can see, the <code>att.basic</code> class is a member of the <code>att.id</code> class – which is responsible for making the 
+        <code>@xml:id</code> attribute available on every element. So, deleting <code>att.basic</code> from the schema would also disallow the use
+        of <code>@xml:id</code>s anywhere in files conforming to the resulting customization – certainly not a good idea in any practical use case. 
+        Instead, the flexibility offered through different <code>@mode</code>s can be used to make more fine-grained statements here. The following example 
+        shows what has been done to customize <code>att.basic</code> for the MEI Basic profile:
+    </p>
+    <pre class="codeblock">&lt;classSpec ident="att.basic" module="MEI.shared" type="atts" mode="replace"&gt;
+    &lt;desc&gt;Attributes that form the basis of the att.common class.&lt;/desc&gt;
+    &lt;classes&gt;
+        &lt;memberOf key="att.id"/&gt;
+    &lt;/classes&gt;
+&lt;/classSpec&gt;</pre>
+    <p>
+        Instead of <code>mode="delete"</code>, it uses <code>mode="replace"</code> to give a new definition for the attribute class. This attribute class
+        then just lacks the attribute definition for <code>@xml:base</code>. Alternatively, it would have been possible to use <code>@mode="change"</code>
+        on the attribute class, leave out the child classes (as a value of <em>change</em> will trigger processing of the original classes as well, see above), 
+        and give an additional <code>mode="delete"</code> on the attribute definition, as seen in the following example:
+    </p>
+    <pre class="codeblock">&lt;classSpec ident="att.basic" module="MEI.shared" type="atts" mode="change"&gt;
+    &lt;attList&gt;
+        &lt;attDef ident="xml:base" mode="delete"/&gt;
+    &lt;/attList&gt;
+&lt;/classSpec&gt;</pre>
+    <p>
+        Both approaches yield the same results, so it is mostly a matter of preference to select a solution. Usually, it is a good approach to copy an 
+        existing definition (which is always accessible through the MEI Guidelines) into your customization, and then adjust it by carefully inserting
+        processing <code>@mode</code>s to the object itself and its children. <code>@mode</code> can be used on a number of different elements in an ODD
+        customization: <strong>&lt;elementSpec&gt;</strong>s, <strong>&lt;remarks&gt;</strong>, <strong>&lt;classSpec&gt;</strong>s, 
+        <strong>&lt;memberOf&gt;</strong>s,
+        <strong>&lt;constraintSpec&gt;</strong>s, <strong>&lt;macroSpec&gt;</strong>s, <strong>&lt;attDef&gt;</strong>s, <strong>&lt;valList&gt;</strong>s, 
+        and <strong>&lt;valItem&gt;</strong>s. For instance, the accidental values defined in
+        <a href="/guidelines/dev/data-types/data.ACCIDENTAL.WRITTEN.basic.html" target="_blank" rel="noopener, noreferrer">data.ACCIDENTAL.WRITTEN.basic</a>
+        contain not only values like <em>s</em> (sharp) and <em>f</em> (flat), but also <em>tf</em> (for triple flats). In projects working on material
+        that is lacking such accidentals, it might be a good idea to remove them from the schema altogether, so that no one can enter them without triggering
+        a validation error. 
+    </p>
+    <p>
+        There is one last type of modification that this tutorial is going to cover. You will find it in the next step. 
+    </p>
+    
+</div>

@@ -1,0 +1,41 @@
+<div>
+    <p>
+        Obviously, proper input validation is crucial for an effective and sustained learning success.
+        Because our website is based on Jekyll, however, we have to rely on client-side validation 
+        (relying on an external service for validation only is probably not reliable enough, so we decided
+        against that approach). To this date, client-side validation (= Javascript) doesn't offer proper
+        support for <a href="https://en.wikipedia.org/wiki/RelaxNG" target="_blank">RelaxNG</a>, the schema language 
+        ultimately used to validate MEI instances in real projects. For this reason, we need to use the
+        XPath-based approach mentioned earlier.  
+    </p>
+    <p>
+        The <code>"xpaths"</code> property of the current step holds an array of rules to which the user's encoding must
+        conform in order to complete that step. These rules are specified as JSON objects with three properties:   
+    </p>
+    <pre class="codeblock">{
+    "rule":"//mei:note/@pname = 'g'",
+    "renderanyway":true,
+    "hint":"You need a @pname attribute, with a value of g."
+}</pre>
+    <p>
+        The <code>"rule"</code> property holds an <a href="https://en.wikipedia.org/wiki/XPath" target="_blank">XPath 1</a>
+        expression, which must resolve to a boolean statement: it has to be 
+        either <i>true</i> or <i>false</i>. The <code>"renderanyway"</code>
+        is used to decide if the current editor can be rendered by Verovio 
+        even if the XPath isn't matched. The content of <code>"hint"</code>
+        is supposed to assist the user to reach the correct encoding. Only
+        the first failing XPath will be displayed at a time, guiding the 
+        user step by step through the different requirements. However, not
+        every step needs a hint – sometimes it's better to let the user 
+        explore a bit on his own.
+    </p>
+    <p>
+        For validation, the current user input will be inserted between the 
+        <code>&lt;?snippet-start?&gt;</code> and <code>&lt;?snippet-end?&gt;</code>
+        markers in the current XML file, and then the XPath rules will be 
+        checked against that complete file. As soon as one of these rules fails
+        (i.e. returns <i>false</i>), the corresponding <code>"hint"</code> 
+        will be displayed. When all rules return <i>true</i>, the "continue" 
+        button will be enabled and the user may proceed to the next step.
+    </p>
+</div>

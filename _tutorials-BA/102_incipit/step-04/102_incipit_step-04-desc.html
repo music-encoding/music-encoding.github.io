@@ -1,0 +1,17 @@
+<div>
+    <p class="tutorialGoal">Step four: encoding of the first note of this example.</p>
+
+    <p>Having prepared the structure of the pick up measure in the previous step, you are now ready to encode the first note of the example. In MEI, notes describe single pitched events that are encoded in, surprise, <code>&lt;note&gt;</code> elements, whereby <code>&lt;note&gt;</code> elements are allowed to be children of <code>&lt;layer&gt;</code>. You can define the main note characteristics like pitch and duration by using the following attributes on <code>&lt;note&gt;</code>:</p>
+
+    <ul>
+        <li><code>@pname</code> (pitch name) – lower case letters from <code>“a”</code> to <code>“g”</code>, use <code>“b”</code> here.</li>
+        <li><code>@oct</code> (octave) – pitch’s octave value as integers from <code>“0”</code>-<code>”9”</code>, C4 being the pitch specified by the C clef, use <code>“3”</code></li>
+        <li><code>@dur</code> (duration) – e.g. <code>“1”</code> for whole note, <code>“2”</code> for half note, <code>“4”</code> for quarter note, <code>“8”</code> for eighth note, <code>“16”</code> for sixteenth note, … <code>“2048”</code> for 2048th note, use <code>“4”</code></li>
+    </ul>
+
+    <p>Here is an example of how to encode a whole note C4: <code>&lt;note pname="c" oct="4" dur="1"&gt;&lt;/note&gt;</code>.</p>
+
+    <p class="task">In the editor below, please enter the encoding of the first note of the example inside the <code>&lt;layer&gt;</code> element.</p>
+
+    <p>PS: If you are interested in a tutorial only on <code>&lt;note&gt;</code>s, see our <a href="./101-quickstart.html">Quickstart</a> tutorial.</p>
+</div>

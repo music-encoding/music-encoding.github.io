@@ -1,0 +1,44 @@
+<div>
+    <p>
+        The highest-level conceptual structure in ODD are <em>modules</em>. Modules allow to divide the schema 
+        into different areas, each of which defining a clearly delimited aspect. Until 2019, the structure of the
+        MEI Guidelines followed the ODD modules, but this setup has been superseded by a more instructional division.
+        Right now, the modules show up in the MEI Guidelines at the top of the definitions of elements, attributes etc.:        
+    </p>
+    <div>
+        <img style="width: 100%;" src="./beam-module.png"/>
+    </div>
+    <p>
+        This is just an easy reference to the modules. If planning to work on the MEI ODD, however, it is more important
+        to know that the MEI source code is splitted up following the modules. The file 
+        <a href="https://github.com/music-encoding/music-encoding/blob/develop/source/mei-source.xml" target="_blank" rel="noopener, noreferrer">mei-source.xml</a>
+        acts as starting point into the MEI specification. The 
+        <a href="https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-schemaSpec.html" target="_blank" rel="noopener, noreferrer">&lt;schemaSpec&gt;</a> 
+        element in <a href="https://github.com/music-encoding/music-encoding/blob/93d8c00cd14126af2e680d47f437042227eb2c0e/source/mei-source.xml#L83" target="_blank" rel="noopener, noreferrer">line 83</a>
+        defines a new schema with the MEI namespace (<code>@ns="http://www.music-encoding.org/ns/mei"</code>). It then has a number of
+        <em>XInclude</em> child elements. <em>XInclude</em> is used to split up one larger logical XML file into smaller, more manageable files. Here, 
+        every MEI module is stored in a separate file in the 
+        <a href="https://github.com/music-encoding/music-encoding/tree/develop/source/modules" target="_blank" rel="noopener, noreferrer">modules</a> subfolder.          
+    </p>
+    <p>
+        The MEI modules are built around different topics. There are modules which focus on specific musical repertoires 
+        (<a href="https://github.com/music-encoding/music-encoding/blob/develop/source/modules/MEI.cmn.xml" target="_blank" rel="noopener, noreferrer">CMN</a>, 
+        <a href="https://github.com/music-encoding/music-encoding/blob/develop/source/modules/MEI.mensural.xml" target="_blank" rel="noopener, noreferrer">Mensural</a>,
+        <a href="https://github.com/music-encoding/music-encoding/blob/develop/source/modules/MEI.neumes.xml" target="_blank" rel="noopener, noreferrer">Neumes</a>, or
+        <a href="https://github.com/music-encoding/music-encoding/blob/develop/source/modules/MEI.stringtab.xml" target="_blank" rel="noopener, noreferrer">String Tablature</a>), 
+        but also modules for specific perspectives on music
+        (<a href="https://github.com/music-encoding/music-encoding/blob/develop/source/modules/MEI.visual.xml" target="_blank" rel="noopener, noreferrer">visual</a>, 
+        <a href="https://github.com/music-encoding/music-encoding/blob/develop/source/modules/MEI.gestural.xml" target="_blank" rel="noopener, noreferrer">gestural</a>,
+        <a href="https://github.com/music-encoding/music-encoding/blob/develop/source/modules/MEI.analytical.xml" target="_blank" rel="noopener, noreferrer">analytical</a>), 
+        technologies (
+        <a href="https://github.com/music-encoding/music-encoding/blob/develop/source/modules/MEI.midi.xml" target="_blank" rel="noopener, noreferrer">MIDI</a>) or use cases
+        (<a href="https://github.com/music-encoding/music-encoding/blob/develop/source/modules/MEI.facsimile.xml" target="_blank" rel="noopener, noreferrer">facsimiles</a>,
+        <a href="https://github.com/music-encoding/music-encoding/blob/develop/source/modules/MEI.performance.xml" target="_blank" rel="noopener, noreferrer">performances</a>,
+        <a href="https://github.com/music-encoding/music-encoding/blob/develop/source/modules/MEI.edittrans.xml" target="_blank" rel="noopener, noreferrer">editorial use</a>).
+        The scope of each of these modules is described in the MEI Guidelines.         
+    </p>
+    <p>
+        Besides the better maintainability of the MEI source code due to smaller file sizes, the splitting mainly allows to "turn off" 
+        larger parts (-> modules) of the MEI schema very easily. 
+    </p>
+</div>

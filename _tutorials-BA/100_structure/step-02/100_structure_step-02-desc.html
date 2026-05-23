@@ -1,0 +1,29 @@
+<div>
+    <p class="tutorialGoal">
+        Step two: learn about the application and use of namespaces.
+    </p>
+    <p>
+        Fine! As mentioned in the previous step, the name of the root element of an XML document is basically an arbitrary
+        name that provides no meaning in itself for machine-processing. To make clear in which context an element is
+        defined and to avoid name conflicts with elements, XML makes use of so called
+        <a href="https://en.wikipedia.org/wiki/XML_namespace" target="_blank" rel="noopener, noreferrer">namespaces</a>.
+        Namespaces can be declared by adding an <code>@xmlns</code> namespace declaration to the root element.
+    </p>
+    <p>
+        For example, the MEI namespace is <code>http://www.music-encoding.org/ns/mei</code> and can be declared
+        as follows: <code>xmlns="http://www.music-encoding.org/ns/mei"</code>
+    </p>
+    <p>
+        Whenever you see an entity with a prepended <code>@</code>-sign in the text (like <code>@xmlns</code> above),
+        this means we refer to an XML attribute. (This kind of reference is common practice and originates in the
+        <a href="https://en.wikipedia.org/wiki/XPath" target="_blank" rel="noopener, noreferrer">XPath</a> language.)
+        Attributes contain specified information (attribute values) that are related to elements. However, unlike
+        elements, XML attributes do not have their own opening or closing brackets, but are placed solely inside the
+        opening tag of an element, next to the element's name. They consist of the plain attribute's name connected by
+        an equal sign to an attribute's value which must always be quoted (with single or double quotes). Multiple
+        attributes are separated by blank spaces. Be aware that the <code>@</code>-sign is only prepended in textual
+        descriptions, not in the encoding itself.
+    </p>
+
+    <p class="task">In the editor below, add a MEI namespace declaration to the <code>MEI</code> root element.</p>
+</div>

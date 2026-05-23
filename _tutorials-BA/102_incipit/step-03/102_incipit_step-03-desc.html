@@ -1,0 +1,15 @@
+<div>
+    <p class="tutorialGoal">Step three: the setup of a single <code>&lt;measure&gt;</code> with an empty <code>&lt;staff&gt;</code> and <code>&lt;layer&gt;</code>.</p>
+
+    <p>Well done! You have declared the necessary metadata about the score and staff organization. On the way to the encoding of the first note of the example, you will have to prepare the "environment" for it, i.e. the measure, staff and layer (voice).</p>
+
+    <p>In MEI, the <code>&lt;section&gt;</code> element is the container for <code>&lt;measure&gt;</code> elements and it is positioned directly
+    after the score definition (<code>&lt;scoreDef&gt;</code>). <code>&lt;measure&gt;</code> elements can contain multiple staves (<code>&lt;staff&gt;</code>) which can have multiple layers (<code>&lt;layer&gt;</code>). The <code>&lt;layer&gt;</code> element will be
+    the parent element for the <code>&lt;note&gt;</code> elements in the next step.</p>
+
+    <p>To indicate the numbered position of measures, staves or layers, the attribute <code>@n</code> can be used.</p>
+
+    <p class="task">Set up the pickup measure: In the editor, insert a <code>&lt;section&gt;</code> element. Inside <code>&lt;section&gt;</code>, add an empty <code>&lt;measure&gt;</code> element and set the number of the pickup measure to <code>"0"</code>. Add a child element <code>&lt;staff&gt;</code> to the <code>&lt;measure&gt;</code> element and set its number to <code>"1"</code> (first staff in measure 0). Then add an unnumbered child element <code>&lt;layer&gt;</code> to the <code>&lt;staff&gt;</code> element.</p>
+
+    <p>PS: Having the necessary information provided in scoredef and section/measure, the renderer is now able to visualize the encoding. You may play a little bit with the attribute values of <code>&lt;scoreDef&gt;</code> and <code>&lt;staffDef&gt;</code> to see how they influence the rendering.</p>
+</div>
