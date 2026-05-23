@@ -1,0 +1,35 @@
+<div>
+    <p class="tutorialGoal">
+        Krok pierwszy: dodaj kilka nut do akordu.
+    </p>
+    <p>
+        W MEI pojęcie akordu oznacza "jednoczesne brzmienie dwóch lub więcej nut w tej samej warstwie o tej samej
+        długości" (zobacz <a href="https://music-encoding.org/guidelines/v4/elements/chord.html" target="_blank" rel="noopener, noreferrer">Specyfikacja elementu</a>).
+        Akord składa się z dwóch lub więcej elementów nut, które należą do tego samego głosu (warstwy) i mają identyczną
+        strukturę rytmiczną (długość). (Są przypadki, gdy nie chcesz, aby każda nuta w akordzie miała tę samą długość,
+        ale nie są one częścią tego podstawowego samouczka.)
+    </p>
+    <p>
+        Aby zakodować takie "jednoczesne brzmienie", w MEI używa się elementu <code>&lt;chord&gt;</code>. Jego użycie jest dość
+        proste: Wiele elementów <code>&lt;note&gt;</code> w tej samej warstwie jest zamykanych przez element <code>&lt;chord&gt;</code>,
+        a atrybut długości (@dur) jest przenoszony z elementów <code>&lt;note&gt;</code> na element <code>&lt;chord&gt;</code>
+        (ponieważ długość jest taka sama dla wszystkich nut). Jednakże, czy najpierw napiszemy zewnętrzny element <code>&lt;chord&gt;</code>,
+        aby dodać wewnętrzne elementy <code>&lt;note&gt;</code>, czy zaczniemy od elementów <code>&lt;note&gt;</code>
+        i następnie zamkniemy je w elemencie <code>&lt;chord&gt;</code>, nie ma to w praktyce większego znaczenia.
+    </p>
+    <p>
+        W tym samouczku trzymajmy się drugiego podejścia: oznacza to, że najpierw potrzebujemy kilka nut.
+    </p>
+    <p class="tutorialTask">
+        W edytorze poniżej wprowadź następujące trzy elementy <code>&lt;note&gt;</code>:</p>
+
+        <ul>
+            <li><code>&lt;note pname="e" oct="4" dur="4"/&gt;</code></li>
+            <li><code>&lt;note pname="g" oct="4" dur="4"/&gt;</code></li>
+            <li><code>&lt;note pname="c" oct="5" dur="4"/&gt;</code></li>
+        </ul>
+
+    <p>
+        Powinnaś wtedy zobaczyć trzy nuty renderowane sekwencyjnie. Niewiele to akord, prawda? Ale nie martw się: Zajmiemy się tym od razu w następnym kroku. Do tego czasu możesz pobawić się wartościami atrybutów, aby zobaczyć, jak wpływają one na renderowanie. Zobaczysz także wskazówki, jak napisać poprawny kod. Gdy będziesz gotowa, upewnij się, że masz poprawny kod w edytorze, a następnie naciśnij przycisk "kontynuuj" w prawym dolnym rogu.
+    </p>
+</div>
