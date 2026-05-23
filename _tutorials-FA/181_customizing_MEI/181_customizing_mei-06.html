@@ -1,0 +1,25 @@
+<div>
+    <p>
+        MEI معمولی المنت‌های <strong>سندی</strong> زیر را مجاز می‌داند: <code>&lt;mei&gt;</code>،
+        <code>&lt;meiHead&gt;</code>،
+        <code>&lt;music&gt;</code>، و <code>&lt;meiCorpus&gt;</code>. این بدان معناست که این المنت‌ها می‌توانند به عنوان المنت‌های
+        بیرونی در یک فایل MEI عمل کنند. با این حال، یک پروژه ممکن است ساختار داده‌ای را پیشنهاد دهد که به المنت‌های شروع دیگر یا اضافی نیاز داشته باشد.
+        به عنوان مثال، یک پروژه ممکن است تصمیم بگیرد که تمام توضیحات ویرایشی را به صورت فایل‌های جداگانه نگه دارد، هر کدام شامل المنت خاص خود <code>&lt;annot&gt;</code> باشد. سفارشی‌سازی رسمی <a href="/guidelines/dev/content/introduction.html#meiprofiles" target="_blank" rel="noopener, noreferrer">mei-all_anyStart</a>
+        اجازه می‌دهد که هر المنت منفرد در نام‌حوزه MEI به عنوان المنت شروع استفاده شود، اما این بیشتر برای اهداف آموزشی است و برای استفاده عملی توصیه نمی‌شود. در عوض، ODD یک مکانیزم ساده برای تعریف المنت‌های شروع مجاز ارائه می‌دهد، با استفاده از المنت اولیه
+        <code>&lt;schemaSpec&gt;</code>.
+    </p>
+    <pre class="codeblock">&lt;schemaSpec ident="mei" 
+    ns="http://www.music-encoding.org/ns/mei" 
+    prefix="mei_" 
+    start="mei meiHead meiCorpus music"&gt;</pre>
+    <p>
+        همان‌طور که مشاهده می‌کنید، خصیصه <code>@start</code> به عنوان یک لیست جداشده با فاصله از تمام المنت‌های شروع استفاده می‌شود. اگر پروژه ذکرشده تصمیم بگیرد که <code>&lt;mei&gt;</code> و <code>&lt;annot&gt;</code> را مجاز کند، اما تمام المنت‌های شروع دیگر را غیرمجاز کند، این می‌تواند به این صورت اصلاح شود:
+    </p>
+    <pre class="codeblock">&lt;schemaSpec ident="mei" 
+    ns="http://www.music-encoding.org/ns/mei" 
+    prefix="mei_" 
+    start="mei annot"&gt;</pre>
+    <p>
+        همان‌طور که مشاهده می‌کنید، تنظیم المنت‌های شروع در واقع بسیار ساده است. بیایید مرور کنیم که چه چیزهایی درباره سفارشی‌سازی ODD یاد گرفته‌ایم.
+    </p>
+</div>
