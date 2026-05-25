@@ -22,7 +22,7 @@ Updates
 
 Discussion
 - Sponsorships
-    - There is a potential sponsor who is interested in providing financial and in-kind support fo MEI
+    - There is a potential sponsor who is interested in providing financial and in-kind support for MEI
     - MEI Board members offered feedback regarding expectations and accountability for in-kind support
     - Anna K. will follow up with the potential sponsor   
 
