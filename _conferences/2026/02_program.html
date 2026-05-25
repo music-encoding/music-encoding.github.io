@@ -186,6 +186,27 @@ id: program
         vertical-align: middle;
         border: 1px solid rgba(32, 31, 60, 0.1);
     }
+
+    .mec2026-page .paper-badge {
+        font-size: 0.7em;
+        padding: 0.1em 0.5em;
+        border-radius: 4px;
+        margin-left: 0.8em;
+        vertical-align: middle;
+        display: inline-block;
+    }
+
+    .mec2026-page .paper-badge.long {
+        background: #e3f2fd;
+        color: #0d47a1;
+        border: 1px solid rgba(13, 71, 161, 0.2);
+    }
+
+    .mec2026-page .paper-badge.short {
+        background: #e8f5e9;
+        color: #1b5e20;
+        border: 1px solid rgba(27, 94, 32, 0.2);
+    }
 </style>
 
 <img src="/images/conference/2026/banner.png" class="img-responsive" alt="Music Encoding Conference banner"
@@ -312,11 +333,24 @@ id: program
                     <p>Akira Maezawa</p>
                     <small>Director of MINA Lab, Yamaha Corporation</small>
                     <div style="margin-top: 1.5em;">
-                        <p style="font-size: 0.95em; color: #444;">Music performance is inherently multimodal. This talk focuses on applications of multimodality in music and on integrating these modalities. I will argue that a key opportunity in music performance encoding lies in aligning and fusing heterogeneous data rather than in representing each modality in isolation. I will discuss experiences in designing systems for music performance analysis and interaction that utilized multiple modalities, including system design and encoding choices. I hope this talk will help further the conversation about modular and multimodal frameworks for encoding music performance.</p>
+                        <p style="font-size: 0.95em; color: #444;">Music performance is inherently multimodal. This talk
+                            focuses on applications of multimodality in music and on integrating these modalities. I
+                            will argue that a key opportunity in music performance encoding lies in aligning and fusing
+                            heterogeneous data rather than in representing each modality in isolation. I will discuss
+                            experiences in designing systems for music performance analysis and interaction that
+                            utilized multiple modalities, including system design and encoding choices. I hope this talk
+                            will help further the conversation about modular and multimodal frameworks for encoding
+                            music performance.</p>
                     </div>
                     <div style="margin-top: 1.5em; padding-top: 1em; border-top: 1px solid rgba(0,0,0,0.05);">
                         <p><strong>Speaker Bio:</strong></p>
-                        <p style="font-size: 0.95em; color: #444;">Akira is a researcher in music informatics, passionate about delivering the rewarding experience of music-making to more people on this planet through technology. He leads the music informatics R&D team, "MINALab," at Yamaha and has developed music technologies and systems used in mobile apps, electronic keyboard instruments, concerts, and exhibits. He has received numerous awards and honorary mentions (10+), including the Cannes Lions International Festival of Creativity, the Information Processing Society of Japan’s Research and Engineering Award, and many others.</p>
+                        <p style="font-size: 0.95em; color: #444;">Akira is a researcher in music informatics,
+                            passionate about delivering the rewarding experience of music-making to more people on this
+                            planet through technology. He leads the music informatics R&D team, "MINALab," at Yamaha and
+                            has developed music technologies and systems used in mobile apps, electronic keyboard
+                            instruments, concerts, and exhibits. He has received numerous awards and honorary mentions
+                            (10+), including the Cannes Lions International Festival of Creativity, the Information
+                            Processing Society of Japan’s Research and Engineering Award, and many others.</p>
                     </div>
                 </div>
             </details>
@@ -352,14 +386,16 @@ id: program
             <strong>Communities in music making, editing and pedagogy</strong>
             <p style="margin-left: 1.2em;">Location: First Forum (B1)</p>
             <details>
-                <summary>From Encoding to Empathy: Virtual Choirs as Data for Digital Musicology</summary>
+                <summary>From Encoding to Empathy: Virtual Choirs as Data for Digital Musicology <span
+                        class="paper-badge long">Long</span></summary>
                 <div class="details-content">
                     <p>Ingrida Alondere</p>
                     <small>Vilnius city municipality choir Jauna Muzika, Lithuania</small>
                 </div>
             </details>
             <details>
-                <summary>Towards Crowd-Encoding and Validation of Music Scores: Contexts and Use-Cases</summary>
+                <summary>Towards Crowd-Encoding and Validation of Music Scores: Contexts and Use-Cases <span
+                        class="paper-badge short">Short</span></summary>
                 <div class="details-content">
                     <p>David M. Weigl<sup>1</sup>, Chanda VanderHart<sup>2</sup>, Werner Goebl<sup>1</sup></p>
                     <small>1: mdw – University of Music and Performing Arts Vienna, Austria<br>2: mdw – University of
@@ -369,7 +405,7 @@ id: program
             </details>
             <details>
                 <summary>Strategic Coalition Building to Expand MEI Pedagogy: Citizen Science, Participation, and
-                    Boundary-Transgressing Encoding Practices</summary>
+                    Boundary-Transgressing Encoding Practices <span class="paper-badge short">Short</span></summary>
                 <div class="details-content">
                     <p>Jessica Grimmer<sup>1</sup>, Joshua Neumann<sup>2</sup>, Tim Duguid<sup>3</sup></p>
                     <small>1: University of Maryland, United States of America<br>2: Akademie der Wissenschaften und der
@@ -378,7 +414,7 @@ id: program
             </details>
             <details>
                 <summary>Encoding the Musical Legacy of Jacob J. Sawyer (1856-1885): Establishing the First MEI Corpus
-                    of a 19th-Century African-American Composer</summary>
+                    of a 19th-Century African-American Composer <span class="paper-badge short">Short</span></summary>
                 <div class="details-content">
                     <p>Nico Schüler</p>
                     <small>Texas State University, United States of America</small>
@@ -397,8 +433,10 @@ id: program
         <li>
             <span class="time-slot">12:00pm - 1:30pm</span>
             <strong>Posters and Showcases</strong>
-            
-            <h5 style="margin: 1.5em 0 0.5em 0; font-size: 1.1em; color: #201f3c; border-bottom: 1px solid #eee; padding-bottom: 0.3em;">Showcases</h5>
+
+            <h5
+                style="margin: 1.5em 0 0.5em 0; font-size: 1.1em; color: #201f3c; border-bottom: 1px solid #eee; padding-bottom: 0.3em;">
+                Showcases</h5>
             <details>
                 <summary>The [redacted]: Exploring Interactive Digital Music Editions</summary>
                 <div class="details-content">
@@ -407,23 +445,28 @@ id: program
                 </div>
             </details>
             <details>
-                <summary>Bridging Algorithmic Power and Visual Interactivity: A Hybrid Python–MEI Workflow Using CAMAT and mei-friend</summary>
+                <summary>Bridging Algorithmic Power and Visual Interactivity: A Hybrid Python–MEI Workflow Using CAMAT
+                    and mei-friend</summary>
                 <div class="details-content">
                     <p>Egor Polyakov, Martin Pfleiderer, Pia Steuck</p>
                     <small>University of Music FRANZ LISZT Weimar</small>
                 </div>
             </details>
             <details>
-                <summary>MusicDiffVision: A Tool for Comparing and Visualising Relations between Music Encodings</summary>
+                <summary>MusicDiffVision: A Tool for Comparing and Visualising Relations between Music Encodings
+                </summary>
                 <div class="details-content">
                     <p>Tim Eipert, Adrian Nachtwey</p>
                     <small>University of Würzburg, Paderborn University</small>
                 </div>
             </details>
 
-            <h5 style="margin: 1.5em 0 0.5em 0; font-size: 1.1em; color: #201f3c; border-bottom: 1px solid #eee; padding-bottom: 0.3em;">Posters</h5>
+            <h5
+                style="margin: 1.5em 0 0.5em 0; font-size: 1.1em; color: #201f3c; border-bottom: 1px solid #eee; padding-bottom: 0.3em;">
+                Posters</h5>
             <details>
-                <summary>Encoding Expressive Music Recordings into Symbolic Form for the Analysis and Identification of Performance Style</summary>
+                <summary>Encoding Expressive Music Recordings into Symbolic Form for the Analysis and Identification of
+                    Performance Style</summary>
                 <div class="details-content">
                     <p>Rafael Ramirez</p>
                     <small>UPF Barcelona</small>
@@ -437,14 +480,16 @@ id: program
                 </div>
             </details>
             <details>
-                <summary>Understanding Piano Sight-Reading Exercises: A Score-based Encoder-Decoder LSTM Framework</summary>
+                <summary>Understanding Piano Sight-Reading Exercises: A Score-based Encoder-Decoder LSTM Framework
+                </summary>
                 <div class="details-content">
                     <p>Bofan Ma, Hongshuo Fan, David De Roure, Emily Howard, Wiebke Thormählen</p>
                     <small>RNCM Manchester, Texas A&M University, University of Oxford</small>
                 </div>
             </details>
             <details>
-                <summary>Visualizing the Dynamics of Activities and Accompaniment in Music Therapy Sessions ― An Attempt Using ELAN Annotation and ANNM/ANB Metrics</summary>
+                <summary>Visualizing the Dynamics of Activities and Accompaniment in Music Therapy Sessions ― An Attempt
+                    Using ELAN Annotation and ANNM/ANB Metrics</summary>
                 <div class="details-content">
                     <p>Risa Kobayashi, Nami Iino, Masaki Matsubara</p>
                     <small>University of Tsukuba, Seitoku University, RIKEN</small>
@@ -458,7 +503,8 @@ id: program
                 </div>
             </details>
             <details>
-                <summary>Revisiting Music Encoding for Music-to-Text Large Language Models: What Is Encoded and What Is “Heard”</summary>
+                <summary>Revisiting Music Encoding for Music-to-Text Large Language Models: What Is Encoded and What Is
+                    “Heard”</summary>
                 <div class="details-content">
                     <p>Kun Fang, Ziyu Wang, Ichiro Fujinaga</p>
                     <small>McGill University, NYU, MbZUAI</small>
@@ -481,7 +527,8 @@ id: program
             <details>
                 <summary>Rendering and Converting S-GABC with Verovio</summary>
                 <div class="details-content">
-                    <p>David Rizo, Laurent Pugin, Cristina Alís-Raurich, Martha Thomae Elías, Eliseo Fuentes-Martínez, Jorge Calvo-Zaragoza</p>
+                    <p>David Rizo, Laurent Pugin, Cristina Alís-Raurich, Martha Thomae Elías, Eliseo Fuentes-Martínez,
+                        Jorge Calvo-Zaragoza</p>
                     <small>University of Alicante, RISM Digital, CESEM Lisbon</small>
                 </div>
             </details>
@@ -514,21 +561,24 @@ id: program
                 </div>
             </details>
             <details>
-                <summary>Expert Fingering Variation in Classical Guitar Etudes: Creation of Dataset for Comparative Analysis</summary>
+                <summary>Expert Fingering Variation in Classical Guitar Etudes: Creation of Dataset for Comparative
+                    Analysis</summary>
                 <div class="details-content">
                     <p>Nami Iino, Akinaru Iino</p>
                     <small>University of Tsukuba, RIKEN, Niigata</small>
                 </div>
             </details>
             <details>
-                <summary>Comparative Analysis of Musical and Poetic Syntax in the Late Italian Madrigal: The Tasso in Music Project</summary>
+                <summary>Comparative Analysis of Musical and Poetic Syntax in the Late Italian Madrigal: The Tasso in
+                    Music Project</summary>
                 <div class="details-content">
                     <p>Emiliano Ricciardi, Craig Sapp</p>
                     <small>Amherst College, Stanford University</small>
                 </div>
             </details>
             <details>
-                <summary>A metrical structure estimation for irregular meters: a pilot model based on human perception</summary>
+                <summary>A metrical structure estimation for irregular meters: a pilot model based on human perception
+                </summary>
                 <div class="details-content">
                     <p>Kosuke Suzuki, Toshie Matsui</p>
                     <small>Toyohashi University of Technology</small>
@@ -545,7 +595,9 @@ id: program
         <li>
             <span class="time-slot">1:30pm - 2:30pm</span>
             <strong>Lunch break</strong>
-            <p style="margin-left: 1.2em; font-size: 0.9em; color: #6a6a8a;">(See <a href="/conference/2026/local-info/#tips">Local Information</a> for a map and list of nearby restaurants)</p>
+            <p style="margin-left: 1.2em; font-size: 0.9em; color: #6a6a8a;">(See <a
+                    href="/conference/2026/local-info/#tips">Local Information</a> for a map and list of nearby
+                restaurants)</p>
         </li>
         <li>
             <span class="time-slot">2:30pm - 4:00pm</span>
@@ -553,7 +605,7 @@ id: program
             <p style="margin-left: 1.2em;">Location: First Forum (B1)</p>
             <details>
                 <summary>From Manuscript to MEI: Challenges and Solutions in Encoding Early 20th-Century Lithuanian
-                    Sacred Music</summary>
+                    Sacred Music <span class="paper-badge long">Long</span></summary>
                 <div class="details-content">
                     <p>dr. Imantas Jonas Šimkus</p>
                     <small>Kaunas University of Technology, Lithuania</small>
@@ -561,6 +613,7 @@ id: program
             </details>
             <details>
                 <summary>Mixed Notation vs. Transitional Notation: Creating a small encoded corpus of John Dowland songs
+                    <span class="paper-badge long">Long</span>
                 </summary>
                 <div class="details-content">
                     <p>Anna Plaksin, William Lepp, Annabelle Mueller, Nils Jesse Schäfer, Sophie Stremel</p>
@@ -568,8 +621,8 @@ id: program
                 </div>
             </details>
             <details>
-                <summary>The Extending MEI for Indigenous Sound Archives: Encoding the 1967 Truku Field Recordings
-                </summary>
+                <summary>The Extending MEI for Indigenous Sound Archives: Encoding the 1967 Truku Field Recordings <span
+                        class="paper-badge short">Short</span></summary>
                 <div class="details-content">
                     <p>Liang Lee</p>
                     <small>National Taiwan Normal University, Taiwan</small>
@@ -577,7 +630,7 @@ id: program
             </details>
             <details>
                 <summary>Encoding the Modernization of Tradition: Alignment Strategies for Gagaku Score and Staff
-                    Notation</summary>
+                    Notation <span class="paper-badge short">Short</span></summary>
                 <div class="details-content">
                     <p>Shintaro Seki</p>
                     <small>RIKEN, Japan</small>
@@ -593,7 +646,8 @@ id: program
             <strong>Tools</strong>
             <p style="margin-left: 1.2em;">Location: First Forum (B1)</p>
             <details>
-                <summary>Diplomatic rendering with Thulemeier - Digital Fac-similes for MEI</summary>
+                <summary>Diplomatic rendering with Thulemeier - Digital Fac-similes for MEI <span
+                        class="paper-badge long">Long</span></summary>
                 <div class="details-content">
                     <p>Johannes Kepper<sup>1</sup>, Richard Sänger<sup>2</sup></p>
                     <small>1: Beethovens Werkstatt, Paderborn University, Germany<br>2: Beethovens Werkstatt,
@@ -601,7 +655,8 @@ id: program
                 </div>
             </details>
             <details>
-                <summary>Handling repetition structures in music encodings: Realising expansions with Verovio</summary>
+                <summary>Handling repetition structures in music encodings: Realising expansions with Verovio <span
+                        class="paper-badge short">Short</span></summary>
                 <div class="details-content">
                     <p>Werner Goebl<sup>1</sup>, David M. Weigl<sup>1</sup>, Iacopo Cividini<sup>2</sup>, Laurent
                         Pugin<sup>3</sup></p>
@@ -610,7 +665,8 @@ id: program
                 </div>
             </details>
             <details>
-                <summary>Revisiting the (Deep Optical) Measure Detector</summary>
+                <summary>Revisiting the (Deep Optical) Measure Detector <span class="paper-badge long">Long</span>
+                </summary>
                 <div class="details-content">
                     <p>Alexander Nguyen<sup>1,2</sup>, Nikolaos Beer<sup>2</sup></p>
                     <small>1: Institute for Music Informatics and Musicology, Karlsruhe University of Music,
@@ -619,7 +675,7 @@ id: program
             </details>
             <details>
                 <summary>The Benchmark for Encoding Assessment in Music (BEAM): Evaluating LLM Performance in Symbolic
-                    Music Parsing</summary>
+                    Music Parsing <span class="paper-badge short">Short</span></summary>
                 <div class="details-content">
                     <p>Liam Pond<sup>1,2</sup>, Tace McNamara<sup>3</sup>, Ichiro Fujinaga<sup>1,2</sup></p>
                     <small>1: McGill University<br>2: Centre for Interdisciplinary Research in Music Media and
@@ -644,6 +700,7 @@ id: program
             <p style="margin-left: 1.2em;">Location: First Forum (B1)</p>
             <details>
                 <summary>On Every Note a Griff: Looking for a Useful Representation of Basso Continuo Performance Style
+                    <span class="paper-badge long">Long</span>
                 </summary>
                 <div class="details-content">
                     <p>Adam Štefunko<sup>1</sup>, Carlos Eduardo Cancino-Chacón<sup>2</sup>, Jan Hajič jr.<sup>1</sup>
@@ -653,21 +710,23 @@ id: program
                 </div>
             </details>
             <details>
-                <summary>Beyond OHCO: Introducing the MEI-notredame Customisation</summary>
+                <summary>Beyond OHCO: Introducing the MEI-notredame Customisation <span
+                        class="paper-badge long">Long</span></summary>
                 <div class="details-content">
                     <p>Joshua Stutter</p>
                     <small>Newcastle University, United Kingdom</small>
                 </div>
             </details>
             <details>
-                <summary>Encoding Guqin Jianzipu: A Gesture-Based MEI Module for a Logographic Notation</summary>
+                <summary>Encoding Guqin Jianzipu: A Gesture-Based MEI Module for a Logographic Notation <span
+                        class="paper-badge long">Long</span></summary>
                 <div class="details-content">
                     <p>Yifan Huang, Eto Sun, Ichiro Fujinaga</p>
                     <small>McGill University, Canada</small>
                 </div>
             </details>
             <details>
-                <summary>Microtonal support in Verovio</summary>
+                <summary>Microtonal support in Verovio <span class="paper-badge long">Long</span></summary>
                 <div class="details-content">
                     <p>Karim Ratib</p>
                     <small>Not affiliated, Canada</small>
@@ -683,21 +742,24 @@ id: program
             <strong>Managing and cataloguing music data</strong>
             <p style="margin-left: 1.2em;">Location: First Forum (B1)</p>
             <details>
-                <summary>Understanding artefacts of Renaissance polyphony: towards an ontology</summary>
+                <summary>Understanding artefacts of Renaissance polyphony: towards an ontology <span
+                        class="paper-badge long">Long</span></summary>
                 <div class="details-content">
                     <p>Erik Bergwall<sup>1</sup>, Marnix van Berchum<sup>2</sup></p>
                     <small>1: Uppsala University, Sweden<br>2: Utrecht University, The Netherlands</small>
                 </div>
             </details>
             <details>
-                <summary>Bibliographic Readiness of Digital Music Editions</summary>
+                <summary>Bibliographic Readiness of Digital Music Editions <span class="paper-badge short">Short</span>
+                </summary>
                 <div class="details-content">
                     <p>Daniel Jettka, Hizkiel Alemayehu, Daniel Röwenstrunk, Kristin Herold</p>
                     <small>Universität Paderborn, Germany</small>
                 </div>
             </details>
             <details>
-                <summary>GitHub Actions in Action: Workflow Automation for Digital Music Research and Editions</summary>
+                <summary>GitHub Actions in Action: Workflow Automation for Digital Music Research and Editions <span
+                        class="paper-badge short">Short</span></summary>
                 <div class="details-content">
                     <p>Julia Maria Jaklin<sup>1</sup>, Henning Burghoff<sup>2</sup>, David M. Weigl<sup>3</sup></p>
                     <small>1: TU Wien<br>2: University of Vienna<br>3: mdw — University of Music and Performing Arts
@@ -705,7 +767,7 @@ id: program
                 </div>
             </details>
             <details>
-                <summary>Plaine and Easie(r)</summary>
+                <summary>Plaine and Easie(r) <span class="paper-badge long">Long</span></summary>
                 <div class="details-content">
                     <p>Andrew Hankinson, Rodolfo Zitellini, Laurent Pugin</p>
                     <small>RISM Digital Center, Switzerland</small>
@@ -715,35 +777,40 @@ id: program
         <li>
             <span class="time-slot">1:30pm - 2:30pm</span>
             <strong>Lunch break</strong>
-            <p style="margin-left: 1.2em; font-size: 0.9em; color: #6a6a8a;">(See <a href="/conference/2026/local-info/#tips">Local Information</a> for a map and list of nearby restaurants)</p>
+            <p style="margin-left: 1.2em; font-size: 0.9em; color: #6a6a8a;">(See <a
+                    href="/conference/2026/local-info/#tips">Local Information</a> for a map and list of nearby
+                restaurants)</p>
         </li>
         <li>
             <span class="time-slot">2:30pm - 4:00pm</span>
             <strong>Annotation</strong>
             <p style="margin-left: 1.2em;">Location: First Forum (B1)</p>
             <details>
-                <summary>A Context-Aware Piano Performance Encoding Framework for Sustain Pedaling</summary>
+                <summary>A Context-Aware Piano Performance Encoding Framework for Sustain Pedaling <span
+                        class="paper-badge short">Short</span></summary>
                 <div class="details-content">
                     <p>Hanwen Zhang<sup>1</sup>, Lele Liu<sup>2</sup>, Ichiro Fujinaga<sup>1</sup></p>
                     <small>1: McGill University, Canada<br>2: University of Würzburg</small>
                 </div>
             </details>
             <details>
-                <summary>Precise and Simple Audio-to-Score Alignment</summary>
+                <summary>Precise and Simple Audio-to-Score Alignment <span class="paper-badge short">Short</span>
+                </summary>
                 <div class="details-content">
                     <p>Silvan Peter, Patricia Hu, Gerhard Widmer</p>
                     <small>Johannes Kepler University, Austria</small>
                 </div>
             </details>
             <details>
-                <summary>Encoding Musical Space in Inviso</summary>
+                <summary>Encoding Musical Space in Inviso <span class="paper-badge short">Short</span></summary>
                 <div class="details-content">
                     <p>Anıl Çamcı, Zeynep Özcan</p>
                     <small>University of Michigan</small>
                 </div>
             </details>
             <details>
-                <summary>A Flexible Encoding Model for Non-Unique Note Alignments</summary>
+                <summary>A Flexible Encoding Model for Non-Unique Note Alignments <span
+                        class="paper-badge short">Short</span></summary>
                 <div class="details-content">
                     <p>Suhit Chiruthapudi<sup>1</sup>, Adam Štefunko<sup>2</sup>, Silvan Peter<sup>1</sup>, Patricia
                         Hu<sup>1</sup>, Jan Hajič jr.<sup>2</sup>, Carlos Eduardo Cancino-Chacón<sup>1</sup></p>
@@ -753,7 +820,8 @@ id: program
                 </div>
             </details>
             <details>
-                <summary>Score-Agnostic Structure Analysis in Large-Scale Performance Datasets</summary>
+                <summary>Score-Agnostic Structure Analysis in Large-Scale Performance Datasets <span
+                        class="paper-badge short">Short</span></summary>
                 <div class="details-content">
                     <p>Patricia Hu, Silvan Peter, Gerhard Widmer</p>
                     <small>Institute of Computational Perception, Johannes Kepler University, Linz, Austria,
@@ -776,16 +844,65 @@ id: program
                     <p>Christina Crowder, Clara Byom</p>
                     <small>Klezmer Institute, United States of America</small>
                     <div style="margin-top: 1.5em;">
-                        <p style="font-size: 0.95em; color: #444;">Georgina Born’s keynote address to the 20th ISMIR conference in 2020 suggested that, “the time is ripe in MIR for sustained interdisciplinary engagements in ways previously unseen.” In 2022, my Klezmer Institute colleagues and I wrote that, “a healthy relationship with MIR would involve a more cyclical engagement between the MIR community and music-makers in the communities that are their subject of study and analysis.” We would like to take this opportunity to expand on what this more cyclical engagement might look like in a practical sense, and to make the case for supporting communities of musical practice within diaspora and post-vernacular cultural groups. This framing focuses on highly-skilled “scholar practitioners” as carriers of embodied musical knowledge and deep domain expertise, and associated communities of practice as a potential talent pool for developing novel research projects and collaborative community-facing tools that make use of the maturing MEI and other MIR ecosystems.</p>
-                        
-                        <p style="font-size: 0.95em; color: #444;">Inviting conversation with a diverse set of stakeholders across the project lifecycle has the potential to ensure that interdisciplinary projects point toward a future we want rather than what appears technologically possible in the present. User experience research within the Klezmer Archive Project community revealed that, while we could use many existing tools, there was a desire to capture more of the vitality of oral tradition: the transformation and transmission of tunes through generations. For musicians, tunes have a kind of agency and take on lives of their own as they move through musical communities. The ability for MIR projects like the Klezmer Archive Project to trace these networks into digital spaces holds the tantalizing potential to heighten our sense of how tunes live in context and connect communities of musicians across geography and generations. As community-focused MIR projects demonstrate, there is an audience for MIR tools that build toward communities of practice, and expanding the definition of “we” in MIR can be a rewarding way to connect with people excited to be part of the process.</p>
-                        
-                        <p style="font-size: 0.95em; color: #444;">Most of these communities exist largely outside (or on the margins) of the commercial music industry as self-organized, “barely commercial” social, ethnic, or affinity groups. They are rather unlikely to have formal connections to university or G.L.A.M. institutions—though individuals within them will have all manner of academic, tech, non-profit, and business connections. Funding is always an issue in research and project development, particularly for projects that do not conform neatly with traditional academic incentive economies and exist in a contemporary sociopolitical climate that devalues the production of knowledge of all kinds. We don't have a key to unlock the funding problem but have found that when you invite the community in, they invest in you as well—both financially, and through a generosity of domain-specific expertise in the form of datafication, user testing, and visioning. As we invite you to join us in conversation about cyclical engagement with music-making communities, we are eager to be a part of visioning new models for funding projects of all sorts within the music encoding community.</p>
+                        <p style="font-size: 0.95em; color: #444;">Georgina Born’s keynote address to the 20th ISMIR
+                            conference in 2020 suggested that, “the time is ripe in MIR for sustained interdisciplinary
+                            engagements in ways previously unseen.” In 2022, my Klezmer Institute colleagues and I wrote
+                            that, “a healthy relationship with MIR would involve a more cyclical engagement between the
+                            MIR community and music-makers in the communities that are their subject of study and
+                            analysis.” We would like to take this opportunity to expand on what this more cyclical
+                            engagement might look like in a practical sense, and to make the case for supporting
+                            communities of musical practice within diaspora and post-vernacular cultural groups. This
+                            framing focuses on highly-skilled “scholar practitioners” as carriers of embodied musical
+                            knowledge and deep domain expertise, and associated communities of practice as a potential
+                            talent pool for developing novel research projects and collaborative community-facing tools
+                            that make use of the maturing MEI and other MIR ecosystems.</p>
+
+                        <p style="font-size: 0.95em; color: #444;">Inviting conversation with a diverse set of
+                            stakeholders across the project lifecycle has the potential to ensure that interdisciplinary
+                            projects point toward a future we want rather than what appears technologically possible in
+                            the present. User experience research within the Klezmer Archive Project community revealed
+                            that, while we could use many existing tools, there was a desire to capture more of the
+                            vitality of oral tradition: the transformation and transmission of tunes through
+                            generations. For musicians, tunes have a kind of agency and take on lives of their own as
+                            they move through musical communities. The ability for MIR projects like the Klezmer Archive
+                            Project to trace these networks into digital spaces holds the tantalizing potential to
+                            heighten our sense of how tunes live in context and connect communities of musicians across
+                            geography and generations. As community-focused MIR projects demonstrate, there is an
+                            audience for MIR tools that build toward communities of practice, and expanding the
+                            definition of “we” in MIR can be a rewarding way to connect with people excited to be part
+                            of the process.</p>
+
+                        <p style="font-size: 0.95em; color: #444;">Most of these communities exist largely outside (or
+                            on the margins) of the commercial music industry as self-organized, “barely commercial”
+                            social, ethnic, or affinity groups. They are rather unlikely to have formal connections to
+                            university or G.L.A.M. institutions—though individuals within them will have all manner of
+                            academic, tech, non-profit, and business connections. Funding is always an issue in research
+                            and project development, particularly for projects that do not conform neatly with
+                            traditional academic incentive economies and exist in a contemporary sociopolitical climate
+                            that devalues the production of knowledge of all kinds. We don't have a key to unlock the
+                            funding problem but have found that when you invite the community in, they invest in you as
+                            well—both financially, and through a generosity of domain-specific expertise in the form of
+                            datafication, user testing, and visioning. As we invite you to join us in conversation about
+                            cyclical engagement with music-making communities, we are eager to be a part of visioning
+                            new models for funding projects of all sorts within the music encoding community.</p>
                     </div>
                     <div style="margin-top: 1.5em; padding-top: 1em; border-top: 1px solid rgba(0,0,0,0.05);">
                         <p><strong>Speaker Bio:</strong></p>
                         <p style="font-size: 0.95em; color: #444;">
-                            Christina has been performing and researching Jewish music for thirty years, beginning in Budapest, Hungary in 1993 as a founding member of Di Naye Kapelye, and continuing with a Fulbright grant to Romania to document Jewish music in 1999, and since 2002 with an active research, teaching, and performing career in the US. She is Executive Director of the Klezmer Institute, which has been awarded three NEH Grants for Institute projects (2021-2025). Christina lives in New Haven, Connecticut, and performs with the Zamlers Trio. She also performs with Michael Winograd and the Honorable Mentschen, the Dave Levitt Klezmer Trio and many others. She has been a guest instructor in klezmer accordion and ensemble performance in the US, Canada, and Europe, and was both musical director and performer in the 2019 Oregon Shakespeare Festival and the 2020 ART Portland productions of the Broadway play “Indecent.” With the Klezmer Institute, Christina edited the Levitt Legacy music folio, is curating a player folio of KMDMP music, and has led KMDMP artist residency programs in Arizona, Connecticut, Massachusetts, Minnesota, New Mexico, Oregon, Washington, France, and Belgium.
+                            Christina has been performing and researching Jewish music for thirty years, beginning in
+                            Budapest, Hungary in 1993 as a founding member of Di Naye Kapelye, and continuing with a
+                            Fulbright grant to Romania to document Jewish music in 1999, and since 2002 with an active
+                            research, teaching, and performing career in the US. She is Executive Director of the
+                            Klezmer Institute, which has been awarded three NEH Grants for Institute projects
+                            (2021-2025). Christina lives in New Haven, Connecticut, and performs with the Zamlers Trio.
+                            She also performs with Michael Winograd and the Honorable Mentschen, the Dave Levitt Klezmer
+                            Trio and many others. She has been a guest instructor in klezmer accordion and ensemble
+                            performance in the US, Canada, and Europe, and was both musical director and performer in
+                            the 2019 Oregon Shakespeare Festival and the 2020 ART Portland productions of the Broadway
+                            play “Indecent.” With the Klezmer Institute, Christina edited the Levitt Legacy music folio,
+                            is curating a player folio of KMDMP music, and has led KMDMP artist residency programs in
+                            Arizona, Connecticut, Massachusetts, Minnesota, New Mexico, Oregon, Washington, France, and
+                            Belgium.
                         </p>
                     </div>
                 </div>
