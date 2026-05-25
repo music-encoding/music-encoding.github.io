@@ -9,7 +9,7 @@
             "editorLines":3,
             "descFile": "103_chords_step-01-desc.html",
             "prefillFile": "103_chords_step-01-prefill.xml",
-            "xmlFile": "103_chords_step-01.xml",
+            "xmlFile": "../tutorials/103_chords_step-01.xml",
             "xpaths": [
                 {"rule":"count(//mei:note) = 3", "renderanyway": false, "hint": "Vous avez besoin de trois éléments note."},
                 {"rule":"count(//mei:note[1]/@*) = 3 and //mei:note[1]/@pname and //mei:note[1]/@oct and //mei:note[1]/@dur", "renderanyway": false, "hint": "Vous avez besoin de trois attributs (@pname, @oct, and @dur) pour le premier élément note."},
@@ -34,7 +34,7 @@
             "editorLines":5,
             "descFile": "103_chords_step-02-desc.html",
             "prefillFile": "103_chords_step-02-prefill.xml",
-            "xmlFile": "103_chords_step-02.xml",
+            "xmlFile": "../tutorials/103_chords_step-02.xml",
             "xpaths": [
                 {"rule":"count(//mei:note) = 3", "renderanyway": false, "hint": "Vous avez besoin de trois éléments note."},
                 {"rule":"//mei:note[1]/@pname and //mei:note[1]/@oct", "renderanyway": true, "hint": "Vous avez besoin de deux attributs pour le premier élément note (@pname, @oct)."},
@@ -59,8 +59,8 @@
             "label":"Progression d'accords simple",
             "editorLines":20,
             "descFile": "103_chords_step-03-desc.html",
-            "prefillFile": "103_chords_step-03-prefill.xml",
-            "xmlFile": "103_chords_step-03.xml",
+            "prefillFile": "../tutorials/103_chords_step-03-prefill.xml",
+            "xmlFile": "../tutorials/103_chords_step-03.xml",
             "xpaths": [
                 {"rule":"count(//mei:chord) = 4", "renderanyway": true, "hint":  "Vous avez besoin de quatre éléments chord."},
                 {"rule":"count(//mei:chord[1]/@*) = 1 and //mei:chord[1]/@dur", "renderanyway": true, "hint": "Vous avez besoin d'un attribut dans le premier chord (@dur)."},
@@ -111,8 +111,8 @@
             "label":"Progression d'accord étendue",
             "editorLines":35,
             "descFile": "103_chords_step-04-desc.html",
-            "prefillFile": "103_chords_step-04-prefill.xml",
-            "xmlFile": "103_chords_step-04.xml",
+            "prefillFile": "../tutorials/103_chords_step-04-prefill.xml",
+            "xmlFile": "../tutorials/103_chords_step-04.xml",
             "xpaths": [
                 {"rule":"count(//mei:chord) = 7", "renderanyway": true, "hint":  "Vous avez besoin de sept éléments chords."},
                 {"rule":"count(//mei:chord[1]/@*) = 2 and //mei:chord[1]/@dur and //mei:chord[1]/@dots", "renderanyway": true, "hint": "Vous avez besoin de deux attributs pour le premier chord (@dur, @dots)."},
