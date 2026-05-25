@@ -9,7 +9,7 @@ Sur cette page, vous trouverez une série de courts tutoriels pour aborder la ME
 
 Si vous débutez avec la MEI, nous vous recommandons de commencer par le tutoriel [Quickstart](/tutorials-FR/101-quickstart), qui vous permettra de coder une mélodie simple en MEI.
 
-Si vous souhaitez rédiger un nouveau tutoriel sur la MEI, nous vous recommandons de commencer par le tutoriel [Rédaction de tutoriels](/tutorials-FR/tutorials), qui vous fournira des informations sur les étapes nécessaires. Consultez également notre liste de tutoriels manquants sur [Github](https://github.com/music-encoding/music-encoding.github.io/issues/88) avec lesquels vous pourriez contribuer au projet.
+Si vous souhaitez rédiger un nouveau tutoriel sur la MEI, nous vous recommandons de commencer par le tutoriel [Rédaction de tutoriels](/tutorials-FR/199-writing-tutorials), qui vous fournira des informations sur les étapes nécessaires. Consultez également notre liste de tutoriels manquants sur [Github](https://github.com/music-encoding/music-encoding.github.io/issues/88) avec lesquels vous pourriez contribuer au projet.
 
 ### Autres tutoriels et ressources liées
 
