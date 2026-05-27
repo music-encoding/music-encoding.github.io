@@ -207,6 +207,57 @@ id: program
         color: #1b5e20;
         border: 1px solid rgba(27, 94, 32, 0.2);
     }
+
+    /* Abstract Button Styling */
+    .mec2026-page .abstract-button {
+        display: inline-block;
+        padding: 0.35em 0.7em;
+        margin: 0.4em 0 0.8em 0;
+        background: #201f3c;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 4px;
+        font-weight: 500;
+        font-size: 0.8em;
+        transition: all 0.2s ease;
+        border: 1px solid rgba(32, 31, 60, 0.3);
+        display: inline-flex;
+        align-items: center;
+        box-shadow: none;
+    }
+
+    .mec2026-page .abstract-button:hover {
+        background: #2d2c52;
+        box-shadow: 0 2px 6px rgba(32, 31, 60, 0.15);
+        transform: translateY(-0.5px);
+    }
+
+    .mec2026-page .abstract-button::before {
+        content: '📄 ';
+        margin-right: 0.3em;
+        font-size: 0.9em;
+    }
+
+    .mec2026-page .provisional-note {
+        background: #fff3cd;
+        border-left: 4px solid #ffc107;
+        padding: 0.6em 1em;
+        border-radius: 0 8px 8px 0;
+        margin-bottom: 1.5em;
+        color: #856404;
+        font-size: 0.9em;
+    }
+
+    .mec2026-page .provisional-note p {
+        margin: 0.2em 0;
+        font-size: 0.9em;
+    }
+
+    .mec2026-page .provisional-note strong {
+        display: block;
+        margin-bottom: 0.2em;
+        font-size: 0.95em;
+    }
 </style>
 
 <img src="/images/conference/2026/banner.png" class="img-responsive" alt="Music Encoding Conference banner"
@@ -217,6 +268,11 @@ id: program
     <div style="background: #f8f9fa; border-left: 4px solid #201f3c; padding: 1em 1.5em; border-radius: 0 8px 8px 0; margin-bottom: 1.5em;">
         <p style="margin: 0; font-size: 0.95em; color: #6a6a8a;">Times are given in local conference time (JST).</p>
         <p style="margin: 0.4em 0 0 0; font-size: 1.05em; font-weight: 600; color: #201f3c;">The registration desk opens at 9:00 a.m. each day.</p>
+    </div>
+    <div class="provisional-note">
+        <strong>📋 Provisional Abstracts</strong>
+        <p>The abstracts below are provisional versions. Not all presentations may be included yet.</p>
+        <p>A complete collection of abstracts will be provided after the conference.</p>
     </div>
 
     <a class="anchor" id="top"></a>
@@ -385,6 +441,7 @@ id: program
         <li>
             <span class="time-slot">9:30am - 10:45am</span>
             <strong>Communities in music making, editing and pedagogy</strong>
+            <a href="https://drive.google.com/file/d/1xR9sn4PY4ZmppXqe96ETFtt9Y0O-3qm_/view?usp=sharing" class="abstract-button" target="_blank">View Abstracts</a>
             <p style="margin-left: 1.2em;">Location: First Forum (B1)</p>
             <details>
                 <summary>From Encoding to Empathy: Virtual Choirs as Data for Digital Musicology <span
@@ -434,6 +491,7 @@ id: program
         <li>
             <span class="time-slot">12:00pm - 1:30pm</span>
             <strong>Posters and Showcases</strong>
+            <a href="https://drive.google.com/file/d/1aVa8QpmfMl0F5FRvn2ULi9BUUYHo4mNR/view?usp=drive_link" class="abstract-button" target="_blank">View Abstracts</a>
 
             <h5
                 style="margin: 1.5em 0 0.5em 0; font-size: 1.1em; color: #201f3c; border-bottom: 1px solid #eee; padding-bottom: 0.3em;">
@@ -603,6 +661,7 @@ id: program
         <li>
             <span class="time-slot">2:30pm - 4:00pm</span>
             <strong>Corpora and Complications</strong>
+            <a href="https://drive.google.com/file/d/1ipHNp-bNKA4NmDwqX1smbmuN8DiezXEa/view?usp=drive_link" class="abstract-button" target="_blank">View Abstracts</a>
             <p style="margin-left: 1.2em;">Location: First Forum (B1)</p>
             <details>
                 <summary>From Manuscript to MEI: Challenges and Solutions in Encoding Early 20th-Century Lithuanian
@@ -645,6 +704,7 @@ id: program
         <li>
             <span class="time-slot">4:30pm - 6:00pm</span>
             <strong>Tools</strong>
+            <a href="https://drive.google.com/file/d/1L3d2OqGWdz6zWfesoWMMcxg0ED-HYD2Y/view?usp=drive_link" class="abstract-button" target="_blank">View Abstracts</a>
             <p style="margin-left: 1.2em;">Location: First Forum (B1)</p>
             <details>
                 <summary>Diplomatic rendering with Thulemeier - Digital Fac-similes for MEI <span
@@ -698,6 +758,7 @@ id: program
         <li>
             <span class="time-slot">9:30am - 11:30am</span>
             <strong>Notations and traditions</strong>
+            <a href="https://drive.google.com/file/d/1bqkM41HcGiMGQ1zYfduxyeugelIHB8vK/view?usp=drive_link" class="abstract-button" target="_blank">View Abstracts</a>
             <p style="margin-left: 1.2em;">Location: First Forum (B1)</p>
             <details>
                 <summary>On Every Note a Griff: Looking for a Useful Representation of Basso Continuo Performance Style
@@ -741,6 +802,7 @@ id: program
         <li>
             <span class="time-slot">12:00pm - 1:30pm</span>
             <strong>Managing and cataloguing music data</strong>
+            <a href="https://drive.google.com/file/d/13muzxPCHXzutYRUtbYOGINi8MJA_K2ut/view?usp=drive_link" class="abstract-button" target="_blank">View Abstracts</a>
             <p style="margin-left: 1.2em;">Location: First Forum (B1)</p>
             <details>
                 <summary>Understanding artefacts of Renaissance polyphony: towards an ontology <span
@@ -785,6 +847,7 @@ id: program
         <li>
             <span class="time-slot">2:30pm - 4:00pm</span>
             <strong>Annotation</strong>
+            <a href="https://drive.google.com/file/d/1gktSVtB_2BCUct1JVQeITEVYgEqMcmgH/view?usp=drive_link" class="abstract-button" target="_blank">View Abstracts</a>
             <p style="margin-left: 1.2em;">Location: First Forum (B1)</p>
             <details>
                 <summary>A Context-Aware Piano Performance Encoding Framework for Sustain Pedaling <span
