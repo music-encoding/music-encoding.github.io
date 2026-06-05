@@ -7,7 +7,7 @@ title: "Proceedings"
 
 <div class="columns">
     <div class="column col-12 mec-proceedings">
-        {% assign publicationPeriods = "2024,2021,2020,2015–2017,2013–2014" | split: "," %}
+        {% assign publicationPeriods = "2025,2024,2021,2020,2015–2017,2013–2014" | split: "," %}
         {% for period in publicationPeriods %}
             <div class="mec-proceedings-section">
                 <div class="mec-proceedings-section-divider"><span>{{ period }}</span></div>
