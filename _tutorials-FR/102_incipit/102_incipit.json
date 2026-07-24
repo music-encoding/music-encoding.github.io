@@ -5,7 +5,7 @@
       "editorLines": 7,
       "descFile": "102_incipit_step-01-desc.html",
       "prefillFile": "102_incipit_step-01-prefill.xml",
-      "xmlFile": "102_incipit_step-01.xml",
+      "xmlFile": "../tutorials/102_incipit_step-01.xml",
       "xpaths": [
         {"rule": "count(//mei:scoreDef) = 1", "renderanyway": false, "hint": "Vous avez besoin d'un élément scoreDef."},
         {"rule": "count(//mei:scoreDef/@*) = 0", "renderanyway": false, "hint": "Dans cet exercice, l'élément scoreDef n'a pas (encore) besoin d'attribut."},
@@ -21,8 +21,8 @@
       "label": "Attributs de la partition et des portées",
       "editorLines": 7,
       "descFile": "102_incipit_step-02-desc.html",
-      "prefillFile": "102_incipit_step-02-prefill.xml",
-      "xmlFile": "102_incipit_step-02.xml",
+      "prefillFile": "../tutorials/102_incipit_step-02-prefill.xml",
+      "xmlFile": "../tutorials/102_incipit_step-02.xml",
       "xpaths": [
         {"rule": "count(//mei:scoreDef) = 1", "renderanyway": false, "hint": "Vous avez besoin d'un élément scoreDef."},
         {"rule": "count(//mei:staffGrp) = 1", "renderanyway": false, "hint": "Vous avez besoin d'un élément staffGroup."},
@@ -45,7 +45,7 @@
       "editorLines": 14,
       "descFile": "102_incipit_step-03-desc.html",
       "prefillFile": "102_incipit_step-03-prefill.xml",
-      "xmlFile": "102_incipit_step-03.xml",
+      "xmlFile": "../tutorials/102_incipit_step-03.xml",
       "xpaths": [
         {"rule": "count(//mei:section) = 1", "renderanyway": false, "hint": "Vous avez besoin d'un élément section."},
         {"rule": "count(//mei:section/@*) = 0", "renderanyway": false, "hint": "Vous n'avez pas besoin d'un attribut pour l'élément section."},
@@ -68,7 +68,7 @@
       "editorLines": 15,
       "descFile": "102_incipit_step-04-desc.html",
       "prefillFile": "102_incipit_step-04-prefill.xml",
-      "xmlFile": "102_incipit_step-04.xml",
+      "xmlFile": "../tutorials/102_incipit_step-04.xml",
       "xpaths": [
         {"rule": "count(//mei:note) = 1", "renderanyway": false, "hint": "Vous avez besoin d'un élément note."},
         {"rule": "count(//mei:note/@*) = 3", "renderanyway": false, "hint": "Vous avez besoin de trois attributs (@pname, @oct a& @dur) pour l'élément note."},
@@ -82,7 +82,7 @@
       "editorLines": 18,
       "descFile": "102_incipit_step-05-desc.html",
       "prefillFile": "102_incipit_step-05-prefill.xml",
-      "xmlFile": "102_incipit_step-05.xml",
+      "xmlFile": "../tutorials/102_incipit_step-05.xml",
       "xpaths": [
         {"rule": "count(//mei:section) = 1", "renderanyway": false, "hint": "Vous aves besoin d'un élément section."},
         {"rule": "count(//mei:section/@*) = 0", "renderanyway": false, "hint": "Dans cet exercice, vous n'avez pas besoin d'attribut pour l'élément section."},
@@ -120,7 +120,7 @@
       "editorLines": 12,
       "descFile": "102_incipit_step-06-desc.html",
       "prefillFile": "102_incipit_step-06-prefill.xml",
-      "xmlFile": "102_incipit_step-06.xml",
+      "xmlFile": "../tutorials/102_incipit_step-06.xml",
       "xpaths": [
         {"rule": "count(//mei:measure) = 2", "renderanyway": false, "hint": "Vous avez besoin d'un élément measure."},
         {"rule": "count(//mei:measure[2]/@*) = 1", "renderanyway": false, "hint": "Vous avez besoin d'un attribut @n pour l'élément measure."},
@@ -156,7 +156,7 @@
       "editorLines": 14,
       "descFile": "102_incipit_step-07-desc.html",
       "prefillFile": "102_incipit_step-07-prefill.xml",
-      "xmlFile": "102_incipit_step-07.xml",
+      "xmlFile": "../tutorials/102_incipit_step-07.xml",
       "xpaths": [
         {"rule": "count(//mei:measure) = 2", "renderanyway": false, "hint": "Vous avez besoin d'un élément measure."},
         {"rule": "count(//mei:measure[2]/@*) = 1", "renderanyway": false, "hint": "Vous avez besoin d'un attribut @n pour l'élément measure."},
@@ -204,7 +204,7 @@
       "editorLines": 14,
       "descFile": "102_incipit_step-08-desc.html",
       "prefillFile": "102_incipit_step-08-prefill.xml",
-      "xmlFile": "102_incipit_step-08.xml",
+      "xmlFile": "../tutorials/102_incipit_step-08.xml",
       "xpaths": [
         {"rule": "count(//mei:measure) = 3", "renderanyway": false, "hint": "Vous avez besoin d'un élément measure."},
         {"rule": "count(//mei:measure[3]/@*) = 1", "renderanyway": false, "hint": "Vous avez besoin d'un attribut @n pour measure."},
@@ -252,7 +252,7 @@
       "editorLines": 14,
       "descFile": "102_incipit_step-09-desc.html",
       "prefillFile": "102_incipit_step-09-prefill.xml",
-      "xmlFile": "102_incipit_step-09.xml",
+      "xmlFile": "../tutorials/102_incipit_step-09.xml",
       "xpaths": [
         {"rule": "count(//mei:measure) = 5", "renderanyway": false, "hint": "Vous avez besoin de deux éléments measure."},
         {"rule": "//mei:measure[4]/following-sibling::mei:measure", "renderanyway": false, "hint": "Les éléments measure doivent s'écrire les uns à la suite des autres."},
@@ -325,7 +325,7 @@
       "editorLines": 50,
       "descFile": "102_incipit_step-10-desc.html",
       "prefillFile": "102_incipit_step-10-prefill.xml",
-      "xmlFile": "102_incipit_step-10.xml",
+      "xmlFile": "../tutorials/102_incipit_step-10.xml",
       "xpaths": [
         {"rule": "count(//mei:measure) = 5", "renderanyway": false, "hint": "Vous avez besoin de trois éléments measure."},
         {"rule": "//mei:measure[4]/following-sibling::mei:measure", "renderanyway": false, "hint": "Les éléments measure doivent s'écrire les uns après les autres."},
@@ -408,7 +408,7 @@
       "editorLines": 10,
       "descFile": "102_incipit_step-11-desc.html",
       "prefillFile": "102_incipit_step-11-prefill.xml",
-      "xmlFile": "102_incipit_step-11.xml",
+      "xmlFile": "../tutorials/102_incipit_step-11.xml",
       "xpaths": [
         {"rule": "count(//mei:measure[@n=0]) = 1", "renderanyway": false, "hint": "Vous avez besoin d'un élément measure comportant un attribut @n avec la valeur \"0\"."},
         {"rule": "//mei:measure[1]/mei:staff", "renderanyway": false, "hint": "Vous avez besoin d'un élément staff à l'intérieur d'un élément measure."},
@@ -436,7 +436,7 @@
       "editorLines": 25,
       "descFile": "102_incipit_step-12-desc.html",
       "prefillFile": "102_incipit_step-12-prefill.xml",
-      "xmlFile": "102_incipit_step-12.xml",
+      "xmlFile": "../tutorials/102_incipit_step-12.xml",
       "xpaths": [
         {"rule": "count(//mei:measure[@n=3]) = 1", "renderanyway": false, "hint": "Vous avez besoin d'un élément measure avec un attribut @n = 3."},
         {"rule": "//mei:measure[4]/mei:staff", "renderanyway": false, "hint": "Vous avez besoin d'un élément staff dans l'élément measure."},
@@ -481,16 +481,16 @@
         {"rule": "//mei:measure[4]/mei:staff/mei:layer/mei:note/mei:artic/@artic = 'acc'", "renderanyway": false, "hint": "Dans l'élément measure @n=3, vous avez besoin d'un attribut @artic avec la valeur \"acc\" pour l'élément artic."},
         {"rule": "//mei:measure[4]/mei:staff/mei:layer/mei:note/mei:artic/@place = 'above'", "renderanyway": false, "hint": "Dans l'élément measure @n=3, vous avez besoin d'un attribut @place avec la valeur \"above\" pour l'élément artic."},
         {"rule": "count(//mei:measure[4]/mei:staff/mei:layer/mei:beam[1]/mei:note[1]/@*) = 4", "renderanyway": false, "hint": "Vous avez besoin de quatre attributs (@pname, @oct, @dur & @xml:id) pour le premier élément note du premier élément beam."},
-        {"rule": "//mei:measure[4]/mei:staff/mei:layer/mei:beam[1]/mei:note[1]/@*[name()='xml:id'] = 'd1e4614'", "renderanyway": false, "hint": "Vous avez besoin d'un attribut @xml:id avec la valeur \"d1e4614\" pour le premier élément note du premier élément beam."},
+        {"rule": "//mei:measure[4]/mei:staff/mei:layer/mei:beam[1]/mei:note[1]/@*[name()='xml:id'] = 'd4567'", "renderanyway": false, "hint": "Vous avez besoin d'un attribut @xml:id avec la valeur \"d4567\" pour le premier élément note du premier élément beam."},
         {"rule": "count(//mei:measure[4]/mei:staff/mei:layer/mei:beam[1]/mei:note[2]/@*) = 4", "renderanyway": false, "hint": "Vous avez besoin de quatre attributs (@pname, @oct, @dur & @xml:id) pour le second élément note du premier élément beam."},
-        {"rule": "//mei:measure[4]/mei:staff/mei:layer/mei:beam[1]/mei:note[2]/@*[name()='xml:id'] = 'd1e4615'", "renderanyway": false, "hint": "Vous avez besoin d'un attribut @xml:id avec la valeur \"d1e4615\"  pour le second élément note du premier élément beam."},
+        {"rule": "//mei:measure[4]/mei:staff/mei:layer/mei:beam[1]/mei:note[2]/@*[name()='xml:id'] = 'd4568'", "renderanyway": false, "hint": "Vous avez besoin d'un attribut @xml:id avec la valeur \"d4568\"  pour le second élément note du premier élément beam."},
         {"rule": "count(//mei:measure[4]/mei:slur) = '1'", "renderanyway": false, "hint": "Vous avez besoin d'un élément slur comme enfant de measure."},
         {"rule": "//mei:measure[4]/mei:staff/following-sibling::mei:slur", "renderanyway": false, "hint": "L'élément slur doit suivre l'élément staff."},
         {"rule": "count(//mei:measure[4]/mei:slur/@*) = 4", "renderanyway": false, "hint": "Vous avez besoin de quatre attributs (@staff, @curvedir, @startid & @endid) pour l'élément slur."},
         {"rule": "//mei:measure[4]/mei:slur/@staff = '1'", "renderanyway": false, "hint": "Vous avez besoin d'un attribut @staff avec la valeur \"1\" pour l'élément slur."},
         {"rule": "//mei:measure[4]/mei:slur/@curvedir = 'above'", "renderanyway": false, "hint": "Vous avez besoin d'un attribut @curvedir avec la valeur \"above\" pour l'élément slur."},
-        {"rule": "//mei:measure[4]/mei:slur/@startid = '#d1e4614'", "renderanyway": false, "hint": "Vous avez besoin d'un attribut @startid avec la valeur \"#d1e4614\" pour l'élément slur."},
-        {"rule": "//mei:measure[4]/mei:slur/@endid = '#d1e4615'", "renderanyway": false, "hint": "Vous avez besoin d'un attribut @endid avec la valeur \"#d1e4615\" pour l'élément slur."}
+        {"rule": "//mei:measure[4]/mei:slur/@startid = '#d4567'", "renderanyway": false, "hint": "Vous avez besoin d'un attribut @startid avec la valeur \"#d4567\" pour l'élément slur."},
+        {"rule": "//mei:measure[4]/mei:slur/@endid = '#d4568'", "renderanyway": false, "hint": "Vous avez besoin d'un attribut @endid avec la valeur \"#d4568\" pour l'élément slur."}
       ]
     }
   ],

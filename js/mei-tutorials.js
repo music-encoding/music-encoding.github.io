@@ -51,12 +51,12 @@ var LANG; //this will be used to store the current language
 var tutorialStrings = {
     'codeNotWellformed': {
         'EN': 'Your code is not well-formed.',
-        'EN': 'Your code is not well-formed.',
+        'FR': 'Votre code n\'est pas bien formé.',
         'ES': 'Su código no está bien formado.'
     },
     'fetchOperationProblem': {
         'EN': 'There has been a problem with the fetch operation for:',
-        'EN': 'There has been a problem with the fetch operation for:',
+        'FR': 'Une erreur est survenue lors de l\'opération de récupération pour :',
         'ES': 'Ha habido un problema con la operación fetch para:'
     },
     'finish': {
