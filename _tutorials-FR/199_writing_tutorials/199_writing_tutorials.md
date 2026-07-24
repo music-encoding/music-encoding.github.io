@@ -1,7 +1,7 @@
 ---
 layout: tutorials-FR
 type: tutorial-FR
-name: "META : Écrire des tutoriels"
-fullname: "Une introduction à l'écriture des tutoriels sur la MEI"
+name: "META : Rédaction de tutoriels"
+fullname: "Une introduction à la rédaction de tutoriels sur la MEI"
 data: "199_writing_tutorials.json"
 ---
