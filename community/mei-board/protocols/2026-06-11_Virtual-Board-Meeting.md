@@ -20,7 +20,7 @@ Discussion
     - Approx. 90 people attended in person and around 30 attended online
     - David Lewis is putting the conference proceedings together
 
-- iscussion from MEC community meeting
+- Discussion from MEC community meeting
     - Community is still interested in identifying a communication platform that is not Slack
     - MEI Board will identify requirements and scope for a communication platform to begin the process
 
