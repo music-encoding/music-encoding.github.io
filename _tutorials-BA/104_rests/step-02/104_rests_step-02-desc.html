@@ -1,0 +1,16 @@
+<div>
+    <p>
+        Very often, a rest is supposed to fill up a complete measure, independent of the meter. 
+        Of course it is possible to use regular <code>&lt;rest&gt;</code> elements with the proper
+        duration(s) for that – in case of a meter of 4/4, this would be just a 
+        <code>&lt;rest dur="1"/&gt;</code>. However, in other meters this may require more markup.
+        For that reason, MEI has a special element called <code>&lt;mRest/&gt;</code> – a 
+        <i>measure rest</i>. This element needs no <code>@dur</code> attribute (even though it's 
+        technically allowed to facilitate analytical processing), and will always fill up a 
+        complete measure, independent of the meter. Therefore, you should not combine it with 
+        other events in the same measure. 
+    </p>
+    <p class="task">
+        Please turn the whole rest (which does not fit the meter) into an <code>&lt;mRest/&gt;</code>.
+    </p>
+</div>

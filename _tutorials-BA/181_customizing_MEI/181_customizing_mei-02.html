@@ -1,0 +1,54 @@
+<div>
+    <p>
+        For the following steps, you should open the 
+        <a href="https://meigarage.edirom.de/profiler" target="_blank" rel="noopener, noreferrer">MEI ProfileDrafter</a>
+        in a separate browser window (or tab) to follow along with these instructions. 
+    </p>
+    <!--<div>
+        <img style="width: 100%;" src="./profileDrafter_overview.png"/>
+    </div>-->
+    <p>
+        When you open the ProfileDrafter, you will see a list of all MEI Modules in the center column. For each, 
+        the number of elements and attribute classes in that module is given. Individual modules can be turned off
+        by unchecking the checkbox left to their name. Please disallow some MEI modules by unchecking them.  
+    </p>
+    <p>
+        It is fairly simple to (de-)select MEI modules, isn't it? However, by using this checkbox only, you get very little
+        feedback on the consequences of your choices – the user interface isn't really telling you what you're taking out of 
+        the schema with these selections. However, each module box also has a <em>customize</em>-button in its top-right corner. 
+        When clicking this button, the list of modules in the center column is replaced by a list of all elements and attribute classes
+        that are part of the current module. Please note that this is only possible for modules that you haven't excluded for the schema.
+    </p>
+    <p>    
+        If you click to customize the <em>MEI.cmnOrnaments</em> module, you will see a list with
+        the &lt;mordent&gt;, &lt;trill&gt;, and &lt;turn&gt; elements, and the <em>att.mordent.log</em>, <em>att.ornamentAccid</em>,
+        <em>att.ornamPresent</em>, <em>att.trill.log</em>, and <em>att.turn.log</em> attribute classes. Again, you can unselect any 
+        of those, depending on your specific needs. While on the last screen, you've been able to turn off modules in full, here you 
+        can make selective choices, narrowing down MEI to your very needs. If, for whatever reason, you need a version of MEI that allows
+        you to encode &lt;trill&gt;s, but does not support &lt;mordent&gt;s and &lt;turn&gt;s, you can easily turn off those two elements,
+        but keep the <em>MEI.cmnOrnaments</em> module as such. Looking at "larger" modules like <em>MEI.cmn</em>, <em>MEI.header</em>, or
+        <em>MEI.edittrans</em>, it is easy to envision more practical use cases for this selective exclusion of elements. 
+    </p>
+    <p>
+        As with elements, it is possible to <strong>disallow attribute classes</strong> in this module overview. However, this requires 
+        a good understanding of the available classes and their nesting. For most users (and use cases), it will be more practical to 
+        do this from a slightly different perspective. On each element, there is a <em>set attributes</em>-button. If you click that button,
+        the content of the main column is yet again replaced with different content. This time, you will find a listing of all 
+        attributes available on that element. The layout of this listing follows the attribute classes that this element is a member of.
+        Each attribute class has a checkbox that can be used to turn it off. If you unselect an attribute class, it will not only
+        remove the attributes defined within that class, but will also suppress all other attribute classes inherited through the class
+        hierarchy – including all attributes defined by those. For instance, if you uncheck the <em>att.basic</em> attribute class (which
+        is available on every element in MEI through the <em>att.common</em> class), this will not only remove the <em>@xml:base</em> 
+        attribute, but also the <em>att.id</em> class, and through this the <em>@xml:id</em> attribute. After doing this on any element
+        of your choice, you should navigate to another element. You will notice there that the same attribute class is already turned 
+        off: All those options are properly coordinated. This includes the attribute classes listed at the level of individual modules.   
+    </p>
+    <p>
+        With the options to turn off <strong>modules</strong>, individual <strong>elements</strong>, and specific <strong>attribute 
+            classes</strong>, it is already possible to restrict the MEI schema considerably, making it a better fit for the specific
+        needs of any given project, and help that project to avoid inconsistency and other encoding problems. As the MEI ProfileDrafter 
+        allows to start from multiple official MEI customizations, it is fairly simple to generate a custom version of MEI that further 
+        restricts the MEI CMN profile (or any other cusotmization). In the next step of this tutorial, we will see how to make use of
+        this customization. 
+    </p>    
+</div>

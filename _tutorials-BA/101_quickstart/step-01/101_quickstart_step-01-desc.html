@@ -1,0 +1,25 @@
+<div>
+    <p>In order to encode a note, all relevant information needs to be recorded in machine-readable form. Depending
+        on a project's needs, the selection of what is relevant and what is not may differ, but for the purpose of 
+        this introduction, let's agree on the most basic information of a note: It's written pitch and duration. In 
+        order to express pitch, MEI uses 
+        <a href="https://en.wikipedia.org/wiki/Scientific_pitch_notation" target="_blank" rel="noopener, noreferrer">Scientific Pitch Notation</a>,
+        where the so-called middle-C is expressed as "C4". However, it separates that into two separate pieces of 
+        information: The pitch name (in MEI called <code>@pname</code>), and the octave (<code>@oct</code>). This separation has
+        various reasons, which are of no importance here. It is also important to note that pitch names are given as
+        lower-case strings in MEI.</p>
+    <p>The other important information is, of course, duration (<code>@dur</code>). Here, simple integer values are used
+        to indicate the duration of a note. A full note gets a value of <code>1</code>, a half note needs <code>2</code>,
+        a quarter <code>4</code> and so on.</p>
+    <p class="task">We would like to ask you to enter the following code into the editor box: 
+        <code>&lt;note pname="e" oct="4" dur="4"/&gt;</code>. You should then see the note rendered. You may play a little
+        bit with the attribute values to see how they influence the rendering. You will also see hints on how to write the
+        correct code. Whenever you're ready, make sure to have the correct code in the editor, and then hit the "continue" 
+        button on the lower right.</p>
+    <p>
+        PS: If you're not too familiar with XML: Whenever we refer to attributes, we prepend their name with the @-sign. 
+        This is common practice and originates in the <a href="https://en.wikipedia.org/wiki/XPath" target="_blank" rel="noopener, noreferrer">XPath</a>
+        language. When writing them in XML, you must not include the @-sign, but write the attribute's name only. Feel
+        free to have a look at our <a href="/tutorials/100-structure.html" target="_blank" rel="noopener, noreferrer">tutorial on XML basics</a>.
+    </p>
+</div>

@@ -1,0 +1,14 @@
+<div>
+    <p class="tutorialGoal">Step ten: adding the articulation signs to your encoding of the example.</p>
+
+    <p>Awesome! You have encoded the whole melodic line of the example. Now, let's consider the missing additional elements, such as dynamics, slurs or accents, step by step.</p>
+
+    <p>Articulations, i.e. indications of how to play a note or chord, can be encoded with <code>&lt;artic&gt;</code> elements that are applied as children to <code>&lt;note&gt;</code> elements.
+    The following attributes on <code>&lt;artic&gt;</code> should be used in this tutorial step:</p>
+    <ul>
+        <li><code>@artic</code> (articulation type) – the type of articulation mark, e.g.: accent <code>“acc”</code>, staccato <code>“stacc”</code>, tenuto <code>“ten”</code>, use <code>“acc”</code> here,</li>
+        <li><code>@place</code> – position of the articulation sign, <code>“above”</code> or <code>“below”</code> the staff, use <code>“above”</code> here.</li>
+    </ul>
+
+    <p class="task">Please find the <code>&lt;note&gt;</code> elements in the example to which articulations are assigned (there are musical accents on the dotted quarter notes in measure 1 & 2 as well as on the quarter note in measure 3). Add a child element <code>&lt;artic&gt;</code> to these <code>&lt;note&gt;</code> elements and apply the corresponding attributes (<code>@artic</code>, <code>@place</code>).</p>
+</div>

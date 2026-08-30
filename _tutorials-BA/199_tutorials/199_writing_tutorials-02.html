@@ -1,0 +1,37 @@
+<div>
+    <p>
+        Like the rest of our website, all tutorials are served directly from a 
+        <a href="https://github.com/music-encoding/music-encoding.github.io" target="_blank">GitHub repository</a>. This has 
+        both benefits and drawbacks. A tremendous benefit is that creating a new tutorial is as easy as 
+        committing a folder to the repository (we'll explain that later, no worries). The biggest drawbacks are that
+        the interactivity required for a tutorial isn't very well supported by that technical setup, and that we 
+        cannot really validate against the MEI Schema. Both aspects have been addressed by us, and we hope that
+        our solutions balance well between the user's need for guidance and the effort that needs to go into the 
+        preparation of a tutorial. We'll come back to that later as well.
+    </p>
+    <p>
+        Now <b>let's get started</b>. Our pages are build and served by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a>. 
+        For our tutorials, this means we need a <a href="https://en.wikipedia.org/wiki/Markdown" target="_blank">Markdown</a> file
+        with the details about our tutorial that the surrounding website needs to know to embed it properly.
+        Let's have a look at the Markdown file for this very tutorial:
+    </p>
+    <pre class="codeblock">---
+layout: tutorials
+type: tutorial
+name: "Writing Tutorials"
+fullname: "An Introduction to writing MEI tutorials"
+data: "tutorials.json"
+---</pre>
+    <label>tutorials.md (Markdown file)</label>
+    <p>While the first two lines, <code>layout: tutorials</code> and <code>type: tutorial</code> always need to stay 
+        like this, the following two lines may change. What you write in here get's displayed in the list of tutorials, 
+        for instance. Please note that the very first and last line, each holding three dashes, must stay like this for
+        the tutorial to function properly.
+    </p>
+    <p>
+        As I said before, we do have to work around the limitations of our technical setup to some degree. For that
+        reason, we're referencing a file called <code>tutorials.json</code>, which lives in the same folder. The name
+        of the file doesn't matter, as long as it can be found in the same folder as the Markdown file. Let's move on 
+        to the contents of this JSON file. 
+    </p>
+</div>

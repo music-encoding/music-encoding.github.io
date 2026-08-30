@@ -1,0 +1,25 @@
+<div>
+    <p class="tutorialGoal">Step eleven: adding the dynamic marking to your encoding of the example.</p>
+
+    <p>Dynamics are defined with a <code>&lt;dynam&gt;</code> element. The <code>&lt;dynam&gt;</code> element may be used for instantaneous or continuous textual dynamics, e.g. <code>“p”</code>, <code>“mf”</code>, or <code>“cresc. poco a poco”</code>. These are placed as plain text between the opening and closing tag of the <code>&lt;dynam&gt;</code> element, like <code>&lt;dynam&gt;pp&lt;/dynam&gt;</code>.</p>
+
+    <p>Unlike articulation signs, the <code>&lt;dynam&gt;</code> element is a so-called <code>control event</code> which groups elements (such as dynamics, ties, phrase marks, pedal marks, etc.), that depend upon other events, such as notes or rests, for their validity. In general, <code>control events</code> are not encoded as child elements of the corresponding events they are meant to control. In practice, it means that they are placed outside the <code>staff</code> elements in most cases.</p>
+
+    <p>There are different options to indicate the reference to a <code>&lt;note&gt;</code> or <code>&lt;rest&gt;</code> (or any other event) from a <code>control event</code> like <code>&lt;dynam&gt;</code>:
+
+    <ul>
+        <li>At first, the <code>&lt;staff&gt;</code> to which the <code>control event</code> shall be applied, can be referenced by a <code>@staff</code> attribute.</li>
+        <li>Furthermore, the starting point of a dynamic marking must be indicated either by a <code>startid</code>, <code>tstamp</code>, <code>tstamp.ges</code>, or <code>tstamp.real</code> attribute. The ending point may be indicated by either a <code>dur</code>, <code>dur.ges</code>, <code>endid</code>, or <code>tstamp2</code> attribute. It is a semantic error not to specify a starting point attribute.</li>
+    </ul>
+
+    <p>In this example, the <code>@tstamp</code> attribute is used to indicate the starting position of the dynamic marking. <code>@tstamp</code> can be used to encode the onset time in terms of musical time, i.e. beats, as expressed in the written time signature.</p>
+
+    <p>The following attributes are the ones to be used here within <code>&lt;dynam&gt;</code>:</p>
+    <ul>
+        <li><code>@staff</code> – the identification number of the staff to which an element is applied, e.g. <code>“1”</code> in this case</li>
+        <li><code>@tstamp</code> (time stamp) – the onset time in terms of musical time, i.e. beats, e.g. <code>“1”</code>, <code>“2.5”</code>
+        <li><code>@place</code> – position of the dynamic marking, <code>“above”</code> or <code>“below”</code> the staff.</li>
+    </ul>
+
+    <p class="task">Please find the <code>&lt;note&gt;</code> elements in the example to which dynamics are assigned. Add a sibling element <code>&lt;dynam&gt;</code> to the corresponding <code>&lt;staff&gt;</code> element and apply the attributes in question (<code>@staff</code>, <code>@tstamp</code>, <code>@place</code>). Do not forget to include the <code>ff</code> sign between the opening and closing tag of <code>&lt;dynam&gt;</code>.</p>
+</div>
