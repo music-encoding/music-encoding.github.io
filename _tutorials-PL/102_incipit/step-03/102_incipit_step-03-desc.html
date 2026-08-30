@@ -1,0 +1,15 @@
+<div>
+    <p class="tutorialGoal">Krok trzeci: konfiguracja pojedynczej <code>&lt;measure&gt;</code> (miary) z pustą <code>&lt;staff&gt;</code> (pięciolinią) i <code>&lt;layer&gt;</code> (taktem).</p>
+    
+    <p>Świetna robota! Zadeklarowałaś potrzebne metadane dotyczące organizacji partytury i pięciolinii. Na drodze do zakodowania pierwszej nuty przykładu, będziesz musiała przygotować dla niej "środowisko", tj. miarę, pięciolinię i warstwę (głos).</p>
+
+    <W MEI, element <code>&lt;section&gt;</code> (część) jest kontenerem dla elementów <code>&lt;measure&gt;</code> (miary) i jest umieszczany bezpośrednio po definicji partytury (<code>&lt;scoreDef&gt;</code>). Elementy <code>&lt;measure&gt;</code> (miary) mogą zawierać wiele pięciolinii, które mogą mieć wiele warstw (<code>&lt;layer&gt;</code>). Element <code>&lt;layer&gt;</code> (warstwa) będzie elementem nadrzędnym dla elementów <code>&lt;note&gt;</code> (nuta) w następnym kroku.    
+
+
+    <p>Aby wskazać numerowaną pozycję miar, pięciolinii lub warstw, można użyć atrybutu <code>@n</code>.</p>
+
+    <p class="task">Skonfiguruj przedtakt: W edytorze wstaw element <code>&lt;section&gt;</code>. Wewnątrz elementu <code>&lt;section&gt;</code> dodaj pusty element <code>&lt;measure&gt;</code> i ustaw numerprzedtaktu na <code>"0"</code>. Dodaj element potomny <code>&lt;staff&gt;</code> do elementu <code>&lt;measure&gt;</code> i ustaw jego numer na <code>"1"</code> (pierwsza pięciolinia w miarze 0). Następnie dodaj nienumerowany element potomny <code>&lt;layer&gt;</code> do elementu <code>&lt;staff&gt;</code>.</p>
+        
+    <p>PS: Posiadając potrzebne informacje dostarczone w scoredef i section/measure, renderer jest teraz w stanie wizualizować kodowanie. Możesz trochę pobawić się wartościami atrybutów <code>&lt;scoreDef&gt;</code> i <code>&lt;staffDef&gt;</code>, aby zobaczyć, jak wpływają one na renderowanie.</p>
+    
+</div>
