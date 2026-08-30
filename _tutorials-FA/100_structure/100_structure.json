@@ -1,0 +1,81 @@
+{
+  "steps": [
+    {
+      "label":"به MEI خوش آمدید!",
+      "descFile": "100_structure_step-00-desc.html"
+    },
+    {
+      "label": "المنت اصلی MEI",
+      "editorLines": 1,
+      "descFile": "100_structure_step-01-desc.html",
+      "prefillFile": "100_structure_step-01-prefill.xml",
+      "xmlFile": "100_structure_step-01.xml",
+      "xpaths": [
+        {"rule": "count(//mei) = 1", "renderanyway": true, "hint": "یک المنت mei‌ کم دارید."}
+      ]
+    },
+    {
+      "label": "نام‌حوزه‌ی MEI",
+      "editorLines": 1,
+      "descFile": "100_structure_step-02-desc.html",
+      "prefillFile": "100_structure_step-02-prefill.xml",
+      "xmlFile": "100_structure_step-02.xml",
+      "xpaths": [
+        {"rule": "count(*[local-name()='mei']) = 1", "renderanyway": true,  "hint": "یک المنت mei‌ کم دارید."},
+        {"rule": "*[local-name()='mei' and namespace-uri()='http://www.music-encoding.org/ns/mei']", "renderanyway": true, "hint": "You need a @xmlns declaration with the mei namespace 'http://www.music-encoding.org/ns/mei'."}
+      ]
+    },
+    {
+      "label": "دو فرزند اصلی المنت ریشه‌ای",
+      "editorLines": 4,
+      "descFile": "100_structure_step-03-desc.html",
+      "prefillFile": "100_structure_step-03-prefill.xml",
+      "xmlFile": "100_structure_step-03.xml",
+      "xpaths": [
+        {"rule": "count(//*[local-name()='mei']) = 1", "renderanyway": false, "hint": "You need one mei element."},
+        {"rule": "*[local-name()='mei' and namespace-uri()='http://www.music-encoding.org/ns/mei']", "renderanyway": true, "hint": "You need a @xmlns declaration with the mei namespace 'http://www.music-encoding.org/ns/mei' in the mei element."},
+        {"rule": "count(//*[local-name()='meiHead']) = 1", "renderanyway": false, "hint": "You need one meiHead element."},
+        {"rule": "//*[local-name()='mei']/*[local-name()='meiHead']", "renderanyway": false, "hint": "meiHead has to a be child of the mei element."},
+        {"rule": "count(//*[local-name()='music']) = 1", "renderanyway": false, "hint": "You need one music element."},
+        {"rule": "//*[local-name()='mei']/*[local-name()='music']", "renderanyway": false, "hint": "music has to a be child of the mei element."},
+        {"rule": "//*[local-name()='mei']/*[local-name()='meiHead']/following-sibling::*[local-name()='music']", "renderanyway": false, "hint": "music has to follow the meiHead element."}
+      ]
+    },
+    {
+      "label": "حداقل اطلاعات در سربرگ MEI",
+      "editorLines": 11,
+      "descFile": "100_structure_step-04-desc.html",
+      "prefillFile": "100_structure_step-04-prefill.xml",
+      "xmlFile": "100_structure_step-04.xml",
+      "xpaths": [
+        {"rule": "count(//*[local-name()='mei']) = 1", "renderanyway": false, "hint": "یک المنت mei‌ کم دارید."},
+        {"rule": "*[local-name()='mei' and namespace-uri()='http://www.music-encoding.org/ns/mei']", "renderanyway": true, "hint": "باید در المنت mei، یک اعلان @xmlns داشته باشید که نام‌حوزه‌ی mei را معرفی کند."},
+        {"rule": "count(//*[local-name()='meiHead']) = 1", "renderanyway": false, "hint": "یک المنت meiHead کم دارید."},
+        {"rule": "//*[local-name()='mei']/*[local-name()='meiHead']", "renderanyway": false, "hint": "meiHead باید فرزند المنت mei باشد."},
+        {"rule": "count(//*[local-name()='music']) = 1", "renderanyway": false,"hint": "یک المنت music کم دارید."},
+        {"rule": "//*[local-name()='mei']/*[local-name()='music']", "renderanyway": false,"hint": "music باید فرزند المنت mei باشد."},
+        {"rule": "//*[local-name()='mei']/*[local-name()='meiHead']/following-sibling::*[local-name()='music']", "renderanyway": false, "hint": "music باید بعد از المنت meiHead بیاید."},
+        {"rule": "count(//*[local-name()='fileDesc']) = 1", "renderanyway": false,"hint": "یک المنت fileDesc کم دارید."},
+        {"rule": "//*[local-name()='meiHead']/*[local-name()='fileDesc']", "renderanyway": false, "hint":"fileDesc باید فرزند meiHead باشد." },
+        {"rule": "count(//*[local-name()='titleStmt']) = 1", "renderanyway": false, "hint": "یک المنت titleStmt کم دارید."},
+        {"rule": "//*[local-name()='fileDesc']/*[local-name()='titleStmt']", "renderanyway": false, "hint": "titleStmt باید فرزند fileDesc باشد."},
+        {"rule": "count(//*[local-name()='pubStmt']) = 1", "renderanyway": false, "hint": "یک المنت pubStmt کم دارید."},
+        {"rule": "//*[local-name()='fileDesc']/*[local-name()='pubStmt']", "renderanyway": false, "hint": "pubStmt باید فرزند fileDesc باشد."},
+        {"rule": "//*[local-name()='fileDesc']/*[local-name()='titleStmt']/following-sibling::*[local-name()='pubStmt']", "renderanyway": false, "hint": "pubStmt باید بعد از titleStmt بیاید."},
+        {"rule": "count(//*[local-name()='title']) = 1", "renderanyway": false, "hint": "یک المنت title کم دارید."},
+        {"rule": "//*[local-name()='titleStmt']/*[local-name()='title']", "renderanyway": false, "hint": "title باید فرزند titleStmt باشد."}
+      ]
+    }
+  ],
+  "end": "100_structure_end.html",
+  "resp":[
+    {
+      "name":"Stefan Münnich",
+      "affiliation":"Anton Webern Gesamtausgabe | University of Basel"
+    },
+    {
+      "name":"Johannes Kepper",
+      "affiliation":"Beethovens Werkstatt | Universität Paderborn"
+    }
+  ]
+}
