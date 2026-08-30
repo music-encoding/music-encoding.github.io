@@ -7,7 +7,7 @@ data: "102_incipit.json"
 ---
 Bienvenue ! Dans ce tutoriel, vous apprendrez à encoder un incipit (la séquence de notes initiale d'une œuvre musicale) en MEI, en partant de l'exemple suivant :
 
-![Hallingdal Bataljons Marsch](./102_incipit.png)
+![Hallingdal Bataljons Marsch](../tutorials/102_incipit.png)
 
 Pour information, il s'agit du début de _Hallingdal Bataljons Marsch_, l'Opus 1 du compositeur norvégien [Johan Halvorsen](https://fr.wikipedia.org/wiki/Johan_Halvorsen) (1864–1935).
 
