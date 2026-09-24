@@ -5,7 +5,7 @@ title: "Past Music Encoding Conferences"
 
 # Past Music Encoding Conferences
 
-{% assign c = site.conferences | where:"role","about" | sort: "date" | reverse %}
+{% assign c = site.conferences | where:"role","about" | sort: "date-start" | reverse %}
 
 {% comment %}
 *  The following line captures the current time (at build time!) into the `now` variable. The `date: '%s'` filter captures the date as a timestamp and `plus: 0` ensures that any string values are cast to integers.
