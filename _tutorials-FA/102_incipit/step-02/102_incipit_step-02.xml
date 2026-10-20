@@ -1,0 +1,25 @@
+<mei xmlns="http://www.music-encoding.org/ns/mei">
+    <meiHead>
+        <fileDesc>
+            <titleStmt>
+                <title type="main">March</title>
+            </titleStmt>
+            <pubStmt></pubStmt>
+        </fileDesc>
+    </meiHead>
+    <music>
+        <body>
+            <mdiv>
+                <score>
+                    <?edit-start?>
+                    <scoreDef key.sig="3f" meter.sym="cut">
+                        <staffGrp>
+                            <staffDef n="1" lines="5" clef.shape="G" clef.line="2"></staffDef>
+                        </staffGrp>
+                    </scoreDef>
+                    <?edit-end?>
+                </score>
+            </mdiv>
+        </body>
+    </music>
+</mei>

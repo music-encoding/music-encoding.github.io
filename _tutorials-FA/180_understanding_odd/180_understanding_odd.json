@@ -1,0 +1,47 @@
+{
+  "steps": [
+    {
+        "label":"Introduction",
+        "descFile": "180_understanding_odd-01.html"
+    },
+    {
+        "label":"Background",
+        "descFile": "180_understanding_odd-02.html"
+    },
+    {
+        "label":"ODD",
+        "descFile": "180_understanding_odd-03.html"
+    },
+    {
+        "label":"Modules",
+        "descFile": "180_understanding_odd-04.html"
+    },
+    {
+        "label":"Elements",
+        "descFile": "180_understanding_odd-05.html"
+    },
+    {
+        "label":"Models",
+        "descFile": "180_understanding_odd-06.html"
+    },
+    {
+        "label":"Attributes",
+        "descFile": "180_understanding_odd-07.html"
+    },
+    {
+        "label":"Datatypes",
+        "descFile": "180_understanding_odd-08.html"
+    },
+    {
+        "label":"Macros",
+        "descFile": "180_understanding_odd-09.html"
+    }
+  ],
+  "end":"180_understanding_odd-end.html",
+  "resp":[
+    {
+        "name":"Johannes Kepper",
+        "affiliation":"Beethovens Werkstatt | Universität Paderborn"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+<div>
+    <p>
+        آشکارترین بلوک‌های ساختاری برای مشخصات MEI تعاریف المنت‌ها هستند. این کار با استفاده از
+        <a href="https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-elementSpec.html" target="_blank"
+            rel="noopener, noreferrer">&lt;elementSpec&gt;</a> در TEI انجام می‌شود.
+        بیایید به المنت <a href="https://music-encoding.org/guidelines/v4/elements/castitem.html" target="_blank"
+            rel="noopener, noreferrer">&lt;castItem&gt;</a> در MEI نگاهی بیندازیم:
+    </p>
+    <pre class="codeblock">&lt;elementSpec ident="castItem" module="MEI.shared"&gt;
+            &lt;desc&gt;Contains a single entry within a cast list, describing either a single role or a list of non-speaking roles.&lt;/desc&gt;
+            &lt;classes&gt;
+                &lt;memberOf key="att.common"/&gt;
+                &lt;memberOf key="att.bibl"/&gt;
+                &lt;memberOf key="att.facsimile"/&gt;
+                &lt;memberOf key="att.lang"/&gt;
+            &lt;/classes&gt;
+            &lt;content&gt;
+                &lt;rng:oneOrMore&gt;
+                    &lt;rng:choice&gt;
+                        &lt;rng:text/&gt;
+                        &lt;rng:ref name="role" /&gt;
+                        &lt;rng:ref name="roleDesc" /&gt;
+                        &lt;rng:ref name="actor" /&gt;
+                        &lt;rng:ref name="perfRes" /&gt;
+                    &lt;/rng:choice&gt;
+                &lt;/rng:oneOrMore&gt;
+            &lt;/content&gt;
+            &lt;remarks&gt;
+                &lt;p part="N"&gt;This element is modelled on an element in the Text Encoding Initiative (TEI) standard.&lt;/p&gt;
+            &lt;/remarks&gt;
+        &lt;/elementSpec&gt;</pre>
+
+
+    <p>
+        المنت <em>&lt;castItem&gt;</em> مشخصات بسیار کوتاهی دارد، که با این حال اطلاعات زیادی در مورد آن ارائه
+        می‌دهد. اول، نام المنت در خصیصه <strong>@ident</strong> در المنت &lt;elementSpec&gt; مشخص شده است. علاوه
+        بر این، ماژولی که به آن تعلق دارد با خصیصه <strong>@module</strong> تعیین شده است. ماژول
+        <em>MEI.shared</em> که در اینجا استفاده شده است به عنوان پشتیبان برای بسیاری از المنت‌های عمومی عمل می‌کند
+        که
+        به خوبی در سایر ماژول‌ها قرار نمی‌گیرند یا برای استفاده از MEI ضروری هستند.
+    </p>
+    <p>
+        سپس یک المنت <em>&lt;desc&gt;</em> مشاهده می‌کنیم که توضیحی بسیار مختصر از هدف و دامنه المنت مورد نظر ارائه
+        می‌دهد. این اطلاعات اغلب به عنوان یک نکته راهنما در نرم‌افزارها استفاده می‌شود تا یک کدگذار را به استفاده از
+        المنت‌های مناسب راهنمایی کند. بنابراین، توضیح روشن بسیار حائز اهمیت است.
+    </p>
+    <p>
+        قطعه اطلاعات بعدی با المنت <strong>&lt;classes&gt;</strong> ارائه می‌شود، که تعیین می‌کند این المنت به کدام
+        <em>کلاس‌ها</em> تعلق دارد. ما این موضوع را در ادامه با جزئیات بیشتری بررسی خواهیم کرد، اما به طور کلی
+        این‌ها در واقع گروه‌هایی از خصیصه‌ها هستند که می‌توانند برای عناصر عضو استفاده شوند.
+    </p>
+    <p>
+        سرانجام، ویژگی <strong>content</strong> را می‌بینیم. هر المنت XML باید به وضوح تعیین کند که چه نوع محتوایی
+        ممکن است شامل شود. در اینجا، المنت می‌تواند شامل یک یا چند زیرالمنت شود که شامل <em>&lt;role&gt;</em>،
+        <em>&lt;roleDesc&gt;</em>، <em>&lt;actor&gt;</em> یا <em>&lt;perfRes&gt;</em> می‌شوند، اما متن ساده نیز
+        قابل قبول است.
+        <br>
+    </p>
+</div>

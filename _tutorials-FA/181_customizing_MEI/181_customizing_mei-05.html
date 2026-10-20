@@ -1,0 +1,65 @@
+<div>
+    <p>
+        در مرحله قبل، یاد گرفتیم که یک <code>&lt;classSpec type="atts" ident="att.basic" mode="delete"/&gt;</code>
+        می‌تواند برای حذف کلاس خصیصه <em>att.basic</em> (مانند هر کلاس دیگری) از یک سفارشی‌سازی MEI استفاده شود. خصیصه <code>@mode</code>
+        در اینجا این رفتار را تعیین می‌کند. راهنمای TEI برای کلاس خصیصه
+        <a href="https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-att.combinable.html" target="_blank" rel="noopener, noreferrer">att.combinable</a>
+        مستندات اضافی درباره مقادیر مجاز ارائه می‌دهد. این راهنما بیان می‌کند که "<em>یک پردازنده ODD باید مقادیر @mode را به این شکل پردازش کند</em>":
+    </p> 
+    <dl>
+        <dt>add</dt>
+        <dd>شیء باید ایجاد شود (پردازش هر فرزند در حالت افزودن)؛ در صورتی که شیئی با همان شناسه از قبل وجود داشته باشد، خطا ایجاد شود.</dd>
+        <dt>replace</dt>
+        <dd>این شیء به جای هر شیء موجود با همان شناسه استفاده شود و فرزندان آن شیء نادیده گرفته شوند؛ هر فرزند جدید در حالت "جایگزینی" پردازش شود.</dd>
+        <dt>delete</dt>
+        <dd>این شیء یا هر شیء موجود با همان شناسه پردازش نشود؛ در صورت ارائه هر فرزند جدید خطا ایجاد شود</dd>
+        <dt>change</dt>
+        <dd>این شیء پردازش شود و فرزندان آن و فرزندان هر شیء موجود با همان شناسه در حالت "تغییر" پردازش شوند</dd>
+    </dl>
+    <p>
+        با این روش، نه تنها امکان <em>حذف</em> کلاس‌های خصیصه از طریق سفارشی‌سازی وجود دارد، بلکه می‌توان آن را تغییر هم داد. مثلاً، در<a href="/guidelines/dev/content/introduction.html#meiprofiles" target="_blank" rel="noopener, noreferrer">سفارشی‌سازی پایه‌‌ای MEI،  </a>
+        خصیصه <code >@xml:base</code> از شِما حذف شده است. در منابع MEI، این خصیصه در کلاس خصیصه <code >att.basic</code> تعریف شده است:</p>
+    <pre class="codeblock">&lt;classSpec ident="att.basic" module="MEI.shared" type="atts"&gt;
+    &lt;desc&gt;خصیصه‌هایی که پایه کلاس att.common را تشکیل می‌دهند.&lt;/desc&gt;
+        &lt;classes&gt;
+            &lt;memberOf key="att.id"/&gt;
+        &lt;/classes&gt;
+    &lt;attList&gt;
+        &lt;attDef ident="xml:base" usage="opt"&gt;
+            &lt;desc&gt;یک مرجع URI پایه فراهم می‌کند که برنامه‌ها می‌توانند از آن برای تبدیل مراجع URI نسبی به مراجع URI مطلق استفاده کنند.&lt;/desc&gt;
+            &lt;datatype&gt;
+                &lt;rng:ref name="data.URI"/&gt;
+            &lt;/datatype&gt;
+        &lt;/attDef&gt;
+    &lt;/attList&gt;
+&lt;/classSpec&gt;</pre>
+    <p>
+        همان‌طور که مشاهده می‌کنید، کلاس <code>att.basic</code> عضوی از کلاس <code>att.id</code> بوده - که مسئول ارائه خصیصه <code>@xml:id</code>
+        برای هر المنت است. بنابراین، حذف <code>att.basic</code> از شِما، استفاده از <code>@xml:id</code>ها را در هر جایی از فایل‌هایی که با سفارشی‌سازی حاصل مطابقت دارند، غیرفعال می‌کند؛ قطعاً این، ایده خوبی نیست! در عوض، انعطاف‌پذیری ارائه‌شده از طریق <code>@mode</code>های مختلف می‌تواند برای بیان‌های دقیق‌تر در اینجا استفاده شود. مثال زیر نشان می‌دهد که چه چیزی برای سفارشی‌سازی <code>att.basic</code> برای پروفایل MEI Basic انجام شده است:
+    </p>
+    <pre class="codeblock">&lt;classSpec ident="att.basic" module="MEI.shared" type="atts" mode="replace"&gt;
+    &lt;desc&gt;خصیصه‌هایی که پایه کلاس att.common را تشکیل می‌دهند.&lt;/desc&gt;
+    &lt;classes&gt;
+        &lt;memberOf key="att.id"/&gt;
+    &lt;/classes&gt;
+&lt;/classSpec&gt;</pre>
+    <p>
+        به جای <code>mode="delete"</code>، از <code>mode="replace"</code> برای ارائه تعریف جدید برای کلاس خصیصه استفاده شده است. این کلاس خصیصه، دیگر شامل تعریف خصیصه <code>@xml:base</code> نمی‌باشد. از سوی دیگر، ممکن بود از <code>@mode="change"</code>
+        برای کلاس خصیصه استفاده شود، فرزندان کلاس‌ها حذف شوند (چون مقدار <em>تغییر</em> باعث پردازش کلاس‌های اصلی نیز می‌شود، همان‌طور که در بالا مشاهده شد)،
+        و یک <code>mode="delete"</code> اضافی برای تعریف خصیصه داده شود، همان‌طور که در مثال زیر آمده است:
+    </p>
+    <pre class="codeblock">&lt;classSpec ident="att.basic" module="MEI.shared" type="atts" mode="change"&gt;
+    &lt;attList&gt;
+        &lt;attDef ident="xml:base" mode="delete"/&gt;
+    &lt;/attList&gt;
+&lt;/classSpec&gt;</pre>
+    <p>
+        هر دو روش به نتایج یکسانی می‌رسند، بنابراین انتخاب راه‌حل بیشتر به ترجیح فرد بستگی دارد. معمولاً یک روش خوب این است که یک تعریف موجود (که همیشه از طریق راهنمای MEI در دسترس است) را به سفارشی‌سازی خود کپی کرده و سپس با دقت <code>@mode</code>ها را برای خود شیء و فرزندان آن وارد کنید. <code>@mode</code> می‌تواند در تعدادی از المنت‌های مختلف در یک سفارشی‌سازی ODD استفاده شود: <strong>&lt;elementSpec&gt;</strong>ها، <strong>&lt;remarks&gt;</strong>، <strong>&lt;classSpec&gt;</strong>ها،
+        <strong>&lt;memberOf&gt;</strong>ها، <strong>&lt;constraintSpec&gt;</strong>ها، <strong>&lt;macroSpec&gt;</strong>ها، <strong>&lt;attDef&gt;</strong>ها، <strong>&lt;valList&gt;</strong>ها، و <strong>&lt;valItem&gt;</strong>ها. برای مثال، مقادیر علائم تغییر یافته تعریف‌شده در
+        <a href="/guidelines/dev/data-types/data.ACCIDENTAL.WRITTEN.basic.html" target="_blank" rel="noopener, noreferrer">data.ACCIDENTAL.WRITTEN.basic</a>
+        نه تنها شامل مقادیری مانند <em>s</em> (دیز) و <em>f</em> (بمل) می‌شوند، بلکه شامل <em>tf</em> (برای سه بمل) نیز هستند. در پروژه‌هایی که بر روی مواد فاقد چنین علائم تغییر یافته کار می‌کنند، ممکن است ایده خوبی باشد که آنها را به طور کامل از شِما حذف کنند، به طوری که کسی نتواند آنها را بدون ایجاد خطای اعتبارسنجی وارد کند.
+    </p>
+    <p>
+        یک نوع تغییر نهایی وجود دارد که این آموزش قرار است پوشش دهد. این را در مرحله بعد پیدا خواهید کرد.
+    </p>
+</div>
