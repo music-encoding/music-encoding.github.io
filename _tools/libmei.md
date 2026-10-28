@@ -3,7 +3,7 @@ layout: tools
 title: "LibMEI"
 subtitle: "C++ library for MEI"
 image:
-website:
+website: https://ddmal.music.mcgill.ca/software/LibMEI/
 repository: https://github.com/DDMAL/libmei
 tags: [developers, library]
 ---
