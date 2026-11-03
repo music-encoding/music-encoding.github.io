@@ -1,0 +1,31 @@
+{
+  "steps": [
+    {
+        "label":"Bienvenue",
+        "descFile": "199_writing_tutorials-01.html"
+    },
+    {
+        "label":"Configuration du site web",
+        "descFile": "199_writing_tutorials-02.html"
+    },
+    {
+        "label":"Le fichier JSON",
+        "descFile": "199_writing_tutorials-03.html"
+    },
+    {
+        "label":"L'éditeur",
+        "descFile": "199_writing_tutorials-04.html"
+    },
+    {
+        "label":"Validation",
+        "descFile": "199_writing_tutorials-05.html"
+    }
+  ],
+  "end":"199_writing_tutorials-end.html",
+  "resp":[
+    {
+        "name":"Johannes Kepper",
+        "affiliation":"Beethovens Werkstatt | Universität Paderborn"
+    }
+  ]
+}
