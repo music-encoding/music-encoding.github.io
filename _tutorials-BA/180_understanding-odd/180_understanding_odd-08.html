@@ -1,0 +1,159 @@
+<div>
+    <p>
+        Most data types in ODD are following common, well-established concepts: There are integers, boolean values, strings, and 
+        so on. Let's have a closer look at some of them. The <em>@n</em> attribute is defined within the 
+        <em><a href="https://music-encoding.org/guidelines/v4/attribute-classes/att.ninteger.html">att.nInteger</a></em> attribute 
+        class:        
+    </p>
+    <pre class="codeblock">&lt;attDef ident="n" usage="opt"&gt;
+    &lt;desc&gt;Provides a numeric designation that indicates an element's position in a sequence of similar elements. Its value must be a non-negative integer.&lt;/desc&gt;
+    &lt;datatype maxOccurs="1" minOccurs="1"&gt;
+        &lt;rng:data type="nonNegativeInteger"/&gt;
+    &lt;/datatype&gt;
+&lt;/attDef&gt;</pre>
+    <p>
+        This is using a <em>&lt;data&gt;</em> element from the <em>rng:</em> namespace, where <em>@type</em> uses a value defined within
+        RelaxNG. The <em>@maxOccurs</em> and <em>@minOccurs</em> attributes define how often a value of this type may be given. An 
+        example for other values can be found for the <em>@staff</em> attribute defined in <em>att.staffIdent</em>. This attribute
+        is used to associate 
+        <a href="https://music-encoding.org/guidelines/v4/content/introduction.html#eventsControlevents" target="_blank" rel="noopener, noreferrer">controlevents</a>
+        with one or more staves, and may hold one or more integers. It uses 
+        <a href="https://music-encoding.org/guidelines/v4/attribute-classes/att.staffident.html" target="_blank" rel="noopener, noreferrer">the following markup</a> to achieve this:
+    </p>
+    <pre class="codeblock">&lt;datatype maxOccurs="unbounded" minOccurs="1"&gt;
+    &lt;rng:data type="positiveInteger"/&gt;
+&lt;/datatype&gt;</pre>
+    <p>
+        In other cases, MEI defines its own datatypes. This is done with a
+        <a href="https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-macroSpec.html" target="_blank" rel="noopener, noreferrer">&lt;macroSpec&gt;</a> element.
+        Let's have a look at the 
+        <em><a href="https://music-encoding.org/guidelines/v4/data-types/data.barrendition.html" target="_blank" rel="noopener, noreferrer">data.BARRENDITION</a></em> 
+        data type, which is used to define the appearance of barlines: 
+    </p>
+    <pre class="codeblock">&lt;macroSpec ident="data.BARRENDITION" module="MEI" type="dt"&gt;
+    &lt;desc&gt;Renderings of bar lines. Some values correspond to the Western Musical Symbols portion of the Unicode Standard.&lt;/desc&gt;
+    &lt;content&gt;
+        &lt;valList type="closed"&gt;
+            &lt;valItem ident="dashed"&gt;
+                &lt;desc&gt;Dashed line (Unicode 1D104).&lt;/desc&gt;
+            &lt;/valItem&gt;
+            &lt;valItem ident="dotted"&gt;
+                &lt;desc&gt;Dotted line.&lt;/desc&gt;
+            &lt;/valItem&gt;
+            &lt;valItem ident="dbl"&gt;
+                &lt;desc&gt;(Unicode 1D101).&lt;/desc&gt;
+            &lt;/valItem&gt;
+            &lt;valItem ident="dbldashed"&gt;
+                &lt;desc&gt;Double dashed line.&lt;/desc&gt;
+            &lt;/valItem&gt;
+            &lt;valItem ident="dbldotted"&gt;
+                &lt;desc&gt;Double dotted line.&lt;/desc&gt;
+            &lt;/valItem&gt;
+            &lt;valItem ident="end"&gt;
+                &lt;desc&gt;(Unicode 1D102).&lt;/desc&gt;
+            &lt;/valItem&gt;
+            &lt;valItem ident="invis"&gt;
+                &lt;desc&gt;Bar line not rendered.&lt;/desc&gt;
+            &lt;/valItem&gt;
+            &lt;valItem ident="rptstart"&gt;
+                &lt;desc&gt;Repeat start (Unicode 1D106).&lt;/desc&gt;
+            &lt;/valItem&gt;
+            &lt;valItem ident="rptboth"&gt;
+                &lt;desc&gt;Repeat start and end.&lt;/desc&gt;
+            &lt;/valItem&gt;
+            &lt;valItem ident="rptend"&gt;
+                &lt;desc&gt;Repeat end (Unicode 1D107).&lt;/desc&gt;
+            &lt;/valItem&gt;
+            &lt;valItem ident="single"&gt;
+                &lt;desc&gt;(Unicode 1D100).&lt;/desc&gt;
+            &lt;/valItem&gt;
+        &lt;/valList&gt;
+    &lt;/content&gt;
+&lt;/macroSpec&gt;</pre>
+    <p>
+        Again, the <em>@ident</em> and <em>@module</em> attributes are used as we've seen elsewhere before, as is the
+        <em>&lt;desc&gt;</em> child element. What is important is the <em>@type</em> attribute with a value of "<em>dt</em>" (data type).
+        By convention, all data type names are prefixed with "<em>data.</em>", and the following name is given in all capitals.
+        We then have a <em>value list</em>, which in this case is closed. This means that all possible values are enumerated here. In 
+        other cases, a <em>@type</em> of "<em>semi</em>" indicates a semi-open list. Such a list provides recommendations,
+        but allows a user to come up with custom values when none of the suggestions match the current situation. This typically provides 
+        a good balance between ensuring consistency and allowing on-demand extensibility of the schema.  
+    </p>
+    <p>
+        Like with <em>model</em> and <em>attribute classes</em>, data types may be nested. One example for this is the
+        <em><a href="https://music-encoding.org/guidelines/v4/data-types/data.noteheadmodifier.html" target="_blank" rel="noopener, noreferrer">data.NOTEHEADMODIFIER</a></em>
+        data type: 
+    </p>
+    <pre class="codeblock">&lt;macroSpec ident="data.NOTEHEADMODIFIER" module="MEI" type="dt"&gt;
+    &lt;desc&gt;Captures any notehead "modifiers"; that is, symbols added to the notehead, such as slashes, lines, text, and enclosures, etc.&lt;/desc&gt;
+    &lt;content&gt;
+        &lt;rng:choice&gt;
+            &lt;rng:ref name="data.NOTEHEADMODIFIER.list" /&gt;
+            &lt;rng:ref name="data.NOTEHEADMODIFIER.pat" /&gt;
+        &lt;/rng:choice&gt;
+    &lt;/content&gt;
+&lt;/macroSpec&gt;</pre>
+    <p>
+        This means that an attribute that uses the <em>data.NOTEHEADMODIFIER</em> data type will accept values that will follow
+        the rules of either the <em>data.NOTEHEADMODIFIER.list</em> or <em>data.NOTEHEADMODIFIER.pat</em> data types. 
+    </p>
+    <p>
+        One last data type that we'd like to introduce is <em>data.COLORVALUES</em>, which is used by <em>data.COLOR</em>, which
+        in turn is used to control the values of attributes like <em>@color</em> (through 
+        <em><a href="https://music-encoding.org/guidelines/v4/attribute-classes/att.color.html" target="_blank" rel="noopener, noreferrer">att.color</a></em>) 
+        or <em>@beam.color</em> (through 
+        <em><a href="https://music-encoding.org/guidelines/v4/attribute-classes/att.beaming.vis.html" target="_blank" rel="noopener, noreferrer">att.beaming.vis</a></em>).
+        It uses a set of <em>regular expressions</em> to control different color encoding mechanisms:
+    </p>
+    <pre class="codeblock">&lt;macroSpec ident="data.COLORVALUES" module="MEI" type="dt"&gt;
+    &lt;desc&gt;Parameterized color values&lt;/desc&gt;
+    &lt;content&gt;
+        &lt;rng:choice&gt;
+            &lt;rng:data type="token"&gt;
+                &lt;rng:param name="pattern"&gt;#[0-9A-Fa-f]{6,6}&lt;/rng:param&gt;
+            &lt;/rng:data&gt;
+            &lt;rng:data type="token"&gt;
+                &lt;rng:param name="pattern"&gt;#[0-9A-Fa-f]{8,8}&lt;/rng:param&gt;
+            &lt;/rng:data&gt;
+            &lt;rng:data type="token"&gt;
+                &lt;rng:param name="pattern"&gt;
+                    rgb\((\s*(([01]?[0-9]?[0-9])|2[0-4][0-9]|25[0-5])\s*,\s*){2}
+                    ([01]?[0-9]?[0-9]|2[0-4][0-9]|25[0-5])\s*\)
+                &lt;/rng:param&gt;
+            &lt;/rng:data&gt;
+            &lt;rng:data type="token"&gt;
+                &lt;rng:param name="pattern"&gt;
+                    rgba\(\s*(([01]?[0-9]?[0-9]|2[0-4][0-9]|25[0-5])\s*,\s*){3}(
+                    0(\.\d+)?|1(\.0+)?)\s*\)|rgba\(\s*(((\d{1,2})?%|100%)\s*,\s*
+                    ){2}(\d{1,2}%|100%)\s*,\s*(0(\.\d+)?|1(\.0+)?)\s*\)
+                &lt;/rng:param&gt;
+            &lt;/rng:data&gt;
+            &lt;rng:data type="token"&gt;
+                &lt;rng:param name="pattern"&gt;
+                    hsl\(\s*((\d{1,2})|[12]\d{2}|3[0-5]\d|360)\s*,\s*(\d{1,2}%|1
+                    00%)\s*,\s*(\d{1,2}%|100%)\s*\)
+                &lt;/rng:param&gt;
+            &lt;/rng:data&gt;
+            &lt;rng:data type="token"&gt;
+                &lt;rng:param name="pattern"&gt;
+                    hsla\(\s*(\d{1,2}|[12]\d{2}|3[0-5]\d|360)\s*,\s*(\d{1,2}%|10
+                    0%)\s*,\s*(\d{1,2}%|100%)\s*,\s*(0(\.\d+)?|1(\.0+)?)\s*\)
+                &lt;/rng:param&gt;
+            &lt;/rng:data&gt;
+        &lt;/rng:choice&gt;
+    &lt;/content&gt;
+&lt;/macroSpec&gt;</pre>
+    <p>
+        The <em>&lt;rng:choice&gt;</em> around the different <em>&lt;rng:data&gt;</em> elements states that a value of
+        the <em>@color</em> attribute must follow either one of the contained regex patterns.
+        Explaining the semantics of <u>reg</u>ular <u>ex</u>pressions is clearly out of scope for this tutorial – in essence, it
+        is a way to describe a pattern for a string, and can be used to check wether that string matches the pattern or not.
+        A nice starting point into regular expressions is the <strong>Regex Crossword</strong>, available from 
+        <a href="https://regexcrossword.com/" target="_blank" rel="noopener, noreferrer">https://regexcrossword.com/</a>. 
+    </p>
+    <p>
+        There are many other data types that can be used, but as nesting typically isn't as deep as with <em>model</em> or
+        <em>attribute classes</em>, data types are often considered to be more accessible when getting into ODD – there is 
+        surely less to learn. So let's move on to <em>Macros</em>.
+    </p>
+</div>

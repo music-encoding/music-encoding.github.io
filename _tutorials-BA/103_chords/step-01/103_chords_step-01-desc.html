@@ -1,0 +1,38 @@
+<div>
+    <p class="tutorialGoal">
+        Step one: provide some notes for a chord.
+    </p>
+    <p>
+        In MEI, the notion of a chord means the "simultaneous sounding of two or more notes in the same layer with the
+        same duration" (see <a href="https://music-encoding.org/guidelines/v4/elements/chord.html" target="_blank" rel="noopener, noreferrer">Element specification</a>).
+        Thus, a chord is made up of two or more note elements that belong to the same voice (layer) and have an identical
+        rhythmical structure (duration). (There are cases where you don't want to have the same duration on every note
+        of a chord, but these are not part of this basic tutorial.)
+    </p>
+    <p>
+        To encode such a "simultaneous sounding", the <code>&lt;chord&gt;</code> element is used in MEI. Its use is pretty
+        straightforward: Multiple <code>&lt;note&gt;</code> elements within the same layer are enclosed by a <code>&lt;chord&gt;</code>
+        element and the duration attribute (@dur) is moved from the <code>&lt;note&gt;</code>s to the <code>&lt;chord&gt;</code>
+        element (since the duration is the same for all notes). However, whether you write an outer <code>&lt;chord&gt;</code>
+        element first to add some inner <code>&lt;note&gt;</code> elements, or whether you start with the <code>&lt;note&gt;</code>s
+        and then enclose them in a <code>&lt;chord&gt;</code> element, does not actually matter in practice.
+    </p>
+    <p>
+        For this tutorial, let's stick to the second approach: This means, we need some notes first.
+    </p>
+    <p class="task">
+        In the editor below, please enter the following three <code>&lt;note&gt;</code> elements:</p>
+
+        <ul>
+            <li><code>&lt;note pname="e" oct="4" dur="4"/&gt;</code></li>
+            <li><code>&lt;note pname="g" oct="4" dur="4"/&gt;</code></li>
+            <li><code>&lt;note pname="c" oct="5" dur="4"/&gt;</code></li>
+        </ul>
+
+    <p>
+        You should then see the three notes rendered sequentially. Not much of a chord, actually. But don't worry: We will
+        care about that right away in the next step. Until then, you may play a little bit with the attribute values to
+        see how they influence the rendering. You will also see hints on how to write the correct code. Whenever you're
+        ready, make sure to have the correct code in the editor, and then hit the "continue" button on the lower right.
+    </p>
+</div>

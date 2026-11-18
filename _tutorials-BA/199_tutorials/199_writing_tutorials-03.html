@@ -1,0 +1,97 @@
+<div>
+    <p>
+        In the <a href="https://en.wikipedia.org/wiki/JSON" target="_blank">JSON</a> file, the contents of a tutorial are 
+        coordinated. It has an object with a number of properties. Let's have a look at (a simplified version of)
+        this current tutorial:
+    </p>
+    <pre class="codeblock">{
+  "steps": [
+    {
+        "label":"Welcome",
+        "descFile": "writingTutorials-01.html"
+    },
+    {
+        "label":"Website Setup",
+        "descFile": "writingTutorials-02.html"
+    },
+    
+    <span class="text-gray"><i>… more steps to be added here …</i></span>
+    
+  ],
+  "end":"writingTutorials-end.html",
+  "resp":[
+    {
+        "name":"Johannes Kepper",
+        "affiliation":"Beethovens Werkstatt | Universität Paderborn"
+    }
+  ]
+}</pre>
+    <label>tutorials.json</label>
+    <p>
+        There are three important properties in here. The first one, <code>"steps"</code> is used to describe the different steps in 
+        a tutorial. We'll come back to that in a second. The next one, <code>"end"</code>, specifies a file in which the final page of a 
+        tutorial is provided. Finally, there is <code>"resp"</code>. In this array, you're supposed to put in your name
+        and affiliation. That way, we're not only trying to identify a contact person if questions arise, but also to give
+        you some public recognition for the work you're doing on MEI. In case you've worked on a tutorial with a group of 
+        people, you may of course enter all of them. So why not ask some of your students to work on these tutorials?
+    </p>
+    <h1>Steps</h1>
+    <p>
+        Back to the steps property. This is an array of objects, each describing one step of a tutorial. The only property
+        that is definitely required is <code>"descFile"</code>. Here, you need to provide the name of an HTML file containing the instructions 
+        for this step. Basically, it's what you currently read. That file is not a full HTML file; it should start with a 
+        <code>&lt;div&gt;</code> root element and contains simple HTML.
+        The next property, <code>"label"</code>, is optional. If you don't provide it, the step will be labelled according to its
+        position (i.e. "Step 3" or similar).
+    </p>
+    <p>
+        Obviously, a tutorial is not supposed to be pure text only (that would hardly justify this whole setup…). Sometimes, 
+        you may want the user to actually encode things. Let's have a look at the definition of such a "step":
+    </p>
+    <pre class="codeblock">{
+    <span class="text-gray">"label":"A Sample Step",</span>
+    <span class="text-gray">"descFile": "step-instructions.html",</span>
+    "xmlFile": "encoding.xml",
+    "xpaths": [
+        {
+            "rule":"count(//mei:note) = 1",
+            "renderanyway":false
+        },
+        {
+            "rule":"//mei:note/@pname = 'g'",
+            "renderanyway":true,
+            "hint":"You need a @pname attribute, with a value of g."
+        }
+    ],
+    "editorLines":3,
+    "prefillFile":"prefill.xml"
+}</pre>
+    <label>Definition of a tutorial step that includes an editor component, to be inserted in the "steps" array of tutorials.json </label>
+    <p>
+        The two properties we already know are in gray, we don't need to go back to them. If a step contains both an 
+        <code>"xmlFile"</code> and an <code>"xpaths"</code> property, an editor will be displayed. At the same time,
+        the "Continue"-button on the lower right will go away. In order to proceed, the user now has to follow your 
+        instructions and enter the MEI code in the editor. In order to decide if the user has succeeded or not, you 
+        need to provide a number of <a href="https://en.wikipedia.org/wiki/XPath" target="_blank">XPath</a> rules. The XPath itself is
+        stored in a <code>"rule"</code> property. It has to return a boolean value, i.e. <i>true</i> or <i>false</i>. 
+        If you want to guide the user, you may provide a <code>"hint"</code> property. If the editor's content doesn't
+        match an XPath rule, it's hint will be rendered as a warning box below the editor. XPath rules are checked in 
+        order, and further checking is stopped on every falsy rule. If all rules are matched, the tutorial will 
+        automatically continue to the next step. 
+    </p>
+    <p>
+        The <code>"renderanyway"</code> property of an XPath rule is useful when you want the user to "play around" with
+        the encoding. Normally, the users input is rendered only when all XPath rules are matched. However, you could
+        ask the user to try out different pitches, saying that the tour continues when a specific pitch is entered. 
+        Then, you may set <code>"renderanyway"</code> to <code>true</code>, and Verovio will try it's best in rendering
+        the current user input. This behaviour is implemented in the second XPath rule above.
+    </p>
+    <p>
+        The <code>"xmlfile"</code> property specifies a file that serves as context for the editor. In the next step
+        of this tutorial, we'll explain this in greater detail. There are two more properties that might be useful. 
+        With the <code>"editorLines"</code> property, you can specify the height of the editor window. If you don't 
+        provide it, a default height of <i>5</i> lines will be assumed. Finally, you can prefill the editor at the beginning
+        of a step with the contents of a file you specify with the <code>"prefillFile"</code> property. If you don't provide 
+        that, the editor will keep the input the user has entered in the previous step (or it will be empty on the first one).
+    </p>
+</div>

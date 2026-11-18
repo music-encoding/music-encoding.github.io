@@ -1,0 +1,24 @@
+<div>
+    <p class="tutorialGoal">Step two: adding some attributes to the structural skeleton that you created in the previous step. These attributes will provide basic information about the staff,
+    clef and key of the example.</p>
+
+    <p>You've learned in the previous step that the <code>&lt;scoreDef&gt;</code> element is used to specify the common parameters of a score, and <code>&lt;staffDef&gt;</code> contains all the metadata related to an individual staff. Obviously, there is only one staff in this example incipit, so it would be possible to declare the key signature (3 flats) and the meter symbol (cut time) in <code>&lt;staffDef&gt;</code>. But let's move this information into <code>&lt;scoreDef&gt;</code>, assuming that the key and meter are the same for all other instruments or parts of the whole score of Halvorsen's Opus 1. To specify a certain key or meter, you need to use the following attributes of <code>&lt;scoreDef&gt;</code> and add them to the <code>&lt;scoreDef&gt;</code> element:</p>
+    <ul>
+        <li><code>@key.sig</code> (key signature) – the number of sharps/flats in written key signature, use <code>“3f”</code> for 3 flats.</li>
+        <li><code>@meter.sym</code> (meter symbol) – use <code>“cut”</code> for cut time (C/).
+
+        </li>
+    </ul>
+
+    <p>The clef, in turn, is described in the <code>&lt;staffDef&gt;</code> element, because it is related to the individual staff (other instruments can have other clefs). You need to use the following attributes of <code>&lt;staffDef&gt;</code>:</p>
+    <ul>
+        <li><code>@n</code> (ordinal number) – the staff's position within the surrounding <code>&lt;staffGrp&gt;</code>, use <code>”1”</code> for the first (and only) staff</li>
+        <li><code>@lines</code> – use <code>“5”</code> for five-line staff</li>
+        <li><code>@clef.shape</code> – the value for the clef symbol: use <code>“G”</code> for a G clef symbol.</li>
+        <li><code>@clef.line</code> – the staff line on which the clef is placed (counting from the bottom), use <code>“2”</code>.</li>
+    </ul>
+
+    <p class="task">Add the attributes described above and their respective values to <code>&lt;scoreDef&gt;</code> and <code>&lt;staffDef&gt;</code> in the editor below. (For a rendition, there is still some more information needed. Let's go ahead!)</p>
+
+    <p>PS: Although we refer to attributes with the prepended @-sign in text, this is not necessary (or even allowed) in the encoding.</p>
+</div>

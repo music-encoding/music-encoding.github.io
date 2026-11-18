@@ -1,0 +1,25 @@
+<div>
+    <p>
+        ODD, an acronym for <em>One Document Does-it-all</em>, is a part of the 
+        <a href="https://tei-c.org/guidelines/customization/getting-started-with-p5-odds/" target="_blank" rel="noopener, noreferrer">TEI standard</a>, 
+        and is also used to define TEI itself.    
+    </p>
+    <p>
+        ODD uses a set of special elements in the <a href="https://tei-c.org/ns/1.0/" target="_blank" rel="noopener, noreferrer">TEI namespace</a> to
+        describe XML-based data formats. Besides core TEI, it is used for TEI-based formats like 
+        <a href="https://sourceforge.net/p/epidoc/wiki/Home/" target="_blank" rel="noopener, noreferrer">EpiDoc</a>, but also for technically independent
+        formats like MEI. In 2016, the TEI came up with a version of ODD called 
+        <em><a href="https://wiki.tei-c.org/index.php/ODD#.22Pure_ODD.22" target="_blank" rel="noopener, noreferrer">Pure ODD</a></em>. As of Summer 2020, 
+        MEI however continues to use the older flavor of ODD, as the new version brings no pertinent benefits for MEI, but would
+        result in significant maintenance work for various MEI-related tools and workflows. 
+    </p>
+    <p>
+        The main difference to <em>Pure ODD</em> is that the older version used by MEI uses elements from the 
+        <em><a href="https://relaxng.org/" target="_blank" rel="noopener, noreferrer">RelaxNG</a></em> namespace. Eventually, ODD files are usually compiled
+        to a RelaxNG (or XSD) schema anyway, as there is literally no software support for direct validation against ODD. However,
+        this recourse to RelaxNG within ODD adds an additional dependency into the TEI workflow, and thus reduces the technical freedom
+        for defining TEI and / or ODD to some (minor?) degree. As MEI is already defined in a format that is out of (direct) control
+        of the MEI community, and needs to deal with multiple XML namespaces anyway, the argument to have everything defined consistently 
+        in <em>Pure ODD</em> is less striking, and accordingly hasn't been followed so far. 
+    </p>
+</div>
