@@ -1,6 +1,6 @@
 ---
 layout: default
-title: "2025 Board Election Candidate Statements"
+title: "2026 Board Election Candidate Statements"
 ---
 
 # 2025 Board Election Candidates
